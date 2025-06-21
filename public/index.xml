@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello World</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Hello World</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asterisks used to form a field of stars.</title>
+      <link>https://example.org/photos/dinkus-examples/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.org/photos/dinkus-examples/</guid>
+      <description>&lt;p&gt;Lewis Carroll&amp;rsquo;s Alice in Wonderland, in a print of indeterminate age, features dinkuses in the form of asterisks used to form a field of stars.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bohaterowie G.</title>
+      <link>https://example.org/photos/fleuron-examples/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.org/photos/fleuron-examples/</guid>
+      <description>&lt;p&gt;A combination of a fleuron and line-shaped dinkus in the same Polish work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>https://example.org/posts/what-is-hugo/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/what-is-hugo/</guid>
+      <description>&lt;p&gt;Hugo is an open-source project and lives by the work of its contributors. There are plenty of open issues, and we need your help to make Hugo even more awesome. You don&amp;rsquo;t need to be a Go guru to contribute to the project&amp;rsquo;s development.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is Hugo</title>
+      <link>https://example.org/posts/introduction/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/introduction/</guid>
+      <description>&lt;p&gt;Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
+      <guid>https://example.org/about/</guid>
+      <description>&lt;p&gt;A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.&lt;/p&gt;&#xA;&lt;p&gt;Theme is based on a modern and minimal &lt;a href=&#34;https://terminalcss.xyz/&#34;&gt;Terminal CSS&lt;/a&gt; framework.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/7/77/James_Joyce%2C_Ulysses%2C_1ed_2pr%2C_p240.jpg&#34; alt=&#34;Console&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is the end of the about page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
