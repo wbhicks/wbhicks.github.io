@@ -1,0 +1,41 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+sectionPagesMenu = 'main'
+
+[taxonomies]
+    category = 'categories'
+
+[params]
+    [params.author]
+        name        = "Authorz Name"
+        email       = "Authorz Email"
+        description = "Authorz Desc"
+
+    [params.galleriesdeluxe]
+        # One of dartsass or libsass.
+        sass_transpiler = "libsass"
+        [params.galleriesdeluxe.sassvars]
+            # At least one key-value pair must remain uncommented
+            # (see my note in Obsidian)
+            color_primary = "darken(#ff7f00, 20%)"
+            color_secondary = "#0f0"
+            color_background = "#ccc"
+            color_background_footer = "#bbb"
+            font_family_serif = "serif"
+            font_family_sans_serif = "Monaco, sans_serif"
+
+    [params.gallerydeluxe]
+        shuffle     = false
+        reverse     = true
+        enable_exif = false
+
+[module]
+    [[module.mounts]]
+        source = "assets"
+        target = "assets"
+    [[module.mounts]]
+        source = "content"
+        target = "content"
+    [[module.imports]]
+        path = "github.com/bep/galleriesdeluxe"

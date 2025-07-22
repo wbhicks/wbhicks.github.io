@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Galleriez Deluxe on My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Galleriez Deluxe on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>Authorz Email (Authorz Name)</managingEditor>
+    <webMaster>Authorz Email (Authorz Name)</webMaster>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cars in motion</title>
+      <link>http://localhost:1313/galleries/g2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/galleries/g2/</guid>
+      <description>&lt;p&gt;This is the second gallery with wikipedia photos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Who Was Hugo</title>
+      <link>http://localhost:1313/posts/who-was-hugo/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/who-was-hugo/</guid>
+      <description>&lt;p&gt;Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake. Hugo was a namesake.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Birds in flight!</title>
+      <link>http://localhost:1313/galleries/g1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/galleries/g1/</guid>
+      <description>&lt;p&gt;This is the first gallery with photos NOT from the example site.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Aboot</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;START OF index.md&lt;/p&gt;&#xA;&lt;p&gt;aleorthonym: a portmanteau of alethonym (&amp;ldquo;true name&amp;rdquo;) and orthonym (&amp;ldquo;normal/proper name&amp;rdquo;). I wanted a made-up word for this front matter property key, which holds (for now) proper names.&lt;/p&gt;&#xA;&lt;h3 id=&#34;3-hash&#34;&gt;3 hash&lt;/h3&gt;&#xA;&lt;p&gt;content / about / index.md&lt;/p&gt;&#xA;&lt;h4 id=&#34;4-hash&#34;&gt;4 hash&lt;/h4&gt;&#xA;&lt;p&gt;content / about / index.md&lt;/p&gt;&#xA;&lt;h5 id=&#34;5-hash&#34;&gt;5 hash&lt;/h5&gt;&#xA;&lt;p&gt;content / about / index.md&lt;/p&gt;&#xA;&lt;p&gt;END OF index.md&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

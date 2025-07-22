@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {{ .Title }}
+    </title>
+
+    <link rel="icon" href="{{ `favicon.svg` | relURL }}" type="image/svg+xml" />
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    {{ hugo.Generator }}
+
+    {{ if hugo.IsProduction }}
+      <meta name="robots" content="index, follow" />
+    {{ else }}
+      <meta name="robots" content="noindex, nofollow" />
+    {{ end }}
+
+    {{ range .AlternativeOutputFormats -}}
+      <link
+        rel="{{ .Rel }}"
+        type="{{ .MediaType.Type }}"
+        href="{{ .Permalink | safeURL }}" />
+    {{ end -}}
+
+    {{/* SEO. */}}
+    {{ partial "common-partials/head-seo.html" . }}
+
+    {{/* Load styles */}}
+    {{ $vars := site.Params.galleriesdeluxe.sassvars | default dict }}
+    {{ $transpiler := site.Params.galleriesdeluxe.sass_transpiler | default "dartsass" }}
+    {{ $options := dict "enableSourceMap" true "transpiler" $transpiler "vars" $vars }}
+    {{ if hugo.IsProduction }}
+      {{ $options = $options | merge (dict "enableSourceMap" false "outputStyle" "compressed") }}
+    {{ end }}
+    {{ $styles := resources.Get "scss/galleriesdeluxe/styles.scss" }}
+    {{ $styles = $styles | css.Sass $options }}
+    {{ if hugo.IsProduction }}
+      {{ $styles = $styles | fingerprint }}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+
+    {{/* Load JavaScript */}}
+    {{ $js := resources.Get "js/galleriesdeluxe/index.js" }}
+    {{ $params := dict }}
+    {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+    {{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
+    {{ $js = $js | js.Build $opts }}
+    {{ if hugo.IsProduction }}
+      {{ $js = $js | fingerprint }}
+    {{ end }}
+    <script
+      src="{{ $js.RelPermalink }}"
+      {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }}
+      defer></script>
+
+    {{ block "head-custom" . }}{{ end }}
+
+  </head>
+  <body>
+    {{ partial "galleriesdeluxe/header.html" . }}
+    <main>
+IN layouts / _default / baseof.html / main
+      {{ block "main" . }}{{ end }}
+STILL IN layouts / _default / baseof.html / main
+    </main>
+    <footer>
+      {{ partial "galleriesdeluxe/footer.html" . }}
+    </footer>
+  </body>
+</html>

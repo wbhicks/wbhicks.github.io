@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+In layouts / _defaults / about.html
+
+  <div class="markdown-body">
+    {{ .Content }}
+  </div>
+
+Still in layouts / _defaults / about.html , starting my bit ...
+
+  <div>
+    {{ with .Site.GetPage "/posts" }}
+      {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+          <p>
+            <div class="date">{{ .PublishDate.Format "2006 Jan 02 Mon" }}</div>
+            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            {{ .Summary }}
+          </p>
+        </div>    
+      {{ end }}
+    {{ end }}
+  </div>
+
+... end of my bit
+
+{{ end }}
