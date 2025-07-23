@@ -98,7 +98,12 @@ input {
   border-radius: 0; }
 
 /* Import the vars in order of precedence: Hugo config first. */
-/* This is deliberately empty. */
+body.serif-mode, body.serif-mode main * {
+  font-family: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif; }
+
+body.sans-mode, body.sans-mode main * {
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif; }
+
 /* Colors. */
 .markdown-body {
   -ms-text-size-adjust: 100%;
@@ -142,7 +147,7 @@ input {
 
 .markdown-body a {
   background-color: transparent;
-  color: #994c00;
+  color: #3a98b9;
   text-decoration: none; }
 
 .markdown-body abbr[title] {
@@ -282,7 +287,7 @@ input {
 .markdown-body [role="button"]:focus,
 .markdown-body input[type="radio"]:focus,
 .markdown-body input[type="checkbox"]:focus {
-  outline: 2px solid #994c00;
+  outline: 2px solid #3a98b9;
   outline-offset: -2px;
   box-shadow: none; }
 
@@ -296,7 +301,7 @@ input {
 .markdown-body [role="button"]:focus-visible,
 .markdown-body input[type="radio"]:focus-visible,
 .markdown-body input[type="checkbox"]:focus-visible {
-  outline: 2px solid #994c00;
+  outline: 2px solid #3a98b9;
   outline-offset: -2px;
   box-shadow: none; }
 
@@ -782,7 +787,7 @@ input {
   left: -24px;
   pointer-events: none;
   content: "";
-  border: 2px solid #994c00;
+  border: 2px solid #3a98b9;
   border-radius: 6px; }
 
 .markdown-body .footnotes li:target {
@@ -944,12 +949,12 @@ body {
   min-height: 90vh; }
 
 body {
-  font-family: Monaco, sans_serif;
+  font-family: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
   color: #000;
-  background: #ccc;
+  background: white;
   color: #000;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -957,10 +962,10 @@ body {
   /* Applies to SVG only */ }
 
 footer {
-  background: #bbb;
+  background: #fff1dc;
   color: #000;
-  box-shadow: 0 50vh 0 50vh #bbb;
-  border-top: 1px solid #b6b6b6;
+  box-shadow: 0 50vh 0 50vh #fff1dc;
+  border-top: 1px solid #ffedd2;
   margin-top: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem; }
@@ -974,7 +979,7 @@ footer {
       footer > div {
         flex-direction: row; } }
 a {
-  color: #994c00;
+  color: #3a98b9;
   text-decoration: none;
   font-weight: bold; }
   a:hover {
@@ -1028,7 +1033,7 @@ header {
   grid-gap: 0.5rem; }
   .galleries a {
     text-decoration: none;
-    color: #994c00; }
+    color: #3a98b9; }
   .galleries .card {
     padding: 2rem; }
     .galleries .card .card-img {
@@ -1062,7 +1067,7 @@ header {
 
 /* Utilities */
 .serif {
-  font-family: serif; }
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif; }
 
 .mt {
   margin-top: 1rem; }

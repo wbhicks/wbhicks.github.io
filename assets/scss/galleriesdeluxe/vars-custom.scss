@@ -1,0 +1,22 @@
+$font_family_serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !default;
+
+$font_family_sans_serif: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif !default;
+
+$font_family_base: $font_family_sans_serif !default;
+
+@mixin serif-or-sans($the-toggle: true) {
+  @if $the-toggle {
+    font-family: $font_family_sans_serif;
+  } @else {
+    font-family: $font_family_serif;
+  }
+}
+
+body.serif-mode, body.serif-mode main * {
+  @include serif-or-sans($the-toggle: true);
+}
+
+body.sans-mode, body.sans-mode main * {
+  @include serif-or-sans($the-toggle: false);
+}
+

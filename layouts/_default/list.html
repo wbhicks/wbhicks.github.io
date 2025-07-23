@@ -37,6 +37,29 @@ START layouts / _default / list.html
     {{ end }}
   </div>
 
+START of new dev for posts
+
+  <div class="nonexistent-class-for-posts-list">
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}
+      {{ with site.GetPage "posts" }}
+        {{ $pages = .RegularPagesRecursive }}
+      {{ end }}
+    {{ end }}
+    {{ range $pages }}
+          <div class="body">
+            <h2>
+              <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </h2>
+            <p>
+              mmm{{ .Summary }}nnn
+            </p>
+          </div>
+    {{ end }}
+  </div>
+
+END of new dev for posts
+
 {{ partial "rough-menu.html" (dict "menuID" "main" "list" .) }}
 
 END layouts / _default / list.html

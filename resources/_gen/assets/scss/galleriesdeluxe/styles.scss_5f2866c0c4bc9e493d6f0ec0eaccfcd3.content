@@ -98,7 +98,12 @@ input {
   border-radius: 0; }
 
 /* Import the vars in order of precedence: Hugo config first. */
-/* This is deliberately empty. */
+body.serif-mode, body.serif-mode main * {
+  font-family: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif; }
+
+body.sans-mode, body.sans-mode main * {
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif; }
+
 /* Colors. */
 .markdown-body {
   -ms-text-size-adjust: 100%;
@@ -944,7 +949,7 @@ body {
   min-height: 90vh; }
 
 body {
-  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif;
+  font-family: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif;
   margin: 0;
   padding: 0;
   font-size: 16px;

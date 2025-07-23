@@ -16,14 +16,9 @@ sectionPagesMenu = 'main'
         # One of dartsass or libsass.
         sass_transpiler = "libsass"
         [params.galleriesdeluxe.sassvars]
-            # At least one key-value pair must remain uncommented
-            # (see my note in Obsidian)
-            color_primary = "darken(#ff7f00, 20%)"
-            color_secondary = "#0f0"
-            color_background = "#ccc"
-            color_background_footer = "#bbb"
-            font_family_serif = "serif"
-            font_family_sans_serif = "Monaco, sans_serif"
+        #   At least one key-value pair must remain 
+        #   uncommented (see my note in Obsidian)
+            foo_bar = "abc123"
 
     [params.gallerydeluxe]
         shuffle     = false
