@@ -1,3 +1,10 @@
+$color_text_dark: #321 !default;
+$color_text_light: #ff7f00 !default;
+$color_primary: #0a0 !default;
+$color_secondary: #222 !default;
+$color_background: $color_secondary !default;
+$color_background_footer: darken($color_secondary, 3%) !default;
+
 $font_family_serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !default;
 
 $font_family_sans_serif: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif !default;
@@ -20,3 +27,29 @@ body.sans-mode, body.sans-mode main * {
   @include serif-or-sans($the-toggle: false);
 }
 
+body main h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+body main h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+body main h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #777;
+  margin: 1em 0;
+  padding: 0;
+}

@@ -104,6 +104,29 @@ body.serif-mode, body.serif-mode main * {
 body.sans-mode, body.sans-mode main * {
   font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif; }
 
+body main h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+body main h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+body main h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #777;
+  margin: 1em 0;
+  padding: 0; }
+
 /* Colors. */
 .markdown-body {
   -ms-text-size-adjust: 100%;
@@ -147,7 +170,7 @@ body.sans-mode, body.sans-mode main * {
 
 .markdown-body a {
   background-color: transparent;
-  color: #3a98b9;
+  color: #0a0;
   text-decoration: none; }
 
 .markdown-body abbr[title] {
@@ -287,7 +310,7 @@ body.sans-mode, body.sans-mode main * {
 .markdown-body [role="button"]:focus,
 .markdown-body input[type="radio"]:focus,
 .markdown-body input[type="checkbox"]:focus {
-  outline: 2px solid #3a98b9;
+  outline: 2px solid #0a0;
   outline-offset: -2px;
   box-shadow: none; }
 
@@ -301,7 +324,7 @@ body.sans-mode, body.sans-mode main * {
 .markdown-body [role="button"]:focus-visible,
 .markdown-body input[type="radio"]:focus-visible,
 .markdown-body input[type="checkbox"]:focus-visible {
-  outline: 2px solid #3a98b9;
+  outline: 2px solid #0a0;
   outline-offset: -2px;
   box-shadow: none; }
 
@@ -787,7 +810,7 @@ body.sans-mode, body.sans-mode main * {
   left: -24px;
   pointer-events: none;
   content: "";
-  border: 2px solid #3a98b9;
+  border: 2px solid #0a0;
   border-radius: 6px; }
 
 .markdown-body .footnotes li:target {
@@ -954,18 +977,18 @@ body {
   padding: 0;
   font-size: 16px;
   color: #000;
-  background: white;
-  color: #000;
+  background: #222;
+  color: #ff7f00;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   fill: currentColor;
   /* Applies to SVG only */ }
 
 footer {
-  background: #fff1dc;
-  color: #000;
-  box-shadow: 0 50vh 0 50vh #fff1dc;
-  border-top: 1px solid #ffedd2;
+  background: #1a1a1a;
+  color: #ff7f00;
+  box-shadow: 0 50vh 0 50vh #1a1a1a;
+  border-top: 1px solid #151515;
   margin-top: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem; }
@@ -979,7 +1002,7 @@ footer {
       footer > div {
         flex-direction: row; } }
 a {
-  color: #3a98b9;
+  color: #0a0;
   text-decoration: none;
   font-weight: bold; }
   a:hover {
@@ -1033,7 +1056,7 @@ header {
   grid-gap: 0.5rem; }
   .galleries a {
     text-decoration: none;
-    color: #3a98b9; }
+    color: #0a0; }
   .galleries .card {
     padding: 2rem; }
     .galleries .card .card-img {

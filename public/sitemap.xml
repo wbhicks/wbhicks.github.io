@@ -32,6 +32,12 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/who-was-alfred/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/who-was-bertha/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/who-was-hugo/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -45,5 +51,15 @@
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/1970s/carter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/postgamma/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/1970s/nixon/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/postalpha/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/postbeta/</loc>
   </url>
 </urlset>

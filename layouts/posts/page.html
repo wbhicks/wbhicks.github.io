@@ -1,0 +1,8 @@
+{{ define "main" }}
+«LPoPa1»
+  <h1>{{ .Title }}</h1>
+  <h2>{{ .PublishDate.Format "2006 Jan 02 Mon" }}</h2>
+  <h3>tl;dr: {{ .Summary }}</h3>
+  {{ .Content }}
+«LPoPa9»
+{{ end }}

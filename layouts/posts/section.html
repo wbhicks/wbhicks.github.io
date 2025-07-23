@@ -1,0 +1,12 @@
+{{ define "main" }}
+  «LPoSe1»
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <br/><br/>
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+    <hr/>
+  {{ end }}
+  «LPoSe9»
+{{ end }}

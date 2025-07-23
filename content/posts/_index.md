@@ -1,6 +1,5 @@
 ---
-title: Posts
+title: Pooosts
 linkTitle: Posts
 ---
-
-IN content / posts / _index.md
+These are random posts without much of an overarching theme.

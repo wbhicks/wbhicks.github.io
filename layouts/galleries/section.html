@@ -1,6 +1,5 @@
 {{ define "main" }}
-
-START layouts / _default / list.html
+  «LGaSec1»
 
   <div class="galleries">
     {{ $pages := .Pages }}
@@ -9,6 +8,7 @@ START layouts / _default / list.html
         {{ $pages = .RegularPagesRecursive }}
       {{ end }}
     {{ end }}
+
     {{ range $pages }}
       {{ with partial "galleriesdeluxe/get-gallery.html" . }}
         <div class="card">
@@ -19,11 +19,8 @@ START layouts / _default / list.html
               class=""
               width="{{ .thumb.Width }}"
               height="{{ .thumb.Height }}" />
-            <span class="num-photos"
-              >{{ .images | len }} {{ T "photo" ( .images | len) }}</span
-            >
+            <span class="num-photos">{{ .images | len }} {{ T "photo" ( .images | len) }}</span>
           </a>
-
           <div class="body">
             <h2>
               <a href="{{ .page.RelPermalink }}">{{ .page.LinkTitle }}</a>
@@ -35,33 +32,10 @@ START layouts / _default / list.html
         </div>
       {{ end }}
     {{ end }}
+
   </div>
 
-START of new dev for posts
-
-  <div class="nonexistent-class-for-posts-list">
-    {{ $pages := .Pages }}
-    {{ if .IsHome }}
-      {{ with site.GetPage "posts" }}
-        {{ $pages = .RegularPagesRecursive }}
-      {{ end }}
-    {{ end }}
-    {{ range $pages }}
-          <div class="body">
-            <h2>
-              <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-            </h2>
-            <p>
-              mmm{{ .Summary }}nnn
-            </p>
-          </div>
-    {{ end }}
-  </div>
-
-END of new dev for posts
-
-{{ partial "rough-menu.html" (dict "menuID" "main" "list" .) }}
-
-END layouts / _default / list.html
-
+  «LGaSec8»
+  {{ partial "rough-menu.html" (dict "menuID" "main" "list" .) }}
+  «LGaSec9»
 {{ end }}

@@ -18,6 +18,20 @@
       <description>&lt;p&gt;This is the second gallery with wikipedia photos.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Who Was Alfred</title>
+      <link>http://localhost:1313/posts/who-was-alfred/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/who-was-alfred/</guid>
+      <description>He rocked.</description>
+    </item>
+    <item>
+      <title>Who Was Bertha</title>
+      <link>http://localhost:1313/posts/who-was-bertha/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/who-was-bertha/</guid>
+      <description>&lt;p&gt;Bertha was a bystander. Lorem ipsum.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Who Was Hugo</title>
       <link>http://localhost:1313/posts/who-was-hugo/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
@@ -37,6 +51,41 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;START OF index.md&lt;/p&gt;&#xA;&lt;p&gt;aleorthonym: a portmanteau of alethonym (&amp;ldquo;true name&amp;rdquo;) and orthonym (&amp;ldquo;normal/proper name&amp;rdquo;). I wanted a made-up word for this front matter property key, which holds (for now) proper names.&lt;/p&gt;&#xA;&lt;h3 id=&#34;3-hash&#34;&gt;3 hash&lt;/h3&gt;&#xA;&lt;p&gt;content / about / index.md&lt;/p&gt;&#xA;&lt;h4 id=&#34;4-hash&#34;&gt;4 hash&lt;/h4&gt;&#xA;&lt;p&gt;content / about / index.md&lt;/p&gt;&#xA;&lt;h5 id=&#34;5-hash&#34;&gt;5 hash&lt;/h5&gt;&#xA;&lt;p&gt;content / about / index.md&lt;/p&gt;&#xA;&lt;p&gt;END OF index.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Carter Title</title>
+      <link>http://localhost:1313/posts/1970s/carter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/1970s/carter/</guid>
+      <description>&lt;p&gt;cardigan time&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gamma</title>
+      <link>http://localhost:1313/posts/postgamma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/postgamma/</guid>
+      <description>&lt;p&gt;gamma gamma hey&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nixon Title</title>
+      <link>http://localhost:1313/posts/1970s/nixon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/1970s/nixon/</guid>
+      <description>&lt;p&gt;nix on gas today&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post Alpha Title</title>
+      <link>http://localhost:1313/posts/postalpha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/postalpha/</guid>
+      <description>&lt;p&gt;alphabet alphonzo alpha centauri&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post Beta Title</title>
+      <link>http://localhost:1313/posts/postbeta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Authorz Email (Authorz Name)</author>
+      <guid>http://localhost:1313/posts/postbeta/</guid>
+      <description>&lt;p&gt;betelgeuse beetles bet on it&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
