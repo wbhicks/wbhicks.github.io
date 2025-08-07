@@ -9,9 +9,10 @@
       {{ end }}
     {{ end }}
 
+    «LGaSec2»
     {{ range $pages }}
       {{ with partial "galleriesdeluxe/get-gallery.html" . }}
-        <div class="card">
+        <div class="card">Z
           <a class="card-img" href="{{ .page.RelPermalink }}">
             <img
               src="{{ .thumb.RelPermalink }}"
@@ -32,6 +33,7 @@
         </div>
       {{ end }}
     {{ end }}
+    «LGaSec7»
 
   </div>
 

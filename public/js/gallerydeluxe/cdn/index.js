@@ -1,6 +1,6 @@
 (() => {
   // ns-hugo-params:/Users/wh/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/bep/gallerydeluxe@v0.12.0/assets/js/gallerydeluxe/src/index.js
-  var enable_exif = false;
+  var enable_exif = true;
   var reverse = true;
   var shuffle = false;
 

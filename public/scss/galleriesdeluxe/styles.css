@@ -127,6 +127,21 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
+.gd-modal-caption {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  left: 10px;
+  color: #d80;
+  background-color: #333;
+  padding: 0.75rem;
+  opacity: 1.0;
+  filter: drop-shadow(-1px -1px 2px #ccc); }
+
+.gd-modal-caption:hover {
+  opacity: 1;
+  cursor: pointer; }
+
 /* Colors. */
 .markdown-body {
   -ms-text-size-adjust: 100%;

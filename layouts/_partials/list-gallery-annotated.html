@@ -1,0 +1,20 @@
+«L_paLGA1»
+{{ with partial "get-gallery-annotated.html" . }}
+  {{ $gallery := partial "gallerydeluxe/init.html" (dict "images" .images) }}
+  {{ $params := site.Params.gallerydeluxe }}
+  «L_paLGA2»
+  <div id="gallerydeluxe" data-gd-image-data-url="{{ $gallery.imageDataUrl }}">
+    <div id="gd-modal" class="gd-modal">
+      {{ if $params.enable_captions }}
+        <div id="gd-modal-caption" class="gd-modal-caption"></div>
+        {{ partial "captionize-modal-image.html" $params.bar }}
+      {{ end }}
+      {{ if $params.enable_exif }}
+        <div id="gd-modal-exif" class="gd-modal-exif"></div>
+      {{ end }}
+      <span id="gd-modal-close" class="gd-modal-close">&times;</span>
+    </div>
+  </div>
+  «L_paLGA8»
+{{ end }}
+«L_paLGA9»

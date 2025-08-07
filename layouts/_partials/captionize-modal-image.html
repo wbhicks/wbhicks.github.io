@@ -1,0 +1,106 @@
+<script>
+let captionTimeoutId;
+
+const showCaption = function() {
+  const modal = document.getElementById('gd-modal');
+  var theFileName = "";
+  var theFileBaseName = "";
+  var theFileBaseNameStem = "";
+  var width = "";
+  var height = "";
+  if (modal != null) {
+
+    if (captionTimeoutId) {
+      clearTimeout(captionTimeoutId);
+    }
+
+    let captionBlock = modal.querySelector('#gd-modal-caption');
+    // no need to clone the following class:
+    const onTimeOutClass = 'gd-modal-exif-ontimeout';
+    let child = captionBlock.lastElementChild;
+    while (child) {
+	captionBlock.removeChild(child);
+	child = captionBlock.lastElementChild;
+    }
+    let dl = document.createElement('dl');
+    captionBlock.appendChild(dl);
+
+    const addTag = (tag, value) => {
+	let dt = document.createElement('dt');
+	dt.innerText = tag;
+	dl.appendChild(dt);
+	let dd = document.createElement('dd');
+	dd.innerText = value;
+	dl.appendChild(dd);
+    };
+
+    var bothImgElements = modal.getElementsByClassName(
+        "gd-modal-content gd-modal-loaded");
+    for (let i = 0; i < bothImgElements.length; i++) {
+      if (bothImgElements[i].classList.contains(
+          "gd-modal-thumbnail")) {
+        // must be the one we do not want, so do nothing
+      } else {
+        theFileName = bothImgElements[i].getAttribute("src");
+        theFileBaseName = theFileName.substring(theFileName.lastIndexOf("/") + 1);
+        theFileBaseNameStem = theFileBaseName.substring(0, theFileBaseName.lastIndexOf("."));
+        width = bothImgElements[i].getAttribute("width");
+        height = bothImgElements[i].getAttribute("height");
+        addTag('theFileName', theFileName);
+        addTag('theFileBaseName', theFileBaseName);
+        addTag('theFileBaseNameStem', theFileBaseNameStem);
+        addTag('Width x Height', '' + width + ' x ' + height);
+        addTag('Foo1', '' + {{ site.Params.gallerydeluxe.bar }});
+        addTag('Foo2', {{ site.Home.LinkTitle }});
+        addTag('Foo3', {{ (site.GetPage "galleries/annotated").Title }});
+        addTag('Foo4', {{ (site.GetPage "galleries/annotated").Params.apple }});
+
+
+        // key, e.g. image.signature_mark_wp.caption
+        //addTag('Foo99', DBLCURLY (site.GetPage "galleries/annotated").Params.image.(theFileBaseNameStem).caption DBLCURLY;
+
+
+        // we are done, so short-circuit the loop:
+        i = bothImgElements.length;
+      }
+    }
+
+    captionBlock.classList.remove(onTimeOutClass);
+    captionTimeoutId = setTimeout(() => {
+      captionBlock.classList.add(onTimeOutClass);
+    }, 2000);
+
+  }
+  console.log(`[${new Date().toISOString()}] ` 
+      + theFileName + " " + width + "x" + height);
+}
+
+document.addEventListener('keydown', function (e) {
+  switch (e.key) {
+    case 'ArrowUp':
+    case 'ArrowDown':
+      showCaption();
+      break;
+  //  case 'Escape':
+  //    console.log(`[${new Date().toISOString()}] whatever`);
+  //    break;
+  }
+});
+
+// Start observing visbility of element. On change, the
+//   the callback is called with Boolean visibility as
+//   argument:
+//
+//function respondToVisibility(element, callback) {
+//  var options = {
+//    root: null,
+//  };
+//  var observer = new IntersectionObserver((entries, observer) => {
+//    entries.forEach(entry => {
+//      callback(entry.intersectionRatio > 0);
+//    });
+//  }, options);
+//  observer.observe(element);
+//}
+
+</script>

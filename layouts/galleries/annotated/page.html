@@ -1,0 +1,14 @@
+{{ define "main" }}
+«LGaAnnoPa•Main1»
+  <h1>{{ .Title }}</h1>
+  <h2>{{ .PublishDate.Format "2006 Jan 02 Mon" }}</h2>
+  <h3>AnnoPa_tl;dr: {{ .Summary }}</h3>
+  {{ partial "list-gallery-annotated.html" . }}
+  {{ .Content }}
+«LGaAnnoPa•Main9»
+{{ end }}
+{{ define "head-custom" }}
+«LGaAnnoPa•h-c1»
+  {{ partial "gallerydeluxe/head.html" . }}
+«LGaAnnoPa•h-c9»
+{{ end }}

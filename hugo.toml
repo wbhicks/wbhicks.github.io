@@ -23,7 +23,11 @@ sectionPagesMenu = 'main'
     [params.gallerydeluxe]
         shuffle     = false
         reverse     = true
-        enable_exif = false
+        # default is false:
+        enable_exif = true
+        # my addition:
+        enable_captions = true
+        bar = "blah"
 
 [module]
     [[module.mounts]]
