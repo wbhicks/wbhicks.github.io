@@ -7,7 +7,7 @@
     <div id="gd-modal" class="gd-modal">
       {{ if $params.enable_captions }}
         <div id="gd-modal-caption" class="gd-modal-caption"></div>
-        {{ partial "captionize-modal-image.html" $params.bar }}
+        {{ partial "captionize-modal-image.html" (dict "captionsforimages" .captionsforimages)}}
       {{ end }}
       {{ if $params.enable_exif }}
         <div id="gd-modal-exif" class="gd-modal-exif"></div>

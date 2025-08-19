@@ -1,7 +1,7 @@
 {{ $gallery := "" }}
 
 {{ $images := slice }}
-{{ $captionsForImages := slice }}
+{{ $captionizedImages := slice }}
 {{ if eq .Kind "term" }}
   {{ range .Pages }}
     {{ $bundledImages := .Resources.ByType "image" }}
@@ -11,12 +11,10 @@
 {{ else }}
   {{ $bundledImages := .Resources.ByType "image" }}
   {{ $lengthOfBunIm := ($bundledImages | len) }}
-  {{ if eq $lengthOfBunIm 4 }}
     {{ range $bundledImages }}
       {{ $images = $images | append . }}
-      {{ $captionsForImages = $captionsForImages | append "foo" }} 
+      {{ $captionizedImages = $captionizedImages | append .RelPermalink }}
     {{ end }}
-  {{ end }}
 {{ end }}
 
 {{ with $images }}
@@ -28,7 +26,7 @@
     "page" $
     "images" $images
     "thumb" $thumb
-    "captionsforimages" $captionsForImages
+    "captionsforimages" $captionizedImages
   }}
 {{ end }}
 {{ return $gallery }}

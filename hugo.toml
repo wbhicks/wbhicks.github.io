@@ -27,7 +27,6 @@ sectionPagesMenu = 'main'
         enable_exif = true
         # my addition:
         enable_captions = true
-        bar = "blah"
 
 [module]
     [[module.mounts]]

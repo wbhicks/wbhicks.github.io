@@ -1,5 +1,16 @@
+{{ with site.Data.imagenotes.captions }}
+  {{ $sdinc := slice }}
+  {{ range . }}
+    {{ $sdinc = $sdinc | append . }}
+  {{ end }}
+
 <script>
+const captionsSheet = {{ $sdinc }};
 let captionTimeoutId;
+
+function hasMatchingFileBaseNameStem(someElement) {
+  return someElement.fbns == this; // fileBaseNameStem;
+}
 
 const showCaption = function() {
   const modal = document.getElementById('gd-modal');
@@ -34,31 +45,30 @@ const showCaption = function() {
 	dl.appendChild(dd);
     };
 
-    var bothImgElements = modal.getElementsByClassName(
-        "gd-modal-content gd-modal-loaded");
+    var bothImgElements = modal.getElementsByClassName("gd-modal-content gd-modal-loaded");
     for (let i = 0; i < bothImgElements.length; i++) {
-      if (bothImgElements[i].classList.contains(
-          "gd-modal-thumbnail")) {
-        // must be the one we do not want, so do nothing
+      if (bothImgElements[i].classList.contains("gd-modal-thumbnail")) {
+        // must be the one we dont want, so do nothing
       } else {
         theFileName = bothImgElements[i].getAttribute("src");
         theFileBaseName = theFileName.substring(theFileName.lastIndexOf("/") + 1);
         theFileBaseNameStem = theFileBaseName.substring(0, theFileBaseName.lastIndexOf("."));
+        addTag('File base name stem', theFileBaseNameStem);
+
         width = bothImgElements[i].getAttribute("width");
         height = bothImgElements[i].getAttribute("height");
-        addTag('theFileName', theFileName);
-        addTag('theFileBaseName', theFileBaseName);
-        addTag('theFileBaseNameStem', theFileBaseNameStem);
         addTag('Width x Height', '' + width + ' x ' + height);
-        addTag('Foo1', '' + {{ site.Params.gallerydeluxe.bar }});
-        addTag('Foo2', {{ site.Home.LinkTitle }});
-        addTag('Foo3', {{ (site.GetPage "galleries/annotated").Title }});
-        addTag('Foo4', {{ (site.GetPage "galleries/annotated").Params.apple }});
 
+        // addTag('Example 1', '' + DBL_CURLIEZ site.Params.gallerydeluxe.foobar DBL_CURLIEZ);
+        // addTag('Example 2', DBL_CURLIEZ (site.GetPage "galleries/annotated").Params.apple DBL_CURLIEZ);
 
-        // key, e.g. image.signature_mark_wp.caption
-        //addTag('Foo99', DBLCURLY (site.GetPage "galleries/annotated").Params.image.(theFileBaseNameStem).caption DBLCURLY;
+        addTag('Caption', captionsSheet.find(hasMatchingFileBaseNameStem, theFileBaseNameStem).caption);
+        addTag('Credits', captionsSheet.find(hasMatchingFileBaseNameStem, theFileBaseNameStem).credit);
 
+        addTag('Folder size', {{ site.Data.imagenotes.captions | len }});
+        {{ range where site.Data.imagenotes.captions "fbns" "FOLDER-LEVEL NOTE" }}
+          addTag('Folder note', '' + {{ .note }});
+        {{ end }}
 
         // we are done, so short-circuit the loop:
         i = bothImgElements.length;
@@ -71,8 +81,6 @@ const showCaption = function() {
     }, 2000);
 
   }
-  console.log(`[${new Date().toISOString()}] ` 
-      + theFileName + " " + width + "x" + height);
 }
 
 document.addEventListener('keydown', function (e) {
@@ -81,9 +89,9 @@ document.addEventListener('keydown', function (e) {
     case 'ArrowDown':
       showCaption();
       break;
-  //  case 'Escape':
-  //    console.log(`[${new Date().toISOString()}] whatever`);
-  //    break;
+//     case 'Escape':
+//        console.log(`[${new Date().toISOString()}] whatever`);
+//        break;
   }
 });
 
@@ -104,3 +112,4 @@ document.addEventListener('keydown', function (e) {
 //}
 
 </script>
+{{ end }}
