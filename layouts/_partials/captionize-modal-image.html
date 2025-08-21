@@ -8,8 +8,16 @@
 const captionsSheet = {{ $sdinc }};
 let captionTimeoutId;
 
-function hasMatchingFileBaseNameStem(someElement) {
-  return someElement.fbns == this; // fileBaseNameStem;
+function isTableWithMatchingId(someThing) {
+  return someThing.kludgetableid == this;
+}
+
+function isElementWithMatchingDirName(someThing) {
+  return someThing.dirname == this;
+}
+
+function isImageWithMatchingFbns(someElement) {
+  return someElement.fbns == this;
 }
 
 const showCaption = function() {
@@ -62,13 +70,14 @@ const showCaption = function() {
         // addTag('Example 1', '' + DBL_CURLIEZ site.Params.gallerydeluxe.foobar DBL_CURLIEZ);
         // addTag('Example 2', DBL_CURLIEZ (site.GetPage "galleries/annotated").Params.apple DBL_CURLIEZ);
 
-        addTag('Caption', captionsSheet.find(hasMatchingFileBaseNameStem, theFileBaseNameStem).caption);
-        addTag('Credits', captionsSheet.find(hasMatchingFileBaseNameStem, theFileBaseNameStem).credit);
+// returns {"kludgetableid":"links","planks":"pine"}
+//        addTag('Sandbox', JSON.stringify(captionsSheet.find(isTableWithMatchingId, "links")));
 
-        addTag('Folder size', {{ site.Data.imagenotes.captions | len }});
-        {{ range where site.Data.imagenotes.captions "fbns" "FOLDER-LEVEL NOTE" }}
-          addTag('Folder note', '' + {{ .note }});
-        {{ end }}
+        addTag('Comment', captionsSheet.find(isTableWithMatchingId, "dirs").comment);
+
+        addTag('Dir Credit', captionsSheet.find(isTableWithMatchingId, "dirs").galleries.find(isElementWithMatchingDirName, "wpa-fedart").dircredit);
+
+        addTag('Caption', captionsSheet.find(isTableWithMatchingId, "dirs").galleries.find(isElementWithMatchingDirName, "wpa-fedart").pix.find(isImageWithMatchingFbns, theFileBaseNameStem).caption);
 
         // we are done, so short-circuit the loop:
         i = bothImgElements.length;

@@ -1,0 +1,45 @@
+[linkzzz]
+kludgetableid = "links"
+planks = "pine"
+
+[dirzzz]
+kludgetableid = "dirs"
+comment = "This is under dirs or dirzzz."
+
+[[dirzzz.galleries]]
+dirname = "annotated"
+
+[[dirzzz.galleries]]
+dirname = "wpa-fedart"
+dircredit = "WPA Poster Division of the Federal Art Project (1935-1943)"
+dirlicense = "This image is a work of a Works Progress Administration employee, taken or made as part of that person’s official duties. As a work of the U.S. federal government, the image is in the public domain (17 U.S.C. §§ 101 and 105)."
+
+[[dirzzz.galleries.pix]]
+fbns = "Obey_Traffic_Lights_North_Hampton"
+caption = "Obey Traffic Lights. by Joan Norton Age 6 Grade 1 Center School North Hampton NH. First Special Prize."
+archive = "The Wolfsonian – FIU"
+
+[[dirzzz.galleries.pix]]
+fbns = "Old_Toys_Re-Union_Hartford"
+caption = "Old toys re-union! You round ’em up and we’ll fix ’em like new to make toy-less kids happy …"
+archive = "The Wolfsonian – FIU"
+
+[[dirzzz.galleries.pix]]
+fbns = "WPA_Educational_Project_Free_Sewing_Classes_Connecticut"
+caption = "WPA Educational Project - Free Sewing Classes - A Conn. WPA Poster"
+archive = "The Wolfsonian – FIU"
+
+[[dirzzz.galleries.pix]]
+fbns = "American_Artists_Congress_Exhibition_NYC"
+caption = "American Artists Congress - Exhibition - April 16-29 - Mezzanine Galleries - International Building - Rockefeller Center"
+archive = "The Wolfsonian – FIU"
+
+[[dirzzz.galleries.pix]]
+fbns = "Guide_To_The_Show_Places_NYC"
+caption = "New York Panorama - 526 Pages - End Paper Map - 100 Pages Of Photographs - New YorkCOLON A Guide To The Show Places Of The World’s Greatest Metropolis - By Federal Writers’ Project of New York City - 110 King Street - Works Progress Administration - American Guide Series"
+archive = "The Wolfsonian – FIU"
+
+[[dirzzz.galleries.pix]]
+fbns = "Hundreds_Are_Receiving_Free_Instruction_NYC"
+caption = "Hundreds Are Receiving Free Instruction in Painting - Drawing - Sculpture - Metal Craft - Queensboro Community Art Center - 136-76 Roosevelt Avenue, Flushing, L.I. - Federal Art Project - Works Progress Administration - 235 East 42 St. N.Y.C."
+archive = "The Wolfsonian – FIU"
