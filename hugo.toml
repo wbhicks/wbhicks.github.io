@@ -1,16 +1,15 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-sectionPagesMenu = 'main'
+title = 'This title will be overridden'
 
 [taxonomies]
     category = 'categories'
 
 [params]
     [params.author]
-        name        = "Authorz Name"
-        email       = "Authorz Email"
-        description = "Authorz Desc"
+        name        = "William Hicks"
+        email       = "TBD Author Email"
+        description = "TBD Author Desc"
 
     [params.galleriesdeluxe]
         # One of dartsass or libsass.

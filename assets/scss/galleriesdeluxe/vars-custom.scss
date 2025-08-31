@@ -70,3 +70,20 @@ hr {
   opacity: 1;
   cursor: pointer;
 }
+
+ul, ol {
+    list-style-position: inside; /* or 'outside' */
+    padding-left: 20px; /* Adjust padding for proper alignment */
+}
+
+body main li {
+  list-style-type: square;
+}
+
+body main ul > li > ul > li {
+  list-style-type: circle;
+}
+
+body main ul > li > ul > li > ul > li {
+  list-style-type: disc;
+}

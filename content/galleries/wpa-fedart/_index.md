@@ -1,5 +1,8 @@
 ---
 title: WPA Fed Art Proj
+menus:
+  voluntary:
+    parent: Galleries
 categories: [travel,tech,foo,bar,baz]
 date: 2019-01-01
 ---

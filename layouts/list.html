@@ -1,6 +1,7 @@
 {{ define "main" }}
-  «LList1»
 
+  {{ partial "menu.html" (dict "menuID" "voluntary" "page" .) }}
+  list-div»
   <div class="galleries">
     {{ $pages := .Pages }}
     {{ if .IsHome }}
@@ -24,16 +25,10 @@
             <h2>
               <a href="{{ .page.RelPermalink }}">{{ .page.LinkTitle }}</a>
             </h2>
-            <p>
-              {{ .page.Summary }}
-            </p>
           </div>
         </div>
       {{ end }}
     {{ end }}
   </div>
-
-  «LList8»
-  {{ partial "rough-menu.html" (dict "menuID" "main" "list" .) }}
-  «LList9»
+  «list-div
 {{ end }}

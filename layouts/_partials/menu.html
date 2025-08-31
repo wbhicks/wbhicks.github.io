@@ -1,29 +1,15 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
-
-<ul>
-  {{ range site.Menus.main.ByName }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-  {{ end }}
-</ul>
-
-
-
-
-
-
 {{- with index site.Menus $menuID }}
-  rm»
   <nav>
     <ul>
-      {{- partial "inline/rough-menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>
-  «rm
 {{- end }}
 
-{{- define "_partials/inline/rough-menu/walk.html" }}
+{{- define "_partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}
     {{- $attrs := dict "href" .URL }}
@@ -48,7 +34,7 @@
       >{{ $name }}</a>
       {{- with .Children }}
         <ul>
-          {{- partial "inline/rough-menu/walk.html" (dict "page" $page "menuEntries" .) }}
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
       {{- end }}
     </li>

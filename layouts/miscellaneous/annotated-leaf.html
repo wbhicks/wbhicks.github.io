@@ -1,0 +1,18 @@
+{{ define "main" }}
+«annotated-leaf 1»
+  <h2>Publication date: {{ .PublishDate.Format "2006 Jan 02 Mon" }}</h2>
+  {{ partial "list-gallery-annotated.html" . }}
+  {{ .Content }}
+«annotated-leaf 2»
+    <table>
+        {{ range $key, $value := .Params }}
+            {{ printf "<tr><td>%#v</td><td>%#v</td></tr>" $key $value | safeHTML }}
+        {{ end }}
+    </table>
+«annotated-leaf 3»
+{{ end }}
+{{ define "head-custom" }}
+«annotated-leaf 8»
+  {{ partial "gallerydeluxe/head.html" . }}
+«annotated-leaf 9»
+{{ end }}

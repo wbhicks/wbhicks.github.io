@@ -1,0 +1,24 @@
+{{ define "main" }}
+«annotated-nonleaf 4»
+  {{ partial "list-gallery-annotated.html" . }}
+«annotated-nonleaf 5»
+  {{ .Content }}
+«annotated-nonleaf 6»
+
+  {{ $collection1 := .RegularPages }}
+  {{ $collection2 := .Sections }}
+  {{ $combined := $collection1 | append $collection2 }}
+  {{ range $combined }}
+    <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+    <h3>{{ .Summary }}</a></h3>
+  {{ end }}
+
+«annotated-nonleaf 6.5»
+  {{ partial "sections-tree.html" . }}
+«annotated-nonleaf 7»
+{{ end }}
+{{ define "head-custom" }}
+«annotated-nonleaf 8»
+  {{ partial "gallerydeluxe/head.html" . }}
+«annotated-nonleaf 9»
+{{ end }}

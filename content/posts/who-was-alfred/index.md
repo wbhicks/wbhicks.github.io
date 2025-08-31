@@ -1,6 +1,9 @@
 ---
 title: Who Was Alfred
 linkTitle: Who Was Alfred
+menus:
+  voluntary:
+    parent: Posts
 summary: He rocked.
 categories: [foo,bar,blah]
 date: 2019-07-01

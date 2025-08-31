@@ -1,5 +1,5 @@
 {{ define "main" }}
-  «LGaSec1»
+  «LGaSec1»QQQQQQQQQQQQQQQQQQQQQQQQQQQ
 
   <div class="galleries">
     {{ $pages := .Pages }}
@@ -38,6 +38,10 @@
   </div>
 
   «LGaSec8»
-  {{ partial "rough-menu.html" (dict "menuID" "main" "list" .) }}
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+    <hr/>
+  {{ end }}
   «LGaSec9»
 {{ end }}

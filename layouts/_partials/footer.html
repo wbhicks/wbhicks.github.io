@@ -1,0 +1,33 @@
+<div>
+<div style="padding: 1rem;">
+
+Copyright And License Notice:
+
+<br/><br/>
+
+&copy; {{ now.Year }}
+{{ with site.Params.author }}
+  {{ if and .name .email }}
+    <a href="mailto:{{ .email }}">{{ .name }}</a>.
+  {{ else }}
+    {{ .name }}.
+  {{ end }}
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, available at <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 License</a>. All of the original content by {{ .name }} in this work is licensed under the above grant.
+
+<br/><br/>
+
+Rights held by others may impact your ability to reuse the portions of this work not covered under the above grant. In particular, quotations of third-party content, because they are not original content by {{ .name }}, are therefore not covered under the above grant.
+
+<br/><br/>
+
+You may have other rights to reuse this work. For example, as the Creative Commons organization says, &quot;CC licenses do not reduce, limit, or restrict any rights under exceptions and limitations to copyright, such as fair use or fair dealing. If your use of CC-licensed material would otherwise be allowed because of an applicable exception or limitation, you do not need to rely on the CC license or comply with its terms and conditions.&quot; (<a href="https://creativecommons.org/faq/">CC FAQ</a>). Information about your rights to Wikipedia content reprinted in this work is available at <a href="https://en.wikipedia.org/wiki/Wikipedia:Copyrights">WP Copyrights</a>.
+
+{{ end }}
+
+<br/><br/>
+
+Powered by <a class="mt" href="https://github.com/bep/galleriesdeluxe">Galleries Deluxe</a>.
+
+</div>
+</div>

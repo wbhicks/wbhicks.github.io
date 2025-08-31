@@ -1,5 +1,8 @@
 ---
-title: Aboot
+title: About
+menus:
+  voluntary:
+    parent: Home
 layout: about
 ---
 
