@@ -1,42 +1,6 @@
 {{ define "main" }}
-  «LGaSec1»QQQQQQQQQQQQQQQQQQQQQQQQQQQ
-
-  <div class="galleries">
-    {{ $pages := .Pages }}
-    {{ if .IsHome }}
-      {{ with site.GetPage "galleries" }}
-        {{ $pages = .RegularPagesRecursive }}
-      {{ end }}
-    {{ end }}
-
-    «LGaSec2»
-    {{ range $pages }}
-      {{ with partial "galleriesdeluxe/get-gallery.html" . }}
-        <div class="card">Z
-          <a class="card-img" href="{{ .page.RelPermalink }}">
-            <img
-              src="{{ .thumb.RelPermalink }}"
-              alt="{{ .thumb.Name }}"
-              class=""
-              width="{{ .thumb.Width }}"
-              height="{{ .thumb.Height }}" />
-            <span class="num-photos">{{ .images | len }} {{ T "photo" ( .images | len) }}</span>
-          </a>
-          <div class="body">
-            <h2>
-              <a href="{{ .page.RelPermalink }}">{{ .page.LinkTitle }}</a>
-            </h2>
-            <p>
-              {{ .page.Summary }}
-            </p>
-          </div>
-        </div>
-      {{ end }}
-    {{ end }}
-    «LGaSec7»
-
-  </div>
-
+  «LGaSec1»
+  {{ partial "cards-of-galleries.html" . }}
   «LGaSec8»
   {{ range .Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>

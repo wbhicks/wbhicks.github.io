@@ -3,7 +3,10 @@ type = 'miscellaneous'
 layout = 'annotated-leaf'
 
 title = "A dinkus composed of fleuron and lines."
-menus = 'voluntary'
+
+[menus]
+  [menus.voluntary]
+    parent = 'Annotated'
 
 image = "fleuron_within_dinkus_wp_960x888.jpg"
 date = "2025-06-21"

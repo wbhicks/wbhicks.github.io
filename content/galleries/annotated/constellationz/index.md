@@ -3,7 +3,10 @@ type = 'miscellaneous'
 layout = 'annotated-leaf'
 
 title = "A dinkus composed of asterisks."
-menus = 'voluntary'
+
+[menus]
+  [menus.voluntary]
+    parent = 'Annotated'
 
 image = "dinkus_from_alice_in_wonderland_wp_330x503.jpg"
 date = "2025-06-21"

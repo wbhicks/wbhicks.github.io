@@ -3,7 +3,10 @@ type = 'miscellaneous'
 layout = 'annotated-leaf'
 
 title = "Chesapeake Bay oyster boats shooting, 1886."
-menus = 'voluntary'
+
+[menus]
+  [menus.voluntary]
+    parent = 'Annotated'
 
 image = "chesapeake_oyster_wars_wp.jpeg"
 date = "2025-06-21"

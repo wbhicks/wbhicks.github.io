@@ -1,5 +1,5 @@
 ---
-title: WPA Fed Art Proj
+title: WpaFedArtProj
 menus:
   voluntary:
     parent: Galleries

@@ -3,7 +3,10 @@ type = 'miscellaneous'
 layout = 'annotated-leaf'
 
 title = "A page from Kvennafræðarinn [The Female Teacher] by Elín Briem, showing a bookbinding signature mark."
-menus = 'voluntary'
+
+[menus]
+  [menus.voluntary]
+    parent = 'Annotated'
 
 image = "signature_mark_wp_330x620.png"
 date = "2025-06-21"
