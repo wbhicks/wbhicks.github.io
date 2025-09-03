@@ -1,9 +1,15 @@
-$color_text_dark: #321 !default;
-$color_text_light: #ff7f00 !default;
-$color_primary: #0a0 !default;
-$color_secondary: #222 !default;
-$color_background: $color_secondary !default;
-$color_background_footer: darken($color_secondary, 3%) !default;
+// In Galleries Deluxe, color_primary is #3a98b9
+$color_primary: #ccae8f;
+$color_background: #0c0c0c;
+$color_background_footer: #000; // darken(#111, 3%);
+
+// The lightness of color_background
+// determines which of these two is used:
+
+$color-text_dark: #000;
+$color-text_light: #ccc2b8;
+
+// - - - - - - - - - - - -
 
 $font_family_serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !default;
 
@@ -25,6 +31,24 @@ body.serif-mode, body.serif-mode main * {
 
 body.sans-mode, body.sans-mode main * {
   @include serif-or-sans($the-toggle: false);
+}
+
+@mixin qa-or-dev($the-toggle: true) {
+  @if $the-toggle {
+    a              { color: #f00; } // else color_primary
+    .galleries a   { color: #00f; } // else color_primary
+    .markdown-body { color: #0ff; } // else color-text_ ...
+    h1, h2, h3     { color: #0f0; } // else color-text_ ...
+    p              { color: #ff0; } // else color-text_ ...
+  }
+}
+
+body.qa-mode, body.qa-mode main * {
+  @include qa-or-dev($the-toggle: true);
+}
+
+body.dev-mode, body.dev-mode main * {
+  @include qa-or-dev($the-toggle: false);
 }
 
 body main h1 {

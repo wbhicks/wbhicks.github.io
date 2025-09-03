@@ -1,11 +1,10 @@
 {{ define "main" }}
-  «LGaSec1»
+  gal-sec-CoG»
   {{ partial "cards-of-galleries.html" . }}
-  «LGaSec8»
+  «gal-sec-CoG
   {{ range .Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
     <hr/>
   {{ end }}
-  «LGaSec9»
 {{ end }}
