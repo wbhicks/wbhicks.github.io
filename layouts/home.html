@@ -1,0 +1,4 @@
+{{ define "main" }}
+  {{ partial "flex-menu.html" (dict "menuID" "voluntary" "page" . "theShownPage" .) }}
+  {{ partial "cards-of-galleries.html" . }}
+{{ end }}

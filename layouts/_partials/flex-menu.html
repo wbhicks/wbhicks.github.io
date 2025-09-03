@@ -1,16 +1,18 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
+{{- $theShownPage := .theShownPage }}
 
 {{- with index site.Menus $menuID }}
   <nav>
     <ul>
-      {{- partial "inline/flex-menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      {{- partial "inline/flex-menu/walk.html" (dict "page" $page "menuEntries" . "theShownPage" $theShownPage) }}
     </ul>
   </nav>
 {{- end }}
 
 {{- define "_partials/inline/flex-menu/walk.html" }}
   {{- $page := .page }}
+  {{- $theShownPage := .theShownPage }}
   {{- range .menuEntries }}
     {{- $attrs := dict "href" .URL }}
     {{- if $page.IsMenuCurrent .Menu . }}
@@ -25,16 +27,16 @@
       {{- end }}
     {{- end }}
     <li>
-      <a
+      {{ .Pre }}<a
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
-      >{{ $name }}</a>
+      >{{ $name }}</a>{{ .Post }}{{ if (eq $theShownPage.LinkTitle .Name) }}&nbsp;&lt;---{{ end }}
       {{- with .Children }}
         <ul>
-          {{- partial "inline/flex-menu/walk.html" (dict "page" $page "menuEntries" .) }}
+          {{- partial "inline/flex-menu/walk.html" (dict "page" $page "menuEntries" . "theShownPage" $theShownPage) }}
         </ul>
       {{- end }}
     </li>

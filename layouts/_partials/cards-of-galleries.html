@@ -2,7 +2,7 @@
   {{ $pages := .Pages }}
   {{ if .IsHome }}
     {{ with site.GetPage "galleries" }}
-      {{ $pages = .RegularPagesRecursive }}
+      {{ $pages = .Pages }} <!-- FOR ALL DESCENDANTS: RegularPagesRecursive -->
     {{ end }}
   {{ end }}
   {{ range $pages }}
@@ -21,9 +21,7 @@
           <h2>
             <a href="{{ .page.RelPermalink }}">{{ .page.LinkTitle }}</a>
           </h2>
-          <p>
-            {{ .page.Summary }}
-          </p>
+          <!-- 2_CURLIES .page.Summary 2_CURLIES -->
         </div>
       </div>
     {{ end }}

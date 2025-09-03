@@ -1,5 +1,6 @@
 ---
-title: About
+title: About Etc.
+linkTitle: About
 menus:
   voluntary:
     parent: Home
