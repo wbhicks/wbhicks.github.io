@@ -1,0 +1,6 @@
+{{ define "main" }}
+  <span class="design-hint">toc.html»</span>
+  {{ partial "flex-menu.html" (dict "menuID" "voluntary" "page" . "theShownPage" .) }}
+  {{ .Content }}
+  <span class="design-hint">«toc.html</span>
+{{ end }}

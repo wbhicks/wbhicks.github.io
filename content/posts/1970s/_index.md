@@ -1,6 +1,7 @@
 ---
 title: 1970s
 linkTitle: 1970s
+weight: 4
 menus:
   voluntary:
     parent: Posts

@@ -1,6 +1,6 @@
 ---
 title: WPA Fed Art Proj - New England
-categories: [travel,tech,foo,bar]
+categories: [health,money,travel,tech]
 date: 2020-01-01
 ---
 

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travel, Day Trips &amp; Vacation on This title will be overridden</title>
+    <link>http://localhost:1313/categories/travel/</link>
+    <description>Recent content in Travel, Day Trips &amp; Vacation on This title will be overridden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>TBD Author Email (William Hicks)</managingEditor>
+    <webMaster>TBD Author Email (William Hicks)</webMaster>
+    <lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Who Was Alfred</title>
+      <link>http://localhost:1313/posts/who-was-alfred/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><author>TBD Author Email (William Hicks)</author>
+      <guid>http://localhost:1313/posts/who-was-alfred/</guid>
+      <description>He rocked.</description>
+    </item>
+    <item>
+      <title>Who Was Bertha</title>
+      <link>http://localhost:1313/posts/who-was-bertha/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate><author>TBD Author Email (William Hicks)</author>
+      <guid>http://localhost:1313/posts/who-was-bertha/</guid>
+      <description>&lt;p&gt;Bertha was a namesake. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, at vero eos et accusam et justo duo dolores, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Who Was Hugo</title>
+      <link>http://localhost:1313/posts/who-was-hugo/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate><author>TBD Author Email (William Hicks)</author>
+      <guid>http://localhost:1313/posts/who-was-hugo/</guid>
+      <description>&lt;p&gt;Hugo was a namesake. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, at vero eos et accusam et justo duo dolores, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WPA Fed Art Proj Phila</title>
+      <link>http://localhost:1313/galleries/wpa-fedart/wpa-fedart-philadelphia/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><author>TBD Author Email (William Hicks)</author>
+      <guid>http://localhost:1313/galleries/wpa-fedart/wpa-fedart-philadelphia/</guid>
+      <description>&lt;p&gt;Posters from the Federal Art Project of the WPA from Philadelphia.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WPA Fed Art Proj NYC</title>
+      <link>http://localhost:1313/galleries/wpa-fedart/wpa-fedart-nyc/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><author>TBD Author Email (William Hicks)</author>
+      <guid>http://localhost:1313/galleries/wpa-fedart/wpa-fedart-nyc/</guid>
+      <description>&lt;p&gt;Posters from the Federal Art Project of the WPA from NYC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WPA Fed Art Proj - New England</title>
+      <link>http://localhost:1313/galleries/wpa-fedart/wpa-fedart-new-england/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><author>TBD Author Email (William Hicks)</author>
+      <guid>http://localhost:1313/galleries/wpa-fedart/wpa-fedart-new-england/</guid>
+      <description>&lt;p&gt;Posters from the Federal Art Project of the WPA from New England.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WpaFedArtProj</title>
+      <link>http://localhost:1313/galleries/wpa-fedart/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><author>TBD Author Email (William Hicks)</author>
+      <guid>http://localhost:1313/galleries/wpa-fedart/</guid>
+      <description>&lt;p&gt;Posters from the Federal Art Project of the WPA. There are 3 sets: Philadelphia, NYC, and New England.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

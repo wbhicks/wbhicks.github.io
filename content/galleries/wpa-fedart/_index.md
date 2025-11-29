@@ -3,7 +3,7 @@ title: WpaFedArtProj
 menus:
   voluntary:
     parent: Galleries
-categories: [travel,tech,foo,bar,baz]
+categories: [health,money,travel,tech]
 date: 2019-01-01
 ---
 

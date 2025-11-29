@@ -1,24 +1,63 @@
 <header>
-{{ partial "toggle.html" }}
+  {{ partial "toggle.html" }}
   <hr/>
-  <h1>{{ .Title }}</h1>
   <div>
-    {{ if .IsHome }}
-      head-home»
-      {{ $pages := slice (site.GetPage "categories") }}
-      {{ with site.GetPage "about" }}
-        {{ $pages = $pages | append . }}
-      {{ end }}
-      <ul>
-        {{ range $pages }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-          </li>
+{{- /*
+    {{ if or 
+        .IsHome 
+        (eq .LinkTitle "Contents") 
+        (eq .LinkTitle "About") 
+        (eq .LinkTitle "Categories")
+    }}
+*/ -}}
+    {{ $linkTitleOfThisPage := .LinkTitle }}
+    {{ if or 
+        (eq $linkTitleOfThisPage "Home") 
+        (eq $linkTitleOfThisPage "Contents") 
+        (eq $linkTitleOfThisPage "About") 
+        (eq $linkTitleOfThisPage "Categories")
+    }}
+      <span class="design-hint">h1»</span>
+        <h1>{{ .Title }}</h1>
+        {{ $pages := slice (site.GetPage "home") }}
+        {{ with site.GetPage "about" }}
+          {{ $pages = $pages | append . }}
         {{ end }}
-      </ul>
-      «head-home
+        {{ with site.GetPage "table-of-contents" }}
+          {{ $pages = $pages | append . }}
+        {{ end }}
+        {{ with site.GetPage "categories" }}
+          {{ $pages = $pages | append . }}
+        {{ end }}
+        <ul>
+          {{ range $pages }}
+            <li>
+              {{ if eq .LinkTitle $linkTitleOfThisPage }}
+                <span class="design-hint">{{ .LinkTitle }}</span>
+              {{ else }}
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      <span class="design-hint">«h1</span>
     {{ else }}
-      head-else»
+      he»
+      <span>
+        {{ .PublishDate.Format "2006 Jan 02 Mon" }}
+        {{with .NextInSection}}
+          Previous: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+        {{end}}
+        {{with .PrevInSection}}
+          Next: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+        {{end}}
+        {{with .Parent}}
+          Up: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>
+        {{end}}
+        &nbsp; [Contents?][Index?]
+      </span>
+      <hr/>
+      <h1>{{ .Weight }}. {{ .Title }}</h1>
       {{ $categories := .GetTerms "categories" }}
       <ul>
         <li>
@@ -36,7 +75,7 @@
           <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
       </ul>
-      «head-else
+      «he
     {{ end }}
   </div>
 </header>

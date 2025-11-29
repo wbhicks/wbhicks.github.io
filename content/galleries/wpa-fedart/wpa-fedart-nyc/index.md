@@ -1,6 +1,6 @@
 ---
 title: WPA Fed Art Proj NYC
-categories: [travel,tech,foo,baz]
+categories: [health,money,travel,tech]
 date: 2021-01-01
 ---
 

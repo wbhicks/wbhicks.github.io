@@ -17,8 +17,8 @@ $font_family_sans_serif: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "De
 
 $font_family_base: $font_family_sans_serif !default;
 
-@mixin serif-or-sans($the-toggle: true) {
-  @if $the-toggle {
+@mixin serif-or-sans($the-serif-toggle: true) {
+  @if $the-serif-toggle {
     font-family: $font_family_sans_serif;
   } @else {
     font-family: $font_family_serif;
@@ -26,29 +26,32 @@ $font_family_base: $font_family_sans_serif !default;
 }
 
 body.serif-mode, body.serif-mode main * {
-  @include serif-or-sans($the-toggle: true);
+  @include serif-or-sans($the-serif-toggle: true);
 }
 
 body.sans-mode, body.sans-mode main * {
-  @include serif-or-sans($the-toggle: false);
+  @include serif-or-sans($the-serif-toggle: false);
 }
 
-@mixin qa-or-dev($the-toggle: true) {
-  @if $the-toggle {
+@mixin qa-or-dev($the-color-toggle: true) {
+  @if $the-color-toggle {
     a              { color: #f00; } // else color_primary
     .galleries a   { color: #00f; } // else color_primary
     .markdown-body { color: #0ff; } // else color-text_ ...
     h1, h2, h3     { color: #0f0; } // else color-text_ ...
     p              { color: #ff0; } // else color-text_ ...
+    .design-hint   { color: #f0f; }
+  } @else {
+    .design-hint   { color: #222; }
   }
 }
 
 body.qa-mode, body.qa-mode main * {
-  @include qa-or-dev($the-toggle: true);
+  @include qa-or-dev($the-color-toggle: true);
 }
 
 body.dev-mode, body.dev-mode main * {
-  @include qa-or-dev($the-toggle: false);
+  @include qa-or-dev($the-color-toggle: false);
 }
 
 body main h1 {
@@ -114,4 +117,8 @@ body main ul > li > ul > li > ul > li {
 
 body main ul > li > ul > li > ul > li > ul > li {
   list-style-type: circle;
+}
+
+p {
+  margin-bottom: 2em; /* Adjust the value to control the blank space after each paragraph */
 }

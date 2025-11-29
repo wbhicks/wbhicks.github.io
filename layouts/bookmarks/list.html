@@ -1,3 +1,4 @@
-{{ define "main" }}BOOKLIST
+{{ define "main" }}
   {{ partial "flex-menu.html" (dict "menuID" "voluntary" "page" . "theShownPage" .) }}
+  {{ .Content }}
 {{ end }}

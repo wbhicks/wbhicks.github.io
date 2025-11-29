@@ -1,6 +1,6 @@
 ---
 title: WPA Fed Art Proj Phila
-categories: [travel,tech,bar,baz]
+categories: [health,money,travel,tech]
 date: 2022-01-01
 ---
 

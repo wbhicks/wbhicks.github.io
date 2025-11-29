@@ -1,0 +1,30 @@
+{{ define "main" }}
+bkmks-leaf»
+  {{ $allText := .Content }}
+  {{ $allText = replaceRE `<h1 id="(.+)">(.+)</h1>` `<pre>
+
+
+    -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
+       |    *         *    |    *         *    |    *         *    |
+          *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+
+
+</pre>
+<h1 id="$1">$2</h1>` $allText }}
+
+  {{ $regexp1 := `(=&gt; <a href="https://en.wi)ki` }}
+  {{ $matches := findRE $regexp1 $allText }}
+  {{ range $matches }}
+    {{ $allText = replaceRE . "<br/><br/>ooooo xxxxxxxx" $allText }}
+  {{ end }}
+
+  {{ $regexp2 := `foofoo` }}
+  {{ $matches2 := findRE $regexp2 $allText }}
+  {{ range $matches2 }}
+      {{ $allText = replaceRE . "feefee" $allText }}
+  {{ end }}
+
+  {{/* $c = replaceRE "a" "b" $c */}}
+  {{ $allText  | safeHTML }}
+«bkmks-leaf
+{{ end }}

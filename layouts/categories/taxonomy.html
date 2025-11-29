@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Data.Terms.Alphabetical }}
+    <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a></h2>
+    <p>Catchphrase: {{ .Page.Params.Catchphrase }}</p>
+    {{ with .Page.Resources.Get "thumbnail.png" }}
+        <img src="{{ .RelPermalink }}" style="width: 80px; height: 80px;">
+    {{ end }}
+  {{ end }}
+  +-+-+-+-+
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ end }}
+{{ end }}
