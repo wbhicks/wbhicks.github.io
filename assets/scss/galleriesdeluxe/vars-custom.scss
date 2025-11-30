@@ -15,14 +15,15 @@ $font_family_serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !
 
 $font_family_sans_serif: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif !default;
 
-$font_family_base: $font_family_sans_serif !default;
+$font_family_base: $font_family_serif !default;
 
 @mixin serif-or-sans($the-serif-toggle: true) {
   @if $the-serif-toggle {
     font-family: $font_family_sans_serif;
-  } @else {
-    font-family: $font_family_serif;
-  }
+  } 
+  // @else {
+  //  font-family: $font_family_serif;
+  // }
 }
 
 body.serif-mode, body.serif-mode main * {
@@ -41,8 +42,6 @@ body.sans-mode, body.sans-mode main * {
     h1, h2, h3     { color: #0f0; } // else color-text_ ...
     p              { color: #ff0; } // else color-text_ ...
     .design-hint   { color: #f0f; }
-  } @else {
-    .design-hint   { color: #222; }
   }
 }
 
@@ -121,4 +120,8 @@ body main ul > li > ul > li > ul > li > ul > li {
 
 p {
   margin-bottom: 2em; /* Adjust the value to control the blank space after each paragraph */
+}
+
+.design-hint {
+  color: #222; 
 }

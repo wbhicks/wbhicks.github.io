@@ -1,6 +1,9 @@
-<div class="js-toggle-wrapper">
-Serif
+<div class="js-toggle-overall">
+
+    Serif
+
     <div class="js-toggle-font">
+
         <div class="js-toggle-track">
             <div class="js-toggle-track-check">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAABdElEQVRIDWNgGOqAEeaBZ8+eGf/9+/cMjE8JzczMbCIlJXUWZAYTzCBqGQ4yD9ksFpgFMFpWVhbuK5gYKfTjx4//I6uH+wBZkJpskiwAuQ7dhYQcQ7QF+/fvhwcnMEGIEDIYJk+0BcrKykthmoCRuA3GJkQTbQHQoGdIhpkisfEyibLg/v37GnJycoXIJj158sQZmY+LTZQFwIyzGWrAIZhB////3whj46OJsgBoQAnIEA4Ojkgkw7iR2DiZBC0AJstkYKR+BAaTw5cvX9SQTQIGUyUyHxsbnvSwSULFihQVFbVh8o8ePTrMyMhoC+IDg6kNSLXD5LDReH0ANIDxz58/3sgagb4JQ+ZfvXqVDZmPzsZrwdOnT+cBXf8AWROQ/wKZLyAgsAKZj87GacG9e/fUgT5QANHImkB8YBCdgIn9+/cvEF0NTA6FJqecQTEAykE3B6cPsGkmRwwjFZFaWhKyFO4DUDVHSDGx8tQ0i1g7aacOADF8guDIe4JfAAAAAElFTkSuQmCC" role="presentation" style="pointer-events: none;" width="16" height="16">
@@ -11,21 +14,13 @@ Serif
         </div>
         <div class="js-toggle-thumb"></div>
         <input class="js-toggle-screenreader-only" type="checkbox" aria-label="Switch between Dark and Light mode">
+
     </div>
-
-
-
-
-
 
 <span>&nbsp;Sans &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QA&nbsp;</span>
 
-
-
-
-
-
     <div class="js-toggle-brightness">
+
         <div class="js-toggle-track">
             <div class="js-toggle-track-check">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAABS0lEQVRIDe1TMXLCQAz02YbhE/YLKCjyDBpa2vT5S/o8goY3+AH8wHbhDzCZyUHMyvHeyHAmRzIDDTdzlk5araTTOYqe69E3YEIKqKqqDcERk2WZ401pFAmid4g3bYN+E/lZbNQlaNvW1HX9fe7sz64aXZkP6+s0FqAxRle5FyJu+BYkA8EX9VDpqpMAXwWsuiefAGZhm/oSMJ4xguk6IFg7aKPsSS3Ok1s6GSQQMkmiEzVNM8eMZmVZfgi5YLCCk1wk+Invvkf5Wmt3eACfmMWrnJFsJWbsoCSjCdBFGsfxGkQVdreKokjzPN/89brIcyFleBygdsostN2HG/xoOjhE7zu5Ch1NoCsjg88mPv0oiKUcnQEB/5WjHZD4WnXsCC8rETxeG8Oc/DUBSVyERwHxQZm3Sh/+ydqRJMmLPgfqW3S8DMQ+YXe6gROeqYYgTXzPzgAAAABJRU5ErkJggg==" role="presentation" style="pointer-events: none;" width="16" height="16">
@@ -36,8 +31,11 @@ Serif
         </div>
         <div class="js-toggle-thumb"></div>
         <input class="js-toggle-screenreader-only" type="checkbox" aria-label="Switch between Dark and Light mode">
+
     </div>
-Dev
+
+    Dev
+
 </div>
 
 <style>
@@ -49,7 +47,7 @@ Dev
    * MIT License
   **/
 
-.js-toggle-wrapper {
+.js-toggle-overall {
     display: table;
     margin: 0 auto;
 }
@@ -190,11 +188,43 @@ Dev
   }
 </style>
 
+
+<script>
+var body = document.body;
+var switcher = document.getElementsByClassName('js-toggle-brightness')[0];
+// Click on dark mode icon. Add dark mode classes and wrappers. Store user preference through sessions
+switcher.addEventListener("click", function() {
+  this.classList.toggle('js-toggle-brightness--checked');
+  this.classList.add('js-toggle-brightness--focus');
+  //If dark mode is selected
+  if (this.classList.contains('js-toggle-brightness--checked')) {
+    body.classList.remove('dev-mode');
+    body.classList.add('qa-mode');
+    // Save user preference in storage
+    // localStorage.setItem('liteMode', 'false');
+    localStorage.setItem('darkMode', 'true');
+  } else {
+    body.classList.remove('qa-mode');
+    body.classList.add('dev-mode');
+    setTimeout(function() {
+      localStorage.removeItem('darkMode');
+    }, 100);
+  }
+})
+// Check Storage. Keep user preference on page reload
+if (localStorage.getItem('darkMode')) {
+  // body.classList.add('qa-mode');
+  switcher.classList.add('js-toggle-brightness--checked');
+  body.classList.remove('dev-mode');
+  body.classList.add('qa-mode');
+}
+</script>
+
+
 <script>
 var body = document.body;
 var switcher = document.getElementsByClassName('js-toggle-font')[0];
-// Click on dark mode icon. Add dark mode classes and 
-// wrappers. Store user preference through sessions
+// Click on dark mode icon. Add dark mode classes and wrappers. Store user preference through sessions
 switcher.addEventListener("click", function() {
   this.classList.toggle('js-toggle-font--checked');
   this.classList.add('js-toggle-font--focus');
@@ -222,34 +252,3 @@ if (localStorage.getItem('serifMode')) {
 }
 </script>
 
-<script>
-var body = document.body;
-var switcher = document.getElementsByClassName('js-toggle-brightness')[0];
-// Click on dark mode icon. Add dark mode classes and 
-// wrappers. Store user preference through sessions
-switcher.addEventListener("click", function() {
-  this.classList.toggle('js-toggle-brightness--checked');
-  this.classList.add('js-toggle-brightness--focus');
-  //If dark mode is selected
-  if (this.classList.contains('js-toggle-brightness--checked')) {
-    body.classList.remove('dev-mode');
-    body.classList.add('qa-mode');
-    // Save user preference in storage
-    // localStorage.setItem('liteMode', 'false');
-    localStorage.setItem('darkMode', 'true');
-  } else {
-    body.classList.remove('qa-mode');
-    body.classList.add('dev-mode');
-    setTimeout(function() {
-      localStorage.removeItem('darkMode');
-    }, 100);
-  }
-})
-// Check Storage. Keep user preference on page reload
-if (localStorage.getItem('darkMode')) {
-  // body.classList.add('qa-mode');
-  switcher.classList.add('js-toggle-brightness--checked');
-  body.classList.remove('dev-mode');
-  body.classList.add('qa-mode');
-}
-</script>
