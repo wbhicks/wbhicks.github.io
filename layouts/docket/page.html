@@ -1,0 +1,81 @@
+{{ define "main" }}
+  <span class="design-hint">dp»</span>
+  {{ $allText := .Content }}
+{{- /*
+  {{ $regexp99 := `(=&gt; <a h)ref="https://en.wikipedia.org/wiki/` }}
+  {{ $matches99 := findRE $regexp99 $allText }}
+  {{ range $matches99 }}
+      {{ $allText = replaceRE . "foo" $allText }}
+  {{ end }}
+*/ -}}
+
+  {{ $allText = 
+      replaceRE 
+     `<h1 id="(.+)">(.+)</h1>` 
+     `<block class="asterism" align="center"><pre>
+
+
+
+-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
+</pre></block><block class="asterism" align="center"><pre>
+|    *         *    |    *         *    |    *         *    |
+</pre></block><block class="asterism" align="center"><pre>
+*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+
+
+
+</pre></block><p id="$1" align="center">$2</p><block class="asterism" align="center"><pre>
+
+*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+</pre></block><block class="asterism" align="center"><pre>
+|    *         *    |    *         *    |    *         *    |
+</pre></block><block class="asterism" align="center"><pre>
+-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
+
+
+
+</pre></block>` 
+      $allText 
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `<h2 id="(.+)">(.+)</h2>` 
+     `<block class="asterism" align="center"><pre>
+
+
+
+-  *  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  *  -
+
+
+</pre></block><p id="$1" align="center">$2</p><block class="asterism" align="center"><pre>
+-  *  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  *  -
+
+
+
+</pre></block>` 
+      $allText 
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `<h3 id="(.+)">(.+)</h3>` 
+     `<block class="asterism" align="center"><pre>
+
+
+
+-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
+
+
+</pre></block><p id="$1" align="center">$2</p><block class="asterism" align="center"><pre>
+-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
+
+
+
+</pre></block>` 
+      $allText 
+  }}
+
+  {{ $allText | safeHTML }}
+  <span class="design-hint">«dp</span>
+{{ end }}

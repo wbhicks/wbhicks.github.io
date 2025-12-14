@@ -3,7 +3,7 @@ title: Who Was Alfred
 linkTitle: Who Was Alfred
 menus:
   voluntary:
-    parent: Posts
+    parent: Docket
 summary: He rocked.
 categories: [health,money,travel,tech]
 weight: 1

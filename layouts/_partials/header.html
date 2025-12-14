@@ -5,28 +5,28 @@
 {{- /*
     {{ if or 
         .IsHome 
-        (eq .LinkTitle "Contents") 
+        (eq .LinkTitle "Inhaltsverzeichnis") 
         (eq .LinkTitle "About") 
         (eq .LinkTitle "Categories")
     }}
 */ -}}
     {{ $linkTitleOfThisPage := .LinkTitle }}
     {{ if or 
-        (eq $linkTitleOfThisPage "Home") 
-        (eq $linkTitleOfThisPage "Contents") 
-        (eq $linkTitleOfThisPage "About") 
+        (eq $linkTitleOfThisPage "Home")
+        (eq $linkTitleOfThisPage "Inhaltsverzeichnis")
         (eq $linkTitleOfThisPage "Categories")
+        (eq $linkTitleOfThisPage "About")
     }}
-      <span class="design-hint">h1»</span>
+      <span class="design-hint">ha»</span>
         <h1>{{ .Title }}</h1>
         {{ $pages := slice (site.GetPage "home") }}
-        {{ with site.GetPage "about" }}
-          {{ $pages = $pages | append . }}
-        {{ end }}
         {{ with site.GetPage "table-of-contents" }}
           {{ $pages = $pages | append . }}
         {{ end }}
         {{ with site.GetPage "categories" }}
+          {{ $pages = $pages | append . }}
+        {{ end }}
+        {{ with site.GetPage "about" }}
           {{ $pages = $pages | append . }}
         {{ end }}
         <ul>
@@ -40,9 +40,9 @@
             </li>
           {{ end }}
         </ul>
-      <span class="design-hint">«h1</span>
+      <span class="design-hint">«ha</span>
     {{ else }}
-      he»
+      <span class="design-hint">hb»</span>
       <span>
         {{ .PublishDate.Format "2006 Jan 02 Mon" }}
         {{with .NextInSection}}
@@ -75,7 +75,7 @@
           <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
       </ul>
-      «he
+      <span class="design-hint">«hb</span>
     {{ end }}
   </div>
 </header>

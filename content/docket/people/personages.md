@@ -1,32 +1,12 @@
 ---
-type: miscellaneous
-layout: ornamented-leaf
-title: 2018T
-linkTitle: 2918LT
+title: People In Wikipedia
+linkTitle: Personages
 menus:
   voluntary:
-    parent: Bookmarks
+    parent: People
+weight: 2
+date: 2024-02-02
 ---
-Bookmarks from 2018.
-
-- foo
-  - apple
-  - banana
-  - carrot
-- bar
-  - apple
-  - banana
-  - carrot
-- blah
-  - apple
-  - banana
-  - carrot
-- bleek
-  - apple
-  - banana
-  - carrot
-
-----
 
 # I. People in Wikipedia
 
@@ -268,4 +248,3 @@ Sculpted a monument to John Baskerville, _Industry and Genius_ (1990), which sta
 Christopher Upton: author of _A History of Birmingham_ (Phillimore, 1993); _Living Back-to-back_ (Phillimore, 2005); _The Birmingham Parish Workhouse 1730-1840_ (University of Hertfordshire Press, 2019)
 
 # III. Other
-
