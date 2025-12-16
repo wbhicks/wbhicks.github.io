@@ -1,16 +1,7 @@
 {{ define "main" }}
 orn»
   {{ $allText := .Content }}
-  {{ $allText = replaceRE `<h1 id="(.+)">(.+)</h1>` `<pre>
 
-
-    -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
-       |    *         *    |    *         *    |    *         *    |
-          *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
-
-
-</pre>
-<h1 id="$1">$2</h1>` $allText }}
 
   {{/* $c = replaceRE "a" "b" $c */}}
   {{ $allText  | safeHTML }}

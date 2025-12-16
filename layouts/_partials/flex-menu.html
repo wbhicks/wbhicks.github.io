@@ -33,7 +33,7 @@
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
-      >{{ $name }}</a>{{ .Post }}{{ if (eq $theShownPage.LinkTitle .Name) }}&nbsp;&lt;---{{ end }}
+      >{{ $name }}</a>{{ .Post }}{{ if (eq $theShownPage.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
       {{- with .Children }}
         <ul>
           {{- partial "inline/flex-menu/walk.html" (dict "page" $page "menuEntries" . "theShownPage" $theShownPage) }}
