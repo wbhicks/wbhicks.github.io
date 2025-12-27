@@ -7,11 +7,16 @@
   {{ range $matches99 }}
       {{ $allText = replaceRE . "foo" $allText }}
   {{ end }}
+
+  For markdown (as opposed to org mode), select headlines thus:
+  `<h1 id="(.+)">(.+)</h1>`
+  And, in the replacement, use the captures thus:
+  <p id="$1" align="center">$2</p>
 */ -}}
 
   {{ $allText = 
       replaceRE 
-     `<h1 id="(.+)">(.+)</h1>` 
+     `<h2 id="headline-([0-9]+)">` 
      `<block class="asterism" align="center"><pre>
 
 
@@ -24,7 +29,14 @@
 
 
 
-</pre></block><p id="$1" align="center">$2</p><block class="asterism" align="center"><pre>
+</pre></block><p id="headline-$1" align="center">` 
+      $allText 
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `</h2>` 
+     `</p><block class="asterism" align="center"><pre>
 
 *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 </pre></block><block class="asterism" align="center"><pre>
@@ -40,7 +52,7 @@
 
   {{ $allText = 
       replaceRE 
-     `<h2 id="(.+)">(.+)</h2>` 
+     `<h3 id="headline-([0-9]+)">` 
      `<block class="asterism" align="center"><pre>
 
 
@@ -48,7 +60,14 @@
 -  *  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  *  -
 
 
-</pre></block><p id="$1" align="center">$2</p><block class="asterism" align="center"><pre>
+</pre></block><p id="headline-$1" align="center">` 
+      $allText 
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `</h3>` 
+     `</p><block class="asterism" align="center"><pre>
 -  *  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  *  -
 
 
@@ -59,7 +78,7 @@
 
   {{ $allText = 
       replaceRE 
-     `<h3 id="(.+)">(.+)</h3>` 
+     `<h4 id="headline-([0-9]+)">` 
      `<block class="asterism" align="center"><pre>
 
 
@@ -67,13 +86,61 @@
 -  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
-</pre></block><p id="$1" align="center">$2</p><block class="asterism" align="center"><pre>
+</pre></block><p id="headline-$1" align="center">` 
+      $allText 
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
+     `, writing in $1 $2:<br>$3`
+      $allText 
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `</h4>`
+     `</p><block class="asterism" align="center"><pre>
 -  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
 
 </pre></block>` 
       $allText 
+  }}
+
+  {{ $regexpAnniv := `([012][0-9][0-9][0-9]-[01][0-9]-[0-3][0-9]): (.+)` 
+  }}
+  {{ $matchesAnniv := findRE $regexpAnniv $allText 
+  }}
+  {{ range $matchesAnniv 
+  }}
+    {{ $allText = 
+        replaceRE
+        . 
+        (add 
+            (substr . 0 (div (strings.RuneCount .) 2))
+            `<br/>`
+            (substr . (div (strings.RuneCount .) 2))
+        )
+        $allText
+    }}
+  {{ end 
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>
+◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
+     `<block align="right"><pre>Bookmark, $2 $1&nbsp;</pre></block>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `<pre class="example">`
+     `<pre class="org-example-kludge">` 
+      $allText
   }}
 
   {{ $allText | safeHTML }}

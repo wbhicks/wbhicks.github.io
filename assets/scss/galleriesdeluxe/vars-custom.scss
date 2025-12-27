@@ -13,7 +13,7 @@ $color-text_light: #ccc2b8;
 
 $font_family_serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !default;
 
-$font_family_sans_serif: Monaco, Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source_sans_pro, sans_serif !default;
+$font_family_sans_serif: monospace, 	sans_serif !default;
 
 $font_family_base: $font_family_serif !default;
 
@@ -129,4 +129,20 @@ p {
 .asterism {
   font-family: monospace;
   color: #777;
+}
+
+.org-example-kludge {
+  display: block;
+
+  /* This font-family line has no effect when font_family_sans_serif is in effect. Therefore, */
+  /* to see ASCII art, either (a) specify a monospace font for font_family_sans_serif or (b)  */
+  /* stay toggled to font_family_serif. */
+  font-family: monospace;
+
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+  margin-block-start: 1em;
+  margin-inline-start: 0px;
+  margin-left: 3em;
+  margin-bottom: 2em;
 }
