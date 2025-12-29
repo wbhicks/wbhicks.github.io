@@ -11,9 +11,9 @@ $color-text_light: #ccc2b8;
 
 // - - - - - - - - - - - -
 
-$font_family_serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !default;
+$font_family_serif: Georgia, Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !default;
 
-$font_family_sans_serif: monospace, 	sans_serif !default;
+$font_family_sans_serif: monospace, sans_serif !default;
 
 $font_family_base: $font_family_serif !default;
 
@@ -76,7 +76,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #777;
-  margin: 1em 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -119,7 +119,7 @@ body main ul > li > ul > li > ul > li > ul > li {
 }
 
 p {
-  margin-bottom: 2em; /* Adjust the value to control the blank space after each paragraph */
+  margin-bottom: 2rem; /* Adjust the value to control the blank space after each paragraph */
 }
 
 .design-hint {
@@ -129,6 +129,16 @@ p {
 .asterism {
   font-family: monospace;
   color: #777;
+}
+
+.fisheye-means-rightmost {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.dek-or-block {	
+  margin-left: 3rem;
+  margin-right: 1rem;
 }
 
 .org-example-kludge {
@@ -141,8 +151,8 @@ p {
 
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
-  margin-block-start: 1em;
+  margin-block-start: 1rem;
   margin-inline-start: 0px;
-  margin-left: 3em;
-  margin-bottom: 2em;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
 }

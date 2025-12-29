@@ -1,6 +1,11 @@
 {{ define "main" }}
+
   <span class="design-hint">dp»</span>
   {{ $allText := .Content }}
+  {{ $allText = replaceRE `\)` `TMPLT_RPAREN` $allText }}
+  {{ $allText = replaceRE `\(` `TMPLT_LPAREN` $allText }}
+  {{ $allText = replaceRE `\?` `TMPLT_QSTNMK` $allText }}
+
 {{- /*
   {{ $regexp99 := `(=&gt; <a h)ref="https://en.wikipedia.org/wiki/` }}
   {{ $matches99 := findRE $regexp99 $allText }}
@@ -17,114 +22,137 @@
   {{ $allText = 
       replaceRE 
      `<h2 id="headline-([0-9]+)">` 
-     `<block class="asterism" align="center"><pre>
+     `<div class="asterism" align="center"><pre>
 
 
 
 -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
-</pre></block><block class="asterism" align="center"><pre>
+</pre></div><div class="asterism" align="center"><pre>
 |    *         *    |    *         *    |    *         *    |
-</pre></block><block class="asterism" align="center"><pre>
+</pre></div><div class="asterism" align="center"><pre>
 *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 
 
 
-</pre></block><p id="headline-$1" align="center">` 
+</pre></div><p id="headline-$1" align="center">` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h2>` 
-     `</p><block class="asterism" align="center"><pre>
+     `</p><div class="asterism" align="center"><pre>
 
 *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
-</pre></block><block class="asterism" align="center"><pre>
+</pre></div><div class="asterism" align="center"><pre>
 |    *         *    |    *         *    |    *         *    |
-</pre></block><block class="asterism" align="center"><pre>
+</pre></div><div class="asterism" align="center"><pre>
 -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
 
 
 
-</pre></block>` 
+</pre></div>` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `<h3 id="headline-([0-9]+)">` 
-     `<block class="asterism" align="center"><pre>
+     `<div class="asterism" align="center"><pre>
 
 
 
 -  *  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  *  -
 
 
-</pre></block><p id="headline-$1" align="center">` 
+</pre></div><p id="headline-$1" align="center">` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h3>` 
-     `</p><block class="asterism" align="center"><pre>
+     `</p><div class="asterism" align="center"><pre>
 -  *  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  *  -
 
 
 
-</pre></block>` 
+</pre></div>` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `<h4 id="headline-([0-9]+)">` 
-     `<block class="asterism" align="center"><pre>
+     `<div class="asterism" align="center"><pre>
 
 
 
 -  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
-</pre></block><p id="headline-$1" align="center">` 
-      $allText 
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
-     `, writing in $1 $2:<br>$3`
+</pre></div><p id="headline-$1" align="center">TMPLT_S` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h4>`
-     `</p><block class="asterism" align="center"><pre>
+     `TMPLT_E</p><div class="asterism" align="center"><pre>
 -  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
 
-</pre></block>` 
+</pre></div>` 
       $allText 
   }}
 
-  {{ $regexpAnniv := `([012][0-9][0-9][0-9]-[01][0-9]-[0-3][0-9]): (.+)` 
+{{- /*
+  {{ $allText = 
+      replaceRE
+     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
+     `, writing in $1 $2:<br>$3`
+      $allText 
+  }}
+*/ -}}
+
+  {{ $regexpAnniv := `TMPLT_S
+.*
+TMPLT_E` 
   }}
   {{ $matchesAnniv := findRE $regexpAnniv $allText 
   }}
   {{ range $matchesAnniv 
   }}
-    {{ $allText = 
-        replaceRE
-        . 
-        (add 
-            (substr . 0 (div (strings.RuneCount .) 2))
-            `<br/>`
-            (substr . (div (strings.RuneCount .) 2))
-        )
-        $allText
-    }}
+    {{ $lengthOfCurrentTitle := strings.RuneCount . }}
+    {{ if gt $lengthOfCurrentTitle 43 }}
+      {{ $sliced := split . " " }}
+      {{ $counter := 0 }}
+      {{ range $sliced }}
+        {{ if lt $counter (div $lengthOfCurrentTitle 2) }}
+          {{ $counter = (add $counter (len .)) }}
+          {{ $counter = (add $counter 1) }}
+        {{ end }}
+      {{ end }}
+{{ $counterAsStr := (string $counter) }}
+      {{ $allText = 
+          replaceRE
+          . 
+          (add 
+              (substr . 8 (sub $counter 8))
+              `<br/>`
+              (substr . $counter -8)
+          )
+          $allText
+      }}
+    {{ else }}
+      {{ $allText = 
+          replaceRE
+          . 
+          (substr . 8 -8)
+          $allText
+      }}
+    {{ end }}
   {{ end 
   }}
 
@@ -132,7 +160,38 @@
       replaceRE
      `<p>
 ◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
-     `<block align="right"><pre>Bookmark, $2 $1&nbsp;</pre></block>`
+     `<div class="fisheye-means-rightmost">Bookmark, $2 $1&nbsp;</div><p></p>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>
+dek: &#34;(.+)&#34;</p>`
+     `<div class="dek-or-block">"$1" -- the subhead</div><p></p>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `&gt; &#34;(.+)&#34; – from`
+     `<div class="dek-or-block">"$1" – from</div>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>
+=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
+     `<p>
+Source: $1 TMPLT_NORTHEAST_ARROW / by $3</p>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `TMPLT_NORTHEAST_ARROW`
+     `<img src="/link-external-small-ltr-progressive.svg" width="12px" height="12px" alt="(An external link.)">`
       $allText
   }}
 
@@ -143,6 +202,10 @@
       $allText
   }}
 
+  {{ $allText = replaceRE `TMPLT_RPAREN` `)` $allText }}
+  {{ $allText = replaceRE `TMPLT_LPAREN` `(` $allText }}
+  {{ $allText = replaceRE `TMPLT_QSTNMK` `?` $allText }}
   {{ $allText | safeHTML }}
   <span class="design-hint">«dp</span>
+
 {{ end }}

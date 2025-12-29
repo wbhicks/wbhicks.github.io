@@ -28,13 +28,13 @@ dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art 
 
 *** 1790-01-08: GW's 1st SoTU, including this passage:
 
-> "Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours it is proportionably essential.
->
-> To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws." -- from
+> "Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws." -- from
 
 => https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address Wikisource   
-=> https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a Gutenberg.org   
-=> https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0 UCSB   
+
+=> https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a Gutenberg.org
+
+=> https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0 UCSB
 
 *** 1918-01-08: Woodrow Wilson's Fourteen Points speech to Congress
 
@@ -308,15 +308,14 @@ dek: "Medieval Europeans were fanatical about a strange fruit that could only be
 
 ~ The medlar, also known as the "open-arse", the "monkey's bottom", etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
-> "The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether."
->
-> "... In the medlar's native territory near the Caspian Sea, the fruit remains as popular as ever. It's still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it's sold in markets as musmula."
+> "The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar's native territory near the Caspian Sea, the fruit remains as popular as ever. It's still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it's sold in markets as musmula."
 
 ~ In the UK, one likely contributor to the medlar's decline was the increasing availability of year-round tropical fruits, Gorvett reports; another she cites is the relative inconvenience of winter-picking and ripening[1] the medlar.
 
 [1]: "put them in a crate of sawdust or straw and forget about them for several weeks"
 
 See also
+
 => https://en.wikipedia.org/wiki/Mespilus_germanica WP / Medlar
 
 ~ The medlar figures in the prologue to one of Chaucer's Canterbury Tales, _The Reeve's Tale_. Here's the relevant passage, excerpted from the prologue:
@@ -483,9 +482,7 @@ dek: "A hotbed of experimental sound for nearly a century, this school in Oaklan
 
 => https://www.nytimes.com/2021/03/30/arts/music/mills-college-music.html NYT / by Geeta Dayal
 
-> "The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the “deep listening” pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ..."
->
-> "Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ..."
+> "The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the “deep listening” pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ..."
 
 * IV. April
 
@@ -553,9 +550,7 @@ dek: "They’ve lost four major statewide elections since 2018, for starters, an
 
 => https://www.washingtonpost.com/opinions/2023/04/12/republican-democrat-poisonous-partisanship/ WaPo / by George F. Will
 
-> "... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing."
-> 
-> "... expect American politics to continue today’s remarkable condition: boiling but frozen."
+> "... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen."
 
 ~ cf. Ezra Klein's word "calcification" in "Three Theories That Explain This Strange Moment", 2022-11-12
 
@@ -777,9 +772,7 @@ dek: "D.C.’s most surprising leadership column, and what it says about how the
 
 => https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
 
-> "... Arthur Gelb in his memoir, “City Room”: “There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.”"
-> 
-> "... we would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ..."
+> "... Arthur Gelb in his memoir, “City Room”: “There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.” ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ..."
 
 * V. May
 
@@ -861,9 +854,7 @@ Grace Elliott, 1823 (age 68-69), in Ville-d'Avray, France
 
 => https://www.politico.com/magazine/story/2015/05/the-gop-is-dying-off-literally-118035/ Politico / by Daniel J. McGraw
 
-> "... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ..."
-> 
-> "The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group."
+> "... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group."
 
 *** Eric Mack, writing in Cnet (2021): "Nikola Tesla invention from 100 years ago suddenly makes more sense today"
 
@@ -907,7 +898,9 @@ For a lawyer:    -1 pct    +44 pct
 #+END_EXAMPLE
 
 Citations:
+
 => https://www.nytimes.com/2019/01/11/upshot/big-cities-low-skilled-workers-wages.html
+
 => https://www.nber.org/papers/w25588
 
 *** Observance: Day of Mourning for the Victims of the Circassian Genocide, 1864-1867 (recognized by Georgia)
@@ -980,9 +973,7 @@ date := 2023-05-25
 
 => https://www.cnn.com/style/article/cita-sadeli-miss-chelove-street-art-nomad/index.html CNN / by Jacopo Prisco
 
-> "Cita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] “Nomad.” ... Graffiti artist explains the process behind making epic murals"
-> 
-> "Updated 9:29 AM EDT, Tue May 31, 2022"
+> "Cita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] “Nomad.” ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022"
 
 * VI. June
 
@@ -1053,9 +1044,9 @@ dek: "Luxury ships attract outrage and political scrutiny. The ultra-rich are bu
 => https://www.newyorker.com/magazine/2022/07/25/the-haves-and-the-have-yachts The New Yorker / by Evan Osnos
 
 > "July 18, 2022"
-> 
+
 > "July 25, 2022 Issue"
->
+
 > "I found a handwritten welcome note, on embossed club stationery, set alongside an orchid and ... chocolate truffles: “The whole team remains at your entire disposal to make your stay a wonderful experience. Yours sincerely, Service Members.”"
 
 ** July 21st
@@ -1244,10 +1235,12 @@ Paracelsus, 1541 (age 47), in Salzburg
 
 Carl Laemmle, 1939 (age 72), in Los Angeles
 
-> "Poet Ogden Nash observed the following about Laemmle's habit of giving his son and nephews top executive positions in his studios:
->
-> 'Uncle Carl Laemmle
-> Has a very large faemmle.'" -- from
+> "Poet Ogden Nash observed the following about Laemmle's habit of giving his son and nephews top executive positions in his studios:"
+
+#+BEGIN_EXAMPLE
+Uncle Carl Laemmle
+Has a very large faemmle. -- from
+#+END_EXAMPLE
 
 => https://en.wikipedia.org/wiki/Carl_Laemmle WP / Carl Laemmle
 
