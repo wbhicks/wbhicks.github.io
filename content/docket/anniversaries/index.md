@@ -18,11 +18,11 @@ markup: org
 
 ◉ Bookmark, Jan 8
 
-dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the '60s middle-class. Now, some artists are taking up the cause."
-
 => https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html NYT / by Blake Gopnik
 
-> Referring to contemporary artist Danh Võ, Blake Gopnik writes: "Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece."
+dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the '60s middle-class. Now, some artists are taking up the cause."
+
+~ Referring to contemporary artist Danh Võ, Blake Gopnik writes: "Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece."
 
 ~ The social significance attached by some artists to the extremely low prices of their multiples has, I think, a close analogue in the infinite reproducibility of digital art, which some (most?) digital artists consider to be both good and intrinsic to their work.
 
@@ -30,7 +30,7 @@ dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art 
 
 > "Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws." -- from
 
-=> https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address Wikisource   
+=> https://en.wikisource.org/wiki/George_Washington's_First_State_of_the_Union_Address Wikisource   
 
 => https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a Gutenberg.org
 
@@ -46,21 +46,21 @@ dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art 
 
 *** Deaths on this date:
 
-Giotto, 1337 (age 70?), in Florence (Firenze)
+**** Giotto, 1337 (age 70?), in Florence (Firenze)
 
-Galileo, 1642 (age 77), in Florence (Firenze)
+**** Galileo, 1642 (age 77), in Florence (Firenze)
 
-John Baskerville, 1775 (age 68), in Birmingham, England
+**** John Baskerville, 1775 (age 68), in Birmingham, England
 
-Emperor Norton, 1880 (age 61), in San Francisco
+**** Emperor Norton, 1880 (age 61), in San Francisco
 
-Paul Verlaine, 1896 (age 51), in Paris
+**** Paul Verlaine, 1896 (age 51), in Paris
 
-Joseph Schumpeter, 1950 (age 66), in Salisbury, Connecticut, US
+**** Joseph Schumpeter, 1950 (age 66), in Salisbury, Connecticut, US
 
-Harriet Bedell, 1969 (age 94), in Davenport, Florida, US (feast day)
+**** Harriet Bedell, 1969 (age 94), in Davenport, Florida, US (feast day)
 
-Terry-Thomas, 1990 (age 78), in Godalming, Surrey, UK
+**** Terry-Thomas, 1990 (age 78), in Godalming, Surrey, UK
 
 ** January 25th
 
@@ -75,7 +75,6 @@ Terry-Thomas, 1990 (age 78), in Godalming, Surrey, UK
 ~ [1]: Or, perhaps equally well, the X axis can show a county's distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.
 
 #+BEGIN_EXAMPLE
-~
 Fig. 1 - A long time ago:        Fig. 2 - Not too long ago:       Fig. 3 - Now:
 
 lean |                           lean |                           lean |
@@ -94,22 +93,11 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 **** Source: "Rural America Lost Population Over the Past Decade for the First Time in History"
 
-=> https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history UNH.edu / by Kenneth Johnson
-
-#+BEGIN_EXAMPLE
-date: 2022-02-22
-publisher: Carsey School of Public Policy, University of New Hampshire
-#+END_EXAMPLE
+=> https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history U. of New Hampshire / by Kenneth Johnson
 
 **** Source: "The Increase in Partisan Segregation in the United States"
 
-=> http://congress-files.s3.amazonaws.com/2022-07/Brown_Cantoni_Enos_Pons_Sartre%2520%25282022%2529_0.pdf draft / by Jacob R. Brown et al.
-
-#+BEGIN_EXAMPLE
-date: January 17, 2022
-authors: Jacob R. Brown, Enrico Cantoni, Ryan D. Enos, Vincent Pons and Emilie Sartre 
-version: first draft
-#+END_EXAMPLE
+=> https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf U. of Nottingham / by Jacob R. Brown et al.
 
 **** Source: "The Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker"
 
@@ -121,7 +109,7 @@ version: first draft
 
 **** Source: "The Suburbanization of the Democratic Party, 1992-2018 (Paper presented at the Annual Meetings of the American Political Science Association, Washington, DC, August 29, 2019)"
 
-=> https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins%20Suburbanization%20APSA%202019.pdf paper / by David A. Hopkins (2019)
+=> https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf paper / by David A. Hopkins (2019)
 
 **** Source: "Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America's Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)"
 
@@ -176,9 +164,9 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D'vera C
 
 ◉ Bookmark, Feb 2
 
-dek: "The magazine's attempted takedown of the media's coverage bolsters Trump's phony narrative."
-
 => https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/ Mother Jones / by David Corn
+
+dek: "The magazine's attempted takedown of the media's coverage bolsters Trump's phony narrative."
 
 ~ David Corn succinctly recaps the help Trump chose to lend Putin in 2016:
 
@@ -186,19 +174,15 @@ dek: "The magazine's attempted takedown of the media's coverage bolsters Trump's
 
 *** Observance: Groundhog Day
 
-** February 8th (Under construction, not yet pushed to gemini svcs)
-
-https://en.wikipedia.org/wiki/Orangeburg_Massacre
-
 ** February 15th
 
 *** Dan Kois, writing in Slate (2023): "The Case for Hanging Out"
 
 ◉ Bookmark, Feb 15
 
-dek: "There’s a growing crisis in our social lives. Could the cure be this simple?"
-
 => https://slate.com/culture/2023/02/hanging-out-sheila-liming-book-friendship-crisis.html Slate / by Dan Kois
+
+dek: "There’s a growing crisis in our social lives. Could the cure be this simple?"
 
 ~ The recommendation: Kill some time by hanging out with your friends and shooting the breeze.
 
@@ -246,9 +230,9 @@ dek: "There’s a growing crisis in our social lives. Could the cure be this sim
 
 ◉ Bookmark, Feb 27
 
-dek: "Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats"
-
 => https://www.theguardian.com/us-news/2023/feb/27/west-virginia-mixed-martial-arts-coach-security-drag-show The Guardian / Gloria Oladipo
+
+dek: "Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats"
 
 ~ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of _NBC Out_, an LGBTQ news portal under the NBC News umbrella:
 
@@ -260,7 +244,7 @@ dek: "Johnny Haught and his trainees volunteered when a restaurant canceled a br
 
 > "Can you, then, wonder that in times like these, when bankruptcy, convicted fraud, and imputed felony are found in a station not far beneath that of your lordships, the lowest, though once most useful portion of the people, should forget their duty in their distresses, and become only less guilty than one of their representatives? But while the exalted offender can find means to baffle the law, new capital punishments must be devised, new snares of death must be spread for the wretched mechanic who is famished into guilt." -- from
 
-=> https://books.google.com/books?id=15JUAAAAcAAJ&pg=PT491#v=onepage&q=February%2027 Cobbett's Parliamentary Debates, Volumes 21-22 (1812), p. 966
+=> https://books.google.com/books?id=15JUAAAAcAAJ&pg=PT491#v=onepage&q=February&percnt;2027 Cobbett's Parliamentary Debates, Volumes 21-22 (1812), p. 966
 
 * III. March
 
@@ -270,9 +254,9 @@ dek: "Johnny Haught and his trainees volunteered when a restaurant canceled a br
 
 ◉ Bookmark, Mar 6
 
-dek: "Enrollment in the humanities is in free fall at colleges around the country. What happened?"
-
 => https://www.newyorker.com/magazine/2023/03/06/the-end-of-the-english-major The New Yorker / by Nathan Heller
+
+dek: "Enrollment in the humanities is in free fall at colleges around the country. What happened?"
 
 *** 1665-03-06: The first issue of Philosophical Transactions of the Royal Society is published. The journal has been in publication ever since.
 
@@ -286,9 +270,9 @@ dek: "Enrollment in the humanities is in free fall at colleges around the countr
 
 ◉ Bookmark, Mar 7
 
-dek: "A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting."
-
 => https://www.nytimes.com/2023/03/07/magazine/los-angeles-walking-rosecrans-avenue.html NYT / by Rosecrans Baldwin
+
+dek: "A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting."
 
 > "Probably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal."
 
@@ -302,9 +286,9 @@ dek: "A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-m
 
 ◉ Bookmark, Mar 25
 
-dek: "Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?"
-
 => https://www.bbc.com/future/article/20210325-the-strange-medieval-fruit-the-world-forgot BBC / by Zaria Gorvett
+
+dek: "Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?"
 
 ~ The medlar, also known as the "open-arse", the "monkey's bottom", etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
@@ -312,9 +296,9 @@ dek: "Medieval Europeans were fanatical about a strange fruit that could only be
 
 ~ In the UK, one likely contributor to the medlar's decline was the increasing availability of year-round tropical fruits, Gorvett reports; another she cites is the relative inconvenience of winter-picking and ripening[1] the medlar.
 
-[1]: "put them in a crate of sawdust or straw and forget about them for several weeks"
+~ [1]: "put them in a crate of sawdust or straw and forget about them for several weeks"
 
-See also
+~ See also
 
 => https://en.wikipedia.org/wiki/Mespilus_germanica WP / Medlar
 
@@ -358,23 +342,40 @@ We hoppen[17] alwey, whyl that the world wol pype.
  ↳ We dance always, while the world will pipe.
 #+END_EXAMPLE
 
-[1]: I
-[2]: wish, want, lust
-[3]: done, over with
-[4]: In his annotated edition of 1900, W. W. Skeat explains this line: "_gras-time_, the time when a horse feeds himself in the fields. _My fodder is now forage_, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable."
-[5]: head, top of one's head
-[6]: From Skeat's notes: "I take this to mean -- 'my old years write (mark upon me) this white head,' i. e. turn me grey."
-[7]: old, moldy
-[8]: From Skeat's notes: "'My heart is as old (lit. mouldy) as my hairs are.' Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32."
-[9]: unless
-[10]: does
-[11]: a medlar fruit. The medieval _ers_ is the modern "arse" (British) or "ass" (American).
-[12]: From Skeat's notes (covering this and the following two lines): "'Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.'"
-[13]: that same fruit, that very fruit
-[14]: worse
-[15]: rubbish, trash, refuse
-[16]: straw
-[17]: From Skeat's notes: "_hoppen_, dance"
+
+~ [1]: I
+
+~ [2]: wish, want, lust
+
+~ [3]: done, over with
+
+~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: "_gras-time_, the time when a horse feeds himself in the fields. _My fodder is now forage_, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable."
+
+~ [5]: head, top of one's head
+
+~ [6]: From Skeat's notes: "I take this to mean -- 'my old years write (mark upon me) this white head,' i. e. turn me grey."
+
+~ [7]: old, moldy
+
+~ [8]: From Skeat's notes: "'My heart is as old (lit. mouldy) as my hairs are.' Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32."
+
+~ [9]: unless
+
+~ [10]: does
+
+~ [11]: a medlar fruit. The medieval _ers_ is the modern "arse" (British) or "ass" (American).
+
+~ [12]: From Skeat's notes (covering this and the following two lines): "'Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.'"
+
+~ [13]: that same fruit, that very fruit
+
+~ [14]: worse
+
+~ [15]: rubbish, trash, refuse
+
+~ [16]: straw
+
+~ [17]: From Skeat's notes: "_hoppen_, dance"
 
 ~ Noticing Skeat's comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer's verb, _to write_, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker's head. Where does this ambiguity come from? When _to write_ is used metaphorically, does it always invite this two-directional reading?
 
@@ -415,9 +416,9 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ This shows that the metaphor of writing, at least in this line of Chaucer's, does much more than to state an implication or correlation, and I think it also shows that it leverages subject-object reversibility to convey two (at least) independent insights. I don't know if the choice of some form (or near synonym) of _to write_, when used as a metaphor, always accomplishes this superposition.
 
-See also
+~ See also
 
-=> https://en.wikipedia.org/wiki/Subject%E2%80%93verb_inversion_in_English WP / Subject–verb inversion in English
+=> https://en.wikipedia.org/wiki/Subject&percnt;E2&percnt;80&percnt;93verb_inversion_in_English WP / Subject-verb inversion in English
 
 => https://en.wikipedia.org/wiki/Anastrophe WP / Anastrophe
 
@@ -440,9 +441,9 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Mar 26
 
-dek: "Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it."
-
 => https://www.nytimes.com/2021/03/26/science/tooth-pain-cold.html NYT / by Veronique Greenwood
+
+dek: "Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it."
 
 ** March 27th
 
@@ -452,7 +453,7 @@ dek: "Researchers figured out how a jolt of discomfort gets from the damaged out
 
 => https://www.cnbc.com/2023/03/27/lebanon-in-two-different-time-zones-as-government-disagrees-on-daylight-savings.html CNBC / by Natasha Turak
 
-"... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night."
+> "... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night."
 
 ** March 28th
 
@@ -460,9 +461,9 @@ dek: "Researchers figured out how a jolt of discomfort gets from the damaged out
 
 ◉ Bookmark, Mar 28
 
-dek: "Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning."
-
 => https://www.nytimes.com/2023/03/28/science/lightning-rod-video.html NYT / by Nicholas Bakalar
+
+dek: "Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning."
 
 ** March 30th
 
@@ -470,17 +471,17 @@ dek: "Brazilian researchers captured on camera the brief moment when lightning r
 
 ◉ Bookmark, Mar 30
 
-dek: "Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae."
-
 => https://www.nytimes.com/2021/03/30/science/blackwater-photography-fish-larvae.html NYT / by Erik Olsen
+
+dek: "Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae."
 
 *** Geeta Dayal, writing in NYT (2021): "Is the Music Over at Mills College?"
 
 ◉ Bookmark, Mar 30
 
-dek: "A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors."
-
 => https://www.nytimes.com/2021/03/30/arts/music/mills-college-music.html NYT / by Geeta Dayal
+
+dek: "A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors."
 
 > "The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the “deep listening” pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ..."
 
@@ -492,13 +493,13 @@ dek: "A hotbed of experimental sound for nearly a century, this school in Oaklan
 
 ◉ Bookmark, Apr 5
 
-dek: "An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees."
-
 => https://www.nytimes.com/2021/04/05/arts/design/warhol-copyright-appeals-court.html NYT / by Blake Gopnik
+
+dek: "An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees."
 
 *** Deaths on this date:
 
-Diana Scultori, 1612 (age 64-65), in Rome
+**** Diana Scultori, 1612 (age 64-65), in Rome
 
 => https://en.wikipedia.org/wiki/Diana_Scultori WP / Diana Scultori "... is one of the earliest known women printmakers ..."
 
@@ -514,13 +515,13 @@ Diana Scultori, 1612 (age 64-65), in Rome
 
 ◉ Bookmark, Apr 6
 
-dek: "If elite colleges are serious about diversity of class and race, there’s a simple solution."
-
 => https://www.nytimes.com/2021/04/06/opinion/stanford-admissions-campus.html NYT / by David L. Kirp
+
+dek: "If elite colleges are serious about diversity of class and race, there’s a simple solution."
 
 *** Deaths on this date:
 
-Raphael, 1520 (age 37), in Rome
+**** Raphael, 1520 (age 37), in Rome
 
 ** April 7th
 
@@ -528,9 +529,9 @@ Raphael, 1520 (age 37), in Rome
 
 ◉ Bookmark, Apr 7
 
-dek: "They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability."
-
 => https://www.theatlantic.com/ideas/archive/2023/04/wisconsin-supreme-court-election-republican-party/673656/ The Atlantic / by Charles Sykes
+
+dek: "They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability."
 
 > "Wisconsin Republicans are caught in a bind: What the base wants, the majority rejects."
 
@@ -572,7 +573,7 @@ dek: "They’ve lost four major statewide elections since 2018, for starters, an
 
 *** Deaths on this date:
 
-Gasparo da Salò, 1609 (age 66), in Brescia, Italy
+**** Gasparo da Salò, 1609 (age 66), in Brescia, Italy
 
 ** April 15th
 
@@ -580,17 +581,17 @@ Gasparo da Salò, 1609 (age 66), in Brescia, Italy
 
 ◉ Bookmark, Apr 15
 
-dek: "What happens when scientists write haiku?"
-
 => https://theamericanscholar.org/poetry-in-the-abstract/ The American Scholar / by Christopher Cokinos
+
+dek: "What happens when scientists write haiku?"
 
 *** Deaths on this date:
 
-Filippo Brunelleschi, 1446 (age 68-69), in Florence (Firenze)
+**** Filippo Brunelleschi, 1446 (age 68-69), in Florence (Firenze)
 
-> inter alia, "the first person to receive a patent in the Western world."
+~ inter alia, "the first person to receive a patent in the Western world."
 
-Roxelana (Роксолана), 1558 (age 53-54), in Istanbul
+**** Roxelana (Роксолана), 1558 (age 53-54), in Istanbul
 
 ** April 17th
 
@@ -598,9 +599,9 @@ Roxelana (Роксолана), 1558 (age 53-54), in Istanbul
 
 ◉ Bookmark, Apr 17
 
-dek: "For homeless people, a place to live is life changing to a degree that almost no other intervention can provide."
-
 => https://www.nytimes.com/2021/04/17/business/california-homeless-hotels.html NYT / by Conor Dougherty
+
+dek: "For homeless people, a place to live is life changing to a degree that almost no other intervention can provide."
 
 *** Shane Harrison, writing in BBC (2023): "How Gerard Hutch murder trial made international headlines"
 
@@ -616,21 +617,21 @@ Writing for the BBC, Shane Harrison reports that "Gerard Hutch has been cleared 
 
 ◉ Bookmark, Apr 19
 
-dek: "Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity"
-
 => https://www.theguardian.com/culture/2021/apr/19/creativity-is-essential-artist-designed-supermarket-to-open-at-london-design-museum The Guardian / by Mark Brown
+
+dek: "Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity"
 
 *** Anil Ananthaswamy, writing in Scientific American (2021): "Quantum Astronomy Could Create Telescopes Hundreds of Kilometers Wide"
 
 ◉ Bookmark, Apr 19
 
-dek: "Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories"
-
 => https://www.scientificamerican.com/article/quantum-astronomy-could-create-telescopes-hundreds-of-kilometers-wide/ Scientific American / by Anil Ananthaswamy
+
+dek: "Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories"
 
 *** Deaths on this date:
 
-Byron, 1824 (age 36), in Missolonghi, Greece
+**** Byron, 1824 (age 36), in Missolonghi, Greece
 
 ** April 20th
 
@@ -638,19 +639,19 @@ Byron, 1824 (age 36), in Missolonghi, Greece
 
 ◉ Bookmark, Apr 20
 
-dek: "We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed."
-
 => https://newrepublic.com/article/171722/republican-party-dead TNR / by Michael Tomasky
 
-"Michael Tomasky gathered four close observers ... of the Republican Party: Michael Steele, ... Juleanna Glover, ... Max Boot, ... and Nicolle Wallace ..."
+dek: "We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed."
+
+> "Michael Tomasky gathered four close observers ... of the Republican Party: Michael Steele, ... Juleanna Glover, ... Max Boot, ... and Nicolle Wallace ..."
 
 *** Leah Greenblatt, writing in NYT (2023): "Name Above the Movie Title? How About in It?"
 
 ◉ Bookmark, Apr 20
 
-dek: "With the release of “Guy Ritchie’s The Covenant,” here’s a look at the occasional phenomenon of directors branding movies with their own names."
-
 => https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html NYT / by Leah Greenblatt
+
+dek: "With the release of “Guy Ritchie’s The Covenant,” here’s a look at the occasional phenomenon of directors branding movies with their own names."
 
 ** April 21st
 
@@ -658,9 +659,9 @@ dek: "With the release of “Guy Ritchie’s The Covenant,” here’s a look at
 
 ◉ Bookmark, Apr 21
 
-dek: "Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure."
-
 => https://www.nytimes.com/2021/04/21/technology/welcome-to-the-yolo-economy.html NYT / by Kevin Roose
+
+dek: "Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure."
 
 *** Nell Greenfieldboyce, writing in NPR (2021): "The Secret Mission To Unearth Part Of A 142-Year-Old Experiment"
 
@@ -668,15 +669,15 @@ dek: "Burned out and flush with savings, some workers are quitting stable jobs i
 
 => https://www.npr.org/2021/04/21/989333092/the-secret-mission-to-unearth-part-of-a-142-year-old-experiment NPR / by Nell Greenfieldboyce
 
-[n.b. surname is correct]
+~ [n.b. surname is correct]
 
 *** Mary Norris, writing in The New Yorker (2021): "Grammar-Nerd Heaven"
 
 ◉ Bookmark, Apr 21
 
-dek: "A new exhibit showcases the surprisingly contentious history of English grammar books."
-
 => https://www.newyorker.com/culture/comma-queen/grammar-nerd-heaven The New Yorker / by Mary Norris
+
+dek: "A new exhibit showcases the surprisingly contentious history of English grammar books."
 
 *** Harriet Ryan, writing in Los Angeles Times (2023): "A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families"
 
@@ -684,7 +685,7 @@ dek: "A new exhibit showcases the surprisingly contentious history of English gr
 
 => https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes Los Angeles Times / by Harriet Ryan
 
-> "Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm — money they now believe was wasted."
+> "Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm -- money they now believe was wasted."
 
 ** April 22nd
 
@@ -692,21 +693,21 @@ dek: "A new exhibit showcases the surprisingly contentious history of English gr
 
 ◉ Bookmark, Apr 22
 
-dek: "That story, which has sometimes been called a real-life 'Lord of the Flies,' was just one episode in a life filled with adventure."
-
 => https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
+
+dek: "That story, which has sometimes been called a real-life 'Lord of the Flies,' was just one episode in a life filled with adventure."
 
 *** Amelia Soth, writing in JSTOR Daily (2021): "When Paid Applauders Ruled the Paris Opera House"
 
 ◉ Bookmark, Apr 22
 
-dek: "Professional applauders, collectively known as the “claque,” helped mold the tastes of an uncertain audience."
-
 => https://daily.jstor.org/paid-applauders-paris-opera-claques/ JSTOR Daily / by Amelia Soth
+
+dek: "Professional applauders, collectively known as the “claque,” helped mold the tastes of an uncertain audience."
 
 *** Deaths on this date:
 
-Cervantes, 1616 (age 68), in Madrid 
+**** Cervantes, 1616 (age 68), in Madrid 
 
 ** April 24th
 
@@ -724,13 +725,13 @@ Cervantes, 1616 (age 68), in Madrid
 
 ◉ Bookmark, Apr 25
 
-dek: "Why Nonnative English Speakers Actually Speak The Best English"
-
 => https://www.npr.org/sections/goatsandsoda/2021/04/25/989765565/tower-of-babble-non-native-speakers-navigate-the-world-of-good-and-bad-english NPR / by Carolyn McCusker
+
+dek: "Why Nonnative English Speakers Actually Speak The Best English"
 
 *** Deaths on this date:
 
-Crowfoot, 1890 (age 59-60), in Blackfoot Crossing, Canada
+**** Crowfoot, 1890 (age 59-60), in Blackfoot Crossing, Canada
 
 ** April 26th
 
@@ -742,7 +743,7 @@ Crowfoot, 1890 (age 59-60), in Blackfoot Crossing, Canada
 
 *** Deaths on this date:
 
-Ramanujan, 1920 (age 32), in Kumbakonam, India
+**** Ramanujan, 1920 (age 32), in Kumbakonam, India
 
 ** April 28th
 
@@ -750,9 +751,9 @@ Ramanujan, 1920 (age 32), in Kumbakonam, India
 
 ◉ Bookmark, Apr 28
 
-dek: "D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now."
-
 => https://www.politico.com/news/magazine/2023/04/28/jim-vandehei-profile-00094172 Politico / by Michael Schaffer
+
+dek: "D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now."
 
 ** April 29th
 
@@ -762,7 +763,7 @@ dek: "D.C.’s most surprising leadership column, and what it says about how the
 
 => https://www.kansascity.com/news/local/article251004849.html The Kansas City Star / by Bill Lukitsch and Anna Spoerre
 
-> Writing in The Kansas City Star, Lukitsch and Spoerre report on plans for "... a 150-bed village with easy-to-build shelters that range from single-person to family size."
+~ Writing in The Kansas City Star, Lukitsch and Spoerre report on plans for "... a 150-bed village with easy-to-build shelters that range from single-person to family size."
 
 ~ Location for the village is TBD.
 
@@ -792,7 +793,7 @@ dek: "D.C.’s most surprising leadership column, and what it says about how the
 
 *** Deaths on this date:
 
-Elizabeth Bacon, 1621 (age 79-80), in England
+**** Elizabeth Bacon, 1621 (age 79-80), in England
 
 > "... she became the Lady Nevell of My Ladye Nevells Booke, a manuscript of keyboard music by William Byrd." -- from
 
@@ -804,21 +805,21 @@ Elizabeth Bacon, 1621 (age 79-80), in England
 
 ◉ Bookmark, May 4
 
-dek: "When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio."
-
 => https://www.nytimes.com/2021/05/04/realestate/design-downsizing.html NYT / by Pilar Viladas
+
+dek: "When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio."
 
 *** Tim McKeough, writing in NYT (2021): "In Miami, a Sculpture Built to Live In"
 
 ◉ Bookmark, May 4
 
-dek: "Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit."
-
 => https://www.nytimes.com/2021/05/04/realestate/the-carter-project-miami-sculpture-christopher-carter.html NYT / by Tim McKeough
+
+dek: "Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit."
 
 *** Deaths on this date:
 
-John Nevison, 1684 (age 44-45), in York, England
+**** John Nevison, 1684 (age 44-45), in York, England
 
 ** May 5th
 
@@ -826,13 +827,13 @@ John Nevison, 1684 (age 44-45), in York, England
 
 ◉ Bookmark, May 5
 
-dek: "The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others."
-
 => https://www.bbc.com/future/article/20210505-how-cities-will-fossilise BBC / by David Farrier
+
+dek: "The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others."
 
 *** Deaths on this date:
 
-Napoleon, 1821 (age 51), in Longwood, on the island of Saint Helena #posthumous-move
+**** Napoleon, 1821 (age 51), in Longwood, on the island of Saint Helena #posthumous-move
 
 ** May 16th
 
@@ -844,7 +845,7 @@ Napoleon, 1821 (age 51), in Longwood, on the island of Saint Helena #posthumous-
 
 *** Deaths on this date:
 
-Grace Elliott, 1823 (age 68-69), in Ville-d'Avray, France
+**** Grace Elliott, 1823 (age 68-69), in Ville-d'Avray, France
 
 ** May 17th
 
@@ -860,9 +861,9 @@ Grace Elliott, 1823 (age 68-69), in Ville-d'Avray, France
 
 ◉ Bookmark, May 17
 
-dek: "The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew."
-
 => https://www.cnet.com/news/nikola-tesla-invention-from-100-years-ago-suddenly-makes-more-sense-today/ Cnet / by Eric Mack
+
+dek: "The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew."
 
 ** May 19th
 
@@ -870,9 +871,9 @@ dek: "The eccentric inventor is known for dabbling with electricity, but his Tes
 
 ◉ Bookmark, May 19
 
-dek: "Korean media praises prime minister’s gesture, known as ‘manner legs’, while some Canadians say it is embarrassing country"
-
 => https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs The Guardian / by Leyland Cecco
+
+dek: "Korean media praises prime minister’s gesture, known as ‘manner legs’, while some Canadians say it is embarrassing country"
 
 ~ A note for students of English: the word "split" in the headline is a play on words.
 
@@ -911,13 +912,13 @@ Citations:
 
 ◉ Bookmark, May 22
 
-dek: "My 2021 photo is from the Jamie Foxx Netflix comedy 'Day Shift' but many believe it's a vintage shot"
-
 => https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/ Atlanta Journal-Constitution / by Rodney Ho
+
+dek: "My 2021 photo is from the Jamie Foxx Netflix comedy 'Day Shift' but many believe it's a vintage shot"
 
 *** Deaths on this date:
 
-Constantine, 337 (age 65), in Nicomedia (modern-day İzmit, Türkiye)
+**** Constantine, 337 (age 65), in Nicomedia (modern-day İzmit, Türkiye)
 
 ** May 23rd
 
@@ -931,7 +932,7 @@ Constantine, 337 (age 65), in Nicomedia (modern-day İzmit, Türkiye)
 
 *** Deaths on this date:
 
-Brian Boru, 1014 (age 72-73), in Dublin
+**** Brian Boru, 1014 (age 72-73), in Dublin
 
 ** May 24th
 
@@ -939,9 +940,9 @@ Brian Boru, 1014 (age 72-73), in Dublin
 
 ◉ Bookmark, May 24
 
-dek: "Developers are adding outdoor co-working space — bocce ball, anyone? — to attract remote workers to stores and restaurants"
-
 => https://www.washingtonpost.com/transportation/2022/05/24/pandemic-suburbs-downtown-retail/ WaPo / by Katherine Shaver
+
+dek: "Developers are adding outdoor co-working space -- bocce ball, anyone? -- to attract remote workers to stores and restaurants"
 
 *** 2023-05-24: The symbolic Cotton Tree in Freetown, Sierra Leone, was felled by a storm:
 
@@ -953,9 +954,9 @@ date := 2023-05-25
 
 **** Coverage: "Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown"
 
-dek: "Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa"
-
 => https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse in Freetown
+
+dek: "Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa"
 
 date := 2023-05-25
 
@@ -963,7 +964,7 @@ date := 2023-05-25
 
 => https://en.wikipedia.org/wiki/Cotton_Tree_(Sierra_Leone) WP / Cotton Tree (Sierra Leone)
 
-"On 24 May 2023, a heavy rain storm felled the cotton tree with only the lower part of its enormous trunk still standing."
+> "On 24 May 2023, a heavy rain storm felled the cotton tree with only the lower part of its enormous trunk still standing."
 
 ** May 31st
 
@@ -987,7 +988,7 @@ date := 2023-05-25
 
 *** Deaths on this date:
 
-Field Marshal Sir Henry Hughes Wilson, 1st Baronet, GCB, DSO, 1922 (age 58), in London. See also
+**** Field Marshal Sir Henry Hughes Wilson, 1st Baronet, GCB, DSO, 1922 (age 58), in London. See also
 
 => https://en.wikipedia.org/wiki/Oh!_What_a_Lovely_War WP / Oh! What a Lovely War "is a 1969 British comedy historical musical war film ..."
 
@@ -999,9 +1000,9 @@ Field Marshal Sir Henry Hughes Wilson, 1st Baronet, GCB, DSO, 1922 (age 58), in 
 
 ◉ Bookmark, Jul 1
 
-dek: "... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well."
-
 => https://www.nytimes.com/2020/07/01/nyregion/guilford-ct-fire-rescue-well.html NYT / by Allyson Waller
+
+dek: "... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well."
 
 *** 1863-07-01: Abolition of slavery in Suriname and the Dutch colonies in the Caribbean
 
@@ -1013,9 +1014,9 @@ dek: "... was helping a friend move into a house when the floor gave way beneath
 
 ◉ Bookmark, Jul 3
 
-dek: "A student objected to a class, “The Problem of Whiteness,” and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?"
-
 => https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
+
+dek: "A student objected to a class, “The Problem of Whiteness,” and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?"
 
 *** 1608-07-03: Founding of Quebec City
 
@@ -1025,13 +1026,13 @@ dek: "A student objected to a class, “The Problem of Whiteness,” and tweeted
 
 ◉ Bookmark, Jul 9
 
-dek: "The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state."
-
 => https://www.politico.com/news/magazine/2021/07/09/west-virginia-economy-paid-remote-work-498238 Politico / by Mackenzie Mays
+
+dek: "The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state."
 
 *** Deaths on this date:
 
-Benjamin Cardozo, 1938 (age 68), in Port Chester, NY, US
+**** Benjamin Cardozo, 1938 (age 68), in Port Chester, NY, US
 
 ** July 18th
 
@@ -1039,9 +1040,9 @@ Benjamin Cardozo, 1938 (age 68), in Port Chester, NY, US
 
 ◉ Bookmark, Jul 18
 
-dek: "Luxury ships attract outrage and political scrutiny. The ultra-rich are buying them in record numbers."
-
 => https://www.newyorker.com/magazine/2022/07/25/the-haves-and-the-have-yachts The New Yorker / by Evan Osnos
+
+dek: "Luxury ships attract outrage and political scrutiny. The ultra-rich are buying them in record numbers."
 
 > "July 18, 2022"
 
@@ -1055,9 +1056,9 @@ dek: "Luxury ships attract outrage and political scrutiny. The ultra-rich are bu
 
 ◉ Bookmark, Jul 21
 
-dek: "Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide."
-
 => https://www.politico.com/interactives/2021/coronavirus-reopening-by-county-income/ Politico / by Beatrice Jin
+
+dek: "Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide."
 
 In Politico, Beatrice Jin writes: "Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home."
 
@@ -1083,7 +1084,7 @@ In Politico, Beatrice Jin writes: "Here, we’ve split the two partisan lines in
 
 *** Deaths on this date:
 
-Joseph Marie Jacquard, 1834 (age 82), in Oullins ([ulɛ̃]), France
+**** Joseph Marie Jacquard, 1834 (age 82), in Oullins ([ulɛ̃]), France
 
 ** August 10th
 
@@ -1091,21 +1092,21 @@ Joseph Marie Jacquard, 1834 (age 82), in Oullins ([ulɛ̃]), France
 
 ◉ Bookmark, Aug 10
 
-dek: "Start with a brisk walking pace, an incorrect opinion on bagels, and a healthy hatred of Bill de Blasio."
-
 => https://www.vice.com/en/article/akgqyz/moving-to-new-york-essentials Vice / by Ian Burke
+
+dek: "Start with a brisk walking pace, an incorrect opinion on bagels, and a healthy hatred of Bill de Blasio."
 
 ~ See also the counterpart to this article, which Vice published 3 days later.
 
 *** Deaths on this date:
 
-Reginald Dunne and Joseph O'Sullivan, 1922 (ages 24 and 25), in London. #posthumous-move
+**** Reginald Dunne and Joseph O'Sullivan, 1922 (ages 24 and 25), in London. #posthumous-move
 
 See also:
 
 => https://en.wikipedia.org/wiki/Odd_Man_Out WP / Odd Man Out "is a 1947 British film noir ..."
 
-Montague Summers, 1948 (age 68), in London
+**** Montague Summers, 1948 (age 68), in London
 
 ** August 13th
 
@@ -1113,17 +1114,17 @@ Montague Summers, 1948 (age 68), in London
 
 ◉ Bookmark, Aug 13
 
-dek: "'iBuyers' are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market."
-
 => https://www.vice.com/en/article/93ymxz/zillow-other-tech-firms-are-in-an-arms-race-to-buy-up-american-homes Vice / by Maxwell Strachan
+
+dek: "'iBuyers' are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market."
 
 *** Mary Frances "Francky" Knapp, writing in Vice (2021): "Moving to LA From the East Coast? Here's What You'll Need"
 
 ◉ Bookmark, Aug 13
 
-dek: "In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you'll need for your new LA life of pool parties and picnics."
-
 => https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances "Francky" Knapp
+
+dek: "In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you'll need for your new LA life of pool parties and picnics."
 
 ~ See also the counterpart to this article, which Vice published 3 days earlier.
 
@@ -1131,15 +1132,15 @@ dek: "In addition to patience for traffic and Erewhon-ready smugness, here are t
 
 ◉ Bookmark, Aug 13
 
-dek: "And why users think it’s unreadable."
-
 => https://slate.com/technology/2021/08/twitter-font-redesign-chirp-franklin-gothic.html Slate / by Aaron Mak
 
-"Fredrick Brennan: '... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.'"
+dek: "And why users think it’s unreadable."
+
+> "Fredrick Brennan: '... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.'"
 
 *** Deaths on this date:
 
-Eugène Delacroix, 1863 (age 65), in Paris
+**** Eugène Delacroix, 1863 (age 65), in Paris
 
 ** August 19th
 
@@ -1147,21 +1148,21 @@ Eugène Delacroix, 1863 (age 65), in Paris
 
 ◉ Bookmark, Aug 19
 
-dek: "The BBC's Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob."
-
 => https://www.bbc.com/news/world-africa-58260855 BBC / by Kayleen Devlin
+
+dek: "The BBC's Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob."
 
 *** Henry Grabar, writing in Slate (2021): "The Perverse Reason It’s Easier to Build New Highways Than New Subways - The environment?!"
 
 ◉ Bookmark, Aug 19
 
-dek: "Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads."
-
 => https://slate.com/business/2021/08/congestion-pricing-nyc-bart-tunnel-san-francisco-bay-environmental-reviews.html Slate / by Henry Grabar
+
+dek: "Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads."
 
 *** Deaths on this date:
 
-Augustus, 14 (age 76), in Nola, Italy
+**** Augustus, 14 (age 76), in Nola, Italy
 
 ** August 23rd
 
@@ -1169,9 +1170,9 @@ Augustus, 14 (age 76), in Nola, Italy
 
 ◉ Bookmark, Aug 23
 
-dek: "This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States."
-
 => https://acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america
+
+dek: "This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States."
 
 > "This collaboration between the Armed Conflict Location & Event Data Project (ACLED) and Everytown for Gun Safety Support Fund (Everytown) presents quantitative research on demonstrations in the United States during the 18-month period from January 2020 through June 2021, documenting 560 events where demonstrators, counter-demonstrators, or other individuals or groups were present and carried or brandished firearms (see inset definition)."
 
@@ -1179,9 +1180,9 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 *** Deaths on this date:
 
-Rudolph Valentino, 1926 (age 31), in New York City
+**** Rudolph Valentino, 1926 (age 31), in New York City
 
-Sacco and Vanzetti, 1927 (ages 36 and 39), in Boston
+**** Sacco and Vanzetti, 1927 (ages 36 and 39), in Boston
 
 ** August 28th
 
@@ -1189,9 +1190,9 @@ Sacco and Vanzetti, 1927 (ages 36 and 39), in Boston
 
 ◉ Bookmark, Aug 28
 
-dek: "Thicker ink, fewer smudges, and more strained hands: an Object Lesson"
-
 => https://www.theatlantic.com/technology/archive/2015/08/ballpoint-pens-object-lesson-history-handwriting/402205/ The Atlantic / by Josh Giesbrecht
+
+dek: "Thicker ink, fewer smudges, and more strained hands: an Object Lesson"
 
 * IX. September
 
@@ -1205,7 +1206,7 @@ dek: "Thicker ink, fewer smudges, and more strained hands: an Object Lesson"
 
 => https://twitter.com/GovChristie/status/1701683733953138918
 
-> "Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is “rotten.” Trump thinks Putin is a “genius” – he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc"
+> "Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is “rotten.” Trump thinks Putin is a “genius” -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc"
 
 **** Posted by Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
@@ -1225,15 +1226,15 @@ dek: "Thicker ink, fewer smudges, and more strained hands: an Object Lesson"
 
 ◉ Bookmark, Sep 24
 
-dek: "The two countries are more similar than is often acknowledged."
-
 => https://www.theatlantic.com/international/archive/2021/09/britain-france-us-aukus/620186/ The Atlantic / by Tom McTague
+
+dek: "The two countries are more similar than is often acknowledged."
 
 *** Deaths on this date:
 
-Paracelsus, 1541 (age 47), in Salzburg
+**** Paracelsus, 1541 (age 47), in Salzburg
 
-Carl Laemmle, 1939 (age 72), in Los Angeles
+**** Carl Laemmle, 1939 (age 72), in Los Angeles
 
 > "Poet Ogden Nash observed the following about Laemmle's habit of giving his son and nephews top executive positions in his studios:"
 
@@ -1250,7 +1251,7 @@ Has a very large faemmle. -- from
 
 *** Deaths on this date:
 
-Jonathan Swift, 1745 (age 77), in Dublin
+**** Jonathan Swift, 1745 (age 77), in Dublin
 
 > "The best maxim I know in this life is, to drink your coffee when you can, and when you cannot, to be easy without it." -- Jonathan Swift
 
@@ -1276,7 +1277,7 @@ Writing in The Times, Ezra Klein discusses "... patterns that explain more than 
 
 => https://boingboing.net/2021/11/22/intersections-of-pittsburgh.html Boing Boing / by Rob Beschizza
 
-"Peter Gorman's Intersections of Pittsburgh poster ..."
+> "Peter Gorman's Intersections of Pittsburgh poster ..."
 
 *** 1963-11-22: Assassination of John F. Kennedy
 
@@ -1286,9 +1287,9 @@ Writing in The Times, Ezra Klein discusses "... patterns that explain more than 
 
 ◉ Bookmark, Nov 29
 
-dek: "Mayor Eric Adams directed the police and emergency medical workers to hospitalize people they deemed too mentally ill to care for themselves, even if they posed no threat to others."
-
 => https://www.nytimes.com/2022/11/29/nyregion/nyc-mentally-ill-involuntary-custody.html NYT / by Andy Newman and Emma G. Fitzsimmons
+
+dek: "Mayor Eric Adams directed the police and emergency medical workers to hospitalize people they deemed too mentally ill to care for themselves, even if they posed no threat to others."
 
 * XII. December
 
@@ -1298,9 +1299,9 @@ dek: "Mayor Eric Adams directed the police and emergency medical workers to hosp
 
 ◉ Bookmark, Dec 13
 
-dek: "Recent changes—and more coming in early 2023—could bring some relief to a very broken system."
-
 => https://slate.com/technology/2022/12/medical-debt-collections-credit-report-burden.html Slate / by Bobbi Dempsey
+
+dek: "Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system."
 
 ** December 31st
 
@@ -1310,5 +1311,5 @@ dek: "Recent changes—and more coming in early 2023—could bring some relief t
 
 => https://www.nytimes.com/2022/12/31/opinion/southwest-airlines-computers.html NYT / by Zeynep Tufekci
 
-"While aging code is a common cause of technical debt in older companies ..."
+> "While aging code is a common cause of technical debt in older companies ..."
 

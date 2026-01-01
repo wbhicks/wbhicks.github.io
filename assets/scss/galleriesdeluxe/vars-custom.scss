@@ -98,6 +98,7 @@ hr {
 }
 
 ul, ol {
+  margin-left: 1rem;
     list-style-position: inside; /* or 'outside' */
     padding-left: 20px; /* Adjust padding for proper alignment */
 }
@@ -118,8 +119,18 @@ body main ul > li > ul > li > ul > li > ul > li {
   list-style-type: circle;
 }
 
-p {
-  margin-bottom: 2rem; /* Adjust the value to control the blank space after each paragraph */
+body * {
+  line-height: 1.5;
+}
+
+/* ... except ... */
+
+body pre {
+  line-height: 1;
+}
+
+p, ul, ol, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or-blockq, .commentary, .org-example-kludge {
+  margin-bottom: 2rem;
 }
 
 .design-hint {
@@ -128,7 +139,25 @@ p {
 
 .asterism {
   font-family: monospace;
+  text-align: center;
   color: #777;
+}
+
+.h2-is-1star {
+  text-align: center;
+}
+
+.h3-is-2stars {
+  text-align: center;
+}
+
+.h4-is-3stars {
+  text-align: center;
+}
+
+.h5-is-4stars {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .fisheye-means-rightmost {
@@ -136,8 +165,23 @@ p {
   margin-right: 1rem;
 }
 
-.dek-or-block {	
+.url-line {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.dek-or-blockq {
   margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+.commentary {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.birth-or-death {
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 
@@ -154,5 +198,4 @@ p {
   margin-block-start: 1rem;
   margin-inline-start: 0px;
   margin-left: 3rem;
-  margin-bottom: 2rem;
 }
