@@ -609,7 +609,7 @@ dek: "For homeless people, a place to live is life changing to a degree that alm
 
 => https://www.bbc.com/news/world-europe-64426289 BBC / by Shane Harrison
 
-Writing for the BBC, Shane Harrison reports that "Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin's Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives."
+~ Writing for the BBC, Shane Harrison reports that "Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin's Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives."
 
 ** April 19th
 
@@ -898,7 +898,7 @@ For a janitor: +107 pct    -28 pct
 For a lawyer:    -1 pct    +44 pct
 #+END_EXAMPLE
 
-Citations:
+~ Citations:
 
 => https://www.nytimes.com/2019/01/11/upshot/big-cities-low-skilled-workers-wages.html
 
@@ -948,17 +948,13 @@ dek: "Developers are adding outdoor co-working space -- bocce ball, anyone? -- t
 
 **** Coverage: "Sierra Leone's iconic cotton tree felled by storm"
 
-=> https://www.bbc.com/news/world-africa-65707394 BBC / by Umaru Fofana in Freetown & Robert Greenall in London
-
-date := 2023-05-25
+=> https://www.bbc.com/news/world-africa-65707394 BBC / by Umaru Fofana in Freetown & Robert Greenall in London, 2023-05-25
 
 **** Coverage: "Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown"
 
-=> https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse in Freetown
+=> https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse in Freetown, 2023-05-25
 
 dek: "Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa"
-
-date := 2023-05-25
 
 **** Coverage: Wikipedia
 
@@ -1060,7 +1056,7 @@ dek: "Luxury ships attract outrage and political scrutiny. The ultra-rich are bu
 
 dek: "Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide."
 
-In Politico, Beatrice Jin writes: "Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home."
+~ In Politico, Beatrice Jin writes: "Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home."
 
 *** 1918-07-21: A German U-boat (submarine) fires on vessels off Cape Cod, striking the shore in the process.
 
@@ -1102,7 +1098,7 @@ dek: "Start with a brisk walking pace, an incorrect opinion on bagels, and a hea
 
 **** Reginald Dunne and Joseph O'Sullivan, 1922 (ages 24 and 25), in London. #posthumous-move
 
-See also:
+~ See also:
 
 => https://en.wikipedia.org/wiki/Odd_Man_Out WP / Odd Man Out "is a 1947 British film noir ..."
 
@@ -1265,7 +1261,7 @@ Has a very large faemmle. -- from
 
 => https://www.nytimes.com/2022/11/12/opinion/election-midterm-pattern.html NYT / by Ezra Klein
 
-Writing in The Times, Ezra Klein discusses "... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash."
+~ Writing in The Times, Ezra Klein discusses "... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash."
 
 ~ cf. George F. Will's phrase "boiling but frozen" in "How ‘I despise, therefore I am’ locks in the political status quo", 2023-04-12
 

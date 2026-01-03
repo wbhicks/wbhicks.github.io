@@ -33,7 +33,13 @@
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
-      >{{ $name }}</a>{{ .Post }}{{ if (eq $theShownPage.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
+      >{{ $name }}</a>{{ .Post }}
+      {{- if .Children }}
+        /
+      {{ else if (eq "Anniversaries" .Name) }}
+        <ul>TMPLT_PG_ANV</ul>
+      {{ end }}
+      {{ if (eq $theShownPage.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
       {{- with .Children }}
         <ul>
           {{- partial "inline/flex-menu/walk.html" (dict "page" $page "menuEntries" . "theShownPage" $theShownPage) }}
