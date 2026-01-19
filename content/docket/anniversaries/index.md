@@ -5,8 +5,8 @@ menus:
   voluntary:
     parent: Docket
 categories: [health,money,travel,tech]
-weight: 3
-date: 2024-01-03
+weight: 700000000
+date: 2023-07-07
 markup: org
 ---
 
@@ -47,6 +47,8 @@ dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art 
 *** Deaths on this date:
 
 **** Giotto, 1337 (age 70?), in Florence (Firenze)
+
+[[file:/docket/people/personages/#giotto][Some Desc]]
 
 **** Galileo, 1642 (age 77), in Florence (Firenze)
 
