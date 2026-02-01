@@ -25,15 +25,20 @@
 
 <!-- Turn 603020000 into 6.3.2 -->
 {{- /* 
-  {{ template "section-code" dict "theWeight" .Weight }}
+
+  How to call: {{ template "section-code" dict "theWeight" .Weight }}
+
+  crudest approach:
+
   {{ $levelA := mod      .theWeight                                                100 }}
   {{ $levelB := mod (sub .theWeight                              $levelA)        10000 }}
   {{ $levelC := mod (sub .theWeight (add                 $levelB $levelA))     1000000 }}
   {{ $levelD := mod (sub .theWeight (add         $levelC $levelB $levelA))   100000000 }}
   {{ $levelE := mod (sub .theWeight (add $levelD $levelC $levelB $levelA)) 10000000000 }}
   {{ add $levelE $levelD $levelC $levelB $levelA }}
-*/ -}}
-{{ define "section-code" }}
+
+  next approach:
+
   {{ $levelA := mod .theWeight 100 }}
   {{ $truncA := div (sub .theWeight $levelA) 100 }}
   {{ $levelB := mod $truncA 100 }}
@@ -48,6 +53,29 @@
   {{ else }}
     Weight is too big!
   {{ end }}
+
+*/ -}}
+
+{{ define "section-code" }}
+  {{ $numberToDecompose := .theWeight }}
+  {{ $resultAsSlice := slice }}
+  {{ range 5 }}
+    {{ $currRemainder := mod $numberToDecompose 100 }}
+    {{ $resultAsSlice = $resultAsSlice | append (string $currRemainder) }}
+    {{ $numberToDecompose = div (sub $numberToDecompose $currRemainder) 100 }}
+  {{ end }}
+  {{ $resultAsString := "" }}
+  {{ $weSawRightmostNonzeroPart := false }}
+  {{ range ($resultAsSlice | collections.Reverse) }}
+    {{ if (and (ne . "0") (eq $weSawRightmostNonzeroPart false)) }}
+      {{ $weSawRightmostNonzeroPart = true }}
+    {{ end }}
+    {{ if $weSawRightmostNonzeroPart }}
+      {{ $resultAsString = (add $resultAsString .) }}
+      {{ $resultAsString = (add $resultAsString ".") }}
+    {{ end }}
+  {{ end }}
+  {{ $resultAsString }}
 {{ end }}
 
 <header>
@@ -96,7 +124,7 @@
           Up: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>
         {{end}}
       </span>
-      <h1>{{ template "section-code" dict "theWeight" .Weight }} ({{ .Weight }}) {{ .Title }}</h1>
+      <h1>A{{ template "section-code" dict "theWeight" .Weight }}a Z{{ .Weight }}z _{{ math.MaxInt64 }}_ {{ .Title }}</h1>
 
     {{ else }}
 
