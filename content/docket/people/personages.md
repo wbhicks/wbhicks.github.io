@@ -4,8 +4,8 @@ linkTitle: Personages
 menus:
   voluntary:
     parent: People
-weight: 602000000
-date: 2023-08-02
+weight: 702000000
+date: 2023-07-02
 ---
 
 # I. People in Wikipedia

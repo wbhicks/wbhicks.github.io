@@ -76,19 +76,19 @@ ZZZ
 
       <span>
         {{with .NextInSection}}
-          Previous In Section: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
-        {{end}}
-        {{with .PrevInSection}}
-          Next In Section: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
-        {{end}}
-        {{with .Parent}}
-          Up: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>
+          Previous i S: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
         {{end}}
         {{with .Next}}
           Previous: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
         {{end}}
+        {{with .PrevInSection}}
+          Next i S: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+        {{end}}
         {{with .Prev}}
           Next: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+        {{end}}
+        {{with .Parent}}
+          Up: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>
         {{end}}
       </span>
       <h1>{{ .Weight }}. {{ .Title }}</h1>
@@ -133,5 +133,46 @@ ZZZ
         (eq .LinkTitle "Inhaltsverzeichnis") 
         (eq .LinkTitle "About") 
         (eq .LinkTitle "Categories")
-    }}
+    }}`	
+
+Why I don't use the built-ins .NextInSection and .PrevInSection within a tree:
+
+The built-ins .NextInSection and .PrevInSection traverse a page's quasi-siblings, 
+where "quasi-sibling" is defined as either (a) any .md file in the same filesystem 
+directory (folder), or (b) the .md file in any sibling folder that contains exactly 
+one .md file and no subfolders. However, files named _index.md are excluded. 
+
+I.e., for our purposes, "quasi-sibling" means sibling files (excluding _index.md), 
+plus niece/nephew (nibling) files who are sibling-less children. A nibling is 
+excluded from the traversal if it has a sibling (whether file or folder). By 
+implication, not all traversals under the current page are necessarily connected. 
+
+E.g., the pages for each street in Frederick can be traversed by means of 
+.NextInSection and .PrevInSection, and so can Frederick and its sibling towns; but 
+those two traversals are isolated from each other:
+
+abingdon
+euston
+frederick < - - excluded from both traversals
+  |
+  |-- frederick-streets < - - excluded from both traversals
+  |     |
+  |     |-- church-street
+  |     |-- patrick-street
+  |
+  |-- schifferstadt < - - excluded from both traversals, regardless of whether 
+                          it's implemented as a file (schifferstadt.md) or as 
+                          a folder (schifferstadt, containing an index.md file)
+olney
+takoma-park
+waldorf
+
+Therefore, adding hessian-barracks as a sibling of frederick-streets and 
+schifferstadt will create a third traversal, consisting of two pages: 
+hessian-barracks and schifferstadt. Note that the page frederick-streets will be 
+excluded from this traversal, just as it is excluded from the two existing 
+traversals, because it meets neither criteria (a or b). (It would be excluded 
+anyway, because its content file is named _index.md, which is the correct 
+filename given the fact that it has children.)
+
 */ -}}
