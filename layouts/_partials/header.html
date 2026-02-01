@@ -1,73 +1,84 @@
+<!-- I copied the template "menu-nextprev" from https://github.com/matcornic/hugo-theme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html -->
+{{ $currentNode := . }}
+{{ template "menu-nextprev" dict "bill" (site.GetPage "Docket") "currentnode" $currentNode }}
+{{ define "menu-nextprev" }}
+  {{ $currentNode := .currentnode }}
+  {{ if hasPrefix $currentNode.RelPermalink .bill.RelPermalink }}
+    {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
+    {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
+  {{ else if eq ($currentNode.Scratch.Get "NextPageOK") "OK" }}
+    {{ $currentNode.Scratch.Set "NextPageOK" nil }}
+    {{ $currentNode.Scratch.Set "nextPage" .bill }}
+  {{ end }}
+  {{ $currentNode.Scratch.Set "prevPageTmp" .bill }}
+  {{ $currentNode.Scratch.Set "pages" .bill.Pages }}
+  {{ if .bill.IsHome}}
+    {{ $currentNode.Scratch.Set "pages" .bill.Sections }}
+  {{ else if .bill.Sections }}
+    {{ $currentNode.Scratch.Set "pages" (.bill.Pages | union .bill.Sections) }}
+  {{ end }}
+  {{ $pages := ($currentNode.Scratch.Get "pages") }}
+  {{ range $pages.ByWeight  }}
+    {{ template "menu-nextprev" dict "bill" . "currentnode" $currentNode }}
+  {{ end }}
+{{ end }}
+
+<!-- Turn 603020000 into 6.3.2 -->
+{{- /* 
+  {{ template "section-code" dict "theWeight" .Weight }}
+  {{ $levelA := mod      .theWeight                                                100 }}
+  {{ $levelB := mod (sub .theWeight                              $levelA)        10000 }}
+  {{ $levelC := mod (sub .theWeight (add                 $levelB $levelA))     1000000 }}
+  {{ $levelD := mod (sub .theWeight (add         $levelC $levelB $levelA))   100000000 }}
+  {{ $levelE := mod (sub .theWeight (add $levelD $levelC $levelB $levelA)) 10000000000 }}
+  {{ add $levelE $levelD $levelC $levelB $levelA }}
+*/ -}}
+{{ define "section-code" }}
+  {{ $levelA := mod .theWeight 100 }}
+  {{ $truncA := div (sub .theWeight $levelA) 100 }}
+  {{ $levelB := mod $truncA 100 }}
+  {{ $truncB := div (sub $truncA $levelB) 100 }}
+  {{ $levelC := mod $truncB 100 }}
+  {{ $truncC := div (sub $truncB $levelC) 100 }}
+  {{ $levelD := mod $truncC 100 }}
+  {{ $truncD := div (sub $truncC $levelD) 100 }}
+  {{ $levelE := mod $truncD 100 }}
+  {{ if eq $truncD $levelE }}
+    {{ string $levelE }}.{{ string $levelD }}.{{ string $levelC }}.{{ string $levelB }}.{{ string $levelA }}
+  {{ else }}
+    Weight is too big!
+  {{ end }}
+{{ end }}
+
 <header>
   {{ partial "toggle.html" }}
-  <p></p>
   <div>
-AAA
-
-      <!-- Copied from https://github.com/matcornic/hugo-theme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html -->
-      {{ $currentNode := . }}
-      {{ template "menu-nextprev" dict "bill" (site.GetPage "Docket") "currentnode" $currentNode }}
-
-      {{ define "menu-nextprev" }}
-        {{ $currentNode := .currentnode }}
-        {{ if hasPrefix $currentNode.RelPermalink .bill.RelPermalink }}
-          {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
-          {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
-        {{ else if eq ($currentNode.Scratch.Get "NextPageOK") "OK" }}
-          {{ $currentNode.Scratch.Set "NextPageOK" nil }}
-          {{ $currentNode.Scratch.Set "nextPage" .bill }}
-        {{ end }}
-        {{ $currentNode.Scratch.Set "prevPageTmp" .bill }}
-        {{ $currentNode.Scratch.Set "pages" .bill.Pages }}
-        {{ if .bill.IsHome}}
-          {{ $currentNode.Scratch.Set "pages" .bill.Sections }}
-        {{ else if .bill.Sections }}
-          {{ $currentNode.Scratch.Set "pages" (.bill.Pages | union .bill.Sections) }}
-        {{ end }}
-        {{ $pages := ($currentNode.Scratch.Get "pages") }}
-        {{ range $pages.ByWeight  }}
-          {{ template "menu-nextprev" dict "bill" . "currentnode" $currentNode }}
-        {{ end }}
-      {{ end }}
-
-      {{with ($.Scratch.Get "prevPage")}}
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      {{ end }}
-MMM
-      {{with ($.Scratch.Get "nextPage")}}
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      {{ end }}
-ZZZ
-  </div>
-  <div>
-
     {{ $linkTitleOfThisPage := .LinkTitle }}
-
-        {{ $pages := slice (site.GetPage "home") }}
-        {{ with site.GetPage "table-of-contents" }}
-          {{ $pages = $pages | append . }}
-        {{ end }}
-        {{ with site.GetPage "categories" }}
-          {{ $pages = $pages | append . }}
-        {{ end }}
-        {{ with site.GetPage "catalogue" }}
-          {{ $pages = $pages | append . }}
-        {{ end }}
-        {{ with site.GetPage "about" }}
-          {{ $pages = $pages | append . }}
-        {{ end }}
-        <ul>
-          {{ range $pages }}
-            <li>
-              {{ if eq .LinkTitle $linkTitleOfThisPage }}
-                <span class="design-hint">{{ .LinkTitle }}</span>
-              {{ else }}
-                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-              {{ end }}
-            </li>
+    {{ $pages := slice (site.GetPage "home") }}
+    {{ with site.GetPage "table-of-contents" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+    {{ with site.GetPage "categories" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+    {{ with site.GetPage "catalogue" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+    {{ with site.GetPage "about" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+    <ul>
+      {{ range $pages }}
+        <li>
+          {{ if eq .LinkTitle $linkTitleOfThisPage }}
+            <span class="design-hint">{{ .LinkTitle }}</span>
+          {{ else }}
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
           {{ end }}
-        </ul>
-        <hr/>
+        </li>
+      {{ end }}
+    </ul>
+    <hr/>
 
     {{ if or 
         (eq $linkTitleOfThisPage "Docket")
@@ -75,23 +86,17 @@ ZZZ
     }}
 
       <span>
-        {{with .NextInSection}}
-          Previous i S: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+      {{with ($.Scratch.Get "prevPage")}}
+          Previous: <a href="{{ .RelPermalink }}">{{ .Weight }}. {{ .Title }}</a>,
         {{end}}
-        {{with .Next}}
-          Previous: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
-        {{end}}
-        {{with .PrevInSection}}
-          Next i S: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
-        {{end}}
-        {{with .Prev}}
-          Next: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+      {{with ($.Scratch.Get "nextPage")}}
+          Next: <a href="{{ .RelPermalink }}">{{ .Weight }}. {{ .Title }}</a>,
         {{end}}
         {{with .Parent}}
           Up: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>
         {{end}}
       </span>
-      <h1>{{ .Weight }}. {{ .Title }}</h1>
+      <h1>{{ template "section-code" dict "theWeight" .Weight }} ({{ .Weight }}) {{ .Title }}</h1>
 
     {{ else }}
 
@@ -122,7 +127,6 @@ ZZZ
       </ul>
 {{- /*    <span class="design-hint">«hc</span>
 */ -}}
-
   </div>
 </header>
 
@@ -134,6 +138,12 @@ ZZZ
         (eq .LinkTitle "About") 
         (eq .LinkTitle "Categories")
     }}`	
+
++----------+
+|          |
+|  Note 1. |
+|          |
++----------+
 
 Why I don't use the built-ins .NextInSection and .PrevInSection within a tree:
 
@@ -151,21 +161,25 @@ E.g., the pages for each street in Frederick can be traversed by means of
 .NextInSection and .PrevInSection, and so can Frederick and its sibling towns; but 
 those two traversals are isolated from each other:
 
-abingdon
-euston
-frederick < - - excluded from both traversals
-  |
-  |-- frederick-streets < - - excluded from both traversals
-  |     |
-  |     |-- church-street
-  |     |-- patrick-street
-  |
-  |-- schifferstadt < - - excluded from both traversals, regardless of whether 
-                          it's implemented as a file (schifferstadt.md) or as 
-                          a folder (schifferstadt, containing an index.md file)
-olney
-takoma-park
-waldorf
+|-- abingdon
+|-- baltimore <== excluded from both traversals
+|     |
+|     |-- inner-harbor <== excluded from both traversals
+|
+|-- euston
+|-- frederick <== excluded from both traversals
+|     |
+|     |-- frederick-streets <== excluded from both traversals
+|     |     |
+|     |     |-- church-street
+|     |     |-- patrick-street
+|     |
+|     |-- schifferstadt <== excluded from both traversals, regardless of whether 
+|                           it's implemented as a file (schifferstadt.md) or as 
+|                           a folder (schifferstadt, containing an index.md file)
+|-- olney
+|-- takoma-park
+|-- waldorf
 
 Therefore, adding hessian-barracks as a sibling of frederick-streets and 
 schifferstadt will create a third traversal, consisting of two pages: 
@@ -174,5 +188,46 @@ excluded from this traversal, just as it is excluded from the two existing
 traversals, because it meets neither criteria (a or b). (It would be excluded 
 anyway, because its content file is named _index.md, which is the correct 
 filename given the fact that it has children.)
+
++----------+
+|          |
+|  Note 2. |
+|          |
++----------+
+
+The built-ins .Next and .Prev are a reliable way to 
+traverse a tree when you want to exclude non-leaves:
+
+|-- abingdon
+|-- baltimore <== excluded from traversal
+|     |
+|     |-- inner-harbor
+|
+|-- euston
+|-- frederick <== excluded from traversal
+|     |
+|     |-- frederick-streets <== excluded from traversal
+|     |     |
+|     |     |-- church-street
+|     |     |-- patrick-street
+|     |
+|     |-- hessian-barracks
+|     |-- schifferstadt
+|-- olney
+|-- takoma-park
+|-- waldorf
+
+Remember that, with a default configuration, .Next and .Prev 
+work "in reverse". Code example:
+
+      <span>
+        {{with .Next}}
+          Previous Leaf: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+        {{end}}
+        {{with .Prev}}
+          Next Leaf: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>,
+        {{end}}
+      </span>
+
 
 */ -}}
