@@ -23,12 +23,12 @@
   {{ end }}
 {{ end }}
 
-<!-- Turn 603020000 into 6.3.2 -->
+<!-- Template "section-code" turns 603020000 into "6.3.2." and 1234067809 into "12.34.6.78.9." -->
 {{- /* 
 
   How to call: {{ template "section-code" dict "theWeight" .Weight }}
 
-  crudest approach:
+  crudest implementation:
 
   {{ $levelA := mod      .theWeight                                                100 }}
   {{ $levelB := mod (sub .theWeight                              $levelA)        10000 }}
@@ -37,16 +37,16 @@
   {{ $levelE := mod (sub .theWeight (add $levelD $levelC $levelB $levelA)) 10000000000 }}
   {{ add $levelE $levelD $levelC $levelB $levelA }}
 
-  next approach:
+  crude implementation:
 
   {{ $levelA := mod .theWeight 100 }}
   {{ $truncA := div (sub .theWeight $levelA) 100 }}
   {{ $levelB := mod $truncA 100 }}
-  {{ $truncB := div (sub $truncA $levelB) 100 }}
+  {{ $truncB := div (sub $truncA    $levelB) 100 }}
   {{ $levelC := mod $truncB 100 }}
-  {{ $truncC := div (sub $truncB $levelC) 100 }}
+  {{ $truncC := div (sub $truncB    $levelC) 100 }}
   {{ $levelD := mod $truncC 100 }}
-  {{ $truncD := div (sub $truncC $levelD) 100 }}
+  {{ $truncD := div (sub $truncC    $levelD) 100 }}
   {{ $levelE := mod $truncD 100 }}
   {{ if eq $truncD $levelE }}
     {{ string $levelE }}.{{ string $levelD }}.{{ string $levelC }}.{{ string $levelB }}.{{ string $levelA }}
@@ -54,26 +54,31 @@
     Weight is too big!
   {{ end }}
 
+  current implementation is below:
+
 */ -}}
 
 {{ define "section-code" }}
   {{ $numberToDecompose := .theWeight }}
   {{ $resultAsSlice := slice }}
+  {{ $counterForTrailingZeroes := 0 }}
+  {{ $reachedRightmostNonzeroPart := false }}
+  <!-- The value 5 in the line below may be increased to a max of 9, thus accommodating -->
+  <!-- a Weight of 18 nines (because math.MaxInt64 has 19 digits: 9223372036854775807). -->
   {{ range 5 }}
     {{ $currRemainder := mod $numberToDecompose 100 }}
+    {{ if (and (eq $currRemainder 0) (not $reachedRightmostNonzeroPart)) }}
+      {{ $counterForTrailingZeroes = (add $counterForTrailingZeroes 1) }}
+    {{ else }}
+      {{ $reachedRightmostNonzeroPart = true }}
+    {{ end }}
     {{ $resultAsSlice = $resultAsSlice | append (string $currRemainder) }}
     {{ $numberToDecompose = div (sub $numberToDecompose $currRemainder) 100 }}
   {{ end }}
   {{ $resultAsString := "" }}
-  {{ $weSawRightmostNonzeroPart := false }}
-  {{ range ($resultAsSlice | collections.Reverse) }}
-    {{ if (and (ne . "0") (eq $weSawRightmostNonzeroPart false)) }}
-      {{ $weSawRightmostNonzeroPart = true }}
-    {{ end }}
-    {{ if $weSawRightmostNonzeroPart }}
-      {{ $resultAsString = (add $resultAsString .) }}
-      {{ $resultAsString = (add $resultAsString ".") }}
-    {{ end }}
+  {{ range ($resultAsSlice | collections.Reverse | collections.First (sub (len $resultAsSlice) $counterForTrailingZeroes)) }}
+    {{ $resultAsString = (add $resultAsString .) }}
+    {{ $resultAsString = (add $resultAsString ".") }}
   {{ end }}
   {{ $resultAsString }}
 {{ end }}
@@ -114,21 +119,21 @@
     }}
 
       <span>
-      {{with ($.Scratch.Get "prevPage")}}
-          Previous: <a href="{{ .RelPermalink }}">{{ .Weight }}. {{ .Title }}</a>,
-        {{end}}
-      {{with ($.Scratch.Get "nextPage")}}
-          Next: <a href="{{ .RelPermalink }}">{{ .Weight }}. {{ .Title }}</a>,
-        {{end}}
-        {{with .Parent}}
-          Up: <a href="{{.Permalink}}">{{ .Weight }}. {{.Params.Title}}</a>
-        {{end}}
+      {{ with ($.Scratch.Get "prevPage") }}
+          Previous: <a href="{{ .RelPermalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .Title }}</a>,
+        {{ end }}
+      {{ with ($.Scratch.Get "nextPage") }}
+          Next: <a href="{{ .RelPermalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .Title }}</a>,
+        {{ end }}
+        {{ with .Parent }}
+          Up: <a href="{{ .Permalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .Params.Title }}</a>
+        {{ end }}
       </span>
-      <h1>A{{ template "section-code" dict "theWeight" .Weight }}a Z{{ .Weight }}z _{{ math.MaxInt64 }}_ {{ .Title }}</h1>
+      <h1>{{ template "section-code" dict "theWeight" .Weight }} {{ .Title }}</h1>
 
     {{ else }}
 
-        <h1>{{ .Title }}</h1>
+      <h1>{{ .Title }}</h1>
 
     {{ end }}
 
