@@ -1,5 +1,5 @@
 ---
-title: About This Site?
+title: About This Site
 linkTitle: About
 menus:
   voluntary:
@@ -7,35 +7,21 @@ menus:
 layout: about
 markup: org
 ---
-This is the content for the About page. Here is a mashing together of the *.md frontmatters:
-
-NOT BUILT-IN:
-
-categories: [health,tech]
-
-Catchphrase: Fitness and exercise too!
+This is the content for the About page. Here is a pasteable, default, YAML frontmatter:
 
 #+BEGIN_EXAMPLE
-
-BUILT-IN:
-
-cascade:
-  params: < - - - needed only for custom params
-    color: red
-
-params ? < - - - if not cascading
-
-menus:
-  voluntary:
-    parent: Home Galleries Docket Baltimore
-
-weight: 100000000
 
 linkTitle: Abe-Bob
 title: Abe, Bob (?) & Geo.
 # description: Rendered in html ... head ... meta.
 # summary: Or use as a teaser.
 # keywords: Rendered in html ... head ... meta.
+categories: [health,howto,money,politics,sci,tech,travel]
+
+menus:
+  voluntary:
+    parent: Galleries
+weight: 123456789
 
 date: 2020-01-01
 lastmod: 2020-01-01
@@ -50,6 +36,8 @@ layout: overriding-the-default-template
 # outputs: The output formats to render.
 
 #+END_EXAMPLE
+
+(Note: "params:" is needed only for custom params. Also, I'm ignoring Hugo's rather crude cascade feature.)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
