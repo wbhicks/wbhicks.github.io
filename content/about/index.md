@@ -1,22 +1,39 @@
 ---
-title: About This Site
 linkTitle: About
+title: About This Site
+# description: Rendered in html ... head ... meta.
+# summary: Or use as a teaser.
+# keywords: Rendered in html ... head ... meta.
+# categories: [arts,health,howto,money,politics,sci,tech,travel]
+
 menus:
   voluntary:
     parent: Home
-layout: about
+# weight: 123456789
+
+date: 2020-01-01
+lastmod: 2020-01-01
+draft: false
+# publishDate:
+# expiryDate:
+
+# resources: Maps of metadata for page resources.
 markup: org
+# type: subfolder-of-layouts-iff-layout-is-nested
+layout: about
+# outputs: The output formats to render.
 ---
+
 This is the content for the About page. Here is a pasteable, default, YAML frontmatter:
 
 #+BEGIN_EXAMPLE
-
+---
 linkTitle: Abe-Bob
 title: Abe, Bob (?) & Geo.
 # description: Rendered in html ... head ... meta.
 # summary: Or use as a teaser.
 # keywords: Rendered in html ... head ... meta.
-categories: [health,howto,money,politics,sci,tech,travel]
+categories: [arts,health,how-to,money,politics,science,tech,travel]
 
 menus:
   voluntary:
@@ -34,7 +51,7 @@ markup: org
 # type: subfolder-of-layouts-iff-layout-is-nested
 layout: overriding-the-default-template
 # outputs: The output formats to render.
-
+---
 #+END_EXAMPLE
 
 (Note: "params:" is needed only for custom params. Also, I'm ignoring Hugo's rather crude cascade feature.)

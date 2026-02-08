@@ -5,7 +5,7 @@ menus:
   voluntary:
     parent: Docket
 summary: A port city.
-categories: [health,money,travel,tech]
+categories: [arts,health,how-to,money,politics,science,tech,travel]
 weight: 200000000
 date: 2023-07-02
 ---

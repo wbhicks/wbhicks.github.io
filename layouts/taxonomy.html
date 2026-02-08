@@ -2,9 +2,11 @@
     {{ .Content }}
   {{ range .Data.Terms.Alphabetical }}
     <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>: {{ .Page.Title }}</h2>
-    <p>Catchphrase: {{ .Page.Params.Catchphrase }}</p>
+    <p>Summary or catchphrase: {{ .Page.Params.Summary }}</p>
     {{ with .Page.Resources.Get "thumbnail.png" }}
       <img src="{{ .RelPermalink }}" style="width: 80px; height: 80px;">
+    {{ else with .Page.Resources.Get "thumbnail.jpg" }}
+      <img src="{{ .RelPermalink }}" style="width: 80px;">
     {{ end }}
   {{ end }}
 {{- /*
