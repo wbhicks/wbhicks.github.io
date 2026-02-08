@@ -59,6 +59,7 @@
 
   </head>
   <body>
+    {{/* Wrapping the following line in a header element causes a duplicate header element. */}}
     {{ partial "header.html" . }}
     <main>
       {{ block "main" . }}{{ end }}

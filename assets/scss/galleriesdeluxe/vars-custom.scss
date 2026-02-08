@@ -1,7 +1,7 @@
 // In Galleries Deluxe, color_primary is #3a98b9
 $color_primary: #ccae8f;
-$color_background: #0c0c0c;
-$color_background_footer: #000; // darken(#111, 3%);
+$color_background: #0e0e0e;
+$color_background_footer: #171717; // darken(#111, 3%);
 
 // The lightness of color_background
 // determines which of these two is used:
@@ -119,6 +119,19 @@ body main ul > li > ul > li > ul > li > ul > li {
   list-style-type: circle;
 }
 
+body main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+/* Side padding is already at 1rem */
+body footer {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
 body * {
   line-height: 1.5;
 }
@@ -183,6 +196,11 @@ p, ul, ol, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line,
 .birth-or-death {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+/* see About page for a temp example */
+.example {
+  color: #77f;
 }
 
 .org-example-kludge {

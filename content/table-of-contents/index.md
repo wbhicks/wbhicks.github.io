@@ -1,6 +1,6 @@
 ---
 title: Detailed Table of Contents
-linkTitle: Inhaltsverzeichnis
+linkTitle: ToC
 menus:
   voluntary:
     parent: Home

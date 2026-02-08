@@ -1,7 +1,5 @@
 {{ define "main" }}
-  <div class="markdown-body">
     {{ .Content }}
-  </div>
   {{ range .Data.Terms.Alphabetical }}
     <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>: {{ .Page.Title }}</h2>
     <p>Catchphrase: {{ .Page.Params.Catchphrase }}</p>

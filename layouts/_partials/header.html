@@ -91,6 +91,12 @@
     {{ with site.GetPage "table-of-contents" }}
       {{ $pages = $pages | append . }}
     {{ end }}
+    {{ with site.GetPage "docket" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+    {{ with site.GetPage "galleries" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
     {{ with site.GetPage "categories" }}
       {{ $pages = $pages | append . }}
     {{ end }}
@@ -120,13 +126,13 @@
 
       <span>
       {{ with ($.Scratch.Get "prevPage") }}
-          Previous: <a href="{{ .RelPermalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .Title }}</a>,
+          Previous: <a href="{{ .RelPermalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .LinkTitle }}</a>,
         {{ end }}
       {{ with ($.Scratch.Get "nextPage") }}
-          Next: <a href="{{ .RelPermalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .Title }}</a>,
+          Next: <a href="{{ .RelPermalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .LinkTitle }}</a>,
         {{ end }}
         {{ with .Parent }}
-          Up: <a href="{{ .Permalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .Params.Title }}</a>
+          Up: <a href="{{ .Permalink }}">{{ template "section-code" dict "theWeight" .Weight }} {{ .Params.LinkTitle }}</a>
         {{ end }}
       </span>
       <h1>{{ template "section-code" dict "theWeight" .Weight }} {{ .Title }}</h1>
@@ -142,22 +148,14 @@
       Updated: {{ .PublishDate.Format "2006 Jan 02 Mon" }}
       <hr/>
       {{ $categories := .GetTerms "categories" }}
-      <ul>
-        <li>
-          <a href="{{ site.Home.RelPermalink }}">{{ site.Home.LinkTitle }}</a>
-        </li>
-        {{ with .Parent }}
-          {{ if and (not .IsHome) (not .IsSection) }}
-            <li>
-              <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-            </li>
+      {{ if $categories }}
+        <ul>
+          <li>Tagged under:</li>
+          {{ range $categories }}
+            <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a></li>
           {{ end }}
-        {{ end }}
-
-        {{ range $categories }}
-          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
-        {{ end }}
-      </ul>
+        </ul>
+      {{ end }}
 {{- /*    <span class="design-hint">«hc</span>
 */ -}}
   </div>
@@ -167,9 +165,9 @@
     {{ if or 
         .IsHome DOESNT WORK
         (eq $linkTitleOfThisPage "Home") WORKS
-        (eq .LinkTitle "Inhaltsverzeichnis") 
+        (eq .LinkTitle "ToC") 
         (eq .LinkTitle "About") 
-        (eq .LinkTitle "Categories")
+        (eq .LinkTitle "Tags")
     }}`	
 
 +----------+
