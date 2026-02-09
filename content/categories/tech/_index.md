@@ -4,7 +4,7 @@ title: Technology
 # description: Rendered in html ... head ... meta.
 summary: CompSci, SwDev, SwEng, Hw, etc.
 # keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,howto,money,politics,sci,tech,travel]
+# categories: []
 
 menus:
   voluntary:

@@ -1,11 +1,29 @@
 ---
-title: People In Wikipedia
 linkTitle: Personages
+title: People In Wikipedia
+# description: Rendered in html ... head ... meta.
+# summary: Or use as a teaser.
+# keywords: Rendered in html ... head ... meta.
+# categories: [arts,health,how-to,money,politics,science,tech,travel]
+
 menus:
   voluntary:
     parent: People
+params:
+  opaqueToDiveMenu: false
 weight: 702000000
+
 date: 2023-07-02
+lastmod: 2023-07-02
+draft: false
+# publishDate:
+# expiryDate:
+
+# resources: Maps of metadata for page resources.
+markup: org
+# type: subfolder-of-layouts-iff-layout-is-nested
+# layout: overriding-the-default-template
+# outputs: The output formats to render.
 ---
 
 # I. People in Wikipedia

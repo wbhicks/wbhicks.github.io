@@ -3,7 +3,7 @@ title: Schifferstadt of Frederick Md
 linkTitle: Schifferstadt
 menus:
   voluntary:
-    parent: Docket
+    parent: Frederick
 categories: [health,tech]
 weight: 602000000
 date: 2023-07-06

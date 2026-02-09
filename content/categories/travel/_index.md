@@ -4,7 +4,7 @@ title: Travel, Day Trips & Vacation
 # description: Rendered in html ... head ... meta.
 summary: This excludes commuting.
 # keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,howto,money,politics,sci,tech,travel]
+# categories: []
 
 menus:
   voluntary:

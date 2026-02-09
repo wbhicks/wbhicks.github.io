@@ -27,6 +27,10 @@ title = 'This title will be overridden'
         # my addition:
         enable_captions = true
 
+    [params.divemenu]
+        xray = "depends"
+        # "depends" means use the opaqueToDiveMenu param in each page's frontmatter. Don't xray if param's absent.
+
 [module]
     [[module.mounts]]
         source = "assets"

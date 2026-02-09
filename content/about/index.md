@@ -4,7 +4,7 @@ title: About This Site
 # description: Rendered in html ... head ... meta.
 # summary: Or use as a teaser.
 # keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,howto,money,politics,sci,tech,travel]
+# categories: [arts,health,how-to,money,politics,science,tech,travel]
 
 menus:
   voluntary:
@@ -33,11 +33,13 @@ title: Abe, Bob (?) & Geo.
 # description: Rendered in html ... head ... meta.
 # summary: Or use as a teaser.
 # keywords: Rendered in html ... head ... meta.
-categories: [arts,health,how-to,money,politics,science,tech,travel]
+# categories: [arts,health,how-to,money,politics,science,tech,travel]
 
 menus:
   voluntary:
     parent: Galleries
+params:
+  opaqueToDiveMenu: false
 weight: 123456789
 
 date: 2020-01-01

@@ -1,13 +1,29 @@
 ---
-title: Days of the Year
 linkTitle: Anniversaries
+title: Days of the Year
+# description: Rendered in html ... head ... meta.
+# summary: Or use as a teaser.
+# keywords: Rendered in html ... head ... meta.
+# categories: [arts,health,how-to,money,politics,science,tech,travel]
+
 menus:
   voluntary:
     parent: Docket
-categories: [health,money,travel,tech]
+params:
+  opaqueToDiveMenu: false
 weight: 1234067809
+
 date: 2023-07-08
+lastmod: 2023-07-08
+draft: false
+# publishDate:
+# expiryDate:
+
+# resources: Maps of metadata for page resources.
 markup: org
+# type: subfolder-of-layouts-iff-layout-is-nested
+# layout: overriding-the-default-template
+# outputs: The output formats to render.
 ---
 
 * I. January

@@ -4,7 +4,7 @@ title: Science & Math
 # description: Rendered in html ... head ... meta.
 summary: Excl. engineering. See Technology.
 # keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,howto,money,politics,sci,tech,travel]
+# categories: []
 
 menus:
   voluntary:

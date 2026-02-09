@@ -3,7 +3,7 @@ title: Hessian Barracks of Frederick Md
 linkTitle: Hessian Barracks
 menus:
   voluntary:
-    parent: Docket
+    parent: Frederick
 categories: [travel]
 weight: 601000000
 date: 2023-07-06

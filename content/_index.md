@@ -4,7 +4,7 @@ title: Site Title Here
 # description: Rendered in html ... head ... meta.
 # summary: Or use as a teaser.
 # keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,howto,money,politics,sci,tech,travel]
+# categories: [arts,health,how-to,money,politics,science,tech,travel]
 
 menus: voluntary
 # weight: 123456789
