@@ -1,20 +1,21 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
-{{- $theShownPage := .theShownPage }}
 
 {{- with index site.Menus $menuID }}
   <nav>
+    {{- /* 
+      Choice of "ol" vs. "ul" element here affects only 
+      the item representing the menu root, typically Home 
+    */ -}}
     <ul>
-      {{- partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" . "theShownPage" $theShownPage) }}
+      {{- partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>
 {{- end }}
 
 {{- define "_partials/inline/dive-menu/walk.html" }}
   {{- $page := .page }}
-  {{- $theShownPage := .theShownPage }}
   {{- range .menuEntries }}
-    {{- $otdm := .Params.opaqueToDiveMenu }}
     {{- $attrs := dict "href" .URL }}
     {{- if $page.IsMenuCurrent .Menu . }}
       {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
@@ -28,6 +29,7 @@
       {{- end }}
     {{- end }}
     <li>
+      {{ template "section-code" dict "theWeight" .Weight }}
       {{ .Pre }}<a
         {{- range $k, $v := $attrs }}
           {{- with $v }}
@@ -37,22 +39,18 @@
       >{{ $name }}</a>{{ .Post }}
       {{- if .Children }}
         /
-      {{ else   }}
-        AAA {{ .Weight }} {{ .Page.Params.opaqueToDiveMenu }} ZZZ
+      {{ else if (and (eq "depends" site.Params.divemenu.xray) (not .Page.Params.opaqueToDiveMenu)) }}
+        {{ .Page.TableOfContents }}
 
 {{- /*
-if (and (eq "depends" site.Params.divemenu.xray) (eq "false" .Params.opaqueToDiveMenu))
-        .TableOfContents
 
-      {{ else if (eq "Anniversaries" .Name) }}
-        <ul>TMPLT_PG_ANV</ul>
 */ -}}
 
       {{ end }}
-      {{ if (eq $theShownPage.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
+      {{ if (eq $page.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
       {{- with .Children }}
         <ul>
-          {{- partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" . "theShownPage" $theShownPage) }}
+          {{- partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
       {{- end }}
     </li>

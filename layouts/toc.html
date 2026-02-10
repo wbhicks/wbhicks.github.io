@@ -1,12 +1,9 @@
 {{ define "main" }}
 
-  {{ $foobaz := (site.GetPage "anniversaries").TableOfContents }}
-
   <span class="design-hint">I16s»</span>
-  {{ $flexibleMenuOutput := partial "dive-menu.html" (dict "menuID" "voluntary" "page" . "theShownPage" .) }}
+  {{ $flexibleMenuOutput := partial "dive-menu.html" (dict "menuID" "voluntary" "page" .) }}
 
 {{- /*
-  {{ $flexibleMenuOutput = replace $flexibleMenuOutput `TMPLT_PG_ANV` $foobaz }}
 */ -}}
 
   {{ $flexibleMenuOutput | safeHTML }}

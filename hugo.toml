@@ -28,7 +28,7 @@ title = 'This title will be overridden'
         enable_captions = true
 
     [params.divemenu]
-        xray = "depends"
+        xray = "shouldsaydepends"
         # "depends" means use the opaqueToDiveMenu param in each page's frontmatter. Don't xray if param's absent.
 
 [module]

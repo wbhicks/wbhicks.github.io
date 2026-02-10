@@ -97,28 +97,6 @@ hr {
   cursor: pointer;
 }
 
-ul, ol {
-  margin-left: 1rem;
-    list-style-position: inside; /* or 'outside' */
-    padding-left: 20px; /* Adjust padding for proper alignment */
-}
-
-body main ul > li {
-  list-style-type: circle;
-}
-
-body main ul > li > ul > li {
-  list-style-type: disc;
-}
-
-body main ul > li > ul > li > ul > li {
-  list-style-type: square;
-}
-
-body main ul > li > ul > li > ul > li > ul > li {
-  list-style-type: circle;
-}
-
 body main {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -142,9 +120,46 @@ body pre {
   line-height: 1;
 }
 
-p, ul, ol, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or-blockq, .commentary, .org-example-kludge {
+/* FOR HTML LISTS (OL AND UL) */
+
+ol {
+  /* Override assignment of "disc" in styles.scss, which would make ol's resemble ul's: */
+  list-style-type: decimal !important;
+  list-style-position: outside !important; /* Is "inside" better? */
+  margin-left: 1rem;
+  padding-left: 1rem; /* Adjust padding for proper alignment */
   margin-bottom: 2rem;
 }
+
+ul {
+  list-style-type: disc;        /* Bullets for unordered lists */
+  list-style-position: inside;
+  margin-left: 1rem;
+  padding-left: 20px;           /* Adjust padding for proper alignment */
+  margin-bottom: 2rem;
+}
+
+body main ul > li {
+  list-style-type: circle;
+}
+
+body main ul > li > ul > li {
+  list-style-type: disc;
+}
+
+body main ul > li > ul > li > ul > li {
+  list-style-type: square;
+}
+
+body main ul > li > ul > li > ul > li > ul > li {
+  list-style-type: circle;
+}
+
+body main ul > li > ul > li > ul > li > ul > li > ul > li {
+  list-style-type: disc;
+}
+
+/* END OF STYLING FOR HTML LISTS */
 
 .design-hint {
   color: #222; 
@@ -154,6 +169,10 @@ p, ul, ol, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line,
   font-family: monospace;
   text-align: center;
   color: #777;
+}
+
+p, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or-blockq, .commentary, .org-example-kludge {
+  margin-bottom: 2rem;
 }
 
 .h2-is-1star {
