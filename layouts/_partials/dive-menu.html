@@ -28,8 +28,17 @@
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li>
-      {{ template "section-code" dict "theWeight" .Weight }}
+    {{- /* 
+      Applying this style to the "li" element instead of to "ul" so as to 
+      override vars-custom.scss, which styles "li" at various nested depths:
+    */ -}}
+    <li style="list-style-type: none;">
+      {{- /* 
+        Even if a child of Home has a weight, don't display the weight:
+      */ -}}
+      {{ if (ne "Home" .Page.Parent.Name) }}
+        {{ template "section-code" dict "theWeight" .Weight }}
+      {{ end }}
       {{ .Pre }}<a
         {{- range $k, $v := $attrs }}
           {{- with $v }}
