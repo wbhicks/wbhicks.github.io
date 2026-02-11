@@ -7,6 +7,7 @@ title = "Chesapeake Bay oyster boats shooting, 1886."
 [menus]
   [menus.voluntary]
     parent = 'Annotated'
+weight = '110000000'
 
 image = "chesapeake_oyster_wars_wp.jpeg"
 date = "2025-06-21"

@@ -34,9 +34,10 @@
     */ -}}
     <li style="list-style-type: none;">
       {{- /* 
-        Even if a child of Home has a weight, don't display the weight:
+        Even if a child of Home has a weight, don't display the weight,
+        because I'm displaying weights in the guise of section numbers:
       */ -}}
-      {{ if (ne "Home" .Page.Parent.Name) }}
+      {{ if (ne "Home" .Parent) }}
         {{ template "section-code" dict "theWeight" .Weight }}
       {{ end }}
       {{ .Pre }}<a
@@ -49,11 +50,25 @@
       {{- if .Children }}
         /
       {{ else if (and (eq "depends" site.Params.divemenu.xray) (not .Page.Params.opaqueToDiveMenu)) }}
-        {{ .Page.TableOfContents }}
+
+
 
 {{- /*
+        {{ .Page.TableOfContents }}
 
+{{ $startLevel := 2 }}
+{{ $endLevel := 3 }}
+{{ $ordered := true }}
+AAA {{ .Fragments.Identifiers.Count "headline-188" }} ZZZ
+  {{ .Fragments.ToHTML $startLevel $endLevel $ordered }}
 */ -}}
+
+{{ with .Page }}
+<pre>{{ debug.Dump .Fragments.Headings }}</pre>
+{{ end }}
+
+
+
 
       {{ end }}
       {{ if (eq $page.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
@@ -65,3 +80,8 @@
     </li>
   {{- end }}
 {{- end }}
+
+{{- /*
+  https://discourse.gohugo.io/t/getting-the-parent-name-from-a-template-md/43588/12
+  This goes in the frontmatter ... parent = "{{ path.Base .File.Dir }}"
+*/ -}}

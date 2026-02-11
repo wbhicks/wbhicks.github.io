@@ -9,7 +9,7 @@ title: Detailed Table of Contents
 menus:
   voluntary:
     parent: Home
-# weight: 123456789
+weight: 10
 
 date: 2020-01-01
 lastmod: 2020-01-01

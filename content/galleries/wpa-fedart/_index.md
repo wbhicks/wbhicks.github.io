@@ -3,6 +3,7 @@ title: WpaFedArtProj
 menus:
   voluntary:
     parent: Galleries
+weight: 200000000
 categories: [health,money,travel,tech]
 date: 2019-01-01
 ---

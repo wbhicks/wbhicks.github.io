@@ -9,7 +9,7 @@ title: An Annual Ambit
 menus:
   voluntary:
     parent: Home
-# weight: 123456789
+weight: 60
 
 date: 2020-01-01
 lastmod: 2020-01-01

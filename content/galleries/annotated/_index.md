@@ -4,6 +4,7 @@ title: Annotated
 menus:
   voluntary:
     parent: Galleries
+weight: 100000000
 layout: annotated-nonleaf
 date: 2018-01-01
 ---

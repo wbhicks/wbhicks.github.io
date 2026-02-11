@@ -126,15 +126,15 @@ ol {
   /* Override assignment of "disc" in styles.scss, which would make ol's resemble ul's: */
   list-style-type: decimal !important;
   list-style-position: outside !important; /* Is "inside" better? */
-  margin-left: 1rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
+  /* padding-left: 1rem; */
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 ul {
-  margin-left: 1rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
+  /* padding-left: 1rem; */
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 body main ul > li {

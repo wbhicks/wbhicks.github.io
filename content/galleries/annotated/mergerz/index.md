@@ -7,6 +7,7 @@ title = "A dinkus composed of fleuron and lines."
 [menus]
   [menus.voluntary]
     parent = 'Annotated'
+weight = '130000000'
 
 image = "fleuron_within_dinkus_wp_960x888.jpg"
 date = "2025-06-21"

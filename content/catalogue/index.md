@@ -9,7 +9,7 @@ title: Catalogue, Index, and Glossary
 menus:
   voluntary:
     parent: Home
-# weight: 123456789
+weight: 30
 
 date: 2020-01-01
 lastmod: 2020-01-01
