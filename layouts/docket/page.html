@@ -1,7 +1,9 @@
 {{ define "main" }}
 
   <span class="design-hint">dp»</span>
-  {{ .TableOfContents }}
+  {{- /*
+    {{ .TableOfContents }}
+  */ -}}
 
   {{ $allText := .Content }}
   {{ $allText = replaceRE `\)` `TMPLT_RPAREN` $allText }}
@@ -17,15 +19,26 @@
       {{ $allText = replaceRE . "foo" $allText }}
   {{ end }}
 
+  Where YAML frontmatter says "markup: org" (or the equivalent in TOML or JSON), select headlines thus:
+
+  `<h2 id="headline-([0-9]+)">(.+)</h2>`
+
+  Based on what I tried in the sandbox at https://niklasfasching.github.io/go-org/#headlines.org ,
+  the fact that a 1-asterisk headline maps to <h2>, a 3-asterisk'er maps to <h4>, etc. is a
+  feature/convention/design pattern of Emacs Org Mode and not a bug. Anyway, I like it.
+
   For markdown (as opposed to org mode), select headlines thus:
+
   `<h1 id="(.+)">(.+)</h1>`
+
   And, in the replacement, use the captures thus:
+
   <p id="$1" align="center">$2</p>
 */ -}}
 
   {{ $allText = 
       replaceRE 
-     `<h2 id="headline-([0-9]+)">` 
+     `<h2 id="(.+)">` 
      `<div class="asterism"><pre>
 
 
@@ -36,14 +49,14 @@
 *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 
 
-</pre></div><div class="h2-is-1star" id="headline-$1">` 
+</pre></div><h2 class="h2-from-1star" id="$1">` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h2>` 
-     `</div><div class="asterism"><pre>
+     `</h2><div class="asterism"><pre>
 *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 </pre></div><div class="asterism"><pre>
 |    *         *    |    *         *    |    *         *    |
@@ -57,7 +70,7 @@
 
   {{ $allText = 
       replaceRE 
-     `<h3 id="headline-([0-9]+)">` 
+     `<h3 id="(.+)">` 
      `<div class="asterism"><pre>
 
 
@@ -65,14 +78,14 @@
 -  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
 
 
-</pre></div><div class="h3-is-2stars" id="headline-$1">` 
+</pre></div><h3 class="h3-from-2stars" id="$1">` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h3>` 
-     `</div><div class="asterism"><pre>
+     `</h3><div class="asterism"><pre>
 -  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
 
 
@@ -82,7 +95,7 @@
 
   {{ $allText = 
       replaceRE 
-     `<h4 id="headline-([0-9]+)">` 
+     `<h4 id="(.+)">` 
      `<div class="asterism"><pre>
 
 
@@ -90,14 +103,14 @@
 -  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
-</pre></div><div class="h4-is-3stars" id="headline-$1">TMPLT_S` 
+</pre></div><h4 class="h4-from-3stars" id="$1">TMPLT_S` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h4>`
-     `TMPLT_E</div><div class="asterism"><pre>
+     `TMPLT_E</h4><div class="asterism"><pre>
 -  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
@@ -106,23 +119,9 @@
       $allText 
   }}
 
-{{- /*
-  {{ $allText = 
-      replaceRE
-     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
-     `, writing in $1 $2:<br>$3`
-      $allText 
-  }}
-*/ -}}
-
-  {{ $regexpAnniv := `TMPLT_S
-.*
-TMPLT_E` 
-  }}
-  {{ $matchesAnniv := findRE $regexpAnniv $allText 
-  }}
-  {{ range $matchesAnniv 
-  }}
+  {{ $regexpAnniv := `TMPLT_S.+TMPLT_E` }}
+  {{ $matchesAnniv := findRE $regexpAnniv $allText }}
+  {{ range $matchesAnniv }}
     {{ $lengthOfCurrentTitle := strings.RuneCount . }}
     {{ if gt $lengthOfCurrentTitle 43 }}
       {{ $sliced := split . " " }}
@@ -133,14 +132,14 @@ TMPLT_E`
           {{ $counter = (add $counter 1) }}
         {{ end }}
       {{ end }}
-{{ $counterAsStr := (string $counter) }}
+      {{ $counterAsStr := (string $counter) }}
       {{ $allText = 
           replaceRE
           . 
           (add 
-              (substr . 8 (sub $counter 8))
+              (substr . 7 (sub $counter 7))
               `<br/>`
-              (substr . $counter -8)
+              (substr . $counter -7)
           )
           $allText
       }}
@@ -148,33 +147,36 @@ TMPLT_E`
       {{ $allText = 
           replaceRE
           . 
-          (substr . 8 -8)
+          (substr . 7 -7)
           $allText
       }}
     {{ end }}
-  {{ end 
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `<h5 id="headline-([0-9]+)">
-(.*)
-</h5>`
-     `<div class="h5-is-4stars" id="headline-$1">
-$2
-</div>`
-      $allText
-  }}
+  {{ end }}
 
 {{- /*
-blah blah
+  {{ $allText = 
+      replaceRE
+     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
+     `, writing in $1 $2:<br>$3`
+      $allText 
+  }}
 */ -}}
 
   {{ $allText = 
       replaceRE
-     `<p>
-◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
-     `<div class="fisheye-means-rightmost">Bookmark, $2 $1&nbsp;</div><p></p>`
+     `<h5 id="(.+)">
+(.*)
+</h5>`
+     `<h5 class="h5-from-4stars" id="$1">
+$2
+</h5>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
+     `<div class="fisheye-means-rightmost">Bookmark, $1 $2&nbsp;</div><p></p>`
       $allText
   }}
 

@@ -50,24 +50,24 @@
       {{- if .Children }}
         /
       {{ else if (and (eq "depends" site.Params.divemenu.xray) (not .Page.Params.opaqueToDiveMenu)) }}
-
-
+        {{ with .Page }}
+          AAA {{ .Fragments.Identifiers.Count "headline-198" }} XXX {{ debug.Dump .Fragments.Headings }} ZZZ
+        {{ end }}
 
 {{- /*
         {{ .Page.TableOfContents }}
 
-{{ $startLevel := 2 }}
-{{ $endLevel := 3 }}
-{{ $ordered := true }}
-AAA {{ .Fragments.Identifiers.Count "headline-188" }} ZZZ
-  {{ .Fragments.ToHTML $startLevel $endLevel $ordered }}
-*/ -}}
 
-{{ with .Page }}
+
 <pre>{{ debug.Dump .Fragments.Headings }}</pre>
-{{ end }}
+
+  {{ $startLevel := 1 }}
+  {{ $endLevel := 6 }}
+  {{ $ordered := true }}
+  {{ .Fragments.ToHTML $startLevel $endLevel $ordered }}
 
 
+*/ -}}
 
 
       {{ end }}

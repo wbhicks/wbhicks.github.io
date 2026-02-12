@@ -36,12 +36,12 @@ body.sans-mode, body.sans-mode main * {
 
 @mixin qa-or-dev($the-color-toggle: true) {
   @if $the-color-toggle {
-    a              { color: #f00; } // else color_primary
-    .galleries a   { color: #00f; } // else color_primary
-    .markdown-body { color: #0ff; } // else color-text_ ...
-    h1, h2, h3     { color: #0f0; } // else color-text_ ...
-    p              { color: #ff0; } // else color-text_ ...
-    .design-hint   { color: #f0f; }
+    a                  { color: #f00; } // else color_primary
+    .galleries a       { color: #00f; } // else color_primary
+    .markdown-body     { color: #0ff; } // else color-text_ ...
+    h1, h2, h3, h4, h5 { color: #0f0; } // else color-text_ ...
+    p                  { color: #ff0; } // else color-text_ ...
+    .design-hint       { color: #f0f; }
   }
 }
 
@@ -177,15 +177,44 @@ p, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or
   text-align: center;
 }
 
+.h2-from-1star {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
 .h3-is-2stars {
   text-align: center;
+}
+
+.h3-from-2stars {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
 }
 
 .h4-is-3stars {
   text-align: center;
 }
 
+.h4-from-3stars {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
 .h5-is-4stars {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.h5-from-4stars {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
