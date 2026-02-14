@@ -114,12 +114,6 @@ body * {
   line-height: 1.5;
 }
 
-/* ... except ... */
-
-body pre {
-  line-height: 1;
-}
-
 /* FOR HTML LISTS (OL AND UL) */
 
 ol {
@@ -161,12 +155,6 @@ body main ul > li > ul > li > ul > li > ul > li > ul > li {
 
 .design-hint {
   color: #222; 
-}
-
-.asterism {
-  font-family: monospace;
-  text-align: center;
-  color: #777;
 }
 
 p, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or-blockq, .commentary, .org-example-kludge {
@@ -244,13 +232,24 @@ p, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or
   margin-right: 1rem;
 }
 
-/* see About page for a temp example */
-.example {
-  color: #77f;
+.asterism {
+  font-family: monospace;
+  white-space-collapse: preserve;
+  text-align: center;
+  color: #777;
+  line-height: 1;
 }
 
-.org-example-kludge {
-  display: block;
+/* "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to          */
+/* represent computer code, computer output, and user input, respectively. ... To   */
+/* represent multiple lines of code, wrap the <code> element within a <pre>         */
+/* element. The <code> element by itself only represents a single phrase of code    */
+/* or line of code."                                                                */
+/* Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre */
+
+
+body pre { /* was .org-example-kludge for a while */
+//  display: block;
 
   /* This font-family line has no effect when font_family_sans_serif is in effect. Therefore, */
   /* to see ASCII art, either (a) specify a monospace font for font_family_sans_serif or (b)  */
@@ -259,7 +258,9 @@ p, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or
 
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
-  margin-block-start: 1rem;
-  margin-inline-start: 0px;
-  margin-left: 3rem;
+//  margin-block-start: 1rem;
+//  margin-inline-start: 0px;
+//  margin-left: 3rem;
 }
+
+

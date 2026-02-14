@@ -39,85 +39,73 @@
   {{ $allText = 
       replaceRE 
      `<h2 id="(.+)">` 
-     `<div class="asterism"><pre>
-
-
--  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
-</pre></div><div class="asterism"><pre>
+     `<div class="asterism">-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
 |    *         *    |    *         *    |    *         *    |
-</pre></div><div class="asterism"><pre>
 *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 
 
-</pre></div><h2 class="h2-from-1star" id="$1">` 
+</div><h2 class="h2-from-1star" id="$1">` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h2>` 
-     `</h2><div class="asterism"><pre>
-*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
-</pre></div><div class="asterism"><pre>
+     `</h2><div class="asterism">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 |    *         *    |    *         *    |    *         *    |
-</pre></div><div class="asterism"><pre>
 -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
 
 
-</pre></div>` 
+</div>` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `<h3 id="(.+)">` 
-     `<div class="asterism"><pre>
+     `<div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
 
 
-
--  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
-
-
-</pre></div><h3 class="h3-from-2stars" id="$1">` 
+</div><h3 class="h3-from-2stars" id="$1">` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h3>` 
-     `</h3><div class="asterism"><pre>
--  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
+     `</h3><div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
 
 
-</pre></div>` 
+</div>` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `<h4 id="(.+)">` 
-     `<div class="asterism"><pre>
+     `<div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
-
--  -  -  -  -  *  -  *  -  *  -  -  -  -  -
-
-
-</pre></div><h4 class="h4-from-3stars" id="$1">TMPLT_S` 
+</div><h4 class="h4-from-3stars" id="$1">TMPLT_S` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h4>`
-     `TMPLT_E</h4><div class="asterism"><pre>
--  -  -  -  -  *  -  *  -  *  -  -  -  -  -
+     `TMPLT_E</h4><div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
 
-</pre></div>` 
+</div>` 
       $allText 
   }}
+
+{{- /* 
+If the ’ character occurs in the first half of a 
+sufficiently long match, then the counter overshoots 
+by two and the match is split in the middle of a word:
+*/ -}}
 
   {{ $regexpAnniv := `TMPLT_S.+TMPLT_E` }}
   {{ $matchesAnniv := findRE $regexpAnniv $allText }}
@@ -132,7 +120,6 @@
           {{ $counter = (add $counter 1) }}
         {{ end }}
       {{ end }}
-      {{ $counterAsStr := (string $counter) }}
       {{ $allText = 
           replaceRE
           . 
@@ -236,12 +223,14 @@ dek: &#34;(.+)&#34;</p>`
       $allText
   }}
 
+{{- /*
   {{ $allText = 
       replaceRE 
      `<pre class="example">`
      `<pre class="org-example-kludge">` 
       $allText
   }}
+*/ -}}
 
   {{ $allText = replaceRE `TMPLT_RPAREN` `)`  $allText }}
   {{ $allText = replaceRE `TMPLT_LPAREN` `(`  $allText }}

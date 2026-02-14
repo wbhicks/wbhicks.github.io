@@ -32,7 +32,7 @@ draft: false
 
 #### Blake Gopnik, writing in NYT (2021): "Who Said Art Is Only for the One Percent?"
 
-◉ Bookmark, Jan 8
+◉ Bookmark, Jan 8th
 
 => https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html NYT / by Blake Gopnik
 
@@ -64,8 +64,6 @@ dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art 
 
 ##### Giotto, 1337 (age 70?), in Florence (Firenze)
 
-[[file:/docket/people/personages/#giotto][Some Desc]]
-
 ##### Galileo, 1642 (age 77), in Florence (Firenze)
 
 ##### John Baskerville, 1775 (age 68), in Birmingham, England
@@ -84,7 +82,7 @@ dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art 
 
 #### Thomas B. Edsall, writing in NYT (2023): "The Resentment Fueling the Republican Party Is Not Coming From the Suburbs"
 
-◉ Bookmark, Jan 25
+◉ Bookmark, Jan 25th
 
 => https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html NYT / by Thomas B. Edsall
 
@@ -92,7 +90,7 @@ dek: "Marian Goodman Gallery and MoMA are reviving interest in multiples -- art 
 
 ~ [1]: Or, perhaps equally well, the X axis can show a county's distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.
 
-#+BEGIN_EXAMPLE
+```
 Fig. 1 - A long time ago:        Fig. 2 - Not too long ago:       Fig. 3 - Now:
 
 lean |                           lean |                           lean |
@@ -105,7 +103,7 @@ Dem. |____________________       Dem. |____________________       Dem. |________
       ^                  ^             ^                  ^             ^                  ^
   sparsely         densely         sparsely         densely         sparsely         densely
   populated      populated         populated      populated         populated      populated
-#+END_EXAMPLE
+```
 
 ~ Edsall cites, among others:
 
@@ -141,10 +139,10 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 => https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/ Pew Research Center / by Kim Parker et al.
 
-#+BEGIN_EXAMPLE
+```
 date: 2018-05-22
 authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D'vera Cohn and Ruth Igielnik
-#+END_EXAMPLE
+```
 
 ##### Source: "Hollowing Out the Middle: The Rural Brain Drain and What It Means for America"
 
@@ -162,7 +160,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D'vera C
 
 #### Paul Krugman, writing in NYT (2023): "Can Anything Be Done to Assuage Rural Rage?"
 
-◉ Bookmark, Jan 26
+◉ Bookmark, Jan 26th
 
 => https://www.nytimes.com/2023/01/26/opinion/rural-voters-economy.html NYT / by Paul Krugman
 
@@ -180,7 +178,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D'vera C
 
 #### David Corn, writing in Mother Jones (2023): "Columbia Journalism Review's Big Fail: It Published 24,000 Words on Russiagate and Missed the Point"
 
-◉ Bookmark, Feb 2
+◉ Bookmark, Feb 2nd
 
 => https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/ Mother Jones / by David Corn
 
@@ -196,7 +194,7 @@ dek: "The magazine's attempted takedown of the media's coverage bolsters Trump's
 
 #### Dan Kois, writing in Slate (2023): "The Case for Hanging Out"
 
-◉ Bookmark, Feb 15
+◉ Bookmark, Feb 15th
 
 => https://slate.com/culture/2023/02/hanging-out-sheila-liming-book-friendship-crisis.html Slate / by Dan Kois
 
@@ -212,7 +210,7 @@ dek: "There’s a growing crisis in our social lives. Could the cure be this sim
 
 #### Todd Bookman, writing in NPR (2023): "‘You have to be dangerous back.’ Why some LGBTQ people in New Hampshire are taking up arms"
 
-◉ Bookmark, Feb 23
+◉ Bookmark, Feb 23rd
 
 => https://www.nhpr.org/nh-news/2023-02-23/you-have-to-be-dangerous-back-why-some-lgbtq-people-in-new-hampshire-are-taking-up-arms NPR / by Todd Bookman
 
@@ -232,7 +230,7 @@ dek: "There’s a growing crisis in our social lives. Could the cure be this sim
 
 #### Peter Coy, writing in NYT (2023): "The Perfect Retirement Investment Nobody Wants, Part 2"
 
-◉ Bookmark, Feb 24
+◉ Bookmark, Feb 24th
 
 => https://www.nytimes.com/2023/02/24/opinion/retirement-long-term-care-annuity.html NYT / by Peter Coy
 
@@ -246,7 +244,7 @@ dek: "There’s a growing crisis in our social lives. Could the cure be this sim
 
 #### Gloria Oladipo, writing in The Guardian (2023): "West Virginia mixed martial arts coach offers security for local drag show"
 
-◉ Bookmark, Feb 27
+◉ Bookmark, Feb 27th
 
 => https://www.theguardian.com/us-news/2023/feb/27/west-virginia-mixed-martial-arts-coach-security-drag-show The Guardian / Gloria Oladipo
 
@@ -270,7 +268,7 @@ dek: "Johnny Haught and his trainees volunteered when a restaurant canceled a br
 
 #### Nathan Heller, writing in The New Yorker (2023): "The End of the English Major"
 
-◉ Bookmark, Mar 6
+◉ Bookmark, Mar 6th
 
 => https://www.newyorker.com/magazine/2023/03/06/the-end-of-the-english-major The New Yorker / by Nathan Heller
 
@@ -286,7 +284,7 @@ dek: "Enrollment in the humanities is in free fall at colleges around the countr
 
 #### Rosecrans Baldwin, writing in NYT (2023): "Los Angeles Is a Fantastic Walking City. No, Really."
 
-◉ Bookmark, Mar 7
+◉ Bookmark, Mar 7th
 
 => https://www.nytimes.com/2023/03/07/magazine/los-angeles-walking-rosecrans-avenue.html NYT / by Rosecrans Baldwin
 
@@ -302,7 +300,7 @@ dek: "A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-m
 
 #### Zaria Gorvett, writing in BBC (2021): "The forgotten medieval fruit with a vulgar name"
 
-◉ Bookmark, Mar 25
+◉ Bookmark, Mar 25th
 
 => https://www.bbc.com/future/article/20210325-the-strange-medieval-fruit-the-world-forgot BBC / by Zaria Gorvett
 
@@ -322,7 +320,7 @@ dek: "Medieval Europeans were fanatical about a strange fruit that could only be
 
 ~ The medlar figures in the prologue to one of Chaucer's Canterbury Tales, _The Reeve's Tale_. Here's the relevant passage, excerpted from the prologue:
 
-#+BEGIN_EXAMPLE
+```
 But ik am old, me list not pley for age;
 Gras-tyme is doon, my fodder is now forage,
 This whyte top wryteth myne olde yeres,
@@ -333,11 +331,11 @@ Til it be roten in mullok or in stree.
 We olde men, I drede, so fare we;
 Til we be roten, can we nat be rype;
 We hoppen alwey, whyl that the world wol pype.
-#+END_EXAMPLE
+```
 
 ~ Again, but with some annotations and a very rough line-by-line translation (not meant to stand on its own):
 
-#+BEGIN_EXAMPLE
+```
 But ik[1] am old, me list[2] not pley for age;
  ↳ But I am old, I wish not [to] play, for [because of my] age;
 Gras-tyme is doon[3], my fodder is now forage,[4]
@@ -358,7 +356,7 @@ Til we be roten, can we nat be rype;
  ↳ Till we be rotten, we can not be ripe;
 We hoppen[17] alwey, whyl that the world wol pype.
  ↳ We dance always, while the world will pipe.
-#+END_EXAMPLE
+```
 
 
 ~ [1]: I
@@ -442,12 +440,12 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the "open-ers" fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says "We olde men, I drede, so fare we". But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer's analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve's intent), one in which physical decline may herald a ripeness of spirit or heart:
 
-#+BEGIN_EXAMPLE
+```
 Til we be roten, can we nat be rype;
  ↳ Till we be rotten, we can not be ripe;
 We hoppen alwey, whyl that the world wol pype.
  ↳ We dance always, while the world will pipe.
-#+END_EXAMPLE
+```
 
 #### 1911-03-25: Triangle Shirtwaist Factory fire in Greenwich Village kills 146 garment workers.
 
@@ -457,7 +455,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 #### Veronique Greenwood, writing in NYT (2021): "The Mysterious Molecular Culprit Behind Cold Tooth Pain"
 
-◉ Bookmark, Mar 26
+◉ Bookmark, Mar 26th
 
 => https://www.nytimes.com/2021/03/26/science/tooth-pain-cold.html NYT / by Veronique Greenwood
 
@@ -467,7 +465,7 @@ dek: "Researchers figured out how a jolt of discomfort gets from the damaged out
 
 #### Natasha Turak, writing in CNBC (2023): "Lebanon wakes up in two simultaneous time zones as government can’t agree on daylight saving change"
 
-◉ Bookmark, Mar 27
+◉ Bookmark, Mar 27th
 
 => https://www.cnbc.com/2023/03/27/lebanon-in-two-different-time-zones-as-government-disagrees-on-daylight-savings.html CNBC / by Natasha Turak
 
@@ -477,7 +475,7 @@ dek: "Researchers figured out how a jolt of discomfort gets from the damaged out
 
 #### Nicholas Bakalar, writing in NYT (2023): "One of the Luckiest Lightning Strikes Ever Recorded"
 
-◉ Bookmark, Mar 28
+◉ Bookmark, Mar 28th
 
 => https://www.nytimes.com/2023/03/28/science/lightning-rod-video.html NYT / by Nicholas Bakalar
 
@@ -487,7 +485,7 @@ dek: "Brazilian researchers captured on camera the brief moment when lightning r
 
 #### Erik Olsen, writing in NYT (2021): "The Ocean's Youngest Monsters Are Ready for Glamour Shots"
 
-◉ Bookmark, Mar 30
+◉ Bookmark, Mar 30th
 
 => https://www.nytimes.com/2021/03/30/science/blackwater-photography-fish-larvae.html NYT / by Erik Olsen
 
@@ -495,7 +493,7 @@ dek: "Divers practicing blackwater photography are helping marine scientists gai
 
 #### Geeta Dayal, writing in NYT (2021): "Is the Music Over at Mills College?"
 
-◉ Bookmark, Mar 30
+◉ Bookmark, Mar 30th
 
 => https://www.nytimes.com/2021/03/30/arts/music/mills-college-music.html NYT / by Geeta Dayal
 
@@ -509,7 +507,7 @@ dek: "A hotbed of experimental sound for nearly a century, this school in Oaklan
 
 #### Blake Gopnik, writing in NYT (2021): "Warhol a Lame Copier? The Judges Who Said So Are Sadly Mistaken."
 
-◉ Bookmark, Apr 5
+◉ Bookmark, Apr 5th
 
 => https://www.nytimes.com/2021/04/05/arts/design/warhol-copyright-appeals-court.html NYT / by Blake Gopnik
 
@@ -525,13 +523,13 @@ dek: "An appeals court ruled that Andy Warhol violated a photographer’s copyri
 
 #### Richard Aldous, writing in NYT (2021): Review by Richard Aldous of _The Age Of Decadence: A History of Britain, 1880 to 1914_ by Simon Heffer
 
-◉ Bookmark, Apr 6
+◉ Bookmark, Apr 6th
 
 => https://www.nytimes.com/2021/04/06/books/review/the-age-of-decadence-simon-heffer.html NYT / by Richard Aldous
 
 #### David L. Kirp, writing in NYT (2021): "Why Stanford Should Clone Itself"
 
-◉ Bookmark, Apr 6
+◉ Bookmark, Apr 6th
 
 => https://www.nytimes.com/2021/04/06/opinion/stanford-admissions-campus.html NYT / by David L. Kirp
 
@@ -545,7 +543,7 @@ dek: "If elite colleges are serious about diversity of class and race, there’s
 
 #### Charles Sykes, writing in The Atlantic (2023): "How Wisconsin Republicans Got So Angry"
 
-◉ Bookmark, Apr 7
+◉ Bookmark, Apr 7th
 
 => https://www.theatlantic.com/ideas/archive/2023/04/wisconsin-supreme-court-election-republican-party/673656/ The Atlantic / by Charles Sykes
 
@@ -557,7 +555,7 @@ dek: "They’ve lost four major statewide elections since 2018, for starters, an
 
 #### Aaron Hutcherson, writing in WaPo (2023): "On the Edna Lewis Menu Trail, a toast to an iconic chef and her hometown"
 
-◉ Bookmark, Apr 10
+◉ Bookmark, Apr 10th
 
 => https://www.washingtonpost.com/food/interactive/2023/edna-lewis-menu-trail-virginia/ WaPo / by Aaron Hutcherson
 
@@ -565,7 +563,7 @@ dek: "They’ve lost four major statewide elections since 2018, for starters, an
 
 #### George F. Will, writing in WaPo (2023): "How ‘I despise, therefore I am’ locks in the political status quo"
 
-◉ Bookmark, Apr 12
+◉ Bookmark, Apr 12th
 
 => https://www.washingtonpost.com/opinions/2023/04/12/republican-democrat-poisonous-partisanship/ WaPo / by George F. Will
 
@@ -575,7 +573,7 @@ dek: "They’ve lost four major statewide elections since 2018, for starters, an
 
 #### Errol Louis, writing in NY Magazine (2023): "Eric Adams Is Finally Facing Reality on Work-From-Home Rules"
 
-◉ Bookmark, Apr 12
+◉ Bookmark, Apr 12th
 
 => https://nymag.com/intelligencer/2023/04/eric-adams-is-finally-seeing-reality-on-work-from-home-rules.html NY Magazine / by Errol Louis
 
@@ -583,7 +581,7 @@ dek: "They’ve lost four major statewide elections since 2018, for starters, an
 
 #### Gareth Branwyn, writing in Boing Boing (2021): "The unique and hugely influential Canterbury music scene of the 60s and 70s"
 
-◉ Bookmark, Apr 14
+◉ Bookmark, Apr 14th
 
 => https://boingboing.net/2021/04/14/the-unique-and-hugely-influential-canterbury-music-scene-of-the-60s-and-70s.html Boing Boing / by Gareth Branwyn
 
@@ -597,7 +595,7 @@ dek: "They’ve lost four major statewide elections since 2018, for starters, an
 
 #### Christopher Cokinos, writing in The American Scholar (2021): "Poetry in the Abstract"
 
-◉ Bookmark, Apr 15
+◉ Bookmark, Apr 15th
 
 => https://theamericanscholar.org/poetry-in-the-abstract/ The American Scholar / by Christopher Cokinos
 
@@ -615,7 +613,7 @@ dek: "What happens when scientists write haiku?"
 
 #### Conor Dougherty, writing in NYT (2021): "One Way to Get People Off the Streets: Buy Hotels"
 
-◉ Bookmark, Apr 17
+◉ Bookmark, Apr 17th
 
 => https://www.nytimes.com/2021/04/17/business/california-homeless-hotels.html NYT / by Conor Dougherty
 
@@ -623,7 +621,7 @@ dek: "For homeless people, a place to live is life changing to a degree that alm
 
 #### Shane Harrison, writing in BBC (2023): "How Gerard Hutch murder trial made international headlines"
 
-◉ Bookmark, Apr 17
+◉ Bookmark, Apr 17th
 
 => https://www.bbc.com/news/world-europe-64426289 BBC / by Shane Harrison
 
@@ -633,7 +631,7 @@ dek: "For homeless people, a place to live is life changing to a degree that alm
 
 #### Mark Brown, writing in The Guardian (2021): "‘Creativity is essential’: artist-designed supermarket to open in London"
 
-◉ Bookmark, Apr 19
+◉ Bookmark, Apr 19th
 
 => https://www.theguardian.com/culture/2021/apr/19/creativity-is-essential-artist-designed-supermarket-to-open-at-london-design-museum The Guardian / by Mark Brown
 
@@ -641,7 +639,7 @@ dek: "Product packaging created by artists for UK’s Design Museum aims to show
 
 #### Anil Ananthaswamy, writing in Scientific American (2021): "Quantum Astronomy Could Create Telescopes Hundreds of Kilometers Wide"
 
-◉ Bookmark, Apr 19
+◉ Bookmark, Apr 19th
 
 => https://www.scientificamerican.com/article/quantum-astronomy-could-create-telescopes-hundreds-of-kilometers-wide/ Scientific American / by Anil Ananthaswamy
 
@@ -655,7 +653,7 @@ dek: "Astronomers hope to use innovations from the subatomic world to construct 
 
 #### Michael Tomasky, writing in TNR (2023): "The (Republican) Party’s Over"
 
-◉ Bookmark, Apr 20
+◉ Bookmark, Apr 20th
 
 => https://newrepublic.com/article/171722/republican-party-dead TNR / by Michael Tomasky
 
@@ -665,7 +663,7 @@ dek: "We asked four recovering Republicans if the GOP is salvageable. Hint: They
 
 #### Leah Greenblatt, writing in NYT (2023): "Name Above the Movie Title? How About in It?"
 
-◉ Bookmark, Apr 20
+◉ Bookmark, Apr 20th
 
 => https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html NYT / by Leah Greenblatt
 
@@ -675,7 +673,7 @@ dek: "With the release of “Guy Ritchie’s The Covenant,” here’s a look at
 
 #### Kevin Roose, writing in NYT (2021): "Welcome to the YOLO Economy"
 
-◉ Bookmark, Apr 21
+◉ Bookmark, Apr 21st
 
 => https://www.nytimes.com/2021/04/21/technology/welcome-to-the-yolo-economy.html NYT / by Kevin Roose
 
@@ -683,7 +681,7 @@ dek: "Burned out and flush with savings, some workers are quitting stable jobs i
 
 #### Nell Greenfieldboyce, writing in NPR (2021): "The Secret Mission To Unearth Part Of A 142-Year-Old Experiment"
 
-◉ Bookmark, Apr 21
+◉ Bookmark, Apr 21st
 
 => https://www.npr.org/2021/04/21/989333092/the-secret-mission-to-unearth-part-of-a-142-year-old-experiment NPR / by Nell Greenfieldboyce
 
@@ -691,7 +689,7 @@ dek: "Burned out and flush with savings, some workers are quitting stable jobs i
 
 #### Mary Norris, writing in The New Yorker (2021): "Grammar-Nerd Heaven"
 
-◉ Bookmark, Apr 21
+◉ Bookmark, Apr 21st
 
 => https://www.newyorker.com/culture/comma-queen/grammar-nerd-heaven The New Yorker / by Mary Norris
 
@@ -699,7 +697,7 @@ dek: "A new exhibit showcases the surprisingly contentious history of English gr
 
 #### Harriet Ryan, writing in Los Angeles Times (2023): "A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families"
 
-◉ Bookmark, Apr 21
+◉ Bookmark, Apr 21st
 
 => https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes Los Angeles Times / by Harriet Ryan
 
@@ -709,7 +707,7 @@ dek: "A new exhibit showcases the surprisingly contentious history of English gr
 
 #### Clay Risen, writing in NYT (2021): "Peter Warner, 90, Seafarer Who Discovered Shipwrecked Boys, Dies"
 
-◉ Bookmark, Apr 22
+◉ Bookmark, Apr 22nd
 
 => https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
 
@@ -717,7 +715,7 @@ dek: "That story, which has sometimes been called a real-life 'Lord of the Flies
 
 #### Amelia Soth, writing in JSTOR Daily (2021): "When Paid Applauders Ruled the Paris Opera House"
 
-◉ Bookmark, Apr 22
+◉ Bookmark, Apr 22nd
 
 => https://daily.jstor.org/paid-applauders-paris-opera-claques/ JSTOR Daily / by Amelia Soth
 
@@ -731,7 +729,7 @@ dek: "Professional applauders, collectively known as the “claque,” helped mo
 
 #### Paul Krugman, writing in NYT (2023): "What’s the Matter With New York?"
 
-◉ Bookmark, Apr 24
+◉ Bookmark, Apr 24th
 
 => https://www.nytimes.com/2023/04/24/opinion/new-york-city-affordability-housing.html NYT / by Paul Krugman
 
@@ -741,7 +739,7 @@ dek: "Professional applauders, collectively known as the “claque,” helped mo
 
 #### Carolyn McCusker, writing in NPR (2021): "Tower Of Babble: Nonnative Speakers Navigate The World Of 'Good' And 'Bad' English"
 
-◉ Bookmark, Apr 25
+◉ Bookmark, Apr 25th
 
 => https://www.npr.org/sections/goatsandsoda/2021/04/25/989765565/tower-of-babble-non-native-speakers-navigate-the-world-of-good-and-bad-english NPR / by Carolyn McCusker
 
@@ -755,7 +753,7 @@ dek: "Why Nonnative English Speakers Actually Speak The Best English"
 
 #### Published by Pew Research Center (2016): "Ideological Gap Widens Between More, Less Educated Adults"
 
-◉ Bookmark, Apr 26
+◉ Bookmark, Apr 26th
 
 => https://www.pewresearch.org/politics/2016/04/26/a-wider-ideological-gap-between-more-and-less-educated-adults/ Pew Research Center
 
@@ -767,7 +765,7 @@ dek: "Why Nonnative English Speakers Actually Speak The Best English"
 
 #### Michael Schaffer, writing in Politico (2023): "Jim VandeHei’s Surreal Wellness Evolution"
 
-◉ Bookmark, Apr 28
+◉ Bookmark, Apr 28th
 
 => https://www.politico.com/news/magazine/2023/04/28/jim-vandehei-profile-00094172 Politico / by Michael Schaffer
 
@@ -777,7 +775,7 @@ dek: "D.C.’s most surprising leadership column, and what it says about how the
 
 #### Bill Lukitsch and Anna Spoerre, writing in The Kansas City Star (2021): "Kansas City leaders unveil ‘tiny-home’ village proposal to help address homelessness"
 
-◉ Bookmark, Apr 29
+◉ Bookmark, Apr 29th
 
 => https://www.kansascity.com/news/local/article251004849.html The Kansas City Star / by Bill Lukitsch and Anna Spoerre
 
@@ -787,7 +785,7 @@ dek: "D.C.’s most surprising leadership column, and what it says about how the
 
 #### Maureen Dowd, writing in NYT (2023): "Requiem for the Newsroom"
 
-◉ Bookmark, Apr 29
+◉ Bookmark, Apr 29th
 
 => https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
 
@@ -799,7 +797,7 @@ dek: "D.C.’s most surprising leadership column, and what it says about how the
 
 #### Ilana Kaplan, writing in The Ringer (2021): "Making the (Fictional) Band"
 
-◉ Bookmark, May 3
+◉ Bookmark, May 3rd
 
 => https://www.theringer.com/movies/2021/5/3/22404738/movie-bands-pink-slip-2gether-stillwater-scott-pilgrim-low-shoulder-oral-history The Ringer / by Ilana Kaplan
 
@@ -821,7 +819,7 @@ dek: "D.C.’s most surprising leadership column, and what it says about how the
 
 #### Pilar Viladas, writing in NYT (2021): "A Design Expert Makes Space for Tools and Memories"
 
-◉ Bookmark, May 4
+◉ Bookmark, May 4th
 
 => https://www.nytimes.com/2021/05/04/realestate/design-downsizing.html NYT / by Pilar Viladas
 
@@ -829,7 +827,7 @@ dek: "When David Kelley, the founder of the global firm IDEO, downsized in North
 
 #### Tim McKeough, writing in NYT (2021): "In Miami, a Sculpture Built to Live In"
 
-◉ Bookmark, May 4
+◉ Bookmark, May 4th
 
 => https://www.nytimes.com/2021/05/04/realestate/the-carter-project-miami-sculpture-christopher-carter.html NYT / by Tim McKeough
 
@@ -843,7 +841,7 @@ dek: "Christopher Carter, an artist who works with salvaged materials, set out t
 
 #### David Farrier, writing in BBC (2021): "How cities will fossilise"
 
-◉ Bookmark, May 5
+◉ Bookmark, May 5th
 
 => https://www.bbc.com/future/article/20210505-how-cities-will-fossilise BBC / by David Farrier
 
@@ -857,7 +855,7 @@ dek: "The grand metropolises of 21st Century civilisation will leave a geologica
 
 #### Carolyn McCusker, writing in NPR (2021): "Prepone That! Your Accent Is Funny! Readers Share Their ESL Stories"
 
-◉ Bookmark, May 16
+◉ Bookmark, May 16th
 
 => https://www.npr.org/sections/goatsandsoda/2021/05/16/995963311/prepone-that-your-accent-is-funny-readers-share-their-esl-stories NPR / by Carolyn McCusker
 
@@ -869,7 +867,7 @@ dek: "The grand metropolises of 21st Century civilisation will leave a geologica
 
 #### Daniel J. McGraw, writing in Politico (2015): "The GOP Is Dying Off. Literally."
 
-◉ Bookmark, May 17
+◉ Bookmark, May 17th
 
 => https://www.politico.com/magazine/story/2015/05/the-gop-is-dying-off-literally-118035/ Politico / by Daniel J. McGraw
 
@@ -877,7 +875,7 @@ dek: "The grand metropolises of 21st Century civilisation will leave a geologica
 
 #### Eric Mack, writing in Cnet (2021): "Nikola Tesla invention from 100 years ago suddenly makes more sense today"
 
-◉ Bookmark, May 17
+◉ Bookmark, May 17th
 
 => https://www.cnet.com/news/nikola-tesla-invention-from-100-years-ago-suddenly-makes-more-sense-today/ Cnet / by Eric Mack
 
@@ -885,9 +883,9 @@ dek: "The eccentric inventor is known for dabbling with electricity, but his Tes
 
 ### May 19th
 
-#### Leyland Cecco, writing in The Guardian (2023): "Trudeau’s wide-stance pose with Korean politician splits critics"
+#### Leyland Cecco, writing in The Guardian (2023): "Trudeau's wide-stance pose with Korean politician splits critics"
 
-◉ Bookmark, May 19
+◉ Bookmark, May 19th
 
 => https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs The Guardian / by Leyland Cecco
 
@@ -899,22 +897,22 @@ dek: "Korean media praises prime minister’s gesture, known as ‘manner legs�
 
 #### Eduardo Porter and Guilbert Gates, writing in NYT (2019): "Why Workers Without College Degrees Are Fleeing Big Cities"
 
-◉ Bookmark, May 21
+◉ Bookmark, May 21st
 
 => https://www.nytimes.com/interactive/2019/05/21/business/economy/migration-big-cities.html NYT / by Eduardo Porter and Guilbert Gates
 
 > "But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees."
 
-#+BEGIN_EXAMPLE
-Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the "Deep South" ("the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi"):
+~ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the "Deep South" ("the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi"):
 
+```
                 In 1960    In 2017
                --------   --------
 
 For a janitor: +107 pct    -28 pct
 
 For a lawyer:    -1 pct    +44 pct
-#+END_EXAMPLE
+```
 
 ~ Citations:
 
@@ -928,7 +926,7 @@ For a lawyer:    -1 pct    +44 pct
 
 #### Rodney Ho, writing in Atlanta Journal-Constitution (2021): "How a fake 1987 movie marquee at Gwinnett Place mall turned into viral photo"
 
-◉ Bookmark, May 22
+◉ Bookmark, May 22nd
 
 => https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/ Atlanta Journal-Constitution / by Rodney Ho
 
@@ -942,7 +940,7 @@ dek: "My 2021 photo is from the Jamie Foxx Netflix comedy 'Day Shift' but many b
 
 #### Eriq Gardner, writing in Hollywood Reporter (2021): "Does Andy Warhol Get Same Copyright Treatment as Google Code?"
 
-◉ Bookmark, May 23
+◉ Bookmark, May 23rd
 
 => https://www.hollywoodreporter.com/business/business-news/does-andy-warhol-get-same-copyright-treatment-as-google-code-4171885/ Hollywood Reporter / by Eriq Gardner
 
@@ -956,7 +954,7 @@ dek: "My 2021 photo is from the Jamie Foxx Netflix comedy 'Day Shift' but many b
 
 #### Katherine Shaver, writing in WaPo (2022): "As office-centric downtowns struggle, suburbs cater to the laptop crowd"
 
-◉ Bookmark, May 24
+◉ Bookmark, May 24th
 
 => https://www.washingtonpost.com/transportation/2022/05/24/pandemic-suburbs-downtown-retail/ WaPo / by Katherine Shaver
 
@@ -984,7 +982,7 @@ dek: "Centuries-old Ceiba pentandra marked where formerly enslaved people had pr
 
 #### Jacopo Prisco, writing in CNN (2022): "Decoding the messages tucked away in one ‘politically significant’ city’s street art"
 
-◉ Bookmark, May 31
+◉ Bookmark, May 31st
 
 => https://www.cnn.com/style/article/cita-sadeli-miss-chelove-street-art-nomad/index.html CNN / by Jacopo Prisco
 
@@ -996,7 +994,7 @@ dek: "Centuries-old Ceiba pentandra marked where formerly enslaved people had pr
 
 #### Published by Pew Research Center (2021): "Lower-income Americans still less likely to have home broadband, smartphone"
 
-◉ Bookmark, Jun 22
+◉ Bookmark, Jun 22nd
 
 => https://www.pewresearch.org/fact-tank/2021/06/22/digital-divide-persists-even-as-americans-with-lower-incomes-make-gains-in-tech-adoption/ Pew Research Center
 
@@ -1012,7 +1010,7 @@ dek: "Centuries-old Ceiba pentandra marked where formerly enslaved people had pr
 
 #### Allyson Waller, writing in NYT (2020): "Man Falls Through the Floor and Discovers a Well Beneath a Connecticut House"
 
-◉ Bookmark, Jul 1
+◉ Bookmark, Jul 1st
 
 => https://www.nytimes.com/2020/07/01/nyregion/guilford-ct-fire-rescue-well.html NYT / by Allyson Waller
 
@@ -1026,7 +1024,7 @@ dek: "... was helping a friend move into a house when the floor gave way beneath
 
 #### Vimal Patel, writing in NYT (2023): "At UChicago, a Debate Over Free Speech and Cyberbullying"
 
-◉ Bookmark, Jul 3
+◉ Bookmark, Jul 3rd
 
 => https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
 
@@ -1038,7 +1036,7 @@ dek: "A student objected to a class, “The Problem of Whiteness,” and tweeted
 
 #### Mackenzie Mays, writing in Politico (2021): "West Virginia is Trading Trump for Tech Workers"
 
-◉ Bookmark, Jul 9
+◉ Bookmark, Jul 9th
 
 => https://www.politico.com/news/magazine/2021/07/09/west-virginia-economy-paid-remote-work-498238 Politico / by Mackenzie Mays
 
@@ -1052,7 +1050,7 @@ dek: "The population is fleeing, jobs are disappearing and coal isn’t coming b
 
 #### Evan Osnos, writing in The New Yorker (2022): "The Haves and the Have-Yachts"
 
-◉ Bookmark, Jul 18
+◉ Bookmark, Jul 18th
 
 => https://www.newyorker.com/magazine/2022/07/25/the-haves-and-the-have-yachts The New Yorker / by Evan Osnos
 
@@ -1068,7 +1066,7 @@ dek: "Luxury ships attract outrage and political scrutiny. The ultra-rich are bu
 
 #### Beatrice Jin, writing in Politico (2021): "When it comes to reopening after coronavirus, income matters more than party"
 
-◉ Bookmark, Jul 21
+◉ Bookmark, Jul 21st
 
 => https://www.politico.com/interactives/2021/coronavirus-reopening-by-county-income/ Politico / by Beatrice Jin
 
@@ -1090,7 +1088,7 @@ dek: "Cell phone data shows a partisan split on how quickly people are returning
 
 #### Popkin, writing in Boing Boing (2021): "Watch this short documentary about the influential, experimental Black Mountain College"
 
-◉ Bookmark, Aug 7
+◉ Bookmark, Aug 7th
 
 => https://boingboing.net/2021/08/07/watch-this-short-documentary-about-the-influential-experimental-black-mountain-college.html Boing Boing / by Popkin
 
@@ -1104,7 +1102,7 @@ dek: "Cell phone data shows a partisan split on how quickly people are returning
 
 #### Ian Burke, writing in Vice (2021): "Moving to NYC From the West Coast? Here's What You'll Need"
 
-◉ Bookmark, Aug 10
+◉ Bookmark, Aug 10th
 
 => https://www.vice.com/en/article/akgqyz/moving-to-new-york-essentials Vice / by Ian Burke
 
@@ -1126,7 +1124,7 @@ dek: "Start with a brisk walking pace, an incorrect opinion on bagels, and a hea
 
 #### Maxwell Strachan, writing in Vice (2021): "Zillow, Other Tech Firms Are in an ‘Arms Race’ To Buy Up American Homes"
 
-◉ Bookmark, Aug 13
+◉ Bookmark, Aug 13th
 
 => https://www.vice.com/en/article/93ymxz/zillow-other-tech-firms-are-in-an-arms-race-to-buy-up-american-homes Vice / by Maxwell Strachan
 
@@ -1134,7 +1132,7 @@ dek: "'iBuyers' are gearing up to grow massively in the coming years, with unfor
 
 #### Mary Frances "Francky" Knapp, writing in Vice (2021): "Moving to LA From the East Coast? Here's What You'll Need"
 
-◉ Bookmark, Aug 13
+◉ Bookmark, Aug 13th
 
 => https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances "Francky" Knapp
 
@@ -1144,7 +1142,7 @@ dek: "In addition to patience for traffic and Erewhon-ready smugness, here are t
 
 #### Aaron Mak, writing in Slate (2021): "What’s Really Wrong With the New Twitter Font"
 
-◉ Bookmark, Aug 13
+◉ Bookmark, Aug 13th
 
 => https://slate.com/technology/2021/08/twitter-font-redesign-chirp-franklin-gothic.html Slate / by Aaron Mak
 
@@ -1160,7 +1158,7 @@ dek: "And why users think it’s unreadable."
 
 #### Kayleen Devlin, writing in BBC (2021): "Algeria: The forest fires that led to an artist's lynching"
 
-◉ Bookmark, Aug 19
+◉ Bookmark, Aug 19th
 
 => https://www.bbc.com/news/world-africa-58260855 BBC / by Kayleen Devlin
 
@@ -1168,7 +1166,7 @@ dek: "The BBC's Kayleen Devlin tells a harrowing story of how the life of a youn
 
 #### Henry Grabar, writing in Slate (2021): "The Perverse Reason It’s Easier to Build New Highways Than New Subways - The environment?!"
 
-◉ Bookmark, Aug 19
+◉ Bookmark, Aug 19th
 
 => https://slate.com/business/2021/08/congestion-pricing-nyc-bart-tunnel-san-francisco-bay-environmental-reviews.html Slate / by Henry Grabar
 
@@ -1182,7 +1180,7 @@ dek: "Congestion pricing in NYC, subway tunnels in San Francisco are being held 
 
 #### Published by ACLED and the Everytown for Gun Safety Support Fund (2021): "Armed Assembly: Guns, Demonstrations, and Political Violence in America"
 
-◉ Bookmark, Aug 23
+◉ Bookmark, Aug 23rd
 
 => https://acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america
 
@@ -1202,7 +1200,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 #### Josh Giesbrecht, writing in The Atlantic (2015): "How the Ballpoint Pen Killed Cursive"
 
-◉ Bookmark, Aug 28
+◉ Bookmark, Aug 28th
 
 => https://www.theatlantic.com/technology/archive/2015/08/ballpoint-pens-object-lesson-history-handwriting/402205/ The Atlantic / by Josh Giesbrecht
 
@@ -1214,7 +1212,7 @@ dek: "Thicker ink, fewer smudges, and more strained hands: an Object Lesson"
 
 #### Published by three elected Republicans (2023): Posts on the social networking service Twitter 
 
-◉ Bookmark, Sep 12
+◉ Bookmark, Sep 12th
 
 ##### Posted by Chris Christie (@GovChristie) on Twitter
 
@@ -1238,7 +1236,7 @@ dek: "Thicker ink, fewer smudges, and more strained hands: an Object Lesson"
 
 #### Tom McTague, writing in The Atlantic (2021): "Why Britain and France Hate Each Other"
 
-◉ Bookmark, Sep 24
+◉ Bookmark, Sep 24th
 
 => https://www.theatlantic.com/international/archive/2021/09/britain-france-us-aukus/620186/ The Atlantic / by Tom McTague
 
@@ -1252,10 +1250,10 @@ dek: "The two countries are more similar than is often acknowledged."
 
 > "Poet Ogden Nash observed the following about Laemmle's habit of giving his son and nephews top executive positions in his studios:"
 
-#+BEGIN_EXAMPLE
+```
 Uncle Carl Laemmle
 Has a very large faemmle. -- from
-#+END_EXAMPLE
+```
 
 => https://en.wikipedia.org/wiki/Carl_Laemmle WP / Carl Laemmle
 
@@ -1275,7 +1273,7 @@ Has a very large faemmle. -- from
 
 #### Ezra Klein, writing in NYT (2022): "Three Theories That Explain This Strange Moment"
 
-◉ Bookmark, Nov 12
+◉ Bookmark, Nov 12th
 
 => https://www.nytimes.com/2022/11/12/opinion/election-midterm-pattern.html NYT / by Ezra Klein
 
@@ -1287,7 +1285,7 @@ Has a very large faemmle. -- from
 
 #### Rob Beschizza, writing in Boing Boing (2021): "Intersections of Pittsburgh"
 
-◉ Bookmark, Nov 22
+◉ Bookmark, Nov 22nd
 
 => https://boingboing.net/2021/11/22/intersections-of-pittsburgh.html Boing Boing / by Rob Beschizza
 
@@ -1299,7 +1297,7 @@ Has a very large faemmle. -- from
 
 #### Andy Newman and Emma G. Fitzsimmons, writing in NYT (2022): "New York City to Involuntarily Remove Mentally Ill People From Streets"
 
-◉ Bookmark, Nov 29
+◉ Bookmark, Nov 29th
 
 => https://www.nytimes.com/2022/11/29/nyregion/nyc-mentally-ill-involuntary-custody.html NYT / by Andy Newman and Emma G. Fitzsimmons
 
@@ -1309,9 +1307,9 @@ dek: "Mayor Eric Adams directed the police and emergency medical workers to hosp
 
 ### December 13th
 
-#### Bobbi Dempsey, writing in Slate (2022): "I’ve Been Plagued by Medical Debt for Years. Here’s What Happened When I Tried to Pay a $2 Medical Bill."
+#### Bobbi Dempsey, writing in Slate (2022): "I've Been Plagued by Medical Debt for Years. Here’s What Happened When I Tried to Pay a USD 2 Medical Bill."
 
-◉ Bookmark, Dec 13
+◉ Bookmark, Dec 13th
 
 => https://slate.com/technology/2022/12/medical-debt-collections-credit-report-burden.html Slate / by Bobbi Dempsey
 
@@ -1321,7 +1319,7 @@ dek: "Recent changes -- and more coming in early 2023 -- could bring some relief
 
 #### Zeynep Tufekci, writing in NYT (2022): "The Shameful Open Secret Behind Southwest’s Failure"
 
-◉ Bookmark, Dec 31
+◉ Bookmark, Dec 31st
 
 => https://www.nytimes.com/2022/12/31/opinion/southwest-airlines-computers.html NYT / by Zeynep Tufekci
 
