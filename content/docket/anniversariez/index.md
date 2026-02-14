@@ -883,7 +883,7 @@ dek: "The eccentric inventor is known for dabbling with electricity, but his Tes
 
 ### May 19th
 
-#### Leyland Cecco, writing in The Guardian (2023): "Trudeau's wide-stance pose with Korean politician splits critics"
+#### Leyland Cecco, writing in The Guardian (2023): "Trudeau’s wide-stance pose with Korean politician splits critics"
 
 ◉ Bookmark, May 19th
 

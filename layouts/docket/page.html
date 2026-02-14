@@ -86,14 +86,14 @@
      `<div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
-</div><h4 class="h4-from-3stars" id="$1">TMPLT_S` 
+</div><h4 class="h4-from-3stars" id="$1">TMPLT_H4STRT` 
       $allText 
   }}
 
   {{ $allText = 
       replaceRE 
      `</h4>`
-     `TMPLT_E</h4><div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
+     `TMPLT_H4ENDS</h4><div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
 
@@ -102,39 +102,81 @@
   }}
 
 {{- /* 
-If the ’ character occurs in the first half of a 
-sufficiently long match, then the counter overshoots 
-by two and the match is split in the middle of a word:
+None of my 126 h4-level headlines have shown an inequality between these two:
+    {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
+    {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
+However, 17 of the 126 do show an inequality when using . instead of $scouredMatch
+
+If the ’ character occurs in the first half of a sufficiently long match, then 
+the counter overshoots by two and the match is split in the middle of a word.
+
+safeHTML seems unneeded
 */ -}}
 
-  {{ $regexpAnniv := `TMPLT_S.+TMPLT_E` }}
+  {{ $regexpAnniv := `TMPLT_H4STRT.+TMPLT_H4ENDS` }}
   {{ $matchesAnniv := findRE $regexpAnniv $allText }}
   {{ range $matchesAnniv }}
-    {{ $lengthOfCurrentTitle := strings.RuneCount . }}
-    {{ if gt $lengthOfCurrentTitle 43 }}
-      {{ $sliced := split . " " }}
-      {{ $counter := 0 }}
-      {{ range $sliced }}
-        {{ if lt $counter (div $lengthOfCurrentTitle 2) }}
-          {{ $counter = (add $counter (len .)) }}
-          {{ $counter = (add $counter 1) }}
+{{- /* 
+        replaceRE
+        `TMPLT_[A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]`
+        `~`
+*/ -}}
+    {{ $preciselyMeasurableMatch := 
+        .
+    }}
+{{- /* 
+    {{ $unescapedMatch := safeHTML (htmlUnescape $roughlyMeasurableMatch) }}
+    {{ $preciselyMeasurableMatch := 
+        replaceRE
+        `[^_ a-zA-Z0-9]`
+        `^`
+        $unescapedMatch
+    }}
+*/ -}}
+    {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
+    {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
+    {{ if eq $lengthOfCurrentTitle $lenOfCurrentTitle }}
+      {{ if gt $lengthOfCurrentTitle 43 }}
+        {{ $overallCtr := 0 }}
+        {{ $sliced := split $preciselyMeasurableMatch " " }}
+        {{ $counter := 0 }}
+        {{ $x := "" }}
+        {{ $midwayPoint := div $lengthOfCurrentTitle 2 }}
+        {{ range $sliced }}
+          {{ $x = (add $x (add . (cast.ToString (len .)))) }}
+          {{ if lt $counter $midwayPoint }}
+            {{ $overallCtr = add $overallCtr (strings.Count "TMPLT_" .) }}
+            {{ $charsInThisItemSoonToBeHidden := mul (strings.Count "TMPLT_" .) 11 }}
+            {{ $counter = (add $counter (len .)) }}
+            {{ $counter = sub $counter $charsInThisItemSoonToBeHidden }}
+            {{ $counter = (add $counter 1) }}
+          {{ end }}
         {{ end }}
+        {{ $allText = 
+            replaceRE
+            . 
+            (add 
+                (substr . 12 (sub $counter 12))
+                `=`
+                (cast.ToString $overallCtr)
+                `=`
+                (substr . $counter -12)
+            )
+            $allText
+        }}
+      {{ else }}
+        {{ $allText = 
+            replaceRE
+            . 
+            (add (cast.ToString $lengthOfCurrentTitle) (substr . 12 -12))
+            $allText
+        }}
       {{ end }}
-      {{ $allText = 
-          replaceRE
-          . 
-          (add 
-              (substr . 7 (sub $counter 7))
-              `<br/>`
-              (substr . $counter -7)
-          )
-          $allText
-      }}
     {{ else }}
       {{ $allText = 
           replaceRE
-          . 
-          (substr . 7 -7)
+          .
+          (add `ERROR! ` (cast.ToString $lengthOfCurrentTitle) ` does not equal ` (cast.ToString $lenOfCurrentTitle) ` !`)
           $allText
       }}
     {{ end }}
