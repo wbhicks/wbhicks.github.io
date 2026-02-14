@@ -9,6 +9,10 @@
   {{ $allText = replaceRE `\)` `TMPLT_RPAREN` $allText }}
   {{ $allText = replaceRE `\(` `TMPLT_LPAREN` $allText }}
   {{ $allText = replaceRE `\?` `TMPLT_QSTNMK` $allText }}
+  {{ $allText = replaceRE `’`  `TMPLT_RSNGQA` $allText }}
+  {{ $allText = replaceRE `‘`  `TMPLT_LSNGQA` $allText }}
+  {{ $allText = replaceRE `”`  `TMPLT_RDBLQA` $allText }}
+  {{ $allText = replaceRE `“`  `TMPLT_LDBLQA` $allText }}
   {{ $allText = replaceRE `--` `TMPLT_2HYFNS` $allText }}
   {{ $allText = replaceRE `–`  `TMPLT_2HYFNS` $allText }}
 
@@ -136,31 +140,34 @@ safeHTML seems unneeded
     {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
     {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
     {{ if eq $lengthOfCurrentTitle $lenOfCurrentTitle }}
-      {{ if gt $lengthOfCurrentTitle 43 }}
-        {{ $overallCtr := 0 }}
+      {{ $numOfLength12SubstitutesInThisHeadline := 0 }}
+      {{ if gt $lengthOfCurrentTitle 80 }}
         {{ $sliced := split $preciselyMeasurableMatch " " }}
-        {{ $counter := 0 }}
-        {{ $x := "" }}
-        {{ $midwayPoint := div $lengthOfCurrentTitle 2 }}
         {{ range $sliced }}
-          {{ $x = (add $x (add . (cast.ToString (len .)))) }}
-          {{ if lt $counter $midwayPoint }}
-            {{ $overallCtr = add $overallCtr (strings.Count "TMPLT_" .) }}
-            {{ $charsInThisItemSoonToBeHidden := mul (strings.Count "TMPLT_" .) 11 }}
-            {{ $counter = (add $counter (len .)) }}
-            {{ $counter = sub $counter $charsInThisItemSoonToBeHidden }}
-            {{ $counter = (add $counter 1) }}
+          {{ $numOfLength12SubstitutesInThisHeadline = add $numOfLength12SubstitutesInThisHeadline (strings.Count "TMPLT_" .) }}
+        {{ end }}
+        {{ $numOfAsciiCharsThatWillVanish := mul $numOfLength12SubstitutesInThisHeadline 11 }}
+        {{ $lengthOfCurrentTitle = sub $lengthOfCurrentTitle $numOfAsciiCharsThatWillVanish }}
+        {{ $midwayPoint := div $lengthOfCurrentTitle 2 }}
+        {{ $counterToMidwayPoint := 0 }}
+        {{ range $sliced }}
+          {{ if lt $counterToMidwayPoint $midwayPoint }}
+            {{ $counterToMidwayPoint = add $counterToMidwayPoint (len .) }}
+            {{ $counterToMidwayPoint = add $counterToMidwayPoint 1 }}
+            {{ $charsInThisTokenSoonToBeHidden := mul (strings.Count "TMPLT_" .) 11 }}
+            {{ $midwayPoint = add $midwayPoint $charsInThisTokenSoonToBeHidden }}
+{{- /* 
+            {{ $counterToMidwayPoint = sub $counterToMidwayPoint $charsInThisTokenSoonToBeHidden }}
+*/ -}}
           {{ end }}
         {{ end }}
         {{ $allText = 
             replaceRE
             . 
             (add 
-                (substr . 12 (sub $counter 12))
-                `=`
-                (cast.ToString $overallCtr)
-                `=`
-                (substr . $counter -12)
+                (substr . 12 (sub $counterToMidwayPoint 12))
+                `<br/>`
+                (substr . $counterToMidwayPoint -12)
             )
             $allText
         }}
@@ -277,6 +284,10 @@ dek: &#34;(.+)&#34;</p>`
   {{ $allText = replaceRE `TMPLT_RPAREN` `)`  $allText }}
   {{ $allText = replaceRE `TMPLT_LPAREN` `(`  $allText }}
   {{ $allText = replaceRE `TMPLT_QSTNMK` `?`  $allText }}
+  {{ $allText = replaceRE `TMPLT_RSNGQA` `’`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LSNGQA` `‘`  $allText }}
+  {{ $allText = replaceRE `TMPLT_RDBLQA` `”`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LDBLQA` `“`  $allText }}
   {{ $allText = replaceRE `TMPLT_2HYFNS` `--` $allText }}
   {{ $allText | safeHTML }}
   <span class="design-hint">«dp</span>
