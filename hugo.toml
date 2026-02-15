@@ -31,6 +31,12 @@ title = 'This title will be overridden'
         xray = "depends"
         # "depends" means use the opaqueToDiveMenu param in each page's frontmatter. Don't xray if param's absent.
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.typographer]
+        disable = true
+
 [module]
     [[module.mounts]]
         source = "assets"
