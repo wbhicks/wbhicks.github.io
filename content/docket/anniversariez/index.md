@@ -206,7 +206,7 @@ dek: ❝There’s a growing crisis in our social lives. Could the cure be this s
 
 ~ The recommendation: Kill some time by hanging out with your friends and shooting the breeze.
 
-#### 1946-02-15: University of Pennsylvania hosts the official dedication of ENIAC ("Electronic Numerical Integrator And Computer"). See also:
+#### 1946-02-15: University of Pennsylvania hosts the official dedication of <abbr>ENIAC</abbr> (Electronic Numerical Integrator And Computer). See also:
 
 => https://en.wikipedia.org/wiki/Manchester_Baby WP / Manchester Baby
 
@@ -316,7 +316,7 @@ dek: ❝A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27
 
 dek: ❝Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?❞
 
-~ The medlar, also known as the "open-arse", the "monkey's bottom", etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
+~ The medlar, also known as the <i class="archaic-synonym">open-arse</i>, the <i class="archaic-synonym">monkey's bottom</i>, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
 > ❝The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar's native territory near the Caspian Sea, the fruit remains as popular as ever. It's still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it's sold in markets as musmula.❞
 
@@ -375,7 +375,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [3]: done, over with
 
-~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: "_gras-time_, the time when a horse feeds himself in the fields. _My fodder is now forage_, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable."
+~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: <q><i class="archaic-term">gras-time</i>, the time when a horse feeds himself in the fields. <i class="archaic-term">My fodder is now forage</i>, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.</q>
 
 ~ [5]: head, top of one's head
 
@@ -383,13 +383,13 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [7]: old, moldy
 
-~ [8]: From Skeat's notes: "'My heart is as old (lit. mouldy) as my hairs are.' Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32."
+~ [8]: From Skeat's notes: <q>'My heart is as old (lit. mouldy) as my hairs are.' Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32.</q>
 
 ~ [9]: unless
 
 ~ [10]: does
 
-~ [11]: a medlar fruit. The medieval _ers_ is the modern "arse" (British) or "ass" (American).
+~ [11]: a medlar fruit. The medieval <i class="archaic-term">ers</i> is the modern <i class="synonym">arse</i> (British) or <i class="synonym">ass</i> (American).
 
 ~ [12]: From Skeat's notes (covering this and the following two lines): <q>'Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.'</q>
 
@@ -401,7 +401,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [16]: straw
 
-~ [17]: From Skeat's notes: "_hoppen_, dance"
+~ [17]: From Skeat's notes: <q><i class="archaic-synonym">hoppen</i>, dance</q>
 
 ~ Noticing Skeat's comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer's verb, _to write_, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker's head. Where does this ambiguity come from? When _to write_ is used metaphorically, does it always invite this two-directional reading?
 
@@ -410,7 +410,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 - White hair results from a person's old age.
 - A person's old age causes their white hair.
 
-~ In this first iteration, I am using the terminology of cause-and-effect. In neither statement is the subject-object relation reversible, because each statement is (statistically) plausible but each reversal ("Old age results from white hair" or "White hair causes old age") is false.
+~ In this first iteration, I am using the terminology of cause-and-effect. In neither statement is the subject-object relation reversible, because each statement is (statistically) plausible but each reversal (<i class="logical-statement">Old age results from white hair</i> or <i class="logical-statement">White hair causes old age</i>) is false.
 
 ~ Note that this is unrelated to the poetic convention of inverted word order. To see this, suppose that you came across the first statement as a line of light verse, or in a flowery comic monologue, with a comma after _age_. This would invite you to at least entertain the fanciful interpretation that _hair_ is the subject and _age_ the object, but it would still be the case that the truth value of the statement changes (from true, or at least statistically plausible, to false) when the subject and object are swapped.
 
@@ -448,7 +448,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 => https://en.wikipedia.org/wiki/Anastrophe WP / Anastrophe
 
-~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the "open-ers" fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says <q>We olde men, I drede, so fare we</q>. But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer's analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve's intent), one in which physical decline may herald a ripeness of spirit or heart:
+~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the <i class="archaic-synonym">open-ers</i> fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says <q>We olde men, I drede, so fare we</q>. But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer's analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve's intent), one in which physical decline may herald a ripeness of spirit or heart:
 
 ```
 Til we be roten, can we nat be rype;
@@ -579,7 +579,7 @@ dek: ❝They’ve lost four major statewide elections since 2018, for starters, 
 
 > ❝... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.❞
 
-~ cf. Ezra Klein's word "calcification" in <cite>Three Theories That Explain This Strange Moment</cite>, 2022-11-12
+~ cf. Ezra Klein's use of <i class="word-as-word">calcification</i> in <cite>Three Theories That Explain This Strange Moment</cite>, 2022-11-12
 
 #### Errol Louis, writing in NY Magazine (2023): <cite>Eric Adams Is Finally Facing Reality on Work-From-Home Rules</cite>
 
@@ -903,7 +903,7 @@ dek: ❝The eccentric inventor is known for dabbling with electricity, but his T
 
 dek: ❝Korean media praises prime minister’s gesture, known as ‘manner legs’, while some Canadians say it is embarrassing country❞
 
-~ A note for students of English: the word "split" in the headline is a play on words.
+~ A note for students of English: the word <i class="word-as-word">split<i class="word-as-word"> in the headline is a play on words.
 
 ### May 21st
 
@@ -915,7 +915,7 @@ dek: ❝Korean media praises prime minister’s gesture, known as ‘manner legs
 
 > ❝But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.❞
 
-~ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the "Deep South" (<q>the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi</q>):
+~ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the <i class="term">Deep South</i> (<q>the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi</q>):
 
 ```
                 In 1960    In 2017
@@ -1144,11 +1144,11 @@ dek: ❝Start with a brisk walking pace, an incorrect opinion on bagels, and a h
 
 dek: ❝'iBuyers' are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.❞
 
-#### Mary Frances "Francky" Knapp, writing in Vice (2021): <cite>Moving to LA From the East Coast? Here's What You'll Need</cite>
+#### Mary Frances <i class="nickname">Francky</i> Knapp, writing in Vice (2021): <cite>Moving to LA From the East Coast? Here's What You'll Need</cite>
 
 ◉ Bookmark, Aug 13th
 
-=> https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances "Francky" Knapp
+=> https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances <i class="nickname">Francky</i> Knapp
 
 dek: ❝In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you'll need for your new LA life of pool parties and picnics.❞
 
@@ -1295,7 +1295,7 @@ Has a very large faemmle. -- from
 
 ~ Writing in The Times, Ezra Klein discusses <q>... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.</q>
 
-~ cf. George F. Will's phrase "boiling but frozen" in <cite>How ‘I despise, therefore I am’ locks in the political status quo</cite>, 2023-04-12
+~ cf. George F. Will's coinage <i class="term">boiling but frozen</i> in <cite>How ‘I despise, therefore I am’ locks in the political status quo</cite>, 2023-04-12
 
 ### November 22nd
 
