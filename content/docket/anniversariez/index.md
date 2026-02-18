@@ -36,29 +36,29 @@ draft: false
 
 => https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html NYT / by Blake Gopnik
 
-dek: ❝Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the '60s middle-class. Now, some artists are taking up the cause.❞
+dek: ❝Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the <span class="apostrophe">&#39;</span>60s middle-class. Now, some artists are taking up the cause.❞
 
-~ Referring to contemporary artist Danh Võ, Blake Gopnik writes: <q>Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece.</q>
+~ Referring to contemporary artist Danh Võ, Blake Gopnik writes: <q>Mr. Vo sees the letter<span class="apostrophe">&#39;</span>s almost trivial price tag as adding conceptual heft to the piece.</q>
 
 ~ The social significance attached by some artists to the extremely low prices of their multiples has, I think, a close analogue in the infinite reproducibility of digital art, which some (most?) digital artists consider to be both good and intrinsic to their work.
 
-#### 1790-01-08: GW's 1st SoTU, including this passage:
+#### 1790-01-08: GW<span class="apostrophe">&#39;</span>s 1st SoTU, including this passage:
 
 > ❝Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.❞
 >
 > -- from
 
-=> https://en.wikisource.org/wiki/George_Washington's_First_State_of_the_Union_Address Wikisource   
+=> https://en.wikisource.org/wiki/George_Washington<span class="apostrophe">&#39;</span>s_First_State_of_the_Union_Address Wikisource   
 
 => https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a Gutenberg.org
 
 => https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0 UCSB
 
-#### 1918-01-08: Woodrow Wilson's Fourteen Points speech to Congress
+#### 1918-01-08: Woodrow Wilson<span class="apostrophe">&#39;</span>s Fourteen Points speech to Congress
 
 => https://en.wikipedia.org/wiki/Fourteen_Points WP / Fourteen Points
 
-#### 1964-01-08: LBJ's 1st SoTU announces the war on poverty.
+#### 1964-01-08: LBJ<span class="apostrophe">&#39;</span>s 1st SoTU announces the war on poverty.
 
 => https://en.wikipedia.org/wiki/War_on_poverty WP / War on poverty
 
@@ -88,9 +88,9 @@ dek: ❝Marian Goodman Gallery and MoMA are reviving interest in multiples -- ar
 
 => https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html NYT / by Thomas B. Edsall
 
-~ As is his wont [modernize to <q>As is his custom</q>? -- ȐD], Thomas Edsall brings a wealth of citations to his argument that, in the mapping from county population density[1] to partisan lean, the slope has been smoothing out. (For readers unfamiliar with US partisanship, I've drawn three ASCII art graphs to suggest some historical context.)
+~ As is his wont [modernize to <q>As is his custom</q>? -- ȐD], Thomas Edsall brings a wealth of citations to his argument that, in the mapping from county population density[1] to partisan lean, the slope has been smoothing out. (For readers unfamiliar with US partisanship, I<span class="apostrophe">&#39;</span>ve drawn three ASCII art graphs to suggest some historical context.)
 
-~ [1]: Or, perhaps equally well, the X axis can show a county's distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.
+~ [1]: Or, perhaps equally well, the X axis can show a county<span class="apostrophe">&#39;</span>s distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.
 
 ```
 Fig. 1 - A long time ago:        Fig. 2 - Not too long ago:       Fig. 3 - Now:
@@ -129,7 +129,7 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 => https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf paper / by David A. Hopkins (2019)
 
-##### Source: <cite>Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America's Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)</cite>
+##### Source: <cite>Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America<span class="apostrophe">&#39;</span>s Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)</cite>
 
 => https://static1.squarespace.com/static/580ab33829687f686ad6cbb1/t/6319051814f1302127e75b39/1662584089724/JacobsMunis2022-place-resentment-elections-vote-choice-urban-rural-divide.pdf reprint / by Nicholas Jacobs and B. Kal Munis
 
@@ -143,7 +143,7 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 ```
 date: 2018-05-22
-authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D'vera Cohn and Ruth Igielnik
+authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D<span class="apostrophe">&#39;</span>vera Cohn and Ruth Igielnik
 ```
 
 ##### Source: <cite>Hollowing Out the Middle: The Rural Brain Drain and What It Means for America</cite>
@@ -166,7 +166,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D'vera C
 
 => https://www.nytimes.com/2023/01/26/opinion/rural-voters-economy.html NYT / by Paul Krugman
 
-~ Given J.D. Vance's professional background, there are 180 degrees of irony in Krugman's paragraph citing Vance's tweet about NYC. Krugman does note that it was crafted <q>during his senatorial campaign</q>, but should acknowledge that the tweet's ostensible and real arrows of contempt fly in opposite directions.
+~ Given J.D. Vance<span class="apostrophe">&#39;</span>s professional background, there are 180 degrees of irony in Krugman<span class="apostrophe">&#39;</span>s paragraph citing Vance<span class="apostrophe">&#39;</span>s tweet about NYC. Krugman does note that it was crafted <q>during his senatorial campaign</q>, but should acknowledge that the tweet<span class="apostrophe">&#39;</span>s ostensible and real arrows of contempt fly in opposite directions.
 
 #### 1788-01-26: Australia Day: Landing of the First Fleet in what is present-day Sydney
 
@@ -180,13 +180,13 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D'vera C
 
 ### February 2nd
 
-#### David Corn, writing in Mother Jones (2023): <cite>Columbia Journalism Review's Big Fail: It Published 24,000 Words on Russiagate and Missed the Point</cite>
+#### David Corn, writing in Mother Jones (2023): <cite>Columbia Journalism Review<span class="apostrophe">&#39;</span>s Big Fail: It Published 24,000 Words on Russiagate and Missed the Point</cite>
 
 ◉ Bookmark, Feb 2nd
 
 => https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/ Mother Jones / by David Corn
 
-dek: ❝The magazine's attempted takedown of the media's coverage bolsters Trump's phony narrative.❞
+dek: ❝The magazine<span class="apostrophe">&#39;</span>s attempted takedown of the media<span class="apostrophe">&#39;</span>s coverage bolsters Trump<span class="apostrophe">&#39;</span>s phony narrative.❞
 
 ~ David Corn succinctly recaps the help Trump chose to lend Putin in 2016:
 
@@ -202,7 +202,7 @@ dek: ❝The magazine's attempted takedown of the media's coverage bolsters Trump
 
 => https://slate.com/culture/2023/02/hanging-out-sheila-liming-book-friendship-crisis.html Slate / by Dan Kois
 
-dek: ❝There’s a growing crisis in our social lives. Could the cure be this simple?❞
+dek: ❝There<span class="apostrophe">&#39;</span>s a growing crisis in our social lives. Could the cure be this simple?❞
 
 ~ The recommendation: Kill some time by hanging out with your friends and shooting the breeze.
 
@@ -212,13 +212,13 @@ dek: ❝There’s a growing crisis in our social lives. Could the cure be this s
 
 ### February 23rd
 
-#### Todd Bookman, writing in NPR (2023): <cite>‘You have to be dangerous back.’ Why some LGBTQ people in New Hampshire are taking up arms</cite>
+#### Todd Bookman, writing in NPR (2023): <cite><q>You have to be dangerous back.</q> Why some LGBTQ people in New Hampshire are taking up arms</cite>
 
 ◉ Bookmark, Feb 23rd
 
 => https://www.nhpr.org/nh-news/2023-02-23/you-have-to-be-dangerous-back-why-some-lgbtq-people-in-new-hampshire-are-taking-up-arms NPR / by Todd Bookman
 
-> ❝While Pink Pistol clubs have been around since at least 2000, there’s only limited data available on gun ownership rates among LGBTQ people. In 2020, a UCLA study found that 21.5 percent of lesbian, gay and bisexual people live in a house with a firearm, compared to 36 percent of heterosexual adults. ... In terms of partisan breakdown, a recent Pew study found that about one-in-five self-identified Democrats own a gun, compared to nearly half of Republicans.❞
+> ❝While Pink Pistol clubs have been around since at least 2000, there<span class="apostrophe">&#39;</span>s only limited data available on gun ownership rates among LGBTQ people. In 2020, a UCLA study found that 21.5 percent of lesbian, gay and bisexual people live in a house with a firearm, compared to 36 percent of heterosexual adults. ... In terms of partisan breakdown, a recent Pew study found that about one-in-five self-identified Democrats own a gun, compared to nearly half of Republicans.❞
 
 #### 0532-02-23: The foundation stone (cornerstone) of the Hagia Sophia is laid in Constantinople by Justinian I.
 
@@ -258,7 +258,7 @@ dek: ❝Johnny Haught and his trainees volunteered when a restaurant canceled a 
 
 ~ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of _NBC Out_, an LGBTQ news portal under the NBC News umbrella:
 
-> ❝<q>The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,</q> Haught told WTRF, a local TV news channel. <q>At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,</q> Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.❞
+> ❝<q>The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it<span class="apostrophe">&#39;</span>s a mix of both,</q> Haught told WTRF, a local TV news channel. <q>At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,</q> Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.❞
 
 => https://www.nbcnews.com/nbc-out NBC Out
 
@@ -268,7 +268,7 @@ dek: ❝Johnny Haught and his trainees volunteered when a restaurant canceled a 
 >
 > -- from
 
-=> https://books.google.com/books?id=15JUAAAAcAAJ&pg=PT491#v=onepage&q=February&percnt;2027 Cobbett's Parliamentary Debates, Volumes 21-22 (1812), p. 966
+=> https://books.google.com/books?id=15JUAAAAcAAJ&pg=PT491#v=onepage&q=February&percnt;2027 Cobbett<span class="apostrophe">&#39;</span>s Parliamentary Debates, Volumes 21-22 (1812), p. 966
 
 ## III. March
 
@@ -284,7 +284,7 @@ dek: ❝Enrollment in the humanities is in free fall at colleges around the coun
 
 #### 1665-03-06: The first issue of Philosophical Transactions of the Royal Society is published. The journal has been in publication ever since.
 
-> ❝Oldenburg's compulsive letter writing to foreign correspondents led to him being suspected of being a spy for the Dutch and interned in the Tower of London in 1667. A rival took the opportunity to publish a pirate issue of Philosophical Transactions, with the pretense of it being Issue 27. Oldenburg repudiated the issue by publishing the real 27 upon his release.❞
+> ❝Oldenburg<span class="apostrophe">&#39;</span>s compulsive letter writing to foreign correspondents led to him being suspected of being a spy for the Dutch and interned in the Tower of London in 1667. A rival took the opportunity to publish a pirate issue of Philosophical Transactions, with the pretense of it being Issue 27. Oldenburg repudiated the issue by publishing the real 27 upon his release.❞
 >
 > -- from
 
@@ -298,9 +298,9 @@ dek: ❝Enrollment in the humanities is in free fall at colleges around the coun
 
 => https://www.nytimes.com/2023/03/07/magazine/los-angeles-walking-rosecrans-avenue.html NYT / by Rosecrans Baldwin
 
-dek: ❝A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting.❞
+dek: ❝A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city<span class="apostrophe">&#39;</span>s vastness and its diverse communities coexisting.❞
 
-> ❝Probably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal.❞
+> ❝Probably most of Greater L.A. is awful to experience on foot. Yet there<span class="apostrophe">&#39;</span>s so much of it, radiating from multiple cores, that the amount worth walking is colossal.❞
 
 #### 1945-03-07: The 9th Armored Division (US) captures the Ludendorff Bridge at Remagen, Germany. This was, incidentally, the basis of the 1969 film, _The Bridge at Remagen_.
 
@@ -316,11 +316,11 @@ dek: ❝A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27
 
 dek: ❝Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?❞
 
-~ The medlar, also known as the <i class="archaic-synonym">open-arse</i>, the <i class="archaic-synonym">monkey's bottom</i>, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
+~ The medlar, also known as the <i class="archaic-synonym">open-arse</i>, the <i class="archaic-synonym">monkey<span class="apostrophe">&#39;</span>s bottom</i>, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
-> ❝The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar's native territory near the Caspian Sea, the fruit remains as popular as ever. It's still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it's sold in markets as musmula.❞
+> ❝The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar<span class="apostrophe">&#39;</span>s native territory near the Caspian Sea, the fruit remains as popular as ever. It<span class="apostrophe">&#39;</span>s still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it<span class="apostrophe">&#39;</span>s sold in markets as musmula.❞
 
-~ In the UK, one likely contributor to the medlar's decline was the increasing availability of year-round tropical fruits, Gorvett reports; another she cites is the relative inconvenience of winter-picking and ripening[1] the medlar.
+~ In the UK, one likely contributor to the medlar<span class="apostrophe">&#39;</span>s decline was the increasing availability of year-round tropical fruits, Gorvett reports; another she cites is the relative inconvenience of winter-picking and ripening[1] the medlar.
 
 ~ [1]: <q>put them in a crate of sawdust or straw and forget about them for several weeks</q>
 
@@ -328,7 +328,7 @@ dek: ❝Medieval Europeans were fanatical about a strange fruit that could only 
 
 => https://en.wikipedia.org/wiki/Mespilus_germanica WP / Medlar
 
-~ The medlar figures in the prologue to one of Chaucer's Canterbury Tales, _The Reeve's Tale_. Here's the relevant passage, excerpted from the prologue:
+~ The medlar figures in the prologue to one of Chaucer<span class="apostrophe">&#39;</span>s Canterbury Tales, _The Reeve<span class="apostrophe">&#39;</span>s Tale_. Here<span class="apostrophe">&#39;</span>s the relevant passage, excerpted from the prologue:
 
 ```
 But ik am old, me list not pley for age;
@@ -377,13 +377,13 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: <q><i class="archaic-term">gras-time</i>, the time when a horse feeds himself in the fields. <i class="archaic-term">My fodder is now forage</i>, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.</q>
 
-~ [5]: head, top of one's head
+~ [5]: head, top of one<span class="apostrophe">&#39;</span>s head
 
-~ [6]: From Skeat's notes: <q>I take this to mean -- 'my old years write (mark upon me) this white head,' i. e. turn me grey.</q>
+~ [6]: From Skeat<span class="apostrophe">&#39;</span>s notes: <q>I take this to mean -- <q>my old years write (mark upon me) this white head,</q> i. e. turn me grey.</q>
 
 ~ [7]: old, moldy
 
-~ [8]: From Skeat's notes: <q>'My heart is as old (lit. mouldy) as my hairs are.' Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32.</q>
+~ [8]: From Skeat<span class="apostrophe">&#39;</span>s notes: <q><q>My heart is as old (lit. mouldy) as my hairs are.</q> Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32.</q>
 
 ~ [9]: unless
 
@@ -391,7 +391,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [11]: a medlar fruit. The medieval <i class="archaic-term">ers</i> is the modern <i class="synonym">arse</i> (British) or <i class="synonym">ass</i> (American).
 
-~ [12]: From Skeat's notes (covering this and the following two lines): <q>'Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.'</q>
+~ [12]: From Skeat<span class="apostrophe">&#39;</span>s notes (covering this and the following two lines): <q><q>Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.</q></q>
 
 ~ [13]: that same fruit, that very fruit
 
@@ -401,14 +401,14 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [16]: straw
 
-~ [17]: From Skeat's notes: <q><i class="archaic-synonym">hoppen</i>, dance</q>
+~ [17]: From Skeat<span class="apostrophe">&#39;</span>s notes: <q><i class="archaic-synonym">hoppen</i>, dance</q>
 
-~ Noticing Skeat's comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer's verb, _to write_, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker's head. Where does this ambiguity come from? When _to write_ is used metaphorically, does it always invite this two-directional reading?
+~ Noticing Skeat<span class="apostrophe">&#39;</span>s comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer<span class="apostrophe">&#39;</span>s verb, _to write_, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker<span class="apostrophe">&#39;</span>s head. Where does this ambiguity come from? When _to write_ is used metaphorically, does it always invite this two-directional reading?
 
-~ I don't think these are questions about poetry, although its easy acceptance of inverted word order makes reversibility less conspicuous. To see this, and in an effort to answer the two questions above by applying Chaucer's metaphor under more prosaic conditions, I will substitute a statement pair for the line in question. Then I'll modify the pair over a few iterations, in the last of which I'll impose the metaphor of writing. (The statements will always be in the active voice.)
+~ I don<span class="apostrophe">&#39;</span>t think these are questions about poetry, although its easy acceptance of inverted word order makes reversibility less conspicuous. To see this, and in an effort to answer the two questions above by applying Chaucer<span class="apostrophe">&#39;</span>s metaphor under more prosaic conditions, I will substitute a statement pair for the line in question. Then I<span class="apostrophe">&#39;</span>ll modify the pair over a few iterations, in the last of which I<span class="apostrophe">&#39;</span>ll impose the metaphor of writing. (The statements will always be in the active voice.)
 
-- White hair results from a person's old age.
-- A person's old age causes their white hair.
+- White hair results from a person<span class="apostrophe">&#39;</span>s old age.
+- A person<span class="apostrophe">&#39;</span>s old age causes their white hair.
 
 ~ In this first iteration, I am using the terminology of cause-and-effect. In neither statement is the subject-object relation reversible, because each statement is (statistically) plausible but each reversal (<i class="logical-statement">Old age results from white hair</i> or <i class="logical-statement">White hair causes old age</i>) is false.
 
@@ -416,10 +416,10 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ To see if reversibility emerges when the relation between the nouns is modeled differently, here is a second iteration, replacing the terminology of cause-and-effect with the terminology of representation:
 
-- White hair indicates (or signifies) a person's old age.
-- A person's old age accounts for (or contextualizes, or makes comprehensible) their white hair.
+- White hair indicates (or signifies) a person<span class="apostrophe">&#39;</span>s old age.
+- A person<span class="apostrophe">&#39;</span>s old age accounts for (or contextualizes, or makes comprehensible) their white hair.
 
-~ Here, too, any attempted reversal of subject and object will fail in either sentence. What to try next? Without applying a metaphor (and setting aside the troublesome question of whether any choice of model/terminology is unavoidably metaphorical), the only model whose terminology strikes me as supporting subject-object reversibility is that of statistical implication, but that is a trivial solution because it tells us so little. (Saying only that two things are usually seen together fails to justify a claim to the reader's attention, whether in poetry or literary prose.) To wit:
+~ Here, too, any attempted reversal of subject and object will fail in either sentence. What to try next? Without applying a metaphor (and setting aside the troublesome question of whether any choice of model/terminology is unavoidably metaphorical), the only model whose terminology strikes me as supporting subject-object reversibility is that of statistical implication, but that is a trivial solution because it tells us so little. (Saying only that two things are usually seen together fails to justify a claim to the reader<span class="apostrophe">&#39;</span>s attention, whether in poetry or literary prose.) To wit:
 
 - White hair likely implies old age.
 - Old age is, loosely, a condition for white hair.
@@ -428,19 +428,19 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 - X and Y are correlated.
 
-~ So, we have achieved reversibility but at the cost of not saying anything worthwhile. Having thus tried some alternatives, let's restore Chaucer's metaphor, while sticking to a prosaic statement pair in the active voice:
+~ So, we have achieved reversibility but at the cost of not saying anything worthwhile. Having thus tried some alternatives, let<span class="apostrophe">&#39;</span>s restore Chaucer<span class="apostrophe">&#39;</span>s metaphor, while sticking to a prosaic statement pair in the active voice:
 
-- White hair writes a person's old age.
-- A person's old age writes their white hair.
+- White hair writes a person<span class="apostrophe">&#39;</span>s old age.
+- A person<span class="apostrophe">&#39;</span>s old age writes their white hair.
 
 ~ As was the case when the terminology of statistical implication was used, each statement keeps its truthfulness when subject and object are reversed. (In fact, each half of the pair happens to be the reverse of the other, because in this iteration they use the same verb and verb form.) But is each underlying assertion meaningful in its own right, or does the pair simply state one thing (and a mere correlation, at that) twice?
 
-~ To argue that each assertion is meaningful, I'll make each occurrence of the metaphor a bit more vivid and particularized, without displacing the act of writing as its central idea. My goal in this final iteration is not to preserve subject-object reversibility -- as shown above, both Chaucer's choice of _wryteth_ and its modern equivalent, _writes_, exhibit that quality -- but rather to highlight the unique meaning that each of the two directed relations contributes:
+~ To argue that each assertion is meaningful, I<span class="apostrophe">&#39;</span>ll make each occurrence of the metaphor a bit more vivid and particularized, without displacing the act of writing as its central idea. My goal in this final iteration is not to preserve subject-object reversibility -- as shown above, both Chaucer<span class="apostrophe">&#39;</span>s choice of _wryteth_ and its modern equivalent, _writes_, exhibit that quality -- but rather to highlight the unique meaning that each of the two directed relations contributes:
 
-- White hair spells out a person's old age.
-- A person's old age is the author of their white hair.
+- White hair spells out a person<span class="apostrophe">&#39;</span>s old age.
+- A person<span class="apostrophe">&#39;</span>s old age is the author of their white hair.
 
-~ This shows that the metaphor of writing, at least in this line of Chaucer's, does much more than to state an implication or correlation, and I think it also shows that it leverages subject-object reversibility to convey two (at least) independent insights. I don't know if the choice of some form (or near synonym) of _to write_, when used as a metaphor, always accomplishes this superposition.
+~ This shows that the metaphor of writing, at least in this line of Chaucer<span class="apostrophe">&#39;</span>s, does much more than to state an implication or correlation, and I think it also shows that it leverages subject-object reversibility to convey two (at least) independent insights. I don<span class="apostrophe">&#39;</span>t know if the choice of some form (or near synonym) of _to write_, when used as a metaphor, always accomplishes this superposition.
 
 ~ See also
 
@@ -448,7 +448,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 => https://en.wikipedia.org/wiki/Anastrophe WP / Anastrophe
 
-~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the <i class="archaic-synonym">open-ers</i> fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says <q>We olde men, I drede, so fare we</q>. But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer's analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve's intent), one in which physical decline may herald a ripeness of spirit or heart:
+~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the <i class="archaic-synonym">open-ers</i> fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says <q>We olde men, I drede, so fare we</q>. But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer<span class="apostrophe">&#39;</span>s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve<span class="apostrophe">&#39;</span>s intent), one in which physical decline may herald a ripeness of spirit or heart:
 
 ```
 Til we be roten, can we nat be rype;
@@ -473,13 +473,13 @@ dek: ❝Researchers figured out how a jolt of discomfort gets from the damaged o
 
 ### March 27th
 
-#### Natasha Turak, writing in CNBC (2023): <cite>Lebanon wakes up in two simultaneous time zones as government can’t agree on daylight saving change</cite>
+#### Natasha Turak, writing in CNBC (2023): <cite>Lebanon wakes up in two simultaneous time zones as government can<span class="apostrophe">&#39;</span>t agree on daylight saving change</cite>
 
 ◉ Bookmark, Mar 27th
 
 => https://www.cnbc.com/2023/03/27/lebanon-in-two-different-time-zones-as-government-disagrees-on-daylight-savings.html CNBC / by Natasha Turak
 
-> ❝... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night.❞
+> ❝... Lebanon<span class="apostrophe">&#39;</span>s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night.❞
 
 ### March 28th
 
@@ -493,7 +493,7 @@ dek: ❝Brazilian researchers captured on camera the brief moment when lightning
 
 ### March 30th
 
-#### Erik Olsen, writing in NYT (2021): <cite>The Ocean's Youngest Monsters Are Ready for Glamour Shots</cite>
+#### Erik Olsen, writing in NYT (2021): <cite>The Ocean<span class="apostrophe">&#39;</span>s Youngest Monsters Are Ready for Glamour Shots</cite>
 
 ◉ Bookmark, Mar 30th
 
@@ -509,7 +509,7 @@ dek: ❝Divers practicing blackwater photography are helping marine scientists g
 
 dek: ❝A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.❞
 
-> ❝The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the <q>deep listening</q> pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...❞
+> ❝The school<span class="apostrophe">&#39;</span>s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the <q>deep listening</q> pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...❞
 
 ## IV. April
 
@@ -521,7 +521,7 @@ dek: ❝A hotbed of experimental sound for nearly a century, this school in Oakl
 
 => https://www.nytimes.com/2021/04/05/arts/design/warhol-copyright-appeals-court.html NYT / by Blake Gopnik
 
-dek: ❝An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.❞
+dek: ❝An appeals court ruled that Andy Warhol violated a photographer<span class="apostrophe">&#39;</span>s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.❞
 
 #### Deaths on this date:
 
@@ -543,7 +543,7 @@ dek: ❝An appeals court ruled that Andy Warhol violated a photographer’s copy
 
 => https://www.nytimes.com/2021/04/06/opinion/stanford-admissions-campus.html NYT / by David L. Kirp
 
-dek: ❝If elite colleges are serious about diversity of class and race, there’s a simple solution.❞
+dek: ❝If elite colleges are serious about diversity of class and race, there<span class="apostrophe">&#39;</span>s a simple solution.❞
 
 #### Deaths on this date:
 
@@ -557,7 +557,7 @@ dek: ❝If elite colleges are serious about diversity of class and race, there�
 
 => https://www.theatlantic.com/ideas/archive/2023/04/wisconsin-supreme-court-election-republican-party/673656/ The Atlantic / by Charles Sykes
 
-dek: ❝They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability.❞
+dek: ❝They<span class="apostrophe">&#39;</span>ve lost four major statewide elections since 2018, for starters, and this year<span class="apostrophe">&#39;</span>s supreme-court election exposed their growing vulnerability.❞
 
 > ❝Wisconsin Republicans are caught in a bind: What the base wants, the majority rejects.❞
 
@@ -571,15 +571,15 @@ dek: ❝They’ve lost four major statewide elections since 2018, for starters, 
 
 ### April 12th
 
-#### George F. Will, writing in WaPo (2023): <cite>How ‘I despise, therefore I am’ locks in the political status quo</cite>
+#### George F. Will, writing in WaPo (2023): <cite>How <q>I despise, therefore I am</q> locks in the political status quo</cite>
 
 ◉ Bookmark, Apr 12th
 
 => https://www.washingtonpost.com/opinions/2023/04/12/republican-democrat-poisonous-partisanship/ WaPo / by George F. Will
 
-> ❝... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.❞
+> ❝... George Santayana<span class="apostrophe">&#39;</span>s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today<span class="apostrophe">&#39;</span>s remarkable condition: boiling but frozen.❞
 
-~ cf. Ezra Klein's use of <i class="word-as-word">calcification</i> in <cite>Three Theories That Explain This Strange Moment</cite>, 2022-11-12
+~ cf. Ezra Klein<span class="apostrophe">&#39;</span>s use of <i class="word-as-word">calcification</i> in <cite>Three Theories That Explain This Strange Moment</cite>, 2022-11-12
 
 #### Errol Louis, writing in NY Magazine (2023): <cite>Eric Adams Is Finally Facing Reality on Work-From-Home Rules</cite>
 
@@ -635,17 +635,17 @@ dek: ❝For homeless people, a place to live is life changing to a degree that a
 
 => https://www.bbc.com/news/world-europe-64426289 BBC / by Shane Harrison
 
-~ Writing for the BBC, Shane Harrison reports that <q>Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin's Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives.</q>
+~ Writing for the BBC, Shane Harrison reports that <q>Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin<span class="apostrophe">&#39;</span>s Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives.</q>
 
 ### April 19th
 
-#### Mark Brown, writing in The Guardian (2021): <cite>‘Creativity is essential’: artist-designed supermarket to open in London</cite>
+#### Mark Brown, writing in The Guardian (2021): <cite><q>Creativity is essential</q>: artist-designed supermarket to open in London</cite>
 
 ◉ Bookmark, Apr 19th
 
 => https://www.theguardian.com/culture/2021/apr/19/creativity-is-essential-artist-designed-supermarket-to-open-at-london-design-museum The Guardian / by Mark Brown
 
-dek: ❝Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity❞
+dek: ❝Product packaging created by artists for UK<span class="apostrophe">&#39;</span>s Design Museum aims to showcase importance of creativity❞
 
 #### Anil Ananthaswamy, writing in Scientific American (2021): <cite>Quantum Astronomy Could Create Telescopes Hundreds of Kilometers Wide</cite>
 
@@ -661,7 +661,7 @@ dek: ❝Astronomers hope to use innovations from the subatomic world to construc
 
 ### April 20th
 
-#### Michael Tomasky, writing in TNR (2023): <cite>The (Republican) Party’s Over</cite>
+#### Michael Tomasky, writing in TNR (2023): <cite>The (Republican) Party<span class="apostrophe">&#39;</span>s Over</cite>
 
 ◉ Bookmark, Apr 20th
 
@@ -677,7 +677,7 @@ dek: ❝We asked four recovering Republicans if the GOP is salvageable. Hint: Th
 
 => https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html NYT / by Leah Greenblatt
 
-dek: ❝With the release of <q>Guy Ritchie’s The Covenant,</q> here’s a look at the occasional phenomenon of directors branding movies with their own names.❞
+dek: ❝With the release of <q>Guy Ritchie<span class="apostrophe">&#39;</span>s The Covenant,</q> here<span class="apostrophe">&#39;</span>s a look at the occasional phenomenon of directors branding movies with their own names.❞
 
 ### April 21st
 
@@ -705,13 +705,13 @@ dek: ❝Burned out and flush with savings, some workers are quitting stable jobs
 
 dek: ❝A new exhibit showcases the surprisingly contentious history of English grammar books.❞
 
-#### Harriet Ryan, writing in Los Angeles Times (2023): <cite>A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families</cite>
+#### Harriet Ryan, writing in Los Angeles Times (2023): <cite>A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates<span class="apostrophe">&#39;</span> families</cite>
 
 ◉ Bookmark, Apr 21st
 
 => https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes Los Angeles Times / by Harriet Ryan
 
-> ❝Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm -- money they now believe was wasted.❞
+> ❝Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin<span class="apostrophe">&#39;</span>s law firm -- money they now believe was wasted.❞
 
 ### April 22nd
 
@@ -721,7 +721,7 @@ dek: ❝A new exhibit showcases the surprisingly contentious history of English 
 
 => https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
 
-dek: ❝That story, which has sometimes been called a real-life 'Lord of the Flies,' was just one episode in a life filled with adventure.❞
+dek: ❝That story, which has sometimes been called a real-life <cite>Lord of the Flies,<cite> was just one episode in a life filled with adventure.❞
 
 #### Amelia Soth, writing in JSTOR Daily (2021): <cite>When Paid Applauders Ruled the Paris Opera House</cite>
 
@@ -737,7 +737,7 @@ dek: ❝Professional applauders, collectively known as the <q>claque,</q> helped
 
 ### April 24th
 
-#### Paul Krugman, writing in NYT (2023): <cite>What’s the Matter With New York?</cite>
+#### Paul Krugman, writing in NYT (2023): <cite>What<span class="apostrophe">&#39;</span>s the Matter With New York?</cite>
 
 ◉ Bookmark, Apr 24th
 
@@ -747,7 +747,7 @@ dek: ❝Professional applauders, collectively known as the <q>claque,</q> helped
 
 ### April 25th
 
-#### Carolyn McCusker, writing in NPR (2021): <cite>Tower Of Babble: Nonnative Speakers Navigate The World Of 'Good' And 'Bad' English</cite>
+#### Carolyn McCusker, writing in NPR (2021): <cite>Tower Of Babble: Nonnative Speakers Navigate The World Of <i class="so-called">Good</i> And <i class="so-called">Bad</i> English</cite>
 
 ◉ Bookmark, Apr 25th
 
@@ -773,17 +773,17 @@ dek: ❝Why Nonnative English Speakers Actually Speak The Best English❞
 
 ### April 28th
 
-#### Michael Schaffer, writing in Politico (2023): <cite>Jim VandeHei’s Surreal Wellness Evolution</cite>
+#### Michael Schaffer, writing in Politico (2023): <cite>Jim VandeHei<span class="apostrophe">&#39;</span>s Surreal Wellness Evolution</cite>
 
 ◉ Bookmark, Apr 28th
 
 => https://www.politico.com/news/magazine/2023/04/28/jim-vandehei-profile-00094172 Politico / by Michael Schaffer
 
-dek: ❝D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.❞
+dek: ❝D.C.<span class="apostrophe">&#39;</span>s most surprising leadership column, and what it says about how the knowledge industry works now.❞
 
 ### April 29th
 
-#### Bill Lukitsch and Anna Spoerre, writing in The Kansas City Star (2021): <cite>Kansas City leaders unveil ‘tiny-home’ village proposal to help address homelessness</cite>
+#### Bill Lukitsch and Anna Spoerre, writing in The Kansas City Star (2021): <cite>Kansas City leaders unveil <i class="term">tiny-home</i> village proposal to help address homelessness</cite>
 
 ◉ Bookmark, Apr 29th
 
@@ -843,7 +843,7 @@ dek: ❝When David Kelley, the founder of the global firm IDEO, downsized in Nor
 
 => https://www.nytimes.com/2021/05/04/realestate/the-carter-project-miami-sculpture-christopher-carter.html NYT / by Tim McKeough
 
-dek: ❝Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit.❞
+dek: ❝Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it<span class="apostrophe">&#39;</span>s his home, and the subject of a new exhibit.❞
 
 #### Deaths on this date:
 
@@ -873,7 +873,7 @@ dek: ❝The grand metropolises of 21st Century civilisation will leave a geologi
 
 #### Deaths on this date:
 
-##### Grace Elliott, 1823 (age 68-69), in Ville-d'Avray, France
+##### Grace Elliott, 1823 (age 68-69), in Ville-d<span class="apostrophe">&#39;</span>Avray, France
 
 ### May 17th
 
@@ -883,7 +883,7 @@ dek: ❝The grand metropolises of 21st Century civilisation will leave a geologi
 
 => https://www.politico.com/magazine/story/2015/05/the-gop-is-dying-off-literally-118035/ Politico / by Daniel J. McGraw
 
-> ❝... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group.❞
+> ❝... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won<span class="apostrophe">&#39;</span>t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group.❞
 
 #### Eric Mack, writing in Cnet (2021): <cite>Nikola Tesla invention from 100 years ago suddenly makes more sense today</cite>
 
@@ -895,13 +895,13 @@ dek: ❝The eccentric inventor is known for dabbling with electricity, but his T
 
 ### May 19th
 
-#### Leyland Cecco, writing in The Guardian (2023): <cite>Trudeau’s wide-stance pose with Korean politician splits critics</cite>
+#### Leyland Cecco, writing in The Guardian (2023): <cite>Trudeau<span class="apostrophe">&#39;</span>s wide-stance pose with Korean politician splits critics</cite>
 
 ◉ Bookmark, May 19th
 
 => https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs The Guardian / by Leyland Cecco
 
-dek: ❝Korean media praises prime minister’s gesture, known as ‘manner legs’, while some Canadians say it is embarrassing country❞
+dek: ❝Korean media praises prime minister<span class="apostrophe">&#39;</span>s gesture, known as <i class="term">manner legs</i>, while some Canadians say it is embarrassing country❞
 
 ~ A note for students of English: the word <i class="word-as-word">split<i class="word-as-word"> in the headline is a play on words.
 
@@ -942,7 +942,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/ Atlanta Journal-Constitution / by Rodney Ho
 
-dek: ❝My 2021 photo is from the Jamie Foxx Netflix comedy 'Day Shift' but many believe it's a vintage shot❞
+dek: ❝My 2021 photo is from the Jamie Foxx Netflix comedy <cite>Day Shift</cite> but many believe it<span class="apostrophe">&#39;</span>s a vintage shot❞
 
 #### Deaths on this date:
 
@@ -974,11 +974,11 @@ dek: ❝Developers are adding outdoor co-working space -- bocce ball, anyone? --
 
 #### 2023-05-24: The symbolic Cotton Tree in Freetown, Sierra Leone, was felled by a storm:
 
-##### Coverage: <cite>Sierra Leone's iconic cotton tree felled by storm</cite>
+##### Coverage: <cite>Sierra Leone<span class="apostrophe">&#39;</span>s iconic cotton tree felled by storm</cite>
 
 => https://www.bbc.com/news/world-africa-65707394 BBC / by Umaru Fofana in Freetown & Robert Greenall in London, 2023-05-25
 
-##### Coverage: <cite>Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown</cite>
+##### Coverage: <cite>Sierra Leone<span class="apostrophe">&#39;</span>s symbolic Cotton Tree falls during storm in Freetown</cite>
 
 => https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse in Freetown, 2023-05-25
 
@@ -992,7 +992,7 @@ dek: ❝Centuries-old Ceiba pentandra marked where formerly enslaved people had 
 
 ### May 31st
 
-#### Jacopo Prisco, writing in CNN (2022): <cite>Decoding the messages tucked away in one ‘politically significant’ city’s street art</cite>
+#### Jacopo Prisco, writing in CNN (2022): <cite>Decoding the messages tucked away in one <q>politically significant</q> city<span class="apostrophe">&#39;</span>s street art</cite>
 
 ◉ Bookmark, May 31st
 
@@ -1040,7 +1040,7 @@ dek: ❝... was helping a friend move into a house when the floor gave way benea
 
 => https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
 
-dek: ❝A student objected to a class, <q>The Problem of Whiteness,</q> and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?❞
+dek: ❝A student objected to a class, <q>The Problem of Whiteness,</q> and tweeted the lecturer<span class="apostrophe">&#39;</span>s photo and email address. Hate mail poured in. What should the school do?❞
 
 #### 1608-07-03: Founding of Quebec City
 
@@ -1052,7 +1052,7 @@ dek: ❝A student objected to a class, <q>The Problem of Whiteness,</q> and twee
 
 => https://www.politico.com/news/magazine/2021/07/09/west-virginia-economy-paid-remote-work-498238 Politico / by Mackenzie Mays
 
-dek: ❝The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.❞
+dek: ❝The population is fleeing, jobs are disappearing and coal isn<span class="apostrophe">&#39;</span>t coming back. West Virginia<span class="apostrophe">&#39;</span>s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.❞
 
 #### Deaths on this date:
 
@@ -1082,9 +1082,9 @@ dek: ❝Luxury ships attract outrage and political scrutiny. The ultra-rich are 
 
 => https://www.politico.com/interactives/2021/coronavirus-reopening-by-county-income/ Politico / by Beatrice Jin
 
-dek: ❝Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide.❞
+dek: ❝Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there<span class="apostrophe">&#39;</span>s an even bigger income divide.❞
 
-~ In Politico, Beatrice Jin writes: <q>Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home.</q>
+~ In Politico, Beatrice Jin writes: <q>Here, we<span class="apostrophe">&#39;</span>ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home.</q>
 
 #### 1918-07-21: A German U-boat (submarine) fires on vessels off Cape Cod, striking the shore in the process.
 
@@ -1114,7 +1114,7 @@ dek: ❝Cell phone data shows a partisan split on how quickly people are returni
 
 ### August 10th
 
-#### Ian Burke, writing in Vice (2021): <cite>Moving to NYC From the West Coast? Here's What You'll Need</cite>
+#### Ian Burke, writing in Vice (2021): <cite>Moving to NYC From the West Coast? Here<span class="apostrophe">&#39;</span>s What You<span class="apostrophe">&#39;</span>ll Need</cite>
 
 ◉ Bookmark, Aug 10th
 
@@ -1126,7 +1126,7 @@ dek: ❝Start with a brisk walking pace, an incorrect opinion on bagels, and a h
 
 #### Deaths on this date:
 
-##### Reginald Dunne and Joseph O'Sullivan, 1922 (ages 24 and 25), in London. #posthumous-move
+##### Reginald Dunne and Joseph O<span class="apostrophe">&#39;</span>Sullivan, 1922 (ages 24 and 25), in London. #posthumous-move
 
 ~ See also:
 
@@ -1136,33 +1136,33 @@ dek: ❝Start with a brisk walking pace, an incorrect opinion on bagels, and a h
 
 ### August 13th
 
-#### Maxwell Strachan, writing in Vice (2021): <cite>Zillow, Other Tech Firms Are in an ‘Arms Race’ To Buy Up American Homes</cite>
+#### Maxwell Strachan, writing in Vice (2021): <cite>Zillow, Other Tech Firms Are in an <i class="term">Arms Race</i> To Buy Up American Homes</cite>
 
 ◉ Bookmark, Aug 13th
 
 => https://www.vice.com/en/article/93ymxz/zillow-other-tech-firms-are-in-an-arms-race-to-buy-up-american-homes Vice / by Maxwell Strachan
 
-dek: ❝'iBuyers' are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.❞
+dek: ❝<i class="so-called">iBuyers</i> are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.❞
 
-#### Mary Frances <i class="nickname">Francky</i> Knapp, writing in Vice (2021): <cite>Moving to LA From the East Coast? Here's What You'll Need</cite>
+#### Mary Frances <i class="nickname">Francky</i> Knapp, writing in Vice (2021): <cite>Moving to LA From the East Coast? Here<span class="apostrophe">&#39;</span>s What You<span class="apostrophe">&#39;</span>ll Need</cite>
 
 ◉ Bookmark, Aug 13th
 
 => https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances <i class="nickname">Francky</i> Knapp
 
-dek: ❝In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you'll need for your new LA life of pool parties and picnics.❞
+dek: ❝In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you<span class="apostrophe">&#39;</span>ll need for your new LA life of pool parties and picnics.❞
 
 ~ See also the counterpart to this article, which Vice published 3 days earlier.
 
-#### Aaron Mak, writing in Slate (2021): <cite>What’s Really Wrong With the New Twitter Font</cite>
+#### Aaron Mak, writing in Slate (2021): <cite>What<span class="apostrophe">&#39;</span>s Really Wrong With the New Twitter Font</cite>
 
 ◉ Bookmark, Aug 13th
 
 => https://slate.com/technology/2021/08/twitter-font-redesign-chirp-franklin-gothic.html Slate / by Aaron Mak
 
-dek: ❝And why users think it’s unreadable.❞
+dek: ❝And why users think it<span class="apostrophe">&#39;</span>s unreadable.❞
 
-> ❝Fredrick Brennan: '... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.'❞
+> ❝Fredrick Brennan: <q>... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.</q>❞
 
 #### Deaths on this date:
 
@@ -1170,15 +1170,15 @@ dek: ❝And why users think it’s unreadable.❞
 
 ### August 19th
 
-#### Kayleen Devlin, writing in BBC (2021): <cite>Algeria: The forest fires that led to an artist's lynching</cite>
+#### Kayleen Devlin, writing in BBC (2021): <cite>Algeria: The forest fires that led to an artist<span class="apostrophe">&#39;</span>s lynching</cite>
 
 ◉ Bookmark, Aug 19th
 
 => https://www.bbc.com/news/world-africa-58260855 BBC / by Kayleen Devlin
 
-dek: ❝The BBC's Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.❞
+dek: ❝The BBC<span class="apostrophe">&#39;</span>s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.❞
 
-#### Henry Grabar, writing in Slate (2021): <cite>The Perverse Reason It’s Easier to Build New Highways Than New Subways - The environment?!</cite>
+#### Henry Grabar, writing in Slate (2021): <cite>The Perverse Reason It<span class="apostrophe">&#39;</span>s Easier to Build New Highways Than New Subways - The environment?!</cite>
 
 ◉ Bookmark, Aug 19th
 
@@ -1238,7 +1238,7 @@ dek: ❝Thicker ink, fewer smudges, and more strained hands: an Object Lesson❞
 
 => https://twitter.com/AsaHutchinson/status/1701659903230689598
 
-> ❝Trump & Putin are using the same talking points. Trump’s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc❞
+> ❝Trump & Putin are using the same talking points. Trump<span class="apostrophe">&#39;</span>s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc❞
 
 ##### Posted by Liz Cheney (@Liz_Cheney) on Twitter
 
@@ -1262,7 +1262,7 @@ dek: ❝The two countries are more similar than is often acknowledged.❞
 
 ##### Carl Laemmle, 1939 (age 72), in Los Angeles
 
-> ❝Poet Ogden Nash observed the following about Laemmle's habit of giving his son and nephews top executive positions in his studios:❞
+> ❝Poet Ogden Nash observed the following about Laemmle<span class="apostrophe">&#39;</span>s habit of giving his son and nephews top executive positions in his studios:❞
 
 ```
 Uncle Carl Laemmle
@@ -1295,7 +1295,7 @@ Has a very large faemmle. -- from
 
 ~ Writing in The Times, Ezra Klein discusses <q>... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.</q>
 
-~ cf. George F. Will's coinage <i class="term">boiling but frozen</i> in <cite>How ‘I despise, therefore I am’ locks in the political status quo</cite>, 2023-04-12
+~ cf. George F. Will<span class="apostrophe">&#39;</span>s coinage <i class="term">boiling but frozen</i> in <cite>How <q>I despise, therefore I am</q> locks in the political status quo</cite>, 2023-04-12
 
 ### November 22nd
 
@@ -1305,7 +1305,7 @@ Has a very large faemmle. -- from
 
 => https://boingboing.net/2021/11/22/intersections-of-pittsburgh.html Boing Boing / by Rob Beschizza
 
-> ❝Peter Gorman's Intersections of Pittsburgh poster ...❞
+> ❝Peter Gorman<span class="apostrophe">&#39;</span>s Intersections of Pittsburgh poster ...❞
 
 #### 1963-11-22: Assassination of John F. Kennedy
 
@@ -1323,7 +1323,7 @@ dek: ❝Mayor Eric Adams directed the police and emergency medical workers to ho
 
 ### December 13th
 
-#### Bobbi Dempsey, writing in Slate (2022): <cite>I've Been Plagued by Medical Debt for Years. Here’s What Happened When I Tried to Pay a USD 2 Medical Bill.</cite>
+#### Bobbi Dempsey, writing in Slate (2022): <cite>I<span class="apostrophe">&#39;</span>ve Been Plagued by Medical Debt for Years. Here<span class="apostrophe">&#39;</span>s What Happened When I Tried to Pay a USD 2 Medical Bill.</cite>
 
 ◉ Bookmark, Dec 13th
 
@@ -1333,7 +1333,7 @@ dek: ❝Recent changes -- and more coming in early 2023 -- could bring some reli
 
 ### December 31st
 
-#### Zeynep Tufekci, writing in NYT (2022): <cite>The Shameful Open Secret Behind Southwest’s Failure</cite>
+#### Zeynep Tufekci, writing in NYT (2022): <cite>The Shameful Open Secret Behind Southwest<span class="apostrophe">&#39;</span>s Failure</cite>
 
 ◉ Bookmark, Dec 31st
 
