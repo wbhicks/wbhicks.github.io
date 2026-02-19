@@ -16,6 +16,8 @@
   {{ $allText = replaceRE `--` `TMPLT_2HYFNS` $allText }}
   {{ $allText = replaceRE `–`  `TMPLT_2HYFNS` $allText }}
 
+{{- /* Why can't these be handled by :before and :after in .scss? */ -}}
+
   {{ $allText = replaceRE `<cite>`  `&#8990;<cite>`  $allText }}
   {{ $allText = replaceRE `</cite>` `</cite>&#8991;` $allText }}
   {{ $allText = replaceRE `<abbr>`  `&#9659;<abbr>`  $allText }}

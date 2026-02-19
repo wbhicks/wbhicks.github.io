@@ -59,7 +59,7 @@ q {
   quotes: "«" "»" "‹" "›";
 }
 
-q:before, q:after {
+q::before, q::after {
   content: revert;
 }
 
@@ -69,14 +69,37 @@ span.apostrophe {
   color: red;
 }
 
-i.archaic-synonym{ color: purple }
-i.archaic-term{ color: purple }
-i.logical-statement{ color: purple }
-i.nickname{ color: purple }
-i.so-called{ color: purple }
-i.synonym{ color: purple }
-i.term{ color: purple }
-i.word-as-word{ color: purple }
+i.archaic-synonym, i.archaic-term, i.synonym, i.term {
+  color: pink;
+  text-decoration: underline; 
+}
+
+i.logical-statement {
+  color: purple;
+  text-decoration: underline dotted;
+}
+
+i.nickname {
+  text-decoration: underline dotted;
+}
+
+i.nickname::before {
+  content: "↳";
+  color: blue;
+}
+
+i.nickname::after {
+  content: "&#8626;";
+  color: red;
+}
+
+i.so-called {
+  color: purple 
+}
+
+i.word-as-word {
+  color: purple 
+}
 
 body main h1 {
   font-size: 3rem;

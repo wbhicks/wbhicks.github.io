@@ -375,7 +375,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [3]: done, over with
 
-~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: <q><i class="archaic-term">gras-time</i>, the time when a horse feeds himself in the fields. <i class="archaic-term">My fodder is now forage</i>, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.</q>
+~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: <q><i class="archaic-term">gras-time</i>, the time when a horse feeds himself in the fields. <q>My fodder is now forage</q>, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.</q>
 
 ~ [5]: head, top of one<span class="apostrophe">&#39;</span>s head
 
