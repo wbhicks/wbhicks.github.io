@@ -37,6 +37,9 @@ title = 'This title will be overridden'
       [markup.goldmark.extensions.typographer]
         disable = true
 
+    [markup.goldmark.renderer]
+        unsafe = true
+
 [module]
     [[module.mounts]]
         source = "assets"

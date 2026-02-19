@@ -53,6 +53,31 @@ body.dev-mode, body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
 }
 
+/* Override assignment of "quotes: none" in reset.scss lines 86 and 91: */
+
+q {
+  quotes: "«" "»" "‹" "›";
+}
+
+q:before, q:after {
+  content: revert;
+}
+
+/* END OF "Override assignment of ..." */
+
+span.apostrophe {
+  color: red;
+}
+
+i.archaic-synonym{ color: purple }
+i.archaic-term{ color: purple }
+i.logical-statement{ color: purple }
+i.nickname{ color: purple }
+i.so-called{ color: purple }
+i.synonym{ color: purple }
+i.term{ color: purple }
+i.word-as-word{ color: purple }
+
 body main h1 {
   font-size: 3rem;
   font-weight: bold;

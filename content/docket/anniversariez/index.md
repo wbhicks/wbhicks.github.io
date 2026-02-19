@@ -799,7 +799,7 @@ dek: ❝D.C.<span class="apostrophe">&#39;</span>s most surprising leadership co
 
 => https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
 
-> ❝... Arthur Gelb in his memoir, <q>City Room</q>: <q>There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.</q> ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...❞
+> ❝... Arthur Gelb in his memoir, <cite>City Room</cite>: <q>There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.</q> ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...❞
 
 ## V. May
 
