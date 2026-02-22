@@ -59,13 +59,32 @@
 
   </head>
   <body>
-    {{/* Wrapping the following line in a header element causes a duplicate header element. */}}
-    {{ partial "header.html" . }}
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>
+    <div class="nojs-style-set"><!-- used to also have the class nojs-style-set-coverage -->
+    <div class="theme-selector">
+    <input type="radio" name="theme" id="theme1" checked>
+    <label for="theme1">Light</label>
+
+    <input type="radio" name="theme" id="theme2">
+    <label for="theme2">Dark</label>
+
+    <input type="radio" name="theme" id="theme3">
+    <label for="theme3">Ocean</label>
+    </div>
+
+
+
+
+
+
+
+      {{/* Wrapping the following line in a header element causes a duplicate header element. */}}
+      {{ partial "header.html" . }}
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      <footer>
+        {{ partial "footer.html" . }}
+      </footer>
+    </div><!-- end of nojs-style-set -->
   </body>
 </html>

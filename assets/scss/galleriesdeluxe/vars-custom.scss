@@ -53,6 +53,64 @@ body.dev-mode, body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
 }
 
+/* No-JS Theming Test */
+
+    /* Hide the radio buttons */
+    input[type="radio"] {
+        display: grid;
+    }
+
+    /* Style the labels as buttons */
+    .theme-selector label {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        background: #ccc;
+        color: #000;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    /* Highlight active label */
+    .nojs-style-set:has(#t1:checked) label[for="t1"],
+    .nojs-style-set:has(#t2:checked) label[for="t2"],
+    .nojs-style-set:has(#t3:checked) label[for="t3"] {
+        background: #044;
+        color: #00f;
+    }
+
+    body { // :root {
+      --nojs-txt-decor: underline dotted;
+    }
+
+    .nojs-style-set {
+      // --nojs-txt-decor: underline; // this was the line when class nojs-style-set-coverage existed
+      text-decoration: var(--nojs-txt-decor);
+    }
+
+    /* Theme 1 */
+    .nojs-style-set:has(#theme1:checked) {
+        --nojs-txt-decor: wavy underline;
+    }
+
+    /* Theme 2 */
+    .nojs-style-set:has(#theme2:checked) {
+        --nojs-txt-decor: underline overline;
+    }
+
+    /* Theme 3 */
+    .nojs-style-set:has(#theme3:checked) {
+        --nojs-txt-decor: overline;
+    }
+
+// used to also have the class nojs-style-set-coverage
+//    .nojs-style-set-coverage {
+//        text-decoration: var(--nojs-txt-decor);
+//    }
+
+/* End of No-JS Theming Test */
+
 /* Override assignment of "quotes: none" in reset.scss lines 86 and 91: */
 
 q {

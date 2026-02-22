@@ -40,64 +40,6 @@
 
 <style>
 
-
-    /* Hide the radio buttons */
-    input[type="radio"] {
-        display: all;
-    }
-
-    /* Style the labels as buttons */
-    .theme-selector label {
-        cursor: pointer;
-        padding: 10px 20px;
-        margin: 0 5px;
-        border-radius: 5px;
-        background: #ccc;
-        color: #000;
-        font-weight: bold;
-        transition: background 0.3s;
-        display: inline-block;
-    }
-
-    /* Highlight active label */
-    .theme-switcher:has(#t1:checked) label[for="t1"],
-    .theme-switcher:has(#t2:checked) label[for="t2"],
-    .theme-switcher:has(#t3:checked) label[for="t3"] {
-        background: #044;
-        color: #00f;
-    }
-
-    /* Default theme variables */
-    .theme-switcher {
-        --bg-color: red;
-        --text-color: green;
-    }
-
-    /* Theme 1 */
-    .theme-switcher:has(#theme1:checked) {
-        --bg-color: #440066;
-        --text-color: #00ffdd;
-    }
-
-    /* Theme 2 */
-    .theme-switcher:has(#theme2:checked) {
-        --bg-color: #446600;
-        --text-color: #ff00dd;
-    }
-
-    /* Theme 3 */
-    .theme-switcher:has(#theme3:checked) {
-        --bg-color: #004466;
-        --text-color: #ffdd00;
-    }
-
-    .contentz {
-        background: var(--bg-color);
-        color: var(--text-color);
-    }
-
-
-
   /*
    * Dark Mode Toggle
    * Copyright (c) 2015 instructure-react
@@ -311,23 +253,3 @@ if (localStorage.getItem('serifMode')) {
   body.classList.add('serif-mode');
 }
 </script>
-
-  <!-- Theme Switcher -->
-  <div class="theme-switcher">
-    <div class="theme-selector">
-    <input type="radio" name="theme" id="theme1" checked>
-    <label for="theme1">Light</label>
-
-    <input type="radio" name="theme" id="theme2">
-    <label for="theme2">Dark</label>
-
-    <input type="radio" name="theme" id="theme3">
-    <label for="theme3">Ocean</label>
-
-    <span class="contentz">ABC</span>
-    </div>	
-
-    <span class="contentz">KLM</span>
-  </div>
-  <span class="contentz">XYZ</span>
-
