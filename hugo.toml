@@ -6,6 +6,7 @@ title = 'This title will be overridden'
     category = 'categories'
 
 [params]
+
     [params.author]
         name        = "William Hicks"
         email       = "TBD Author Email"
@@ -13,7 +14,7 @@ title = 'This title will be overridden'
 
     [params.galleriesdeluxe]
         # One of dartsass or libsass.
-        sass_transpiler = "libsass"
+        sass_transpiler = "dartsass"
         [params.galleriesdeluxe.sassvars]
         #   At least one key-value pair must remain 
         #   uncommented (see my note in Obsidian)
@@ -49,3 +50,4 @@ title = 'This title will be overridden'
         target = "content"
     [[module.imports]]
         path = "github.com/bep/galleriesdeluxe"
+

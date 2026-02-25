@@ -66,18 +66,19 @@ body.dev-mode, body.dev-mode main * {
         padding: 10px 20px;
         margin: 0 5px;
         border-radius: 5px;
-        background: #ccc;
-        color: #000;
+//        background: #ccc;
+//        color: #000;
         font-weight: bold;
         transition: background 0.3s;
     }
 
     /* Highlight active label */
-    .nojs-style-set:has(#t1:checked) label[for="t1"],
-    .nojs-style-set:has(#t2:checked) label[for="t2"],
-    .nojs-style-set:has(#t3:checked) label[for="t3"] {
-        background: #044;
-        color: #00f;
+    .nojs-style-set:has(#theme1:checked) label[for="theme1"],
+    .nojs-style-set:has(#theme2:checked) label[for="theme2"],
+    .nojs-style-set:has(#theme3:checked) label[for="theme3"] {
+        background: red !important;
+        color: blue !important;
+        text-decoration: overline dotted !important;
     }
 
     body { // :root {
@@ -123,9 +124,8 @@ q::before, q::after {
 
 /* END OF "Override assignment of ..." */
 
-span.apostrophe {
-  color: red;
-}
+// span.apostrophe was moved from here to custom.css
+
 
 i.archaic-synonym, i.archaic-term, i.synonym, i.term {
   color: pink;

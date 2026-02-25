@@ -34,7 +34,10 @@
     {{ if hugo.IsProduction }}
       {{ $options = $options | merge (dict "enableSourceMap" false "outputStyle" "compressed") }}
     {{ end }}
+{{- /*
     {{ $styles := resources.Get "scss/galleriesdeluxe/styles.scss" }}
+*/ -}}
+    {{ $styles := resources.Get "scss/custom.scss" }}
     {{ $styles = $styles | css.Sass $options }}
     {{ if hugo.IsProduction }}
       {{ $styles = $styles | fingerprint }}
