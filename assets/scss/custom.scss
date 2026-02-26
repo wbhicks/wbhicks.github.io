@@ -1,3 +1,49 @@
+/* Start of font toggle. See also toggle.html */
+
+$font_family_serif: Georgia, Charter, "Bitstream Charter", "Sitka Text", Cambria, serif !default;
+$font_family_sans_serif: monospace, sans_serif !default;
+
+/* This mixin, and its inclusion in both declaration blocks,
+   is needed to prevent the two styles from becoming swapped 
+   when the page loads with the toggle in the "wrong" setting:
+*/
+@mixin serif-or-sans($the-serif-toggle: true) {
+  @if $the-serif-toggle {
+    font-family: $font_family_sans_serif;
+  }
+}
+body.serif-mode, body.serif-mode main * {
+  // Without the inclusion, the styles 
+  // may get swapped on a page reload:
+  // font-family: $font_family_serif;
+  @include serif-or-sans($the-serif-toggle: true);
+}
+body.sans-mode, body.sans-mode main * {
+  // Without the inclusion, the styles 
+  // may get swapped on a page reload:
+  // font-family: $font_family_sans_serif;
+  @include serif-or-sans($the-serif-toggle: false);
+}
+
+/* End of font toggle */
+
+/* Color variables used by Galleries Deluxe: */
+
+// In Galleries Deluxe, color_primary is #3a98b9
+$color_primary:           #ccae8f; // seems unused?!
+$color_background:        #0e0e0e; // seems unused?!
+$color_background_footer: #171717; // seems unused?!
+
+/* The lightness of color_background determines which of these two is used: */
+$color-text_dark: #000;
+$color-text_light: #ccc2b8;
+
+/* Start of garish colors toggle. See also toggle.html */
+
+
+/* End of garish colors toggle */
+
+// TEMP
 span.apostrophe {
   text-decoration: overline dotted !important;
   color: red !important;
