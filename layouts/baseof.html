@@ -28,23 +28,33 @@
     {{ partial "common-partials/head-seo.html" . }}
 
     {{/* Load styles */}}
+
     {{ $vars := site.Params.galleriesdeluxe.sassvars | default dict }}
     {{ $transpiler := site.Params.galleriesdeluxe.sass_transpiler | default "dartsass" }}
     {{ $options := dict "enableSourceMap" true "transpiler" $transpiler "vars" $vars }}
     {{ if hugo.IsProduction }}
       {{ $options = $options | merge (dict "enableSourceMap" false "outputStyle" "compressed") }}
     {{ end }}
-{{- /*
-    {{ $styles := resources.Get "scss/galleriesdeluxe/styles.scss" }}
-*/ -}}
-    {{ $styles := resources.Get "scss/custom.scss" }}
-    {{ $styles = $styles | css.Sass $options }}
+
+    {{ $stylesGalleriesDeluxe := resources.Get "scss/galleriesdeluxe/styles.scss" }}
+    {{ $stylesGalleriesDeluxe = $stylesGalleriesDeluxe | css.Sass $options }}
     {{ if hugo.IsProduction }}
-      {{ $styles = $styles | fingerprint }}
+      {{ $stylesGalleriesDeluxe = $stylesGalleriesDeluxe | fingerprint }}
     {{ end }}
-    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    <link href="{{ $stylesGalleriesDeluxe.RelPermalink }}" rel="stylesheet" />
+
+{{- /*
+*/ -}}
+
+    {{ $stylesMine := resources.Get "scss/custom.scss" }}
+    {{ $stylesMine = $stylesMine | css.Sass $options }}
+    {{ if hugo.IsProduction }}
+      {{ $stylesMine = $stylesMine | fingerprint }}
+    {{ end }}
+    <link href="{{ $stylesMine.RelPermalink }}" rel="stylesheet" />
 
     {{/* Load JavaScript */}}
+
     {{ $js := resources.Get "js/galleriesdeluxe/index.js" }}
     {{ $params := dict }}
     {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
@@ -62,6 +72,7 @@
 
   </head>
   <body>
+{{- /*
     <div class="nojs-style-set"><!-- used to also have the class nojs-style-set-coverage -->
     <div class="theme-selector">
     <input type="radio" name="theme" id="theme1" checked>
@@ -73,7 +84,7 @@
     <input type="radio" name="theme" id="theme3">
     <label for="theme3">Ocean</label>
     </div>
-
+*/ -}}
 
 
 

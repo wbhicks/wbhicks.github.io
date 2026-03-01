@@ -1,15 +1,15 @@
 <div class="js-toggle-overall">
 
-    Serif
+    Monosp.
 
     <div class="js-toggle-font">
 
         <div class="js-toggle-track">
             <div class="js-toggle-track-check">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAABdElEQVRIDWNgGOqAEeaBZ8+eGf/9+/cMjE8JzczMbCIlJXUWZAYTzCBqGQ4yD9ksFpgFMFpWVhbuK5gYKfTjx4//I6uH+wBZkJpskiwAuQ7dhYQcQ7QF+/fvhwcnMEGIEDIYJk+0BcrKykthmoCRuA3GJkQTbQHQoGdIhpkisfEyibLg/v37GnJycoXIJj158sQZmY+LTZQFwIyzGWrAIZhB////3whj46OJsgBoQAnIEA4Ojkgkw7iR2DiZBC0AJstkYKR+BAaTw5cvX9SQTQIGUyUyHxsbnvSwSULFihQVFbVh8o8ePTrMyMhoC+IDg6kNSLXD5LDReH0ANIDxz58/3sgagb4JQ+ZfvXqVDZmPzsZrwdOnT+cBXf8AWROQ/wKZLyAgsAKZj87GacG9e/fUgT5QANHImkB8YBCdgIn9+/cvEF0NTA6FJqecQTEAykE3B6cPsGkmRwwjFZFaWhKyFO4DUDVHSDGx8tQ0i1g7aacOADF8guDIe4JfAAAAAElFTkSuQmCC" role="presentation" style="pointer-events: none;" width="16" height="16">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="16px" height="16px" fill="#ccc2b8" vertical-align="top"><path d="M96-192v-576h72v576H96Zm696 0v-576h72v576h-72Zm-490-96 143.92-384H515l144 384h-65.9l-34.38-98H404l-34.97 98H302Zm121-154h115l-56-159h-3l-56 159Z"/></svg>
             </div>
             <div class="js-toggle-track-x">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAABW0lEQVRIDdVUQU6EQBBcxNN69EBCgJsf0PmA8QEmfsJXeDPxNx6MJ9+AP/BAAiHhAXpD7F6pSYehhyFLTJxk0kVNdxVNptnt/vuK0EDbtld935d4PibGcWzSNH1njRMIbSXOelLrFAaIeZ7brsCtiXVdDzLfdiDJLbHTgSZeluU+SZJPPu+67swY86XlSj64AxJ/QaHE4LQYbEACN0JEYkG7MMigqqprLo2i6JE3Y3CMfSvIgO71K4tkWfbAmzE4xr4VZEACe9rfQogxc4tr0YDu9ROr0BvfQw0YZ+Dnoh0qDMh00MDPFTOn5YP3dtA0zbkmDH4px2tAIm8sNAzDLb+R3MyNJoecETvBa0Ail1xRFIUdMiiAQw74aVQN6Nvfjckf0yLxfDgTueLoF6r/Ivocz5RiL4FTSQTlXMzxklM7kEnHYKeDpWu51sx2QMNj1hZr+VtqaR5/x/8AKlZiF2fSvM8AAAAASUVORK5CYII=" role="presentation" style="pointer-events: none;" width="16" height="16">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="16px" height="16px" fill="#ccc2b8" vertical-align="top"><path d="M192-192v-576h72v576h-72Zm504 0v-576h72v576h-72Zm-394-96 143.92-384H515l144 384h-65.9l-34.38-98H404l-34.97 98H302Zm121-154h115l-56-159h-3l-56 159Z"/></svg>
             </div>
         </div>
         <div class="js-toggle-thumb"></div>
@@ -17,7 +17,7 @@
 
     </div>
 
-<span>&nbsp;Sans &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QA&nbsp;</span>
+<span>&nbsp;Prop. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calm&nbsp;</span>
 
     <div class="js-toggle-brightness">
 
@@ -34,7 +34,7 @@
 
     </div>
 
-    Dev
+    Garish
 
 </div>
 
@@ -100,7 +100,7 @@
     height: 24px;
     padding: 0;
     border-radius: 30px;
-    background-color: hsl(222, 14%, 7%);
+    background-color: #333; //hsl(222, 14%, 7%);
     transition: all 0.2s ease;
   }
   
@@ -157,7 +157,7 @@
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background-color: #fafafa;
+    background-color: #aaa; //#fafafa;
     box-sizing: border-box;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     transform: translateX(0);
@@ -173,21 +173,16 @@
     border-color: #19ab27;
   }
   
+/*
   .js-toggle-font--focus .js-toggle-thumb {
-    box-shadow: 0px 0px 2px 3px rgb(255, 167, 196);
-  }
-  
+    box-shadow: 0px 0px 2px 3px rgb(167, 255, 167); }
   .js-toggle-brightness--focus .js-toggle-thumb {
-    box-shadow: 0px 0px 2px 3px rgb(255, 167, 196);
-  }
-  
+    box-shadow: 0px 0px 2px 3px rgb(167, 255, 167); }
   .js-toggle-font:active .js-toggle-thumb {
-    box-shadow: 0px 0px 5px 5px rgb(255, 167, 196);
-  }
-
+    box-shadow: 0px 0px 5px 5px rgb(167, 255, 167); }
   .js-toggle-brightness:active .js-toggle-thumb {
-    box-shadow: 0px 0px 5px 5px rgb(255, 167, 196);
-  }
+    box-shadow: 0px 0px 5px 5px rgb(167, 255, 167); }
+*/
 </style>
 
 

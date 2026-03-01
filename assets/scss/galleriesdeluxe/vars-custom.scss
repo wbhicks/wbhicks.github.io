@@ -1,7 +1,33 @@
-// In Galleries Deluxe, color_primary is #3a98b9
+/* I've mostly abandoned this stylesheet ( assets/ scss/ 
+   galleriesdeluxe/ vars-custom.scss ) in favor of its uncle 
+   custom.scss. However, the 5 color variables below are used 
+   by Galleries Deluxe and if you want to customize them then 
+   you must do so in this stylesheet, rather than in 
+   custom.scss. Otherwise, your values won't be read.
+
+   Also, there are only 2 options for where to place the pair 
+   of font family variables ($font_family_sans_serif and 
+   $font_family_serif): either (A) in custom.scss only, or
+   (B) in both custom.scss and vars-custom.scss.
+
+   If (A), then they will take effect only when the user 
+   first uses the JavaScript font toggle (at the top of the
+   page). Before then, the defaults in Galleries Deluxe (e.g.
+   Seravek) will be used.
+
+   If (B), then the seemingly redundant entries below will
+   cause the font customizations to take effect as soon as 
+   the page is loaded, even before the user touches the
+   font toggle.
+*/
+
+// Start of color variables
+
+// The Galleries Deluxe default for color_primary is #3a98b9
+
 $color_primary: #ccae8f;
 $color_background: #0e0e0e;
-$color_background_footer: #171717; // darken(#111, 3%);
+$color_background_footer: #171717; // was darken(#111, 3%);
 
 // The lightness of color_background
 // determines which of these two is used:
@@ -9,342 +35,13 @@ $color_background_footer: #171717; // darken(#111, 3%);
 $color-text_dark: #000;
 $color-text_light: #ccc2b8;
 
-// - - - - - - - - - - - -
+// End of color variables
 
+// This pair of font-family variables is copied over from
+// custom.scss. Reason for duplication is detailed above.
+// If you change it here, change it there too.
 
-@mixin qa-or-dev($the-color-toggle: true) {
-  @if $the-color-toggle {
-    a                  { color: #f00; } // else color_primary
-    .galleries a       { color: #00f; } // else color_primary
-    .markdown-body     { color: #0ff; } // else color-text_ ...
-    h1, h2, h3, h4, h5 { color: #0f0; } // else color-text_ ...
-    p                  { color: #ff0; } // else color-text_ ...
-    .design-hint       { color: #f0f; }
-  }
-}
+$font_family_serif: Georgia, Charter, "Bitstream Charter", serif !default;
+$font_family_sans_serif: Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
 
-body.qa-mode, body.qa-mode main * {
-  @include qa-or-dev($the-color-toggle: true);
-}
-
-body.dev-mode, body.dev-mode main * {
-  @include qa-or-dev($the-color-toggle: false);
-}
-
-/* No-JS Theming Test */
-
-    /* Hide the radio buttons */
-    input[type="radio"] {
-        display: grid;
-    }
-
-    /* Style the labels as buttons */
-    .theme-selector label {
-        cursor: pointer;
-        padding: 10px 20px;
-        margin: 0 5px;
-        border-radius: 5px;
-//        background: #ccc;
-//        color: #000;
-        font-weight: bold;
-        transition: background 0.3s;
-    }
-
-    /* Highlight active label */
-    .nojs-style-set:has(#theme1:checked) label[for="theme1"],
-    .nojs-style-set:has(#theme2:checked) label[for="theme2"],
-    .nojs-style-set:has(#theme3:checked) label[for="theme3"] {
-        background: red !important;
-        color: blue !important;
-        text-decoration: overline dotted !important;
-    }
-
-    body { // :root {
-      --nojs-txt-decor: underline dotted;
-    }
-
-    .nojs-style-set {
-      // --nojs-txt-decor: underline; // this was the line when class nojs-style-set-coverage existed
-      text-decoration: var(--nojs-txt-decor);
-    }
-
-    /* Theme 1 */
-    .nojs-style-set:has(#theme1:checked) {
-        --nojs-txt-decor: wavy underline;
-    }
-
-    /* Theme 2 */
-    .nojs-style-set:has(#theme2:checked) {
-        --nojs-txt-decor: underline overline;
-    }
-
-    /* Theme 3 */
-    .nojs-style-set:has(#theme3:checked) {
-        --nojs-txt-decor: overline;
-    }
-
-// used to also have the class nojs-style-set-coverage
-//    .nojs-style-set-coverage {
-//        text-decoration: var(--nojs-txt-decor);
-//    }
-
-/* End of No-JS Theming Test */
-
-/* Override assignment of "quotes: none" in reset.scss lines 86 and 91: */
-
-q {
-  quotes: "«" "»" "‹" "›";
-}
-
-q::before, q::after {
-  content: revert;
-}
-
-/* END OF "Override assignment of ..." */
-
-// span.apostrophe was moved from here to custom.css
-
-
-i.archaic-synonym, i.archaic-term, i.synonym, i.term {
-  color: pink;
-  text-decoration: underline; 
-}
-
-i.logical-statement {
-  color: purple;
-  text-decoration: underline dotted;
-}
-
-i.nickname {
-  text-decoration: underline dotted;
-}
-
-i.nickname::before {
-  content: "↳";
-  color: blue;
-}
-
-i.nickname::after {
-  content: "&#8626;";
-  color: red;
-}
-
-i.so-called {
-  color: purple 
-}
-
-i.word-as-word {
-  color: purple 
-}
-
-body main h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-body main h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-body main h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #777;
-  margin: 1rem 0;
-  padding: 0;
-}
-
-.gd-modal-caption {
-  position: absolute;
-  z-index: 20;
-  bottom: 10px;
-  left: 10px;
-  color: #d80;
-  background-color: #333;
-  padding: 0.75rem;
-  opacity: 1.0;
-  filter: drop-shadow(-1px -1px 2px #ccc);
-}
-
-.gd-modal-caption:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-body main {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-
-/* Side padding is already at 1rem */
-body footer {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-
-body * {
-  line-height: 1.5;
-}
-
-/* FOR HTML LISTS (OL AND UL) */
-
-ol {
-  /* Override assignment of "disc" in styles.scss, which would make ol's resemble ul's: */
-  list-style-type: decimal !important;
-  list-style-position: outside !important; /* Is "inside" better? */
-  /* padding-left: 1rem; */
-  margin-left: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-ul {
-  /* padding-left: 1rem; */
-  margin-left: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-body main ul > li {
-  list-style-type: circle;
-}
-
-body main ul > li > ul > li {
-  list-style-type: disc;
-}
-
-body main ul > li > ul > li > ul > li {
-  list-style-type: square;
-}
-
-body main ul > li > ul > li > ul > li > ul > li {
-  list-style-type: circle;
-}
-
-body main ul > li > ul > li > ul > li > ul > li > ul > li {
-  list-style-type: disc;
-}
-
-/* END OF STYLING FOR HTML LISTS */
-
-.design-hint {
-  color: #222; 
-}
-
-p, .h2-is-1star, .h3-is-2stars, .h4-is-3stars, .h5-is-4stars, .url-line, .dek-or-blockq, .commentary, .org-example-kludge {
-  margin-bottom: 2rem;
-}
-
-.h2-is-1star {
-  text-align: center;
-}
-
-.h2-from-1star {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-
-.h3-is-2stars {
-  text-align: center;
-}
-
-.h3-from-2stars {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-
-.h4-is-3stars {
-  text-align: center;
-}
-
-.h4-from-3stars {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-
-.h5-is-4stars {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.h5-from-4stars {
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.fisheye-means-rightmost {
-  text-align: right;
-  margin-right: 1rem;
-}
-
-.url-line {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.dek-or-blockq {
-  margin-left: 3rem;
-  margin-right: 1rem;
-}
-
-.commentary {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.birth-or-death {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.asterism {
-  font-family: monospace;
-  white-space-collapse: preserve;
-  text-align: center;
-  color: #777;
-  line-height: 1;
-}
-
-/* "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to          */
-/* represent computer code, computer output, and user input, respectively. ... To   */
-/* represent multiple lines of code, wrap the <code> element within a <pre>         */
-/* element. The <code> element by itself only represents a single phrase of code    */
-/* or line of code."                                                                */
-/* Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre */
-
-
-body pre { /* was .org-example-kludge for a while */
-//  display: block;
-
-  /* This font-family line has no effect when font_family_sans_serif is in effect. Therefore, */
-  /* to see ASCII art, either (a) specify a monospace font for font_family_sans_serif or (b)  */
-  /* stay toggled to font_family_serif. */
-  font-family: monospace;
-
-  white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
-//  margin-block-start: 1rem;
-//  margin-inline-start: 0px;
-//  margin-left: 3rem;
-}
-
-
+// I'm treating Courier as sans-serif even though it's not (it's slab-serif), because it's monospaced.
