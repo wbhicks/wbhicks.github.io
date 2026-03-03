@@ -18,8 +18,10 @@
 
 {{- /* Why can't these be handled by :before and :after in .scss? */ -}}
 
+{{- /* 
   {{ $allText = replaceRE `<cite>`  `&#8990;<cite>`  $allText }}
   {{ $allText = replaceRE `</cite>` `</cite>&#8991;` $allText }}
+*/ -}}
   {{ $allText = replaceRE `<abbr>`  `&#9659;<abbr>`  $allText }}
   {{ $allText = replaceRE `</abbr>` `</abbr>&#9669;` $allText }}
   {{ $allText = replaceRE `<q>`     `&#9440;<q>`  $allText }}

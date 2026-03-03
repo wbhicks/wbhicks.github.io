@@ -35,8 +35,7 @@ body.sans-mode, body.sans-mode main * {
 
 /* End of font toggle */
 
-/* Start of garish colors toggle. See also toggle.html */
-/* COLOR TOGG */
+/* Start of garish colors toggle. See also toggle.html. */
 
 @mixin qa-or-dev($the-color-toggle: true) {
   @if $the-color-toggle {
@@ -48,20 +47,125 @@ body.sans-mode, body.sans-mode main * {
     .design-hint       { color: #f0f; }
   }
 }
-
 body.qa-mode, body.qa-mode main * {
   @include qa-or-dev($the-color-toggle: true);
 }
-
 body.dev-mode, body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
 }
 
 /* End of garish colors toggle */
 
-// TEMP
-span.apostrophe {
-  text-decoration: overline dotted !important;
-  color: red !important;
-    font-family: $font_family_serif;
+/* No-JS theming configuration */
+
+    // Hide the radio buttons:
+    input[type="radio"] {
+//size: 1px;
+//width: 1px;
+height: 1.5rem;
+//        display: flex; //block;
+//all: unset; //initial; // revert ; //;
+    }
+
+    // Style the labels as buttons:
+    .theme-selector label {
+        cursor: pointer;
+        padding: 0.3rem 1rem;
+        margin: 1px 1px;
+        border-radius: 2rem;
+        background: #333;
+        color: #ccc2b8;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    // Highlight active label:
+  .nojs-style-set:has(#nojs-quote-style-straight:checked) 
+      label[for="nojs-quote-style-straight"],
+  .nojs-style-set:has(#nojs-quote-style-book:checked) 
+      label[for="nojs-quote-style-book"],
+  .nojs-style-set:has(#nojs-quote-style-guillemet:checked) 
+      label[for="nojs-quote-style-guillemet"],
+  .nojs-style-set:has(#nojs-quote-style-exagg:checked) 
+      label[for="nojs-quote-style-exagg"] {
+    background: #ccae8f !important;
+    // #ccae8f and #335170 are RGB opposites
+    color: #335170 !important;
+    text-decoration: overline dotted !important;
+  }
+
+    .nojs-style-set:has(#nojs-quote-style-straight:checked) {
+        --nojs-quote-chars: "\"" "\"" "\'" "\'";
+        --nojs-apostrophe-char: "'";
+    }
+    .nojs-style-set:has(#nojs-quote-style-book:checked) {
+        // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
+        --nojs-quote-chars: "“" "”" "‘" "’";
+        --nojs-apostrophe-char: "’";
+    }
+    .nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
+        --nojs-quote-chars: "«" "»" "‹" "›";
+        --nojs-apostrophe-char: "’";
+    }
+    .nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+        // 0x2035 &bprime, 0x2032 &prime, etc.:
+        --nojs-quote-chars: "‵‵" "′′" "‵" "′";
+        --nojs-quote-color: cyan;
+        --nojs-apostrophe-char: "'";
+        --nojs-apostrophe-color: red;
+    }
+
+/* End of No-JS theming configuration */
+
+/* The following is necessary in order to override the 
+   assignment of "quotes: none" in reset.scss (lines 86 
+   and 91):
+*/
+
+q {
+  // quotes: "«" "»" "‹" "›";
+  quotes: var(--nojs-quote-chars);
 }
+
+q::before, q::after {
+  content: revert;
+  color: var(--nojs-quote-color);
+}
+
+/* End of "Override assignment of ..." */
+
+cite.article-title, i.so-called { //, i.nickname {
+
+  // override the standard HTML italicization of cite
+  font-style: normal;
+
+  // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/quotes#with_generated_content
+  // For an example of how these are nested across classes, 
+  // search my content for Tower Of Babble
+  quotes: "«" "»" "‹" "›";
+
+}
+
+cite.article-title::before, i.so-called::before { //, i.nickname::before {
+  content: open-quote; //"↳";
+  color: blue;
+}
+
+cite.article-title::after, i.so-called::after { //, i.nickname::after {
+  content: close-quote; //"↲";
+  color: red;
+}
+
+/* The span element should be empty, otherwise the 
+   character can't be replaced. Write it, e.g., like this:
+   <span class="apostrophe"></span> and never like this:
+   <span class="apostrophe"/> (which is bad HTML).
+*/
+
+span.apostrophe::before {
+  // content: "’";
+  content: var(--nojs-apostrophe-char);
+  color: var(--nojs-apostrophe-color);
+}
+
+
