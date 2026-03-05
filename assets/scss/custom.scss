@@ -97,11 +97,38 @@ height: 1.5rem;
     .nojs-style-set:has(#nojs-quote-style-straight:checked) {
         --nojs-quote-chars: "\"" "\"" "\'" "\'";
         --nojs-apostrophe-char: "'";
+        i.synonym, i.term, i.word-as-word, i.logical-statement,
+            cite.book-title, cite.film-title, cite.artwork-title {
+          // override the standard HTML italicization of cite
+          font-style: normal;
+        }
+        i.synonym::before, 
+            i.term::before, 
+            i.word-as-word::before, 
+            i.logical-statement::before,
+            cite.book-title::before, 
+            cite.film-title::before,
+            cite.artwork-title::before,
+        i.synonym::after, 
+            i.term::after, 
+            i.word-as-word::after, 
+            i.logical-statement::after,
+            cite.book-title::after, 
+            cite.film-title::after,
+            cite.artwork-title::after {
+          content: "_";
+        }
     }
     .nojs-style-set:has(#nojs-quote-style-book:checked) {
         // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
         --nojs-quote-chars: "“" "”" "‘" "’";
         --nojs-apostrophe-char: "’";
+        i.synonym, i.term, i.word-as-word, i.logical-statement,
+            cite.book-title, cite.film-title, cite.artwork-title {
+          // italicization is automatic for cite but not for i
+          font-style: italic;
+          color: yellow;
+        }
     }
     .nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
         --nojs-quote-chars: "«" "»" "‹" "›";
@@ -113,6 +140,13 @@ height: 1.5rem;
         --nojs-quote-color: cyan;
         --nojs-apostrophe-char: "'";
         --nojs-apostrophe-color: red;
+        i.synonym, i.term, i.word-as-word, i.logical-statement,
+            cite.book-title, cite.film-title, cite.artwork-title {
+          // override the standard HTML italicization of cite
+          font-style: normal;
+          color: red;
+          text-decoration: underline;
+        }
     }
 
 /* End of No-JS theming configuration */
@@ -132,28 +166,33 @@ q::before, q::after {
   color: var(--nojs-quote-color);
 }
 
-/* End of "Override assignment of ..." */
+/* Other users of quotation marks */
 
-cite.article-title, i.so-called { //, i.nickname {
+cite.article-title, i.so-called, i.nickname {
 
   // override the standard HTML italicization of cite
   font-style: normal;
 
   // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/quotes#with_generated_content
-  // For an example of how these are nested across classes, 
-  // search my content for Tower Of Babble
-  quotes: "«" "»" "‹" "›";
+  // For an example of how these are nested across classes (which
+  // requires "... ::before { content: open-quote; ..." etc.),
+  // search my content for the title starting "Tower Of Babble"
+  quotes: var(--nojs-quote-chars); // "«" "»" "‹" "›";
 
 }
 
-cite.article-title::before, i.so-called::before { //, i.nickname::before {
+cite.article-title::before, 
+    i.so-called::before, 
+    i.nickname::before {
   content: open-quote; //"↳";
-  color: blue;
+  color: var(--nojs-quote-color);
 }
 
-cite.article-title::after, i.so-called::after { //, i.nickname::after {
+cite.article-title::after, 
+    i.so-called::after, 
+    i.nickname::after {
   content: close-quote; //"↲";
-  color: red;
+  color: var(--nojs-quote-color);
 }
 
 /* The span element should be empty, otherwise the 
@@ -167,5 +206,7 @@ span.apostrophe::before {
   content: var(--nojs-apostrophe-char);
   color: var(--nojs-apostrophe-color);
 }
+
+/* Places where italics (or bold) beat quotation marks */
 
 
