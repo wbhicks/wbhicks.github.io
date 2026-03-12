@@ -89,7 +89,7 @@ And the outmost underscores are replaced by
 
 =================
 
-≤ followed by one of these letters: a b k l n s w
+≤ followed by one of these letters: a b k l n q s w
 
 ≤aREPORTER, writing in PERIODICAL (YEAR): "TITLE"≥
 
@@ -100,6 +100,8 @@ And the outmost underscores are replaced by
 ≤lDeep South≥ ---> any one of these: <i class="term">Deep South</i> or "word-as-word", "logical-statement", "synonym" (depending on context)
 
 ≤nFrancky≥ ---> <i class="nickname">Francky</i>
+
+≤qHello, ‘Cap’n’!≥ *or* «Hello, ‹Cap’n›!» ---> ❝Hello, ❛Cap’n❜!❞ 
 
 ≤sBad≥ ---> <i class="so-called">Bad</i>
 

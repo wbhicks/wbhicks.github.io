@@ -38,7 +38,7 @@ draft: false
 
 ≤kMarian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.≥
 
-~ Referring to contemporary artist Danh Võ, Blake Gopnik writes: <q>Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece.</q>
+~ Referring to contemporary artist Danh Võ, Blake Gopnik writes: «Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece.»
 
 ~ The social significance attached by some artists to the extremely low prices of their multiples has, I think, a close analogue in the infinite reproducibility of digital art, which some (most?) digital artists consider to be both good and intrinsic to their work.
 
@@ -88,7 +88,7 @@ draft: false
 
 => https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html NYT / by Thomas B. Edsall
 
-~ As is his wont [modernize to <q>As is his custom</q>? -- ȐD], Thomas Edsall brings a wealth of citations to his argument that, in the mapping from county population density[1] to partisan lean, the slope has been smoothing out. (For readers unfamiliar with US partisanship, I’ve drawn three ASCII art graphs to suggest some historical context.)
+~ As is his wont [modernize to «As is his custom»? -- ȐD], Thomas Edsall brings a wealth of citations to his argument that, in the mapping from county population density[1] to partisan lean, the slope has been smoothing out. (For readers unfamiliar with US partisanship, I’ve drawn three ASCII art graphs to suggest some historical context.)
 
 ~ [1]: Or, perhaps equally well, the X axis can show a county’s distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.
 
@@ -166,7 +166,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.nytimes.com/2023/01/26/opinion/rural-voters-economy.html NYT / by Paul Krugman
 
-~ Given J.D. Vance’s professional background, there are 180 degrees of irony in Krugman’s paragraph citing Vance’s tweet about NYC. Krugman does note that it was crafted <q>during his senatorial campaign</q>, but should acknowledge that the tweet’s ostensible and real arrows of contempt fly in opposite directions.
+~ Given J.D. Vance’s professional background, there are 180 degrees of irony in Krugman’s paragraph citing Vance’s tweet about NYC. Krugman does note that it was crafted «during his senatorial campaign», but should acknowledge that the tweet’s ostensible and real arrows of contempt fly in opposite directions.
 
 #### 1788-01-26: Australia Day: Landing of the First Fleet in what is present-day Sydney
 
@@ -212,7 +212,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ### February 23rd
 
-#### ≤aTodd Bookman, writing in NPR (2023) under the headline «<q>You have to be dangerous back.</q> Why some LGBTQ people in New Hampshire are taking up arms»≥
+#### ≤aTodd Bookman, writing in NPR (2023) under the headline «‹You have to be dangerous back.› Why some LGBTQ people in New Hampshire are taking up arms»≥
 
 ◉ Bookmark, Feb 23rd
 
@@ -258,7 +258,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of _NBC Out_, an LGBTQ news portal under the NBC News umbrella:
 
-≤b<q>The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,</q> Haught told WTRF, a local TV news channel. <q>At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,</q> Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.≥
+≤b‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.≥
 
 => https://www.nbcnews.com/nbc-out NBC Out
 
@@ -322,7 +322,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ In the UK, one likely contributor to the medlar’s decline was the increasing availability of year-round tropical fruits, Gorvett reports; another she cites is the relative inconvenience of winter-picking and ripening[1] the medlar.
 
-~ [1]: <q>put them in a crate of sawdust or straw and forget about them for several weeks</q>
+~ [1]: «put them in a crate of sawdust or straw and forget about them for several weeks»
 
 ~ See also
 
@@ -383,7 +383,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [7]: old, moldy
 
-~ [8]: From Skeat’s notes: <q><q>My heart is as old (lit. mouldy) as my hairs are.</q> Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32.</q>
+~ [8]: From Skeat’s notes: «‹My heart is as old (lit. mouldy) as my hairs are.› Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32.»
 
 ~ [9]: unless
 
@@ -391,7 +391,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [11]: a medlar fruit. The medieval ≤lers≥ is the modern ≤larse≥ (British) or ≤lass≥ (American).
 
-~ [12]: From Skeat’s notes (covering this and the following two lines): <q><q>Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.</q></q>
+~ [12]: From Skeat’s notes (covering this and the following two lines): «‹Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.›»
 
 ~ [13]: that same fruit, that very fruit
 
@@ -401,7 +401,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [16]: straw
 
-~ [17]: From Skeat’s notes: <q>≤lhoppen≥, dance</q>
+~ [17]: From Skeat’s notes: «≤lhoppen≥, dance»
 
 ~ Noticing Skeat’s comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer’s verb, _to write_, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker’s head. Where does this ambiguity come from? When _to write_ is used metaphorically, does it always invite this two-directional reading?
 
@@ -448,7 +448,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 => https://en.wikipedia.org/wiki/Anastrophe WP / Anastrophe
 
-~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤lopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says <q>We olde men, I drede, so fare we</q>. But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
+~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤lopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says «We olde men, I drede, so fare we». But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
 
 ```
 Til we be roten, can we nat be rype;
@@ -509,7 +509,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ≤kA hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.≥
 
-≤bThe school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the <q>deep listening</q> pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...≥
+≤bThe school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤ldeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...≥
 
 ## IV. April
 
@@ -527,7 +527,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Diana Scultori, 1612 (age 64-65), in Rome
 
-=> https://en.wikipedia.org/wiki/Diana_Scultori WP / Diana Scultori <q>... is one of the earliest known women printmakers ...</q>
+=> https://en.wikipedia.org/wiki/Diana_Scultori WP / Diana Scultori «... is one of the earliest known women printmakers ...»
 
 ### April 6th
 
@@ -571,7 +571,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 12th
 
-#### ≤aGeorge F. Will, writing in WaPo (2023) under the headline «How <q>I despise, therefore I am</q> locks in the political status quo»≥
+#### ≤aGeorge F. Will, writing in WaPo (2023) under the headline «How ‹I despise, therefore I am› locks in the political status quo»≥
 
 ◉ Bookmark, Apr 12th
 
@@ -615,7 +615,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Filippo Brunelleschi, 1446 (age 68-69), in Florence (Firenze)
 
-~ inter alia, <q>the first person to receive a patent in the Western world.</q>
+~ inter alia, «the first person to receive a patent in the Western world.»
 
 ##### Roxelana (Роксолана), 1558 (age 53-54), in Istanbul
 
@@ -635,11 +635,11 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.bbc.com/news/world-europe-64426289 BBC / by Shane Harrison
 
-~ Writing for the BBC, Shane Harrison reports that <q>Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin’s Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives.</q>
+~ Writing for the BBC, Shane Harrison reports that «Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin’s Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives.»
 
 ### April 19th
 
-#### ≤aMark Brown, writing in The Guardian (2021) under the headline «<q>Creativity is essential</q>: artist-designed supermarket to open in London»≥
+#### ≤aMark Brown, writing in The Guardian (2021) under the headline «‹Creativity is essential›: artist-designed supermarket to open in London»≥
 
 ◉ Bookmark, Apr 19th
 
@@ -677,7 +677,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html NYT / by Leah Greenblatt
 
-≤kWith the release of <q>Guy Ritchie’s The Covenant,</q> here’s a look at the occasional phenomenon of directors branding movies with their own names.≥
+≤kWith the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.≥
 
 ### April 21st
 
@@ -721,7 +721,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
 
-≤kThat story, which has sometimes been called a real-life <cite class="book-title">Lord of the Flies</cite>, was just one episode in a life filled with adventure.≥
+≤kThat story, which has sometimes been called a real-life ≤wLord of the Flies≥, was just one episode in a life filled with adventure.≥
 
 #### ≤aAmelia Soth, writing in JSTOR Daily (2021) under the headline «When Paid Applauders Ruled the Paris Opera House»≥
 
@@ -729,7 +729,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://daily.jstor.org/paid-applauders-paris-opera-claques/ JSTOR Daily / by Amelia Soth
 
-≤kProfessional applauders, collectively known as the <q>claque,</q> helped mold the tastes of an uncertain audience.≥
+≤kProfessional applauders, collectively known as the ≤lclaque≥, helped mold the tastes of an uncertain audience.≥
 
 #### Deaths on this date:
 
@@ -789,7 +789,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.kansascity.com/news/local/article251004849.html The Kansas City Star / by Bill Lukitsch and Anna Spoerre
 
-~ Writing in The Kansas City Star, Lukitsch and Spoerre report on plans for <q>... a 150-bed village with easy-to-build shelters that range from single-person to family size.</q>
+~ Writing in The Kansas City Star, Lukitsch and Spoerre report on plans for «... a 150-bed village with easy-to-build shelters that range from single-person to family size.»
 
 ~ Location for the village is TBD.
 
@@ -799,7 +799,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
 
-≤b... Arthur Gelb in his memoir, <cite class="book-title">City Room</cite>: <q>There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.</q> ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...≥
+≤b... Arthur Gelb in his memoir, ≤wCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...≥
 
 ## V. May
 
@@ -915,7 +915,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ≤bBut as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.≥
 
-~ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the ≤lDeep South≥ (<q>the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi</q>):
+~ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the ≤lDeep South≥ («the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi»):
 
 ```
                 In 1960    In 2017
@@ -942,7 +942,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/ Atlanta Journal-Constitution / by Rodney Ho
 
-≤kMy 2021 photo is from the Jamie Foxx Netflix comedy <cite class="film-title">Day Shift</cite> but many believe it’s a vintage shot≥
+≤kMy 2021 photo is from the Jamie Foxx Netflix comedy ≤wDay Shift≥ but many believe it’s a vintage shot≥
 
 #### Deaths on this date:
 
@@ -992,7 +992,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ### May 31st
 
-#### ≤aJacopo Prisco, writing in CNN (2022) under the headline «Decoding the messages tucked away in one <q>politically significant</q> city’s street art»≥
+#### ≤aJacopo Prisco, writing in CNN (2022) under the headline «Decoding the messages tucked away in one ‹politically significant› city’s street art»≥
 
 ◉ Bookmark, May 31st
 
@@ -1014,7 +1014,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Field Marshal Sir Henry Hughes Wilson, 1st Baronet, GCB, DSO, 1922 (age 58), in London. See also
 
-=> https://en.wikipedia.org/wiki/Oh!_What_a_Lovely_War WP / Oh! What a Lovely War <q>is a 1969 British comedy historical musical war film ...</q>
+=> https://en.wikipedia.org/wiki/Oh!_What_a_Lovely_War WP / Oh! What a Lovely War «is a 1969 British comedy historical musical war film ...»
 
 ## VII. July
 
@@ -1072,7 +1072,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ≤bJuly 25, 2022 Issue≥
 
-≤bI found a handwritten welcome note, on embossed club stationery, set alongside an orchid and ... chocolate truffles: <q>The whole team remains at your entire disposal to make your stay a wonderful experience. Yours sincerely, Service Members.</q>≥
+≤bI found a handwritten welcome note, on embossed club stationery, set alongside an orchid and ... chocolate truffles: ‹The whole team remains at your entire disposal to make your stay a wonderful experience. Yours sincerely, Service Members.›≥
 
 ### July 21st
 
@@ -1084,7 +1084,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ≤kCell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide.≥
 
-~ In Politico, Beatrice Jin writes: <q>Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home.</q>
+~ In Politico, Beatrice Jin writes: «Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home.»
 
 #### 1918-07-21: A German U-boat (submarine) fires on vessels off Cape Cod, striking the shore in the process.
 
@@ -1130,7 +1130,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ See also:
 
-=> https://en.wikipedia.org/wiki/Odd_Man_Out WP / Odd Man Out <q>is a 1947 British film noir ...</q>
+=> https://en.wikipedia.org/wiki/Odd_Man_Out WP / Odd Man Out «is a 1947 British film noir ...»
 
 ##### Montague Summers, 1948 (age 68), in London
 
@@ -1162,7 +1162,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ≤kAnd why users think it’s unreadable.≥
 
-≤bFredrick Brennan: <q>... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.</q>≥
+≤bFredrick Brennan: ‹... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.›≥
 
 #### Deaths on this date:
 
@@ -1293,7 +1293,7 @@ Has a very large faemmle. -- from
 
 => https://www.nytimes.com/2022/11/12/opinion/election-midterm-pattern.html NYT / by Ezra Klein
 
-~ Writing in The Times, Ezra Klein discusses <q>... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.</q>
+~ Writing in The Times, Ezra Klein discusses «... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.»
 
 ~ cf. George F. Will’s coinage ≤lboiling but frozen≥ in <cite>How <q>I despise, therefore I am</q> locks in the political status quo</cite>, 2023-04-12
 
@@ -1305,7 +1305,7 @@ Has a very large faemmle. -- from
 
 => https://boingboing.net/2021/11/22/intersections-of-pittsburgh.html Boing Boing / by Rob Beschizza
 
-≤bPeter Gorman’s <cite class="artwork-title">Intersections of Pittsburgh</cite> poster ...≥
+≤bPeter Gorman’s ≤wIntersections of Pittsburgh≥ poster ...≥
 
 ~ Note the difference in the styling of the two titles above. Their words are the same, but one is an article and the other is an artwork.
 

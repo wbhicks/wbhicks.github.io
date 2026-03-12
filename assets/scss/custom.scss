@@ -157,8 +157,8 @@ height: 1.5rem;
 */
 
 q {
-  // quotes: "«" "»" "‹" "›";
-  quotes: var(--nojs-quote-chars);
+  quotes: "«" "»" "‹" "›";
+  //quotes: var(--nojs-quote-chars);
 }
 
 q::before, q::after {
@@ -181,7 +181,7 @@ cite.article-title, i.so-called, i.nickname {
 
 }
 
-// article-title is no longer used, but should be TODO
+// article-title is no longer used, but should be. TODO
 
 cite.article-title::before, 
     i.so-called::before, 
