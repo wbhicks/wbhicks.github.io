@@ -181,6 +181,8 @@ cite.article-title, i.so-called, i.nickname {
 
 }
 
+// article-title is no longer used, but should be TODO
+
 cite.article-title::before, 
     i.so-called::before, 
     i.nickname::before {
@@ -207,6 +209,37 @@ span.apostrophe::before {
   color: var(--nojs-apostrophe-color);
 }
 
-/* Places where italics (or bold) beat quotation marks */
+/* Places where italics (or bold) beat quotation marks 
+TODO
+*/
 
+.fisheye-means-rightmost {
+  text-align: right;
+  margin-right: 1rem;
+}
 
+p, .url-line, .dek-or-blockq, .commentary, .org-example-kludge {
+  margin-bottom: 2rem;
+}
+
+.url-line {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* HEADLINES */
+
+.asterism {
+  font-family: monospace;
+  white-space-collapse: preserve;
+  text-align: center;
+  color: #777;
+  line-height: 1;
+}
+
+.h4-from-3stars {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}

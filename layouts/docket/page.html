@@ -9,10 +9,15 @@
   {{ $allText = replaceRE `\)` `TMPLT_RPAREN` $allText }}
   {{ $allText = replaceRE `\(` `TMPLT_LPAREN` $allText }}
   {{ $allText = replaceRE `\?` `TMPLT_QSTNMK` $allText }}
+  {{- /* The following is also the apostrophe in most publications: */ -}}
   {{ $allText = replaceRE `’`  `TMPLT_RSNGQA` $allText }}
   {{ $allText = replaceRE `‘`  `TMPLT_LSNGQA` $allText }}
   {{ $allText = replaceRE `”`  `TMPLT_RDBLQA` $allText }}
   {{ $allText = replaceRE `“`  `TMPLT_LDBLQA` $allText }}
+  {{ $allText = replaceRE `«`  `TMPLT_LDGUIL` $allText }}
+  {{ $allText = replaceRE `»`  `TMPLT_RDGUIL` $allText }}
+  {{ $allText = replaceRE `‹`  `TMPLT_LSGUIL` $allText }}
+  {{ $allText = replaceRE `›`  `TMPLT_RSGUIL` $allText }}
   {{ $allText = replaceRE `--` `TMPLT_2HYFNS` $allText }}
   {{ $allText = replaceRE `–`  `TMPLT_2HYFNS` $allText }}
 
@@ -21,12 +26,13 @@
 {{- /* 
   {{ $allText = replaceRE `<cite>`  `&#8990;<cite>`  $allText }}
   {{ $allText = replaceRE `</cite>` `</cite>&#8991;` $allText }}
-*/ -}}
+end of comment was here
   {{ $allText = replaceRE `<abbr>`  `&#9659;<abbr>`  $allText }}
   {{ $allText = replaceRE `</abbr>` `</abbr>&#9669;` $allText }}
   {{ $allText = replaceRE `<q>`     `&#9440;<q>`  $allText }}
   {{ $allText = replaceRE `</q>`    `</q>&#9414;` $allText }}
 
+*/ -}}
 
 {{- /*
   {{ $regexp99 := `(=&gt; <a h)ref="https://en.wikipedia.org/wiki/` }}
@@ -45,16 +51,17 @@
 
   For markdown (as opposed to org mode), select headlines thus:
 
-  `<h1 id="(.+)">(.+)</h1>`
+  `<h1 id="([^"]+)">(.+)</h1>`
 
   And, in the replacement, use the captures thus:
 
   <p id="$1" align="center">$2</p>
 */ -}}
 
+{{- /* TEMPORARILY DISABLED
   {{ $allText = 
       replaceRE 
-     `<h2 id="(.+)">` 
+     `<h2 id="([^"]+)">` 
      `<div class="asterism">-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
 |    *         *    |    *         *    |    *         *    |
 *   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
@@ -78,7 +85,7 @@
 
   {{ $allText = 
       replaceRE 
-     `<h3 id="(.+)">` 
+     `<h3 id="([^"]+)">` 
      `<div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
 
 
@@ -96,9 +103,263 @@
       $allText 
   }}
 
+end of TEMPORARILY DISABLED */ -}}
+
+{{- /* 
+None of my 126 h4-level headlines have shown an inequality between these two:
+    {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
+    {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
+However, 17 of the 126 do show an inequality when using . instead of $scouredMatch
+
+If the ’ character occurs in the first half of a sufficiently long match, then 
+the counter overshoots by two and the match is split in the middle of a word.
+
+safeHTML seems unneeded
+*/ -}}
+
+{{- /* 
+        replaceRE
+        `TMPLT_[A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]`
+        `~`
+*/ -}}
+{{- /* 
+    {{ $unescapedMatch := safeHTML (htmlUnescape $roughlyMeasurableMatch) }}
+    {{ $preciselyMeasurableMatch := 
+        replaceRE
+        `[^_ a-zA-Z0-9]`
+        `^`
+        $unescapedMatch
+    }}
+*/ -}}
+
+{{- /*
+  {{ $allText = 
+      replaceRE
+     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
+     `, writing in $1 $2:<br>$3`
+      $allText 
+  }}
+*/ -}}
+
+{{- /* TEMPORARILY DISABLED
+
+  {{ $allText = 
+      replaceRE
+     `<h5 id="([^"]+)">
+(.*)
+</h5>`
+     `<h5 class="h5-from-4stars" id="$1">
+$2
+</h5>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>
+dek: &#34;(.+)&#34;</p>`
+     `<div class="dek-or-blockq">"$1" TMPLT_2HYFNS the subhead</div>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `&gt; &#34;(.+)&#34;( TMPLT_2HYFNS from)?`
+     `<div class="dek-or-blockq">"$1"$2</div>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>[
+]?~ (.+)</p>`
+     `<div class="commentary">$1</div>`
+      $allText
+  }}
+
+end of TEMPORARILY DISABLED */ -}}
+
+{{- /*
   {{ $allText = 
       replaceRE 
-     `<h4 id="(.+)">` 
+     `<pre class="example">`
+     `<pre class="org-example-kludge">` 
+      $allText
+  }}
+*/ -}}
+
+  {{- /* The block-level CASES */ -}}
+
+  {{- /* CASE a1: typical reportage, e.g.
+
+         #### ≤aBlake Gopnik, writing in NYT (2021) under the headline «Who Said Art Is Only for the One Percent?»≥
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤a(.+), writing in (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN under the headline TMPLT_LDGUIL(.+)TMPLT_RDGUIL≥`
+     `$1, writing in $2 TMPLT_LPAREN $3 TMPLT_RPAREN under the headline TMPLT_LDGUIL $4 TMPLT_RDGUIL`
+      $allText
+  }}
+
+  {{- /* CASE a2: authorless press release, e.g.
+
+         #### ≤aPublished by Pew Research Center (2016): «Ideological Gap Widens Between More, Less Educated Adults»≥ 
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤aPublished by (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN: TMPLT_LDGUIL(.+)TMPLT_RDGUIL≥`
+     `Published by $1 TMPLT_LPAREN $2 TMPLT_RPAREN: TMPLT_LDGUIL $3 TMPLT_RDGUIL`
+      $allText
+  }}
+
+  {{- /* CASE a3: meta-citation of whitepaper, e.g.
+
+         ##### ≤aSource: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson≥
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤aSource: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)≥`
+     `Source: «$1» by $2`
+      $allText
+  }}
+
+  {{- /* CASE a4: meta-citation of book, e.g.
+
+SEE also CASE w!
+
+         ##### ≤aSource: _Red Fighting Blue: How Geography and Electoral Rules Polarize American Politics_ by David A. Hopkins≥
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤aSource: _(.+)_ by (.+)≥`
+     `Source: <cite class="book-title">$1</cite> by $2`
+      $allText
+  }}
+
+  {{- /* CASE a5: My citation of typical reportage, but not followed by a quotation from the body, e.g.
+
+         ##### ≤aSource: BBC, «Sierra Leone<span class="apostrophe"></span>s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)≥
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤aSource: (.+), TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)≥`
+     `Source: $1, «$2» by $3`
+      $allText
+  }}
+
+  {{- /* CASE a6: My citation of Wikipedia, but not followed by a quotation from the body, e.g.
+
+         ##### ≤aSource: Wikipedia, «Cotton Tree (Sierra Leone)»≥
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤aSource: Wikipedia, TMPLT_LDGUIL(.+)TMPLT_RDGUIL≥`
+     `Source: Wikipedia, «$1»`
+      $allText
+  }}
+
+  {{- /* The inline-level CASES */ -}}
+
+  {{- /* CASE l: term, word-as-word, logical-statement, synonym e.g.
+
+         ≤lDeep South≥ ---> <i class="term">Deep South</i>
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤l([^≥]+)≥`
+     `TMPLT_LLOGIC $1 TMPLT_RLOGIC`
+      $allText
+  }}
+
+  {{- /* CASE n: nicknames, e.g.
+
+         Mary Frances ≤nFrancky≥ Knapp
+         --->
+         Mary Frances <i class="nickname">Francky</i> Knapp
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤n([^≥]+)≥`
+     `TMPLT_LNIKNM $1 TMPLT_RNIKNM`
+      $allText
+  }}
+
+  {{- /* CASE s: terms that are so-called, e.g.
+
+         ≤sBad≥ ---> <i class="so-called">Bad</i>
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤s([^≥]+)≥`
+     `TMPLT_LSOCLD $1 TMPLT_RSOCLD`
+      $allText
+  }}
+
+  {{- /* CASE w: For the typically italicized title/name of a WORK, e.g. book title, newspaper title. So some are series (periodicals) and some aren't.
+
+         ≤wRubber Soul≥ ---> <cite class="lp-title">Rubber Soul</cite>
+
+RESUME HERE
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤s([^≥]+)≥`
+     `TMPLT_LSOCLD $1 TMPLT_RSOCLD`
+      $allText
+  }}
+
+  {{- /* This, uhh, kinda-tag is found below CASES a1 and a2 only: */ -}}
+  {{ $allText = 
+      replaceRE
+     `<p>◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
+     `<div class="fisheye-means-rightmost">Bookmark, $1 $2&nbsp;</div>`
+      $allText
+  }}
+{{- /* I used to put a <p></p> after the closing div tag, above */ -}}
+
+  {{ $allText = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>) (.+)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
+      $allText
+  }}
+
+  {{ $imageNortheastArrow := resources.Get "images/link-external-small-ltr-progressive.svg" }}
+  {{ $theImgElement := print "<img src=\"" $imageNortheastArrow.RelPermalink "\" width=\"12px\" height=\"12px\" vertical-align=\"bottom\" alt=\"(An external link.)\">" }}
+  {{ $allText = 
+      replaceRE 
+     `TMPLT_NORTHEAST_ARROW`
+      $theImgElement
+      $allText
+  }}
+
+  {{ $allText = 
+      replaceRE 
+     `<h4 id="([^"]+)">` 
      `<div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
 
 
@@ -117,38 +378,12 @@
       $allText 
   }}
 
-{{- /* 
-None of my 126 h4-level headlines have shown an inequality between these two:
-    {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
-    {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
-However, 17 of the 126 do show an inequality when using . instead of $scouredMatch
-
-If the ’ character occurs in the first half of a sufficiently long match, then 
-the counter overshoots by two and the match is split in the middle of a word.
-
-safeHTML seems unneeded
-*/ -}}
-
   {{ $regexpAnniv := `TMPLT_H4STRT.+TMPLT_H4ENDS` }}
   {{ $matchesAnniv := findRE $regexpAnniv $allText }}
   {{ range $matchesAnniv }}
-{{- /* 
-        replaceRE
-        `TMPLT_[A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]`
-        `~`
-*/ -}}
     {{ $preciselyMeasurableMatch := 
         .
     }}
-{{- /* 
-    {{ $unescapedMatch := safeHTML (htmlUnescape $roughlyMeasurableMatch) }}
-    {{ $preciselyMeasurableMatch := 
-        replaceRE
-        `[^_ a-zA-Z0-9]`
-        `^`
-        $unescapedMatch
-    }}
-*/ -}}
     {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
     {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
     {{ if eq $lengthOfCurrentTitle $lenOfCurrentTitle }}
@@ -168,9 +403,6 @@ safeHTML seems unneeded
             {{ $counterToMidwayPoint = add $counterToMidwayPoint 1 }}
             {{ $charsInThisTokenSoonToBeHidden := mul (strings.Count "TMPLT_" .) 11 }}
             {{ $midwayPoint = add $midwayPoint $charsInThisTokenSoonToBeHidden }}
-{{- /* 
-            {{ $counterToMidwayPoint = sub $counterToMidwayPoint $charsInThisTokenSoonToBeHidden }}
-*/ -}}
           {{ end }}
         {{ end }}
         {{ $allText = 
@@ -201,105 +433,32 @@ safeHTML seems unneeded
     {{ end }}
   {{ end }}
 
-{{- /*
-  {{ $allText = 
-      replaceRE
-     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
-     `, writing in $1 $2:<br>$3`
-      $allText 
-  }}
-*/ -}}
-
-  {{ $allText = 
-      replaceRE
-     `<h5 id="(.+)">
-(.*)
-</h5>`
-     `<h5 class="h5-from-4stars" id="$1">
-$2
-</h5>`
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `<p>◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
-     `<div class="fisheye-means-rightmost">Bookmark, $1 $2&nbsp;</div><p></p>`
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `<p>
-=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `<p>
-=&gt; (<a href="https://.+</a>) (.+)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `<p>
-=&gt; (<a href="https://.+</a>)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
-      $allText
-  }}
-
-  {{ $imageNortheastArrow := resources.Get "images/link-external-small-ltr-progressive.svg" }}
-  {{ $theImgElement := print "<img src=\"" $imageNortheastArrow.RelPermalink "\" width=\"12px\" height=\"12px\" vertical-align=\"bottom\" alt=\"(An external link.)\">" }}
-  {{ $allText = 
-      replaceRE 
-     `TMPLT_NORTHEAST_ARROW`
-      $theImgElement
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `<p>
-dek: &#34;(.+)&#34;</p>`
-     `<div class="dek-or-blockq">"$1" TMPLT_2HYFNS the subhead</div>`
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `&gt; &#34;(.+)&#34;( TMPLT_2HYFNS from)?`
-     `<div class="dek-or-blockq">"$1"$2</div>`
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE
-     `<p>[
-]?~ (.+)</p>`
-     `<div class="commentary">$1</div>`
-      $allText
-  }}
-
-{{- /*
-  {{ $allText = 
-      replaceRE 
-     `<pre class="example">`
-     `<pre class="org-example-kludge">` 
-      $allText
-  }}
-*/ -}}
-
-  {{ $allText = replaceRE `TMPLT_RPAREN` `)`  $allText }}
+  {{- /* The replacements below with a space next to the 
+         substitute are only for cases where a symbol like 
+         $1, $2 etc. must be followed by a space in the
+         definition of one of the replacements above.
+  */ -}}
+  {{ $allText = replaceRE `TMPLT_LPAREN ` `(`  $allText }}
   {{ $allText = replaceRE `TMPLT_LPAREN` `(`  $allText }}
+  {{ $allText = replaceRE ` TMPLT_RPAREN` `)`  $allText }}
+  {{ $allText = replaceRE `TMPLT_RPAREN` `)`  $allText }}
   {{ $allText = replaceRE `TMPLT_QSTNMK` `?`  $allText }}
-  {{ $allText = replaceRE `TMPLT_RSNGQA` `’`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LSNGQA` `‘`  $allText }}
-  {{ $allText = replaceRE `TMPLT_RDBLQA` `”`  $allText }}
   {{ $allText = replaceRE `TMPLT_LDBLQA` `“`  $allText }}
+  {{ $allText = replaceRE `TMPLT_RDBLQA` `”`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LSNGQA` `‘`  $allText }}
+  {{ $allText = replaceRE `TMPLT_RSNGQA` `’`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LDGUIL ` `«`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LDGUIL` `«`  $allText }}
+  {{ $allText = replaceRE ` TMPLT_RDGUIL` `»`  $allText }}
+  {{ $allText = replaceRE `TMPLT_RDGUIL` `»`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LSGUIL` `‹`  $allText }}
+  {{ $allText = replaceRE `TMPLT_RSGUIL` `›`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LSOCLD ` `<i class="so-called">`  $allText }}
+  {{ $allText = replaceRE ` TMPLT_RSOCLD` `</i>`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LNIKNM ` `<i class="nickname">`  $allText }}
+  {{ $allText = replaceRE ` TMPLT_RNIKNM` `</i>`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LLOGIC ` `<i class="term">`  $allText }}
+  {{ $allText = replaceRE ` TMPLT_RLOGIC` `</i>`  $allText }}
   {{ $allText = replaceRE `TMPLT_2HYFNS` `--` $allText }}
   {{ $allText | safeHTML }}
   <span class="design-hint">«dp</span>

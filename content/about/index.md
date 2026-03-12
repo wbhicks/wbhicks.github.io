@@ -58,29 +58,86 @@ layout: overriding-the-default-template
 
 (Note: "params:" is needed only for custom params. Also, I'm ignoring Hugo's rather crude cascade feature.)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipiscing velit, sed quia non numquam do eius modi tempora incididunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrumd exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum irure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerudum facilis est ert expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendaus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 ---
 
 aleorthonym: a portmanteau of alethonym ("true name") and orthonym ("normal/proper name"). I wanted a made-up word for this front matter property key, which holds (for now) proper names.
 
-### 3 hash
+```
+The delimiters, parameterized with the letter 'a'
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+≤a ... «...» ---> ≤a ... <q class="article-title">...</q>
 
-#### 4 hash
+≤aSource: _Some Title ---> the underscores should be replaced by <cite class="book-title">...</cite>
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+≤a encloses 6 patterns, which are parsed via regexps. 
 
-##### 5 hash
+The next line is like:
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+=> https://www.nytimes.com/2021/04/21/technology/welcome-to-the-yolo-economy.html NYT / by Kevin Roose
+
+there is an optional DEK after that!
+
+
+
+When processed, the outermost quotation marks are replaced by
+
+<q class="article-title">...</q>
+
+And the outmost underscores are replaced by
+
+<cite class="book-title">...</cite>
+
+=================
+
+≤ followed by one of these letters: a b k l n s w
+
+≤aREPORTER, writing in PERIODICAL (YEAR): "TITLE"≥
+
+^> "..." ---> ≤b...≥ ---> <blockquote>
+
+^dek: "..." ---> ≤k...≥
+
+≤lDeep South≥ ---> any one of these: <i class="term">Deep South</i> or "word-as-word", "logical-statement", "synonym" (depending on context)
+
+≤nFrancky≥ ---> <i class="nickname">Francky</i>
+
+≤sBad≥ ---> <i class="so-called">Bad</i>
+
+≤w is used for the [typically italicized] title/name of a WORK, e.g. book title, newspaper title. So some are series (periodicals) and some aren't.
+
+≤wMoby Dick≥, ≤wNew York Times≥, ≤wRubber Soul≥
+
+≤a is used for a [typically quotation-marked] article title/headline, song, etc.
+
+<cite>...</cite> ---> ≤a...≥ ---> <cite> once again (these are article and whitepaper titles)
+3 works:
+<cite class="book-title"> ---> ≤w...≥
+<cite class="film-title"> ---> ≤w...≥
+<cite class="artwork-title"> ---> ≤w...≥
+
+MacOS alt keys:
+
+1 ¡ ⁄ fraction slash
+2 ™ €
+3 £ ‹
+4 ¢ ›
+5 ∞ ﬁ
+6 § ﬂ
+7 ¶ ‡
+8 • °
+9 ª · middle dot
+0 º ‚ single low-9 quotation mark
+- – —
+= ≠ ±
+...
+t † ˇ caron 0x2C7 &#711; sˇ ˇs Sˇ ˇS
+...
+g © ˝
+...
+z Ω ¸ cedilla 0xB8 &cedil; ¸S S¸
+x ≈ ˛ ogonek 0x2DB &#731; A˛ a˛ ˛a ˛A
+...
+, ≤ ¯ macron [spacing] 0xAF &macr; o¯ ¯o O¯ ¯O
+. ≥ ˘ breve [spacing] 0x2D8 &#728; a˘ ˘a ˘A A˘
+```
 
