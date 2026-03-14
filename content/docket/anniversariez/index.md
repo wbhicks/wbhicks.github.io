@@ -256,7 +256,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ≤kJohnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats≥
 
-~ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of _NBC Out_, an LGBTQ news portal under the NBC News umbrella:
+~ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of ≤cNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
 
 ≤b‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.≥
 
@@ -302,7 +302,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ≤bProbably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal.≥
 
-#### 1945-03-07: The 9th Armored Division (US) captures the Ludendorff Bridge at Remagen, Germany. This was, incidentally, the basis of the 1969 film, _The Bridge at Remagen_.
+#### 1945-03-07: The 9th Armored Division (US) captures the Ludendorff Bridge at Remagen, Germany. This was, incidentally, the basis of the 1969 film, ≤wThe Bridge at Remagen≥.
 
 #### 1965-03-07: Bloody Sunday, Selma, Alabama
 
@@ -328,7 +328,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://en.wikipedia.org/wiki/Mespilus_germanica WP / Medlar
 
-~ The medlar figures in the prologue to one of Chaucer’s Canterbury Tales, _The Reeve’s Tale_. Here’s the relevant passage, excerpted from the prologue:
+~ The medlar figures in the prologue to one of Chaucer’s ≤wCanterbury Tales≥, ≤cThe Reeve’s Tale≥. Here’s the relevant passage, excerpted from the prologue:
 
 ```
 But ik am old, me list not pley for age;
@@ -403,7 +403,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [17]: From Skeat’s notes: «≤lhoppen≥, dance»
 
-~ Noticing Skeat’s comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer’s verb, _to write_, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker’s head. Where does this ambiguity come from? When _to write_ is used metaphorically, does it always invite this two-directional reading?
+~ Noticing Skeat’s comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer’s verb, ≤lto write≥, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker’s head. Where does this ambiguity come from? When ≤lto write≥ is used metaphorically, does it always invite this two-directional reading?
 
 ~ I don’t think these are questions about poetry, although its easy acceptance of inverted word order makes reversibility less conspicuous. To see this, and in an effort to answer the two questions above by applying Chaucer’s metaphor under more prosaic conditions, I will substitute a statement pair for the line in question. Then I’ll modify the pair over a few iterations, in the last of which I’ll impose the metaphor of writing. (The statements will always be in the active voice.)
 
@@ -412,7 +412,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ In this first iteration, I am using the terminology of cause-and-effect. In neither statement is the subject-object relation reversible, because each statement is (statistically) plausible but each reversal (≤lOld age results from white hair≥ or ≤lWhite hair causes old age≥) is false.
 
-~ Note that this is unrelated to the poetic convention of inverted word order. To see this, suppose that you came across the first statement as a line of light verse, or in a flowery comic monologue, with a comma after _age_. This would invite you to at least entertain the fanciful interpretation that _hair_ is the subject and _age_ the object, but it would still be the case that the truth value of the statement changes (from true, or at least statistically plausible, to false) when the subject and object are swapped.
+~ Note that this is unrelated to the poetic convention of inverted word order. To see this, suppose that you came across the first statement as a line of light verse, or in a flowery comic monologue, with a comma after ≤lage≥. This would invite you to at least entertain the fanciful interpretation that ≤lhair≥ is the subject and ≤lage≥ the object, but it would still be the case that the truth value of the statement changes (from true, or at least statistically plausible, to false) when the subject and object are swapped.
 
 ~ To see if reversibility emerges when the relation between the nouns is modeled differently, here is a second iteration, replacing the terminology of cause-and-effect with the terminology of representation:
 
@@ -435,12 +435,12 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ As was the case when the terminology of statistical implication was used, each statement keeps its truthfulness when subject and object are reversed. (In fact, each half of the pair happens to be the reverse of the other, because in this iteration they use the same verb and verb form.) But is each underlying assertion meaningful in its own right, or does the pair simply state one thing (and a mere correlation, at that) twice?
 
-~ To argue that each assertion is meaningful, I’ll make each occurrence of the metaphor a bit more vivid and particularized, without displacing the act of writing as its central idea. My goal in this final iteration is not to preserve subject-object reversibility -- as shown above, both Chaucer’s choice of _wryteth_ and its modern equivalent, _writes_, exhibit that quality -- but rather to highlight the unique meaning that each of the two directed relations contributes:
+~ To argue that each assertion is meaningful, I’ll make each occurrence of the metaphor a bit more vivid and particularized, without displacing the act of writing as its central idea. My goal in this final iteration is not to preserve subject-object reversibility -- as shown above, both Chaucer’s choice of ≤lwryteth≥ and its modern equivalent, ≤lwrites≥, exhibit that quality -- but rather to highlight the unique meaning that each of the two directed relations contributes:
 
 - White hair spells out a person’s old age.
 - A person’s old age is the author of their white hair.
 
-~ This shows that the metaphor of writing, at least in this line of Chaucer’s, does much more than to state an implication or correlation, and I think it also shows that it leverages subject-object reversibility to convey two (at least) independent insights. I don’t know if the choice of some form (or near synonym) of _to write_, when used as a metaphor, always accomplishes this superposition.
+~ This shows that the metaphor of writing, at least in this line of Chaucer’s, does much more than to state an implication or correlation, and I think it also shows that it leverages subject-object reversibility to convey two (at least) independent insights. I don’t know if the choice of some form (or near synonym) of ≤lto write≥, when used as a metaphor, always accomplishes this superposition.
 
 ~ See also
 
@@ -448,7 +448,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 => https://en.wikipedia.org/wiki/Anastrophe WP / Anastrophe
 
-~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤lopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of _dread_ when he says «We olde men, I drede, so fare we». But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
+~ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤lopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of ≤ldread≥ when he says «We olde men, I drede, so fare we». But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
 
 ```
 Til we be roten, can we nat be rype;
@@ -531,11 +531,13 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 6th
 
-#### Richard Aldous, writing in NYT (2021): Review by Richard Aldous of _The Age Of Decadence: A History of Britain, 1880 to 1914_ by Simon Heffer
+#### ≤aRichard Aldous, writing in NYT (2021) under the headline «Britain at the Turn of the 20th Century Was Dealing With a Lot, Badly»≥
 
 ◉ Bookmark, Apr 6th
 
 => https://www.nytimes.com/2021/04/06/books/review/the-age-of-decadence-simon-heffer.html NYT / by Richard Aldous
+
+~ A review by Richard Aldous of ≤wThe Age Of Decadence: A History of Britain, 1880 to 1914≥ by Simon Heffer
 
 #### ≤aDavid L. Kirp, writing in NYT (2021) under the headline «Why Stanford Should Clone Itself»≥
 
@@ -1040,7 +1042,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
 
-≤kA student objected to a class, ≤wThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?≥
+≤kA student objected to a class, ≤cThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?≥
 
 #### 1608-07-03: Founding of Quebec City
 
