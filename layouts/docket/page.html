@@ -266,6 +266,33 @@ SEE also CASE w!
 
   {{- /* The inline-level CASES */ -}}
 
+  {{- /* CASE c: title citations that require special handling, e.g.
+
+         ... in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12 ---> <cite class="special-citation">...</cite>
+         ... in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12  ---> <cite class="special-citation">...</cite> (WHAT ABOUT THE NESTED PHRASE?)
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤c([^≥]+)≥`
+     `TMPLT_LSPECC $1 TMPLT_RSPECC`
+      $allText
+  }}
+
+  {{- /* CASE d: definitions and abbreviations, e.g.
+
+         ≤dENIAC, Electronic Numerical Integrator And Computer≥ ---> <abbr>ENIAC</abbr> (Electronic Numerical Integrator And Computer)
+
+         (BUT WHEN I GET AROUND TO DEFS ... ?)
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤d([^ ,≥]+), ([^≥]+)≥`
+     `TMPLT_LABBRV $1 TMPLT_RABBRV TMPLT_LPAREN $2 TMPLT_RPAREN`
+      $allText
+  }}
+
   {{- /* CASE l: term, word-as-word, logical-statement, synonym, unassimilated foreign word. e.g.
 
          ≤lDeep South≥ ---> <i class="term">Deep South</i>
@@ -295,6 +322,8 @@ SEE also CASE w!
   {{- /* CASE s: terms that are so-called, e.g.
 
          ≤sBad≥ ---> <i class="so-called">Bad</i>
+         BUT I used quotation marks for this:
+         ... thinks our system is «rotten». Trump thinks Putin is a «genius» ...
 
   */ -}}
   {{ $allText = 
@@ -308,6 +337,10 @@ SEE also CASE w!
 
          ≤wRubber Soul≥ ---> <cite class="tbd-title">Rubber Soul</cite>
          TODO: tbd-title ---> book-title, film-title, artwork-title etc.
+         ... episode of the CNN [series] ≤wNomad≥. ...
+
+         ... a class, ≤wThe Problem of Whiteness≥, and ...
+         "Course names are capitalized but not italicized or in quotes." -- https://www.swarthmore.edu/communications-office/editorial-style-guide. But NYT uses quotation marks apparently.
 
   */ -}}
   {{ $allText = 
@@ -460,6 +493,10 @@ SEE also CASE w!
   {{ $allText = replaceRE ` TMPLT_RLOGIC` `</i>`  $allText }}
   {{ $allText = replaceRE `TMPLT_LTITLE ` `<cite class="tbd-title">`  $allText }}
   {{ $allText = replaceRE ` TMPLT_RTITLE` `</cite>`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LSPECC ` `<cite class="special-citation">`  $allText }}
+  {{ $allText = replaceRE ` TMPLT_RSPECC` `</cite>`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LABBRV ` `<abbr>`  $allText }}
+  {{ $allText = replaceRE ` TMPLT_RABBRV` `</abbr>`  $allText }}
   {{ $allText = replaceRE `TMPLT_2HYFNS` `--` $allText }}
   {{ $allText | safeHTML }}
   <span class="design-hint">«dp</span>

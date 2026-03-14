@@ -206,7 +206,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ The recommendation: Kill some time by hanging out with your friends and shooting the breeze.
 
-#### 1946-02-15: University of Pennsylvania hosts the official dedication of <abbr>ENIAC</abbr> (Electronic Numerical Integrator And Computer). See also:
+#### 1946-02-15: University of Pennsylvania hosts the official dedication of ≤dENIAC, Electronic Numerical Integrator And Computer≥. See also:
 
 => https://en.wikipedia.org/wiki/Manchester_Baby WP / Manchester Baby
 
@@ -375,15 +375,15 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ~ [3]: done, over with
 
-~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: <q>≤lgras-time≥, the time when a horse feeds himself in the fields. <q>My fodder is now forage</q>, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.</q>
+~ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: «≤lgras-time≥, the time when a horse feeds himself in the fields. ‹My fodder is now forage›, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.»
 
 ~ [5]: head, top of one’s head
 
-~ [6]: From Skeat’s notes: <q>I take this to mean -- <q>my old years write (mark upon me) this white head,</q> i. e. turn me grey.</q>
+~ [6]: From Skeat’s notes: «I take this to mean -- ‹my old years write (mark upon me) this white head,› i. e. turn me grey.»
 
 ~ [7]: old, moldy
 
-~ [8]: From Skeat’s notes: «‹My heart is as old (lit. mouldy) as my hairs are.› Mouled is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from mould, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb moulen, to grow mouldy, occurs in B. 32.»
+~ [8]: From Skeat’s notes: «‹My heart is as old (lit. mouldy) as my hairs are.› ≤lMouled≥ is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from ≤lmould≥, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb ≤lmoulen≥, to grow mouldy, occurs in B. 32.»
 
 ~ [9]: unless
 
@@ -579,7 +579,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ≤b... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.≥
 
-~ cf. Ezra Klein’s use of ≤lcalcification≥ in <cite>Three Theories That Explain This Strange Moment</cite>, 2022-11-12
+~ cf. Ezra Klein’s use of ≤lcalcification≥ in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12
 
 #### ≤aErrol Louis, writing in NY Magazine (2023) under the headline «Eric Adams Is Finally Facing Reality on Work-From-Home Rules»≥
 
@@ -998,7 +998,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.cnn.com/style/article/cita-sadeli-miss-chelove-street-art-nomad/index.html CNN / by Jacopo Prisco
 
-≤bCita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] <q>Nomad.</q> ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022≥
+≤bCita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] ≤wNomad≥. ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022≥
 
 ## VI. June
 
@@ -1040,7 +1040,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
 
-≤kA student objected to a class, <q>The Problem of Whiteness,</q> and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?≥
+≤kA student objected to a class, ≤wThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?≥
 
 #### 1608-07-03: Founding of Quebec City
 
@@ -1232,7 +1232,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://twitter.com/GovChristie/status/1701683733953138918
 
-≤bMeet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is <q>rotten.</q> Trump thinks Putin is a <q>genius</q> -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc≥
+≤bMeet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is «rotten». Trump thinks Putin is a «genius» -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc≥
 
 ##### Posted by Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
@@ -1295,7 +1295,7 @@ Has a very large faemmle. -- from
 
 ~ Writing in The Times, Ezra Klein discusses «... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.»
 
-~ cf. George F. Will’s coinage ≤lboiling but frozen≥ in <cite>How <q>I despise, therefore I am</q> locks in the political status quo</cite>, 2023-04-12
+~ cf. George F. Will’s coinage ≤lboiling but frozen≥ in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12
 
 ### November 22nd
 

@@ -89,17 +89,23 @@ And the outmost underscores are replaced by
 
 =================
 
-≤ followed by one of these letters: a b k l n q s w
+≤ followed by one of these letters: a b c d k l n q s w
 
 ≤aREPORTER, writing in PERIODICAL (YEAR): "TITLE"≥
 
 ^> "..." ---> ≤b...≥ ---> <blockquote>
+
+≤c is for title citations that require special handling, typically this means any citation of a title where ≤w shouldn't be used because it's not worthy of italics. E.g., titles of articles. Citing an article is rare, because that's usually pre-empted by being wrapped in a ≤a ... ≥
+
+≤d is for abbreviations, which get turned into something like "<abbr>GE</abbr> (General Electric)", and definitions (none yet)
 
 ^dek: "..." ---> ≤k...≥
 
 ≤lDeep South≥ ---> any one of these: <i class="term">Deep South</i> or "word-as-word", "logical-statement", "synonym" (depending on context)
 
 ≤nFrancky≥ ---> <i class="nickname">Francky</i>
+
+NEW: I'm replacing <q>...</q> with «...» (or ‹...› nested) -- but carefully!
 
 ≤qHello, ‘Cap’n’!≥ *or* «Hello, ‹Cap’n›!» ---> ❝Hello, ❛Cap’n❜!❞ 
 
