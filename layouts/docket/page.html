@@ -154,20 +154,7 @@ $2
       $allText
   }}
 
-  {{ $allText = 
-      replaceRE
-     `<p>
-dek: &#34;(.+)&#34;</p>`
-     `<div class="dek-or-blockq">"$1" TMPLT_2HYFNS the subhead</div>`
-      $allText
-  }}
 
-  {{ $allText = 
-      replaceRE
-     `&gt; &#34;(.+)&#34;( TMPLT_2HYFNS from)?`
-     `<div class="dek-or-blockq">"$1"$2</div>`
-      $allText
-  }}
 
   {{ $allText = 
       replaceRE
@@ -261,6 +248,34 @@ SEE also CASE w!
       replaceRE 
      `≤aSource: Wikipedia, TMPLT_LDGUIL(.+)TMPLT_RDGUIL≥`
      `Source: Wikipedia, «$1»`
+      $allText
+  }}
+
+  {{- /* CASE b: blockquotes, e.g.
+
+         ^> "..." ---> ≤b...≥ ---> <blockquote>
+
+         ≤bBrown and the others called the police, as the Japanese shells continued to fall around them.≥
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤b([^≥]+)≥`
+     `</blockquote>$1</blockquote>`
+      $allText
+  }}
+
+  {{- /* CASE k: deks, e.g.
+
+         ^dek: "..." ---> ≤k...≥
+
+         ≤bThe subhead, or dek, of the magazine article goes here≥
+
+  */ -}}
+  {{ $allText = 
+      replaceRE 
+     `≤k([^≥]+)≥`
+     `<div class="dek">TMPLT_LDGUIL $1 TMPLT_LDGUIL TMPLT_2HYFNS the subhead</div>`
       $allText
   }}
 

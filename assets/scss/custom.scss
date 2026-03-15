@@ -218,12 +218,31 @@ TODO
   margin-right: 1rem;
 }
 
-p, .url-line, .dek-or-blockq, .commentary, .org-example-kludge {
+p, blockquote, .url-line, .dek, .commentary, .org-example-kludge {
   margin-bottom: 2rem;
 }
 
 .url-line {
   margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+blockquote {
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+blockquote::before {
+  content: YYY_
+}
+
+blockquote::after {
+  content: _ZZZ
+}
+
+.dek {
+  margin-left: 3rem;
   margin-right: 1rem;
 }
 
