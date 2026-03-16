@@ -1,0 +1,44 @@
+{{ $classifier := .letter }}
+{{ $the_content := .leaf_text }}
+
+{{ $result := "THIS SHOULD BE CLOBBERED" }}
+{{ if (eq $classifier "a") }}
+  {{ if (and 
+      (strings.Contains $the_content "writing in") 
+      (strings.Contains $the_content "under the headline")
+      )
+  }}
+    {{ $content_replacement =
+        replaceRE 
+        `(.+), writing in (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN under the headline TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
+        `$1, writing in $2 TMPLT_LPAREN $3 TMPLT_RPAREN under the headline TMPLT_LDGUIL $4 TMPLT_RDGUIL`
+        $the_content
+    }}
+    {{ $result = $content_replacement }}
+  {{ else if (eq "Published by" (substr $the_content 0 12)) }}
+    {{ $content_replacement =
+        replaceRE 
+        `Published by (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN: TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
+        `Published by $1 TMPLT_LPAREN $2 TMPLT_RPAREN: TMPLT_LDGUIL $3 TMPLT_RDGUIL`
+        $the_content
+    }}
+    {{ $result = $content_replacement }}
+  {{ end }}
+{{ else if (eq $classifier "b") }}
+  {{ $result = (add 
+      `<blockquote>` 
+      $the_content 
+      `</blockquote>`
+      ) 
+  }}
+{{ else if (eq $classifier "k") }}
+  {{ $result = (add 
+      `<div class="dek">TMPLT_LDGUIL ` 
+      $the_content 
+      ` TMPLT_RDGUIL TMPLT_2HYFNS the subheadline</div>`
+      ) 
+  }}
+{{ else }}
+  {{ $result = (add "WAS Z" $classifier "Z") }}
+{{ end }}
+{{ return $result }}

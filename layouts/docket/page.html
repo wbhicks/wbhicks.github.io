@@ -258,13 +258,6 @@ SEE also CASE w!
          ≤bBrown and the others called the police, as the Japanese shells continued to fall around them.≥
 
   */ -}}
-  {{ $allText = 
-      replaceRE 
-     `≤b([^≥]+)≥`
-     `</blockquote>$1</blockquote>`
-      $allText
-  }}
-
   {{- /* CASE k: deks, e.g.
 
          ^dek: "..." ---> ≤k...≥
@@ -272,12 +265,21 @@ SEE also CASE w!
          ≤bThe subhead, or dek, of the magazine article goes here≥
 
   */ -}}
-  {{ $allText = 
-      replaceRE 
-     `≤k([^≥]+)≥`
-     `<div class="dek">TMPLT_LDGUIL $1 TMPLT_LDGUIL TMPLT_2HYFNS the subhead</div>`
-      $allText
-  }}
+  {{ $regexpMatchingLeaves := `≤[^≤≥]+≥` }}
+  {{ $allLeaves := findRE $regexpMatchingLeaves $allText }}
+  {{ range $allLeaves }}
+    {{ $currentLeaf := . }}
+    {{ $foundLetter := (substr . 1 1) }}
+    {{ $leafText := (substr . 2 -1) }}
+    {{ $allText = 
+        replaceRE 
+        .
+        (partial "lettered-span.html" 
+          (dict "letter" $foundLetter "leaf_text" $leafText)
+        )
+        $allText
+    }}
+  {{ end }}
 
   {{- /* The inline-level CASES */ -}}
 
