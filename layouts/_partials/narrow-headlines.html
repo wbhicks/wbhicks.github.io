@@ -1,0 +1,63 @@
+{{ $theContent := .the_content }}
+
+  {{ $regexpAnniv := `TMPLT_H4STRT.+TMPLT_H4ENDS` }}
+  {{ $matchesAnniv := findRE $regexpAnniv $theContent }}
+  {{ range $matchesAnniv }}
+    {{ $preciselyMeasurableMatch := 
+        .
+    }}
+    {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
+    {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
+    {{ if eq $lengthOfCurrentTitle $lenOfCurrentTitle }}
+      {{ $numOfLength12SubstitutesInThisHeadline := 0 }}
+      {{ if gt $lengthOfCurrentTitle 80 }}
+        {{ $sliced := split $preciselyMeasurableMatch " " }}
+        {{ range $sliced }}
+          {{ $numOfLength12SubstitutesInThisHeadline = add $numOfLength12SubstitutesInThisHeadline (strings.Count "TMPLT_" .) }}
+        {{ end }}
+        {{ $numOfAsciiCharsThatWillVanish := mul $numOfLength12SubstitutesInThisHeadline 11 }}
+        {{ $lengthOfCurrentTitle = sub $lengthOfCurrentTitle $numOfAsciiCharsThatWillVanish }}
+        {{ $midwayPoint := div $lengthOfCurrentTitle 2 }}
+        {{ $counterToMidwayPoint := 0 }}
+        {{ range $sliced }}
+          {{ if lt $counterToMidwayPoint $midwayPoint }}
+            {{ $counterToMidwayPoint = add $counterToMidwayPoint (len .) }}
+            {{ $counterToMidwayPoint = add $counterToMidwayPoint 1 }}
+            {{ $charsInThisTokenSoonToBeHidden := mul (strings.Count "TMPLT_" .) 11 }}
+            {{ $midwayPoint = add $midwayPoint $charsInThisTokenSoonToBeHidden }}
+          {{ end }}
+        {{ end }}
+        {{ $theContent = 
+            replaceRE
+            . 
+            (add 
+                (substr . 12 (sub $counterToMidwayPoint 12))
+                `<br/>`
+                (substr . $counterToMidwayPoint -12)
+            )
+            $theContent
+        }}
+      {{ else }}
+        {{ $theContent = 
+            replaceRE
+            . 
+            (substr . 12 -12)
+            $theContent
+        }}
+      {{ end }}
+    {{ else }}
+      {{ $theContent = 
+          replaceRE
+          .
+          (add `ERROR! ` (cast.ToString $lengthOfCurrentTitle) ` does not equal ` (cast.ToString $lenOfCurrentTitle) ` !`)
+          $theContent
+      }}
+    {{ end }}
+  {{ end }}
+
+{{ if (eq .debug_or_qa "debug") }}
+
+{{ else if (eq .debug_or_qa "qa") }}
+
+{{ end }}
+{{ return $theContent }}

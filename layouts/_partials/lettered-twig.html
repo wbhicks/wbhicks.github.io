@@ -8,10 +8,10 @@
 {{ $allNestedClassifiers := findRE $regexpToFindNestedClassifiers $the_content }}
 {{ range $allNestedClassifiers }}
   {{ $foundLetter := (substr . 1 1) }}
-  {{ $counters.SetInMap "theKey" $foundLetter "ok" }}
+  {{ $counters.SetInMap "theOnlyKey" $foundLetter "unused value" }}
 {{ end }}
-{{ $workableMap := $counters.Get "theKey" }}
+{{ $workableMap := $counters.Get "theOnlyKey" }}
 {{ range $k, $v := $workableMap }}
-  {{ $countersAsString = (add $countersAsString $k `=` $v `, `) }}
+  {{ $countersAsString = (add $countersAsString $k ` `) }}
 {{ end }}
 {{ return $countersAsString }}

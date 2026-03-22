@@ -1,0 +1,83 @@
+{{ $theContent := .the_content }}
+
+  {{ $theContent = 
+      replaceRE 
+     `<h2 id="([^"]+)">` 
+     `<div class="asterism">-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
+|    *         *    |    *         *    |    *         *    |
+*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+
+
+</div><h2 class="h2-from-1star" id="$1">` 
+      $theContent 
+  }}
+  {{ $theContent = 
+      replaceRE 
+     `</h2>` 
+     `</h2><div class="asterism">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+|    *         *    |    *         *    |    *         *    |
+-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
+
+
+</div>` 
+      $theContent 
+  }}
+  {{ $theContent = 
+      replaceRE 
+     `<h3 id="([^"]+)">` 
+     `<div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
+
+
+</div><h3 class="h3-from-2stars" id="$1">` 
+      $theContent 
+  }}
+  {{ $theContent = 
+      replaceRE 
+     `</h3>` 
+     `</h3><div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
+
+
+</div>` 
+      $theContent 
+  }}
+  {{ $theContent = 
+      replaceRE 
+     `<h4 id="([^"]+)">` 
+     `<div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
+
+
+</div><h4 class="h4-from-3stars" id="$1">TMPLT_H4STRT` 
+      $theContent 
+  }}
+  {{ $theContent = 
+      replaceRE 
+     `</h4>`
+     `TMPLT_H4ENDS</h4><div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
+
+
+
+</div>` 
+      $theContent 
+  }}
+  {{ $theContent = 
+      replaceRE
+     `<h5 id="([^"]+)">
+(.*)
+</h5>`
+     `<h5 class="h5-from-4stars" id="$1">
+$2
+</h5>`
+      $theContent
+  }}
+
+
+
+
+
+
+{{ if (eq .debug_or_qa "debug") }}
+
+{{ else if (eq .debug_or_qa "qa") }}
+
+{{ end }}
+{{ return $theContent }}

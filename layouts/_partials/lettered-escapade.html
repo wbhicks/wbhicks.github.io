@@ -1,0 +1,69 @@
+{{ $theContent := .the_content }}
+
+{{ if (eq .sanitize_or_restore "sanitize") }}
+
+  {{- /* `TMPLT_[A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]` */ -}}
+  {{ $theContent = replaceRE `\)` `TMPLT_RPAREN` $theContent }}
+  {{ $theContent = replaceRE `\(` `TMPLT_LPAREN` $theContent }}
+  {{ $theContent = replaceRE `\?` `TMPLT_QSTNMK` $theContent }}
+  {{- /* The following is also the apostrophe in most publications: */ -}}
+  {{ $theContent = replaceRE `’`  `TMPLT_RSNGQA` $theContent }}
+  {{ $theContent = replaceRE `‘`  `TMPLT_LSNGQA` $theContent }}
+  {{ $theContent = replaceRE `”`  `TMPLT_RDBLQA` $theContent }}
+  {{ $theContent = replaceRE `“`  `TMPLT_LDBLQA` $theContent }}
+  {{ $theContent = replaceRE `«`  `TMPLT_LDGUIL` $theContent }}
+  {{ $theContent = replaceRE `»`  `TMPLT_RDGUIL` $theContent }}
+  {{ $theContent = replaceRE `‹`  `TMPLT_LSGUIL` $theContent }}
+  {{ $theContent = replaceRE `›`  `TMPLT_RSGUIL` $theContent }}
+  {{ $theContent = replaceRE `--` `TMPLT_2HYFNS` $theContent }}
+  {{ $theContent = replaceRE `–`  `TMPLT_2HYFNS` $theContent }}
+
+{{- /* Why can't these be handled by :before and :after in .scss? */ -}}
+{{- /* 
+  {{ $allText = replaceRE `<cite>`  `&#8990;<cite>`  $allText }}
+  {{ $allText = replaceRE `</cite>` `</cite>&#8991;` $allText }}
+end of comment was here
+  {{ $allText = replaceRE `<abbr>`  `&#9659;<abbr>`  $allText }}
+  {{ $allText = replaceRE `</abbr>` `</abbr>&#9669;` $allText }}
+  {{ $allText = replaceRE `<q>`     `&#9440;<q>`  $allText }}
+  {{ $allText = replaceRE `</q>`    `</q>&#9414;` $allText }}
+*/ -}}
+
+{{ else if (eq .sanitize_or_restore "restore") }}
+
+  {{- /* The replacements below with a space next to the 
+         substitute are only for cases where a symbol like 
+         $1, $2 etc. must be followed by a space in the
+         definition of one of the replacements above.
+  */ -}}
+  {{ $theContent = replaceRE `TMPLT_LPAREN ` `(`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LPAREN` `(`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RPAREN` `)`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_QSTNMK` `?`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSNGQA` `’`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDGUIL ` `«`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDGUIL` `«`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RDGUIL` `»`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RDGUIL` `»`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSGUIL` `‹`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSGUIL` `›`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSOCLD ` `<i class="so-called">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSOCLD` `</i>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LNIKNM ` `<i class="nickname">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RNIKNM` `</i>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LLOGIC ` `<i class="term">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RLOGIC` `</i>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LTITLE ` `<cite class="book-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RTITLE` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSPECC ` `<cite class="special-citation">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSPECC` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LABBRV ` `<abbr>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RABBRV` `</abbr>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_2HYFNS` `--` $theContent }}
+
+{{ end }}
+{{ return $theContent }}

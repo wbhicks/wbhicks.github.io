@@ -1,0 +1,30 @@
+{{ $theContent := .the_content }}
+
+  {{ $theContent = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
+      $theContent
+  }}
+  {{ $theContent = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>) (.+)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
+      $theContent
+  }}
+  {{ $theContent = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
+      $theContent
+  }}
+  {{ $imageNortheastArrow := resources.Get "images/link-external-small-ltr-progressive.svg" }}
+  {{ $theImgElement := print "<img src=\"" $imageNortheastArrow.RelPermalink "\" width=\"12px\" height=\"12px\" vertical-align=\"bottom\" alt=\"(An external link.)\">" }}
+  {{ $theContent = 
+      replaceRE 
+     `TMPLT_NORTHEAST_ARROW`
+      $theImgElement
+      $theContent
+  }}
+
+{{ return $theContent }}

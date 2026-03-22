@@ -1,38 +1,10 @@
 {{ define "main" }}
 
   <span class="design-hint">dp»</span>
-  {{- /*
-    {{ .TableOfContents }}
-  */ -}}
 
   {{ $allText := .Content }}
-  {{ $allText = replaceRE `\)` `TMPLT_RPAREN` $allText }}
-  {{ $allText = replaceRE `\(` `TMPLT_LPAREN` $allText }}
-  {{ $allText = replaceRE `\?` `TMPLT_QSTNMK` $allText }}
-  {{- /* The following is also the apostrophe in most publications: */ -}}
-  {{ $allText = replaceRE `’`  `TMPLT_RSNGQA` $allText }}
-  {{ $allText = replaceRE `‘`  `TMPLT_LSNGQA` $allText }}
-  {{ $allText = replaceRE `”`  `TMPLT_RDBLQA` $allText }}
-  {{ $allText = replaceRE `“`  `TMPLT_LDBLQA` $allText }}
-  {{ $allText = replaceRE `«`  `TMPLT_LDGUIL` $allText }}
-  {{ $allText = replaceRE `»`  `TMPLT_RDGUIL` $allText }}
-  {{ $allText = replaceRE `‹`  `TMPLT_LSGUIL` $allText }}
-  {{ $allText = replaceRE `›`  `TMPLT_RSGUIL` $allText }}
-  {{ $allText = replaceRE `--` `TMPLT_2HYFNS` $allText }}
-  {{ $allText = replaceRE `–`  `TMPLT_2HYFNS` $allText }}
-
-{{- /* Why can't these be handled by :before and :after in .scss? */ -}}
-
-{{- /* 
-  {{ $allText = replaceRE `<cite>`  `&#8990;<cite>`  $allText }}
-  {{ $allText = replaceRE `</cite>` `</cite>&#8991;` $allText }}
-end of comment was here
-  {{ $allText = replaceRE `<abbr>`  `&#9659;<abbr>`  $allText }}
-  {{ $allText = replaceRE `</abbr>` `</abbr>&#9669;` $allText }}
-  {{ $allText = replaceRE `<q>`     `&#9440;<q>`  $allText }}
-  {{ $allText = replaceRE `</q>`    `</q>&#9414;` $allText }}
-
-*/ -}}
+  {{ $allText = (partial "lettered-escapade.html" 
+      (dict "the_content" $allText "sanitize_or_restore" "sanitize")) }}
 
 {{- /*
   {{ $regexp99 := `(=&gt; <a h)ref="https://en.wikipedia.org/wiki/` }}
@@ -58,53 +30,6 @@ end of comment was here
   <p id="$1" align="center">$2</p>
 */ -}}
 
-{{- /* TEMPORARILY DISABLED
-  {{ $allText = 
-      replaceRE 
-     `<h2 id="([^"]+)">` 
-     `<div class="asterism">-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
-|    *         *    |    *         *    |    *         *    |
-*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
-
-
-</div><h2 class="h2-from-1star" id="$1">` 
-      $allText 
-  }}
-
-  {{ $allText = 
-      replaceRE 
-     `</h2>` 
-     `</h2><div class="asterism">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
-|    *         *    |    *         *    |    *         *    |
--  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
-
-
-</div>` 
-      $allText 
-  }}
-
-  {{ $allText = 
-      replaceRE 
-     `<h3 id="([^"]+)">` 
-     `<div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
-
-
-</div><h3 class="h3-from-2stars" id="$1">` 
-      $allText 
-  }}
-
-  {{ $allText = 
-      replaceRE 
-     `</h3>` 
-     `</h3><div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
-
-
-</div>` 
-      $allText 
-  }}
-
-end of TEMPORARILY DISABLED */ -}}
-
 {{- /* 
 None of my 126 h4-level headlines have shown an inequality between these two:
     {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
@@ -117,11 +42,6 @@ the counter overshoots by two and the match is split in the middle of a word.
 safeHTML seems unneeded
 */ -}}
 
-{{- /* 
-        replaceRE
-        `TMPLT_[A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]`
-        `~`
-*/ -}}
 {{- /* 
     {{ $unescapedMatch := safeHTML (htmlUnescape $roughlyMeasurableMatch) }}
     {{ $preciselyMeasurableMatch := 
@@ -145,19 +65,6 @@ safeHTML seems unneeded
 
   {{ $allText = 
       replaceRE
-     `<h5 id="([^"]+)">
-(.*)
-</h5>`
-     `<h5 class="h5-from-4stars" id="$1">
-$2
-</h5>`
-      $allText
-  }}
-
-
-
-  {{ $allText = 
-      replaceRE
      `<p>[
 ]?~ (.+)</p>`
      `<div class="commentary">$1</div>`
@@ -165,15 +72,6 @@ $2
   }}
 
 end of TEMPORARILY DISABLED */ -}}
-
-{{- /*
-  {{ $allText = 
-      replaceRE 
-     `<pre class="example">`
-     `<pre class="org-example-kludge">` 
-      $allText
-  }}
-*/ -}}
 
 {{- /* Generate tags for each block-level delimitation */ -}}
   {{ $regexpMatchingTwigs := `≤.+≥` }}
@@ -185,7 +83,6 @@ end of TEMPORARILY DISABLED */ -}}
         replaceRE 
         .
         (add
-            `Z`
             .
             `<br/><p>`
             (cast.ToString (partial "lettered-twig.html" 
@@ -225,146 +122,19 @@ end of TEMPORARILY DISABLED */ -}}
   }}
 {{- /* I used to put a <p></p> after the closing div tag, above */ -}}
 
-  {{ $allText = 
-      replaceRE
-     `<p>=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
-      $allText
-  }}
+  {{ $allText = (partial "url-lines.html" 
+      (dict "the_content" $allText)) }}
 
-  {{ $allText = 
-      replaceRE
-     `<p>=&gt; (<a href="https://.+</a>) (.+)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
-      $allText
-  }}
+  {{ $allText = (partial "asterize-headlines.html" 
+      (dict "the_content" $allText "debug_or_qa" "qa")) }}
 
-  {{ $allText = 
-      replaceRE
-     `<p>=&gt; (<a href="https://.+</a>)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
-      $allText
-  }}
+  {{ $allText = (partial "narrow-headlines.html" 
+      (dict "the_content" $allText "debug_or_qa" "qa")) }}
 
-  {{ $imageNortheastArrow := resources.Get "images/link-external-small-ltr-progressive.svg" }}
-  {{ $theImgElement := print "<img src=\"" $imageNortheastArrow.RelPermalink "\" width=\"12px\" height=\"12px\" vertical-align=\"bottom\" alt=\"(An external link.)\">" }}
-  {{ $allText = 
-      replaceRE 
-     `TMPLT_NORTHEAST_ARROW`
-      $theImgElement
-      $allText
-  }}
-
-  {{ $allText = 
-      replaceRE 
-     `<h4 id="([^"]+)">` 
-     `<div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
-
-
-</div><h4 class="h4-from-3stars" id="$1">TMPLT_H4STRT` 
-      $allText 
-  }}
-
-  {{ $allText = 
-      replaceRE 
-     `</h4>`
-     `TMPLT_H4ENDS</h4><div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
-
-
-
-</div>` 
-      $allText 
-  }}
-
-  {{ $regexpAnniv := `TMPLT_H4STRT.+TMPLT_H4ENDS` }}
-  {{ $matchesAnniv := findRE $regexpAnniv $allText }}
-  {{ range $matchesAnniv }}
-    {{ $preciselyMeasurableMatch := 
-        .
-    }}
-    {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
-    {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
-    {{ if eq $lengthOfCurrentTitle $lenOfCurrentTitle }}
-      {{ $numOfLength12SubstitutesInThisHeadline := 0 }}
-      {{ if gt $lengthOfCurrentTitle 80 }}
-        {{ $sliced := split $preciselyMeasurableMatch " " }}
-        {{ range $sliced }}
-          {{ $numOfLength12SubstitutesInThisHeadline = add $numOfLength12SubstitutesInThisHeadline (strings.Count "TMPLT_" .) }}
-        {{ end }}
-        {{ $numOfAsciiCharsThatWillVanish := mul $numOfLength12SubstitutesInThisHeadline 11 }}
-        {{ $lengthOfCurrentTitle = sub $lengthOfCurrentTitle $numOfAsciiCharsThatWillVanish }}
-        {{ $midwayPoint := div $lengthOfCurrentTitle 2 }}
-        {{ $counterToMidwayPoint := 0 }}
-        {{ range $sliced }}
-          {{ if lt $counterToMidwayPoint $midwayPoint }}
-            {{ $counterToMidwayPoint = add $counterToMidwayPoint (len .) }}
-            {{ $counterToMidwayPoint = add $counterToMidwayPoint 1 }}
-            {{ $charsInThisTokenSoonToBeHidden := mul (strings.Count "TMPLT_" .) 11 }}
-            {{ $midwayPoint = add $midwayPoint $charsInThisTokenSoonToBeHidden }}
-          {{ end }}
-        {{ end }}
-        {{ $allText = 
-            replaceRE
-            . 
-            (add 
-                (substr . 12 (sub $counterToMidwayPoint 12))
-                `<br/>`
-                (substr . $counterToMidwayPoint -12)
-            )
-            $allText
-        }}
-      {{ else }}
-        {{ $allText = 
-            replaceRE
-            . 
-            (substr . 12 -12)
-            $allText
-        }}
-      {{ end }}
-    {{ else }}
-      {{ $allText = 
-          replaceRE
-          .
-          (add `ERROR! ` (cast.ToString $lengthOfCurrentTitle) ` does not equal ` (cast.ToString $lenOfCurrentTitle) ` !`)
-          $allText
-      }}
-    {{ end }}
-  {{ end }}
-
-  {{- /* The replacements below with a space next to the 
-         substitute are only for cases where a symbol like 
-         $1, $2 etc. must be followed by a space in the
-         definition of one of the replacements above.
-  */ -}}
-  {{ $allText = replaceRE `TMPLT_LPAREN ` `(`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LPAREN` `(`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RPAREN` `)`  $allText }}
-  {{ $allText = replaceRE `TMPLT_RPAREN` `)`  $allText }}
-  {{ $allText = replaceRE `TMPLT_QSTNMK` `?`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LDBLQA` `“`  $allText }}
-  {{ $allText = replaceRE `TMPLT_RDBLQA` `”`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LSNGQA` `‘`  $allText }}
-  {{ $allText = replaceRE `TMPLT_RSNGQA` `’`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LDGUIL ` `«`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LDGUIL` `«`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RDGUIL` `»`  $allText }}
-  {{ $allText = replaceRE `TMPLT_RDGUIL` `»`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LSGUIL` `‹`  $allText }}
-  {{ $allText = replaceRE `TMPLT_RSGUIL` `›`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LSOCLD ` `<i class="so-called">`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RSOCLD` `</i>`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LNIKNM ` `<i class="nickname">`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RNIKNM` `</i>`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LLOGIC ` `<i class="term">`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RLOGIC` `</i>`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LTITLE ` `<cite class="book-title">`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RTITLE` `</cite>`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LSPECC ` `<cite class="special-citation">`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RSPECC` `</cite>`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LABBRV ` `<abbr>`  $allText }}
-  {{ $allText = replaceRE ` TMPLT_RABBRV` `</abbr>`  $allText }}
-  {{ $allText = replaceRE `TMPLT_2HYFNS` `--` $allText }}
+  {{ $allText = (partial "lettered-escapade.html" 
+      (dict "the_content" $allText "sanitize_or_restore" "restore")) }}
   {{ $allText | safeHTML }}
+
   <span class="design-hint">«dp</span>
 
 {{ end }}
