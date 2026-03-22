@@ -1,0 +1,17 @@
+{{ $enclosingClassifier := .letter }}
+{{ $the_content := .twig_content }}
+
+{{ $counters := newScratch }}
+{{ $countersAsString := "Tags: " }}
+
+{{ $regexpToFindNestedClassifiers := `≤.` }}
+{{ $allNestedClassifiers := findRE $regexpToFindNestedClassifiers $the_content }}
+{{ range $allNestedClassifiers }}
+  {{ $foundLetter := (substr . 1 1) }}
+  {{ $counters.SetInMap "theKey" $foundLetter "ok" }}
+{{ end }}
+{{ $workableMap := $counters.Get "theKey" }}
+{{ range $k, $v := $workableMap }}
+  {{ $countersAsString = (add $countersAsString $k `=` $v `, `) }}
+{{ end }}
+{{ return $countersAsString }}

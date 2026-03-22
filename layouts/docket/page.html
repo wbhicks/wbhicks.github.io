@@ -175,26 +175,46 @@ end of TEMPORARILY DISABLED */ -}}
   }}
 */ -}}
 
-  {{- /* The block-level CASES have all been moved to the following file ... */ -}}
-
-  {{ $regexpMatchingLeaves := `≤[^≤≥]+≥` }}
-  {{ $allLeaves := findRE $regexpMatchingLeaves $allText }}
-  {{ range $allLeaves }}
-    {{ $currentLeaf := . }}
+{{- /* Generate tags for each block-level delimitation */ -}}
+  {{ $regexpMatchingTwigs := `≤.+≥` }}
+  {{ $allTwigs := findRE $regexpMatchingTwigs $allText }}
+  {{ range $allTwigs }}
     {{ $foundLetter := (substr . 1 1) }}
-    {{ $leafText := (substr . 2 -1) }}
+    {{ $twigContent := (substr . 2 -1) }}
     {{ $allText = 
         replaceRE 
         .
-        (partial "lettered-span.html" 
-          (dict "letter" $foundLetter "leaf_text" $leafText)
+        (add
+            `Z`
+            .
+            `<br/><p>`
+            (cast.ToString (partial "lettered-twig.html" 
+              (dict "letter" $foundLetter "twig_content" $twigContent)
+            ))
+            `</p>`
         )
         $allText
     }}
   {{ end }}
 
-  {{- /* The inline-level CASES */ -}}
-
+{{- /* Process all delimitations */ -}}
+{{ $regexpMatchingLeaves := `≤[^≤≥]+≥` }}
+{{ range seq 7 }}
+  {{ $allLeaves := findRE $regexpMatchingLeaves $allText }}
+  {{ range $allLeaves }}
+    {{ $currentLeaf := . }}
+    {{ $foundLetter := (substr . 1 1) }}
+    {{ $leafText := (substr . 2 -1) }} 
+    {{ $allText = 
+        replaceRE 
+        .
+        (partial "lettered-leaf.html" 
+          (dict "letter" $foundLetter "leaf_text" $leafText)
+        )
+        $allText
+    }}
+  {{ end }}
+{{ end }}
 
   {{- /* This, uhh, kinda-tag is found below CASES a1 and a2 only: */ -}}
   {{ $allText = 
@@ -337,7 +357,7 @@ end of TEMPORARILY DISABLED */ -}}
   {{ $allText = replaceRE ` TMPLT_RNIKNM` `</i>`  $allText }}
   {{ $allText = replaceRE `TMPLT_LLOGIC ` `<i class="term">`  $allText }}
   {{ $allText = replaceRE ` TMPLT_RLOGIC` `</i>`  $allText }}
-  {{ $allText = replaceRE `TMPLT_LTITLE ` `<cite class="tbd-title">`  $allText }}
+  {{ $allText = replaceRE `TMPLT_LTITLE ` `<cite class="book-title">`  $allText }}
   {{ $allText = replaceRE ` TMPLT_RTITLE` `</cite>`  $allText }}
   {{ $allText = replaceRE `TMPLT_LSPECC ` `<cite class="special-citation">`  $allText }}
   {{ $allText = replaceRE ` TMPLT_RSPECC` `</cite>`  $allText }}

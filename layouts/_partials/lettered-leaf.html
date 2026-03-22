@@ -1,6 +1,7 @@
 {{ $classifier := .letter }}
 {{ $the_content := .leaf_text }}
 
+{{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
 {{ if (eq $classifier "a") }}
 {{- /* CASE a is block-level only */ -}}
@@ -199,7 +200,7 @@
       ) 
   }}
 {{ else if (eq $classifier "w") }}
-{{- /* CASE w is span-level only */ -}
+{{- /* CASE w is span-level only */ -}}
 {{- /* CASE w: For the typically italicized title/name of a WORK, e.g. book title, newspaper title. So some are series (periodicals) and some aren't.
 
        ≤wRubber Soul≥ ---> <cite class="tbd-title">Rubber Soul</cite>
@@ -214,7 +215,7 @@
       ) 
   }}
 {{ else }}
-  {{ $result = (add "WAS YYY" $classifier "ZZZ") }}
+  {{ $result = (add "ZZZZZ Unknown classifier! " $classifier "ZZZZZ") }}
 {{ end }}
 {{ return $result }}
 
