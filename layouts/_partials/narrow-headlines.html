@@ -46,6 +46,25 @@
         }}
       {{ end }}
     {{ else }}
+
+{{- /* 
+None of my 126 h4-level headlines have 
+shown an inequality between these two:
+
+  {{ $lengthOfCurrentTitle 
+      := strings.RuneCount $preciselyMeasurableMatch }}
+  {{ $lenOfCurrentTitle 
+      := len $preciselyMeasurableMatch }}
+
+However, 17 of the 126 do show an inequality 
+when using . instead of $preciselyMeasurableMatch
+
+If the ’ character occurs in the first 
+half of a sufficiently long match, then 
+the counter overshoots by two and the 
+match is split in the middle of a word.
+*/ -}}
+
       {{ $theContent = 
           replaceRE
           .

@@ -1,0 +1,49 @@
+{{ $prefix := .prefix }}
+{{ $currentBlock := .current_block }}
+
+{{ if (eq $prefix "<p>~") }}
+  {{ $currentBlock = 
+      replaceRE
+     `<p>~ (.+)</p>`
+     `<div class="commentary">$1</div>`
+      $currentBlock
+  }}
+{{ else if (eq $prefix "<p>=&gt;") }}
+  {{ $currentBlock = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
+      $currentBlock
+  }}
+  {{ $currentBlock = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>) (.+)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
+      $currentBlock
+  }}
+  {{ $currentBlock = 
+      replaceRE
+     `<p>=&gt; (<a href="https://.+</a>)</p>`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
+      $currentBlock
+  }}
+  {{ $imageNortheastArrow := resources.Get "images/link-external-small-ltr-progressive.svg" }}
+  {{ $theImgElement := print "<img src=\"" $imageNortheastArrow.RelPermalink "\" width=\"12px\" height=\"12px\" vertical-align=\"bottom\" alt=\"(An external link.)\">" }}
+  {{ $currentBlock = 
+      replaceRE 
+     `TMPLT_NORTHEAST_ARROW`
+      $theImgElement
+      $currentBlock
+  }}
+{{ else if (eq $prefix "<p>◉") }}
+  {{- /* This is found below CASES a1 and a2 only: */ -}}
+  {{ $currentBlock = 
+      replaceRE
+     `<p>◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
+     `<div class="fisheye-means-rightmost">Bookmark, $1 $2&nbsp;</div>`
+      $currentBlock
+  }}
+  {{- /* I used to put a <p></p> after the closing div tag, above */ -}}
+{{ end }}
+
+{{ return $currentBlock }}

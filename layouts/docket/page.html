@@ -6,74 +6,7 @@
   {{ $allText = (partial "lettered-escapade.html" 
       (dict "the_content" $allText "sanitize_or_restore" "sanitize")) }}
 
-{{- /*
-  {{ $regexp99 := `(=&gt; <a h)ref="https://en.wikipedia.org/wiki/` }}
-  {{ $matches99 := findRE $regexp99 $allText }}
-  {{ range $matches99 }}
-      {{ $allText = replaceRE . "foo" $allText }}
-  {{ end }}
-
-  Where YAML frontmatter says "markup: org" (or the equivalent in TOML or JSON), select headlines thus:
-
-  `<h2 id="headline-([0-9]+)">(.+)</h2>`
-
-  Based on what I tried in the sandbox at https://niklasfasching.github.io/go-org/#headlines.org ,
-  the fact that a 1-asterisk headline maps to <h2>, a 3-asterisk'er maps to <h4>, etc. is a
-  feature/convention/design pattern of Emacs Org Mode and not a bug. Anyway, I like it.
-
-  For markdown (as opposed to org mode), select headlines thus:
-
-  `<h1 id="([^"]+)">(.+)</h1>`
-
-  And, in the replacement, use the captures thus:
-
-  <p id="$1" align="center">$2</p>
-*/ -}}
-
-{{- /* 
-None of my 126 h4-level headlines have shown an inequality between these two:
-    {{ $lengthOfCurrentTitle := strings.RuneCount $preciselyMeasurableMatch }}
-    {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
-However, 17 of the 126 do show an inequality when using . instead of $scouredMatch
-
-If the ’ character occurs in the first half of a sufficiently long match, then 
-the counter overshoots by two and the match is split in the middle of a word.
-
-safeHTML seems unneeded
-*/ -}}
-
-{{- /* 
-    {{ $unescapedMatch := safeHTML (htmlUnescape $roughlyMeasurableMatch) }}
-    {{ $preciselyMeasurableMatch := 
-        replaceRE
-        `[^_ a-zA-Z0-9]`
-        `^`
-        $unescapedMatch
-    }}
-*/ -}}
-
-{{- /*
-  {{ $allText = 
-      replaceRE
-     `, writing in ([a-zA-Z ]+) \(([12][0-9][0-9][0-9])\): ([&R][#e][3v][4i][;e])`
-     `, writing in $1 $2:<br>$3`
-      $allText 
-  }}
-*/ -}}
-
-{{- /* TEMPORARILY DISABLED
-
-  {{ $allText = 
-      replaceRE
-     `<p>[
-]?~ (.+)</p>`
-     `<div class="commentary">$1</div>`
-      $allText
-  }}
-
-end of TEMPORARILY DISABLED */ -}}
-
-{{- /* Generate tags for each block-level delimitation */ -}}
+  {{- /* Generate tags for each block-level delimitation */ -}}
   {{ $regexpMatchingTwigs := `≤.+≥` }}
   {{ $allTwigs := findRE $regexpMatchingTwigs $allText }}
   {{ range $allTwigs }}
@@ -94,36 +27,48 @@ end of TEMPORARILY DISABLED */ -}}
     }}
   {{ end }}
 
-{{- /* Process all delimitations */ -}}
-{{ $regexpMatchingLeaves := `≤[^≤≥]+≥` }}
-{{ range seq 7 }}
-  {{ $allLeaves := findRE $regexpMatchingLeaves $allText }}
-  {{ range $allLeaves }}
-    {{ $currentLeaf := . }}
-    {{ $foundLetter := (substr . 1 1) }}
-    {{ $leafText := (substr . 2 -1) }} 
-    {{ $allText = 
-        replaceRE 
-        .
-        (partial "lettered-leaf.html" 
-          (dict "letter" $foundLetter "leaf_text" $leafText)
-        )
-        $allText
-    }}
+  {{- /* Process all delimitations */ -}}
+  {{ $regexpMatchingLeaves := `≤[^≤≥]+≥` }}
+  {{ range seq 7 }}
+    {{ $allLeaves := findRE $regexpMatchingLeaves $allText }}
+    {{ range $allLeaves }}
+      {{ $currentLeaf := . }}
+      {{ $foundLetter := (substr . 1 1) }}
+      {{ $leafText := (substr . 2 -1) }} 
+      {{ $allText = 
+          replaceRE 
+          .
+          (partial "lettered-leaf.html" 
+            (dict "letter" $foundLetter "leaf_text" $leafText)
+          )
+          $allText
+      }}
+    {{ end }}
   {{ end }}
-{{ end }}
 
-  {{- /* This, uhh, kinda-tag is found below CASES a1 and a2 only: */ -}}
-  {{ $allText = 
-      replaceRE
-     `<p>◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
-     `<div class="fisheye-means-rightmost">Bookmark, $1 $2&nbsp;</div>`
-      $allText
+  {{- /* Process all prefixed blocks */ -}}
+  {{ $regexpMatchingPrefixedBlocks := 
+      `<p>[
+]?.+</p>` 
   }}
-{{- /* I used to put a <p></p> after the closing div tag, above */ -}}
-
-  {{ $allText = (partial "url-lines.html" 
-      (dict "the_content" $allText)) }}
+  {{ $allPrefixedBlocks := findRE $regexpMatchingPrefixedBlocks $allText }}
+  {{ range $allPrefixedBlocks }}
+    {{ $currentBlock := . }}
+    {{ $currentBlockAsSlice := (split . " ") }}
+    {{ $prefix := (index $currentBlockAsSlice 0) }}
+    {{ if (or (eq $prefix "<p>~")
+              (eq $prefix "<p>◉")
+              (eq $prefix "<p>=&gt;")) }}
+      {{ $processedBlock := (partial "prefixed-blocks.html" 
+          (dict "prefix" $prefix "current_block" .)) }}
+      {{ $allText = 
+          replaceRE
+          .
+          $processedBlock
+          $allText
+      }}
+    {{ end }}
+  {{ end }}
 
   {{ $allText = (partial "asterize-headlines.html" 
       (dict "the_content" $allText "debug_or_qa" "qa")) }}

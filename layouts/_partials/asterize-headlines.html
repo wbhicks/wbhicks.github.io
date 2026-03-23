@@ -1,3 +1,27 @@
+{{- /*
+I'm no longer playing with Emacs Org-Mode export tools, 
+so my YAML frontmatter no longer says "markup: org". 
+When it did, I had to match headlines thus:
+
+`<h2 id="headline-([0-9]+)">(.+)</h2>`
+
+Based on what I tried in the sandbox at 
+
+https://niklasfasching.github.io/go-org/#headlines.org , 
+
+the fact that a 1-asterisk headline maps to <h2>, and a 
+3-asterisk'er maps to <h4>, etc. is a feature / convention / 
+design pattern of Emacs Org Mode and not a bug. Anyway, I like it.
+
+For markdown (as opposed to org mode), match headlines thus:
+
+`<h1 id="([^"]+)">(.+)</h1>`
+
+And, in the replacement, use the captures thus:
+
+<p id="$1" class=" ... ... ... ">$2</p>
+*/ -}}
+
 {{ $theContent := .the_content }}
 
   {{ $theContent = 
@@ -69,11 +93,6 @@ $2
 </h5>`
       $theContent
   }}
-
-
-
-
-
 
 {{ if (eq .debug_or_qa "debug") }}
 
