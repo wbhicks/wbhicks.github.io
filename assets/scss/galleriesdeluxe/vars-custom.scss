@@ -37,11 +37,14 @@ $color-text_light: #ccc2b8;
 
 // End of color variables
 
-// This pair of font-family variables is copied over from
-// custom.scss. Reason for duplication is detailed above.
-// If you change it here, change it there too.
+/* This pair of font-family variables is copied over from custom.scss.
+   Reason for duplication is detailed there. If you change it here, change it
+   there too.
 
-$font_family_serif: Georgia, Charter, "Bitstream Charter", serif !default;
-$font_family_sans_serif: Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
-
-// I'm treating Courier as sans-serif even though it's not (it's slab-serif), because it's monospaced.
+   I'm treating Courier as sans-serif even though it's not (it's slab-serif),
+   because it's monospaced. TODO: make UI label say "mono" instead of "sans"
+*/
+$font_family_serif: 
+  Georgia, Charter, "Bitstream Charter", serif !default;
+$font_family_sans_serif: 
+  Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;

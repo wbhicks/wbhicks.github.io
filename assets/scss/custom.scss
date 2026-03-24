@@ -1,16 +1,20 @@
-// This pair of font-family variables is copied over from
-// vars-custom.scss. Reason for duplication is detailed there.
-// If you change it here, change it there too.
+/* This pair of font-family variables is copied over from vars-custom.scss.
+   Reason for duplication is detailed there. If you change it here, change it
+   there too.
 
-$font_family_serif: Georgia, Charter, "Bitstream Charter", serif !default;
-$font_family_sans_serif: Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
+   I'm treating Courier as sans-serif even though it's not (it's slab-serif),
+   because it's monospaced. TODO: make UI label say "mono" instead of "sans"
+*/
+$font_family_serif: 
+  Georgia, Charter, "Bitstream Charter", serif !default;
+$font_family_sans_serif: 
+  Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
 
-// I'm treating Courier as sans-serif even though it's not (it's slab-serif), because it's monospaced.
-
-/* Start of font toggle. See also toggle.html. This mixin, and 
-   its inclusion in both declaration blocks, is needed to 
-   prevent the two styles from becoming swapped when the page 
-   loads with the toggle in the "wrong" setting:
+/* ~ ~ ~ ~ ~
+   Start of font toggle. See also toggle.html. This mixin, and its inclusion in
+   both declaration blocks, is needed to prevent the two styles from becoming
+   swapped when the page loads with the toggle in the "wrong" setting:
+   ~ ~ ~ ~ ~ 
 */
 
 @mixin serif-or-sans($the-serif-toggle: true) {
@@ -20,22 +24,30 @@ $font_family_sans_serif: Monaco, Courier, "Liberation Mono", "Courier New", mono
     font-family: $font_family_sans_serif;
   }
 }
-body.serif-mode, body.serif-mode main * {
+body.serif-mode, 
+body.serif-mode main * {
   // Without the inclusion, the styles 
   // may get swapped on a page reload:
   // font-family: $font_family_serif; // unnecessary
   @include serif-or-sans($the-serif-toggle: true);
 }
-body.sans-mode, body.sans-mode main * {
+body.sans-mode, 
+body.sans-mode main * {
   // Without the inclusion, the styles 
   // may get swapped on a page reload:
   // font-family: $font_family_sans_serif; // unnecessary
   @include serif-or-sans($the-serif-toggle: false);
 }
 
-/* End of font toggle */
+/* ~ ~ ~ ~ ~
+   End of font toggle
+   ~ ~ ~ ~ ~ 
+*/
 
-/* Start of garish colors toggle. See also toggle.html. */
+/* ~ ~ ~ ~ ~
+   Start of garish colors toggle (see also toggle.html)
+   ~ ~ ~ ~ ~ 
+*/
 
 @mixin qa-or-dev($the-color-toggle: true) {
   @if $the-color-toggle {
@@ -47,126 +59,370 @@ body.sans-mode, body.sans-mode main * {
     .design-hint       { color: #f0f; }
   }
 }
-body.qa-mode, body.qa-mode main * {
+body.qa-mode, 
+body.qa-mode main * {
   @include qa-or-dev($the-color-toggle: true);
 }
-body.dev-mode, body.dev-mode main * {
+body.dev-mode, 
+body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
 }
 
-/* End of garish colors toggle */
-
-/* No-JS theming configuration */
-
-    // Hide the radio buttons:
-    input[type="radio"] {
-//size: 1px;
-//width: 1px;
-height: 1.5rem;
-//        display: flex; //block;
-//all: unset; //initial; // revert ; //;
-    }
-
-    // Style the labels as buttons:
-    .theme-selector label {
-        cursor: pointer;
-        padding: 0.3rem 1rem;
-        margin: 1px 1px;
-        border-radius: 2rem;
-        background: #333;
-        color: #ccc2b8;
-        font-weight: bold;
-        transition: background 0.3s;
-    }
-
-    // Highlight active label:
-  .nojs-style-set:has(#nojs-quote-style-straight:checked) 
-      label[for="nojs-quote-style-straight"],
-  .nojs-style-set:has(#nojs-quote-style-book:checked) 
-      label[for="nojs-quote-style-book"],
-  .nojs-style-set:has(#nojs-quote-style-guillemet:checked) 
-      label[for="nojs-quote-style-guillemet"],
-  .nojs-style-set:has(#nojs-quote-style-exagg:checked) 
-      label[for="nojs-quote-style-exagg"] {
-    background: #ccae8f !important;
-    // #ccae8f and #335170 are RGB opposites
-    color: #335170 !important;
-    text-decoration: overline dotted !important;
-  }
-
-    .nojs-style-set:has(#nojs-quote-style-straight:checked) {
-        --nojs-quote-chars: "\"" "\"" "\'" "\'";
-        --nojs-apostrophe-char: "'";
-        i.synonym, i.term, i.word-as-word, i.logical-statement,
-            cite.book-title, cite.film-title, cite.artwork-title {
-          // override the standard HTML italicization of cite
-          font-style: normal;
-        }
-        i.synonym::before, 
-            i.term::before, 
-            i.word-as-word::before, 
-            i.logical-statement::before,
-            cite.book-title::before, 
-            cite.film-title::before,
-            cite.artwork-title::before,
-        i.synonym::after, 
-            i.term::after, 
-            i.word-as-word::after, 
-            i.logical-statement::after,
-            cite.book-title::after, 
-            cite.film-title::after,
-            cite.artwork-title::after {
-          content: "_";
-        }
-    }
-    .nojs-style-set:has(#nojs-quote-style-book:checked) {
-        // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
-        --nojs-quote-chars: "“" "”" "‘" "’";
-        --nojs-apostrophe-char: "’";
-        i.synonym, i.term, i.word-as-word, i.logical-statement,
-            cite.book-title, cite.film-title, cite.artwork-title {
-          // italicization is automatic for cite but not for i
-          font-style: italic;
-          color: yellow;
-        }
-    }
-    .nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
-        --nojs-quote-chars: "«" "»" "‹" "›";
-        --nojs-apostrophe-char: "’";
-    }
-    .nojs-style-set:has(#nojs-quote-style-exagg:checked) {
-        // 0x2035 &bprime, 0x2032 &prime, etc.:
-        --nojs-quote-chars: "‵‵" "′′" "‵" "′";
-        --nojs-quote-color: cyan;
-        --nojs-apostrophe-char: "'";
-        --nojs-apostrophe-color: red;
-        i.synonym, i.term, i.word-as-word, i.logical-statement,
-            cite.book-title, cite.film-title, cite.artwork-title {
-          // override the standard HTML italicization of cite
-          font-style: normal;
-          color: red;
-          text-decoration: underline;
-        }
-    }
-
-/* End of No-JS theming configuration */
-
-/* The following is necessary in order to override the 
-   assignment of "quotes: none" in reset.scss (lines 86 
-   and 91):
+/* ~ ~ ~ ~ ~
+   End of garish colors toggle 
+   ~ ~ ~ ~ ~ 
 */
 
-q {
-  quotes: "«" "»" "‹" "›";
-  //quotes: var(--nojs-quote-chars);
+/* 
+   ====================
+   Start of No-JS theming configuration 
+   ====================
+*/
+
+// Hide the radio buttons:
+input[type="radio"] {
+  //size: 1px;
+  //width: 1px;
+  height: 1.5rem;
+  //        display: flex; //block;
+  //all: unset; //initial; // revert ; //;
 }
 
-q::before, q::after {
-  content: revert;
-  color: var(--nojs-quote-color);
+// Style the labels as buttons:
+.theme-selector label {
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  margin: 1px 1px;
+  border-radius: 2rem;
+  background: #333;
+  color: #ccc2b8;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-/* Other users of quotation marks */
+// Highlight active label:
+.nojs-style-set:has(#nojs-quote-style-straight:checked)
+  label[for="nojs-quote-style-straight"],
+.nojs-style-set:has(#nojs-quote-style-book:checked)
+  label[for="nojs-quote-style-book"],
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked)
+  label[for="nojs-quote-style-guillemet"],
+.nojs-style-set:has(#nojs-quote-style-exagg:checked)
+  label[for="nojs-quote-style-exagg"] {
+  background: #ccae8f !important;
+  // #ccae8f and #335170 are RGB opposites
+  color: #335170 !important;
+  text-decoration: overline dotted !important;
+}
+.nojs-style-set:has(#nojs-quote-style-straight:checked) {
+  --nojs-quote-chars: '"' '"' "\'" "\'";
+  --nojs-apostrophe-char: "'";
+  i.synonym,
+  i.term,
+  i.word-as-word,
+  i.logical-statement,
+  cite.book-title,
+  cite.film-title,
+  cite.artwork-title {
+    // override the standard HTML italicization of cite
+    font-style: normal;
+  }
+  i.synonym::before,
+  i.term::before,
+  i.word-as-word::before,
+  i.logical-statement::before,
+  cite.book-title::before,
+  cite.film-title::before,
+  cite.artwork-title::before,
+  i.synonym::after,
+  i.term::after,
+  i.word-as-word::after,
+  i.logical-statement::after,
+  cite.book-title::after,
+  cite.film-title::after,
+  cite.artwork-title::after {
+    content: "_";
+  }
+}
+.nojs-style-set:has(#nojs-quote-style-book:checked) {
+  // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
+  --nojs-quote-chars: "“" "”" "‘" "’";
+  --nojs-apostrophe-char: "’";
+  i.synonym,
+  i.term,
+  i.word-as-word,
+  i.logical-statement,
+  cite.book-title,
+  cite.film-title,
+  cite.artwork-title {
+    // italicization is automatic for cite but not for i
+    font-style: italic;
+    color: yellow;
+  }
+}
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
+  --nojs-quote-chars: "«" "»" "‹" "›";
+  --nojs-apostrophe-char: "’";
+}
+.nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+  // 0x2035 &bprime, 0x2032 &prime, etc.:
+  --nojs-quote-chars: "‵‵" "′′" "‵" "′";
+  --nojs-quote-color: cyan;
+  --nojs-apostrophe-char: "'";
+  --nojs-apostrophe-color: red;
+  i.synonym,
+  i.term,
+  i.word-as-word,
+  i.logical-statement,
+  cite.book-title,
+  cite.film-title,
+  cite.artwork-title {
+    // override the standard HTML italicization of cite
+    font-style: normal;
+    color: red;
+    text-decoration: underline;
+  }
+}
+
+// 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
+
+/* ~ ~ ~ ~ ~
+   Large-scale elements: BODY, MAIN, FOOTER, etc. 
+   ~ ~ ~ ~ ~ 
+*/
+
+body main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+/* Side padding for footer is already at 1rem (because of Galleries Deluxe?) */
+body footer {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+body * {
+  line-height: 1.5;
+}
+
+/* ~ ~ ~ ~ ~
+   Headlines: h1, h2, etc. and .h2-from-1star, .h3-from-2stars, etc. 
+
+   The class .asterism is also defined here, because it's used only above and
+   below headlines
+   ~ ~ ~ ~ ~ 
+*/
+
+.asterism {
+  font-family: monospace;
+  white-space-collapse: preserve;
+  text-align: center;
+  color: #777;
+  line-height: 1;
+}
+.h2-from-1star {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.h3-from-2stars {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.h4-from-3stars {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.h5-from-4stars {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* TODO dump these 3? 
+*/
+body main h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+body main h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+body main h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* ~ ~ ~ ~ ~
+   The HR element 
+   ~ ~ ~ ~ ~ 
+*/
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #777;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+/* ~ ~ ~ ~ ~
+   Elements for lists: OL, UL, LI 
+   ~ ~ ~ ~ ~ 
+*/
+
+ol {
+  /* Override assignment of "disc" in styles.scss, which would make ol's 
+     resemble ul's: 
+  */
+  list-style-type: decimal !important;
+  list-style-position: outside !important; /* Is "inside" better? */
+  /* padding-left: 1rem; */
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  /* padding-left: 1rem; */
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body main ul > li {
+  list-style-type: circle;
+}
+
+body main ul > li > ul > li {
+  list-style-type: disc;
+}
+
+body main ul > li > ul > li > ul > li {
+  list-style-type: square;
+}
+
+body main ul > li > ul > li > ul > li > ul > li {
+  list-style-type: circle;
+}
+
+body main ul > li > ul > li > ul > li > ul > li > ul > li {
+  list-style-type: disc;
+}
+
+/* ~ ~ ~ ~ ~
+   The PRE, CODE, SAMP, and KBD elements 
+   ~ ~ ~ ~ ~ 
+*/
+
+/* "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
+   represent computer code, computer output, and user input, respectively.
+   ... To represent multiple lines of code, wrap the <code> element within 
+   a <pre> element. The <code> element by itself only represents a single 
+   phrase of code or line of code."
+
+   Source: https://developer.mozilla.org/en-US/do
+           cs/Web/HTML/Reference/Elements/pre
+*/
+
+body pre code {
+  /* margin-left affects 1st line only, unless "display: block" is also used 
+  */
+  display: block;
+  margin-left: 1rem;
+
+  /* This font-family line has no effect when font_family_sans_serif is in
+     effect. Therefore, to see ASCII art, either (a) specify a monospace font
+     for font_family_sans_serif or (b) stay toggled to font_family_serif. 
+  */
+  font-family: monospace !important;
+
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+
+/* ~ ~ ~ ~ ~
+   The BLOCKQUOTE element and COMMENTARY, DEK, and URL-LINE classes
+
+   i.e., typical block-level styling, other than headlines and lists
+   ~ ~ ~ ~ ~ 
+*/
+
+p, blockquote, .url-line, .dek, .commentary {
+  margin-bottom: 2rem;
+}
+
+blockquote {
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+/*
+blockquote::before {
+  content: "YYY ";
+}
+blockquote::after {
+  content: " ZZZ";
+}
+*/
+
+.commentary {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.dek {
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+.url-line {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* ~ ~ ~ ~ ~
+   The Q, CITE, and I elements and associated classes
+
+   i.e., span-level elements that typically use quotation marks
+   ~ ~ ~ ~ ~ 
+*/
+
+/* Start of: The following is necessary in order to override the assignment 
+   of "quotes: none" in reset.scss (lines 86 and 91)
+*/
+
+    q {
+      quotes: "«" "»" "‹" "›";
+      //quotes: var(--nojs-quote-chars);
+    }
+
+    q::before, q::after {
+      content: revert;
+      color: var(--nojs-quote-color);
+    }
+
+/* End of: The following is ... (lines 86 and 91)
+*/
+
+
+
+// article-title is no longer used, but should be. TODO
+
+
 
 cite.article-title, i.so-called, i.nickname {
 
@@ -181,15 +437,12 @@ cite.article-title, i.so-called, i.nickname {
 
 }
 
-// article-title is no longer used, but should be. TODO
-
 cite.article-title::before, 
     i.so-called::before, 
     i.nickname::before {
   content: open-quote; //"↳";
   color: var(--nojs-quote-color);
 }
-
 cite.article-title::after, 
     i.so-called::after, 
     i.nickname::after {
@@ -197,8 +450,15 @@ cite.article-title::after,
   color: var(--nojs-quote-color);
 }
 
-/* The span element should be empty, otherwise the 
-   character can't be replaced. Write it, e.g., like this:
+/* 
+   ====================
+   End of No-JS theming configuration 
+   ====================
+*/
+
+/* The span element should be empty, otherwise the character can't be replaced.
+   Write it, e.g., like this:
+
    <span class="apostrophe"></span> and never like this:
    <span class="apostrophe"/> (which is bad HTML).
 */
@@ -218,46 +478,31 @@ TODO
   margin-right: 1rem;
 }
 
-p, blockquote, .url-line, .dek, .commentary {
-  margin-bottom: 2rem;
+/* 
+   ====================
+   Start of configuration for image captions used under Galleries Deluxe
+   ====================
+*/
+
+.gd-modal-caption {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  left: 10px;
+  color: #d80;
+  background-color: #333;
+  padding: 0.75rem;
+  opacity: 1.0;
+  filter: drop-shadow(-1px -1px 2px #ccc);
 }
 
-.url-line {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.gd-modal-caption:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-blockquote {
-  margin-left: 3rem;
-  margin-right: 1rem;
-}
-
-blockquote::before {
-  content: YYY_
-}
-
-blockquote::after {
-  content: _ZZZ
-}
-
-.dek {
-  margin-left: 3rem;
-  margin-right: 1rem;
-}
-
-/* HEADLINES */
-
-.asterism {
-  font-family: monospace;
-  white-space-collapse: preserve;
-  text-align: center;
-  color: #777;
-  line-height: 1;
-}
-
-.h4-from-3stars {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
+/* 
+   ====================
+   End of configuration for image captions used under Galleries Deluxe
+   ====================
+*/
