@@ -109,7 +109,7 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 ~ Edsall cites, among others:
 
-##### ≤aSource: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson≥
+##### ® Source: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson
 
 => https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history U. of New Hampshire / by Kenneth Johnson
 

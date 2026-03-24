@@ -1,14 +1,21 @@
 {{ $prefix := .prefix }}
 {{ $currentBlock := .current_block }}
 
-{{ if (eq $prefix "<p>~") }}
+{{ if (eq $prefix "®") }}
+  {{ $currentBlock = 
+      replaceRE
+     `® (.+)</h`
+     `OOOOO $1 OOOOO</h`
+      $currentBlock
+  }}
+{{ else if (eq $prefix "~") }}
   {{ $currentBlock = 
       replaceRE
      `<p>~ (.+)</p>`
      `<div class="commentary">$1</div>`
       $currentBlock
   }}
-{{ else if (eq $prefix "<p>=&gt;") }}
+{{ else if (eq $prefix "=&gt;") }}
   {{ $currentBlock = 
       replaceRE
      `<p>=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
@@ -35,7 +42,7 @@
       $theImgElement
       $currentBlock
   }}
-{{ else if (eq $prefix "<p>◉") }}
+{{ else if (eq $prefix "◉") }}
   {{- /* This is found below CASES a1 and a2 only: */ -}}
   {{ $currentBlock = 
       replaceRE

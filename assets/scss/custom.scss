@@ -395,7 +395,7 @@ blockquote::after {
 }
 
 /* ~ ~ ~ ~ ~
-   The Q, CITE, and I elements and associated classes
+   The Q, CITE, and (sometimes) I elements and associated classes
 
    i.e., span-level elements that typically use quotation marks
    ~ ~ ~ ~ ~ 
@@ -418,25 +418,23 @@ blockquote::after {
 /* End of: The following is ... (lines 86 and 91)
 */
 
-
-
 // article-title is no longer used, but should be. TODO
 
-
-
-cite.article-title, i.so-called, i.nickname {
+cite.article-title, 
+i.so-called, 
+i.nickname {
 
   // override the standard HTML italicization of cite
   font-style: normal;
 
-  // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/quotes#with_generated_content
+  // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Propert
+  // ies/quotes#with_generated_content
   // For an example of how these are nested across classes (which
   // requires "... ::before { content: open-quote; ..." etc.),
   // search my content for the title starting "Tower Of Babble"
   quotes: var(--nojs-quote-chars); // "«" "»" "‹" "›";
 
 }
-
 cite.article-title::before, 
     i.so-called::before, 
     i.nickname::before {
@@ -448,6 +446,40 @@ cite.article-title::after,
     i.nickname::after {
   content: close-quote; //"↲";
   color: var(--nojs-quote-color);
+}
+
+/* ~ ~ ~ ~ ~
+   The CITE and I elements, but only with classes needing oblique styling
+
+   i.e., span-level elements that typically use italicization
+   ~ ~ ~ ~ ~ 
+*/
+
+i.synonym, i.term {
+  color: pink;
+  text-decoration: underline; 
+}
+
+i.word-as-word {
+  color: purple;
+}
+
+i.logical-statement {
+  color: purple;
+  text-decoration: underline dotted;
+}
+
+cite.book-title, cite.film-title, cite.artwork-title {
+  color: red;
+}
+
+/* ~ ~ ~ ~ ~
+   Classes for debugging
+   ~ ~ ~ ~ ~ 
+*/
+
+.design-hint {
+  color: #222; 
 }
 
 /* 
@@ -468,10 +500,6 @@ span.apostrophe::before {
   content: var(--nojs-apostrophe-char);
   color: var(--nojs-apostrophe-color);
 }
-
-/* Places where italics (or bold) beat quotation marks 
-TODO
-*/
 
 .fisheye-means-rightmost {
   text-align: right;

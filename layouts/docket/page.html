@@ -47,18 +47,28 @@
   {{ end }}
 
   {{- /* Process all prefixed blocks */ -}}
-  {{ $regexpMatchingPrefixedBlocks := 
+  {{ $regexpMatchingHeadlinePrefixedBlocks := 
+      `<h[1-5][^>]*>[
+]?.+</h[1-5]>` 
+  }}
+  {{ $allHeadlinePrefixedBlocks := 
+      findRE $regexpMatchingHeadlinePrefixedBlocks $allText }}
+  {{ $regexpMatchingParagPrefixedBlocks := 
       `<p>[
 ]?.+</p>` 
   }}
-  {{ $allPrefixedBlocks := findRE $regexpMatchingPrefixedBlocks $allText }}
+  {{ $allParagPrefixedBlocks := 
+      findRE $regexpMatchingParagPrefixedBlocks $allText }}
+  {{ $allPrefixedBlocks := append $allHeadlinePrefixedBlocks $allParagPrefixedBlocks }}
   {{ range $allPrefixedBlocks }}
     {{ $currentBlock := . }}
-    {{ $currentBlockAsSlice := (split . " ") }}
-    {{ $prefix := (index $currentBlockAsSlice 0) }}
-    {{ if (or (eq $prefix "<p>~")
-              (eq $prefix "<p>◉")
-              (eq $prefix "<p>=&gt;")) }}
+
+    {{ $currentBlockAsSlice := (split . ">") }}
+    {{ $prefix := (index (split (index $currentBlockAsSlice 1) " ") 0) }}
+    {{ if (or (eq $prefix "®")
+              (eq $prefix "~")
+              (eq $prefix "◉")
+              (eq $prefix "=&gt;")) }}
       {{ $processedBlock := (partial "prefixed-blocks.html" 
           (dict "prefix" $prefix "current_block" .)) }}
       {{ $allText = 
