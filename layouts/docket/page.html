@@ -62,15 +62,23 @@
   {{ $allPrefixedBlocks := append $allHeadlinePrefixedBlocks $allParagPrefixedBlocks }}
   {{ range $allPrefixedBlocks }}
     {{ $currentBlock := . }}
-
-    {{ $currentBlockAsSlice := (split . ">") }}
-    {{ $prefix := (index (split (index $currentBlockAsSlice 1) " ") 0) }}
+    {{ $leftmostOpeningTag := (add (index (split . ">") 0) ">") }}
+    {{ $prefix := (index (split (index (split . ">") 1) " ") 0) }}
+    {{ $textAndRightmostClosingTag := (index (split . (add $prefix " ")) 1) }}
+    {{ $rightmostClosingTag := (add "<" (index (last 1 (split . "<")) 0)) }}
+    {{ $text := (substr $textAndRightmostClosingTag 0 (mul -1 
+                  (len $rightmostClosingTag))) 
+    }}
     {{ if (or (eq $prefix "®")
               (eq $prefix "~")
               (eq $prefix "◉")
               (eq $prefix "=&gt;")) }}
-      {{ $processedBlock := (partial "prefixed-blocks.html" 
-          (dict "prefix" $prefix "current_block" .)) }}
+      {{ $processedBlock := (partial "prefixed-blocks.html" (dict 
+          "leftmost_opening_tag" $leftmostOpeningTag
+          "prefix" $prefix 
+          "text" $text
+          "rightmost_closing_tag" $rightmostClosingTag)) 
+      }}
       {{ $allText = 
           replaceRE
           .

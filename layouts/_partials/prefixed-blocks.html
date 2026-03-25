@@ -1,56 +1,75 @@
+{{ $leftmostOpeningTag := .leftmost_opening_tag }}
 {{ $prefix := .prefix }}
-{{ $currentBlock := .current_block }}
+{{ $text := .text }}
+{{ $rightmostClosingTag := .rightmost_closing_tag }}
+
+{{ $result := "OVERWRITTEN" }}
 
 {{ if (eq $prefix "®") }}
-  {{ $currentBlock = 
+  {{ $text = 
       replaceRE
-     `® (.+)</h`
-     `OOOOO $1 OOOOO</h`
-      $currentBlock
+     `(.+)`
+     `OOOOO $1 OOOOO`
+      $text
   }}
+  {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
 {{ else if (eq $prefix "~") }}
-  {{ $currentBlock = 
+  {{ $result = 
       replaceRE
-     `<p>~ (.+)</p>`
+     `(.+)`
      `<div class="commentary">$1</div>`
-      $currentBlock
+      $text
   }}
 {{ else if (eq $prefix "=&gt;") }}
-  {{ $currentBlock = 
-      replaceRE
-     `<p>=&gt; (<a href="https://.+</a>) (.+) / by (.+)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
-      $currentBlock
+  {{ if (and (findRE `(<a href="https://.+</a>) (.+) / by (.+)` $text 1)
+(eq (len $text)
+        (len (index (findRE `(<a href="https://.+</a>) (.+) / by (.+)` $text 1) 0))))
   }}
-  {{ $currentBlock = 
-      replaceRE
-     `<p>=&gt; (<a href="https://.+</a>) (.+)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
-      $currentBlock
+    {{ $result = 
+        replaceRE
+       `(<a href="https://.+</a>) (.+) / by (.+)`
+       `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
+        $text
+    }}
+  {{ else if (and (findRE `(<a href="https://.+</a>) (.+)` $text 1)
+(eq (len $text)
+        (len (index (findRE `(<a href="https://.+</a>) (.+)` $text 1) 0))))
   }}
-  {{ $currentBlock = 
-      replaceRE
-     `<p>=&gt; (<a href="https://.+</a>)</p>`
-     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
-      $currentBlock
+    {{ $result = 
+        replaceRE
+       `(<a href="https://.+</a>) (.+)`
+       `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
+        $text
+    }}
+  {{ else if (and (findRE `(<a href="https://.+</a>)` $text 1)
+(eq (len $text)
+        (len (index (findRE `(<a href="https://.+</a>)` $text 1) 0))))
   }}
+    {{ $result = 
+        replaceRE
+       `(<a href="https://.+</a>)`
+       `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
+        $text
+    }}
+  {{ end }}
   {{ $imageNortheastArrow := resources.Get "images/link-external-small-ltr-progressive.svg" }}
   {{ $theImgElement := print "<img src=\"" $imageNortheastArrow.RelPermalink "\" width=\"12px\" height=\"12px\" vertical-align=\"bottom\" alt=\"(An external link.)\">" }}
-  {{ $currentBlock = 
+  {{ $result = 
       replaceRE 
      `TMPLT_NORTHEAST_ARROW`
       $theImgElement
-      $currentBlock
+      $result
   }}
 {{ else if (eq $prefix "◉") }}
   {{- /* This is found below CASES a1 and a2 only: */ -}}
-  {{ $currentBlock = 
+  {{ $text = 
       replaceRE
      `<p>◉ Bookmark, ([JFMASOND][aepuco][nbrynlgptvc]) ([0-9stndrh]+)</p>`
      `<div class="fisheye-means-rightmost">Bookmark, $1 $2&nbsp;</div>`
-      $currentBlock
+      $text
   }}
   {{- /* I used to put a <p></p> after the closing div tag, above */ -}}
+  {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
 {{ end }}
 
-{{ return $currentBlock }}
+{{ return $result }}
