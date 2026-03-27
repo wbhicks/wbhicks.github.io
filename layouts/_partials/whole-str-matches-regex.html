@@ -1,0 +1,17 @@
+{{ $text := .text }}
+{{ $pattern := .pattern }}
+
+{{ $result := 0 }}
+
+{{ if (and (findRE $pattern $text 1)
+           (eq (len $text)
+               (len (index (findRE $pattern $text 1) 0
+                    )
+               )
+           )
+      )
+  }}
+  {{ $result = len $text }}
+{{ end }}
+
+{{ return $result }}

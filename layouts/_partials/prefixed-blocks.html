@@ -5,14 +5,27 @@
 
 {{ $result := "OVERWRITTEN" }}
 
+{{ warnidf "prefixed-blocks-008" (add 
+  "leftmostOpeningTag:[" $leftmostOpeningTag "]"
+  "prefix:[" $prefix "]"
+  "rightmostClosingTag:[" $rightmostClosingTag "]"
+  ) 
+}}
 {{ if (eq $prefix "®") }}
-  {{ $text = 
-      replaceRE
-     `(.+)`
-     `OOOOO $1 OOOOO`
-      $text
-  }}
-  {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ if (partial "whole-str-matches-regex" (dict "pattern" `Source: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)` "text" $text)) }}
+    {{- /* WAS CASE a3 ... needs new case name: meta-citation of whitepaper, e.g.
+
+         ##### ≤aSource: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson≥
+
+    */ -}}
+    {{ $text = 
+        replaceRE
+       `Source: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)`
+       `Source: TMPLT_LDGUIL $1 TMPLT_RDGUIL by $2`
+        $text
+    }}
+    {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ end }}
 {{ else if (eq $prefix "~") }}
   {{ $result = 
       replaceRE
@@ -21,30 +34,21 @@
       $text
   }}
 {{ else if (eq $prefix "=&gt;") }}
-  {{ if (and (findRE `(<a href="https://.+</a>) (.+) / by (.+)` $text 1)
-(eq (len $text)
-        (len (index (findRE `(<a href="https://.+</a>) (.+) / by (.+)` $text 1) 0))))
-  }}
+  {{ if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>) (.+) / by (.+)` "text" $text)) }}
     {{ $result = 
         replaceRE
        `(<a href="https://.+</a>) (.+) / by (.+)`
        `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS by $3, $2</div>`
         $text
     }}
-  {{ else if (and (findRE `(<a href="https://.+</a>) (.+)` $text 1)
-(eq (len $text)
-        (len (index (findRE `(<a href="https://.+</a>) (.+)` $text 1) 0))))
-  }}
+  {{ else if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>) (.+)` "text" $text)) }}
     {{ $result = 
         replaceRE
        `(<a href="https://.+</a>) (.+)`
        `<div class="url-line">TMPLT_NORTHEAST_ARROW $1 TMPLT_2HYFNS from $2</div>`
         $text
     }}
-  {{ else if (and (findRE `(<a href="https://.+</a>)` $text 1)
-(eq (len $text)
-        (len (index (findRE `(<a href="https://.+</a>)` $text 1) 0))))
-  }}
+  {{ else if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>)` "text" $text)) }}
     {{ $result = 
         replaceRE
        `(<a href="https://.+</a>)`
