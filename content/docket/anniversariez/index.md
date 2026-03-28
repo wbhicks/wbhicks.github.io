@@ -113,31 +113,31 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 => https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history U. of New Hampshire / by Kenneth Johnson
 
-##### ≤aSource: «The Increase in Partisan Segregation in the United States» by Jacob R. Brown et al.≥
+##### ® Source: «The Increase in Partisan Segregation in the United States» by Jacob R. Brown et al.
 
 => https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf U. of Nottingham / by Jacob R. Brown et al.
 
-##### ≤aSource: _The Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker_ by Katherine J. Cramer≥
+##### ® Source: _The Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker_ by Katherine J. Cramer
 
 => https://press.uchicago.edu/ucp/books/book/chicago/P/bo22879533.html U. of Chicago Press / by Katherine J. Cramer (2016)
 
-##### ≤aSource: _Red Fighting Blue: How Geography and Electoral Rules Polarize American Politics_ by David A. Hopkins≥
+##### ® Source: _Red Fighting Blue: How Geography and Electoral Rules Polarize American Politics_ by David A. Hopkins
 
 => https://www.cambridge.org/core/books/red-fighting-blue/5BED65A27BC1399564B4A5863A1E899C Cambridge U. Press / by David A. Hopkins (2017)
 
-##### ≤aSource: «The Suburbanization of the Democratic Party, 1992-2018 (Paper presented at the Annual Meetings of the American Political Science Association, Washington, DC, August 29, 2019)» by David A. Hopkins≥
+##### ® Source: «The Suburbanization of the Democratic Party, 1992-2018 (Paper presented at the Annual Meetings of the American Political Science Association, Washington, DC, August 29, 2019)» by David A. Hopkins
 
 => https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf paper / by David A. Hopkins (2019)
 
-##### ≤aSource: «Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America’s Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)» by Nicholas Jacobs and B. Kal Munis≥
+##### ® Source: «Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America’s Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)» by Nicholas Jacobs and B. Kal Munis
 
 => https://static1.squarespace.com/static/580ab33829687f686ad6cbb1/t/6319051814f1302127e75b39/1662584089724/JacobsMunis2022-place-resentment-elections-vote-choice-urban-rural-divide.pdf reprint / by Nicholas Jacobs and B. Kal Munis
 
-##### ≤aSource: «Symbolic Versus Material Concerns of Rural Consciousness in the United States (Political Geography, Volume 96, June 2022, 102658)» by Kristin Lunz Trujillo and Zack Crowley≥
+##### ® Source: «Symbolic Versus Material Concerns of Rural Consciousness in the United States (Political Geography, Volume 96, June 2022, 102658)» by Kristin Lunz Trujillo and Zack Crowley
 
 => https://www.sciencedirect.com/science/article/abs/pii/S0962629822000725 reprint / by Kristin Lunz Trujillo and Zack Crowley
 
-##### ≤aSource: «What Unites and Divides Urban, Suburban and Rural Communities» by Kim Parker et al.≥
+##### ® Source: «What Unites and Divides Urban, Suburban and Rural Communities» by Kim Parker et al.
 
 => https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/ Pew Research Center / by Kim Parker et al.
 
@@ -146,7 +146,7 @@ date: 2018-05-22
 authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera Cohn and Ruth Igielnik
 ```
 
-##### ≤aSource: _Hollowing Out the Middle: The Rural Brain Drain and What It Means for America_ by Patrick J. Carr and Maria J. Kefalas≥
+##### ® Source: _Hollowing Out the Middle: The Rural Brain Drain and What It Means for America_ by Patrick J. Carr and Maria J. Kefalas
 
 => https://shop.harvard.com/book/9780807006146 Beacon Press / by Patrick J. Carr and Maria J. Kefalas (2010)
 
@@ -976,17 +976,17 @@ For a lawyer:    -1 pct    +44 pct
 
 #### 2023-05-24: The symbolic Cotton Tree in Freetown, Sierra Leone, was felled by a storm:
 
-##### ≤aSource: BBC, «Sierra Leone’s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)≥
+##### ® Source: BBC, «Sierra Leone’s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)
 
 => https://www.bbc.com/news/world-africa-65707394 BBC / by Umaru Fofana (in Freetown) & Robert Greenall (in London), 2023-05-25
 
-##### ≤aSource: The Guardian, «Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown» by Agence France-Presse (in Freetown)≥
+##### ® Source: The Guardian, «Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown» by Agence France-Presse (in Freetown)
 
 => https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse (in Freetown), 2023-05-25
 
 ≤kCenturies-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa≥
 
-##### ≤aSource: Wikipedia, «Cotton Tree (Sierra Leone)»≥
+##### ® Source: Wikipedia, «Cotton Tree (Sierra Leone)»
 
 => https://en.wikipedia.org/wiki/Cotton_Tree_(Sierra_Leone) WP / Cotton Tree (Sierra Leone)
 

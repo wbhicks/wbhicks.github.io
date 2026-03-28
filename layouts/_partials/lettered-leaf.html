@@ -35,64 +35,14 @@
         $the_content
     }}
     {{ $result = $content_replacement }}
-  {{ else if (eq "Source: TMPLT_LDGUIL" (substr $the_content 0 20)) }}
-  {{- /* CASE a3: meta-citation of whitepaper, e.g.
-
-         ##### ≤aSource: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson≥
-
-  */ -}}
-    {{ $content_replacement =
-        replaceRE 
-        `Source: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)`
-        `Source: TMPLT_LDGUIL $1 TMPLT_RDGUIL by $2`
-        $the_content
-    }}
-    {{ $result = $content_replacement }}
-  {{ else if (eq "Source: _" (substr $the_content 0 9)) }}
-  {{- /* CASE a4: meta-citation of book (cf. CASE w), e.g.
-
-         ##### ≤aSource: _Red Fighting Blue: How Geography and Electoral Rules Polarize American Politics_ by David A. Hopkins≥
-
-  */ -}}
-    {{ $content_replacement =
-        replaceRE 
-        `Source: _([^_]+)_ by (.+)`
-        `Source: <cite class="book-title">$1</cite> by $2`
-        $the_content
-    }}
-    {{ $result = $content_replacement }}
-  {{ else if (eq "Source: Wikipedia" (substr $the_content 0 17)) }}
-  {{- /* CASE a5: My citation of Wikipedia, but not followed by a quotation from the body, e.g.
-
-         ##### ≤aSource: Wikipedia, «Cotton Tree (Sierra Leone)»≥
-
-  */ -}}
-    {{ $content_replacement =
-        replaceRE 
-        `Source: Wikipedia, TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
-        `Source: Wikipedia, TMPLT_LDGUIL $1 TMPLT_RDGUIL`
-        $the_content
-    }}
-    {{ $result = $content_replacement }}
-  {{ else if (eq "Source: " (substr $the_content 0 8)) }}
-  {{- /* CASE a6: My citation of typical reportage, but not followed by a quotation from the body, e.g.
-
-         ##### ≤aSource: BBC, «Sierra Leone<span class="apostrophe"></span>s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)≥
-
-  */ -}}
-    {{ $content_replacement =
-        replaceRE 
-        `Source: (.+), TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)`
-        `Source: $1, TMPLT_LDGUIL $2 TMPLT_RDGUIL by $3`
-        $the_content
-    }}
-    {{ $result = $content_replacement }}
   {{ end }}
 {{ else if (eq $classifier "b") }}
 {{- /* CASE b is block-level only */ -}}
-{{- /* CASE b: blockquotes, e.g.
+{{- /* CASE b: blockquotes, e.g. DELETE - SEEMS HANDLED OK BY https://yuin.github.io/goldmark/playground/
 
        ^> "..." ---> ≤b...≥ ---> <blockquote>
+
+USE gt's, not b's
 
        ≤bBrown and the others called the police, as the Japanese shells continued to fall around them.≥
 

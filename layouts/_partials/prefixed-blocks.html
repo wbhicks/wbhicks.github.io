@@ -12,10 +12,13 @@
   ) 
 }}
 {{ if (eq $prefix "®") }}
-  {{ if (partial "whole-str-matches-regex" (dict "pattern" `Source: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)` "text" $text)) }}
-    {{- /* WAS CASE a3 ... needs new case name: meta-citation of whitepaper, e.g.
+  {{ if (partial "whole-str-matches-regex" (dict 
+      "pattern" `Source: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)` 
+      "text" $text)) 
+  }}
+    {{- /* CASE ®-metcit-a: For a 5-hashes meta-citation of an article or whitepaper, e.g.
 
-         ##### ≤aSource: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson≥
+         ##### ® Source: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson
 
     */ -}}
     {{ $text = 
@@ -25,14 +28,73 @@
         $text
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ else if (partial "whole-str-matches-regex" (dict 
+      "pattern" `Source: _([^_]+)_ by (.+)` 
+      "text" $text)) 
+  }}
+    {{- /* CASE ®-metcit-b: For a 5-hashes meta-citation of a book, e.g.
+
+         ##### ® Source: _Red Fighting Blue: How Geography and Electoral Rules Polarize American Politics_ by David A. Hopkins
+
+    */ -}}
+    {{ $text = 
+        replaceRE
+       `Source: _([^_]+)_ by (.+)`
+       `Source: <cite class="book-title">$1</cite> by $2`
+        $text
+    }}
+    {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ else if (partial "whole-str-matches-regex" (dict 
+      "pattern" `Source: Wikipedia, TMPLT_LDGUIL(.+)TMPLT_RDGUIL` 
+      "text" $text)) 
+  }}
+    {{- /* CASE ®-wikp: My citation of Wikipedia, but not followed by a quotation from the body, e.g.
+
+         ##### ® Source: Wikipedia, «Cotton Tree (Sierra Leone)»
+
+    */ -}}
+    {{ $text = 
+        replaceRE
+       `Source: Wikipedia, TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
+       `Source: Wikipedia, TMPLT_LDGUIL $1 TMPLT_RDGUIL`
+        $text
+    }}
+    {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ else if (partial "whole-str-matches-regex" (dict 
+      "pattern" `Source: (.+), TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)` 
+      "text" $text)) 
+  }}
+    {{- /* CASE @-bare: My citation of typical reportage, but not followed by a quotation from the body, e.g.
+
+         ##### ® Source: BBC, «Sierra Leone<span class="apostrophe"></span>s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)
+
+    */ -}}
+    {{ $text = 
+        replaceRE
+       `Source: (.+), TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)`
+       `Source: $1, TMPLT_LDGUIL $2 TMPLT_RDGUIL by $3`
+        $text
+    }}
+    {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ end }}
-{{ else if (eq $prefix "~") }}
-  {{ $result = 
+{{ else if (eq $prefix "¢") }}
+  {{- /* CASE ~: ¢ replaces ~ for my commentary */ -}}
+  {{ $text = 
       replaceRE
      `(.+)`
      `<div class="commentary">$1</div>`
       $text
   }}
+  {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+{{ else if (eq $prefix "∂") }}
+  {{- /* CASE k: deks, e.g.
+
+       ^dek: "..." ---> ≤k...≥
+
+       ≤bThe subhead, or dek, of the magazine article goes here≥
+
+  */ -}}
+  {{ $result = (add `<div class="dek">` $text ` TMPLT_2HYFNS the subheadline</div>`) }}
 {{ else if (eq $prefix "=&gt;") }}
   {{ if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>) (.+) / by (.+)` "text" $text)) }}
     {{ $result = 
