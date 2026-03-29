@@ -11,8 +11,45 @@
   "rightmostClosingTag:[" $rightmostClosingTag "]"
   ) 
 }}
+{{- /* Blockquotes no longer have an entry here because Goldmark handles them OK. See
+       https://yuin.github.io/goldmark/playground/
+
+       ^> "..." ---> <blockquote>
+*/ -}}
 {{ if (eq $prefix "®") }}
   {{ if (partial "whole-str-matches-regex" (dict 
+      "pattern" `(.+), writing in (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN under the headline TMPLT_LDGUIL(.+)TMPLT_RDGUIL` 
+      "text" $text)) 
+  }}
+    {{- /* CASE ®-a: For my 4-hashes clipping from an article or (rarely) whitepaper, e.g.
+
+         #### ® Blake Gopnik, writing in NYT (2021) under the headline «Who Said Art Is Only for the One Percent?»
+
+    */ -}}
+    {{ $text = 
+        replaceRE
+       `(.+), writing in (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN under the headline TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
+       `$1, writing in $2 TMPLT_LPAREN $3 TMPLT_RPAREN under the headline TMPLT_LDGUIL $4 TMPLT_RDGUIL`
+        $text
+    }}
+    {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ else if (partial "whole-str-matches-regex" (dict 
+      "pattern" `Published by (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN: TMPLT_LDGUIL(.+)TMPLT_RDGUIL` 
+      "text" $text)) 
+  }}
+    {{- /* CASE ®-p: For my 4-hashes clipping from an authorless press release, e.g.
+
+         #### ® Published by Pew Research Center (2016): «Ideological Gap Widens Between More, Less Educated Adults»
+
+    */ -}}
+    {{ $text = 
+        replaceRE
+       `Published by (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN: TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
+       `Published by $1 TMPLT_LPAREN $2 TMPLT_RPAREN: TMPLT_LDGUIL $3 TMPLT_RDGUIL`
+        $text
+    }}
+    {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ else if (partial "whole-str-matches-regex" (dict 
       "pattern" `Source: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)` 
       "text" $text)) 
   }}
@@ -48,7 +85,7 @@
       "pattern" `Source: Wikipedia, TMPLT_LDGUIL(.+)TMPLT_RDGUIL` 
       "text" $text)) 
   }}
-    {{- /* CASE ®-wikp: My citation of Wikipedia, but not followed by a quotation from the body, e.g.
+    {{- /* CASE ®-wikp: For my 5-hashes citation of Wikipedia, AND not followed by a quotation from the body, e.g.
 
          ##### ® Source: Wikipedia, «Cotton Tree (Sierra Leone)»
 
@@ -64,7 +101,7 @@
       "pattern" `Source: (.+), TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)` 
       "text" $text)) 
   }}
-    {{- /* CASE @-bare: My citation of typical reportage, but not followed by a quotation from the body, e.g.
+    {{- /* CASE @-bare: For my 5-hashes citation of typical reportage, but not followed by a quotation from the body, e.g.
 
          ##### ® Source: BBC, «Sierra Leone<span class="apostrophe"></span>s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)
 
@@ -78,7 +115,7 @@
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ end }}
 {{ else if (eq $prefix "¢") }}
-  {{- /* CASE ~: ¢ replaces ~ for my commentary */ -}}
+  {{- /* CASE ¢: "^¢ " replaced "^~ " for my commentary */ -}}
   {{ $text = 
       replaceRE
      `(.+)`
@@ -87,11 +124,11 @@
   }}
   {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
 {{ else if (eq $prefix "∂") }}
-  {{- /* CASE k: deks, e.g.
+  {{- /* CASE ∂: Periodical deks (subheadlines), e.g.
 
-       ^dek: "..." ---> ≤k...≥
-
-       ≤bThe subhead, or dek, of the magazine article goes here≥
+       ^dek: "The subhead, or dek, of the magazine article goes here"
+       --->
+       ^∂ "..."
 
   */ -}}
   {{ $result = (add `<div class="dek">` $text ` TMPLT_2HYFNS the subheadline</div>`) }}

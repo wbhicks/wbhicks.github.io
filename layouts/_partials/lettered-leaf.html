@@ -3,57 +3,8 @@
 
 {{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
-{{ if (eq $classifier "a") }}
-{{- /* CASE a is block-level only */ -}}
-  {{ if (and 
-      (strings.Contains $the_content "writing in") 
-      (strings.Contains $the_content "under the headline")
-      )
-  }}
-  {{- /* CASE a1: typical reportage, e.g.
 
-         #### ≤aBlake Gopnik, writing in NYT (2021) under the headline «Who Said Art Is Only for the One Percent?»≥
-
-  */ -}}
-    {{ $content_replacement =
-        replaceRE 
-        `(.+), writing in (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN under the headline TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
-        `$1, writing in $2 TMPLT_LPAREN $3 TMPLT_RPAREN under the headline TMPLT_LDGUIL $4 TMPLT_RDGUIL`
-        $the_content
-    }}
-    {{ $result = $content_replacement }}
-  {{ else if (eq "Published by" (substr $the_content 0 12)) }}
-  {{- /* CASE a2: authorless press release, e.g.
-
-         #### ≤aPublished by Pew Research Center (2016): «Ideological Gap Widens Between More, Less Educated Adults»≥ 
-
-  */ -}}
-    {{ $content_replacement =
-        replaceRE 
-        `Published by (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN: TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
-        `Published by $1 TMPLT_LPAREN $2 TMPLT_RPAREN: TMPLT_LDGUIL $3 TMPLT_RDGUIL`
-        $the_content
-    }}
-    {{ $result = $content_replacement }}
-  {{ end }}
-{{ else if (eq $classifier "b") }}
-{{- /* CASE b is block-level only */ -}}
-{{- /* CASE b: blockquotes, e.g. DELETE - SEEMS HANDLED OK BY https://yuin.github.io/goldmark/playground/
-
-       ^> "..." ---> ≤b...≥ ---> <blockquote>
-
-USE gt's, not b's
-
-       ≤bBrown and the others called the police, as the Japanese shells continued to fall around them.≥
-
-*/ -}}
-  {{ $result = (add 
-      `<blockquote>` 
-      $the_content 
-      `</blockquote>`
-      ) 
-  }}
-{{ else if (eq $classifier "c") }}
+{{ if (eq $classifier "c") }}
 {{- /* CASE c is span-level only */ -}}
 {{- /* CASE c: title citations that require special handling, e.g.
 
@@ -91,21 +42,6 @@ USE gt's, not b's
       $the_content
   }}
   {{ $result = $content_replacement }}
-{{ else if (eq $classifier "k") }}
-{{- /* CASE k is block-level only */ -}}
-{{- /* CASE k: deks, e.g.
-
-       ^dek: "..." ---> ≤k...≥
-
-       ≤bThe subhead, or dek, of the magazine article goes here≥
-
-*/ -}}
-  {{ $result = (add 
-      `<div class="dek">TMPLT_LDGUIL ` 
-      $the_content 
-      ` TMPLT_RDGUIL TMPLT_2HYFNS the subheadline</div>`
-      ) 
-  }}
 {{ else if (eq $classifier "l") }}
 {{- /* CASE l is span-level only */ -}}
 {{- /* CASE l: term, word-as-word, logical-statement, synonym, unassimilated foreign word. e.g.
