@@ -1,5 +1,8 @@
 {{ define "main" }}
 
+  {{ warnidf "page-3" (add "= = = = = = = = = = = = = = = = LinkTitle:" .LinkTitle) }}
+  {{ $mostRecentLinkTitle := .LinkTitle }}
+
   <span class="design-hint">dp»</span>
 
   {{ $allText := .Content }}
@@ -47,37 +50,53 @@
   {{ end }}
 
   {{- /* Process all prefixed blocks */ -}}
-  {{ $regexpMatchingHeadlinePrefixedBlocks := 
+  {{ $regexpMatchingHeadlineBlocks := 
       `<h[1-5][^>]*>[
 ]?.+</h[1-5]>` 
   }}
-  {{ $allHeadlinePrefixedBlocks := 
-      findRE $regexpMatchingHeadlinePrefixedBlocks $allText }}
-  {{ $regexpMatchingParagPrefixedBlocks := 
+  {{ $allHeadlineBlocks := 
+      findRE $regexpMatchingHeadlineBlocks $allText 
+  }}
+
+{{- /*
+  {{ range $allHeadlineBlocks }}
+    {{ warnidf "page-61" (add "mRLT: " $mostRecentLinkTitle " H: " .) }} 
+  {{ end }}
+*/ -}}
+
+  {{ $regexpMatchingParagBlocks := 
       `<p>[
 ]?.+</p>` 
   }}
-  {{ $allParagPrefixedBlocks := 
-      findRE $regexpMatchingParagPrefixedBlocks $allText }}
-  {{ $allPrefixedBlocks := append $allHeadlinePrefixedBlocks $allParagPrefixedBlocks }}
-  {{ range $allPrefixedBlocks }}
+  {{ $allParagBlocks := 
+      findRE $regexpMatchingParagBlocks $allText 
+  }}
+
+{{- /*
+  {{ range $allParagBlocks }}
+    {{ warnidf "page-71" (add "mRLT: " $mostRecentLinkTitle " P: " .) }} 
+  {{ end }}
+*/ -}}
+
+  {{ $allBlocks := append $allHeadlineBlocks $allParagBlocks 
+  }}
+  {{ range $allBlocks }}
     {{ $currentBlock := . }}
     {{ $leftmostOpeningTag := (add (index (split . ">") 0) ">") }}
     {{ $prefix := (index (split (index (split . ">") 1) " ") 0) }}
-    {{ $textAndRightmostClosingTag := (index (split . (add $prefix " ")) 1) }}
-    {{ $rightmostClosingTag := (add "<" (index (last 1 (split . "<")) 0)) }}
-    {{ $text := (substr $textAndRightmostClosingTag 0 (mul -1 
+    {{ $meaningfulPrefixes := slice "®" "¢" "∂" "=&gt;" "◉" }}
+    {{ if (in $meaningfulPrefixes $prefix) }}
+      {{ $textAndRightmostClosingTag := (index (split . (add $prefix " ")) 1) }}
+      {{ $rightmostClosingTag := (add "<" (index (last 1 (split . "<")) 0)) }}
+      {{ $text := (substr $textAndRightmostClosingTag 0 (mul -1 
                   (len $rightmostClosingTag))) 
-    }}
-    {{ if (or (eq $prefix "®")
-              (eq $prefix "~")
-              (eq $prefix "◉")
-              (eq $prefix "=&gt;")) }}
+      }}
       {{ $processedBlock := (partial "prefixed-blocks.html" (dict 
           "leftmost_opening_tag" $leftmostOpeningTag
           "prefix" $prefix 
           "text" $text
-          "rightmost_closing_tag" $rightmostClosingTag)) 
+          "rightmost_closing_tag" $rightmostClosingTag
+          "mRLT" $mostRecentLinkTitle)) 
       }}
       {{ $allText = 
           replaceRE
