@@ -75,7 +75,7 @@
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ else if (partial "whole-str-matches-regex" (dict 
-      "pattern" `Source: TMPLT_LTITLE ([^_]+) TMPLT_RTITLE by (.+)` 
+      "pattern" `Source: ≤b([^_]+)≥ by (.+)` 
       "text" $text)) 
   }}
     {{- /* CASE ®-metcit-b: For a 5-hashes meta-citation of a book, e.g.
@@ -85,17 +85,9 @@
          Underscores will have been converted (before this runs) into <em>...</em>, so use ≤b...≥ instead.
 
     */ -}}
-{{- /* TODO: Is ≤b being sanitized too soon?
     {{ $text = 
         replaceRE
        `Source: ≤b([^_]+)≥ by (.+)`
-       `Source: <cite class="book-title">$1</cite> by $2`
-        $text
-    }}
-*/ -}}
-    {{ $text = 
-        replaceRE
-       `Source: TMPLT_LTITLE ([^_]+) TMPLT_RTITLE by (.+)`
        `Source: <cite class="book-title">$1</cite> by $2`
         $text
     }}
