@@ -101,6 +101,10 @@ input[type="radio"] {
 }
 
 // Highlight active label:
+.nojs-style-set:has(#nojs-quote-style-none:checked)
+  label[for="nojs-quote-style-none"],
+.nojs-style-set:has(#nojs-quote-style-minimal:checked)
+  label[for="nojs-quote-style-minimal"],
 .nojs-style-set:has(#nojs-quote-style-straight:checked)
   label[for="nojs-quote-style-straight"],
 .nojs-style-set:has(#nojs-quote-style-book:checked)
@@ -114,6 +118,60 @@ input[type="radio"] {
   color: #335170 !important;
   text-decoration: overline dotted !important;
 }
+
+/* ~ ~ ~ ~ ~
+   The NONE Style 
+   ~ ~ ~ ~ ~ 
+*/
+
+.nojs-style-set:has(#nojs-quote-style-none:checked) {
+  --nojs-quote-chars: "“" "”" "‘" "’";
+  --nojs-apostrophe-char: "’";
+  * {
+    // Initial and Unset are both far, far too sweeping: 
+    // all: initial;
+    // all: unset;
+    // Revert certainly does the job:
+    all: revert;
+  }
+}
+
+/* ~ ~ ~ ~ ~
+   The MINIMAL Style 
+   ~ ~ ~ ~ ~ 
+*/
+
+.nojs-style-set:has(#nojs-quote-style-minimal:checked) {
+  --nojs-quote-chars: "“" "”" "‘" "’";
+  --nojs-apostrophe-char: "’";
+
+    // 'hr {all: revert;}' makes hr's (xcpt the 2 framing the title) shrink to 
+    // a point, because it disables the browser's styling. Oddly, 
+    // '* {all: revert;}' doesn't. But the Mozilla docs say using 'revert' here
+    // shouldn't affect browser styles:
+
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all
+
+  .fisheye-means-rightmost {
+    all: revert;
+  }
+}
+
+/* ~ ~ ~ ~ ~
+   Values common to all styles beyond MINIMAL 
+   ~ ~ ~ ~ ~ 
+*/
+
+.nojs-style-set:has(#nojs-quote-style-straight:checked),
+.nojs-style-set:has(#nojs-quote-style-book:checked),
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked),
+.nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+
+
+}
+
+
+
 .nojs-style-set:has(#nojs-quote-style-straight:checked) {
   --nojs-quote-chars: '"' '"' "\'" "\'";
   --nojs-apostrophe-char: "'";
@@ -268,20 +326,6 @@ body main h3 {
 }
 
 /* ~ ~ ~ ~ ~
-   The HR element 
-   ~ ~ ~ ~ ~ 
-*/
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #777;
-  margin: 1rem 0;
-  padding: 0;
-}
-
-/* ~ ~ ~ ~ ~
    Elements for lists: OL, UL, LI 
    ~ ~ ~ ~ ~ 
 */
@@ -395,6 +439,23 @@ blockquote::after {
 }
 
 /* ~ ~ ~ ~ ~
+   Misc. elements for block-level styling
+   ~ ~ ~ ~ ~ 
+*/
+
+
+
+/* ~ ~ ~ ~ ~
+   Misc. classes for block-level styling
+   ~ ~ ~ ~ ~ 
+*/
+
+.fisheye-means-rightmost {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+/* ~ ~ ~ ~ ~
    The Q, CITE, and (sometimes) I elements and associated classes
 
    i.e., span-level elements that typically use quotation marks
@@ -499,11 +560,6 @@ span.apostrophe::before {
   // content: "’";
   content: var(--nojs-apostrophe-char);
   color: var(--nojs-apostrophe-color);
-}
-
-.fisheye-means-rightmost {
-  text-align: right;
-  margin-right: 1rem;
 }
 
 /* 

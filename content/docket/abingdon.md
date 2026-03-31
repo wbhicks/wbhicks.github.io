@@ -33,6 +33,20 @@ date: 2023-07-01
 
 ## Apple
 
+Apple II - so, 3 hyphens makes an HR:
+
+---
+
+Apple III
+
+-----
+
+Lisa
+
+--------
+
+Macintosh
+
 > Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 
 ### Gala
