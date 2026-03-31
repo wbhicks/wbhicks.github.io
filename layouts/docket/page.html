@@ -15,6 +15,7 @@
   {{ range $allTwigs }}
     {{ $foundLetter := (substr . 1 1) }}
     {{ $twigContent := (substr . 2 -1) }}
+{{- /*
     {{ $allText = 
         replaceRE 
         .
@@ -28,6 +29,7 @@
         )
         $allText
     }}
+*/ -}}
   {{ end }}
 
   {{- /* Process all delimitations */ -}}

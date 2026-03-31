@@ -48,7 +48,7 @@ draft: false
 >
 > -- from
 
-=> https://en.wikisource.org/wiki/George_Washington’s_First_State_of_the_Union_Address Wikisource   
+=> https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address Wikisource   
 
 => https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a Gutenberg.org
 
@@ -117,11 +117,11 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 => https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf U. of Nottingham / by Jacob R. Brown et al.
 
-##### ® Source: _The Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker_ by Katherine J. Cramer
+##### ® Source: ≤bThe Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker≥ by Katherine J. Cramer
 
 => https://press.uchicago.edu/ucp/books/book/chicago/P/bo22879533.html U. of Chicago Press / by Katherine J. Cramer (2016)
 
-##### ® Source: _Red Fighting Blue: How Geography and Electoral Rules Polarize American Politics_ by David A. Hopkins
+##### ® Source: ≤bRed Fighting Blue: How Geography and Electoral Rules Polarize American Politics≥ by David A. Hopkins
 
 => https://www.cambridge.org/core/books/red-fighting-blue/5BED65A27BC1399564B4A5863A1E899C Cambridge U. Press / by David A. Hopkins (2017)
 
@@ -146,7 +146,7 @@ date: 2018-05-22
 authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera Cohn and Ruth Igielnik
 ```
 
-##### ® Source: _Hollowing Out the Middle: The Rural Brain Drain and What It Means for America_ by Patrick J. Carr and Maria J. Kefalas
+##### ® Source: ≤bHollowing Out the Middle: The Rural Brain Drain and What It Means for America≥ by Patrick J. Carr and Maria J. Kefalas
 
 => https://shop.harvard.com/book/9780807006146 Beacon Press / by Patrick J. Carr and Maria J. Kefalas (2010)
 
@@ -328,7 +328,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://en.wikipedia.org/wiki/Mespilus_germanica WP / Medlar
 
-¢ The medlar figures in the prologue to one of Chaucer’s ≤wCanterbury Tales≥, ≤cThe Reeve’s Tale≥. Here’s the relevant passage, excerpted from the prologue:
+¢ The medlar figures in the prologue to one of Chaucer’s ≤bCanterbury Tales≥, ≤cThe Reeve’s Tale≥. Here’s the relevant passage, excerpted from the prologue:
 
 ```
 But ik am old, me list not pley for age;
@@ -537,7 +537,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/06/books/review/the-age-of-decadence-simon-heffer.html NYT / by Richard Aldous
 
-¢ A review by Richard Aldous of ≤wThe Age Of Decadence: A History of Britain, 1880 to 1914≥ by Simon Heffer
+¢ A review by Richard Aldous of ≤bThe Age Of Decadence: A History of Britain, 1880 to 1914≥ by Simon Heffer
 
 #### ® David L. Kirp, writing in NYT (2021) under the headline «Why Stanford Should Clone Itself»
 
@@ -723,7 +723,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
 
-∂ «That story, which has sometimes been called a real-life ≤wLord of the Flies≥, was just one episode in a life filled with adventure.»
+∂ «That story, which has sometimes been called a real-life ≤bLord of the Flies≥, was just one episode in a life filled with adventure.»
 
 #### ® Amelia Soth, writing in JSTOR Daily (2021) under the headline «When Paid Applauders Ruled the Paris Opera House»
 
@@ -801,7 +801,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
 
-> «... Arthur Gelb in his memoir, ≤wCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...»
+> «... Arthur Gelb in his memoir, ≤bCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...»
 
 ## V. May
 

@@ -4,7 +4,20 @@
 {{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
 
-{{ if (eq $classifier "c") }}
+{{ if (eq $classifier "b") }}
+{{- /* CASE b is span-level only */ -}}
+{{- /* CASE b: For the typically italicized title/name of a book.
+
+       ≤bMoby Dick≥ ---> <cite class="book-title">Moby Dick</cite>
+
+*/ -}}
+  {{ $result = (add 
+      `TMPLT_LTITLE ` 
+      $the_content 
+      ` TMPLT_RTITLE`
+      ) 
+  }}
+{{ else if (eq $classifier "c") }}
 {{- /* CASE c is span-level only */ -}}
 {{- /* CASE c: title citations that require special handling, e.g.
 
@@ -87,10 +100,10 @@
   }}
 {{ else if (eq $classifier "w") }}
 {{- /* CASE w is span-level only */ -}}
-{{- /* CASE w: For the typically italicized title/name of a WORK, e.g. book title, newspaper title. So some are series (periodicals) and some aren't.
+{{- /* CASE w: For the typically italicized title/name of a non-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't.
 
        ≤wRubber Soul≥ ---> <cite class="tbd-title">Rubber Soul</cite>
-       TODO: tbd-title ---> book-title, film-title, artwork-title etc.
+       TODO: tbd-title ---> magazine-title, film-title, artwork-title etc.
        ... episode of the CNN [series] ≤wNomad≥. ...
 
 */ -}}
