@@ -73,10 +73,11 @@ body.dev-mode main * {
    ~ ~ ~ ~ ~ 
 */
 
-/* 
-   ====================
-   Start of No-JS theming configuration 
-   ====================
+/* +----------------------------------------+
+   |                                        |
+   |  Start of No-JS theming configuration  |
+   |                                        |
+   +----------------------------------------+
 */
 
 // Hide the radio buttons:
@@ -119,9 +120,9 @@ input[type="radio"] {
   text-decoration: overline dotted !important;
 }
 
-/* ~ ~ ~ ~ ~
-   The NONE Style 
-   ~ ~ ~ ~ ~ 
+/* ====================
+   The NONE Style
+   ====================
 */
 
 .nojs-style-set:has(#nojs-quote-style-none:checked) {
@@ -136,9 +137,9 @@ input[type="radio"] {
   }
 }
 
-/* ~ ~ ~ ~ ~
-   The MINIMAL Style 
-   ~ ~ ~ ~ ~ 
+/* ====================
+   The MINIMAL Style
+   ====================
 */
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked) {
@@ -147,19 +148,19 @@ input[type="radio"] {
 
     // 'hr {all: revert;}' makes hr's (xcpt the 2 framing the title) shrink to 
     // a point, because it disables the browser's styling. Oddly, 
-    // '* {all: revert;}' doesn't. But the Mozilla docs say using 'revert' here
-    // shouldn't affect browser styles:
+    // '* {all: revert;}' doesn't affect hr's. But the Mozilla docs say that 
+    // using 'revert' here shouldn't affect browser styles:
 
     // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all
 
   .fisheye-means-rightmost {
-    all: revert;
+    // all: revert; // Uncommenting this line centers these DIVs. Unsure why.
   }
 }
 
-/* ~ ~ ~ ~ ~
-   Values common to all styles beyond MINIMAL 
-   ~ ~ ~ ~ ~ 
+/* ====================
+   Values common to all styles beyond MINIMAL
+   ====================
 */
 
 .nojs-style-set:has(#nojs-quote-style-straight:checked),
@@ -167,8 +168,169 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked),
 .nojs-style-set:has(#nojs-quote-style-exagg:checked) {
 
+  /* ~ ~ ~ ~ ~
+     Large-scale elements: BODY, MAIN, & FOOTER
+     ~ ~ ~ ~ ~ 
+  */
+  
+  body * {
+    line-height: 1.5;
+  }
+  body main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  /* Side padding for footer is already 
+     at 1rem (because of Galleries Deluxe?) 
+  */
+  body footer {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  /* ~ ~ ~ ~ ~
+     Elements for lists: OL, UL, LI 
+     ~ ~ ~ ~ ~ 
+  */
+  
+  ol {
+    /* Override assignment of "disc" in styles.scss, which would make ol's 
+       resemble ul's: 
+    */
+    list-style-type: decimal !important;
+    list-style-position: outside !important; /* Is "inside" better? */
+    /* padding-left: 1rem; */
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    /* padding-left: 1rem; */
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  body main ul > li {
+    list-style-type: circle;
+  }
+  body main ul > li > ul > li {
+    list-style-type: disc;
+  }
+  body main ul > li > ul > li > ul > li {
+    list-style-type: square;
+  }
+  body main ul > li > ul > li > ul > li > ul > li {
+    list-style-type: circle;
+  }
+  body main ul > li > ul > li > ul > li > ul > li > ul > li {
+    list-style-type: disc;
+  }
+
+  /* ~ ~ ~ ~ ~
+     The PRE, CODE, SAMP, and KBD elements 
+     ~ ~ ~ ~ ~ 
+  */
+  
+  /* "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
+     represent computer code, computer output, and user input, respectively.
+     ... To represent multiple lines of code, wrap the <code> element within 
+     a <pre> element. The <code> element by itself only represents a single 
+     phrase of code or line of code."
+  
+     Source: https://developer.mozilla.org/en-US/do
+             cs/Web/HTML/Reference/Elements/pre
+  */
+  body pre code {
+    /* margin-left affects 1st line only, unless "display: block" is also used 
+    */
+    display: block;
+    margin-left: 1rem;
+  
+    /* This font-family line has no effect when font_family_sans_serif is in
+       effect. Therefore, to see ASCII art, either (a) specify a monospace font
+       for font_family_sans_serif or (b) stay toggled to font_family_serif. 
+    */
+    font-family: monospace !important;
+  
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+  /* ~ ~ ~ ~ ~
+     Other block-level elements
+     ~ ~ ~ ~ ~ 
+  */
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  /*
+  blockquote::before {
+    content: "YYY ";
+  }
+  blockquote::after {
+    content: " ZZZ";
+  }
+  */
+
+  /* ~ ~ ~ ~ ~
+     Classes for headings: .h2-from-1star, .h3-from-2stars, etc. 
+  
+     The class .asterism is also defined here, because it's used only above and
+     below headings
+     ~ ~ ~ ~ ~ 
+  */
+  
+  .asterism {
+    font-family: monospace;
+    white-space-collapse: preserve;
+    text-align: center;
+    color: #777;
+    line-height: 1;
+  }
+  .h2-from-1star, 
+  .h3-from-2stars, 
+  .h4-from-3stars {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+  }
+  .h5-from-4stars {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  /* ~ ~ ~ ~ ~
+     Block-level classes unrelated to headings
+     ~ ~ ~ ~ ~ 
+  */
+
+  .commentary, .url-line {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  .dek {
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  .fisheye-means-rightmost {
+    text-align: right;
+    margin-right: 1rem;
+  }
 
 }
+
+
+
+
 
 
 
@@ -244,215 +406,8 @@ input[type="radio"] {
 
 // 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
-/* ~ ~ ~ ~ ~
-   Large-scale elements: BODY, MAIN, FOOTER, etc. 
-   ~ ~ ~ ~ ~ 
-*/
-
-body main {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-
-/* Side padding for footer is already at 1rem (because of Galleries Deluxe?) */
-body footer {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-
-body * {
-  line-height: 1.5;
-}
-
-/* ~ ~ ~ ~ ~
-   Headlines: h1, h2, etc. and .h2-from-1star, .h3-from-2stars, etc. 
-
-   The class .asterism is also defined here, because it's used only above and
-   below headlines
-   ~ ~ ~ ~ ~ 
-*/
-
-.asterism {
-  font-family: monospace;
-  white-space-collapse: preserve;
-  text-align: center;
-  color: #777;
-  line-height: 1;
-}
-.h2-from-1star {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
+p {
   margin-bottom: 2rem;
-}
-.h3-from-2stars {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-.h4-from-3stars {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-.h5-from-4stars {
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-/* TODO dump these 3? 
-*/
-body main h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-body main h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-body main h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-/* ~ ~ ~ ~ ~
-   Elements for lists: OL, UL, LI 
-   ~ ~ ~ ~ ~ 
-*/
-
-ol {
-  /* Override assignment of "disc" in styles.scss, which would make ol's 
-     resemble ul's: 
-  */
-  list-style-type: decimal !important;
-  list-style-position: outside !important; /* Is "inside" better? */
-  /* padding-left: 1rem; */
-  margin-left: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-ul {
-  /* padding-left: 1rem; */
-  margin-left: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-body main ul > li {
-  list-style-type: circle;
-}
-
-body main ul > li > ul > li {
-  list-style-type: disc;
-}
-
-body main ul > li > ul > li > ul > li {
-  list-style-type: square;
-}
-
-body main ul > li > ul > li > ul > li > ul > li {
-  list-style-type: circle;
-}
-
-body main ul > li > ul > li > ul > li > ul > li > ul > li {
-  list-style-type: disc;
-}
-
-/* ~ ~ ~ ~ ~
-   The PRE, CODE, SAMP, and KBD elements 
-   ~ ~ ~ ~ ~ 
-*/
-
-/* "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
-   represent computer code, computer output, and user input, respectively.
-   ... To represent multiple lines of code, wrap the <code> element within 
-   a <pre> element. The <code> element by itself only represents a single 
-   phrase of code or line of code."
-
-   Source: https://developer.mozilla.org/en-US/do
-           cs/Web/HTML/Reference/Elements/pre
-*/
-
-body pre code {
-  /* margin-left affects 1st line only, unless "display: block" is also used 
-  */
-  display: block;
-  margin-left: 1rem;
-
-  /* This font-family line has no effect when font_family_sans_serif is in
-     effect. Therefore, to see ASCII art, either (a) specify a monospace font
-     for font_family_sans_serif or (b) stay toggled to font_family_serif. 
-  */
-  font-family: monospace !important;
-
-  white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
-}
-
-/* ~ ~ ~ ~ ~
-   The BLOCKQUOTE element and COMMENTARY, DEK, and URL-LINE classes
-
-   i.e., typical block-level styling, other than headlines and lists
-   ~ ~ ~ ~ ~ 
-*/
-
-p, blockquote, .url-line, .dek, .commentary {
-  margin-bottom: 2rem;
-}
-
-blockquote {
-  margin-left: 3rem;
-  margin-right: 1rem;
-}
-
-/*
-blockquote::before {
-  content: "YYY ";
-}
-blockquote::after {
-  content: " ZZZ";
-}
-*/
-
-.commentary {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.dek {
-  margin-left: 3rem;
-  margin-right: 1rem;
-}
-
-.url-line {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-/* ~ ~ ~ ~ ~
-   Misc. elements for block-level styling
-   ~ ~ ~ ~ ~ 
-*/
-
-
-
-/* ~ ~ ~ ~ ~
-   Misc. classes for block-level styling
-   ~ ~ ~ ~ ~ 
-*/
-
-.fisheye-means-rightmost {
-  text-align: right;
-  margin-right: 1rem;
 }
 
 /* ~ ~ ~ ~ ~
@@ -543,10 +498,11 @@ cite.book-title, cite.film-title, cite.artwork-title {
   color: #222; 
 }
 
-/* 
-   ====================
-   End of No-JS theming configuration 
-   ====================
+/* +--------------------------------------+
+   |                                      |
+   |  End of No-JS theming configuration  |
+   |                                      |
+   +--------------------------------------+
 */
 
 /* The span element should be empty, otherwise the character can't be replaced.
@@ -562,8 +518,7 @@ span.apostrophe::before {
   color: var(--nojs-apostrophe-color);
 }
 
-/* 
-   ====================
+/* ====================
    Start of configuration for image captions used under Galleries Deluxe
    ====================
 */
@@ -585,8 +540,7 @@ span.apostrophe::before {
   cursor: pointer;
 }
 
-/* 
-   ====================
+/* ====================
    End of configuration for image captions used under Galleries Deluxe
    ====================
 */
