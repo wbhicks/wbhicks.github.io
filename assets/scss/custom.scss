@@ -505,18 +505,37 @@ cite.book-title, cite.film-title, cite.artwork-title {
    +--------------------------------------+
 */
 
-/* The span element should be empty, otherwise the character can't be replaced.
-   Write it, e.g., like this:
+/* I decided to keep the apostrophes hard-coded in my content as `’` (a.k.a. 
+   the Unicode `right single quotation mark`, and the HTML entity `&rsquo;`).
+   The alternative, which was (1) to replace each occurrence with ...
 
-   <span class="apostrophe"></span> and never like this:
-   <span class="apostrophe"/> (which is bad HTML).
+     <span class="apostrophe"></span>
+
+   ... and (2) to rely on this styling ...
+
+     span.apostrophe::before { // COULD HAVE USED ::after INSTEAD
+       content: var(--nojs-apostrophe-char);
+       color: var(--nojs-apostrophe-color); // OPTIONAL DEBUGGING AID
+     }
+
+   ... had the side effect that copying content from the browser to the 
+   clipboard would omit all apostrophes, because they wouldn’t exist in 
+   the DOM. I realized that that was far too big a price for the intended
+   benefit: to let the user toggle among `’`, `'`, and `´` (via, indirectly,
+   a CSS custom property that I named `--nojs-apostrophe-char`).
+
+   p.s. In any such approach, the span element MUST be empty, i.e. composed
+   of both an opening tag and an adjacent closing tag; otherwise the missing 
+   character can’t be supplied. Write it, e.g., like this ...
+
+     <span class="apostrophe"></span>
+
+   ... and never like this ...
+
+     <span class="apostrophe"/> 
+
+   ... (which is bad HTML anyway).
 */
-
-span.apostrophe::before {
-  // content: "’";
-  content: var(--nojs-apostrophe-char);
-  color: var(--nojs-apostrophe-color);
-}
 
 /* ====================
    Start of configuration for image captions used under Galleries Deluxe
