@@ -106,8 +106,10 @@ input[type="radio"] {
   label[for="nojs-quote-style-none"],
 .nojs-style-set:has(#nojs-quote-style-minimal:checked)
   label[for="nojs-quote-style-minimal"],
-.nojs-style-set:has(#nojs-quote-style-straight:checked)
-  label[for="nojs-quote-style-straight"],
+.nojs-style-set:has(#nojs-quote-style-ticked:checked)
+  label[for="nojs-quote-style-ticked"],
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked)
+  label[for="nojs-quote-style-halfticked"],
 .nojs-style-set:has(#nojs-quote-style-book:checked)
   label[for="nojs-quote-style-book"],
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked)
@@ -126,7 +128,7 @@ input[type="radio"] {
 */
 
 .nojs-style-set:has(#nojs-quote-style-none:checked) {
-  --nojs-quote-chars: "“" "”" "‘" "’";
+  --nojs-quote-chars: '"' '"' "\'" "\'";
   * {
     // Initial and Unset are both far, far too sweeping: 
     // all: initial;
@@ -142,7 +144,7 @@ input[type="radio"] {
 */
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked) {
-  --nojs-quote-chars: "“" "”" "‘" "’";
+  --nojs-quote-chars: '"' '"' "\'" "\'";
 
     // 'hr {all: revert;}' makes hr's (xcpt the 2 framing the title) shrink to 
     // a point, because it disables the browser's styling. Oddly, 
@@ -161,10 +163,45 @@ input[type="radio"] {
    ====================
 */
 
-.nojs-style-set:has(#nojs-quote-style-straight:checked),
+.nojs-style-set:has(#nojs-quote-style-ticked:checked),
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked),
 .nojs-style-set:has(#nojs-quote-style-book:checked),
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked),
 .nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+
+  /* ~ ~ ~ ~ ~
+     Quotation mark configuration
+     ~ ~ ~ ~ ~ 
+  */
+
+  blockquote,
+  .dek,
+  i.so-called, 
+  i.nickname,
+  cite.article-title, 
+  cite.like-article-title {
+    quotes: var(--nojs-quote-chars);
+  }  
+  blockquote::before,
+  .dek::before,
+  i.so-called::before, 
+  i.nickname::before,
+  cite.article-title::before, 
+  cite.like-article-title::before {
+    content: open-quote; //"↳";
+    color: var(--nojs-quote-color);
+    font-size: var(--nojs-quote-font-size);
+  }
+  blockquote::after,
+  .dek::after,
+  i.so-called::after, 
+  i.nickname::after,
+  cite.article-title::after, 
+  cite.like-article-title::after {
+    content: close-quote; //"↲";
+    color: var(--nojs-quote-color);
+    font-size: var(--nojs-quote-font-size);
+  }
 
   /* ~ ~ ~ ~ ~
      Large-scale elements: BODY, MAIN, & FOOTER
@@ -264,14 +301,6 @@ input[type="radio"] {
     margin-right: 1rem;
     margin-bottom: 2rem;
   }
-  /*
-  blockquote::before {
-    content: "YYY ";
-  }
-  blockquote::after {
-    content: " ZZZ";
-  }
-  */
 
   /* ~ ~ ~ ~ ~
      Classes for headings: .h2-from-1star, .h3-from-2stars, etc. 
@@ -361,18 +390,35 @@ input[type="radio"] {
 
   i.so-called, 
   i.nickname {
+    color: yellow;
+  }
+  cite.article-title, 
+  cite.like-article-title {
+    color: green;
+  }
 
+  /* ~ ~ ~ ~ ~
+     Span-level elements or classes ill-suited for the above
+     ~ ~ ~ ~ ~ 
+  */
 
-
-
-
-
+  cite.media-title, 
+  cite.special-citation {
+    color: cyan;
+  }
+  abbr {
+    text-decoration: underline dotted;
   }
 
 }
 
-.nojs-style-set:has(#nojs-quote-style-straight:checked) {
-  --nojs-quote-chars: '"' '"' "\'" "\'";
+.nojs-style-set:has(#nojs-quote-style-ticked:checked) {
+  // 0x2035 &bprime, 0x2032 &prime, etc.:
+  --nojs-quote-chars: "‵‵" "′′" "‵" "′";
+}
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+  // 0x2035 &bprime, 0x2032 &prime, etc.:
+  --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
 }
 .nojs-style-set:has(#nojs-quote-style-book:checked) {
   // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
@@ -382,9 +428,9 @@ input[type="radio"] {
   --nojs-quote-chars: "«" "»" "‹" "›";
 }
 .nojs-style-set:has(#nojs-quote-style-exagg:checked) {
-  // 0x2035 &bprime, 0x2032 &prime, etc.:
-  --nojs-quote-chars: "‵‵" "′′" "‵" "′";
-  --nojs-quote-color: cyan;
+  --nojs-quote-chars: '❝' '❞' "❛" "❜";
+  --nojs-quote-color: red;
+  --nojs-quote-font-size: 3rem;
 }
 
 // 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
@@ -395,6 +441,8 @@ p {
 
 /* Start of: The following is necessary in order to override the assignment 
    of "quotes: none" in reset.scss (lines 86 and 91)
+
+no queues in src!
 */
 
     q {
@@ -409,8 +457,6 @@ p {
 
 /* End of: The following is ... (lines 86 and 91)
 */
-
-// cite.article-title is no longer used, but should be. TODO
 
 /* DELME
 

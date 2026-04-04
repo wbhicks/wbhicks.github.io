@@ -4,13 +4,23 @@
 {{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
 
-{{- /* There's no need for a "CASE a", because article titles are inferred
-       from regexps in the partial template named prefixed-blocks.html
+{{ if (eq $classifier "a") }}
+{{- /* CASE a is span-level only */ -}}
+{{- /* CASE a: For the typically quoted title/headline of an article or whitepaper.
 
-       !!!!!!! BUT !!!!!!!! Three Theories That Explain This Strange Moment
+       Article titles that are in 4-hash headings are inferred via regexps 
+       in the partial template named prefixed-blocks.html, but other
+       references to them require ≤a ... ≥ (e.g., the 2nd occurrence of
+       the article «Three Theories That Explain This Strange Moment».)
+
 */ -}}
-
-{{ if (eq $classifier "b") }}
+  {{ $result = (add 
+      `TMPLT_LATITL ` 
+      $the_content 
+      ` TMPLT_RATITL`
+      ) 
+  }}
+{{ else if (eq $classifier "b") }}
 {{- /* CASE b is span-level only */ -}}
 {{- /* CASE b: For the typically italicized title/name of a book.
 
