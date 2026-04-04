@@ -127,7 +127,6 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-quote-style-none:checked) {
   --nojs-quote-chars: "“" "”" "‘" "’";
-  --nojs-apostrophe-char: "’";
   * {
     // Initial and Unset are both far, far too sweeping: 
     // all: initial;
@@ -144,7 +143,6 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked) {
   --nojs-quote-chars: "“" "”" "‘" "’";
-  --nojs-apostrophe-char: "’";
 
     // 'hr {all: revert;}' makes hr's (xcpt the 2 framing the title) shrink to 
     // a point, because it disables the browser's styling. Oddly, 
@@ -311,7 +309,8 @@ input[type="radio"] {
      ~ ~ ~ ~ ~ 
   */
 
-  .commentary, .url-line {
+  .commentary, 
+  .url-line {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
@@ -326,82 +325,66 @@ input[type="radio"] {
     margin-right: 1rem;
   }
 
+  /* ~ ~ ~ ~ ~
+     Must override the default oblique styling of CITE as follows. (Oblique
+     styling is not automatically applied to the I element.)
+     ~ ~ ~ ~ ~ 
+  */
+
+  cite {
+    font-style: normal;
+  }
+
+  /* ~ ~ ~ ~ ~
+     Span-level "element and class" combinations that are typically oblique
+
+     e.g. the CITE and I elements, but only with classes needing oblique 
+     styling
+     ~ ~ ~ ~ ~ 
+  */
+
+  i.term {
+    color: pink;
+    text-decoration: underline dotted;
+    // font-style: italic;
+  }
+  cite.book-title, 
+  cite.like-book-title {
+    color: purple;
+    text-decoration: underline;
+  }
+
+  /* ~ ~ ~ ~ ~
+     Span-level "element and class" combinations that are typically quoted
+     ~ ~ ~ ~ ~ 
+  */
+
+  i.so-called, 
+  i.nickname {
+
+
+
+
+
+
+  }
+
 }
-
-
-
-
-
-
 
 .nojs-style-set:has(#nojs-quote-style-straight:checked) {
   --nojs-quote-chars: '"' '"' "\'" "\'";
-  --nojs-apostrophe-char: "'";
-  i.synonym,
-  i.term,
-  i.word-as-word,
-  i.logical-statement,
-  cite.book-title,
-  cite.film-title,
-  cite.artwork-title {
-    // override the standard HTML italicization of cite
-    font-style: normal;
-  }
-  i.synonym::before,
-  i.term::before,
-  i.word-as-word::before,
-  i.logical-statement::before,
-  cite.book-title::before,
-  cite.film-title::before,
-  cite.artwork-title::before,
-  i.synonym::after,
-  i.term::after,
-  i.word-as-word::after,
-  i.logical-statement::after,
-  cite.book-title::after,
-  cite.film-title::after,
-  cite.artwork-title::after {
-    content: "_";
-  }
 }
 .nojs-style-set:has(#nojs-quote-style-book:checked) {
   // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
   --nojs-quote-chars: "“" "”" "‘" "’";
-  --nojs-apostrophe-char: "’";
-  i.synonym,
-  i.term,
-  i.word-as-word,
-  i.logical-statement,
-  cite.book-title,
-  cite.film-title,
-  cite.artwork-title {
-    // italicization is automatic for cite but not for i
-    font-style: italic;
-    color: yellow;
-  }
 }
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
   --nojs-quote-chars: "«" "»" "‹" "›";
-  --nojs-apostrophe-char: "’";
 }
 .nojs-style-set:has(#nojs-quote-style-exagg:checked) {
   // 0x2035 &bprime, 0x2032 &prime, etc.:
   --nojs-quote-chars: "‵‵" "′′" "‵" "′";
   --nojs-quote-color: cyan;
-  --nojs-apostrophe-char: "'";
-  --nojs-apostrophe-color: red;
-  i.synonym,
-  i.term,
-  i.word-as-word,
-  i.logical-statement,
-  cite.book-title,
-  cite.film-title,
-  cite.artwork-title {
-    // override the standard HTML italicization of cite
-    font-style: normal;
-    color: red;
-    text-decoration: underline;
-  }
 }
 
 // 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
@@ -409,13 +392,6 @@ input[type="radio"] {
 p {
   margin-bottom: 2rem;
 }
-
-/* ~ ~ ~ ~ ~
-   The Q, CITE, and (sometimes) I elements and associated classes
-
-   i.e., span-level elements that typically use quotation marks
-   ~ ~ ~ ~ ~ 
-*/
 
 /* Start of: The following is necessary in order to override the assignment 
    of "quotes: none" in reset.scss (lines 86 and 91)
@@ -434,60 +410,32 @@ p {
 /* End of: The following is ... (lines 86 and 91)
 */
 
-// article-title is no longer used, but should be. TODO
+// cite.article-title is no longer used, but should be. TODO
 
-cite.article-title, 
-i.so-called, 
-i.nickname {
+/* DELME
 
-  // override the standard HTML italicization of cite
-  font-style: normal;
+    // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Propert
+    // ies/quotes#with_generated_content
 
-  // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Propert
-  // ies/quotes#with_generated_content
-  // For an example of how these are nested across classes (which
-  // requires "... ::before { content: open-quote; ..." etc.),
-  // search my content for the title starting "Tower Of Babble"
-  quotes: var(--nojs-quote-chars); // "«" "»" "‹" "›";
+    // For an example of how these are nested across classes (which
+    // requires "... ::before { content: open-quote; ..." etc.),
+    // search my content for the title starting "Tower Of Babble"
 
-}
-cite.article-title::before, 
+    quotes: var(--nojs-quote-chars);
+
+
     i.so-called::before, 
     i.nickname::before {
   content: open-quote; //"↳";
   color: var(--nojs-quote-color);
 }
-cite.article-title::after, 
+
     i.so-called::after, 
     i.nickname::after {
   content: close-quote; //"↲";
   color: var(--nojs-quote-color);
 }
-
-/* ~ ~ ~ ~ ~
-   The CITE and I elements, but only with classes needing oblique styling
-
-   i.e., span-level elements that typically use italicization
-   ~ ~ ~ ~ ~ 
 */
-
-i.synonym, i.term {
-  color: pink;
-  text-decoration: underline; 
-}
-
-i.word-as-word {
-  color: purple;
-}
-
-i.logical-statement {
-  color: purple;
-  text-decoration: underline dotted;
-}
-
-cite.book-title, cite.film-title, cite.artwork-title {
-  color: red;
-}
 
 /* ~ ~ ~ ~ ~
    Classes for debugging

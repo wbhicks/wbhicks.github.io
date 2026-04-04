@@ -57,8 +57,18 @@ end of comment was here
   {{ $theContent = replaceRE ` TMPLT_RNIKNM` `</i>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LLOGIC ` `<i class="term">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RLOGIC` `</i>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LTITLE ` `<cite class="book-title">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RTITLE` `</cite>`  $theContent }}
+
+  {{ $theContent = replaceRE `TMPLT_LATITL ` `<cite class="article-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RATITL` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LBTITL ` `<cite class="book-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RBTITL` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LCTITL ` `<cite class="like-article-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RCTITL` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LWTITL ` `<cite class="like-book-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RWTITL` `</cite>`  $theContent }}
+
+  {{ $theContent = replaceRE `TMPLT_LMTITL ` `<cite class="media-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RMTITL` `</cite>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LSPECC ` `<cite class="special-citation">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSPECC` `</cite>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LABBRV ` `<abbr>`  $theContent }}

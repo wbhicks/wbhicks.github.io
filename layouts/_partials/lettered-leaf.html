@@ -4,6 +4,12 @@
 {{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
 
+{{- /* There's no need for a "CASE a", because article titles are inferred
+       from regexps in the partial template named prefixed-blocks.html
+
+       !!!!!!! BUT !!!!!!!! Three Theories That Explain This Strange Moment
+*/ -}}
+
 {{ if (eq $classifier "b") }}
 {{- /* CASE b is span-level only */ -}}
 {{- /* CASE b: For the typically italicized title/name of a book.
@@ -12,14 +18,27 @@
 
 */ -}}
   {{ $result = (add 
-      `TMPLT_LTITLE ` 
+      `TMPLT_LBTITL ` 
       $the_content 
-      ` TMPLT_RTITLE`
+      ` TMPLT_RBTITL`
       ) 
   }}
 {{ else if (eq $classifier "c") }}
 {{- /* CASE c is span-level only */ -}}
-{{- /* CASE c: title citations that require special handling, e.g.
+{{- /* CASE c: For the typically quoted title/name of an akin-to-an-article text, e.g. a chapter
+
+         ... one of Chaucer’s ≤bCanterbury Tales≥, ≤cThe Reeve’s Tale≥. ...
+
+*/ -}}
+  {{ $result = (add 
+      `TMPLT_LCTITL ` 
+      $the_content 
+      ` TMPLT_RCTITL`
+      ) 
+  }}
+{{ else if (eq $classifier "??????????") }}
+{{- /* CASE ?????????? is span-level only */ -}}
+{{- /* CASE ??????????: title citations that require special handling, e.g.
 
          ... in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12 ---> <cite class="special-citation">...</cite>
 
@@ -27,10 +46,6 @@
 
          ... a class, ≤cThe Problem of Whiteness≥, and ...
          "Course names are capitalized but not italicized or in quotes." -- https://www.swarthmore.edu/communications-office/editorial-style-guide. But NYT uses quotation marks apparently.
-
-         ... of ≤cNBC Out≥, an ...
-
-         ... one of Chaucer’s ≤wCanterbury Tales≥, ≤cThe Reeve’s Tale≥.
 
 */ -}}
   {{ $result = (add 
@@ -68,6 +83,19 @@
       ` TMPLT_RLOGIC`
       ) 
   }}
+{{ else if (eq $classifier "m") }}
+{{- /* CASE m is span-level only */ -}}
+{{- /* CASE m: For names of media outlets
+
+         ... of ≤mNBC Out≥, an ...
+
+*/ -}}
+  {{ $result = (add 
+      `TMPLT_LMTITL ` 
+      $the_content 
+      ` TMPLT_RMTITL`
+      ) 
+  }}
 {{ else if (eq $classifier "n") }}
 {{- /* CASE n is span-level only */ -}}
 {{- /* CASE n: nicknames, e.g.
@@ -100,17 +128,17 @@
   }}
 {{ else if (eq $classifier "w") }}
 {{- /* CASE w is span-level only */ -}}
-{{- /* CASE w: For the typically italicized title/name of a non-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't.
+{{- /* CASE w: For the typically italicized title/name of an akin-to-a-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't.
 
-       ≤wRubber Soul≥ ---> <cite class="tbd-title">Rubber Soul</cite>
-       TODO: tbd-title ---> magazine-title, film-title, artwork-title etc.
+       ≤wRubber Soul≥ ---> <cite class="like-book-title">Rubber Soul</cite>
+       TODO: like-book-title ---> magazine-title, lp-title, film-title, artwork-title etc.
        ... episode of the CNN [series] ≤wNomad≥. ...
 
 */ -}}
   {{ $result = (add 
-      `TMPLT_LTITLE ` 
+      `TMPLT_LWTITL ` 
       $the_content 
-      ` TMPLT_RTITLE`
+      ` TMPLT_RWTITL`
       ) 
   }}
 {{ else }}

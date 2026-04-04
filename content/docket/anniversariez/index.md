@@ -256,7 +256,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ∂ «Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats»
 
-¢ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of ≤cNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
+¢ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of ≤mNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
 
 > «‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.»
 

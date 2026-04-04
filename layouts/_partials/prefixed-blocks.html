@@ -25,6 +25,7 @@
 
        ^> "..." ---> <blockquote>
 */ -}}
+
 {{ if (eq $prefix "®") }}
   {{ if (partial "whole-str-matches-regex" (dict 
       "pattern" `(.+), writing in (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN under the headline TMPLT_LDGUIL(.+)TMPLT_RDGUIL` 
@@ -38,7 +39,7 @@
     {{ $text = 
         replaceRE
        `(.+), writing in (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN under the headline TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
-       `$1, writing in $2 TMPLT_LPAREN $3 TMPLT_RPAREN under the headline TMPLT_LDGUIL $4 TMPLT_RDGUIL`
+       `$1, writing in $2 TMPLT_LPAREN $3 TMPLT_RPAREN under the headline TMPLT_LATITL $4 TMPLT_RATITL`
         $text
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
@@ -54,7 +55,7 @@
     {{ $text = 
         replaceRE
        `Published by (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN: TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
-       `Published by $1 TMPLT_LPAREN $2 TMPLT_RPAREN: TMPLT_LDGUIL $3 TMPLT_RDGUIL`
+       `Published by $1 TMPLT_LPAREN $2 TMPLT_RPAREN: TMPLT_LATITL $3 TMPLT_RATITL`
         $text
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
@@ -70,7 +71,7 @@
     {{ $text = 
         replaceRE
        `Source: TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)`
-       `Source: TMPLT_LDGUIL $1 TMPLT_RDGUIL by $2`
+       `Source: TMPLT_LATITL $1 TMPLT_RATITL by $2`
         $text
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
@@ -88,7 +89,7 @@
     {{ $text = 
         replaceRE
        `Source: ≤b([^_]+)≥ by (.+)`
-       `Source: <cite class="book-title">$1</cite> by $2`
+       `Source: TMPLT_LBTITL $1 TMPLT_RBTITL by $2`
         $text
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
@@ -104,7 +105,7 @@
     {{ $text = 
         replaceRE
        `Source: Wikipedia, TMPLT_LDGUIL(.+)TMPLT_RDGUIL`
-       `Source: Wikipedia, TMPLT_LDGUIL $1 TMPLT_RDGUIL`
+       `Source: Wikipedia, TMPLT_LATITL $1 TMPLT_RATITL`
         $text
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
@@ -120,7 +121,7 @@
     {{ $text = 
         replaceRE
        `Source: (.+), TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)`
-       `Source: $1, TMPLT_LDGUIL $2 TMPLT_RDGUIL by $3`
+       `Source: $1, TMPLT_LATITL $2 TMPLT_RATITL by $3`
         $text
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
