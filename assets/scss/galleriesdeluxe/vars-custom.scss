@@ -48,3 +48,14 @@ $font_family_serif:
   Georgia, Charter, "Bitstream Charter", serif !default;
 $font_family_sans_serif: 
   Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
+
+/* $font_size_base seems redundant. In Galleries Deluxe, it's:
+
+     $font_size_base: 16px !default;
+
+   ... which seems to be the same as the 1rem value I use below:
+
+$font_size_base: 1rem !default;
+*/
+
+

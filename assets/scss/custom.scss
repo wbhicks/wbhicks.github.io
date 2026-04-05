@@ -10,6 +10,13 @@ $font_family_serif:
 $font_family_sans_serif: 
   Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
 
+/* $font_size_base must also be duplicated between here and vars-custom.scss.
+
+   Update: no point in using it at all. Commenting out:
+
+$font_size_base: 1rem !default;
+*/
+
 /* ~ ~ ~ ~ ~
    Start of font toggle. See also toggle.html. This mixin, and its inclusion in
    both declaration blocks, is needed to prevent the two styles from becoming
