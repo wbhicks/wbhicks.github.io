@@ -57,6 +57,8 @@ body.sans-mode main * {
     h1, h2, h3, h4, h5 { color: #0f0; } // else color-text_ ...
     p                  { color: #ff0; } // else color-text_ ...
     .design-hint       { color: #f0f; }
+    
+    --nojs-asterism-display: block;
   }
 }
 body.qa-mode, 
@@ -128,14 +130,50 @@ input[type="radio"] {
 */
 
 .nojs-style-set:has(#nojs-quote-style-none:checked) {
-  --nojs-quote-chars: '"' '"' "\'" "\'";
   * {
-    // Initial and Unset are both far, far too sweeping: 
+    // "initial" and "unset" are both far, far too sweeping: 
     // all: initial;
     // all: unset;
-    // Revert certainly does the job:
+    // ... but "revert" does a thorough yet reasonable job:
     all: revert;
   }
+}
+
+/* ====================
+   Values common to all styles beyond NONE
+   ====================
+*/
+
+.nojs-style-set:has(#nojs-quote-style-minimal:checked),
+.nojs-style-set:has(#nojs-quote-style-ticked:checked),
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked),
+.nojs-style-set:has(#nojs-quote-style-book:checked),
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked),
+.nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  /* ~ ~ ~ ~ ~
+     Must override the default oblique styling of CITE as follows. (Oblique
+     styling is not automatically applied to the I element.)
+     ~ ~ ~ ~ ~ 
+  */
+
+  cite {
+    font-style: normal;
+  }
+
+  /* ~ ~ ~ ~ ~
+     Classes for debugging
+     ~ ~ ~ ~ ~ 
+  */
+
+  .design-hint {
+    color: #222; 
+  }
+
 }
 
 /* ====================
@@ -171,10 +209,42 @@ input[type="radio"] {
 
   /* ~ ~ ~ ~ ~
      Quotation mark configuration
+
+     Q.: Why aren't the BLOCKQUOTE and Q elements automatically surrounded
+         by quotation marks?
+
+     A.: Because the module Galleries Deluxe is installed in this 
+         Hugo-generated site. Galleries Deluxe includes the following CSS 
+         starting on line 86 of reset.scss:
+
+           blockquote,
+           q {
+             quotes: none;
+           }
+
+           blockquote:before,
+           blockquote:after,
+           q:before,
+           q:after {
+             content: "";
+             content: none;
+           }
+
+     ... Source file: https://github.com/bep/galleriesdeluxe/blob/main/asse
+         ts/scss/galleriesdeluxe/reset.scss
+
+     To override this effect and cause quotation marks to appear, other values
+     must be assigned to (1) the quotes property and (2) the content property.
+     This must be done for both elements: BLOCKQUOTE and Q.
+
+     cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Prope
+         rties/quotes#with_generated_content
+
      ~ ~ ~ ~ ~ 
   */
 
   blockquote,
+  q,
   .dek,
   i.so-called, 
   i.nickname,
@@ -183,22 +253,24 @@ input[type="radio"] {
     quotes: var(--nojs-quote-chars);
   }  
   blockquote::before,
+  q::before,
   .dek::before,
   i.so-called::before, 
   i.nickname::before,
   cite.article-title::before, 
   cite.like-article-title::before {
-    content: open-quote; //"↳";
+    content: open-quote; // used to be "↳";
     color: var(--nojs-quote-color);
     font-size: var(--nojs-quote-font-size);
   }
   blockquote::after,
+  q::after,
   .dek::after,
   i.so-called::after, 
   i.nickname::after,
   cite.article-title::after, 
   cite.like-article-title::after {
-    content: close-quote; //"↲";
+    content: close-quote; // used to be "↲";
     color: var(--nojs-quote-color);
     font-size: var(--nojs-quote-font-size);
   }
@@ -316,6 +388,11 @@ input[type="radio"] {
     text-align: center;
     color: #777;
     line-height: 1;
+
+    /* "none" iff --nojs-asterism-display is undefined.
+       "none" means element is hidden and takes no space.
+    */
+    display: var(--nojs-asterism-display, none);
   }
   .h2-from-1star, 
   .h3-from-2stars, 
@@ -352,16 +429,6 @@ input[type="radio"] {
   .fisheye-means-rightmost {
     text-align: right;
     margin-right: 1rem;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Must override the default oblique styling of CITE as follows. (Oblique
-     styling is not automatically applied to the I element.)
-     ~ ~ ~ ~ ~ 
-  */
-
-  cite {
-    font-style: normal;
   }
 
   /* ~ ~ ~ ~ ~
@@ -434,63 +501,6 @@ input[type="radio"] {
 }
 
 // 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
-
-p {
-  margin-bottom: 2rem;
-}
-
-/* Start of: The following is necessary in order to override the assignment 
-   of "quotes: none" in reset.scss (lines 86 and 91)
-
-no queues in src!
-*/
-
-    q {
-      quotes: "«" "»" "‹" "›";
-      //quotes: var(--nojs-quote-chars);
-    }
-
-    q::before, q::after {
-      content: revert;
-      color: var(--nojs-quote-color);
-    }
-
-/* End of: The following is ... (lines 86 and 91)
-*/
-
-/* DELME
-
-    // cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Propert
-    // ies/quotes#with_generated_content
-
-    // For an example of how these are nested across classes (which
-    // requires "... ::before { content: open-quote; ..." etc.),
-    // search my content for the title starting "Tower Of Babble"
-
-    quotes: var(--nojs-quote-chars);
-
-
-    i.so-called::before, 
-    i.nickname::before {
-  content: open-quote; //"↳";
-  color: var(--nojs-quote-color);
-}
-
-    i.so-called::after, 
-    i.nickname::after {
-  content: close-quote; //"↲";
-  color: var(--nojs-quote-color);
-}
-*/
-
-/* ~ ~ ~ ~ ~
-   Classes for debugging
-   ~ ~ ~ ~ ~ 
-*/
-
-.design-hint {
-  color: #222; 
-}
 
 /* +--------------------------------------+
    |                                      |
