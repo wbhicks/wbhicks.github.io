@@ -123,8 +123,10 @@ input[type="radio"] {
   label[for="nojs-quote-style-book"],
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked)
   label[for="nojs-quote-style-guillemet"],
-.nojs-style-set:has(#nojs-quote-style-exagg:checked)
-  label[for="nojs-quote-style-exagg"] {
+.nojs-style-set:has(#nojs-quote-style-ornament:checked)
+  label[for="nojs-quote-style-ornament"],
+.nojs-style-set:has(#nojs-quote-style-rococo:checked)
+  label[for="nojs-quote-style-rococo"] {
   background: #ccae8f !important;
   // #ccae8f and #335170 are RGB opposites
   color: #335170 !important;
@@ -156,7 +158,8 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-halfticked:checked),
 .nojs-style-set:has(#nojs-quote-style-book:checked),
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked),
-.nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
 
   p {
     margin-bottom: 2rem;
@@ -212,7 +215,8 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-halfticked:checked),
 .nojs-style-set:has(#nojs-quote-style-book:checked),
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked),
-.nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
 
   /* ~ ~ ~ ~ ~
      Quotation mark configuration
@@ -250,7 +254,7 @@ input[type="radio"] {
      ~ ~ ~ ~ ~ 
   */
 
-  blockquote,
+  // blockquote,
   q,
   .dek,
   i.so-called, 
@@ -258,8 +262,12 @@ input[type="radio"] {
   cite.article-title, 
   cite.like-article-title {
     quotes: var(--nojs-quote-chars);
-  }  
-  blockquote::before,
+    // position the pseudo-elements relative to the element, not relative
+    // to the viewport:
+    // position: relative;
+  }
+
+  // blockquote::before,
   q::before,
   .dek::before,
   i.so-called::before, 
@@ -268,9 +276,10 @@ input[type="radio"] {
   cite.like-article-title::before {
     content: open-quote; // used to be "↳";
     color: var(--nojs-quote-color);
-    font-size: var(--nojs-quote-font-size);
+    font-size: var(--nojs-quotation-mark-font-size);
   }
-  blockquote::after,
+
+  // blockquote::after,
   q::after,
   .dek::after,
   i.so-called::after, 
@@ -279,7 +288,7 @@ input[type="radio"] {
   cite.like-article-title::after {
     content: close-quote; // used to be "↲";
     color: var(--nojs-quote-color);
-    font-size: var(--nojs-quote-font-size);
+    font-size: var(--nojs-quotation-mark-font-size);
   }
 
   /* ~ ~ ~ ~ ~
@@ -501,10 +510,88 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
   --nojs-quote-chars: "«" "»" "‹" "›";
 }
-.nojs-style-set:has(#nojs-quote-style-exagg:checked) {
+
+/* ====================
+   The ORNAMENT Style
+   ====================
+*/
+
+.nojs-style-set:has(#nojs-quote-style-ornament:checked) {
+
   --nojs-quote-chars: '❝' '❞' "❛" "❜";
-  --nojs-quote-color: red;
-  --nojs-quote-font-size: 3rem;
+  --nojs-quote-color: #808080;
+  --nojs-quotation-mark-font-size: 1.7rem;
+
+  blockquote {
+    line-height: 2;
+  }
+
+  q::before,
+  .dek::before,
+  i.so-called::before, 
+  i.nickname::before,
+  cite.article-title::before, 
+  cite.like-article-title::before {
+    position: relative;
+    // top: 0.4rem;
+    // left: -1.5rem;
+    vertical-align: -0.2rem;
+    line-height: 1;
+  }
+
+  q::after,
+  .dek::after,
+  i.so-called::after, 
+  i.nickname::after,
+  cite.article-title::after, 
+  cite.like-article-title::after {
+    position: relative;
+    // top: 0.4rem;
+    vertical-align: -0.2rem;
+    line-height: 1;
+  }
+
+}
+
+/* ====================
+   The ROCOCO Style
+   ====================
+*/
+
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+  --nojs-quote-chars: '❝' '❞' "❛" "❜";
+  --nojs-quote-color: deeppink;
+  --nojs-quotation-mark-font-size: 1.7rem;
+
+  blockquote {
+    line-height: 2;
+  }
+
+  q::before,
+  .dek::before,
+  i.so-called::before, 
+  i.nickname::before,
+  cite.article-title::before, 
+  cite.like-article-title::before {
+    position: relative;
+    // top: 0.4rem;
+    // left: -1.5rem;
+    vertical-align: -0.2rem;
+    line-height: 1;
+  }
+
+  q::after,
+  .dek::after,
+  i.so-called::after, 
+  i.nickname::after,
+  cite.article-title::after, 
+  cite.like-article-title::after {
+    position: relative;
+    // top: 0.4rem;
+    vertical-align: -0.2rem;
+    line-height: 1;
+  }
+
 }
 
 // 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
