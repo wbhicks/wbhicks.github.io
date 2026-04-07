@@ -134,7 +134,7 @@ input[type="radio"] {
 }
 
 /* ====================
-   The NONE Style
+   The NONE mini-theme
    ====================
 */
 
@@ -146,6 +146,311 @@ input[type="radio"] {
     // ... but "revert" does a thorough yet reasonable job:
     all: revert;
   }
+}
+
+/* ====================
+   Foundational elements: BODY, MAIN, FOOTER, & P
+   ====================
+*/
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  body * {
+    line-height: 1.5;
+  }
+
+  body main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  /* Side padding for footer is already 
+     at 1rem (because of Galleries Deluxe?) 
+  */
+  body footer {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+}
+
+/* ====================
+   Elements for lists: OL, UL, & LI
+   ====================
+*/
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  ol {
+    /* Override assignment of "disc" in styles.scss, which would make ol's 
+       resemble ul's: 
+    */
+    list-style-type: decimal !important;
+    list-style-position: outside !important; /* Is "inside" better? */
+    /* padding-left: 1rem; */
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    /* padding-left: 1rem; */
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  body main ul > li {
+    list-style-type: circle;
+  }
+  body main ul > li > ul > li {
+    list-style-type: disc;
+  }
+  body main ul > li > ul > li > ul > li {
+    list-style-type: square;
+  }
+  body main ul > li > ul > li > ul > li > ul > li {
+    list-style-type: circle;
+  }
+  body main ul > li > ul > li > ul > li > ul > li > ul > li {
+    list-style-type: disc;
+  }
+
+}
+
+/* ====================
+   Classes for headings: .h2-from-1star, .h3-from-2stars, etc.
+
+   The class .asterism is also defined here, because it's used only above and
+   below headings.
+   ====================
+*/
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  .asterism {
+    font-family: monospace;
+    white-space-collapse: preserve;
+    text-align: center;
+    color: #777;
+    line-height: 1;
+
+    /* "none" iff --nojs-asterism-display is undefined.
+       "none" means element is hidden and takes no space.
+    */
+    display: var(--nojs-asterism-display, none);
+  }
+
+  .h2-from-1star, 
+  .h3-from-2stars, 
+  .h4-from-3stars {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+  }
+  .h5-from-4stars {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+}
+
+/* ====================
+   Elements for preformatted blocks: PRE, CODE, SAMP, & KBD
+
+     "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
+     represent computer code, computer output, and user input, respectively.
+     ... To represent multiple lines of code, wrap the <code> element within 
+     a <pre> element. The <code> element by itself only represents a single 
+     phrase of code or line of code."
+  
+     Source: https://developer.mozilla.org/en-US/do
+             cs/Web/HTML/Reference/Elements/pre
+   ====================
+*/
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  body pre code {
+    /* margin-left affects 1st line only, unless "display: block" is also used 
+    */
+    display: block;
+    margin-left: 1rem;
+  
+    /* This font-family line has no effect when font_family_sans_serif is in
+       effect. Therefore, to see ASCII art, either (a) specify a monospace font
+       for font_family_sans_serif or (b) stay toggled to font_family_serif. 
+    */
+    font-family: monospace !important;
+  
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+}
+
+/* ====================
+   Misc. block-level elements & classes
+   ====================
+*/
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  .commentary, 
+  .url-line {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  .dek {
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  .fisheye-means-rightmost {
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+}
+
+/* ====================
+   Span-level elements & classes
+   ====================
+*/
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  /* - - - - -
+     Overriding the default oblique styling of CITE as follows, because
+     not all CITEs shall be slanted. (Some will be in quotation marks.)
+
+     p.s. Oblique styling is not automatically applied to the I element.
+     - - - - -
+  */
+
+  cite {
+    font-style: normal;
+  }
+
+  /* - - - - -
+     Span-level "element and class" combinations that are typically oblique
+     - - - - -
+  */
+
+  i.term {
+    color: pink;
+    text-decoration: underline dotted;
+    // font-style: italic;
+  }
+  cite.book-title, 
+  cite.like-book-title {
+    color: purple;
+    text-decoration: underline;
+  }
+
+  /* - - - - -
+     Span-level "element and class" combinations that are typically quoted
+     - - - - -
+  */
+
+  i.so-called, 
+  i.nickname {
+    color: yellow;
+  }
+  cite.article-title, 
+  cite.like-article-title {
+    color: green;
+  }
+
+  /* - - - - -
+     Other span-level elements or classes
+     - - - - -
+  */
+
+  cite.media-title, 
+  cite.special-citation {
+    color: cyan;
+  }
+  abbr {
+    text-decoration: underline dotted;
+  }
+  .design-hint {
+    color: #222; 
+  }
+
+}
+
+/* ====================
+   BLOCKQUOTE
+   ====================
+*/
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+  /* ~ ~ ~ ~ ~
+     Included: the ORNAMENT & ROCOCO mini-themes
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+
+  blockquote {
+    line-height: 2;
+  }
+
 }
 
 /* ====================
@@ -161,28 +466,6 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-ornament:checked),
 .nojs-style-set:has(#nojs-quote-style-rococo:checked) {
 
-  p {
-    margin-bottom: 2rem;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Must override the default oblique styling of CITE as follows. (Oblique
-     styling is not automatically applied to the I element.)
-     ~ ~ ~ ~ ~ 
-  */
-
-  cite {
-    font-style: normal;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Classes for debugging
-     ~ ~ ~ ~ ~ 
-  */
-
-  .design-hint {
-    color: #222; 
-  }
 
 }
 
@@ -221,7 +504,7 @@ input[type="radio"] {
   /* ~ ~ ~ ~ ~
      Quotation mark configuration
 
-     Q.: Why aren't the BLOCKQUOTE and Q elements automatically surrounded
+     Q.: Why aren't the Q and BLOCKQUOTE elements automatically surrounded
          by quotation marks?
 
      A.: Because the module Galleries Deluxe is installed in this 
@@ -246,7 +529,7 @@ input[type="radio"] {
 
      To override this effect and cause quotation marks to appear, other values
      must be assigned to (1) the quotes property and (2) the content property.
-     This must be done for both elements: BLOCKQUOTE and Q.
+     Do this for either or both elements, as desired: Q and BLOCKQUOTE.
 
      cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Prope
          rties/quotes#with_generated_content
@@ -254,7 +537,6 @@ input[type="radio"] {
      ~ ~ ~ ~ ~ 
   */
 
-  // blockquote,
   q,
   .dek,
   i.so-called, 
@@ -267,7 +549,6 @@ input[type="radio"] {
     // position: relative;
   }
 
-  // blockquote::before,
   q::before,
   .dek::before,
   i.so-called::before, 
@@ -279,7 +560,6 @@ input[type="radio"] {
     font-size: var(--nojs-quotation-mark-font-size);
   }
 
-  // blockquote::after,
   q::after,
   .dek::after,
   i.so-called::after, 
@@ -289,208 +569,6 @@ input[type="radio"] {
     content: close-quote; // used to be "↲";
     color: var(--nojs-quote-color);
     font-size: var(--nojs-quotation-mark-font-size);
-  }
-
-  /* ~ ~ ~ ~ ~
-     Large-scale elements: BODY, MAIN, & FOOTER
-     ~ ~ ~ ~ ~ 
-  */
-  
-  body * {
-    line-height: 1.5;
-  }
-  body main {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-  }
-  /* Side padding for footer is already 
-     at 1rem (because of Galleries Deluxe?) 
-  */
-  body footer {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Elements for lists: OL, UL, LI 
-     ~ ~ ~ ~ ~ 
-  */
-  
-  ol {
-    /* Override assignment of "disc" in styles.scss, which would make ol's 
-       resemble ul's: 
-    */
-    list-style-type: decimal !important;
-    list-style-position: outside !important; /* Is "inside" better? */
-    /* padding-left: 1rem; */
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  ul {
-    /* padding-left: 1rem; */
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  body main ul > li {
-    list-style-type: circle;
-  }
-  body main ul > li > ul > li {
-    list-style-type: disc;
-  }
-  body main ul > li > ul > li > ul > li {
-    list-style-type: square;
-  }
-  body main ul > li > ul > li > ul > li > ul > li {
-    list-style-type: circle;
-  }
-  body main ul > li > ul > li > ul > li > ul > li > ul > li {
-    list-style-type: disc;
-  }
-
-  /* ~ ~ ~ ~ ~
-     The PRE, CODE, SAMP, and KBD elements 
-     ~ ~ ~ ~ ~ 
-  */
-  
-  /* "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
-     represent computer code, computer output, and user input, respectively.
-     ... To represent multiple lines of code, wrap the <code> element within 
-     a <pre> element. The <code> element by itself only represents a single 
-     phrase of code or line of code."
-  
-     Source: https://developer.mozilla.org/en-US/do
-             cs/Web/HTML/Reference/Elements/pre
-  */
-  body pre code {
-    /* margin-left affects 1st line only, unless "display: block" is also used 
-    */
-    display: block;
-    margin-left: 1rem;
-  
-    /* This font-family line has no effect when font_family_sans_serif is in
-       effect. Therefore, to see ASCII art, either (a) specify a monospace font
-       for font_family_sans_serif or (b) stay toggled to font_family_serif. 
-    */
-    font-family: monospace !important;
-  
-    white-space-collapse: preserve;
-    text-wrap-mode: nowrap;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Other block-level elements
-     ~ ~ ~ ~ ~ 
-  */
-
-  blockquote {
-    margin-left: 3rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Classes for headings: .h2-from-1star, .h3-from-2stars, etc. 
-  
-     The class .asterism is also defined here, because it's used only above and
-     below headings
-     ~ ~ ~ ~ ~ 
-  */
-  
-  .asterism {
-    font-family: monospace;
-    white-space-collapse: preserve;
-    text-align: center;
-    color: #777;
-    line-height: 1;
-
-    /* "none" iff --nojs-asterism-display is undefined.
-       "none" means element is hidden and takes no space.
-    */
-    display: var(--nojs-asterism-display, none);
-  }
-  .h2-from-1star, 
-  .h3-from-2stars, 
-  .h4-from-3stars {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 2rem;
-  }
-  .h5-from-4stars {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Block-level classes unrelated to headings
-     ~ ~ ~ ~ ~ 
-  */
-
-  .commentary, 
-  .url-line {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-  }
-  .dek {
-    margin-left: 3rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-  }
-  .fisheye-means-rightmost {
-    text-align: right;
-    margin-right: 1rem;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Span-level "element and class" combinations that are typically oblique
-
-     e.g. the CITE and I elements, but only with classes needing oblique 
-     styling
-     ~ ~ ~ ~ ~ 
-  */
-
-  i.term {
-    color: pink;
-    text-decoration: underline dotted;
-    // font-style: italic;
-  }
-  cite.book-title, 
-  cite.like-book-title {
-    color: purple;
-    text-decoration: underline;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Span-level "element and class" combinations that are typically quoted
-     ~ ~ ~ ~ ~ 
-  */
-
-  i.so-called, 
-  i.nickname {
-    color: yellow;
-  }
-  cite.article-title, 
-  cite.like-article-title {
-    color: green;
-  }
-
-  /* ~ ~ ~ ~ ~
-     Span-level elements or classes ill-suited for the above
-     ~ ~ ~ ~ ~ 
-  */
-
-  cite.media-title, 
-  cite.special-citation {
-    color: cyan;
-  }
-  abbr {
-    text-decoration: underline dotted;
   }
 
 }
@@ -521,10 +599,6 @@ input[type="radio"] {
   --nojs-quote-chars: '❝' '❞' "❛" "❜";
   --nojs-quote-color: #808080;
   --nojs-quotation-mark-font-size: 1.7rem;
-
-  blockquote {
-    line-height: 2;
-  }
 
   q::before,
   .dek::before,
@@ -562,10 +636,6 @@ input[type="radio"] {
   --nojs-quote-chars: '❝' '❞' "❛" "❜";
   --nojs-quote-color: deeppink;
   --nojs-quotation-mark-font-size: 1.7rem;
-
-  blockquote {
-    line-height: 2;
-  }
 
   q::before,
   .dek::before,
