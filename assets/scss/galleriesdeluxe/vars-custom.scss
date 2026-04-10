@@ -21,7 +21,13 @@
    font toggle.
 */
 
-// Start of color variables
+/* +------------------------------------+
+   |                                    |
+   |  Start of variables duplicated in  |
+   |  vars-custom.scss and custom.scss  |
+   |                                    |
+   +------------------------------------+
+*/
 
 // The Galleries Deluxe default for color_primary is #3a98b9
 
@@ -35,13 +41,7 @@ $color_background_footer: #171717; // was darken(#111, 3%);
 $color-text_dark: #000;
 $color-text_light: #ccc2b8;
 
-// End of color variables
-
-/* This pair of font-family variables is copied over from custom.scss.
-   Reason for duplication is detailed there. If you change it here, change it
-   there too.
-
-   I'm treating Courier as sans-serif even though it's not (it's slab-serif),
+/* I'm treating Courier as sans-serif even though it's not (it's slab-serif),
    because it's monospaced. TODO: make UI label say "mono" instead of "sans"
 */
 $font_family_serif: 
@@ -49,13 +49,13 @@ $font_family_serif:
 $font_family_sans_serif: 
   Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
 
-/* $font_size_base seems redundant. In Galleries Deluxe, it's:
-
-     $font_size_base: 16px !default;
-
-   ... which seems to be the same as the 1rem value I use below:
-
-$font_size_base: 1rem !default;
+/* In Galleries Deluxe:
+   $font_size_base: 16px !default;
 */
 
-
+/* +-------------------------------+
+   |                               |
+   |  End of duplicated variables  |
+   |                               |
+   +-------------------------------+
+*/

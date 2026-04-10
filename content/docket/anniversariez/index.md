@@ -190,7 +190,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ David Corn succinctly recaps the help Trump chose to lend Putin in 2016:
 
-> «Yet the focus on collusion and the Steele material has been a purposeful distraction meant to obscure the basics of the scandal: Vladimir Putin attacked the 2016 election in part to help Trump win, and Trump and his aides aided and abetted this assault on American democracy by denying such an attack was happening. Trump provided cover for a foreign adversary subverting a US election.»
+> <q>Yet the focus on collusion and the Steele material has been a purposeful distraction meant to obscure the basics of the scandal: Vladimir Putin attacked the 2016 election in part to help Trump win, and Trump and his aides aided and abetted this assault on American democracy by denying such an attack was happening. Trump provided cover for a foreign adversary subverting a US election.</q>
 
 #### Observance: Groundhog Day
 

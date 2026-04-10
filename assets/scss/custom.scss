@@ -1,8 +1,26 @@
-/* This pair of font-family variables is copied over from vars-custom.scss.
-   Reason for duplication is detailed there. If you change it here, change it
-   there too.
+// 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
-   I'm treating Courier as sans-serif even though it's not (it's slab-serif),
+/* +------------------------------------+
+   |                                    |
+   |  Start of variables duplicated in  |
+   |  vars-custom.scss and custom.scss  |
+   |                                    |
+   +------------------------------------+
+*/
+
+// The Galleries Deluxe default for color_primary is #3a98b9
+
+$color_primary: #ccae8f;
+$color_background: #0e0e0e;
+$color_background_footer: #171717; // was darken(#111, 3%);
+
+// The lightness of color_background
+// determines which of these two is used:
+
+$color-text_dark: #000;
+$color-text_light: #ccc2b8;
+
+/* I'm treating Courier as sans-serif even though it's not (it's slab-serif),
    because it's monospaced. TODO: make UI label say "mono" instead of "sans"
 */
 $font_family_serif: 
@@ -10,20 +28,33 @@ $font_family_serif:
 $font_family_sans_serif: 
   Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
 
-/* $font_size_base must also be duplicated between here and vars-custom.scss.
-
-   Update: no point in using it at all. Commenting out:
-
-$font_size_base: 1rem !default;
+/* In Galleries Deluxe:
+   $font_size_base: 16px !default;
 */
 
-/* ~ ~ ~ ~ ~
-   Start of font toggle. See also toggle.html. This mixin, and its inclusion in
-   both declaration blocks, is needed to prevent the two styles from becoming
-   swapped when the page loads with the toggle in the "wrong" setting:
-   ~ ~ ~ ~ ~ 
+/* +-------------------------------+
+   |                               |
+   |  End of duplicated variables  |
+   |                               |
+   +-------------------------------+
 */
 
+/* The following colors are not defined in Galleries Deluxe, so they don't need
+   to be duplicated in vars-custom.scss:
+*/
+
+$color_rgb_opposite_of_primary: #335170;
+$color_button_foreground_unselected: #ccc;
+$color_button_background_unselected: #333;
+$color_button_foreground_selected: $color_primary;
+$color_button_background_selected: $color_rgb_opposite_of_primary;
+
+/* ====================
+   Start of font toggle. See also toggle.html. This mixin prevents the two
+   styles from becoming swapped when the page loads with the toggle in the
+   "wrong" setting:
+   ====================
+*/
 @mixin serif-or-sans($the-serif-toggle: true) {
   @if $the-serif-toggle {
     font-family: $font_family_serif;	
@@ -35,27 +66,23 @@ body.serif-mode,
 body.serif-mode main * {
   // Without the inclusion, the styles 
   // may get swapped on a page reload:
-  // font-family: $font_family_serif; // unnecessary
   @include serif-or-sans($the-serif-toggle: true);
 }
 body.sans-mode, 
 body.sans-mode main * {
   // Without the inclusion, the styles 
   // may get swapped on a page reload:
-  // font-family: $font_family_sans_serif; // unnecessary
   @include serif-or-sans($the-serif-toggle: false);
 }
-
-/* ~ ~ ~ ~ ~
+/* ====================
    End of font toggle
-   ~ ~ ~ ~ ~ 
+   ====================
 */
 
-/* ~ ~ ~ ~ ~
+/* ====================
    Start of garish colors toggle (see also toggle.html)
-   ~ ~ ~ ~ ~ 
+   ====================
 */
-
 @mixin qa-or-dev($the-color-toggle: true) {
   @if $the-color-toggle {
     a                  { color: #f00; } // else color_primary
@@ -76,61 +103,76 @@ body.dev-mode,
 body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
 }
-
-/* ~ ~ ~ ~ ~
+/* ====================
    End of garish colors toggle 
-   ~ ~ ~ ~ ~ 
+   ====================
 */
 
-/* +----------------------------------------+
-   |                                        |
-   |  Start of No-JS theming configuration  |
-   |                                        |
-   +----------------------------------------+
+/* +---------------------------------------------+
+   |                                             |
+   |  Start of No-JS mimi-theming configuration  |
+   |                                             |
+   +---------------------------------------------+
 */
 
-// Hide the radio buttons:
+/* ====================
+   The row of radio buttons to select a mini-theme
+   ====================
+*/
 input[type="radio"] {
-  //size: 1px;
-  //width: 1px;
-  height: 1.5rem;
-  //        display: flex; //block;
-  //all: unset; //initial; // revert ; //;
+  height: 2rem;
 }
-
-// Style the labels as buttons:
 .theme-selector label {
-  cursor: pointer;
   padding: 0.3rem 1rem;
-  margin: 1px 1px;
-  border-radius: 2rem;
-  background: #333;
-  color: #ccc2b8;
+  border-radius: 1rem;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.5s;
+  color:      $color_button_foreground_unselected;
+  background: $color_button_background_unselected;
+}
+.nojs-style-set:has(#nojs-quote-style-none:checked)
+      label[for="nojs-quote-style-none"],
+.nojs-style-set:has(#nojs-quote-style-minimal:checked)
+      label[for="nojs-quote-style-minimal"],
+.nojs-style-set:has(#nojs-quote-style-ticked:checked)
+      label[for="nojs-quote-style-ticked"],
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked)
+      label[for="nojs-quote-style-halfticked"],
+.nojs-style-set:has(#nojs-quote-style-book:checked)
+      label[for="nojs-quote-style-book"],
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked)
+      label[for="nojs-quote-style-guillemet"],
+.nojs-style-set:has(#nojs-quote-style-ornament:checked)
+      label[for="nojs-quote-style-ornament"],
+.nojs-style-set:has(#nojs-quote-style-rococo:checked)
+      label[for="nojs-quote-style-rococo"] {
+  color: $color_button_foreground_selected;
+  background: $color_button_background_selected;
+
+
+  text-decoration: underline dotted;
 }
 
-// Highlight active label:
 .nojs-style-set:has(#nojs-quote-style-none:checked)
-  label[for="nojs-quote-style-none"],
+      label[for="nojs-quote-style-none"],
 .nojs-style-set:has(#nojs-quote-style-minimal:checked)
-  label[for="nojs-quote-style-minimal"],
+      label[for="nojs-quote-style-minimal"],
 .nojs-style-set:has(#nojs-quote-style-ticked:checked)
-  label[for="nojs-quote-style-ticked"],
+      label[for="nojs-quote-style-ticked"],
 .nojs-style-set:has(#nojs-quote-style-halfticked:checked)
-  label[for="nojs-quote-style-halfticked"],
+      label[for="nojs-quote-style-halfticked"],
 .nojs-style-set:has(#nojs-quote-style-book:checked)
-  label[for="nojs-quote-style-book"],
+      label[for="nojs-quote-style-book"],
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked)
-  label[for="nojs-quote-style-guillemet"],
+      label[for="nojs-quote-style-guillemet"],
 .nojs-style-set:has(#nojs-quote-style-ornament:checked)
-  label[for="nojs-quote-style-ornament"],
+      label[for="nojs-quote-style-ornament"],
 .nojs-style-set:has(#nojs-quote-style-rococo:checked)
-  label[for="nojs-quote-style-rococo"] {
-  background: #ccae8f !important;
-  // #ccae8f and #335170 are RGB opposites
-  color: #335170 !important;
-  text-decoration: overline dotted !important;
+      label[for="nojs-quote-style-rococo"] {
+
+  color: cyan;
+  quotes: "Z";
+
 }
 
 /* ====================
@@ -231,6 +273,18 @@ input[type="radio"] {
   }
 
 }
+
+/* ====================
+   The HR element
+   ====================
+*/
+
+    // 'hr {all: revert;}' makes hr's (xcpt the 2 framing the title) shrink to 
+    // a point, because it disables the browser's styling. Oddly, 
+    // '* {all: revert;}' doesn't affect hr's. But the Mozilla docs say that 
+    // using 'revert' here shouldn't affect browser styles:
+
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all
 
 /* ====================
    Classes for headings: .h2-from-1star, .h3-from-2stars, etc.
@@ -347,6 +401,12 @@ input[type="radio"] {
 
 }
 
+//.nojs-style-set:has(#nojs-quote-style-minimal:checked) {
+//  .fisheye-means-rightmost {
+//    // all: revert; // Uncommenting this line centers these DIVs. Unsure why.
+//  }
+//}
+
 /* ====================
    Span-level elements & classes
    ====================
@@ -454,45 +514,47 @@ input[type="radio"] {
 }
 
 /* ====================
-   Values common to all styles beyond NONE
-   ====================
-*/
-
-.nojs-style-set:has(#nojs-quote-style-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-ticked:checked),
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked),
-.nojs-style-set:has(#nojs-quote-style-book:checked),
-.nojs-style-set:has(#nojs-quote-style-guillemet:checked),
-.nojs-style-set:has(#nojs-quote-style-ornament:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
-
-
-}
-
-/* ====================
-   The MINIMAL Style
+   Quotation marks
    ====================
 */
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked) {
   --nojs-quote-chars: '"' '"' "\'" "\'";
-
-    // 'hr {all: revert;}' makes hr's (xcpt the 2 framing the title) shrink to 
-    // a point, because it disables the browser's styling. Oddly, 
-    // '* {all: revert;}' doesn't affect hr's. But the Mozilla docs say that 
-    // using 'revert' here shouldn't affect browser styles:
-
-    // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all
-
-  .fisheye-means-rightmost {
-    // all: revert; // Uncommenting this line centers these DIVs. Unsure why.
-  }
+}
+.nojs-style-set:has(#nojs-quote-style-ticked:checked) {
+  // 0x2035 &bprime, 0x2032 &prime, etc.:
+  --nojs-quote-chars: "‵‵" "′′" "‵" "′";
+}
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+  // 0x2035 &bprime, 0x2032 &prime, etc.:
+  --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
+}
+.nojs-style-set:has(#nojs-quote-style-book:checked) {
+  // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
+  --nojs-quote-chars: "“" "”" "‘" "’";
+}
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
+  --nojs-quote-chars: "«" "»" "‹" "›";
+}
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+  --nojs-quote-chars: '❝' '❞' "❛" "❜";
+  --nojs-quote-position: relative;
+  --nojs-quote-vertical-align: -0.2rem;
+  --nojs-quotation-mark-font-size: 1.7rem;
+  --nojs-quote-line-height: 1;
+}
+.nojs-style-set:has(#nojs-quote-style-ornament:checked) {
+  --nojs-quote-color: #808080;
+}
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+  --nojs-quote-color: deeppink;
 }
 
-/* ====================
-   Values common to all styles beyond MINIMAL
-   ====================
-*/
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE & MINIMAL mini-themes
+     ~ ~ ~ ~ ~ 
+  */
 
 .nojs-style-set:has(#nojs-quote-style-ticked:checked),
 .nojs-style-set:has(#nojs-quote-style-halfticked:checked),
@@ -501,7 +563,7 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-ornament:checked),
 .nojs-style-set:has(#nojs-quote-style-rococo:checked) {
 
-  /* ~ ~ ~ ~ ~
+  /* - - - - -
      Quotation mark configuration
 
      Q.: Why aren't the Q and BLOCKQUOTE elements automatically surrounded
@@ -534,7 +596,7 @@ input[type="radio"] {
      cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Prope
          rties/quotes#with_generated_content
 
-     ~ ~ ~ ~ ~ 
+     - - - - -
   */
 
   q,
@@ -558,6 +620,12 @@ input[type="radio"] {
     content: open-quote; // used to be "↳";
     color: var(--nojs-quote-color);
     font-size: var(--nojs-quotation-mark-font-size);
+
+    position: var(--nojs-quote-position);
+    // top: 0.4rem;
+    // left: -1.5rem;
+    vertical-align: var(--nojs-quote-vertical-align);
+    line-height: var(--nojs-quote-line-height);
   }
 
   q::after,
@@ -569,108 +637,21 @@ input[type="radio"] {
     content: close-quote; // used to be "↲";
     color: var(--nojs-quote-color);
     font-size: var(--nojs-quotation-mark-font-size);
-  }
 
-}
-
-.nojs-style-set:has(#nojs-quote-style-ticked:checked) {
-  // 0x2035 &bprime, 0x2032 &prime, etc.:
-  --nojs-quote-chars: "‵‵" "′′" "‵" "′";
-}
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
-  // 0x2035 &bprime, 0x2032 &prime, etc.:
-  --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
-}
-.nojs-style-set:has(#nojs-quote-style-book:checked) {
-  // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
-  --nojs-quote-chars: "“" "”" "‘" "’";
-}
-.nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
-  --nojs-quote-chars: "«" "»" "‹" "›";
-}
-
-/* ====================
-   The ORNAMENT Style
-   ====================
-*/
-
-.nojs-style-set:has(#nojs-quote-style-ornament:checked) {
-
-  --nojs-quote-chars: '❝' '❞' "❛" "❜";
-  --nojs-quote-color: #808080;
-  --nojs-quotation-mark-font-size: 1.7rem;
-
-  q::before,
-  .dek::before,
-  i.so-called::before, 
-  i.nickname::before,
-  cite.article-title::before, 
-  cite.like-article-title::before {
-    position: relative;
+    position: var(--nojs-quote-position);
     // top: 0.4rem;
     // left: -1.5rem;
-    vertical-align: -0.2rem;
-    line-height: 1;
-  }
-
-  q::after,
-  .dek::after,
-  i.so-called::after, 
-  i.nickname::after,
-  cite.article-title::after, 
-  cite.like-article-title::after {
-    position: relative;
-    // top: 0.4rem;
-    vertical-align: -0.2rem;
-    line-height: 1;
+    vertical-align: var(--nojs-quote-vertical-align);
+    line-height: var(--nojs-quote-line-height);
   }
 
 }
 
-/* ====================
-   The ROCOCO Style
-   ====================
-*/
-
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
-  --nojs-quote-chars: '❝' '❞' "❛" "❜";
-  --nojs-quote-color: deeppink;
-  --nojs-quotation-mark-font-size: 1.7rem;
-
-  q::before,
-  .dek::before,
-  i.so-called::before, 
-  i.nickname::before,
-  cite.article-title::before, 
-  cite.like-article-title::before {
-    position: relative;
-    // top: 0.4rem;
-    // left: -1.5rem;
-    vertical-align: -0.2rem;
-    line-height: 1;
-  }
-
-  q::after,
-  .dek::after,
-  i.so-called::after, 
-  i.nickname::after,
-  cite.article-title::after, 
-  cite.like-article-title::after {
-    position: relative;
-    // top: 0.4rem;
-    vertical-align: -0.2rem;
-    line-height: 1;
-  }
-
-}
-
-// 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
-
-/* +--------------------------------------+
-   |                                      |
-   |  End of No-JS theming configuration  |
-   |                                      |
-   +--------------------------------------+
+/* +-------------------------------------------+
+   |                                           |
+   |  End of No-JS mini-theming configuration  |
+   |                                           |
+   +-------------------------------------------+
 */
 
 /* I decided to keep the apostrophes hard-coded in my content as `’` (a.k.a. 
@@ -731,3 +712,4 @@ input[type="radio"] {
    End of configuration for image captions used under Galleries Deluxe
    ====================
 */
+// This is line 674, btw
