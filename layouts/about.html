@@ -1,6 +1,15 @@
 {{ define "main" }}
-    {{ .Content }}
-    <span class="design-hint">a1»</span>
+
+  <span class="design-hint">a1»</span>
+
+    {{ $allText := (partial "process-in-sequence.html" 
+        (dict "the_content" .Content "mRLT" .LinkTitle)) }}
+    {{ $allText | safeHTML }}
+
+  <span class="design-hint">«a2</span>
+
+  <hr>
+
   <div>
     {{ with .Site.GetPage "/docket" }}
       {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
@@ -14,5 +23,5 @@
       {{ end }}
     {{ end }}
   </div>
-  <span class="design-hint">«a2</span>
+
 {{ end }}

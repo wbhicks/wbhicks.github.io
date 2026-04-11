@@ -1,25 +1,9 @@
 {{ define "main" }}
 
-  {{ warnidf "page-3" (add "= = = = = = = = = = = = = = = = LinkTitle:" .LinkTitle) }}
-  {{ $mostRecentLinkTitle := .LinkTitle }}
-
   <span class="design-hint">dp»</span>
 
-  {{ $allText := .Content }}
-  {{ $allText = (partial "lettered-escapade.html" 
-      (dict "the_content" $allText "sanitize_or_restore" "sanitize")) }}
-
-  {{ $allText = (partial "arranger.html" 
-      (dict "the_content" $allText "mRLT" $mostRecentLinkTitle)) }}
-
-  {{ $allText = (partial "asterize-headlines.html" 
-      (dict "the_content" $allText "debug_or_qa" "qa")) }}
-
-  {{ $allText = (partial "narrow-headlines.html" 
-      (dict "the_content" $allText "debug_or_qa" "qa")) }}
-
-  {{ $allText = (partial "lettered-escapade.html" 
-      (dict "the_content" $allText "sanitize_or_restore" "restore")) }}
+  {{ $allText := (partial "process-in-sequence.html" 
+      (dict "the_content" .Content "mRLT" .LinkTitle)) }}
   {{ $allText | safeHTML }}
 
   <span class="design-hint">«dp</span>

@@ -1,0 +1,28 @@
+{{ $allText := .the_content }}
+{{ $mostRecentLinkTitle := .mRLT }}
+
+{{- /*
+       ====================
+       Handle all idiosyncratic markdown:
+       ====================
+*/ -}}
+
+  {{ warnidf "In process-in-sequence.html: " (add "LinkTitle = "
+      $mostRecentLinkTitle) }}
+
+  {{ $allText = (partial "lettered-escapade.html" 
+      (dict "the_content" $allText "sanitize_or_restore" "sanitize")) }}
+
+  {{ $allText = (partial "prefixed-or-lettered.html" 
+      (dict "the_content" $allText "mRLT" $mostRecentLinkTitle)) }}
+
+  {{ $allText = (partial "asterize-headlines.html" 
+      (dict "the_content" $allText "debug_or_qa" "qa")) }}
+
+  {{ $allText = (partial "narrow-headlines.html" 
+      (dict "the_content" $allText "debug_or_qa" "qa")) }}
+
+  {{ $allText = (partial "lettered-escapade.html" 
+      (dict "the_content" $allText "sanitize_or_restore" "restore")) }}
+
+{{ return $allText }}

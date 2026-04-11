@@ -108,20 +108,15 @@ body.dev-mode main * {
    ====================
 */
 
-/* +---------------------------------------------+
-   |                                             |
-   |  Start of No-JS mimi-theming configuration  |
-   |                                             |
-   +---------------------------------------------+
-*/
-
 /* ====================
    The row of radio buttons to select a mini-theme
    ====================
 */
+
 input[type="radio"] {
   height: 2rem;
 }
+
 .theme-selector label {
   padding: 0.3rem 1rem;
   border-radius: 1rem;
@@ -130,8 +125,7 @@ input[type="radio"] {
   color:      $color_button_foreground_unselected;
   background: $color_button_background_unselected;
 }
-.nojs-style-set:has(#nojs-quote-style-none:checked)
-      label[for="nojs-quote-style-none"],
+
 .nojs-style-set:has(#nojs-quote-style-minimal:checked)
       label[for="nojs-quote-style-minimal"],
 .nojs-style-set:has(#nojs-quote-style-ticked:checked)
@@ -146,34 +140,36 @@ input[type="radio"] {
       label[for="nojs-quote-style-ornament"],
 .nojs-style-set:has(#nojs-quote-style-rococo:checked)
       label[for="nojs-quote-style-rococo"] {
+
   color: $color_button_foreground_selected;
   background: $color_button_background_selected;
-
-
-  text-decoration: underline dotted;
+  // text-decoration: underline dotted;
 }
 
-.nojs-style-set:has(#nojs-quote-style-none:checked)
-      label[for="nojs-quote-style-none"],
 .nojs-style-set:has(#nojs-quote-style-minimal:checked)
-      label[for="nojs-quote-style-minimal"],
+      label[for="nojs-quote-style-minimal"]::before,
 .nojs-style-set:has(#nojs-quote-style-ticked:checked)
-      label[for="nojs-quote-style-ticked"],
+      label[for="nojs-quote-style-ticked"]::before,
 .nojs-style-set:has(#nojs-quote-style-halfticked:checked)
-      label[for="nojs-quote-style-halfticked"],
+      label[for="nojs-quote-style-halfticked"]::before,
 .nojs-style-set:has(#nojs-quote-style-book:checked)
-      label[for="nojs-quote-style-book"],
+      label[for="nojs-quote-style-book"]::before,
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked)
-      label[for="nojs-quote-style-guillemet"],
+      label[for="nojs-quote-style-guillemet"]::before,
 .nojs-style-set:has(#nojs-quote-style-ornament:checked)
-      label[for="nojs-quote-style-ornament"],
+      label[for="nojs-quote-style-ornament"]::before,
 .nojs-style-set:has(#nojs-quote-style-rococo:checked)
-      label[for="nojs-quote-style-rococo"] {
+      label[for="nojs-quote-style-rococo"]::before {
 
-  color: cyan;
-  quotes: "Z";
-
+  content: "✓ ";
 }
+
+/* +---------------------------------------------+
+   |                                             |
+   |  Start of No-JS mimi-theming configuration  |
+   |                                             |
+   +---------------------------------------------+
+*/
 
 /* ====================
    The NONE mini-theme
