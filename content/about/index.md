@@ -18,13 +18,50 @@ draft: false
 # expiryDate:
 
 # resources: Maps of metadata for page resources.
-markup: org
+#markup: org
 # type: subfolder-of-layouts-iff-layout-is-nested
 layout: about
 # outputs: The output formats to render.
 ---
 
-# Fruit
+# This is an H1 heading
+
+12345678901234567890123456789012345forty1234567890123456789012345678901234eighty
+
+## This is an H2 heading
+
+### (an H3) Examples of line-height and margin
+
+For the element MAIN, line-height is set to 1.5 (note: not `1.5rem`) thus: `main { line-height: 1.5; }` but is overridden in some descendants.
+
+The element P has `margin-bottom: 2rem;` (but no other margins), which may need tweaking.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+
+TODO put a blockquote here to show its line-height of 2
+
+### (an H3) Examples of PRE, CODE, SAMP, & KBD:
+
+The name is in single backticks: `Alice   X.   Traspaces`
+
+The name is in double backticks: ``Bob   X. Traspaces``
+
+The name is in triple backticks: ```Carl X.   Traspaces```
+
+```
+This 1-sentence block, with    extra    spaces, is preceded and followed by a
+triple-backtick line. Like the names above, it should (1) preserve whitespace
+and (2) appear in monospace. Unlike the names, it should (1) be borderless and
+(2) never force a line wrap.
+```
+
+### (an H3) Examples of my semantic classes
+
+
+¢ This is a commentary. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
 
 ## Some fruit
 
@@ -32,9 +69,7 @@ layout: about
 
 #### ® Published by Somebody (2020): «Apricots only!»
 
-◉ Bookmark, Feb 21st
-
-¢ I'd like to add that Abingdon is in Wash. County. 
+◉ Bookmark, Feb 21st 
 
 ∂ «Here is a subheadline»
 
@@ -46,6 +81,15 @@ layout: about
 
 ## Apple
 
+3 hyphens make an HR:
+
+---
+
+Macintosh
+
+> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+
+### Gala
 
 This is the content for the About page. Here is a pasteable, default, YAML frontmatter:
 

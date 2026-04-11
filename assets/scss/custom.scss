@@ -117,6 +117,10 @@ input[type="radio"] {
   height: 2rem;
 }
 
+.theme-selector {
+  padding-left: 2rem;
+}
+
 .theme-selector label {
   padding: 0.3rem 1rem;
   border-radius: 1rem;
@@ -198,11 +202,11 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
 
-  body * {
+  main {
     line-height: 1.5;
   }
 
-  body main {
+  main {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0rem;
@@ -318,6 +322,7 @@ input[type="radio"] {
     font-weight: normal;
     margin-bottom: 2rem;
   }
+
   .h5-from-4stars {
     font-size: 1rem;
     font-weight: normal;
@@ -329,7 +334,7 @@ input[type="radio"] {
 }
 
 /* ====================
-   Elements for preformatted blocks: PRE, CODE, SAMP, & KBD
+   Elements for preformatted content: PRE, CODE, SAMP, & KBD
 
      "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
      represent computer code, computer output, and user input, respectively.
@@ -349,20 +354,42 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
 
-  body pre code {
-    /* margin-left affects 1st line only, unless "display: block" is also used 
-    */
-    display: block;
-    margin-left: 1rem;
-  
+  main code {
+
+    white-space-collapse: preserve;
+
     /* This font-family line has no effect when font_family_sans_serif is in
        effect. Therefore, to see ASCII art, either (a) specify a monospace font
        for font_family_sans_serif or (b) stay toggled to font_family_serif. 
     */
     font-family: monospace !important;
-  
-    white-space-collapse: preserve;
+
+    /* Apply Mozilla style for KBD, but to CODE instead. To avoid having to use
+       the :not() pseudo-class, this is broader than it needs to be, & it will
+       later be un-applied (in another declaration block) for CODE elements
+       with a PRE parent:
+    */
+    border: 1px solid #808080;
+    border-radius: 3px;
+    padding: 1px 2px;
+    margin: 0 0.2rem;
+
+  }
+
+  main pre > code {
+
     text-wrap-mode: nowrap;
+
+    /* Un-apply Mozilla style for KBD, to all CODE with a PRE parent:
+    */
+    border: none;
+    padding: 0 0 0;
+
+    /* margin-left affects 1st line only, unless "display: block" is also used 
+    */
+    display: block;
+    margin-left: 1rem;
+
   }
 
 }
@@ -381,12 +408,13 @@ input[type="radio"] {
 
   .commentary, 
   .url-line {
-    margin-left: 1rem;
+//    margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
+//color: cyan;
   }
   .dek {
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
   }
@@ -488,7 +516,7 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
 
   blockquote {
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
   }
