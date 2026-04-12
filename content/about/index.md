@@ -36,11 +36,15 @@ For the element MAIN, line-height is set to 1.5 (note: not `1.5rem`) thus: `main
 
 The element P has `margin-bottom: 2rem;` (but no other margins), which may need tweaking.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+This paragraph has no prefix, so it shouldn't normally be encountered. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+This paragraph has no prefix, so it shouldn't normally be encountered. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 
-TODO put a blockquote here to show its line-height of 2
+> Here is the 1st paragraph of a blockquote, to show its line-height of 2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+>
+> Here is the 2nd paragraph of the same blockquote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+>
+> Here's the third.
 
 ### (an H3) Examples of PRE, CODE, SAMP, & KBD:
 
@@ -59,21 +63,19 @@ and (2) appear in monospace. Unlike the names, it should (1) be borderless and
 
 ### (an H3) Examples of my semantic classes
 
+¢ This is a commentary, because it start with the cent (US penny) character. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-¢ This is a commentary. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-
-## Some fruit
-
-### Even less fruit
+This paragraph has no prefix, so it shouldn't normally be encountered. The following H4 heading is of the kind that announces a clipping from an authorless press release. It is followed by (1) a fisheye block indicating the kind, (2) a periodical dek (subheadline), & (3) a URL line
 
 #### ® Published by Somebody (2020): «Apricots only!»
 
 ◉ Bookmark, Feb 21st 
 
-∂ «Here is a subheadline»
+∂ «Here is a periodical dek, a.k.a. subheadline»
 
 => https://example.org/ NYT / by John Smith
+
+This block demonstrates some lettered leaves. Here is an a-kind, for the typically quoted title/headline of an article or whitepaper: ≤aMayor Resigns, Says Municipal Comptroller≥. Here is a b-kind, for the typically italicized title/name of a book: ≤bMoby Dick≥. Here is a c-kind, for the typically quoted title/name of an akin-to-an-article text, e.g. a chapter: ≤cThe Exciting Conclusion≥. Here is a d-kind, for definitions and abbreviations: ≤dENIAC, Electronic Numerical Integrator And Computer≥. Here is an l-kind, for a term, word-as-word, logical-statement, synonym, or unassimilated foreign word: ≤lDeep South≥. Here is an m-kind, for names of media outlets: ≤mNBC Out≥. Here is an n-kind, for nicknames: H. R. ≤nBob≥ Haldeman. Here is an s-kind, for terms that are so-called: ≤sBad≥. Here is a w-kind, for the typically italicized title/name of an akin-to-a-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't: ≤wRubber Soul≥.
 
 > This line is a blockquote: 1 ≤c2 ≤l3 ≤s4 ≤w5 ≤c6 ≤l7 ≤s8 ≤w9 0 9≥ 8≥ 7≥ 6≥ 5≥ 4≥ 3≥ 2≥ 1
 

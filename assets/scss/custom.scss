@@ -408,10 +408,8 @@ input[type="radio"] {
 
   .commentary, 
   .url-line {
-//    margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
-//color: cyan;
   }
   .dek {
     margin-left: 2rem;
@@ -453,6 +451,8 @@ input[type="radio"] {
 
   cite {
     font-style: normal;
+text-decoration: underline dotted;
+color: red;
   }
 
   /* - - - - -
