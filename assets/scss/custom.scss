@@ -26,7 +26,8 @@ $color-text_light: #ccc2b8;
 $font_family_serif: 
   Georgia, Charter, "Bitstream Charter", serif !default;
 $font_family_sans_serif: 
-  Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
+  Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif 
+  !default;
 
 /* In Galleries Deluxe:
    $font_size_base: 16px !default;
@@ -39,15 +40,24 @@ $font_family_sans_serif:
    +-------------------------------+
 */
 
-/* The following colors are not defined in Galleries Deluxe, so they don't need
-   to be duplicated in vars-custom.scss:
+/* The following colors are not defined in Galleries Deluxe, so they don't
+   need to be duplicated in vars-custom.scss. I used to define them as
+   Hugo-level variables (e.g. $color_code_border) but then switched to CSS
+   variables (e.g. --color-code-border). This change necessitated wrapping
+   them  in a "* { ... }".
 */
 
-$color_rgb_opposite_of_primary: #335170;
-$color_button_foreground_unselected: #ccc;
-$color_button_background_unselected: #333;
-$color_button_foreground_selected: $color_primary;
-$color_button_background_selected: $color_rgb_opposite_of_primary;
+* {
+  --color-rgb-opposite-of-primary: #335170;
+  --color-button-foreground-unselected: #ccc;
+  --color-button-background-unselected: #333;
+  --color-button-foreground-selected: $color_primary;
+
+// Same as --color-rgb-opposite-of-primary:
+  --color-button-background-selected: #335170;
+  --color-code-border: #808080;
+  --color-quotation-mark-ornament: #808080;
+}
 
 /* ====================
    Start of font toggle. See also toggle.html. This mixin prevents the two
@@ -90,9 +100,20 @@ body.sans-mode main * {
     .markdown-body     { color: #0ff; } // else color-text_ ...
     h1, h2, h3, h4, h5 { color: #0f0; } // else color-text_ ...
     p                  { color: #ff0; } // else color-text_ ...
-    .design-hint       { color: #f0f; }
-    
-    --nojs-asterism-display: block;
+    .asterism          { color: #777; }
+
+    cite.book-title         { color: red; }
+    cite.like-book-title    { color: red; }
+    cite.article-title      { color: red; }
+    cite.like-article-title { color: red; }
+    cite.media-title        { color: red; }
+    cite.special-citation   { color: red; }
+
+    i.term       { color: cyan; }
+    i.so-called  { color: cyan; }
+    i.nickname   { color: cyan; }
+    abbr         { color: cyan; }
+    .design-hint { color: cyan; }
   }
 }
 body.qa-mode, 
@@ -104,7 +125,7 @@ body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
 }
 /* ====================
-   End of garish colors toggle 
+   End of garish colors toggle
    ====================
 */
 
@@ -126,8 +147,8 @@ input[type="radio"] {
   border-radius: 1rem;
   font-weight: bold;
   transition: background 0.5s;
-  color:      $color_button_foreground_unselected;
-  background: $color_button_background_unselected;
+  color:      var(--color-button-foreground-unselected);
+  background: var(--color-button-background-unselected);
 }
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked)
@@ -145,8 +166,8 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-rococo:checked)
       label[for="nojs-quote-style-rococo"] {
 
-  color: $color_button_foreground_selected;
-  background: $color_button_background_selected;
+  color: var(--color-button-foreground-selected);
+  background: var(--color-button-background-selected);
   // text-decoration: underline dotted;
 }
 
@@ -302,16 +323,14 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
 
   .asterism {
-    font-family: monospace;
-    white-space-collapse: preserve;
-    text-align: center;
-    color: #777;
-    line-height: 1;
+    /* --nojs-asterism-display: block;
+       ...
+       display: var(--nojs-asterism-display, none);
 
-    /* "none" iff --nojs-asterism-display is undefined.
-       "none" means element is hidden and takes no space.
+       i.e., "none" iff --nojs-asterism-display is undefined.
+       "none" means element is hidden and takes no space.      
     */
-    display: var(--nojs-asterism-display, none);
+    display: none;
   }
 
   .h2-from-1star, 
@@ -331,6 +350,22 @@ input[type="radio"] {
     margin-right: 1rem;
   }
 
+}
+
+  /* ~ ~ ~ ~ ~
+     Included supplement: the ORNAMENT & ROCOCO mini-themes
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+  .asterism {
+    font-family: monospace;
+    white-space-collapse: preserve;
+    text-align: center;
+    line-height: 1;
+    display: block;
+  }
 }
 
 /* ====================
@@ -369,7 +404,7 @@ input[type="radio"] {
        later be un-applied (in another declaration block) for CODE elements
        with a PRE parent:
     */
-    border: 1px solid #808080;
+    border: 1px solid var(--color-code-border);
     border-radius: 3px;
     padding: 1px 2px;
     margin: 0 0.2rem;
@@ -442,17 +477,17 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
 
   /* - - - - -
-     Overriding the default oblique styling of CITE as follows, because
-     not all CITEs shall be slanted. (Some will be in quotation marks.)
+     Overriding the default oblique styling of CITE as follows, because not all
+     CITEs shall be slanted. (Some need quotation marks instead.) p.s. All 
+     CITEs shall have a class.
 
-     p.s. Oblique styling is not automatically applied to the I element.
+     p.p.s. Oblique styling is not automatically applied to I elements, so
+     nothing needs to be done here for them.
      - - - - -
   */
 
   cite {
     font-style: normal;
-text-decoration: underline dotted;
-color: red;
   }
 
   /* - - - - -
@@ -461,14 +496,12 @@ color: red;
   */
 
   i.term {
-    color: pink;
-    text-decoration: underline dotted;
+    text-decoration: overline double;
     // font-style: italic;
   }
   cite.book-title, 
   cite.like-book-title {
-    color: purple;
-    text-decoration: underline;
+    text-decoration: underline dotted;
   }
 
   /* - - - - -
@@ -478,11 +511,11 @@ color: red;
 
   i.so-called, 
   i.nickname {
-    color: yellow;
+    text-decoration: overline wavy;
   }
   cite.article-title, 
   cite.like-article-title {
-    color: green;
+    text-decoration: overline dashed;
   }
 
   /* - - - - -
@@ -492,13 +525,16 @@ color: red;
 
   cite.media-title, 
   cite.special-citation {
-    color: cyan;
+    text-decoration: overline wavy;
   }
   abbr {
-    text-decoration: underline dotted;
+    text-decoration: overline dotted;
   }
   .design-hint {
-    color: #222; 
+    border: 1px dotted red;
+    border-radius: 3px;
+    padding: 1px 2px;
+    margin: 0 0.2rem;
   }
 
 }
@@ -563,16 +599,6 @@ color: red;
 .nojs-style-set:has(#nojs-quote-style-ornament:checked),
 .nojs-style-set:has(#nojs-quote-style-rococo:checked) {
   --nojs-quote-chars: '❝' '❞' "❛" "❜";
-  --nojs-quote-position: relative;
-  --nojs-quote-vertical-align: -0.2rem;
-  --nojs-quotation-mark-font-size: 1.7rem;
-  --nojs-quote-line-height: 1;
-}
-.nojs-style-set:has(#nojs-quote-style-ornament:checked) {
-  --nojs-quote-color: #808080;
-}
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
-  --nojs-quote-color: deeppink;
 }
 
   /* ~ ~ ~ ~ ~
@@ -630,11 +656,7 @@ color: red;
   cite.article-title, 
   cite.like-article-title {
     quotes: var(--nojs-quote-chars);
-    // position the pseudo-elements relative to the element, not relative
-    // to the viewport:
-    // position: relative;
   }
-
   q::before,
   .dek::before,
   i.so-called::before, 
@@ -642,16 +664,7 @@ color: red;
   cite.article-title::before, 
   cite.like-article-title::before {
     content: open-quote; // used to be "↳";
-    color: var(--nojs-quote-color);
-    font-size: var(--nojs-quotation-mark-font-size);
-
-    position: var(--nojs-quote-position);
-    // top: 0.4rem;
-    // left: -1.5rem;
-    vertical-align: var(--nojs-quote-vertical-align);
-    line-height: var(--nojs-quote-line-height);
   }
-
   q::after,
   .dek::after,
   i.so-called::after, 
@@ -659,14 +672,43 @@ color: red;
   cite.article-title::after, 
   cite.like-article-title::after {
     content: close-quote; // used to be "↲";
-    color: var(--nojs-quote-color);
-    font-size: var(--nojs-quotation-mark-font-size);
+  }
 
-    position: var(--nojs-quote-position);
-    // top: 0.4rem;
-    // left: -1.5rem;
-    vertical-align: var(--nojs-quote-vertical-align);
-    line-height: var(--nojs-quote-line-height);
+}
+
+  /* ~ ~ ~ ~ ~
+     Included supplement: the ORNAMENT & ROCOCO mini-themes
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+
+  --ornament-quote-position: relative;
+  --ornament-quote-vertical-align: -0.2rem;
+  --ornament-quotation-mark-font-size: 1.7rem;
+  --ornament-quote-line-height: 1;
+
+// TODO why not $ ... for the 4 above? (and underscores?)
+// As for 1st Q, $ is a Hugo-dependent predecessor to CSS's --
+
+  q::before,
+  .dek::before,
+  i.so-called::before, 
+  i.nickname::before,
+  cite.article-title::before, 
+  cite.like-article-title::before,
+  q::after,
+  .dek::after,
+  i.so-called::after, 
+  i.nickname::after,
+  cite.article-title::after, 
+  cite.like-article-title::after {
+    color: var(--color-quotation-mark-ornament);
+    font-size: var(--ornament-quotation-mark-font-size);
+    position: var(--ornament-quote-position);
+    vertical-align: var(--ornament-quote-vertical-align);
+    line-height: var(--ornament-quote-line-height);
   }
 
 }
