@@ -29,7 +29,7 @@ $font_family_sans_serif:
   Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif 
   !default;
 
-/* In Galleries Deluxe:
+/* In Galleries Deluxe, unaltered here:
    $font_size_base: 16px !default;
 */
 
@@ -44,7 +44,7 @@ $font_family_sans_serif:
    need to be duplicated in vars-custom.scss. I used to define them as
    Hugo-level variables (e.g. $color_code_border) but then switched to CSS
    variables (e.g. --color-code-border). This change necessitated wrapping
-   them  in a "* { ... }".
+   them in a "* { ... }".
 */
 
 * {
@@ -53,8 +53,9 @@ $font_family_sans_serif:
   --color-button-background-unselected: #333;
   --color-button-foreground-selected: $color_primary;
 
-// Same as --color-rgb-opposite-of-primary:
+  // Same as --color-rgb-opposite-of-primary:
   --color-button-background-selected: #335170;
+
   --color-code-border: #808080;
   --color-quotation-mark-ornament: #808080;
 }
@@ -67,7 +68,7 @@ $font_family_sans_serif:
 */
 @mixin serif-or-sans($the-serif-toggle: true) {
   @if $the-serif-toggle {
-    font-family: $font_family_serif;	
+    font-family: $font_family_serif;
   } @else {
     font-family: $font_family_sans_serif;
   }
@@ -323,7 +324,9 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
 
   .asterism {
-    /* --nojs-asterism-display: block;
+    /* No longer using this CSS var:
+
+       --nojs-asterism-display: block;
        ...
        display: var(--nojs-asterism-display, none);
 
@@ -602,10 +605,11 @@ input[type="radio"] {
 }
 
   /* ~ ~ ~ ~ ~
-     Excluded: the NONE & MINIMAL mini-themes
+     Excluded: the NONE mini-theme
      ~ ~ ~ ~ ~ 
   */
 
+.nojs-style-set:has(#nojs-quote-style-minimal:checked),
 .nojs-style-set:has(#nojs-quote-style-ticked:checked),
 .nojs-style-set:has(#nojs-quote-style-halfticked:checked),
 .nojs-style-set:has(#nojs-quote-style-book:checked),

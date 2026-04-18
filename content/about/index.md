@@ -28,6 +28,8 @@ layout: about
 
 12345678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
+The MINIMAL mini-theme differs only in that it is the only one using straight ASCII quotation marks.
+
 ## This is an H2 heading
 
 ### (an H3) Examples of line-height and margin
