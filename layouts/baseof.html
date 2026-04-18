@@ -72,39 +72,40 @@
 
   </head>
   <body>
+    <div class="nojs-style-set">
 
-    <div class="nojs-style-set"><!-- used to also have the class nojs-style-set-coverage -->
-    <div class="theme-selector">
+      <!-- The theme-selector DIV must be contained in the nojs-style-set DIV. -->
+      <div class="theme-selector">
 
-    Select one mini-theme:
+        Mini-themes:
 
-    <input type="radio" name="theme" id="nojs-quote-style-none">
-    <label for="nojs-quote-style-none">None</label>
+        <input type="radio" name="theme" id="nojs-quote-style-none">
+        <label for="nojs-quote-style-none">None</label>
 
-    <input type="radio" name="theme" id="nojs-quote-style-minimal">
-    <label for="nojs-quote-style-minimal">Min.</label>
+        <input type="radio" name="theme" id="nojs-quote-style-minimal">
+        <label for="nojs-quote-style-minimal">Min.</label>
 
-    <input type="radio" name="theme" id="nojs-quote-style-ticked">
-    <label for="nojs-quote-style-ticked">Ticked</label>
+        <input type="radio" name="theme" id="nojs-quote-style-ticked">
+        <label for="nojs-quote-style-ticked">65</label>
 
-    <input type="radio" name="theme" id="nojs-quote-style-halfticked">
-    <label for="nojs-quote-style-halfticked">&frac12; Ticked</label>
+        <input type="radio" name="theme" id="nojs-quote-style-halfticked">
+        <label for="nojs-quote-style-halfticked">&frac12; Ticked</label>
 
-    <input type="radio" name="theme" id="nojs-quote-style-book">
-    <label for="nojs-quote-style-book">Book</label>
+        <input type="radio" name="theme" id="nojs-quote-style-book">
+        <label for="nojs-quote-style-book">Book</label>
 
-    <input type="radio" name="theme" id="nojs-quote-style-guillemet">
-    <label for="nojs-quote-style-guillemet">Guill.</label>
+        <input type="radio" name="theme" id="nojs-quote-style-guillemet">
+        <label for="nojs-quote-style-guillemet">Guill.</label>
 
-    <input type="radio" name="theme" id="nojs-quote-style-ornament" checked>
-    <label for="nojs-quote-style-ornament">Ornament</label>
+        <input type="radio" name="theme" id="nojs-quote-style-ornament" checked>
+        <label for="nojs-quote-style-ornament">Ornament</label>
 
 {{/* thinking of changing rococo to entre-deux-guerres */}}
 
-    <input type="radio" name="theme" id="nojs-quote-style-rococo">
-    <label for="nojs-quote-style-rococo">Rococo</label>
+        <input type="radio" name="theme" id="nojs-quote-style-rococo">
+        <label for="nojs-quote-style-rococo">Rococo</label>
 
-    </div>
+      </div><!-- end of class theme-selector -->
 
       {{/* Wrapping the following line in a header element causes a duplicate header element. */}}
       {{ partial "header.html" . }}
@@ -114,6 +115,7 @@
       <footer>
         {{ partial "footer.html" . }}
       </footer>
-    </div><!-- end of nojs-style-set -->
+
+    </div><!-- end of class nojs-style-set -->
   </body>
 </html>

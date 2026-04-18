@@ -1,5 +1,9 @@
 // 45678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
+// uest for Comments: 20                                            UCLA
+// -3                                                           April 1969
+// uest For Comments:  826                                  (DCP@MIT-MC)
+
 /* +------------------------------------+
    |                                    |
    |  Start of variables duplicated in  |
@@ -68,6 +72,19 @@ $font_family_sans_serif:
 
   --color-code-border: #808080;
   --color-quotation-mark-ornament: #808080;
+
+//  --color-
+
+
+// 525 nm (P1 phosphor, green) = RBG 74, 255, 0 #4aff00
+// (33ff00???)
+// 505 nm (P24 phosphor, green) = #00ff54
+// for comparison only, 510 nm is #00ff00
+
+// 602 nm (P3 phosphor, amber) = RBG 255, 183, 0 #ffb700
+
+
+
 }
 
 /* ====================
@@ -88,12 +105,24 @@ $font_family_sans_serif:
   }
 }
 body.serif-mode, 
+                   
+
+body.serif-mode header *,
+
+
+
 body.serif-mode main * {
   // Without the inclusion, the styles 
   // may get swapped on a page reload:
   @include serif-or-sans($the-serif-toggle: true);
 }
 body.sans-mode, 
+
+
+body.sans-mode header *,
+
+
+
 body.sans-mode main * {
   // Without the inclusion, the styles 
   // may get swapped on a page reload:
@@ -160,7 +189,7 @@ input[type="radio"] {
 .theme-selector label {
   padding: 0.3rem 1rem;
   border-radius: 1rem;
-  font-weight: bold;
+//  font-weight: bold;
   transition: background 0.5s;
   color:      var(--color-button-foreground-unselected);
   background: var(--color-button-background-unselected);
@@ -206,15 +235,20 @@ input[type="radio"] {
 
 /* +---------------------------------------------+
    |                                             |
-   |  Start of No-JS mimi-theming configuration  |
+   |  Start of No-JS mini-theming configuration  |
    |                                             |
    +---------------------------------------------+
 */
 
 /* ====================
-   The NONE mini-theme
+   The CSS universal selector (*)
    ====================
 */
+
+  /* ~ ~ ~ ~ ~
+     Included: the NONE mini-theme
+     ~ ~ ~ ~ ~ 
+  */
 
 .nojs-style-set:has(#nojs-quote-style-none:checked) {
   * {
@@ -224,6 +258,49 @@ input[type="radio"] {
     // ... but "revert" does a thorough yet reasonable job:
     all: revert;
   }
+}
+
+  /* ~ ~ ~ ~ ~
+     Included: the mini-themes needing monospace
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-minimal:checked),
+.nojs-style-set:has(#nojs-quote-style-ticked:checked),
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+
+  * {
+    font-family: var(--font-family-monospaced);
+  }
+  div.theme-selector,
+  div.theme-selector > label {
+    font-family: var(--font-family-proportional-sans-serif);
+  }
+
+  // div.the-div-child-of-the-header { color: cyan; }
+
+}
+
+  /* ~ ~ ~ ~ ~
+     Included: the mini-themes needing proportional spacing
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-book:checked),
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked),
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+
+  * {
+    font-family: var(--font-family-proportional);
+  }
+  div.theme-selector,
+  div.theme-selector > label {
+    font-family: var(--font-family-proportional-sans-serif);
+  }
+
+  // div.the-div-child-of-the-header { color: orange; }
+
 }
 
 /* ====================
@@ -264,49 +341,16 @@ input[type="radio"] {
 }
 
   /* ~ ~ ~ ~ ~
-     Included: the mini-themes needing monospace
+     Included: the TICKED & HALFTICKED mini-themes
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-minimal:checked),
 .nojs-style-set:has(#nojs-quote-style-ticked:checked),
 .nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
 
-//  main {
-//  * {
-//  header > div.the-div-child-of-the-header,
-  div.the-div-child-of-the-header,
-  header *,
-//  main * {
-  *, main * {
-    font-family: var(--font-family-monospaced);
+  main {
+    max-width: 80ch; // chars per line (if proportional, then approx.)
   }
-
-div.the-div-child-of-the-header { color: cyan; }
-
-}
-
-  /* ~ ~ ~ ~ ~
-     Included: the mini-themes needing proportional spacing
-     ~ ~ ~ ~ ~ 
-  */
-
-.nojs-style-set:has(#nojs-quote-style-book:checked),
-.nojs-style-set:has(#nojs-quote-style-guillemet:checked),
-.nojs-style-set:has(#nojs-quote-style-ornament:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
-
-//  main {
-//  * {
-//  header > div.the-div-child-of-the-header,
-  div.the-div-child-of-the-header,
-  header *,
-//  main * {
-  *, main * {
-    font-family: var(--font-family-proportional);
-  }
-
-div.the-div-child-of-the-header { color: orange; }
 
 }
 

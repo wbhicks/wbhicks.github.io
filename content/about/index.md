@@ -28,7 +28,14 @@ layout: about
 
 12345678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
-The MINIMAL mini-theme differs only in that it is the only one using straight ASCII quotation marks.
+- The MINIMAL mini-theme:
+  - straight ASCII quotation marks
+  - enforces monospace
+  - no max width
+- The TICKED & HALFTICKED mini-themes
+  - 60's to 80's, pseudo-ASCII quotation marks
+  - enforces monospace
+  - max width
 
 ## This is an H2 heading
 
