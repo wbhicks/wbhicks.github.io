@@ -85,7 +85,7 @@
 
 <header>
   {{ partial "toggle.html" }}
-  <div>
+  <div class="the-div-child-of-the-header">
     {{ $linkTitleOfThisPage := .LinkTitle }}
     {{ $pages := slice (site.GetPage "home") }}
     {{ with site.GetPage "table-of-contents" }}

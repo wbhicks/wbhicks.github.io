@@ -40,6 +40,16 @@ $font_family_sans_serif:
    +-------------------------------+
 */
 
+* {
+  --font-family-proportional-sans-serif: Helvetica;
+  --font-family-proportional-serif: Georgia;
+  --font-family-monospaced-sans-serif: Monaco;
+  --font-family-monospaced-serif: Courier;
+
+  --font-family-proportional: var(--font-family-proportional-sans-serif);
+  --font-family-monospaced: var(--font-family-monospaced-sans-serif);
+}
+
 /* The following colors are not defined in Galleries Deluxe, so they don't
    need to be duplicated in vars-custom.scss. I used to define them as
    Hugo-level variables (e.g. $color_code_border) but then switched to CSS
@@ -68,9 +78,13 @@ $font_family_sans_serif:
 */
 @mixin serif-or-sans($the-serif-toggle: true) {
   @if $the-serif-toggle {
-    font-family: $font_family_serif;
+//    font-family: $font_family_serif;
+    --font-family-proportional: var(--font-family-proportional-serif);
+    --font-family-monospaced: var(--font-family-monospaced-serif);
   } @else {
-    font-family: $font_family_sans_serif;
+//    font-family: $font_family_sans_serif;
+    --font-family-proportional: var(--font-family-proportional-sans-serif);
+    --font-family-monospaced: var(--font-family-monospaced-sans-serif);
   }
 }
 body.serif-mode, 
@@ -246,6 +260,53 @@ input[type="radio"] {
   p {
     margin-bottom: 2rem;
   }
+
+}
+
+  /* ~ ~ ~ ~ ~
+     Included: the mini-themes needing monospace
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-minimal:checked),
+.nojs-style-set:has(#nojs-quote-style-ticked:checked),
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+
+//  main {
+//  * {
+//  header > div.the-div-child-of-the-header,
+  div.the-div-child-of-the-header,
+  header *,
+//  main * {
+  *, main * {
+    font-family: var(--font-family-monospaced);
+  }
+
+div.the-div-child-of-the-header { color: cyan; }
+
+}
+
+  /* ~ ~ ~ ~ ~
+     Included: the mini-themes needing proportional spacing
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-book:checked),
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked),
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+
+//  main {
+//  * {
+//  header > div.the-div-child-of-the-header,
+  div.the-div-child-of-the-header,
+  header *,
+//  main * {
+  *, main * {
+    font-family: var(--font-family-proportional);
+  }
+
+div.the-div-child-of-the-header { color: orange; }
 
 }
 
