@@ -171,13 +171,18 @@ body.dev-mode main * {
 */
 
 /* ====================
-   The row of radio buttons to select a mini-theme
+   Settings for all (i.e., both) rows of radio buttons
    ====================
 */
 
 input[type="radio"] {
   height: 2rem;
 }
+
+/* ====================
+   The row of radio buttons to select a mini-theme
+   ====================
+*/
 
 .mini-theme-selector {
   padding-left: 2rem;
@@ -235,10 +240,6 @@ input[type="radio"] {
    ====================
 */
 
-input[type="radio"] {
-  height: 2rem;
-}
-
 .mono-color-selector {
   padding-left: 2rem;
 }
@@ -254,12 +255,10 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-mono-color-off:checked)
       label[for="nojs-mono-color-off"],
-.nojs-style-set:has(#nojs-mono-color-505:checked)
-      label[for="nojs-mono-color-505"],
-.nojs-style-set:has(#nojs-mono-color-510:checked)
-      label[for="nojs-mono-color-510"],
-.nojs-style-set:has(#nojs-mono-color-525:checked)
-      label[for="nojs-mono-color-525"],
+//.nojs-style-set:has(#nojs-mono-color-525:checked)
+//      label[for="nojs-mono-color-525"],
+.nojs-style-set:has(#nojs-mono-color-535:checked)
+      label[for="nojs-mono-color-535"],
 .nojs-style-set:has(#nojs-mono-color-602:checked)
       label[for="nojs-mono-color-602"],
 .nojs-style-set:has(#nojs-mono-color-goldenrod:checked)
@@ -278,12 +277,10 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-mono-color-off:checked)
       label[for="nojs-mono-color-off"]::before,
-.nojs-style-set:has(#nojs-mono-color-505:checked)
-      label[for="nojs-mono-color-505"]::before,
-.nojs-style-set:has(#nojs-mono-color-510:checked)
-      label[for="nojs-mono-color-510"]::before,
-.nojs-style-set:has(#nojs-mono-color-525:checked)
-      label[for="nojs-mono-color-525"]::before,
+//.nojs-style-set:has(#nojs-mono-color-525:checked)
+//      label[for="nojs-mono-color-525"]::before,
+.nojs-style-set:has(#nojs-mono-color-535:checked)
+      label[for="nojs-mono-color-535"]::before,
 .nojs-style-set:has(#nojs-mono-color-602:checked)
       label[for="nojs-mono-color-602"]::before,
 .nojs-style-set:has(#nojs-mono-color-goldenrod:checked)
@@ -303,20 +300,21 @@ input[type="radio"] {
    ====================
 */
 
+// No longer used: 505nm (P24 phosphor, #00ff54)
+// For comparison only: #00ff00 is 510nm
+
 .nojs-style-set:has(#nojs-mono-color-off:checked) {
+  // See also .nojs-style-set:has(#nojs-quote-style-halfticked:checked), below
   * { --color-mono-text: $color-text_light; }
 }
-.nojs-style-set:has(#nojs-mono-color-505:checked) {
-  // 505nm (P24 phosphor)
-  * { --color-mono-text: #00ff54; }
-}
-.nojs-style-set:has(#nojs-mono-color-510:checked) {
-  // 510nm (for comparison only)
-  * { --color-mono-text: #00ff00; }
-}
-.nojs-style-set:has(#nojs-mono-color-525:checked) {
-  // 525nm (P1 phosphor)
-  * { --color-mono-text: #4aff00; }
+//.nojs-style-set:has(#nojs-mono-color-525:checked) {
+//  // 525nm (P1 phosphor, #4aff00)
+//  * { --color-mono-text: #4aff00; }
+//}
+.nojs-style-set:has(#nojs-mono-color-535:checked) {
+  // 535nm (P31 phosphor, #70ff00. A source reported its wavelength as
+  // being 10nm longer than P1)
+  * { --color-mono-text: #70ff00; }
 }
 .nojs-style-set:has(#nojs-mono-color-602:checked) {
   // 602nm (P3 phosphor)
@@ -335,9 +333,33 @@ input[type="radio"] {
   * { --color-mono-text: #85bb65; }
 }
 
-.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+
+  /* ~ ~ ~ ~ ~
+     Excluded: the NONE & HALFTICKED mini-themes
+     ~ ~ ~ ~ ~ 
+  */
+
+.nojs-style-set:has(#nojs-quote-style-minimal:checked),
+.nojs-style-set:has(#nojs-quote-style-ticked:checked),
+.nojs-style-set:has(#nojs-quote-style-book:checked),
+.nojs-style-set:has(#nojs-quote-style-guillemet:checked),
+.nojs-style-set:has(#nojs-quote-style-ornament:checked),
+.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+
+  .mono-color-selector {
+    display: none;
+  }
+
+}
+
+.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+  // See also .nojs-style-set:has(#nojs-mono-color-off:checked), above
   * { color: var(--color-mono-text); }
 }
+
+//.nojs-style-set:has(#nojs-quote-style-halfticked:not(:checked)) {
+//  * { --color-mono-text: $color-text_light; }
+//}
 
 /* +---------------------------------------------+
    |                                             |
