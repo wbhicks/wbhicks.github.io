@@ -74,38 +74,72 @@
   <body>
     <div class="nojs-style-set">
 
-      <!-- The theme-selector DIV must be contained in the nojs-style-set DIV. -->
-      <div class="theme-selector">
+      <!-- The mini-theme-selector DIV must be contained in the nojs-style-set DIV. -->
+      <div class="mini-theme-selector">
 
         Mini-themes:
 
-        <input type="radio" name="theme" id="nojs-quote-style-none">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-none">
         <label for="nojs-quote-style-none">None</label>
 
-        <input type="radio" name="theme" id="nojs-quote-style-minimal">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-minimal">
         <label for="nojs-quote-style-minimal">Min.</label>
 
-        <input type="radio" name="theme" id="nojs-quote-style-ticked">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-ticked">
         <label for="nojs-quote-style-ticked">65</label>
 
-        <input type="radio" name="theme" id="nojs-quote-style-halfticked">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-halfticked">
         <label for="nojs-quote-style-halfticked">&frac12; Ticked</label>
 
-        <input type="radio" name="theme" id="nojs-quote-style-book">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-book">
         <label for="nojs-quote-style-book">Book</label>
 
-        <input type="radio" name="theme" id="nojs-quote-style-guillemet">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-guillemet">
         <label for="nojs-quote-style-guillemet">Guill.</label>
 
-        <input type="radio" name="theme" id="nojs-quote-style-ornament" checked>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-ornament" checked>
         <label for="nojs-quote-style-ornament">Ornament</label>
 
 {{/* thinking of changing rococo to entre-deux-guerres */}}
 
-        <input type="radio" name="theme" id="nojs-quote-style-rococo">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-rococo">
         <label for="nojs-quote-style-rococo">Rococo</label>
 
-      </div><!-- end of class theme-selector -->
+      </div><!-- end of class mini-theme-selector -->
+
+      <!-- The mono-color-selector DIV must be contained in the nojs-style-set DIV. -->
+      <div class="mono-color-selector">
+
+        Text color:
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-off" checked>
+        <label for="nojs-mono-color-off">Off</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-505">
+        <label for="nojs-mono-color-505">505</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-510">
+        <label for="nojs-mono-color-510">510</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-525">
+        <label for="nojs-mono-color-525">525</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-602">
+        <label for="nojs-mono-color-602">602</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-goldenrod">
+        <label for="nojs-mono-color-goldenrod">g.r.</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-darkgoldenrod">
+        <label for="nojs-mono-color-darkgoldenrod">dark g.r.</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-moccasin">
+        <label for="nojs-mono-color-moccasin">moccasin</label>
+
+        <input type="radio" name="mono-color" id="nojs-mono-color-uscurrency">
+        <label for="nojs-mono-color-uscurrency">greenback</label>
+
+      </div><!-- end of class mono-color-selector -->
 
       {{/* Wrapping the following line in a header element causes a duplicate header element. */}}
       {{ partial "header.html" . }}

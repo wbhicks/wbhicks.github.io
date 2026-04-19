@@ -73,18 +73,7 @@ $font_family_sans_serif:
   --color-code-border: #808080;
   --color-quotation-mark-ornament: #808080;
 
-//  --color-
-
-
-// 525 nm (P1 phosphor, green) = RBG 74, 255, 0 #4aff00
-// (33ff00???)
-// 505 nm (P24 phosphor, green) = #00ff54
-// for comparison only, 510 nm is #00ff00
-
-// 602 nm (P3 phosphor, amber) = RBG 255, 183, 0 #ffb700
-
-
-
+  --color-mono-text: $color-text_light;
 }
 
 /* ====================
@@ -158,6 +147,14 @@ body.sans-mode main * {
     i.nickname   { color: cyan; }
     abbr         { color: cyan; }
     .design-hint { color: cyan; }
+/*
+  } @else {
+    .markdown-body     { color: var(--color-mono-text); }
+    h1, h2, h3, h4, h5 { color: var(--color-mono-text); }
+    p                  { color: var(--color-mono-text); }
+    .asterism          { color: var(--color-mono-text); }
+    cite, i, abbr      { color: var(--color-mono-text); }
+*/
   }
 }
 body.qa-mode, 
@@ -182,11 +179,11 @@ input[type="radio"] {
   height: 2rem;
 }
 
-.theme-selector {
+.mini-theme-selector {
   padding-left: 2rem;
 }
 
-.theme-selector label {
+.mini-theme-selector label {
   padding: 0.3rem 1rem;
   border-radius: 1rem;
 //  font-weight: bold;
@@ -233,6 +230,115 @@ input[type="radio"] {
   content: "✓ ";
 }
 
+/* ====================
+   The row of radio buttons to select a mono-color
+   ====================
+*/
+
+input[type="radio"] {
+  height: 2rem;
+}
+
+.mono-color-selector {
+  padding-left: 2rem;
+}
+
+.mono-color-selector label {
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+//  font-weight: bold;
+  transition: background 0.5s;
+  color:      var(--color-button-foreground-unselected);
+  background: var(--color-button-background-unselected);
+}
+
+.nojs-style-set:has(#nojs-mono-color-off:checked)
+      label[for="nojs-mono-color-off"],
+.nojs-style-set:has(#nojs-mono-color-505:checked)
+      label[for="nojs-mono-color-505"],
+.nojs-style-set:has(#nojs-mono-color-510:checked)
+      label[for="nojs-mono-color-510"],
+.nojs-style-set:has(#nojs-mono-color-525:checked)
+      label[for="nojs-mono-color-525"],
+.nojs-style-set:has(#nojs-mono-color-602:checked)
+      label[for="nojs-mono-color-602"],
+.nojs-style-set:has(#nojs-mono-color-goldenrod:checked)
+      label[for="nojs-mono-color-goldenrod"],
+.nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked)
+      label[for="nojs-mono-color-darkgoldenrod"],
+.nojs-style-set:has(#nojs-mono-color-moccasin:checked)
+      label[for="nojs-mono-color-moccasin"],
+.nojs-style-set:has(#nojs-mono-color-uscurrency:checked)
+      label[for="nojs-mono-color-uscurrency"] {
+
+  color: var(--color-button-foreground-selected);
+  background: var(--color-button-background-selected);
+  // text-decoration: underline dotted;
+}
+
+.nojs-style-set:has(#nojs-mono-color-off:checked)
+      label[for="nojs-mono-color-off"]::before,
+.nojs-style-set:has(#nojs-mono-color-505:checked)
+      label[for="nojs-mono-color-505"]::before,
+.nojs-style-set:has(#nojs-mono-color-510:checked)
+      label[for="nojs-mono-color-510"]::before,
+.nojs-style-set:has(#nojs-mono-color-525:checked)
+      label[for="nojs-mono-color-525"]::before,
+.nojs-style-set:has(#nojs-mono-color-602:checked)
+      label[for="nojs-mono-color-602"]::before,
+.nojs-style-set:has(#nojs-mono-color-goldenrod:checked)
+      label[for="nojs-mono-color-goldenrod"]::before,
+.nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked)
+      label[for="nojs-mono-color-darkgoldenrod"]::before,
+.nojs-style-set:has(#nojs-mono-color-moccasin:checked)
+      label[for="nojs-mono-color-moccasin"]::before,
+.nojs-style-set:has(#nojs-mono-color-uscurrency:checked)
+      label[for="nojs-mono-color-uscurrency"]::before {
+
+  content: "✓ ";
+}
+
+/* ====================
+   All effects of mono-color selection
+   ====================
+*/
+
+.nojs-style-set:has(#nojs-mono-color-off:checked) {
+  * { --color-mono-text: $color-text_light; }
+}
+.nojs-style-set:has(#nojs-mono-color-505:checked) {
+  // 505nm (P24 phosphor)
+  * { --color-mono-text: #00ff54; }
+}
+.nojs-style-set:has(#nojs-mono-color-510:checked) {
+  // 510nm (for comparison only)
+  * { --color-mono-text: #00ff00; }
+}
+.nojs-style-set:has(#nojs-mono-color-525:checked) {
+  // 525nm (P1 phosphor)
+  * { --color-mono-text: #4aff00; }
+}
+.nojs-style-set:has(#nojs-mono-color-602:checked) {
+  // 602nm (P3 phosphor)
+  * { --color-mono-text: #ffb700; }
+}
+.nojs-style-set:has(#nojs-mono-color-goldenrod:checked) {
+  * { --color-mono-text: #daa520; }
+}
+.nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked) {
+  * { --color-mono-text: #b8860b; }
+}
+.nojs-style-set:has(#nojs-mono-color-moccasin:checked) {
+  * { --color-mono-text: #ffe4b5; }
+}
+.nojs-style-set:has(#nojs-mono-color-uscurrency:checked) {
+  * { --color-mono-text: #85bb65; }
+}
+
+.nojs-style-set:has(#nojs-quote-style-none:not(:checked)) {
+  * { color: var(--color-mono-text); }
+}
+
 /* +---------------------------------------------+
    |                                             |
    |  Start of No-JS mini-theming configuration  |
@@ -272,8 +378,10 @@ input[type="radio"] {
   * {
     font-family: var(--font-family-monospaced);
   }
-  div.theme-selector,
-  div.theme-selector > label {
+  div.mini-theme-selector,
+  div.mono-color-selector,
+  div.mini-theme-selector > label,
+  div.mono-color-selector > label {
     font-family: var(--font-family-proportional-sans-serif);
   }
 
@@ -294,8 +402,10 @@ input[type="radio"] {
   * {
     font-family: var(--font-family-proportional);
   }
-  div.theme-selector,
-  div.theme-selector > label {
+  div.mini-theme-selector,
+  div.mono-color-selector,
+  div.mini-theme-selector > label,
+  div.mono-color-selector > label {
     font-family: var(--font-family-proportional-sans-serif);
   }
 
