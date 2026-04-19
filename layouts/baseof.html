@@ -79,17 +79,9 @@
 
         Mini-themes:
 
-        <input type="radio" name="mini-theme" id="nojs-quote-style-none">
-        <label for="nojs-quote-style-none">None</label>
 
         <input type="radio" name="mini-theme" id="nojs-quote-style-minimal">
         <label for="nojs-quote-style-minimal">Min.</label>
-
-        <input type="radio" name="mini-theme" id="nojs-quote-style-ticked">
-        <label for="nojs-quote-style-ticked">65</label>
-
-        <input type="radio" name="mini-theme" id="nojs-quote-style-halfticked">
-        <label for="nojs-quote-style-halfticked">&frac12; Ticked</label>
 
         <input type="radio" name="mini-theme" id="nojs-quote-style-book">
         <label for="nojs-quote-style-book">Book</label>
@@ -105,28 +97,36 @@
         <input type="radio" name="mini-theme" id="nojs-quote-style-rococo">
         <label for="nojs-quote-style-rococo">Rococo</label>
 
+        <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four">
+        <label for="nojs-quote-style-seventy-four">74</label>
+
+{{/* https://en.wikipedia.org/wiki/7400-series_integrated_circuits */}}
+
+        <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four-monochrome">
+        <label for="nojs-quote-style-seventy-four-monochrome">74 mono</label>
+
+        <input type="radio" name="mini-theme" id="nojs-quote-style-none">
+        <label for="nojs-quote-style-none">debug</label>
+
       </div><!-- end of class mini-theme-selector -->
 
       <!-- The mono-color-selector DIV must be contained in the nojs-style-set DIV. -->
       <div class="mono-color-selector">
 
-        Text color:
+        Color for the 74 mono mini-theme:
 
         <input type="radio" name="mono-color" id="nojs-mono-color-off" checked>
         <label for="nojs-mono-color-off">Off</label>
-{{/* 
-        <input type="radio" name="mono-color" id="nojs-mono-color-525">
-        <label for="nojs-mono-color-525">525</label>
-*/}}
+
         <input type="radio" name="mono-color" id="nojs-mono-color-535">
         <label for="nojs-mono-color-535">535</label>
 
         <input type="radio" name="mono-color" id="nojs-mono-color-602">
         <label for="nojs-mono-color-602">602</label>
-
-        <input type="radio" name="mono-color" id="nojs-mono-color-goldenrod">
-        <label for="nojs-mono-color-goldenrod">g.r.</label>
-
+{{/*
+        <input type="radio" name="mono-color" id="nojs-mono-color-602-blur">
+        <label for="nojs-mono-color-602-blur">602 blur</label>
+*/}}
         <input type="radio" name="mono-color" id="nojs-mono-color-darkgoldenrod">
         <label for="nojs-mono-color-darkgoldenrod">dark g.r.</label>
 
@@ -138,6 +138,8 @@
 
       </div><!-- end of class mono-color-selector -->
 
+<!-- ABANDONED: DIV with class retro-crt-scanline-overlay -->
+
       {{/* Wrapping the following line in a header element causes a duplicate header element. */}}
       {{ partial "header.html" . }}
       <main>
@@ -146,6 +148,8 @@
       <footer>
         {{ partial "footer.html" . }}
       </footer>
+
+<!-- ABANDONED: end of DIV with class retro-crt-scanline-overlay -->
 
     </div><!-- end of class nojs-style-set -->
   </body>

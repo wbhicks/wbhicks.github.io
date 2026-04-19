@@ -73,7 +73,8 @@ $font_family_sans_serif:
   --color-code-border: #808080;
   --color-quotation-mark-ornament: #808080;
 
-  --color-mono-text: $color-text_light;
+  --color-mono-text:       $color-text_light;
+  --color-mono-background: $color_background;
 }
 
 /* ====================
@@ -147,14 +148,6 @@ body.sans-mode main * {
     i.nickname   { color: cyan; }
     abbr         { color: cyan; }
     .design-hint { color: cyan; }
-/*
-  } @else {
-    .markdown-body     { color: var(--color-mono-text); }
-    h1, h2, h3, h4, h5 { color: var(--color-mono-text); }
-    p                  { color: var(--color-mono-text); }
-    .asterism          { color: var(--color-mono-text); }
-    cite, i, abbr      { color: var(--color-mono-text); }
-*/
   }
 }
 body.qa-mode, 
@@ -199,10 +192,10 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked)
       label[for="nojs-quote-style-minimal"],
-.nojs-style-set:has(#nojs-quote-style-ticked:checked)
-      label[for="nojs-quote-style-ticked"],
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked)
-      label[for="nojs-quote-style-halfticked"],
+.nojs-style-set:has(#nojs-quote-style-seventy-four:checked)
+      label[for="nojs-quote-style-seventy-four"],
+.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-seventy-four-monochrome"],
 .nojs-style-set:has(#nojs-quote-style-book:checked)
       label[for="nojs-quote-style-book"],
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked)
@@ -219,10 +212,10 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked)
       label[for="nojs-quote-style-minimal"]::before,
-.nojs-style-set:has(#nojs-quote-style-ticked:checked)
-      label[for="nojs-quote-style-ticked"]::before,
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked)
-      label[for="nojs-quote-style-halfticked"]::before,
+.nojs-style-set:has(#nojs-quote-style-seventy-four:checked)
+      label[for="nojs-quote-style-seventy-four"]::before,
+.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-seventy-four-monochrome"]::before,
 .nojs-style-set:has(#nojs-quote-style-book:checked)
       label[for="nojs-quote-style-book"]::before,
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked)
@@ -255,14 +248,12 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-mono-color-off:checked)
       label[for="nojs-mono-color-off"],
-//.nojs-style-set:has(#nojs-mono-color-525:checked)
-//      label[for="nojs-mono-color-525"],
 .nojs-style-set:has(#nojs-mono-color-535:checked)
       label[for="nojs-mono-color-535"],
 .nojs-style-set:has(#nojs-mono-color-602:checked)
       label[for="nojs-mono-color-602"],
-.nojs-style-set:has(#nojs-mono-color-goldenrod:checked)
-      label[for="nojs-mono-color-goldenrod"],
+//.nojs-style-set:has(#nojs-mono-color-602-blur:checked)
+//      label[for="nojs-mono-color-602-blur"],
 .nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked)
       label[for="nojs-mono-color-darkgoldenrod"],
 .nojs-style-set:has(#nojs-mono-color-moccasin:checked)
@@ -277,14 +268,12 @@ input[type="radio"] {
 
 .nojs-style-set:has(#nojs-mono-color-off:checked)
       label[for="nojs-mono-color-off"]::before,
-//.nojs-style-set:has(#nojs-mono-color-525:checked)
-//      label[for="nojs-mono-color-525"]::before,
 .nojs-style-set:has(#nojs-mono-color-535:checked)
       label[for="nojs-mono-color-535"]::before,
 .nojs-style-set:has(#nojs-mono-color-602:checked)
       label[for="nojs-mono-color-602"]::before,
-.nojs-style-set:has(#nojs-mono-color-goldenrod:checked)
-      label[for="nojs-mono-color-goldenrod"]::before,
+//.nojs-style-set:has(#nojs-mono-color-602-blur:checked)
+//      label[for="nojs-mono-color-602-blur"]::before,
 .nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked)
       label[for="nojs-mono-color-darkgoldenrod"]::before,
 .nojs-style-set:has(#nojs-mono-color-moccasin:checked)
@@ -300,32 +289,60 @@ input[type="radio"] {
    ====================
 */
 
-// No longer used: 505nm (P24 phosphor, #00ff54)
+// No longer used here: 505nm (P24 phosphor, #00ff54)
+// No longer used here: 525nm (P1 phosphor, #4aff00)
 // For comparison only: #00ff00 is 510nm
 
 .nojs-style-set:has(#nojs-mono-color-off:checked) {
-  // See also .nojs-style-set:has(#nojs-quote-style-halfticked:checked), below
-  * { --color-mono-text: $color-text_light; }
+  // See also .nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked), below
+  * { 
+    --color-mono-text: $color-text_light;
+    --color-mono-background: $color_background;
+  }
 }
-//.nojs-style-set:has(#nojs-mono-color-525:checked) {
-//  // 525nm (P1 phosphor, #4aff00)
-//  * { --color-mono-text: #4aff00; }
-//}
 .nojs-style-set:has(#nojs-mono-color-535:checked) {
   // 535nm (P31 phosphor, #70ff00. A source reported its wavelength as
   // being 10nm longer than P1)
   * { --color-mono-text: #70ff00; }
 }
 .nojs-style-set:has(#nojs-mono-color-602:checked) {
-  // 602nm (P3 phosphor)
+  // 602nm (P3 phosphor). For comparison, goldenrod is #daa520
   * { --color-mono-text: #ffb700; }
 }
-.nojs-style-set:has(#nojs-mono-color-goldenrod:checked) {
-  * { --color-mono-text: #daa520; }
-}
+
+//.nojs-style-set:has(#nojs-mono-color-602-blur:checked) {
+//  * {
+//    --color-mono-text: #ffb700;
+//
+//    // offset-x | offset-y | blur-radius | color
+//
+//    // 10px rather than 1px, just to help my unsuccessful (and 
+//    // abandoned) debugging:
+//    text-shadow: 0px 0px 10px #ffb700;
+//  }
+//}
+//
+//.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:not(:checked)) {
+//    text-shadow: none !important; // DOES NOT WORK
+//}
+
 .nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked) {
-  * { --color-mono-text: #b8860b; }
+  * {
+    --color-mono-text: #b8860b;
+  }
+
+  html, body {
+            height: 100%;              /* Ensure full height coverage */
+            margin: 0;                 /* Remove default margins */
+            padding: 0;                /* Remove default padding */
+            background-color: var(--color-mono-background);
+  }
+
+  *, html, html *, body, body *, main, main * {
+    --color-mono-background: blue !important;
+  }
 }
+
 .nojs-style-set:has(#nojs-mono-color-moccasin:checked) {
   * { --color-mono-text: #ffe4b5; }
 }
@@ -340,7 +357,7 @@ input[type="radio"] {
   */
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-ticked:checked),
+.nojs-style-set:has(#nojs-quote-style-seventy-four:checked),
 .nojs-style-set:has(#nojs-quote-style-book:checked),
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked),
 .nojs-style-set:has(#nojs-quote-style-ornament:checked),
@@ -352,14 +369,13 @@ input[type="radio"] {
 
 }
 
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   // See also .nojs-style-set:has(#nojs-mono-color-off:checked), above
-  * { color: var(--color-mono-text); }
+  * {
+    color: var(--color-mono-text);
+    background-color: var(--color-mono-background);
+  }
 }
-
-//.nojs-style-set:has(#nojs-quote-style-halfticked:not(:checked)) {
-//  * { --color-mono-text: $color-text_light; }
-//}
 
 /* +---------------------------------------------+
    |                                             |
@@ -394,8 +410,8 @@ input[type="radio"] {
   */
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-ticked:checked),
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+.nojs-style-set:has(#nojs-quote-style-seventy-four:checked),
+.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   * {
     font-family: var(--font-family-monospaced);
@@ -477,8 +493,8 @@ input[type="radio"] {
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-ticked:checked),
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+.nojs-style-set:has(#nojs-quote-style-seventy-four:checked),
+.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   main {
     max-width: 80ch; // chars per line (if proportional, then approx.)
@@ -821,11 +837,11 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-minimal:checked) {
   --nojs-quote-chars: '"' '"' "\'" "\'";
 }
-.nojs-style-set:has(#nojs-quote-style-ticked:checked) {
+.nojs-style-set:has(#nojs-quote-style-seventy-four:checked) {
   // 0x2035 &bprime, 0x2032 &prime, etc.:
   --nojs-quote-chars: "‵‵" "′′" "‵" "′";
 }
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked) {
+.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   // 0x2035 &bprime, 0x2032 &prime, etc.:
   --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
 }
@@ -847,8 +863,8 @@ input[type="radio"] {
   */
 
 .nojs-style-set:has(#nojs-quote-style-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-ticked:checked),
-.nojs-style-set:has(#nojs-quote-style-halfticked:checked),
+.nojs-style-set:has(#nojs-quote-style-seventy-four:checked),
+.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked),
 .nojs-style-set:has(#nojs-quote-style-book:checked),
 .nojs-style-set:has(#nojs-quote-style-guillemet:checked),
 .nojs-style-set:has(#nojs-quote-style-ornament:checked),
