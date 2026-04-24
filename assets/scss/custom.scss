@@ -74,7 +74,10 @@ $font_family_sans_serif:
   --color-quotation-mark-ornament: #808080;
 
   --color-mono-text:       $color-text_light;
-  --color-mono-background: $color_background;
+
+  // Doesn't work: never fills entire background. Setting $color_background
+  // directly (conditionally, in blocks with :checked) doesn't work either.
+  // --color-mono-background: $color_background;
 }
 
 /* ====================
@@ -254,10 +257,8 @@ input[type="radio"] {
       label[for="nojs-mono-color-602"],
 //.nojs-style-set:has(#nojs-mono-color-602-blur:checked)
 //      label[for="nojs-mono-color-602-blur"],
-.nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked)
-      label[for="nojs-mono-color-darkgoldenrod"],
-.nojs-style-set:has(#nojs-mono-color-moccasin:checked)
-      label[for="nojs-mono-color-moccasin"],
+.nojs-style-set:has(#nojs-mono-color-brooklyn:checked)
+      label[for="nojs-mono-color-brooklyn"],
 .nojs-style-set:has(#nojs-mono-color-uscurrency:checked)
       label[for="nojs-mono-color-uscurrency"] {
 
@@ -274,10 +275,8 @@ input[type="radio"] {
       label[for="nojs-mono-color-602"]::before,
 //.nojs-style-set:has(#nojs-mono-color-602-blur:checked)
 //      label[for="nojs-mono-color-602-blur"]::before,
-.nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked)
-      label[for="nojs-mono-color-darkgoldenrod"]::before,
-.nojs-style-set:has(#nojs-mono-color-moccasin:checked)
-      label[for="nojs-mono-color-moccasin"]::before,
+.nojs-style-set:has(#nojs-mono-color-brooklyn:checked)
+      label[for="nojs-mono-color-brooklyn"]::before,
 .nojs-style-set:has(#nojs-mono-color-uscurrency:checked)
       label[for="nojs-mono-color-uscurrency"]::before {
 
@@ -291,20 +290,23 @@ input[type="radio"] {
 
 // No longer used here: 505nm (P24 phosphor, #00ff54)
 // No longer used here: 525nm (P1 phosphor, #4aff00)
+// No longer used here: #b8860b darkgoldenrod
+// No longer used here: #ffe4b5 moccasin
 // For comparison only: #00ff00 is 510nm
 
 .nojs-style-set:has(#nojs-mono-color-off:checked) {
   // See also .nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked), below
   * { 
     --color-mono-text: $color-text_light;
-    --color-mono-background: $color_background;
   }
 }
+
 .nojs-style-set:has(#nojs-mono-color-535:checked) {
   // 535nm (P31 phosphor, #70ff00. A source reported its wavelength as
   // being 10nm longer than P1)
   * { --color-mono-text: #70ff00; }
 }
+
 .nojs-style-set:has(#nojs-mono-color-602:checked) {
   // 602nm (P3 phosphor). For comparison, goldenrod is #daa520
   * { --color-mono-text: #ffb700; }
@@ -326,26 +328,21 @@ input[type="radio"] {
 //    text-shadow: none !important; // DOES NOT WORK
 //}
 
-.nojs-style-set:has(#nojs-mono-color-darkgoldenrod:checked) {
+.nojs-style-set:has(#nojs-mono-color-brooklyn:checked) {
+
   * {
-    --color-mono-text: #b8860b;
+    --color-mono-text: #7a92a5;
   }
 
-  html, body {
-            height: 100%;              /* Ensure full height coverage */
-            margin: 0;                 /* Remove default margins */
-            padding: 0;                /* Remove default padding */
-            background-color: var(--color-mono-background);
+  .asterism {
+    --color-mono-text: #f7d17f;
   }
 
-  *, html, html *, body, body *, main, main * {
-    --color-mono-background: blue !important;
+  a, .galleries a {
+    text-decoration: #f7d17f80 underline solid; // dotted;
   }
 }
 
-.nojs-style-set:has(#nojs-mono-color-moccasin:checked) {
-  * { --color-mono-text: #ffe4b5; }
-}
 .nojs-style-set:has(#nojs-mono-color-uscurrency:checked) {
   * { --color-mono-text: #85bb65; }
 }
@@ -373,7 +370,6 @@ input[type="radio"] {
   // See also .nojs-style-set:has(#nojs-mono-color-off:checked), above
   * {
     color: var(--color-mono-text);
-    background-color: var(--color-mono-background);
   }
 }
 
