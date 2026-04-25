@@ -74,39 +74,108 @@
   <body>
     <div class="nojs-style-set">
 
+
+
+<style>
+table.table-of-rotation,
+table.table-of-rotation thead,
+table.table-of-rotation thead tr,
+table.table-of-rotation thead tr th,
+table.table-of-rotation tbody,
+table.table-of-rotation tbody tr,
+table.table-of-rotation tbody tr td,
+{
+  border: 1px solid red;
+  background-color: blue;
+}
+</style>
+
+
+
+
       <!-- The mini-theme-selector DIV must be contained in the nojs-style-set DIV. -->
       <div class="mini-theme-selector">
 
-        Mini-themes:
-
-
-        <input type="radio" name="mini-theme" id="nojs-quote-style-minimal">
-        <label for="nojs-quote-style-minimal">Min.</label>
-
+<table class="table-of-rotation">
+<thead>
+<tr>
+<th>Mini-themes:</th>
+<th>Rococo</th>
+<th>Book</th>
+<th>Min.</th>
+<th>74</th>
+<th>74 mono</th>
+{{/*
+<th>debug</th>
+*/}}
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+        Sans:
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-rococo">
+        <label for="nojs-quote-style-rococo">✓</label>
+</td>
+<td>
         <input type="radio" name="mini-theme" id="nojs-quote-style-book">
-        <label for="nojs-quote-style-book">Book</label>
+        <label for="nojs-quote-style-book">✓</label>
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-minimal">
+        <label for="nojs-quote-style-minimal">✓</label>
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four">
+        <label for="nojs-quote-style-seventy-four">✓</label>
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four-monochrome">
+        <label for="nojs-quote-style-seventy-four-monochrome">✓</label>
+</td>
+{{/* ⬤◯●
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-none">
+        <label for="nojs-quote-style-none">debug</label>
+</td>
+*/}}
+</tr>
+<tr>
+<td>
+        Serif:
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-serif-rococo">
+        <label for="nojs-quote-style-serif-rococo">✓</label>
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-serif-book">
+        <label for="nojs-quote-style-serif-book">✓</label>
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-serif-minimal">
+        <label for="nojs-quote-style-serif-minimal">✓</label>
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-serif-seventy-four">
+        <label for="nojs-quote-style-serif-seventy-four">✓</label>
+</td>
+<td>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-serif-seventy-four-monochrome">
+        <label for="nojs-quote-style-serif-seventy-four-monochrome">✓</label>
+</td>
+</tr>
+</tbody>
+</table>
 
-        <input type="radio" name="mini-theme" id="nojs-quote-style-guillemet">
-        <label for="nojs-quote-style-guillemet">Guill.</label>
 
-        <input type="radio" name="mini-theme" id="nojs-quote-style-ornament" checked>
-        <label for="nojs-quote-style-ornament">Ornament</label>
+
 
 {{/* thinking of changing rococo to entre-deux-guerres */}}
 
-        <input type="radio" name="mini-theme" id="nojs-quote-style-rococo">
-        <label for="nojs-quote-style-rococo">Rococo</label>
-
-        <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four">
-        <label for="nojs-quote-style-seventy-four">74</label>
-
 {{/* https://en.wikipedia.org/wiki/7400-series_integrated_circuits */}}
-
-        <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four-monochrome">
-        <label for="nojs-quote-style-seventy-four-monochrome">74 mono</label>
-
-        <input type="radio" name="mini-theme" id="nojs-quote-style-none">
-        <label for="nojs-quote-style-none">debug</label>
 
       </div><!-- end of class mini-theme-selector -->
 
