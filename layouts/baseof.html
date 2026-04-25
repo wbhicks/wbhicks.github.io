@@ -74,8 +74,8 @@
   <body>
     <div class="nojs-style-set">
 
-      <!-- The mini-theme-selector DIV must be contained in the nojs-style-set DIV. -->
-      <!-- div class="mini-theme-selector" -->
+      <!-- The selector for mini-themes (whether a DIV or a TABLE) must be contained -->
+      <!-- in the nojs-style-set DIV. -->
 
 <table class="mini-theme-selector-table">
   <caption>
@@ -149,13 +149,11 @@
       </td>
     </tr>
   </tbody>
-</table>
+</table><!-- End of mini-theme-selector-table -->
 
 {{/* thinking of changing rococo to entre-deux-guerres */}}
 
 {{/* https://en.wikipedia.org/wiki/7400-series_integrated_circuits */}}
-
-      <!-- end of the DIV with class mini-theme-selector -->
 
       <!-- The mono-color-selector DIV must be contained in the nojs-style-set DIV. -->
       <div class="mono-color-selector">
@@ -163,7 +161,7 @@
         Color for the 74 mono mini-theme:
 
         <input type="radio" name="mono-color" id="nojs-mono-color-off" checked>
-        <label for="nojs-mono-color-off">Off</label>
+        <label for="nojs-mono-color-off">off</label>
 
         <input type="radio" name="mono-color" id="nojs-mono-color-535">
         <label for="nojs-mono-color-535">535</label>
@@ -175,10 +173,10 @@
         <label for="nojs-mono-color-602-blur">602 blur</label>
 */}}
         <input type="radio" name="mono-color" id="nojs-mono-color-brooklyn">
-        <label for="nojs-mono-color-brooklyn">brooklyn</label>
+        <label for="nojs-mono-color-brooklyn">ny</label>
 
         <input type="radio" name="mono-color" id="nojs-mono-color-uscurrency">
-        <label for="nojs-mono-color-uscurrency">greenback</label>
+        <label for="nojs-mono-color-uscurrency">bill</label>
 
       </div><!-- end of class mono-color-selector -->
 

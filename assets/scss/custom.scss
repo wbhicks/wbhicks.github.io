@@ -67,8 +67,8 @@ $font_family_sans_serif:
   --color-button-background-unselected: #333;
   --color-button-foreground-selected: $color_primary;
 
-  // Same as --color-rgb-opposite-of-primary:
-  --color-button-background-selected: #335170;
+  // WAS the same numerical RGB value as --color-rgb-opposite-of-primary
+  --color-button-background-selected: black; // #335170;
 
   --color-code-border: #808080;
   --color-quotation-mark-ornament: #808080;
@@ -194,6 +194,7 @@ table.mini-theme-selector-table > tbody > tr > td {
 table.mini-theme-selector-table > tbody > tr > td > input {
   -webkit-appearance: revert;
   height: 1rem;
+  // accent-color: red;
 }
 
 .nojs-style-set:has(#nojs-quote-style-serif-rococo:checked)
@@ -252,7 +253,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 */
 
 .mono-color-selector {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .mono-color-selector label {
@@ -279,7 +280,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
   color: var(--color-button-foreground-selected);
   background: var(--color-button-background-selected);
-  // text-decoration: underline dotted;
+  border: 2px solid $color-text_light;
 }
 
 .nojs-style-set:has(#nojs-mono-color-off:checked)
@@ -389,7 +390,10 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   * {
     color: var(--color-mono-text);
   }
-  table.mini-theme-selector-table * {
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
     color: $color-text_light;
   }
 }
@@ -443,7 +447,11 @@ with
   * {
     font-family: var(--font-family-monospaced-sans-serif);
   }
-  table.mini-theme-selector-table * {
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
     font-family: var(--font-family-proportional-sans-serif);
   }
 }
@@ -455,7 +463,11 @@ with
   * {
     font-family: var(--font-family-monospaced-serif);
   }
-  table.mini-theme-selector-table * {
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
     font-family: var(--font-family-proportional-sans-serif);
   }
 }
@@ -479,7 +491,11 @@ with
   * {
     font-family: var(--font-family-proportional-serif);
   }
-  table.mini-theme-selector-table * {
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
     font-family: var(--font-family-proportional-sans-serif);
   }
 }
