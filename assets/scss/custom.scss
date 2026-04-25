@@ -167,31 +167,33 @@ body.dev-mode main * {
 */
 
 /* ====================
-   Settings for all (i.e., both) rows of radio buttons
+   The 5x2 grid of radio buttons to select a mini-theme
    ====================
 */
 
-input[type="radio"] {
-  height: 2rem;
+table.mini-theme-selector-table {
+  all: revert;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px dotted $color-text_light;
 }
 
-/* ====================
-   The row of radio buttons to select a mini-theme
-   ====================
-*/
+//table.mini-theme-selector-table > caption {
+//  padding-top: 1rem;
+//}
 
-.mini-theme-selector {
-  padding-left: 2rem;
+table.mini-theme-selector-table > thead > tr > th {
+  width: 16%;
 }
 
-.mini-theme-selector label {
-  display: hidden;
-  padding: 0.3rem 1rem;
-  border-radius: 1rem;
-//  font-weight: bold;
-  transition: background 0.5s;
-  color:      var(--color-button-foreground-unselected);
-  background: var(--color-button-background-unselected);
+table.mini-theme-selector-table > tbody > tr > td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table.mini-theme-selector-table > tbody > tr > td > input {
+  -webkit-appearance: revert;
+  height: 1rem;
 }
 
 .nojs-style-set:has(#nojs-quote-style-serif-rococo:checked)
@@ -215,8 +217,8 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-seventy-four-monochrome"] {
 
-  color: var(--color-button-foreground-selected);
-  background: var(--color-button-background-selected);
+//  color: var(--color-button-foreground-selected);
+//  background: var(--color-button-background-selected);
 }
 
 
@@ -241,7 +243,6 @@ input[type="radio"] {
 .nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-seventy-four-monochrome"]::before {
 
-  display: normal;
 //  content: "✓";
 }
 
@@ -388,6 +389,9 @@ input[type="radio"] {
   * {
     color: var(--color-mono-text);
   }
+  table.mini-theme-selector-table * {
+    color: $color-text_light;
+  }
 }
 
 /* +---------------------------------------------+
@@ -439,6 +443,9 @@ with
   * {
     font-family: var(--font-family-monospaced-sans-serif);
   }
+  table.mini-theme-selector-table * {
+    font-family: var(--font-family-proportional-sans-serif);
+  }
 }
 
 .nojs-style-set:has(#nojs-quote-style-serif-minimal:checked),
@@ -447,6 +454,9 @@ with
 
   * {
     font-family: var(--font-family-monospaced-serif);
+  }
+  table.mini-theme-selector-table * {
+    font-family: var(--font-family-proportional-sans-serif);
   }
 }
 
@@ -468,6 +478,9 @@ with
 
   * {
     font-family: var(--font-family-proportional-serif);
+  }
+  table.mini-theme-selector-table * {
+    font-family: var(--font-family-proportional-sans-serif);
   }
 }
 
