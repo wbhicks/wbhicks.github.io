@@ -84,7 +84,7 @@
 {{ end }}
 
 <header>
-  {{ partial "toggle.html" }}
+  {{- /* WAS HERE (now in baseof.html): partial "toggle.html" */ -}}
   <div class="the-div-child-of-the-header">
     {{ $linkTitleOfThisPage := .LinkTitle }}
     {{ $pages := slice (site.GetPage "home") }}
