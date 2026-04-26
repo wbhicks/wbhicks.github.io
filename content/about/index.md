@@ -37,6 +37,12 @@ layout: about
   - enforces monospace
   - max width
 
+## This is an H2 heading above some ruby tests
+
+In this block, only the movie name is within a ruby element: I saw the movie <ruby>The Five Thousand Fingers Of Doctor Strangelove; Or, It's A Mad Mad World</ruby> in the theater.
+
+In this block, only the movie name is within a ruby element, and there are 3 RT's: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It's A Mad Mad World</ruby> in the theater.
+
 ## This is an H2 heading
 
 ### (an H3) Examples of line-height and margin

@@ -15,14 +15,14 @@
 // The Galleries Deluxe default for color_primary is #3a98b9
 
 $color_primary: #ccae8f;
-$color_background: #0e0e0e;
+$color_background: #141414; // was #0e0e0e
 $color_background_footer: #171717; // was darken(#111, 3%);
 
 // The lightness of color_background
 // determines which of these two is used:
 
 $color-text_dark: #000;
-$color-text_light: #ccc2b8;
+$color-text_light: #ffe0cc; // was #ccc2b8
 
 /* I'm treating Courier as sans-serif even though it's not (it's slab-serif),
    because it's monospaced. TODO: make UI label say "mono" instead of "sans"

@@ -1,40 +1,46 @@
-<div class="js-toggle-overall">
+<div class="js-row-of-toggles">
 
-    Monosp.
+    Hide IGT
 
-    <div class="js-toggle-font">
+    <div class="js-toggle-for-igt">
 
-        <div class="js-toggle-track">
-            <div class="js-toggle-track-check">
+        <div class="js-toggle-oblong-groove-for-sliding-disc">
+            <div class="js-toggle-left-icon-for-igt">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="16px" height="16px" fill="#ccc2b8" vertical-align="top"><path d="M96-192v-576h72v576H96Zm696 0v-576h72v576h-72Zm-490-96 143.92-384H515l144 384h-65.9l-34.38-98H404l-34.97 98H302Zm121-154h115l-56-159h-3l-56 159Z"/></svg>
             </div>
-            <div class="js-toggle-track-x">
+            <div class="js-toggle-right-icon-for-igt">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="16px" height="16px" fill="#ccc2b8" vertical-align="top"><path d="M192-192v-576h72v576h-72Zm504 0v-576h72v576h-72Zm-394-96 143.92-384H515l144 384h-65.9l-34.38-98H404l-34.97 98H302Zm121-154h115l-56-159h-3l-56 159Z"/></svg>
             </div>
         </div>
-        <div class="js-toggle-thumb"></div>
-        <input class="js-toggle-screenreader-only" type="checkbox" aria-label="Switch between Dark and Light mode">
+
+        <!-- The 2 DIVs having the following class are the two gray sliding discs -->
+        <div class="js-toggle-sliding-opaque-disc"></div>
+
+        <input class="js-toggle-screenreader-only" type="checkbox" aria-label="Switch between Hide IGT mode and Show IGT mode">
 
     </div>
 
-<span>&nbsp;Prop. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calm&nbsp;</span>
+<span> Show IGT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heath Off </span>
 
-    <div class="js-toggle-brightness">
+    <div class="js-toggle-for-heath">
 
-        <div class="js-toggle-track">
-            <div class="js-toggle-track-check">
+        <div class="js-toggle-oblong-groove-for-sliding-disc">
+            <div class="js-toggle-left-icon-for-heath">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAABS0lEQVRIDe1TMXLCQAz02YbhE/YLKCjyDBpa2vT5S/o8goY3+AH8wHbhDzCZyUHMyvHeyHAmRzIDDTdzlk5araTTOYqe69E3YEIKqKqqDcERk2WZ401pFAmid4g3bYN+E/lZbNQlaNvW1HX9fe7sz64aXZkP6+s0FqAxRle5FyJu+BYkA8EX9VDpqpMAXwWsuiefAGZhm/oSMJ4xguk6IFg7aKPsSS3Ok1s6GSQQMkmiEzVNM8eMZmVZfgi5YLCCk1wk+Invvkf5Wmt3eACfmMWrnJFsJWbsoCSjCdBFGsfxGkQVdreKokjzPN/89brIcyFleBygdsostN2HG/xoOjhE7zu5Ch1NoCsjg88mPv0oiKUcnQEB/5WjHZD4WnXsCC8rETxeG8Oc/DUBSVyERwHxQZm3Sh/+ydqRJMmLPgfqW3S8DMQ+YXe6gROeqYYgTXzPzgAAAABJRU5ErkJggg==" role="presentation" style="pointer-events: none;" width="16" height="16">
             </div>
-            <div class="js-toggle-track-x">
+            <div class="js-toggle-right-icon-for-heath">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAACN0lEQVRIDd1VO0sDQRDOJTFqGZsI5ikKWgiKIFiIhSIIdlY+foKNfXpBwcqfoGJlIWghCViIFhaKlSiY1yVgoyGNIiHnN+fOMbfeJVjqwmZmvvlmZmey2QQCf30ZnRooFouZUCh0BN6Uxv2EnU0kEjsa7jJ9C1QqlQHLskzD8KXIRIcotCYB1oOsSFmtVrdgc3IL+hoSGHKj+ADwGxW3igO1lO4SP45nmuYugjcVax1JD1wRmgFuCDHvgLvIRYeQFJeBUwzB+aQIcZCrwHKw57DzsOfJ54O9whXFfgBvlHi09BHZyTH3JUr+TbGTk0pFeLHOkk7ep5wjOEAvE50CtVptUoGf8Xj8lAmQeaWzJJN1ljYFB8uSgrGd2ID8QNVHbKtcLi9I/Lc65aDNcU4HAIYJTCaT5yDkFJHm33Z14soCMhHPlqX06TpzWLr8fgV4tixdQZrBnDxm77qVxAtrZNvk6+jl0zHJxbjulf+YeU4HqP5MYKlU8myVA7xkoVDoQXITvjHyo+gy85wOWq3WOh61K1w1uqI9TNAlEi0CO9NxtiORSD/rJJ0O0un0NQEo0I0ks6T7LM/kmMAeTm7EYrEXGed0QGCz2ZwIh8O3UC/QdjSTydQlWeqUTNp+utMBEZDwDh3Q2x9Aobd2ndTrdXp3Oi5XAWLjmVjhIjAv8Mv+0L74beI1Go0Nkp2Wb5sY0bgal2cOXIqZVCp16ekUoG8B5uAvczoYDO6jq0HGIPP4DuaF/Y/VL4d90gw8cMOhAAAAAElFTkSuQmCC" role="presentation" style="pointer-events: none;" width="16" height="16">
             </div>
         </div>
-        <div class="js-toggle-thumb"></div>
-        <input class="js-toggle-screenreader-only" type="checkbox" aria-label="Switch between Dark and Light mode">
+
+        <!-- The 2 DIVs having the following class are the two gray sliding discs -->
+        <div class="js-toggle-sliding-opaque-disc"></div>
+
+        <input class="js-toggle-screenreader-only" type="checkbox" aria-label="Switch between Heath On mode and Heath Off mode">
 
     </div>
 
-    Garish
+    Heath On
 
 </div>
 
@@ -48,13 +54,14 @@
    * MIT License
   **/
 
-.js-toggle-overall {
+.js-row-of-toggles {
     display: table;
     margin: 0 auto;
     padding-bottom: 1em;
 }
 
-.js-toggle-font {
+.js-toggle-for-igt,
+.js-toggle-for-heath {
     touch-action: pan-x;
     display: inline-block;
     position: relative;
@@ -67,35 +74,57 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     vertical-align: middle;
+  }
+  
+  .js-toggle-left-icon-for-igt,
+  .js-toggle-left-icon-for-heath {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 5px;
+//    right: 5px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    transition: opacity 0.25s ease;
   }
 
-.js-toggle-brightness {
-    touch-action: pan-x;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    -webkit-touch-callout: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: transparent;
-    vertical-align: middle;
-  }
-  
-  .js-toggle-screenreader-only {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
+  .js-toggle-right-icon-for-igt,
+  .js-toggle-right-icon-for-heath {
     position: absolute;
-    width: 1px;
+    width: 17px;
+    height: 17px;
+//    left: 5px;
+    right: 5px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    transition: opacity 0.25s ease;
   }
   
-  .js-toggle-track {
+  .js-toggle-for-igt--checked .js-toggle-left-icon-for-igt {
+    opacity: 1;
+    transition: opacity 0.25s ease;
+  }
+  
+  .js-toggle-for-heath--checked .js-toggle-left-icon-for-heath {
+    opacity: 1;
+    transition: opacity 0.25s ease;
+  }
+  
+  .js-toggle-for-igt--checked .js-toggle-right-icon-for-igt {
+    opacity: 0;
+  }
+  
+  .js-toggle-for-heath--checked .js-toggle-right-icon-for-heath {
+    opacity: 0;
+  }
+
+  .js-toggle-oblong-groove-for-sliding-disc {
     width: 50px;
     height: 24px;
     padding: 0;
@@ -103,54 +132,8 @@
     background-color: #333; //hsl(222, 14%, 7%);
     transition: all 0.2s ease;
   }
-  
-  .js-toggle-track-check {
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    left: 5px;
-    top: 0px;
-    bottom: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 0;
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
-  
-  .js-toggle-font--checked .js-toggle-track-check {
-    opacity: 1;
-    transition: opacity 0.25s ease;
-  }
-  
-  .js-toggle-brightness--checked .js-toggle-track-check {
-    opacity: 1;
-    transition: opacity 0.25s ease;
-  }
-  
-  .js-toggle-track-x {
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    right: 5px;
-    top: 0px;
-    bottom: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 0;
-    opacity: 1;
-    transition: opacity 0.25s ease;
-  }
-  
-  .js-toggle-font--checked .js-toggle-track-x {
-    opacity: 0;
-  }
-  
-  .js-toggle-brightness--checked .js-toggle-track-x {
-    opacity: 0;
-  }
-  
-  .js-toggle-thumb {
+
+  .js-toggle-sliding-opaque-disc {
     position: absolute;
     top: 1px;
     left: 1px;
@@ -163,38 +146,39 @@
     transform: translateX(0);
   }
   
-  .js-toggle-font--checked .js-toggle-thumb {
+  .js-toggle-for-igt--checked .js-toggle-sliding-opaque-disc {
     transform: translateX(26px);
     border-color: #19ab27;
   }
 
-  .js-toggle-brightness--checked .js-toggle-thumb {
+  .js-toggle-for-heath--checked .js-toggle-sliding-opaque-disc {
     transform: translateX(26px);
     border-color: #19ab27;
   }
   
-/*
-  .js-toggle-font--focus .js-toggle-thumb {
-    box-shadow: 0px 0px 2px 3px rgb(167, 255, 167); }
-  .js-toggle-brightness--focus .js-toggle-thumb {
-    box-shadow: 0px 0px 2px 3px rgb(167, 255, 167); }
-  .js-toggle-font:active .js-toggle-thumb {
-    box-shadow: 0px 0px 5px 5px rgb(167, 255, 167); }
-  .js-toggle-brightness:active .js-toggle-thumb {
-    box-shadow: 0px 0px 5px 5px rgb(167, 255, 167); }
-*/
+  .js-toggle-screenreader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
 </style>
 
 
 <script>
 var body = document.body;
-var switcher = document.getElementsByClassName('js-toggle-brightness')[0];
+var switcher = document.getElementsByClassName('js-toggle-for-heath')[0];
 // Click on dark mode icon. Add dark mode classes and wrappers. Store user preference through sessions
 switcher.addEventListener("click", function() {
-  this.classList.toggle('js-toggle-brightness--checked');
-  this.classList.add('js-toggle-brightness--focus');
+  this.classList.toggle('js-toggle-for-heath--checked');
+  this.classList.add('js-toggle-for-heath--focus');
   //If dark mode is selected
-  if (this.classList.contains('js-toggle-brightness--checked')) {
+  if (this.classList.contains('js-toggle-for-heath--checked')) {
     body.classList.remove('dev-mode');
     body.classList.add('qa-mode');
     // Save user preference in storage
@@ -211,7 +195,7 @@ switcher.addEventListener("click", function() {
 // Check Storage. Keep user preference on page reload
 if (localStorage.getItem('darkMode')) {
   // body.classList.add('qa-mode');
-  switcher.classList.add('js-toggle-brightness--checked');
+  switcher.classList.add('js-toggle-for-heath--checked');
   body.classList.remove('dev-mode');
   body.classList.add('qa-mode');
 }
@@ -220,13 +204,13 @@ if (localStorage.getItem('darkMode')) {
 
 <script>
 var body = document.body;
-var switcher = document.getElementsByClassName('js-toggle-font')[0];
+var switcher = document.getElementsByClassName('js-toggle-for-igt')[0];
 // Click on dark mode icon. Add dark mode classes and wrappers. Store user preference through sessions
 switcher.addEventListener("click", function() {
-  this.classList.toggle('js-toggle-font--checked');
-  this.classList.add('js-toggle-font--focus');
+  this.classList.toggle('js-toggle-for-igt--checked');
+  this.classList.add('js-toggle-for-igt--focus');
   //If dark mode is selected
-  if (this.classList.contains('js-toggle-font--checked')) {
+  if (this.classList.contains('js-toggle-for-igt--checked')) {
     body.classList.remove('sans-mode');
     body.classList.add('serif-mode');
     // Save user preference in storage
@@ -243,7 +227,7 @@ switcher.addEventListener("click", function() {
 // Check Storage. Keep user preference on page reload
 if (localStorage.getItem('serifMode')) {
   // body.classList.add('serif-mode');
-  switcher.classList.add('js-toggle-font--checked');
+  switcher.classList.add('js-toggle-for-igt--checked');
   body.classList.remove('sans-mode');
   body.classList.add('serif-mode');
 }
