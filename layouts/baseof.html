@@ -75,10 +75,10 @@
 
     {{ partial "toggle.html" }}
 
-    <div class="nojs-style-set">
+    <div class="nojs-mini-themed">
 
       <!-- The selector for mini-themes (whether a DIV or a TABLE) must be contained -->
-      <!-- in the nojs-style-set DIV. -->
+      <!-- in the nojs-mini-themed DIV. -->
 
 <table class="mini-theme-selector-table">
   <caption>
@@ -158,7 +158,7 @@
 
 {{/* https://en.wikipedia.org/wiki/7400-series_integrated_circuits */}}
 
-      <!-- The mono-color-selector DIV must be contained in the nojs-style-set DIV. -->
+      <!-- The mono-color-selector DIV must be contained in the nojs-mini-themed DIV. -->
       <div class="mono-color-selector">
 
         Color for the 74 mono mini-theme:
@@ -185,17 +185,18 @@
 
 <!-- ABANDONED: DIV with class retro-crt-scanline-overlay -->
 
-      {{/* Wrapping the following line in a header element causes a duplicate header element. */}}
+      {{/* The HEADER element is in the following partial template: */}}
       {{ partial "header.html" . }}
+
       <main>
         {{ block "main" . }}{{ end }}
       </main>
-      <footer>
-        {{ partial "footer.html" . }}
-      </footer>
+
+      {{/* The FOOTER element is in the following partial template: */}}
+      {{ partial "footer.html" . }}
 
 <!-- ABANDONED: end of DIV with class retro-crt-scanline-overlay -->
 
-    </div><!-- end of class nojs-style-set -->
+    </div><!-- end of class nojs-mini-themed -->
   </body>
 </html>

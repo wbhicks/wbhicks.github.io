@@ -157,7 +157,12 @@ body.sans-mode main * {
     i.so-called  { color: cyan; }
     i.nickname   { color: cyan; }
     abbr         { color: cyan; }
-    .design-hint { color: cyan; }
+
+    .design-hint {
+      display: revert;
+      border: 1px dotted red;
+      border-radius: 3px;
+    }
   }
 }
 body.qa-mode, 
@@ -178,16 +183,7 @@ body.dev-mode main * {
    ====================
 */
 
-table.mini-theme-selector-table {
-  all: revert;
-  padding: 1rem;
-  margin: 1rem;
-  border: 1px dotted $color-text_light;
-}
-
-//table.mini-theme-selector-table > caption {
-//  padding-top: 1rem;
-//}
+table.mini-theme-selector-table {}
 
 table.mini-theme-selector-table > thead > tr > th {
   width: 16%;
@@ -204,25 +200,25 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   // accent-color: red;
 }
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked)
       label[for="nojs-quote-style-serif-rococo"],
-.nojs-style-set:has(#nojs-quote-style-serif-book:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked)
       label[for="nojs-quote-style-serif-book"],
-.nojs-style-set:has(#nojs-quote-style-serif-minimal:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
       label[for="nojs-quote-style-serif-minimal"],
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked)
       label[for="nojs-quote-style-serif-seventy-four"],
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-serif-seventy-four-monochrome"],
-.nojs-style-set:has(#nojs-quote-style-rococo:checked)
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
       label[for="nojs-quote-style-rococo"],
-.nojs-style-set:has(#nojs-quote-style-book:checked)
+.nojs-mini-themed:has(#nojs-quote-style-book:checked)
       label[for="nojs-quote-style-book"],
-.nojs-style-set:has(#nojs-quote-style-minimal:checked)
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
       label[for="nojs-quote-style-minimal"],
-.nojs-style-set:has(#nojs-quote-style-seventy-four:checked)
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked)
       label[for="nojs-quote-style-seventy-four"],
-.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked)
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-seventy-four-monochrome"] {
 
 //  color: var(--color-button-foreground-selected);
@@ -230,25 +226,25 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 }
 
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked)
       label[for="nojs-quote-style-serif-rococo"]::before,
-.nojs-style-set:has(#nojs-quote-style-serif-book:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked)
       label[for="nojs-quote-style-serif-book"]::before,
-.nojs-style-set:has(#nojs-quote-style-serif-minimal:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
       label[for="nojs-quote-style-serif-minimal"]::before,
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked)
       label[for="nojs-quote-style-serif-seventy-four"]::before,
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-serif-seventy-four-monochrome"]::before,
-.nojs-style-set:has(#nojs-quote-style-rococo:checked)
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
       label[for="nojs-quote-style-rococo"]::before,
-.nojs-style-set:has(#nojs-quote-style-book:checked)
+.nojs-mini-themed:has(#nojs-quote-style-book:checked)
       label[for="nojs-quote-style-book"]::before,
-.nojs-style-set:has(#nojs-quote-style-minimal:checked)
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
       label[for="nojs-quote-style-minimal"]::before,
-.nojs-style-set:has(#nojs-quote-style-seventy-four:checked)
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked)
       label[for="nojs-quote-style-seventy-four"]::before,
-.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked)
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-seventy-four-monochrome"]::before {
 
 //  content: "✓";
@@ -259,10 +255,6 @@ table.mini-theme-selector-table > tbody > tr > td > input {
    ====================
 */
 
-.mono-color-selector {
-  padding-left: 1rem;
-}
-
 .mono-color-selector label {
   padding: 0.3rem 1rem;
   border-radius: 1rem;
@@ -272,17 +264,17 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   background: var(--color-button-background-unselected);
 }
 
-.nojs-style-set:has(#nojs-mono-color-off:checked)
+.nojs-mini-themed:has(#nojs-mono-color-off:checked)
       label[for="nojs-mono-color-off"],
-.nojs-style-set:has(#nojs-mono-color-535:checked)
+.nojs-mini-themed:has(#nojs-mono-color-535:checked)
       label[for="nojs-mono-color-535"],
-.nojs-style-set:has(#nojs-mono-color-602:checked)
+.nojs-mini-themed:has(#nojs-mono-color-602:checked)
       label[for="nojs-mono-color-602"],
-//.nojs-style-set:has(#nojs-mono-color-602-blur:checked)
+//.nojs-mini-themed:has(#nojs-mono-color-602-blur:checked)
 //      label[for="nojs-mono-color-602-blur"],
-.nojs-style-set:has(#nojs-mono-color-brooklyn:checked)
+.nojs-mini-themed:has(#nojs-mono-color-brooklyn:checked)
       label[for="nojs-mono-color-brooklyn"],
-.nojs-style-set:has(#nojs-mono-color-uscurrency:checked)
+.nojs-mini-themed:has(#nojs-mono-color-uscurrency:checked)
       label[for="nojs-mono-color-uscurrency"] {
 
   color: var(--color-button-foreground-selected);
@@ -290,17 +282,17 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   border: 2px solid $color-text_light;
 }
 
-.nojs-style-set:has(#nojs-mono-color-off:checked)
+.nojs-mini-themed:has(#nojs-mono-color-off:checked)
       label[for="nojs-mono-color-off"]::before,
-.nojs-style-set:has(#nojs-mono-color-535:checked)
+.nojs-mini-themed:has(#nojs-mono-color-535:checked)
       label[for="nojs-mono-color-535"]::before,
-.nojs-style-set:has(#nojs-mono-color-602:checked)
+.nojs-mini-themed:has(#nojs-mono-color-602:checked)
       label[for="nojs-mono-color-602"]::before,
-//.nojs-style-set:has(#nojs-mono-color-602-blur:checked)
+//.nojs-mini-themed:has(#nojs-mono-color-602-blur:checked)
 //      label[for="nojs-mono-color-602-blur"]::before,
-.nojs-style-set:has(#nojs-mono-color-brooklyn:checked)
+.nojs-mini-themed:has(#nojs-mono-color-brooklyn:checked)
       label[for="nojs-mono-color-brooklyn"]::before,
-.nojs-style-set:has(#nojs-mono-color-uscurrency:checked)
+.nojs-mini-themed:has(#nojs-mono-color-uscurrency:checked)
       label[for="nojs-mono-color-uscurrency"]::before {
 
   content: "✓ ";
@@ -317,25 +309,25 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 // No longer used here: #ffe4b5 moccasin
 // For comparison only: #00ff00 is 510nm
 
-.nojs-style-set:has(#nojs-mono-color-off:checked) {
-  // See also .nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked), below
+.nojs-mini-themed:has(#nojs-mono-color-off:checked) {
+  // See also .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked), below
   * { 
     --color-mono-text: $color-text_light;
   }
 }
 
-.nojs-style-set:has(#nojs-mono-color-535:checked) {
+.nojs-mini-themed:has(#nojs-mono-color-535:checked) {
   // 535nm (P31 phosphor, #70ff00. A source reported its wavelength as
   // being 10nm longer than P1)
   * { --color-mono-text: #70ff00; }
 }
 
-.nojs-style-set:has(#nojs-mono-color-602:checked) {
+.nojs-mini-themed:has(#nojs-mono-color-602:checked) {
   // 602nm (P3 phosphor). For comparison, goldenrod is #daa520
   * { --color-mono-text: #ffb700; }
 }
 
-//.nojs-style-set:has(#nojs-mono-color-602-blur:checked) {
+//.nojs-mini-themed:has(#nojs-mono-color-602-blur:checked) {
 //  * {
 //    --color-mono-text: #ffb700;
 //
@@ -347,11 +339,11 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 //  }
 //}
 //
-//.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:not(:checked)) {
+//.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:not(:checked)) {
 //    text-shadow: none !important; // DOES NOT WORK
 //}
 
-.nojs-style-set:has(#nojs-mono-color-brooklyn:checked) {
+.nojs-mini-themed:has(#nojs-mono-color-brooklyn:checked) {
 
   * {
     --color-mono-text: #7a92a5;
@@ -366,7 +358,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   }
 }
 
-.nojs-style-set:has(#nojs-mono-color-uscurrency:checked) {
+.nojs-mini-themed:has(#nojs-mono-color-uscurrency:checked) {
   * { --color-mono-text: #85bb65; }
 }
 
@@ -376,14 +368,14 @@ table.mini-theme-selector-table > tbody > tr > td > input {
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-book:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-book:checked),
-.nojs-style-set:has(#nojs-quote-style-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
 
   .mono-color-selector {
     display: none;
@@ -391,9 +383,9 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
 }
 
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
-  // See also .nojs-style-set:has(#nojs-mono-color-off:checked), above
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+  // See also .nojs-mini-themed:has(#nojs-mono-color-off:checked), above
   * {
     color: var(--color-mono-text);
   }
@@ -425,13 +417,13 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 /*
 Now that I've retired the "none" style, I've replaced
 
-    .nojs-style-set:has(#nojs-quote-style-none:not(:checked)) { ... }
+    .nojs-mini-themed:has(#nojs-quote-style-none:not(:checked)) { ... }
 
 with
 
-    .nojs-style-set { ... }
+    .nojs-mini-themed { ... }
 
-.nojs-style-set:has(#nojs-quote-style-none:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-none:checked) {
   * {
     // "initial" and "unset" are both far, far too sweeping: 
     // all: initial;
@@ -447,9 +439,9 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   * {
     font-family: var(--font-family-monospaced-sans-serif);
@@ -463,9 +455,9 @@ with
   }
 }
 
-.nojs-style-set:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   * {
     font-family: var(--font-family-monospaced-serif);
@@ -484,16 +476,16 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   * {
     font-family: var(--font-family-proportional-sans-serif);
   }
 }
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
 
   * {
     font-family: var(--font-family-proportional-serif);
@@ -517,25 +509,26 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set {
+// PADDING is no longer used (except temporarily for CODE, and permanently in the galleries)
+
+body > div.nojs-mini-themed > table.mini-theme-selector-table,
+
+body > div.nojs-mini-themed > div.mono-color-selector,
+
+body > div.nojs-mini-themed > header,
+
+body > div.nojs-mini-themed > main,
+
+body > div.nojs-mini-themed > footer {
+  
+  border: 1px dotted cyan;
+
+}
+
+.nojs-mini-themed {
 
   main {
     line-height: 1.5;
-  }
-
-  main {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-  }
-
-  /* Side padding for footer is already 
-     at 1rem (because of Galleries Deluxe?) 
-  */
-  body footer {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
   }
 
   p {
@@ -549,10 +542,10 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   main {
     max-width: 80ch; // chars per line (if proportional, then approx.)
@@ -570,7 +563,7 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set {
+.nojs-mini-themed {
 
   ol {
     /* Override assignment of "disc" in styles.scss, which would make ol's 
@@ -578,13 +571,11 @@ with
     */
     list-style-type: decimal !important;
     list-style-position: outside !important; /* Is "inside" better? */
-    /* padding-left: 1rem; */
     margin-left: 2rem;
     margin-bottom: 0.5rem;
   }
 
   ul {
-    /* padding-left: 1rem; */
     margin-left: 2rem;
     margin-bottom: 0.5rem;
   }
@@ -632,7 +623,7 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set {
+.nojs-mini-themed {
 
   .asterism {
     /* No longer using this CSS var:
@@ -671,8 +662,8 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   .asterism {
     font-family: monospace;
     white-space-collapse: preserve;
@@ -701,7 +692,7 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set {
+.nojs-mini-themed {
 
   main code {
 
@@ -753,7 +744,7 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set {
+.nojs-mini-themed {
 
   .commentary, 
   .url-line {
@@ -772,7 +763,7 @@ with
 
 }
 
-//.nojs-style-set:has(#nojs-quote-style-minimal:checked) {
+//.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 //  .fisheye-means-rightmost {
 //    // all: revert; // Uncommenting this line centers these DIVs. Unsure why.
 //  }
@@ -788,7 +779,7 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set {
+.nojs-mini-themed {
 
   /* - - - - -
      Overriding the default oblique styling of CITE as follows, because not all
@@ -845,10 +836,7 @@ with
     text-decoration: overline dotted;
   }
   .design-hint {
-    border: 1px dotted red;
-    border-radius: 3px;
-    padding: 1px 2px;
-    margin: 0 0.2rem;
+    display: none;
   }
 
 }
@@ -863,7 +851,7 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set {
+.nojs-mini-themed {
 
   blockquote {
     margin-left: 2rem;
@@ -878,8 +866,8 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
 
   blockquote {
     line-height: 2;
@@ -892,30 +880,30 @@ with
    ====================
 */
 
-.nojs-style-set:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-minimal:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   --nojs-quote-chars: '"' '"' "\'" "\'";
 }
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
   // 0x2035 &bprime, 0x2032 &prime, etc.:
   --nojs-quote-chars: "‵‵" "′′" "‵" "′";
 }
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   // 0x2035 &bprime, 0x2032 &prime, etc.:
   --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
 }
-.nojs-style-set:has(#nojs-quote-style-serif-book:checked),
-.nojs-style-set:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
   --nojs-quote-chars: "“" "”" "‘" "’";
 }
-//.nojs-style-set:has(#nojs-quote-style-guillemet:checked) {
+//.nojs-mini-themed:has(#nojs-quote-style-guillemet:checked) {
 //  --nojs-quote-chars: "«" "»" "‹" "›";
 //}
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   --nojs-quote-chars: '❝' '❞' "❛" "❜";
 }
 
@@ -924,16 +912,16 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-book:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-book:checked),
-.nojs-style-set:has(#nojs-quote-style-minimal:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four:checked),
-.nojs-style-set:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   /* - - - - -
      Quotation mark configuration
@@ -1003,8 +991,8 @@ with
      ~ ~ ~ ~ ~ 
   */
 
-.nojs-style-set:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-style-set:has(#nojs-quote-style-rococo:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
 
   --ornament-quote-position: relative;
   --ornament-quote-vertical-align: -0.2rem;
