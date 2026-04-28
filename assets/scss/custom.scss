@@ -504,11 +504,6 @@ with
    ====================
 */
 
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
-
 // PADDING is no longer used (except temporarily for CODE, and permanently in the galleries)
 
 body > div.nojs-mini-themed > table.mini-theme-selector-table,
@@ -522,6 +517,7 @@ body > div.nojs-mini-themed > main,
 body > div.nojs-mini-themed > footer {
   
   border: 1px dotted cyan;
+  margin-left: 2rem;
 
 }
 
@@ -531,9 +527,9 @@ body > div.nojs-mini-themed > footer {
     line-height: 1.5;
   }
 
-  p {
-    margin-bottom: 2rem;
-  }
+//  p {
+//    margin-bottom: 2rem;
+//  }
 
 }
 
@@ -555,13 +551,30 @@ body > div.nojs-mini-themed > footer {
 
 /* ====================
    Elements for lists: OL, UL, & LI
+
+   There's a line above like this ...
+
+   main { margin-left: 1rem; }
+
+   ... but its effect on lists is calculated using the left edge of the
+   content (of the top-level list items), NOT the left edge of their 
+   bullets. See https://developer.mozilla.org/en-US/docs/Learn_web_devel
+   opment/Core/Text_styling/Styling_lists
+
+   To prevent each unordered list's top-level bullets from protruding
+   into the page's left margin, use a value of at least 1.7rem or so in
+   the following:
+
+   ul { margin-left: 1.7rem; }
+
+   This also determines the indentation of each nested list. If that 
+   looks bad, the following will reduce the nested indentations:
+
+   ul { margin-left: 1.7rem; }
+   ul > li > ul { margin-left: 1rem; }
+
    ====================
 */
-
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
 
 .nojs-mini-themed {
 
@@ -571,14 +584,16 @@ body > div.nojs-mini-themed > footer {
     */
     list-style-type: decimal !important;
     list-style-position: outside !important; /* Is "inside" better? */
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
+//    margin-left: 2rem;
+//    margin-bottom: 0.5rem;
   }
 
   ul {
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
+    margin-left: 1.7rem;
+//    margin-bottom: 0.5rem;
   }
+
+ul > li > ul { margin-left: 1rem; }
 
   body main ul > li {
     list-style-type: circle;
@@ -618,11 +633,6 @@ body > div.nojs-mini-themed > footer {
    ====================
 */
 
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
-
 .nojs-mini-themed {
 
   .asterism {
@@ -644,15 +654,15 @@ body > div.nojs-mini-themed > footer {
     text-align: center;
     font-size: 1rem;
     font-weight: normal;
-    margin-bottom: 2rem;
+//    margin-bottom: 2rem;
   }
 
   .h5-from-4stars {
     font-size: 1rem;
     font-weight: normal;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+//    margin-bottom: 2rem;
+//    margin-left: 1rem;
+//    margin-right: 1rem;
   }
 
 }
@@ -686,11 +696,6 @@ body > div.nojs-mini-themed > footer {
              cs/Web/HTML/Reference/Elements/pre
    ====================
 */
-
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
 
 .nojs-mini-themed {
 
@@ -727,8 +732,8 @@ body > div.nojs-mini-themed > footer {
 
     /* margin-left affects 1st line only, unless "display: block" is also used 
     */
-    display: block;
-    margin-left: 1rem;
+//    display: block;
+//    margin-left: 1rem;
 
   }
 
@@ -739,26 +744,21 @@ body > div.nojs-mini-themed > footer {
    ====================
 */
 
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
-
 .nojs-mini-themed {
 
   .commentary, 
   .url-line {
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+//    margin-right: 1rem;
+//    margin-bottom: 2rem;
   }
   .dek {
-    margin-left: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+//    margin-left: 2rem;
+//    margin-right: 1rem;
+//    margin-bottom: 2rem;
   }
   .fisheye-means-rightmost {
     text-align: right;
-    margin-right: 1rem;
+//    margin-right: 1rem;
   }
 
 }
@@ -773,11 +773,6 @@ body > div.nojs-mini-themed > footer {
    Span-level elements & classes
    ====================
 */
-
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
 
 .nojs-mini-themed {
 
@@ -846,17 +841,12 @@ body > div.nojs-mini-themed > footer {
    ====================
 */
 
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
-
 .nojs-mini-themed {
 
   blockquote {
-    margin-left: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+//    margin-left: 2rem;
+//    margin-right: 1rem;
+//    margin-bottom: 2rem;
   }
 
 }
@@ -907,21 +897,7 @@ body > div.nojs-mini-themed > footer {
   --nojs-quote-chars: '❝' '❞' "❛" "❜";
 }
 
-  /* ~ ~ ~ ~ ~
-     Excluded: the NONE mini-theme
-     ~ ~ ~ ~ ~ 
-  */
-
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+.nojs-mini-themed {
 
   /* - - - - -
      Quotation mark configuration

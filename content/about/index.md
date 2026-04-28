@@ -24,9 +24,9 @@ layout: about
 # outputs: The output formats to render.
 ---
 
-# This is an H1 heading
-
 12345678901234567890123456789012345forty1234567890123456789012345678901234eighty
+
+# This H1 heading is for nested lists of mini-theme descriptions
 
 - The MINIMAL mini-theme:
   - straight ASCII quotation marks
@@ -36,6 +36,15 @@ layout: about
   - 60's to 80's, pseudo-ASCII quotation marks
   - enforces monospace
   - max width
+- The NONE mini-theme
+  - no longer exists in UI
+  - can be made default in custom.scss
+    - just move the position of " checked"
+      - some more nesting
+        - to test
+  - merely exposes what the Galleries Deluxe module does
+
+# This H1 heading is for ...
 
 ## This is an H2 heading above some ruby tests
 
