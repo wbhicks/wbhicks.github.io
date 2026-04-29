@@ -28,6 +28,17 @@ layout: about
 
 # This H1 heading is for nested lists of mini-theme descriptions
 
+Here's an ordered list:
+
+1. Apple a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e
+   1. Gala gala gala gala gala gala gala gala gala gala gala gala gala gala gala gala g a l a gala gala gala g a l a g a l a g a l a gala gala gala gala gala gala gala gala gala gala gala
+      1. Organic Gala o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c
+   2. Fuji
+2. Banana
+3. Carrot
+
+Here's an unordered list:
+
 - The MINIMAL mini-theme:
   - straight ASCII quotation marks
   - enforces monospace
@@ -40,9 +51,15 @@ layout: about
   - no longer exists in UI
   - can be made default in custom.scss
     - just move the position of " checked"
-      - some more nesting
+      - ignore this nested i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m
         - to test
   - merely exposes what the Galleries Deluxe module does
+
+Apart from lists, the only other block element where the overall margin-left is insufficient is the BLOCKQUOTE element. Here is one:
+
+> This sentence is a blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote.
+
+This paragraph has no prefix, so it shouldn't normally be encountered.
 
 # This H1 heading is for ...
 
