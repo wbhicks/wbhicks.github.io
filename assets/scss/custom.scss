@@ -518,7 +518,7 @@ body > div.nojs-mini-themed > footer {
   
   border: 1px dotted cyan;
   margin-left: 1rem;
-  margin-right: 7rem;
+  margin-right: 1rem;
 
 }
 
@@ -553,31 +553,54 @@ body > div.nojs-mini-themed > footer {
 /* ====================
    Elements for lists: OL, UL, & LI
 
-   There's a line above like this ...
+   Problem: There's a line above like this ...
 
-   main { margin-left: 1rem; }
+     main { margin-left: 1rem; }
 
    ... but its effect on lists is calculated using the left edge of the
    content (of the top-level list items), NOT the left edge of their 
-   bullets. See https://developer.mozilla.org/en-US/docs/Learn_web_devel
-   opment/Core/Text_styling/Styling_lists
+   bullets or numbers. See https://developer.mozilla.org/en-US/docs/Lea
+   rn_web_development/Core/Text_styling/Styling_lists
 
-   Note: None of the margin-left values below depend on the value above.
+   (Sidenote: None of the margin-left or padding-left values discussed
+   below depend on the value above.)
 
    To prevent each unordered list's top-level bullets from protruding into
-   the page's left margin, use a value of at least 1.7rem or so[1] in the
-   following:
+   the page's left margin, use padding-left or margin-left. Padding-left is
+   better because it won't break the right margin.
 
-   ul { margin-left: 1.7rem; }
+   With padding-left, use a value of at least 0.9rem for unordered lists
+   and at least 1.4rem for ordered lists[1], e.g.
 
-      [1] 1.7rem suffices for unordered lists, but ordered lists need at 
-          least 2.6rem even before you reach 10 items.
+     ul { padding-left: 0.9rem; }
+     ol { padding-left: 1.4rem; }
 
-   This also determines the indentation of each nested list. If that looks
-   bad, the following will reduce the nested indentations:
+   [1] For ordered lists, the padding-left or margin-left value should be 
+       bigger if a list might have more than 9 top-level items, to 
+       accommodate double-digit numbering.
 
-   ul { margin-left: 1.7rem; }
-   ul > li > ul { margin-left: 1rem; }
+   If you prefer to use margin-left, try these values at a minimum:
+
+     ul { margin-left: 1.7rem; }
+     ol { margin-left: 2.6rem; }
+
+   Margin-left breaks inherited right margins, i.e. it causes long list items
+   to extend beyond whatever boundary has been set via an inherited 
+   margin-right. To fix this side-effect, use padding-right too, e.g.
+
+     ul, ol { padding-right: 1rem; } // 1rem should be enough
+
+   (The side-effect can't be remedied by setting a margin-right explicitly
+   for ul or ol; that approach would merely lead to a kind of race, or
+   futile escalation, between margin-left and margin-right.)
+
+   p.s.: Padding-left and margin-left each have the (intended) effect of
+   determining the indentation of each nested list. If that looks bad, use
+   the following approach to control nested indentations. (I haven't seen a
+   need for this since switching from margin-left to padding-left.)
+
+     ul { padding-left: 0.9rem; }
+     ul > li > ul { padding-left: some other value ... }
 
    ====================
 */
@@ -585,17 +608,8 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed {
 
   ol {
-    margin-left: 2.7rem;
-    /* Problem: Here, a positive value (let's call it "n") for margin-right
-       is necessary to prevent violation of the one set for the MAIN 
-       element. However, "n" has the side-effect of sliding each list item
-       (together with its bullet or number) leftward by n units. Therefore,
-       to counteract this, we must add n to whatever desired value we are
-       assigning to margin-left.
-       
+    padding-left: 1.4rem;
 
-    */
-    padding-right: 1rem;
 //    margin-bottom: 0.5rem;
 
     /* Override assignment of "disc" in styles.scss, which would make ol's 
@@ -604,20 +618,12 @@ body > div.nojs-mini-themed > footer {
     list-style-type: decimal !important;
   }
 
-  ol > li > ol {
-    margin-left: 1.4rem;
-    margin-right: 0rem;
-  }
-
   ul {
-    margin-left: 1.7rem;
-    padding-right: 1rem;
+    padding-left: 0.9rem;
+
 //    margin-bottom: 0.5rem;
   }
 
-  ul > li > ul { 
-    margin-left: 1rem;
-  }
 
   body main ul > li {
     list-style-type: circle;
@@ -686,7 +692,6 @@ body > div.nojs-mini-themed > footer {
     font-weight: normal;
 //    margin-bottom: 2rem;
 //    margin-left: 1rem;
-//    margin-right: 1rem;
   }
 
 }
@@ -772,17 +777,14 @@ body > div.nojs-mini-themed > footer {
 
   .commentary, 
   .url-line {
-//    margin-right: 1rem;
 //    margin-bottom: 2rem;
   }
   .dek {
 //    margin-left: 2rem;
-//    margin-right: 1rem;
 //    margin-bottom: 2rem;
   }
   .fisheye-means-rightmost {
     text-align: right;
-//    margin-right: 1rem;
   }
 
 }
@@ -869,7 +871,6 @@ body > div.nojs-mini-themed > footer {
 
   blockquote {
     margin-left: 2rem; // blockquotes are typically indented
-//    margin-right: 1rem;
 //    margin-bottom: 2rem;
   }
 
