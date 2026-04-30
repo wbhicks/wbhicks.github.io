@@ -131,7 +131,7 @@
   {{ $text = 
       replaceRE
      `(.+)`
-     `<div class="commentary">$1</div>`
+     `<div class="commentary"><p>$1</p></div>`
       $text
   }}
   {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}

@@ -26,16 +26,7 @@ layout: about
 
 12345678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
-# This H1 heading is for nested lists of mini-theme descriptions
-
-Here's an ordered list:
-
-1. Apple a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e
-   1. Gala gala gala gala gala gala gala gala gala gala gala gala gala gala gala gala g a l a gala gala gala g a l a g a l a g a l a gala gala gala gala gala gala gala gala gala gala gala
-      1. Organic Gala o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c
-   2. Fuji
-2. Banana
-3. Carrot
+# This H1 heading is for nested lists. The first doubles as a summary of the mini-themes.
 
 Here's an unordered list:
 
@@ -54,6 +45,16 @@ Here's an unordered list:
       - ignore this nested i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m i t e m
         - to test
   - merely exposes what the Galleries Deluxe module does
+
+Here's an ordered list:
+
+1. Apple a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e a p p l e
+   1. Gala gala gala gala gala gala gala gala gala gala gala gala gala gala gala gala g a l a gala gala gala g a l a g a l a g a l a gala gala gala gala gala gala gala gala gala gala gala
+      1. Organic Gala o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c o r g a n i c
+   2. Fuji
+2. Banana
+3. Carrot
+8. Ask The 8-Ball
 
 Apart from lists, the only other block element where the overall margin-left is insufficient is the BLOCKQUOTE element. Here is one:
 

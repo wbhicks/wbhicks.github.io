@@ -515,8 +515,7 @@ body > div.nojs-mini-themed > header,
 body > div.nojs-mini-themed > main,
 
 body > div.nojs-mini-themed > footer {
-  
-  border: 1px dotted cyan;
+
   margin-left: 1rem;
   margin-right: 1rem;
 
@@ -524,9 +523,60 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
-  main {
-    line-height: 1.5;
-  }
+// current prob: half of the ¢ commentary inputs aren't processed
+
+// TODO <h5 id="giotto-1337-age-70-in-florence-firenze">Giotto, 1337 (age 70?)
+
+// there is no class for h5's
+
+h2.h2-from-1star,
+h3.h3-from-2stars,
+h4.h4-from-3stars {
+  border-left: 3px solid gray;
+}
+div.asterism {
+  border-left: 3px solid gray;
+}
+blockquote {
+  border-left: 3px solid gray;
+}
+div.url-line,
+div.fisheye-means-rightmost {
+  border-left: 3px solid #5050ff;
+}
+div.commentary {
+  border-left: 3px solid orange;
+}
+h5,
+div.dek {
+  border-left: 3px solid yellow;
+}
+pre {
+  border-left: 3px solid green;
+}
+p {
+//  border-left: 5px solid red;
+}
+
+h2.h2-from-1star,
+h3.h3-from-2stars,
+h4.h4-from-3stars,
+div.asterism,
+h5,
+div.dek, 
+div.fisheye-means-rightmost,
+div.commentary, 
+blockquote,
+div.url-line,
+p,
+pre {
+//  margin-top: 1rem;
+//  margin-bottom: 1rem;
+}
+
+//  main {
+//    line-height: 1.5;
+//  }
 
 //  p {
 //    margin-bottom: 2rem;
@@ -570,12 +620,20 @@ body > div.nojs-mini-themed > footer {
    better because it won't break the right margin.
 
    With padding-left, use a value of at least 0.9rem for unordered lists
-   and at least 1.4rem for ordered lists[1], e.g.
+   and at least 1.4rem[1] for ordered lists[2], e.g.
 
      ul { padding-left: 0.9rem; }
-     ol { padding-left: 1.4rem; }
+     ol { padding-left: 1.4rem; } // or about 2.2rem if monospaced font
 
-   [1] For ordered lists, the padding-left or margin-left value should be 
+   [1] In a proportional font, 1.4rem seems to be enough for ordered lists
+       with fewer than 10 top-level items. In a fixed-width (monospace) font,
+       by contrast, I needed at least 2.2rem to accommodate single-digit
+       numbering.
+
+       p.s.: Unordered lists seem to be unaffected by the choice between
+       proportional and fixed-width fonts.
+
+   [2] For ordered lists, the padding-left or margin-left value should be 
        bigger if a list might have more than 9 top-level items, to 
        accommodate double-digit numbering.
 
@@ -608,7 +666,12 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed {
 
   ol {
-    padding-left: 1.4rem;
+
+    /* A padding-left value of 1.4rem is enough for proportional fonts, but
+       for monospace fonts I've found I need 2.2rem. The discrepancy arises
+       with ordered lists only.
+    */
+    padding-left: 2.2rem;
 
 //    margin-bottom: 0.5rem;
 
@@ -616,14 +679,18 @@ body > div.nojs-mini-themed > footer {
        resemble ul's: 
     */
     list-style-type: decimal !important;
+
   }
+
+// Improves nested indentation for proportional fonts, but ruins monospace:
+//  ol > li > ol {
+//    padding-left: 1.5rem;
+//  }
 
   ul {
     padding-left: 0.9rem;
-
 //    margin-bottom: 0.5rem;
   }
-
 
   body main ul > li {
     list-style-type: circle;
@@ -686,6 +753,8 @@ body > div.nojs-mini-themed > footer {
     font-weight: normal;
 //    margin-bottom: 2rem;
   }
+
+// NO LONGER FOUND, SEE H5 ONLY:
 
   .h5-from-4stars {
     font-size: 1rem;
@@ -870,7 +939,8 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed {
 
   blockquote {
-    margin-left: 2rem; // blockquotes are typically indented
+    // Use padding-left instead of margin-left, for same reason as OL and UL
+    padding-left: 2rem;
 //    margin-bottom: 2rem;
   }
 
@@ -884,11 +954,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
 
-  blockquote {
-    line-height: 2;
-    border-left: 2px solid gray;
-    padding-left: 0.5rem; /* space between border and text */
-  }
+//  blockquote {
+//    line-height: 2;
+//  }
 
 }
 
