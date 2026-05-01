@@ -5,6 +5,11 @@
   {{- /* `TMPLT_[A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]` */ -}}
   {{ $theContent = replaceRE `\)` `TMPLT_RPAREN` $theContent }}
   {{ $theContent = replaceRE `\(` `TMPLT_LPAREN` $theContent }}
+  {{- /* Escaping square brackets, because they caused some commentary
+         blocks to fail to match:
+  */ -}}
+  {{ $theContent = replaceRE `\]` `TMPLT_RSQBKT` $theContent }}
+  {{ $theContent = replaceRE `\[` `TMPLT_LSQBKT` $theContent }}
   {{ $theContent = replaceRE `\?` `TMPLT_QSTNMK` $theContent }}
   {{- /* The following is also the apostrophe in most publications: */ -}}
   {{ $theContent = replaceRE `’`  `TMPLT_RSNGQA` $theContent }}
@@ -40,6 +45,8 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_LPAREN` `(`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RPAREN` `)`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSQBKT` `]`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSQBKT` `[`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_QSTNMK` `?`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}

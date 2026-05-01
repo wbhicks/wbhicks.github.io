@@ -88,6 +88,8 @@ draft: false
 
 => https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html NYT / by Thomas B. Edsall
 
+∂ «DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek»
+
 ¢ As is his wont [modernize to «As is his custom»? -- ȐD], Thomas Edsall brings a wealth of citations to his argument that, in the mapping from county population density[1] to partisan lean, the slope has been smoothing out. (For readers unfamiliar with US partisanship, I’ve drawn three ASCII art graphs to suggest some historical context.)
 
 ¢ [1]: Or, perhaps equally well, the X axis can show a county’s distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.

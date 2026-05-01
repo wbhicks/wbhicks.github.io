@@ -30,11 +30,20 @@
       findRE $regexpMatchingParagBlocks $allText 
   }}
 
+
+
+
 {{- /*
   {{ range $allParagBlocks }}
-    {{ warnidf "page-71" (add "mRLT: " $mostRecentLinkTitle " P: " .) }} 
+    {{ if (and (eq "Anniversariez" $mostRecentLinkTitle)
+               (eq "<p>¢ " (substr . 0 5))) }}
+      {{ warnidf "page-71" (add "mRLT: " $mostRecentLinkTitle " P: " .) }}
+    {{ end }}
   {{ end }}
 */ -}}
+
+
+
 
   {{ $allBlocks := append $allHeadlineBlocks $allParagBlocks 
   }}
@@ -47,8 +56,26 @@
       {{ $textAndRightmostClosingTag := (index (split . (add $prefix " ")) 1) }}
       {{ $rightmostClosingTag := (add "<" (index (last 1 (split . "<")) 0)) }}
       {{ $text := (substr $textAndRightmostClosingTag 0 (mul -1 
-                  (len $rightmostClosingTag))) 
+                  (len $rightmostClosingTag)))
       }}
+
+
+
+
+
+{{- /*
+    {{ if (and (eq "<p>" $leftmostOpeningTag)
+               (eq "¢" $prefix)) }}
+      {{ warnidf "page-72" (add "leftmostOpeningTag: " $leftmostOpeningTag " prefix: " $prefix " P: " .) }}
+    {{ end }}
+*/ -}}
+
+
+
+
+
+
+
       {{ $processedBlock := (partial "prefixed-blocks.html" (dict 
           "leftmost_opening_tag" $leftmostOpeningTag
           "prefix" $prefix 

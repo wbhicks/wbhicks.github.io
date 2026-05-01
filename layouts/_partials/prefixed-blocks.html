@@ -7,8 +7,12 @@
 {{ $result := "OVERWRITTEN" }}
 
 
+
+
+
 {{- /*
-{{ if (strings.Contains $text "Consciousness") }}
+{{ if (or (strings.Contains $text "is his wont")
+          (strings.Contains $text "low prices")) }}
   {{ warnidf "prefixed-blocks-008" (add 
     "mRLT: " $mostRecentLinkTitle
     " leftmostOpeningTag:[" $leftmostOpeningTag "]"
@@ -19,6 +23,10 @@
   }}
 {{ end }}
 */ -}}
+
+
+
+
 
 {{- /* Blockquotes no longer have an entry here because Goldmark handles them OK. See
        https://yuin.github.io/goldmark/playground/
@@ -127,6 +135,31 @@
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ end }}
 {{ else if (eq $prefix "¢") }}
+
+
+
+
+
+{{- /*
+{{ if (or (strings.Contains $text "is his wont")
+          (strings.Contains $text "low prices")) }}
+  {{ warnidf "prefixed-blocks-penny" (add 
+    "mRLT: " $mostRecentLinkTitle
+    " leftmostOpeningTag:[" $leftmostOpeningTag "]"
+    " prefix:[" $prefix "]"
+    " text:[" $text "]"
+    " rightmostClosingTag:[" $rightmostClosingTag "]"
+    ) 
+  }}
+{{ end }}
+*/ -}}
+
+
+
+
+
+
+
   {{- /* CASE ¢: "^¢ " replaced "^~ " for my commentary */ -}}
   {{ $text = 
       replaceRE
