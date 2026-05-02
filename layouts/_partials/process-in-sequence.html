@@ -1,9 +1,44 @@
 {{ $allText := .the_content }}
 {{ $mostRecentLinkTitle := .mRLT }}
 
-{{- /*
-       ====================
-       Handle all idiosyncratic markdown:
+{{- /* ====================
+       This partial template, process-in-sequence, handles all "idiosyncratic"
+       markdown. The flow is as follows:
+
+       | - - layouts/docket/page.html
+       |
+       | - - layouts/about.html
+       |
+       V
+       process-in-sequence.html
+         |
+         | - - lettered-escapade.html
+         |     Sanitizes hazardous chars & tags.
+         |
+         | - - prefixed-or-lettered.html
+         |     |
+         |     | - - prefixed-blocks.html
+         |     |     Prepares the blocks by replacing guillemets etc.
+         |     |     |
+         |     |     | - - whole-str-matches-regex.html
+         |     |           Returns >0 IFF exactly 1 match, & same length.
+         |     |           (Prevents any trailing text from slipping through.)
+         |     |
+         |     | - - lettered-leaf.html
+         |     |     Replaces ≤x ... ≥ with <span class=" ... </span>.
+         |     |
+         |     | - - lettered-twig.html
+         |           A disabled counter.
+         |
+         | - - asterize-headlines.html
+         |     Wraps each heading in asterisms.
+         |
+         | - - narrow-headlines.html
+         |     Breaks each heading into 2 equal lengths.
+         |
+         | - - lettered-escapade.html
+               Restores hazardous chars & tags.
+
        ====================
 */ -}}
 

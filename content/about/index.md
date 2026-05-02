@@ -119,15 +119,19 @@ This paragraph has no prefix, so it shouldn't normally be encountered. The follo
 
 ∂ «Here is a periodical dek, a.k.a. subheadline»
 
+¢ This is another commentary
+
+∂ «DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek DELETE this made up dek»
+
 => https://example.org/ NYT / by John Smith
 
-This block demonstrates some lettered leaves. Here is an a-kind, for the typically quoted title/headline of an article or whitepaper: ≤aMayor Resigns, Says Municipal Comptroller≥. Here is a b-kind, for the typically italicized title/name of a book: ≤bMoby Dick≥. Here is a c-kind, for the typically quoted title/name of an akin-to-an-article text, e.g. a chapter: ≤cThe Exciting Conclusion≥. Here is a d-kind, for definitions and abbreviations: ≤dENIAC, Electronic Numerical Integrator And Computer≥. Here is an l-kind, for a term, word-as-word, logical-statement, synonym, or unassimilated foreign word: ≤lDeep South≥. Here is an m-kind, for names of media outlets: ≤mNBC Out≥. Here is an n-kind, for nicknames: H. R. ≤nBob≥ Haldeman. Here is an s-kind, for terms that are so-called: ≤sBad≥. Here is a w-kind, for the typically italicized title/name of an akin-to-a-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't: ≤wRubber Soul≥.
+This block demonstrates some lettered leaves. Here is an a-kind, for the typically quoted title/headline of an article or whitepaper: ≤aMayor Resigns, Says Municipal Comptroller≥. Here is a b-kind, for the typically italicized title/name of a book: ≤bMoby Dick≥. Here is a c-kind, for the typically quoted title/name of an akin-to-an-article text, e.g. a chapter: ≤cThe Exciting Conclusion≥. Here is a t-kind, for abbreviations: ≤tENIAC, Electronic Numerical Integrator And Computer≥. Here is an l-kind, for a term, word-as-word, logical-statement, synonym, or unassimilated foreign word: ≤lDeep South≥. Here is an m-kind, for names of media outlets: ≤mNBC Out≥. Here is an n-kind, for nicknames: H. R. ≤nBob≥ Haldeman. Here is an s-kind, for terms that are so-called: ≤sBad≥. Here is a w-kind, for the typically italicized title/name of an akin-to-a-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't: ≤wRubber Soul≥.
 
 Here is something that you won't typically encounter, namely a CITE element with no class attribute: <cite>This is a bare cite.</cite>
 
 > This line is a blockquote: 1 ≤c2 ≤l3 ≤s4 ≤w5 ≤c6 ≤l7 ≤s8 ≤w9 0 9≥ 8≥ 7≥ 6≥ 5≥ 4≥ 3≥ 2≥ 1
 
-5 Please ≤cwatch ≤nfor ≤lbits≥, and ≤lbytes≥, and≥ also ≤lun ordinateur≥! 6 Henry ≤sBob ≤nBobby≥ Bobson≥ Jr. 7 It's ≤wno longer ≤scool≥, they≥ say. 8 Melville wrote ≤wBilly Budd≥. 9 I do≥ like ≤dABC, Amer. Broadc. Co.≥ 10 ≤cSea sea sea sea sea≥ 11
+5 Please ≤cwatch ≤nfor ≤lbits≥, and ≤lbytes≥, and≥ also ≤lun ordinateur≥! 6 Henry ≤sBob ≤nBobby≥ Bobson≥ Jr. 7 It's ≤wno longer ≤scool≥, they≥ say. 8 Melville wrote ≤wBilly Budd≥. 9 I do≥ like ≤tABC, Amer. Broadc. Co.≥ 10 ≤cSea sea sea sea sea≥ 11
 
 ## Apple
 
@@ -214,7 +218,9 @@ And the outmost underscores are replaced by
 
 ≤c is for title citations that require special handling, typically this means any citation of a title where ≤w shouldn't be used because it's not worthy of italics. E.g., titles of articles. Citing an article is rare, because that's usually pre-empted by being wrapped in a ≤a ... ≥
 
-≤d is for abbreviations, which get turned into something like "<abbr>GE</abbr> (General Electric)", and definitions (none yet)
+≤t is for abbreviations, which get turned into something like "<abbr>GE</abbr> (General Electric)"
+
+The HTML element DFN, which is for definitions, is not yet handled or mapped.
 
 ^dek: "..." ---> ≤k...≥
 

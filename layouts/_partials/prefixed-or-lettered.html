@@ -1,8 +1,7 @@
 {{ $allText := .the_content }}
 {{ $mostRecentLinkTitle := .mRLT }}
 
-{{- /*
-       ====================
+{{- /* ====================
        Process all prefixed blocks by calling
        the partial: prefixed-blocks.html
        ====================
@@ -92,8 +91,7 @@
     {{ end }}
   {{ end }}
 
-{{- /*
-       ====================
+{{- /* ====================
        Process all delimitations by calling
        the partial: lettered-leaf.html
        ====================
@@ -117,8 +115,7 @@
     {{ end }}
   {{ end }}
 
-{{- /*
-       ====================
+{{- /* ====================
        UNUSED: Generate tags below each block-level delimitation
        by calling the partial: lettered-twig.html
        ====================
