@@ -316,7 +316,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ∂ «Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?»
 
-¢ The medlar, also known as the ≤lopen-arse≥, the ≤lmonkey’s bottom≥, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
+¢ The medlar, also known as the ≤fopen-arse≥, the ≤fmonkey’s bottom≥, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
 > «The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar’s native territory near the Caspian Sea, the fruit remains as popular as ever. It’s still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it’s sold in markets as musmula.»
 
@@ -375,7 +375,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ¢ [3]: done, over with
 
-¢ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: «≤lgras-time≥, the time when a horse feeds himself in the fields. ‹My fodder is now forage›, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.»
+¢ [4]: In his annotated edition of 1900, W. W. Skeat explains this line: «≤fgras-time≥, the time when a horse feeds himself in the fields. ‹My fodder is now forage›, my food is now such as is provided for me; I am like a horse in winter, whose food is hay in a stable.»
 
 ¢ [5]: head, top of one’s head
 
@@ -383,13 +383,13 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ¢ [7]: old, moldy
 
-¢ [8]: From Skeat’s notes: «‹My heart is as old (lit. mouldy) as my hairs are.› ≤lMouled≥ is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from ≤lmould≥, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb ≤lmoulen≥, to grow mouldy, occurs in B. 32.»
+¢ [8]: From Skeat’s notes: «‹My heart is as old (lit. mouldy) as my hairs are.› ≤fMouled≥ is the old pp. out of which we have made the mod. E. mould-y, adding -y by confusion with the adj. formed from ≤fmould≥, the ground. It is fully explained in the Addenda to my Etym. Dict. 2nd ed. p. 818; and the verb ≤fmoulen≥, to grow mouldy, occurs in B. 32.»
 
 ¢ [9]: unless
 
 ¢ [10]: does
 
-¢ [11]: a medlar fruit. The medieval ≤lers≥ is the modern ≤larse≥ (British) or ≤lass≥ (American).
+¢ [11]: a medlar fruit. The medieval ≤fers≥ is the modern ≤farse≥ (British) or ≤fass≥ (American).
 
 ¢ [12]: From Skeat’s notes (covering this and the following two lines): «‹Unless I grow like a medlar, which gets worse all the while, till it be quite rotten, when laid up in a heap of rubbish or straw.›»
 
@@ -401,46 +401,51 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ¢ [16]: straw
 
-¢ [17]: From Skeat’s notes: «≤lhoppen≥, dance»
+¢ [17]: From Skeat’s notes: «≤fhoppen≥, dance»
 
-¢ Noticing Skeat’s comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer’s verb, ≤lto write≥, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker’s head. Where does this ambiguity come from? When ≤lto write≥ is used metaphorically, does it always invite this two-directional reading?
+¢ Noticing Skeat’s comment about the line that appears third in this excerpt, I was struck by the reversibility of the subject-object relation in the line. I first read it to mean that white hair signifies old age, but Skeat showed me that Chaucer’s verb, ≤fto write≥, accommodates the reverse interpretation as easily, i.e. that old age has written the white hairs on the speaker’s head. Where does this ambiguity come from? When ≤fto write≥ is used metaphorically, does it always invite this two-directional reading?
 
 ¢ I don’t think these are questions about poetry, although its easy acceptance of inverted word order makes reversibility less conspicuous. To see this, and in an effort to answer the two questions above by applying Chaucer’s metaphor under more prosaic conditions, I will substitute a statement pair for the line in question. Then I’ll modify the pair over a few iterations, in the last of which I’ll impose the metaphor of writing. (The statements will always be in the active voice.)
 
-- White hair results from a person’s old age.
-- A person’s old age causes their white hair.
+¢ ≤lWhite hair results from a person’s old age.≥
+
+¢ ≤lA person’s old age causes their white hair.≥
 
 ¢ In this first iteration, I am using the terminology of cause-and-effect. In neither statement is the subject-object relation reversible, because each statement is (statistically) plausible but each reversal (≤lOld age results from white hair≥ or ≤lWhite hair causes old age≥) is false.
 
-¢ Note that this is unrelated to the poetic convention of inverted word order. To see this, suppose that you came across the first statement as a line of light verse, or in a flowery comic monologue, with a comma after ≤lage≥. This would invite you to at least entertain the fanciful interpretation that ≤lhair≥ is the subject and ≤lage≥ the object, but it would still be the case that the truth value of the statement changes (from true, or at least statistically plausible, to false) when the subject and object are swapped.
+¢ Note that this is unrelated to the poetic convention of inverted word order. To see this, suppose that you came across the first statement as a line of light verse, or in a flowery comic monologue, with a comma after ≤fage≥. This would invite you to at least entertain the fanciful interpretation that ≤fhair≥ is the subject and ≤fage≥ the object, but it would still be the case that the truth value of the statement changes (from true, or at least statistically plausible, to false) when the subject and object are swapped.
 
 ¢ To see if reversibility emerges when the relation between the nouns is modeled differently, here is a second iteration, replacing the terminology of cause-and-effect with the terminology of representation:
 
-- White hair indicates (or signifies) a person’s old age.
-- A person’s old age accounts for (or contextualizes, or makes comprehensible) their white hair.
+¢ ≤lWhite hair indicates (or signifies) a person’s old age.≥
+
+¢ ≤lA person’s old age accounts for (or contextualizes, or makes comprehensible) their white hair.≥
 
 ¢ Here, too, any attempted reversal of subject and object will fail in either sentence. What to try next? Without applying a metaphor (and setting aside the troublesome question of whether any choice of model/terminology is unavoidably metaphorical), the only model whose terminology strikes me as supporting subject-object reversibility is that of statistical implication, but that is a trivial solution because it tells us so little. (Saying only that two things are usually seen together fails to justify a claim to the reader’s attention, whether in poetry or literary prose.) To wit:
 
-- White hair likely implies old age.
-- Old age is, loosely, a condition for white hair.
+¢ ≤lWhite hair likely implies old age.≥
+
+¢ ≤lOld age is, loosely, a condition for white hair.≥
 
 ¢ Or, to remove any lingering connotation of cause-and-effect:
 
-- X and Y are correlated.
+¢ ≤lX and Y are correlated.≥
 
 ¢ So, we have achieved reversibility but at the cost of not saying anything worthwhile. Having thus tried some alternatives, let’s restore Chaucer’s metaphor, while sticking to a prosaic statement pair in the active voice:
 
-- White hair writes a person’s old age.
-- A person’s old age writes their white hair.
+¢ ≤lWhite hair writes a person’s old age.≥
+
+¢ ≤lA person’s old age writes their white hair.≥
 
 ¢ As was the case when the terminology of statistical implication was used, each statement keeps its truthfulness when subject and object are reversed. (In fact, each half of the pair happens to be the reverse of the other, because in this iteration they use the same verb and verb form.) But is each underlying assertion meaningful in its own right, or does the pair simply state one thing (and a mere correlation, at that) twice?
 
-¢ To argue that each assertion is meaningful, I’ll make each occurrence of the metaphor a bit more vivid and particularized, without displacing the act of writing as its central idea. My goal in this final iteration is not to preserve subject-object reversibility -- as shown above, both Chaucer’s choice of ≤lwryteth≥ and its modern equivalent, ≤lwrites≥, exhibit that quality -- but rather to highlight the unique meaning that each of the two directed relations contributes:
+¢ To argue that each assertion is meaningful, I’ll make each occurrence of the metaphor a bit more vivid and particularized, without displacing the act of writing as its central idea. My goal in this final iteration is not to preserve subject-object reversibility -- as shown above, both Chaucer’s choice of ≤fwryteth≥ and its modern equivalent, ≤fwrites≥, exhibit that quality -- but rather to highlight the unique meaning that each of the two directed relations contributes:
 
-- White hair spells out a person’s old age.
-- A person’s old age is the author of their white hair.
+¢ ≤lWhite hair spells out a person’s old age.≥
 
-¢ This shows that the metaphor of writing, at least in this line of Chaucer’s, does much more than to state an implication or correlation, and I think it also shows that it leverages subject-object reversibility to convey two (at least) independent insights. I don’t know if the choice of some form (or near synonym) of ≤lto write≥, when used as a metaphor, always accomplishes this superposition.
+¢ ≤lA person’s old age is the author of their white hair.≥
+
+¢ This shows that the metaphor of writing, at least in this line of Chaucer’s, does much more than to state an implication or correlation, and I think it also shows that it leverages subject-object reversibility to convey two (at least) independent insights. I don’t know if the choice of some form (or near synonym) of ≤fto write≥, when used as a metaphor, always accomplishes this superposition.
 
 ¢ See also
 
@@ -448,7 +453,7 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 => https://en.wikipedia.org/wiki/Anastrophe WP / Anastrophe
 
-¢ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤lopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of ≤ldread≥ when he says «We olde men, I drede, so fare we». But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
+¢ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤fopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of ≤fdread≥ when he says «We olde men, I drede, so fare we». But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
 
 ```
 Til we be roten, can we nat be rype;
@@ -509,7 +514,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.»
 
-> «The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤ldeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...»
+> «The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤fdeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...»
 
 ## IV. April
 
@@ -581,7 +586,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 > «... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.»
 
-¢ cf. Ezra Klein’s use of ≤lcalcification≥ in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12
+¢ cf. Ezra Klein’s use of ≤fcalcification≥ in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12
 
 #### ® Errol Louis, writing in NY Magazine (2023) under the headline «Eric Adams Is Finally Facing Reality on Work-From-Home Rules»
 
@@ -731,7 +736,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://daily.jstor.org/paid-applauders-paris-opera-claques/ JSTOR Daily / by Amelia Soth
 
-∂ «Professional applauders, collectively known as the ≤lclaque≥, helped mold the tastes of an uncertain audience.»
+∂ «Professional applauders, collectively known as the ≤fclaque≥, helped mold the tastes of an uncertain audience.»
 
 #### Deaths on this date:
 
@@ -903,9 +908,9 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs The Guardian / by Leyland Cecco
 
-∂ «Korean media praises prime minister’s gesture, known as ≤lmanner legs≥, while some Canadians say it is embarrassing country»
+∂ «Korean media praises prime minister’s gesture, known as ≤fmanner legs≥, while some Canadians say it is embarrassing country»
 
-¢ A note for students of English: the word ≤lsplit≥ in the headline is a play on words.
+¢ A note for students of English: the word ≤fsplit≥ in the headline is a play on words.
 
 ### May 21st
 
@@ -917,7 +922,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 > «But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.»
 
-¢ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the ≤lDeep South≥ («the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi»):
+¢ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the ≤fDeep South≥ («the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi»):
 
 ```
                 In 1960    In 2017
@@ -1138,7 +1143,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ### August 13th
 
-#### ® Maxwell Strachan, writing in Vice (2021) under the headline «Zillow, Other Tech Firms Are in an ≤lArms Race≥ To Buy Up American Homes»
+#### ® Maxwell Strachan, writing in Vice (2021) under the headline «Zillow, Other Tech Firms Are in an ≤fArms Race≥ To Buy Up American Homes»
 
 ◉ Bookmark, Aug 13th
 
@@ -1297,7 +1302,7 @@ Has a very large faemmle. -- from
 
 ¢ Writing in The Times, Ezra Klein discusses «... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.»
 
-¢ cf. George F. Will’s coinage ≤lboiling but frozen≥ in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12
+¢ cf. George F. Will’s coinage ≤fboiling but frozen≥ in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12
 
 ### November 22nd
 

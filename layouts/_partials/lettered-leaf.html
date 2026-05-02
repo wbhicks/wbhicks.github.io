@@ -4,55 +4,53 @@
 {{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
 
-
 {{- /* ====================
 
        This partial template, lettered-leaf.html, processes each inline-level
-       "lettered string" (e.g. "≤lDeep South≥" or "≤bCanterbury Tales≥") by 
-       replacing its opening and closing markers (e.g. "≤l", "≤b", "≥") with
-       placeholders. These placeholders, which typically start with "TMPLT_",
-       exist to ensure safe handling of 
+       "lettered string" (e.g. "≤fboulangerie≥" or "≤bCanterbury Tales≥") by 
+       replacing its opening and closing markers (e.g. "≤f", "≤b", "≥") with
+       placeholders. 
 
+       These placeholders, which typically start with "TMPLT_", exist to ensure
+       safe handling in some later templates. They will later be replaced by
+       the HTML inline-level elements that "best" match the purpose of the
+       original "lettered string". Currently these are SPAN, CITE, and I,
+       always with a class attribute. A space is often included to workaround
+       certain bugs.
 
-
-will later be replaced by
-       roughly-corresponding HTML inline-level element, e.g. SPAN, CITE, 
-       or I. (Maybe also EM, Q, STRONG, or B in the future -- but not A, 
-       because links are handled with block-level transformations rather than 
+       (In the future, maybe also EM, Q, STRONG, or B -- but not A, because
+       links are handled with block-level transformations instead of 
        inline-level.)
 
        For example,
 
-           ≤lDeep South≥
+           ≤fboulangerie≥ 
 
        is eventually replaced by
 
-           <i class="term">Deep South</i>
+           <i class="foreign">boulangerie</i>
 
        and
 
            ≤bMoby Dick≥
 
-       is replaced by
+       is eventually replaced by
 
            <cite class="book-title">Moby Dick</cite>
 
-       However, in this template the HTML element tags don't appear. Instead,
+       The HTML element tags don't appear in this template. Instead, e.g.,
        " TMPLT_RLOGIC" is used as a placeholder for "</i>", and it isn't
        replaced with "</i>" until another template, lettered-escapade.html, is
        called toward the end of the processing.
 
+       When an inline-level "lettered string" is processed here, it is a leaf,
+       which means that it doesn't contain any nested lettered strings. This is
+       enforced in the template that calls this one, prefixed-or-lettered.html.
 
-CASE a is span-level only */ -}}
-{{- /* CASE b is span-level only */ -}}
-{{- /* CASE c is span-level only */ -}}
-{{- /* CASE ?????????? is span-level only */ -}}
-{{- /* CASE l is span-level only */ -}}
-{{- /* CASE m is span-level only */ -}}
-{{- /* CASE n is span-level only */ -}}
-{{- /* CASE s is span-level only */ -}}
-{{- /* CASE t is span-level only */ -}}
-{{- /* CASE w is span-level only */ -}}
+       Current codes for lettered strings: a b c f l m n s t w
+
+       ====================
+*/ -}}
 
 {{ if (eq $classifier "a") }}
 {{- /* CASE a: For the typically quoted title/headline of an article or whitepaper.
@@ -110,10 +108,22 @@ CASE a is span-level only */ -}}
       ` TMPLT_RSPECC`
       ) 
   }}
-{{ else if (eq $classifier "l") }}
-{{- /* CASE l: term, word-as-word, logical-statement, synonym, unassimilated foreign word. e.g.
+{{ else if (eq $classifier "f") }}
+{{- /* CASE f (for FOREIGN): unassimilated foreign word, questionable (or self-consciously used) term, word-as-word, synonym, e.g.
 
-       ≤lDeep South≥ ---> <i class="term">Deep South</i>
+       ≤fboulangerie≥ ---> <i class="foreign">boulangerie</i>
+
+*/ -}}
+  {{ $result = (add 
+      `TMPLT_LFREGN ` 
+      $the_content 
+      ` TMPLT_RFREGN`
+      ) 
+  }}
+{{ else if (eq $classifier "l") }}
+{{- /* CASE l: logical-statement, e.g.
+
+       ≤lWhite hair causes old age.≥ ---> <i class="logic">White hair causes old age.</i>
 
 */ -}}
   {{ $result = (add 

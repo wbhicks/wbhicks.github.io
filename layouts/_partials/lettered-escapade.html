@@ -65,8 +65,11 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_LNIKNM ` 
                              `<i class="nickname">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RNIKNM` `</i>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LFREGN ` 
+                             `<i class="foreign">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RFREGN` `</i>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LLOGIC ` 
-                             `<i class="term">`  $theContent }}
+                             `<i class="logic">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RLOGIC` `</i>`  $theContent }}
 
   {{ $theContent = replaceRE `TMPLT_LATITL ` 
