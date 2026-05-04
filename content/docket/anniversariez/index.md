@@ -36,7 +36,7 @@ draft: false
 
 => https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html NYT / by Blake Gopnik
 
-∂ «Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.»
+∂ Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.»
 
 ¢ Referring to contemporary artist Danh Võ, Blake Gopnik writes: «Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece.»
 
@@ -44,11 +44,19 @@ draft: false
 
 #### 1790-01-08: GW’s 1st SoTU, including this passage:
 
-> <q>Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.</q>
->
-> -- from
+£ An intro parag.
 
-=> https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address Wikisource   
+£ Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.
+
+£ A closing parag.
+
+£ ≤~George Washington≥
+
+£ A stray parag below the credit.
+
+¢ This commentary line saves us.
+
+=> https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address Wikisource
 
 => https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a Gutenberg.org
 
@@ -170,7 +178,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 #### 1788-01-26: Australia Day: Landing of the First Fleet in what is present-day Sydney
 
-> «The First Fleet was a fleet of 11 British ships that brought the first British colonists and convicts to Australia. It was made up of two Royal Navy vessels, three store ships and six convict transports. On 13 May 1787 the fleet under the command of Captain Arthur Phillip, with over 1400 people (convicts, marines, sailors, civil officers and free settlers), left from Portsmouth, England and took a journey of over 24,000 kilometres (15,000 mi) and over 250 days to eventually arrive in Botany Bay, New South Wales, where a penal colony would become the first British settlement in Australia.»
+£ The First Fleet was a fleet of 11 British ships that brought the first British colonists and convicts to Australia. It was made up of two Royal Navy vessels, three store ships and six convict transports. On 13 May 1787 the fleet under the command of Captain Arthur Phillip, with over 1400 people (convicts, marines, sailors, civil officers and free settlers), left from Portsmouth, England and took a journey of over 24,000 kilometres (15,000 mi) and over 250 days to eventually arrive in Botany Bay, New South Wales, where a penal colony would become the first British settlement in Australia.
 >
 > -- from
 
@@ -186,11 +194,11 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/ Mother Jones / by David Corn
 
-∂ «The magazine’s attempted takedown of the media’s coverage bolsters Trump’s phony narrative.»
+∂ The magazine’s attempted takedown of the media’s coverage bolsters Trump’s phony narrative.
 
 ¢ David Corn succinctly recaps the help Trump chose to lend Putin in 2016:
 
-> <q>Yet the focus on collusion and the Steele material has been a purposeful distraction meant to obscure the basics of the scandal: Vladimir Putin attacked the 2016 election in part to help Trump win, and Trump and his aides aided and abetted this assault on American democracy by denying such an attack was happening. Trump provided cover for a foreign adversary subverting a US election.</q>
+£ Yet the focus on collusion and the Steele material has been a purposeful distraction meant to obscure the basics of the scandal: Vladimir Putin attacked the 2016 election in part to help Trump win, and Trump and his aides aided and abetted this assault on American democracy by denying such an attack was happening. Trump provided cover for a foreign adversary subverting a US election.
 
 #### Observance: Groundhog Day
 
@@ -202,7 +210,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://slate.com/culture/2023/02/hanging-out-sheila-liming-book-friendship-crisis.html Slate / by Dan Kois
 
-∂ «There’s a growing crisis in our social lives. Could the cure be this simple?»
+∂ There’s a growing crisis in our social lives. Could the cure be this simple?
 
 ¢ The recommendation: Kill some time by hanging out with your friends and shooting the breeze.
 
@@ -218,7 +226,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.nhpr.org/nh-news/2023-02-23/you-have-to-be-dangerous-back-why-some-lgbtq-people-in-new-hampshire-are-taking-up-arms NPR / by Todd Bookman
 
-> «While Pink Pistol clubs have been around since at least 2000, there’s only limited data available on gun ownership rates among LGBTQ people. In 2020, a UCLA study found that 21.5 percent of lesbian, gay and bisexual people live in a house with a firearm, compared to 36 percent of heterosexual adults. ... In terms of partisan breakdown, a recent Pew study found that about one-in-five self-identified Democrats own a gun, compared to nearly half of Republicans.»
+£ While Pink Pistol clubs have been around since at least 2000, there’s only limited data available on gun ownership rates among LGBTQ people. In 2020, a UCLA study found that 21.5 percent of lesbian, gay and bisexual people live in a house with a firearm, compared to 36 percent of heterosexual adults. ... In terms of partisan breakdown, a recent Pew study found that about one-in-five self-identified Democrats own a gun, compared to nearly half of Republicans.
 
 #### 0532-02-23: The foundation stone (cornerstone) of the Hagia Sophia is laid in Constantinople by Justinian I.
 
@@ -226,7 +234,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 #### 1942-02-23: A Japanese submarine fires shells at targets on shore near Santa Barbara, California.
 
-> «Brown and the others called the police, as the Japanese shells continued to fall around them.»
+£ Brown and the others called the police, as the Japanese shells continued to fall around them.
 >
 > -- from
 
@@ -242,7 +250,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ An example of how small-scale regulatory reform can foster new markets:
 
-> «... insurers could charge less for long-term care insurance and annuities by combining them, because the risks to the insurer would partly offset each other ...»
+£ ... insurers could charge less for long-term care insurance and annuities by combining them, because the risks to the insurer would partly offset each other ...
 
 #### 1803-02-24: SCotUS issues its decision in Marbury v. Madison
 
@@ -254,17 +262,17 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.theguardian.com/us-news/2023/feb/27/west-virginia-mixed-martial-arts-coach-security-drag-show The Guardian / Gloria Oladipo
 
-∂ «Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats»
+∂ Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats
 
 ¢ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, en passant, of ≤mNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
 
-> «‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.»
+£ ‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.
 
 => https://www.nbcnews.com/nbc-out NBC Out
 
 #### 1812-02-27: Byron (giving his maiden speech in the House of Lords) defends the Luddites:
 
-> «Can you, then, wonder that in times like these, when bankruptcy, convicted fraud, and imputed felony are found in a station not far beneath that of your lordships, the lowest, though once most useful portion of the people, should forget their duty in their distresses, and become only less guilty than one of their representatives? But while the exalted offender can find means to baffle the law, new capital punishments must be devised, new snares of death must be spread for the wretched mechanic who is famished into guilt.»
+£ Can you, then, wonder that in times like these, when bankruptcy, convicted fraud, and imputed felony are found in a station not far beneath that of your lordships, the lowest, though once most useful portion of the people, should forget their duty in their distresses, and become only less guilty than one of their representatives? But while the exalted offender can find means to baffle the law, new capital punishments must be devised, new snares of death must be spread for the wretched mechanic who is famished into guilt.
 >
 > -- from
 
@@ -280,11 +288,11 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.newyorker.com/magazine/2023/03/06/the-end-of-the-english-major The New Yorker / by Nathan Heller
 
-∂ «Enrollment in the humanities is in free fall at colleges around the country. What happened?»
+∂ Enrollment in the humanities is in free fall at colleges around the country. What happened?
 
 #### 1665-03-06: The first issue of Philosophical Transactions of the Royal Society is published. The journal has been in publication ever since.
 
-> «Oldenburg’s compulsive letter writing to foreign correspondents led to him being suspected of being a spy for the Dutch and interned in the Tower of London in 1667. A rival took the opportunity to publish a pirate issue of Philosophical Transactions, with the pretense of it being Issue 27. Oldenburg repudiated the issue by publishing the real 27 upon his release.»
+£ Oldenburg’s compulsive letter writing to foreign correspondents led to him being suspected of being a spy for the Dutch and interned in the Tower of London in 1667. A rival took the opportunity to publish a pirate issue of Philosophical Transactions, with the pretense of it being Issue 27. Oldenburg repudiated the issue by publishing the real 27 upon his release.
 >
 > -- from
 
@@ -298,9 +306,9 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.nytimes.com/2023/03/07/magazine/los-angeles-walking-rosecrans-avenue.html NYT / by Rosecrans Baldwin
 
-∂ «A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting.»
+∂ A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting.
 
-> «Probably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal.»
+£ Probably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal.
 
 #### 1945-03-07: The 9th Armored Division (US) captures the Ludendorff Bridge at Remagen, Germany. This was, incidentally, the basis of the 1969 film, ≤wThe Bridge at Remagen≥.
 
@@ -314,11 +322,11 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.bbc.com/future/article/20210325-the-strange-medieval-fruit-the-world-forgot BBC / by Zaria Gorvett
 
-∂ «Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?»
+∂ Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?
 
 ¢ The medlar, also known as the ≤fopen-arse≥, the ≤fmonkey’s bottom≥, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
-> «The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar’s native territory near the Caspian Sea, the fruit remains as popular as ever. It’s still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it’s sold in markets as musmula.»
+£ The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar’s native territory near the Caspian Sea, the fruit remains as popular as ever. It’s still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it’s sold in markets as musmula.
 
 ¢ In the UK, one likely contributor to the medlar’s decline was the increasing availability of year-round tropical fruits, Gorvett reports; another she cites is the relative inconvenience of winter-picking and ripening[1] the medlar.
 
@@ -474,7 +482,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/03/26/science/tooth-pain-cold.html NYT / by Veronique Greenwood
 
-∂ «Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it.»
+∂ Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it.
 
 ### March 27th
 
@@ -484,7 +492,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.cnbc.com/2023/03/27/lebanon-in-two-different-time-zones-as-government-disagrees-on-daylight-savings.html CNBC / by Natasha Turak
 
-> «... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night.»
+£ ... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night.
 
 ### March 28th
 
@@ -494,7 +502,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/03/28/science/lightning-rod-video.html NYT / by Nicholas Bakalar
 
-∂ «Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning.»
+∂ Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning.
 
 ### March 30th
 
@@ -504,7 +512,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/03/30/science/blackwater-photography-fish-larvae.html NYT / by Erik Olsen
 
-∂ «Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae.»
+∂ Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae.
 
 #### ® Geeta Dayal, writing in NYT (2021) under the headline «Is the Music Over at Mills College?»
 
@@ -512,9 +520,9 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/03/30/arts/music/mills-college-music.html NYT / by Geeta Dayal
 
-∂ «A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.»
+∂ A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.
 
-> «The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤fdeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...»
+£ The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤fdeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...
 
 ## IV. April
 
@@ -526,7 +534,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/05/arts/design/warhol-copyright-appeals-court.html NYT / by Blake Gopnik
 
-∂ «An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.»
+∂ An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.
 
 #### Deaths on this date:
 
@@ -550,7 +558,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/06/opinion/stanford-admissions-campus.html NYT / by David L. Kirp
 
-∂ «If elite colleges are serious about diversity of class and race, there’s a simple solution.»
+∂ If elite colleges are serious about diversity of class and race, there’s a simple solution.
 
 #### Deaths on this date:
 
@@ -564,9 +572,9 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.theatlantic.com/ideas/archive/2023/04/wisconsin-supreme-court-election-republican-party/673656/ The Atlantic / by Charles Sykes
 
-∂ «They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability.»
+∂ They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability.
 
-> «Wisconsin Republicans are caught in a bind: What the base wants, the majority rejects.»
+£ Wisconsin Republicans are caught in a bind: What the base wants, the majority rejects.
 
 ### April 10th
 
@@ -584,7 +592,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.washingtonpost.com/opinions/2023/04/12/republican-democrat-poisonous-partisanship/ WaPo / by George F. Will
 
-> «... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.»
+£ ... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.
 
 ¢ cf. Ezra Klein’s use of ≤fcalcification≥ in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12
 
@@ -602,7 +610,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://boingboing.net/2021/04/14/the-unique-and-hugely-influential-canterbury-music-scene-of-the-60s-and-70s.html Boing Boing / by Gareth Branwyn
 
-> «Bands like Soft Machine, Wilde Flowers, Caravan, Hatfield and the North, National Health, Matching Mole, Egg, Henry Cow, and Gong.»
+£ Bands like Soft Machine, Wilde Flowers, Caravan, Hatfield and the North, National Health, Matching Mole, Egg, Henry Cow, and Gong.
 
 #### Deaths on this date:
 
@@ -616,7 +624,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://theamericanscholar.org/poetry-in-the-abstract/ The American Scholar / by Christopher Cokinos
 
-∂ «What happens when scientists write haiku?»
+∂ What happens when scientists write haiku?
 
 #### Deaths on this date:
 
@@ -634,7 +642,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/17/business/california-homeless-hotels.html NYT / by Conor Dougherty
 
-∂ «For homeless people, a place to live is life changing to a degree that almost no other intervention can provide.»
+∂ For homeless people, a place to live is life changing to a degree that almost no other intervention can provide.
 
 #### ® Shane Harrison, writing in BBC (2023) under the headline «How Gerard Hutch murder trial made international headlines»
 
@@ -652,7 +660,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.theguardian.com/culture/2021/apr/19/creativity-is-essential-artist-designed-supermarket-to-open-at-london-design-museum The Guardian / by Mark Brown
 
-∂ «Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity»
+∂ Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity
 
 #### ® Anil Ananthaswamy, writing in Scientific American (2021) under the headline «Quantum Astronomy Could Create Telescopes Hundreds of Kilometers Wide»
 
@@ -660,7 +668,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.scientificamerican.com/article/quantum-astronomy-could-create-telescopes-hundreds-of-kilometers-wide/ Scientific American / by Anil Ananthaswamy
 
-∂ «Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories»
+∂ Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories
 
 #### Deaths on this date:
 
@@ -674,9 +682,9 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://newrepublic.com/article/171722/republican-party-dead TNR / by Michael Tomasky
 
-∂ «We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed.»
+∂ We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed.
 
-> «Michael Tomasky gathered four close observers ... of the Republican Party: Michael Steele, ... Juleanna Glover, ... Max Boot, ... and Nicolle Wallace ...»
+£ Michael Tomasky gathered four close observers ... of the Republican Party: Michael Steele, ... Juleanna Glover, ... Max Boot, ... and Nicolle Wallace ...
 
 #### ® Leah Greenblatt, writing in NYT (2023) under the headline «Name Above the Movie Title? How About in It?»
 
@@ -684,7 +692,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html NYT / by Leah Greenblatt
 
-∂ «With the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.»
+∂ With the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.
 
 ### April 21st
 
@@ -694,7 +702,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/21/technology/welcome-to-the-yolo-economy.html NYT / by Kevin Roose
 
-∂ «Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure.»
+∂ Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure.
 
 #### ® Nell Greenfieldboyce, writing in NPR (2021) under the headline «The Secret Mission To Unearth Part Of A 142-Year-Old Experiment»
 
@@ -710,7 +718,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.newyorker.com/culture/comma-queen/grammar-nerd-heaven The New Yorker / by Mary Norris
 
-∂ «A new exhibit showcases the surprisingly contentious history of English grammar books.»
+∂ A new exhibit showcases the surprisingly contentious history of English grammar books.
 
 #### ® Harriet Ryan, writing in Los Angeles Times (2023) under the headline «A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families»
 
@@ -718,7 +726,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes Los Angeles Times / by Harriet Ryan
 
-> «Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm -- money they now believe was wasted.»
+£ Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm -- money they now believe was wasted.
 
 ### April 22nd
 
@@ -728,7 +736,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
 
-∂ «That story, which has sometimes been called a real-life ≤bLord of the Flies≥, was just one episode in a life filled with adventure.»
+∂ That story, which has sometimes been called a real-life ≤bLord of the Flies≥, was just one episode in a life filled with adventure.
 
 #### ® Amelia Soth, writing in JSTOR Daily (2021) under the headline «When Paid Applauders Ruled the Paris Opera House»
 
@@ -736,7 +744,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://daily.jstor.org/paid-applauders-paris-opera-claques/ JSTOR Daily / by Amelia Soth
 
-∂ «Professional applauders, collectively known as the ≤fclaque≥, helped mold the tastes of an uncertain audience.»
+∂ Professional applauders, collectively known as the ≤fclaque≥, helped mold the tastes of an uncertain audience.
 
 #### Deaths on this date:
 
@@ -750,7 +758,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/24/opinion/new-york-city-affordability-housing.html NYT / by Paul Krugman
 
-> «The biggest factor, almost surely, was and is the cost of housing.»
+£ The biggest factor, almost surely, was and is the cost of housing.
 
 ### April 25th
 
@@ -760,7 +768,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.npr.org/sections/goatsandsoda/2021/04/25/989765565/tower-of-babble-non-native-speakers-navigate-the-world-of-good-and-bad-english NPR / by Carolyn McCusker
 
-∂ «Why Nonnative English Speakers Actually Speak The Best English»
+∂ Why Nonnative English Speakers Actually Speak The Best English
 
 #### Deaths on this date:
 
@@ -786,7 +794,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.politico.com/news/magazine/2023/04/28/jim-vandehei-profile-00094172 Politico / by Michael Schaffer
 
-∂ «D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.»
+∂ D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.
 
 ### April 29th
 
@@ -806,7 +814,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
 
-> «... Arthur Gelb in his memoir, ≤bCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...»
+£ ... Arthur Gelb in his memoir, ≤bCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...
 
 ## V. May
 
@@ -822,13 +830,13 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://en.unesco.org/commemorations/worldpressfreedomday UNESCO / World Press Freedom Day
 
-> «Every year, 3 May is a date which celebrates the fundamental principles of press freedom, to evaluate press freedom around the world, to defend the media from attacks on their independence and to pay tribute to journalists who have lost their lives in the exercise of their profession. World Press Freedom Day was proclaimed by the UN General Assembly in 1993 ...»
+£ Every year, 3 May is a date which celebrates the fundamental principles of press freedom, to evaluate press freedom around the world, to defend the media from attacks on their independence and to pay tribute to journalists who have lost their lives in the exercise of their profession. World Press Freedom Day was proclaimed by the UN General Assembly in 1993 ...
 
 #### Deaths on this date:
 
 ##### Elizabeth Bacon, 1621 (age 79-80), in England
 
-> «... she became the Lady Nevell of My Ladye Nevells Booke, a manuscript of keyboard music by William Byrd.»
+£ ... she became the Lady Nevell of My Ladye Nevells Booke, a manuscript of keyboard music by William Byrd.
 >
 > -- from
 
@@ -842,7 +850,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/05/04/realestate/design-downsizing.html NYT / by Pilar Viladas
 
-∂ «When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio.»
+∂ When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio.
 
 #### ® Tim McKeough, writing in NYT (2021) under the headline «In Miami, a Sculpture Built to Live In»
 
@@ -850,7 +858,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/05/04/realestate/the-carter-project-miami-sculpture-christopher-carter.html NYT / by Tim McKeough
 
-∂ «Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit.»
+∂ Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit.
 
 #### Deaths on this date:
 
@@ -864,7 +872,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.bbc.com/future/article/20210505-how-cities-will-fossilise BBC / by David Farrier
 
-∂ «The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others.»
+∂ The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others.
 
 #### Deaths on this date:
 
@@ -890,7 +898,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.politico.com/magazine/story/2015/05/the-gop-is-dying-off-literally-118035/ Politico / by Daniel J. McGraw
 
-> «... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group.»
+£ ... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group.
 
 #### ® Eric Mack, writing in Cnet (2021) under the headline «Nikola Tesla invention from 100 years ago suddenly makes more sense today»
 
@@ -898,7 +906,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.cnet.com/news/nikola-tesla-invention-from-100-years-ago-suddenly-makes-more-sense-today/ Cnet / by Eric Mack
 
-∂ «The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew.»
+∂ The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew.
 
 ### May 19th
 
@@ -908,7 +916,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs The Guardian / by Leyland Cecco
 
-∂ «Korean media praises prime minister’s gesture, known as ≤fmanner legs≥, while some Canadians say it is embarrassing country»
+∂ Korean media praises prime minister’s gesture, known as ≤fmanner legs≥, while some Canadians say it is embarrassing country
 
 ¢ A note for students of English: the word ≤fsplit≥ in the headline is a play on words.
 
@@ -920,7 +928,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/interactive/2019/05/21/business/economy/migration-big-cities.html NYT / by Eduardo Porter and Guilbert Gates
 
-> «But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.»
+£ But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.
 
 ¢ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the ≤fDeep South≥ («the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi»):
 
@@ -949,7 +957,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/ Atlanta Journal-Constitution / by Rodney Ho
 
-∂ «My 2021 photo is from the Jamie Foxx Netflix comedy ≤wDay Shift≥ but many believe it’s a vintage shot»
+∂ My 2021 photo is from the Jamie Foxx Netflix comedy ≤wDay Shift≥ but many believe it’s a vintage shot
 
 #### Deaths on this date:
 
@@ -963,7 +971,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.hollywoodreporter.com/business/business-news/does-andy-warhol-get-same-copyright-treatment-as-google-code-4171885/ Hollywood Reporter / by Eriq Gardner
 
-> «... the Andy Warhol Foundation is citing Google v. Oracle ...»
+£ ... the Andy Warhol Foundation is citing Google v. Oracle ...
 
 #### Deaths on this date:
 
@@ -977,7 +985,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.washingtonpost.com/transportation/2022/05/24/pandemic-suburbs-downtown-retail/ WaPo / by Katherine Shaver
 
-∂ «Developers are adding outdoor co-working space -- bocce ball, anyone? -- to attract remote workers to stores and restaurants»
+∂ Developers are adding outdoor co-working space -- bocce ball, anyone? -- to attract remote workers to stores and restaurants
 
 #### 2023-05-24: The symbolic Cotton Tree in Freetown, Sierra Leone, was felled by a storm:
 
@@ -989,13 +997,13 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse (in Freetown), 2023-05-25
 
-∂ «Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa»
+∂ Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa
 
 ##### ® Source: Wikipedia, «Cotton Tree (Sierra Leone)»
 
 => https://en.wikipedia.org/wiki/Cotton_Tree_(Sierra_Leone) WP / Cotton Tree (Sierra Leone)
 
-> «On 24 May 2023, a heavy rain storm felled the cotton tree with only the lower part of its enormous trunk still standing.»
+£ On 24 May 2023, a heavy rain storm felled the cotton tree with only the lower part of its enormous trunk still standing.
 
 ### May 31st
 
@@ -1005,7 +1013,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.cnn.com/style/article/cita-sadeli-miss-chelove-street-art-nomad/index.html CNN / by Jacopo Prisco
 
-> «Cita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] ≤wNomad≥. ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022»
+£ Cita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] ≤wNomad≥. ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022
 
 ## VI. June
 
@@ -1033,7 +1041,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.nytimes.com/2020/07/01/nyregion/guilford-ct-fire-rescue-well.html NYT / by Allyson Waller
 
-∂ «... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well.»
+∂ ... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well.
 
 #### 1863-07-01: Abolition of slavery in Suriname and the Dutch colonies in the Caribbean
 
@@ -1047,7 +1055,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
 
-∂ «A student objected to a class, ≤cThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?»
+∂ A student objected to a class, ≤cThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?
 
 #### 1608-07-03: Founding of Quebec City
 
@@ -1059,7 +1067,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.politico.com/news/magazine/2021/07/09/west-virginia-economy-paid-remote-work-498238 Politico / by Mackenzie Mays
 
-∂ «The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.»
+∂ The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.
 
 #### Deaths on this date:
 
@@ -1073,7 +1081,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.newyorker.com/magazine/2022/07/25/the-haves-and-the-have-yachts The New Yorker / by Evan Osnos
 
-∂ «Luxury ships attract outrage and political scrutiny. The ultra-rich are buying them in record numbers.»
+∂ Luxury ships attract outrage and political scrutiny. The ultra-rich are buying them in record numbers.
 
 > «July 18, 2022»
 
@@ -1089,13 +1097,13 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.politico.com/interactives/2021/coronavirus-reopening-by-county-income/ Politico / by Beatrice Jin
 
-∂ «Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide.»
+∂ Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide.
 
 ¢ In Politico, Beatrice Jin writes: «Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home.»
 
 #### 1918-07-21: A German U-boat (submarine) fires on vessels off Cape Cod, striking the shore in the process.
 
-> «A few shells and craters were found on shore in Orleans and in the nearby marsh.»
+£ A few shells and craters were found on shore in Orleans and in the nearby marsh.
 >
 > -- from
 
@@ -1113,7 +1121,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://boingboing.net/2021/08/07/watch-this-short-documentary-about-the-influential-experimental-black-mountain-college.html Boing Boing / by Popkin
 
-> «Black Mountain College: A Thumbnail Sketch is a 13-minute documentary about a legendary, experimental college founded by John Andrew Rice along with a few others in 1933.»
+£ Black Mountain College: A Thumbnail Sketch is a 13-minute documentary about a legendary, experimental college founded by John Andrew Rice along with a few others in 1933.
 
 #### Deaths on this date:
 
@@ -1127,7 +1135,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.vice.com/en/article/akgqyz/moving-to-new-york-essentials Vice / by Ian Burke
 
-∂ «Start with a brisk walking pace, an incorrect opinion on bagels, and a healthy hatred of Bill de Blasio.»
+∂ Start with a brisk walking pace, an incorrect opinion on bagels, and a healthy hatred of Bill de Blasio.
 
 ¢ See also the counterpart to this article, which Vice published 3 days later.
 
@@ -1149,7 +1157,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.vice.com/en/article/93ymxz/zillow-other-tech-firms-are-in-an-arms-race-to-buy-up-american-homes Vice / by Maxwell Strachan
 
-∂ «≤siBuyers≥ are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.»
+∂ ≤siBuyers≥ are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.
 
 #### ® Mary Frances ≤nFrancky≥ Knapp, writing in Vice (2021) under the headline «Moving to LA From the East Coast? Here’s What You’ll Need»
 
@@ -1157,7 +1165,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances ≤nFrancky≥ Knapp
 
-∂ «In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you’ll need for your new LA life of pool parties and picnics.»
+∂ In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you’ll need for your new LA life of pool parties and picnics.
 
 ¢ See also the counterpart to this article, which Vice published 3 days earlier.
 
@@ -1167,9 +1175,9 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://slate.com/technology/2021/08/twitter-font-redesign-chirp-franklin-gothic.html Slate / by Aaron Mak
 
-∂ «And why users think it’s unreadable.»
+∂ And why users think it’s unreadable.
 
-> «Fredrick Brennan: ‹... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.›»
+£ Fredrick Brennan: ‹... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.›
 
 #### Deaths on this date:
 
@@ -1183,7 +1191,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.bbc.com/news/world-africa-58260855 BBC / by Kayleen Devlin
 
-∂ «The BBC’s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.»
+∂ The BBC’s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.
 
 #### ® Henry Grabar, writing in Slate (2021) under the headline «The Perverse Reason It’s Easier to Build New Highways Than New Subways - The environment?!»
 
@@ -1191,7 +1199,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://slate.com/business/2021/08/congestion-pricing-nyc-bart-tunnel-san-francisco-bay-environmental-reviews.html Slate / by Henry Grabar
 
-∂ «Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads.»
+∂ Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads.
 
 #### Deaths on this date:
 
@@ -1205,9 +1213,9 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america
 
-∂ «This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States.»
+∂ This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States.
 
-> «This collaboration between the Armed Conflict Location & Event Data Project (ACLED) and Everytown for Gun Safety Support Fund (Everytown) presents quantitative research on demonstrations in the United States during the 18-month period from January 2020 through June 2021, documenting 560 events where demonstrators, counter-demonstrators, or other individuals or groups were present and carried or brandished firearms (see inset definition).»
+£ This collaboration between the Armed Conflict Location & Event Data Project (ACLED) and Everytown for Gun Safety Support Fund (Everytown) presents quantitative research on demonstrations in the United States during the 18-month period from January 2020 through June 2021, documenting 560 events where demonstrators, counter-demonstrators, or other individuals or groups were present and carried or brandished firearms (see inset definition).
 
 by := ACLED and the Everytown for Gun Safety Support Fund
 
@@ -1225,7 +1233,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://www.theatlantic.com/technology/archive/2015/08/ballpoint-pens-object-lesson-history-handwriting/402205/ The Atlantic / by Josh Giesbrecht
 
-∂ «Thicker ink, fewer smudges, and more strained hands: an Object Lesson»
+∂ Thicker ink, fewer smudges, and more strained hands: an Object Lesson
 
 ## IX. September
 
@@ -1239,19 +1247,19 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://twitter.com/GovChristie/status/1701683733953138918
 
-> «Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is «rotten». Trump thinks Putin is a «genius» -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
+£ Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is «rotten. Trump thinks Putin is a «genius» -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
 ##### Posted by Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
 => https://twitter.com/AsaHutchinson/status/1701659903230689598
 
-> «Trump & Putin are using the same talking points. Trump’s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
+£ Trump & Putin are using the same talking points. Trump’s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc
 
 ##### Posted by Liz Cheney (@Liz_Cheney) on Twitter
 
 => https://twitter.com/Liz_Cheney/status/1701651278697308238
 
-> «Putin has now officially endorsed the Putin-wing of the Republican Party. Putin Republicans & their enablers will end up on the ash heap of history. Patriotic Americans in both parties who believe in the values of liberal democracy will make sure of it. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
+£ Putin has now officially endorsed the Putin-wing of the Republican Party. Putin Republicans & their enablers will end up on the ash heap of history. Patriotic Americans in both parties who believe in the values of liberal democracy will make sure of it. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc
 
 ### September 24th
 
@@ -1261,7 +1269,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://www.theatlantic.com/international/archive/2021/09/britain-france-us-aukus/620186/ The Atlantic / by Tom McTague
 
-∂ «The two countries are more similar than is often acknowledged.»
+∂ The two countries are more similar than is often acknowledged.
 
 #### Deaths on this date:
 
@@ -1269,7 +1277,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ##### Carl Laemmle, 1939 (age 72), in Los Angeles
 
-> «Poet Ogden Nash observed the following about Laemmle’s habit of giving his son and nephews top executive positions in his studios:»
+£ Poet Ogden Nash observed the following about Laemmle’s habit of giving his son and nephews top executive positions in his studios:
 
 ```
 Uncle Carl Laemmle
@@ -1286,7 +1294,7 @@ Has a very large faemmle. -- from
 
 ##### Jonathan Swift, 1745 (age 77), in Dublin
 
-> «The best maxim I know in this life is, to drink your coffee when you can, and when you cannot, to be easy without it.»
+£ The best maxim I know in this life is, to drink your coffee when you can, and when you cannot, to be easy without it.
 >
 > -- Jonathan Swift
 
@@ -1326,7 +1334,7 @@ Has a very large faemmle. -- from
 
 => https://www.nytimes.com/2022/11/29/nyregion/nyc-mentally-ill-involuntary-custody.html NYT / by Andy Newman and Emma G. Fitzsimmons
 
-∂ «Mayor Eric Adams directed the police and emergency medical workers to hospitalize people they deemed too mentally ill to care for themselves, even if they posed no threat to others.»
+∂ Mayor Eric Adams directed the police and emergency medical workers to hospitalize people they deemed too mentally ill to care for themselves, even if they posed no threat to others.
 
 ## XII. December
 
@@ -1338,7 +1346,7 @@ Has a very large faemmle. -- from
 
 => https://slate.com/technology/2022/12/medical-debt-collections-credit-report-burden.html Slate / by Bobbi Dempsey
 
-∂ «Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system.»
+∂ Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system.
 
 ### December 31st
 

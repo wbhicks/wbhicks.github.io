@@ -6,8 +6,22 @@
 
 {{ $result := "OVERWRITTEN" }}
 
+{{- /* ====================
+       Currently handled prefixes: ® £ ¢ =&gt; ∂ ◉
 
+       ®
+       For my 4-hashes clipping from an article or (rarely) whitepaper
+       For my 4-hashes clipping from an authorless press release
+       For a 5-hashes meta-citation of an article or whitepaper
+       For a 5-hashes meta-citation of a book
+       For my 5-hashes citation of Wikipedia, AND not followed by a quotation from the body
+       For my 5-hashes citation of typical reportage, but not followed by a quotation from the body
 
+       £
+       For blockquotes
+
+       ====================
+{{- /*
 
 
 {{- /*
@@ -28,11 +42,7 @@
 
 
 
-{{- /* Blockquotes no longer have an entry here because Goldmark handles them OK. See
-       https://yuin.github.io/goldmark/playground/
 
-       ^> "..." ---> <blockquote>
-*/ -}}
 
 {{ if (eq $prefix "®") }}
   {{ if (partial "whole-str-matches-regex" (dict 
@@ -121,7 +131,7 @@
       "pattern" `Source: (.+), TMPLT_LDGUIL(.+)TMPLT_RDGUIL by (.+)` 
       "text" $text)) 
   }}
-    {{- /* CASE @-bare: For my 5-hashes citation of typical reportage, but not followed by a quotation from the body, e.g.
+    {{- /* CASE ®-bare: For my 5-hashes citation of typical reportage, but not followed by a quotation from the body, e.g.
 
          ##### ® Source: BBC, «Sierra Leone’s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)
 
@@ -134,9 +144,41 @@
     }}
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ end }}
+{{ else if (eq $prefix "£") }}
+  {{- /* Blockquotes: 
+
+       Goldmark handles them OK[1], but I've resumed idiosyncratic handling 
+       of blockquotes for more fine-grained control.
+
+       [1] See https://yuin.github.io/goldmark/playground/
+
+       Goldmark transforms the following 3-line stretch of greater-than signs:
+
+       ^> "..." [quotation marks optional, but preserved]
+       ^>
+       ^> -- William Cobbett
+
+       into the following 4-line stretch of HTML:
+
+       <blockquote>
+       <p>...</p>
+       <p>-- William Cobbett</p>
+       </blockquote>
+
+       But I've started using
+
+       ^£ I will not garble, misquote, and belie him, as he garbled, misquoted, and belied them.
+       ^
+       ^~~ William Cobbett
+  */ -}}
+  {{ $text = 
+      replaceRE
+     `([^~]+) ~~ (George Washington)`
+     `<blockquote><p> $1 </p></blockquote><figcaption> $2 </figcaption>`
+      $text
+  }}
+  {{ $result = (add `<figure>` $text `</figure>`) }}
 {{ else if (eq $prefix "¢") }}
-
-
 
 
 
@@ -156,15 +198,20 @@
 
 
 
+  {{- /* CASE ¢: "^¢ " replaced "^~ " for my commentary 
 
+  replacing
+      `<div class="commentary"><p>$1</p></div>`
+  with
+      `<p class="commentary">$1</p>`
+  did NOT eliminate the 74 occurrences of the erroneous <p><div ... </div></p>
+  it just changed them to <p><p class="commentary"> ... </p></p>
 
-
-
-  {{- /* CASE ¢: "^¢ " replaced "^~ " for my commentary */ -}}
+  */ -}}
   {{ $text = 
       replaceRE
      `(.+)`
-     `<div class="commentary"><p>$1</p></div>`
+     `<p class="commentary">$1</p>`
       $text
   }}
   {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}

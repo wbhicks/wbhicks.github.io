@@ -524,6 +524,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed {
 
 // current prob: half of the ¢ commentary inputs aren't processed
+// FIXED ... it was because of unescaped square brackets in the commnentary blocks
 
 // TODO <h5 id="giotto-1337-age-70-in-florence-firenze">Giotto, 1337 (age 70?)
 
@@ -537,14 +538,14 @@ h4.h4-from-3stars {
 div.asterism {
   border-left: 3px solid gray;
 }
-blockquote {
-  border-left: 3px solid gray;
-}
+//blockquote {
+//  border-left: 3px solid gray;
+//}
 div.url-line,
 div.fisheye-means-rightmost {
   border-left: 3px solid #5050ff;
 }
-div.commentary {
+.commentary {
   border-left: 3px solid orange;
 }
 h5,
@@ -565,8 +566,8 @@ div.asterism,
 h5,
 div.dek, 
 div.fisheye-means-rightmost,
-div.commentary, 
-blockquote,
+.commentary, 
+//blockquote,
 div.url-line,
 p,
 pre {
@@ -937,13 +938,12 @@ pre {
 */
 
 .nojs-mini-themed {
-
+/*
   blockquote {
     // Use padding-left instead of margin-left, for same reason as OL and UL
     padding-left: 2rem;
-//    margin-bottom: 2rem;
   }
-
+*/
 }
 
   /* ~ ~ ~ ~ ~

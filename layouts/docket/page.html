@@ -2,6 +2,7 @@
 
   <span class="design-hint">dp»</span>
 
+
   {{ $allText := (partial "process-in-sequence.html" 
       (dict "the_content" .Content "mRLT" .LinkTitle)) }}
 
@@ -9,8 +10,6 @@
 
 
 {{- /* $allText := .Content */ -}}
-{{- /* $allText = replaceRE `<p><div` `<div`  $allText */ -}}
-{{- /* $allText = replaceRE `</div></p>` `</div>`  $allText */ -}}
 
 
 
