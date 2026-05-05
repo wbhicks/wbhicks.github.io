@@ -44,17 +44,15 @@ draft: false
 
 #### 1790-01-08: GW’s 1st SoTU, including this passage:
 
-£ An intro parag.
+£ blahblah
 
-£ Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.
+¶ An intro parag.
 
-£ A closing parag.
+¶ Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.
 
-£ ≤~George Washington≥
+¶ A closing parag.
 
-£ A stray parag below the credit.
-
-¢ This commentary line saves us.
+~ George Washington
 
 => https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address Wikisource
 
@@ -158,7 +156,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://shop.harvard.com/book/9780807006146 Beacon Press / by Patrick J. Carr and Maria J. Kefalas (2010)
 
-##### Source: ~ Edsall also quotes from his email correspondence with Justin Gest at George Mason University.
+##### Source: Edsall also quotes from his email correspondence with Justin Gest at George Mason University.
 
 => https://schar.gmu.edu/profiles/jgest GMU / Justin Gest
 

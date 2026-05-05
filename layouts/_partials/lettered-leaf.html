@@ -49,15 +49,10 @@
 
        Current codes for lettered strings: a b c f l m n s t w
 
-       "≤~Some Name≥" isn't processed here because it always follows a "£ "
-       and is therefore processed as part of a FIGURE/BLOCKQUOTE multi-block. 
-
        ====================
 */ -}}
 
-{{ if (eq $classifier "~") }}
-  {{ $result = $the_content }}
-{{ else if (eq $classifier "a") }}
+{{ if (eq $classifier "a") }}
 {{- /* CASE a: For the typically quoted title/headline of an article or whitepaper.
 
        Article titles that are in 4-hash headings are inferred via regexps 

@@ -7,7 +7,7 @@
 {{ $result := "OVERWRITTEN" }}
 
 {{- /* ====================
-       Currently handled prefixes: ® £ ¢ =&gt; ∂ ◉
+       Currently handled prefixes: £ ¶ ~ ® ¢ =&gt; ∂ ◉
 
        ®
        For my 4-hashes clipping from an article or (rarely) whitepaper
@@ -17,7 +17,7 @@
        For my 5-hashes citation of Wikipedia, AND not followed by a quotation from the body
        For my 5-hashes citation of typical reportage, but not followed by a quotation from the body
 
-       £
+       "£" "¶" "~"
        For blockquotes
 
        ====================
@@ -145,7 +145,7 @@
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ end }}
 {{ else if (eq $prefix "£") }}
-  {{- /* Blockquotes: 
+  {{- /* Blockquotes: idiosyncratic, uses "£", "¶", & "~"
 
        Goldmark handles them OK[1], but I've resumed idiosyncratic handling 
        of blockquotes for more fine-grained control.
@@ -154,30 +154,34 @@
 
        Goldmark transforms the following 3-line stretch of greater-than signs:
 
-       ^> "..." [quotation marks optional, but preserved]
-       ^>
-       ^> -- William Cobbett
+              > "..." [quotation marks optional, but preserved]
+              >
+              > -- William Cobbett
 
        into the following 4-line stretch of HTML:
 
-       <blockquote>
-       <p>...</p>
-       <p>-- William Cobbett</p>
-       </blockquote>
+              <blockquote>
+              <p>...</p>
+              <p>-- William Cobbett</p>
+              </blockquote>
 
-       But I've started using
+       But I've started using (n.b. must not use ">" in place of "¶", or else
+       Goldmark blockquote wrapping will still be applied)
 
-       ^£ I will not garble, misquote, and belie him, as he garbled, misquoted, and belied them.
-       ^
-       ^~~ William Cobbett
+              £
+
+              ¶ I will not garble, misquote, and belie him, as he garbled, misquoted, and belied them.
+
+              ¶ The End.
+
+              ~ William Cobbett
+
   */ -}}
-  {{ $text = 
-      replaceRE
-     `([^~]+) ~~ (George Washington)`
-     `<blockquote><p> $1 </p></blockquote><figcaption> $2 </figcaption>`
-      $text
-  }}
-  {{ $result = (add `<figure>` $text `</figure>`) }}
+  {{ $result = (add `<figure>` $text `<blockquote>`) }}
+{{ else if (eq $prefix "¶") }}
+  {{ $result = (add `<p>Y` $text `Z</p>`) }}
+{{ else if (eq $prefix "~") }}
+  {{ $result = (add `</blockquote><figcaption>` $text `</figcaption></figure>`) }}
 {{ else if (eq $prefix "¢") }}
 
 

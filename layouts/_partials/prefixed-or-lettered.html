@@ -43,22 +43,24 @@
          ~ ~ ~ ~ ~
   */ -}}
 
+{{- /*
   {{ $regexpMatchingMultiParagBlockquotes := 
       `<p>[
-]?£.+</p>` 
+]?.+</p>` 
   }}
   {{ $allMultiParagBlockquotes := 
       findRE $regexpMatchingMultiParagBlockquotes $allText 
   }}
   {{ range $allMultiParagBlockquotes }}
     {{ $currentBlock := . }}
-      {{ $allText = 
+    {{ $allText = 
           replaceRE
           .
           (add `<blockquote>` . `</blockquote>`)
           $allText
-      }}
+    }}
   {{ end }}
+*/ -}}
 
   {{- /* ~ ~ ~ ~ ~
          Step I.C.
@@ -69,7 +71,7 @@
 
   {{ $regexpMatchingParagBlocks := 
       `<p>[
-]?[^£]+</p>` 
+]?.+</p>` 
   }}
   {{ $allParagBlocks := 
       findRE $regexpMatchingParagBlocks $allText 
@@ -96,7 +98,7 @@
     {{ $currentBlock := . }}
     {{ $leftmostOpeningTag := (add (index (split . ">") 0) ">") }}
     {{ $prefix := (index (split (index (split . ">") 1) " ") 0) }}
-    {{ $meaningfulPrefixes := slice "®" "¢" "∂" "=&gt;" "◉" }}
+    {{ $meaningfulPrefixes := slice "£" "¶" "~" "®" "¢" "∂" "=&gt;" "◉" }}
     {{ if (in $meaningfulPrefixes $prefix) }}
       {{ $textAndRightmostClosingTag := (index (split . (add $prefix " ")) 1) }}
       {{ $rightmostClosingTag := (add "<" (index (last 1 (split . "<")) 0)) }}
