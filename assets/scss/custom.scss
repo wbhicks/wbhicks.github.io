@@ -144,7 +144,13 @@ body.sans-mode main * {
     .markdown-body     { color: #0ff; } // else color-text_ ...
     h1, h2, h3, h4, h5 { color: #0f0; } // else color-text_ ...
     p                  { color: #ff0; } // else color-text_ ...
-    .asterism          { color: #777; }
+
+    main > div.asterism-above-h2,
+    main > div.asterism-below-h2,
+    main > div.asterism-above-h3,
+    main > div.asterism-below-h3,
+    main > div.asterism-above-h4,
+    main > div.asterism-below-h4 { color: #777; }
 
     cite.book-title         { color: red; }
     cite.like-book-title    { color: red; }
@@ -349,7 +355,13 @@ table.mini-theme-selector-table > tbody > tr > td > input {
     --color-mono-text: #7a92a5;
   }
 
-  .asterism {
+  // BUT asterisms aren't shown in 74 or 74 mono, so why bother?
+  main > div.asterism-above-h2,
+  main > div.asterism-below-h2,
+  main > div.asterism-above-h3,
+  main > div.asterism-below-h3,
+  main > div.asterism-above-h4,
+  main > div.asterism-below-h4 {
     --color-mono-text: #f7d17f;
   }
 
@@ -518,71 +530,141 @@ body > div.nojs-mini-themed > footer {
 
   margin-left: 1rem;
   margin-right: 1rem;
-
 }
 
 .nojs-mini-themed {
 
-// current prob: half of the ¢ commentary inputs aren't processed
-// FIXED ... it was because of unescaped square brackets in the commnentary blocks
+  h2.h2-from-1star,
+  h3.h3-from-2stars,
+  h4.h4-from-3stars {
+    border-left: 4px solid gray;
+  }
 
-// TODO <h5 id="giotto-1337-age-70-in-florence-firenze">Giotto, 1337 (age 70?)
+  main > div.asterism-above-h2,
+  main > div.asterism-below-h2,
+  main > div.asterism-above-h3,
+  main > div.asterism-below-h3,
+  main > div.asterism-above-h4,
+  main > div.asterism-below-h4 {
+    border-left: 2px solid gray;
+  }
 
-// there is no class for h5's
+  // current prob: half of the ¢ commentary inputs aren't processed
+  // FIXED ... it was because of unescaped square brackets in the commnentary blocks
 
-h2.h2-from-1star,
-h3.h3-from-2stars,
-h4.h4-from-3stars {
-  border-left: 3px solid gray;
-}
-div.asterism {
-  border-left: 3px solid gray;
-}
-figure {
-  border-left: 3px solid gray;
-}
-div.url-line,
-div.fisheye-means-rightmost {
-  border-left: 3px solid #5050ff;
-}
-.commentary {
-  border-left: 3px solid orange;
-}
-h5,
-div.dek {
-  border-left: 3px solid yellow;
-}
-pre {
-  border-left: 3px solid green;
-}
-p {
-//  border-left: 5px solid red;
-}
+  // TODO <h5 id="giotto-1337-age-70-in-florence-firenze">Giotto, 1337 (age 70?)
 
-h2.h2-from-1star,
-h3.h3-from-2stars,
-h4.h4-from-3stars,
-div.asterism,
-h5,
-div.dek, 
-div.fisheye-means-rightmost,
-.commentary, 
-div.url-line,
-p,
-pre {
-//  margin-top: 1rem;
-//  margin-bottom: 1rem;
-}
+  // there is no class for h5's
 
-//  main {
-//    line-height: 1.5;
-//  }
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Margin_collapsing
 
-//  p {
-//    margin-bottom: 2rem;
-//  }
+  // In some mini-themes, each heading is sandwiched between asterisms, but
+  // these margins for headings are needed for the other mini-themes:
 
-}
+  h2.h2-from-1star,
+  h3.h3-from-2stars {
+    margin-top:    2rem;
+    margin-bottom: 2rem;
+  }
+
+  h4.h4-from-3stars {
+    margin-top:    2rem;
+    margin-bottom: 2rem;
+  }
+
+  main > div.asterism-above-h2 {
+    margin-top:    3rem;
+//    margin-bottom: 1rem;
+  }
+
+  main > div.asterism-below-h2 {
+    //margin-top:    1rem;
+    margin-bottom: 3rem;
+  }
+
+  main > div.asterism-above-h3 {
+    margin-top: 3rem;
+//    margin-bottom: 1rem;
+  }
+
+  main > div.asterism-below-h3 {
+//    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+
+  main > div.asterism-above-h4 {
+    margin-top: 3rem;
+//    margin-bottom: 1rem;
+  }
+
+  main > div.asterism-below-h4 {
+//    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  main > figure {
+    border-left: 3px solid gray;  // RESUME HERE
+//    margin-top:    1rem;
+//    margin-bottom: 1rem;
+  }
+
+  main > figure > blockquote > p {
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+  }
+
+  main > figure > figcaption {
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+  }
+
+  div.url-line,
+  div.fisheye-means-rightmost {
+    border-left: 3px solid #5050ff;
+  }
+
+  .commentary {
+    border-left: 3px solid orange;
+  }
+
+  h5,
+  div.dek {
+    border-left: 3px solid yellow;
+  }
+
+  pre {
+    border-left: 3px solid green;
+  }
+
+  p {
+  //  border-left: 5px solid red;
+  }
+
+  h2.h2-from-1star,
+  h3.h3-from-2stars,
+  h4.h4-from-3stars,
+  div.asterism,
+  h5,
+  div.dek, 
+  div.fisheye-means-rightmost,
+  .commentary, 
+  div.url-line,
+  p,
+  pre {
+  //  margin-top: 1rem;
+  //  margin-bottom: 1rem;
+  }
+
+  //  main {
+  //    line-height: 1.5;
+  //  }
+
+  //  p {
+  //    margin-bottom: 2rem;
+  //  }
+
+} // End of .nojs-mini-themed
 
   /* ~ ~ ~ ~ ~
      Included: the TICKED & HALFTICKED mini-themes
@@ -725,14 +807,19 @@ pre {
 /* ====================
    Classes for headings: .h2-from-1star, .h3-from-2stars, etc.
 
-   The class .asterism is also defined here, because it's used only above and
-   below headings.
+   The classes .asterism-... are also defined here, because they're used only
+   above and below headings.
    ====================
 */
 
 .nojs-mini-themed {
 
-  .asterism {
+  main > div.asterism-above-h2,
+  main > div.asterism-below-h2,
+  main > div.asterism-above-h3,
+  main > div.asterism-below-h3,
+  main > div.asterism-above-h4,
+  main > div.asterism-below-h4 {
     /* No longer using this CSS var:
 
        --nojs-asterism-display: block;
@@ -772,7 +859,13 @@ pre {
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
-  .asterism {
+
+  main > div.asterism-above-h2,
+  main > div.asterism-below-h2,
+  main > div.asterism-above-h3,
+  main > div.asterism-below-h3,
+  main > div.asterism-above-h4,
+  main > div.asterism-below-h4 {
     font-family: monospace;
     white-space-collapse: preserve;
     text-align: center;
@@ -789,7 +882,7 @@ pre {
      ... To represent multiple lines of code, wrap the <code> element within 
      a <pre> element. The <code> element by itself only represents a single 
      phrase of code or line of code."
-  
+
      Source: https://developer.mozilla.org/en-US/do
              cs/Web/HTML/Reference/Elements/pre
    ====================

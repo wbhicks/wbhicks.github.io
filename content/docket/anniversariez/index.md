@@ -28,7 +28,11 @@ draft: false
 
 ## I. January
 
+¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### January 8th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Blake Gopnik, writing in NYT (2021) under the headline «Who Said Art Is Only for the One Percent?»
 
@@ -81,6 +85,8 @@ draft: false
 ##### Terry-Thomas, 1990 (age 78), in Godalming, Surrey, UK
 
 ### January 25th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Thomas B. Edsall, writing in NYT (2023) under the headline «The Resentment Fueling the Republican Party Is Not Coming From the Suburbs»
 
@@ -160,6 +166,8 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ### January 26th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Paul Krugman, writing in NYT (2023) under the headline «Can Anything Be Done to Assuage Rural Rage?»
 
 ◉ Bookmark, Jan 26th
@@ -178,7 +186,11 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ## II. February
 
+¢ «And with my spade I delfe my landys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### February 2nd
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® David Corn, writing in Mother Jones (2023) under the headline «Columbia Journalism Review’s Big Fail: It Published 24,000 Words on Russiagate and Missed the Point»
 
@@ -198,6 +210,8 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ### February 15th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Dan Kois, writing in Slate (2023) under the headline «The Case for Hanging Out»
 
 ◉ Bookmark, Feb 15th
@@ -213,6 +227,8 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 => https://en.wikipedia.org/wiki/Manchester_Baby WP / Manchester Baby
 
 ### February 23rd
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Todd Bookman, writing in NPR (2023) under the headline «‹You have to be dangerous back.› Why some LGBTQ people in New Hampshire are taking up arms»
 
@@ -238,6 +254,8 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ### February 24th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Peter Coy, writing in NYT (2023) under the headline «The Perfect Retirement Investment Nobody Wants, Part 2»
 
 ◉ Bookmark, Feb 24th
@@ -253,6 +271,8 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 #### 1803-02-24: SCotUS issues its decision in Marbury v. Madison
 
 ### February 27th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Gloria Oladipo, writing in The Guardian (2023) under the headline «West Virginia mixed martial arts coach offers security for local drag show»
 
@@ -280,7 +300,11 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ## III. March
 
+¢ «Here I sette my thynge to springe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### March 6th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Nathan Heller, writing in The New Yorker (2023) under the headline «The End of the English Major»
 
@@ -300,6 +324,8 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ### March 7th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Rosecrans Baldwin, writing in NYT (2023) under the headline «Los Angeles Is a Fantastic Walking City. No, Really.»
 
 ◉ Bookmark, Mar 7th
@@ -317,6 +343,8 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 #### 1965-03-07: Bloody Sunday, Selma, Alabama
 
 ### March 25th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Zaria Gorvett, writing in BBC (2021) under the headline «The forgotten medieval fruit with a vulgar name»
 
@@ -480,6 +508,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### March 26th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Veronique Greenwood, writing in NYT (2021) under the headline «The Mysterious Molecular Culprit Behind Cold Tooth Pain»
 
 ◉ Bookmark, Mar 26th
@@ -489,6 +519,8 @@ We hoppen alwey, whyl that the world wol pype.
 ∂ Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it.
 
 ### March 27th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Natasha Turak, writing in CNBC (2023) under the headline «Lebanon wakes up in two simultaneous time zones as government can’t agree on daylight saving change»
 
@@ -502,6 +534,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### March 28th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Nicholas Bakalar, writing in NYT (2023) under the headline «One of the Luckiest Lightning Strikes Ever Recorded»
 
 ◉ Bookmark, Mar 28th
@@ -511,6 +545,8 @@ We hoppen alwey, whyl that the world wol pype.
 ∂ Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning.
 
 ### March 30th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Erik Olsen, writing in NYT (2021) under the headline «The Ocean’s Youngest Monsters Are Ready for Glamour Shots»
 
@@ -534,7 +570,11 @@ We hoppen alwey, whyl that the world wol pype.
 
 ## IV. April
 
+¢ «And here I here the fowles singe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### April 5th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Blake Gopnik, writing in NYT (2021) under the headline «Warhol a Lame Copier? The Judges Who Said So Are Sadly Mistaken.»
 
@@ -551,6 +591,8 @@ We hoppen alwey, whyl that the world wol pype.
 => https://en.wikipedia.org/wiki/Diana_Scultori WP / Diana Scultori «... is one of the earliest known women printmakers ...»
 
 ### April 6th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Richard Aldous, writing in NYT (2021) under the headline «Britain at the Turn of the 20th Century Was Dealing With a Lot, Badly»
 
@@ -574,6 +616,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 7th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Charles Sykes, writing in The Atlantic (2023) under the headline «How Wisconsin Republicans Got So Angry»
 
 ◉ Bookmark, Apr 7th
@@ -588,6 +632,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 10th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Aaron Hutcherson, writing in WaPo (2023) under the headline «On the Edna Lewis Menu Trail, a toast to an iconic chef and her hometown»
 
 ◉ Bookmark, Apr 10th
@@ -595,6 +641,8 @@ We hoppen alwey, whyl that the world wol pype.
 => https://www.washingtonpost.com/food/interactive/2023/edna-lewis-menu-trail-virginia/ WaPo / by Aaron Hutcherson
 
 ### April 12th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® George F. Will, writing in WaPo (2023) under the headline «How ‹I despise, therefore I am› locks in the political status quo»
 
@@ -616,6 +664,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 14th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Gareth Branwyn, writing in Boing Boing (2021) under the headline «The unique and hugely influential Canterbury music scene of the 60s and 70s»
 
 ◉ Bookmark, Apr 14th
@@ -631,6 +681,8 @@ We hoppen alwey, whyl that the world wol pype.
 ##### Gasparo da Salò, 1609 (age 66), in Brescia, Italy
 
 ### April 15th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Christopher Cokinos, writing in The American Scholar (2021) under the headline «Poetry in the Abstract»
 
@@ -650,6 +702,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 17th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Conor Dougherty, writing in NYT (2021) under the headline «One Way to Get People Off the Streets: Buy Hotels»
 
 ◉ Bookmark, Apr 17th
@@ -667,6 +721,8 @@ We hoppen alwey, whyl that the world wol pype.
 ¢ Writing for the BBC, Shane Harrison reports that «Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin’s Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives.»
 
 ### April 19th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Mark Brown, writing in The Guardian (2021) under the headline «‹Creativity is essential›: artist-designed supermarket to open in London»
 
@@ -690,6 +746,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 20th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Michael Tomasky, writing in TNR (2023) under the headline «The (Republican) Party’s Over»
 
 ◉ Bookmark, Apr 20th
@@ -711,6 +769,8 @@ We hoppen alwey, whyl that the world wol pype.
 ∂ With the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.
 
 ### April 21st
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Kevin Roose, writing in NYT (2021) under the headline «Welcome to the YOLO Economy»
 
@@ -748,6 +808,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 22nd
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Clay Risen, writing in NYT (2021) under the headline «Peter Warner, 90, Seafarer Who Discovered Shipwrecked Boys, Dies»
 
 ◉ Bookmark, Apr 22nd
@@ -770,6 +832,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 24th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Paul Krugman, writing in NYT (2023) under the headline «What’s the Matter With New York?»
 
 ◉ Bookmark, Apr 24th
@@ -781,6 +845,8 @@ We hoppen alwey, whyl that the world wol pype.
 ~ Paul Krugman, writing in NYT
 
 ### April 25th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Carolyn McCusker, writing in NPR (2021) under the headline «Tower Of Babble: Nonnative Speakers Navigate The World Of ≤sGood≥ And ≤sBad≥ English»
 
@@ -796,6 +862,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 26th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Published by Pew Research Center (2016): «Ideological Gap Widens Between More, Less Educated Adults»
 
 ◉ Bookmark, Apr 26th
@@ -808,6 +876,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### April 28th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Michael Schaffer, writing in Politico (2023) under the headline «Jim VandeHei’s Surreal Wellness Evolution»
 
 ◉ Bookmark, Apr 28th
@@ -817,6 +887,8 @@ We hoppen alwey, whyl that the world wol pype.
 ∂ D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.
 
 ### April 29th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Bill Lukitsch and Anna Spoerre, writing in The Kansas City Star (2021) under the headline «Kansas City leaders unveil ≤stiny-home≥ village proposal to help address homelessness»
 
@@ -840,7 +912,11 @@ We hoppen alwey, whyl that the world wol pype.
 
 ## V. May
 
+¢ «I am as lyght as byrde in bowe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### May 3rd
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Ilana Kaplan, writing in The Ringer (2021) under the headline «Making the (Fictional) Band»
 
@@ -868,6 +944,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### May 4th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Pilar Viladas, writing in NYT (2021) under the headline «A Design Expert Makes Space for Tools and Memories»
 
 ◉ Bookmark, May 4th
@@ -890,6 +968,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### May 5th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® David Farrier, writing in BBC (2021) under the headline «How cities will fossilise»
 
 ◉ Bookmark, May 5th
@@ -904,6 +984,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### May 16th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Carolyn McCusker, writing in NPR (2021) under the headline «Prepone That! Your Accent Is Funny! Readers Share Their ESL Stories»
 
 ◉ Bookmark, May 16th
@@ -915,6 +997,8 @@ We hoppen alwey, whyl that the world wol pype.
 ##### Grace Elliott, 1823 (age 68-69), in Ville-d’Avray, France
 
 ### May 17th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Daniel J. McGraw, writing in Politico (2015) under the headline «The GOP Is Dying Off. Literally.»
 
@@ -936,6 +1020,8 @@ We hoppen alwey, whyl that the world wol pype.
 
 ### May 19th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Leyland Cecco, writing in The Guardian (2023) under the headline «Trudeau’s wide-stance pose with Korean politician splits critics»
 
 ◉ Bookmark, May 19th
@@ -947,6 +1033,8 @@ We hoppen alwey, whyl that the world wol pype.
 ¢ A note for students of English: the word ≤fsplit≥ in the headline is a play on words.
 
 ### May 21st
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Eduardo Porter and Guilbert Gates, writing in NYT (2019) under the headline «Why Workers Without College Degrees Are Fleeing Big Cities»
 
@@ -979,6 +1067,8 @@ For a lawyer:    -1 pct    +44 pct
 
 ### May 22nd
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Rodney Ho, writing in Atlanta Journal-Constitution (2021) under the headline «How a fake 1987 movie marquee at Gwinnett Place mall turned into viral photo»
 
 ◉ Bookmark, May 22nd
@@ -992,6 +1082,8 @@ For a lawyer:    -1 pct    +44 pct
 ##### Constantine, 337 (age 65), in Nicomedia (modern-day İzmit, Türkiye)
 
 ### May 23rd
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Eriq Gardner, writing in Hollywood Reporter (2021) under the headline «Does Andy Warhol Get Same Copyright Treatment as Google Code?»
 
@@ -1008,6 +1100,8 @@ For a lawyer:    -1 pct    +44 pct
 ##### Brian Boru, 1014 (age 72-73), in Dublin
 
 ### May 24th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Katherine Shaver, writing in WaPo (2022) under the headline «As office-centric downtowns struggle, suburbs cater to the laptop crowd»
 
@@ -1039,6 +1133,8 @@ For a lawyer:    -1 pct    +44 pct
 
 ### May 31st
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Jacopo Prisco, writing in CNN (2022) under the headline «Decoding the messages tucked away in one ‹politically significant› city’s street art»
 
 ◉ Bookmark, May 31st
@@ -1051,7 +1147,11 @@ For a lawyer:    -1 pct    +44 pct
 
 ## VI. June
 
+¢ «And I wede my corne well I-now» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### June 22nd
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Published by Pew Research Center (2021): «Lower-income Americans still less likely to have home broadband, smartphone»
 
@@ -1067,7 +1167,11 @@ For a lawyer:    -1 pct    +44 pct
 
 ## VII. July
 
+¢ «With my sythe my mede I mawe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### July 1st
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Allyson Waller, writing in NYT (2020) under the headline «Man Falls Through the Floor and Discovers a Well Beneath a Connecticut House»
 
@@ -1083,6 +1187,8 @@ For a lawyer:    -1 pct    +44 pct
 
 ### July 3rd
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Vimal Patel, writing in NYT (2023) under the headline «At UChicago, a Debate Over Free Speech and Cyberbullying»
 
 ◉ Bookmark, Jul 3rd
@@ -1094,6 +1200,8 @@ For a lawyer:    -1 pct    +44 pct
 #### 1608-07-03: Founding of Quebec City
 
 ### July 9th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Mackenzie Mays, writing in Politico (2021) under the headline «West Virginia is Trading Trump for Tech Workers»
 
@@ -1109,6 +1217,8 @@ For a lawyer:    -1 pct    +44 pct
 
 ### July 18th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Evan Osnos, writing in The New Yorker (2022) under the headline «The Haves and the Have-Yachts»
 
 ◉ Bookmark, Jul 18th
@@ -1122,6 +1232,8 @@ For a lawyer:    -1 pct    +44 pct
 ~ Evan Osnos, writing in The New Yorker («July 18, 2022» ... «July 25, 2022 Issue»)
 
 ### July 21st
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Beatrice Jin, writing in Politico (2021) under the headline «When it comes to reopening after coronavirus, income matters more than party»
 
@@ -1145,7 +1257,11 @@ For a lawyer:    -1 pct    +44 pct
 
 ## VIII. August
 
+¢ «And here I shere my corne full lowe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### August 7th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Popkin, writing in Boing Boing (2021) under the headline «Watch this short documentary about the influential, experimental Black Mountain College»
 
@@ -1162,6 +1278,8 @@ For a lawyer:    -1 pct    +44 pct
 ##### Joseph Marie Jacquard, 1834 (age 82), in Oullins ([ulɛ̃]), France
 
 ### August 10th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Ian Burke, writing in Vice (2021) under the headline «Moving to NYC From the West Coast? Here’s What You’ll Need»
 
@@ -1184,6 +1302,8 @@ For a lawyer:    -1 pct    +44 pct
 ##### Montague Summers, 1948 (age 68), in London
 
 ### August 13th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Maxwell Strachan, writing in Vice (2021) under the headline «Zillow, Other Tech Firms Are in an ≤fArms Race≥ To Buy Up American Homes»
 
@@ -1221,6 +1341,8 @@ For a lawyer:    -1 pct    +44 pct
 
 ### August 19th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Kayleen Devlin, writing in BBC (2021) under the headline «Algeria: The forest fires that led to an artist’s lynching»
 
 ◉ Bookmark, Aug 19th
@@ -1242,6 +1364,8 @@ For a lawyer:    -1 pct    +44 pct
 ##### Augustus, 14 (age 76), in Nola, Italy
 
 ### August 23rd
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Published by ACLED and the Everytown for Gun Safety Support Fund (2021): «Armed Assembly: Guns, Demonstrations, and Political Violence in America»
 
@@ -1265,6 +1389,8 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ### August 28th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Josh Giesbrecht, writing in The Atlantic (2015) under the headline «How the Ballpoint Pen Killed Cursive»
 
 ◉ Bookmark, Aug 28th
@@ -1275,7 +1401,11 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ## IX. September
 
+¢ «With my flayll I erne my brede» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### September 12th
+
+¢ This is a placeholder for a caption for this date.
 
 #### Published by three elected Republicans (2023): Posts on the social networking service Twitter 
 
@@ -1285,7 +1415,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://twitter.com/GovChristie/status/1701683733953138918
 
-£ Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is «rotten. Trump thinks Putin is a «genius» -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
+£ Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is «rotten». Trump thinks Putin is a «genius» -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
 ~ Gov. Chris Christie (@GovChristie) on Twitter
 
@@ -1306,6 +1436,8 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 ~ Rep. Liz Cheney (@Liz_Cheney) on Twitter
 
 ### September 24th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Tom McTague, writing in The Atlantic (2021) under the headline «Why Britain and France Hate Each Other»
 
@@ -1333,7 +1465,11 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ## X. October
 
+¢ «And here I sawe my whete so rede» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### October 19th
+
+¢ This is a placeholder for a caption for this date.
 
 #### Deaths on this date:
 
@@ -1345,7 +1481,11 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ## XI. November
 
+¢ «At Martynesmasse I kylle my swine» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### November 12th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Ezra Klein, writing in NYT (2022) under the headline «Three Theories That Explain This Strange Moment»
 
@@ -1358,6 +1498,8 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 ¢ cf. George F. Will’s coinage ≤fboiling but frozen≥ in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12
 
 ### November 22nd
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Rob Beschizza, writing in Boing Boing (2021) under the headline «Intersections of Pittsburgh»
 
@@ -1375,6 +1517,8 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ### November 29th
 
+¢ This is a placeholder for a caption for this date.
+
 #### ® Andy Newman and Emma G. Fitzsimmons, writing in NYT (2022) under the headline «New York City to Involuntarily Remove Mentally Ill People From Streets»
 
 ◉ Bookmark, Nov 29th
@@ -1385,7 +1529,11 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ## XII. December
 
+¢ «And at Cristesmasse I drynke redde wyne» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+
 ### December 13th
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Bobbi Dempsey, writing in Slate (2022) under the headline «I’ve Been Plagued by Medical Debt for Years. Here’s What Happened When I Tried to Pay a USD 2 Medical Bill.»
 
@@ -1396,6 +1544,8 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 ∂ Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system.
 
 ### December 31st
+
+¢ This is a placeholder for a caption for this date.
 
 #### ® Zeynep Tufekci, writing in NYT (2022) under the headline «The Shameful Open Secret Behind Southwest’s Failure»
 

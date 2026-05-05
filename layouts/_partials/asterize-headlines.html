@@ -24,63 +24,47 @@ And, in the replacement, use the captures thus:
 
 {{ $theContent := .the_content }}
 
+  {{- /* Used to have 3 line breaks above the H2 & 3 below 2nd asterism */ -}}
   {{ $theContent = 
       replaceRE 
      `<h2 id="([^"]+)">` 
-     `<div class="asterism">-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
+     `<div class="asterism-above-h2">-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
 |    *         *    |    *         *    |    *         *    |
-*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
-
-
-</div><h2 class="h2-from-1star" id="$1">` 
+*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *</div><h2 class="h2-from-1star" id="$1">` 
       $theContent 
   }}
   {{ $theContent = 
       replaceRE 
      `</h2>` 
-     `</h2><div class="asterism">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+     `</h2><div class="asterism-below-h2">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 |    *         *    |    *         *    |    *         *    |
--  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -
-
-
-</div>` 
+-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -</div>` 
       $theContent 
   }}
+  {{- /* Used to have 3 line breaks above the H3 & 3 below 2nd asterism */ -}}
   {{ $theContent = 
       replaceRE 
      `<h3 id="([^"]+)">` 
-     `<div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
-
-
-</div><h3 class="h3-from-2stars" id="$1">` 
+     `<div class="asterism-above-h3">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -</div><h3 class="h3-from-2stars" id="$1">` 
       $theContent 
   }}
   {{ $theContent = 
       replaceRE 
      `</h3>` 
-     `</h3><div class="asterism">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -
-
-
-</div>` 
+     `</h3><div class="asterism-below-h3">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -</div>` 
       $theContent 
   }}
+  {{- /* Used to have 3 line breaks above the H4 & 4 below 2nd asterism */ -}}
   {{ $theContent = 
       replaceRE 
      `<h4 id="([^"]+)">` 
-     `<div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
-
-
-</div><h4 class="h4-from-3stars" id="$1">TMPLT_H4STRT` 
+     `<div class="asterism-above-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div><h4 class="h4-from-3stars" id="$1">TMPLT_H4STRT` 
       $theContent 
   }}
   {{ $theContent = 
       replaceRE 
      `</h4>`
-     `TMPLT_H4ENDS</h4><div class="asterism">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -
-
-
-
-</div>` 
+     `TMPLT_H4ENDS</h4><div class="asterism-below-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div>` 
       $theContent 
   }}
   {{ $theContent = 
