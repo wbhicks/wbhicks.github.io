@@ -538,9 +538,9 @@ h4.h4-from-3stars {
 div.asterism {
   border-left: 3px solid gray;
 }
-//blockquote {
-//  border-left: 3px solid gray;
-//}
+figure {
+  border-left: 3px solid gray;
+}
 div.url-line,
 div.fisheye-means-rightmost {
   border-left: 3px solid #5050ff;
@@ -567,7 +567,6 @@ h5,
 div.dek, 
 div.fisheye-means-rightmost,
 .commentary, 
-//blockquote,
 div.url-line,
 p,
 pre {
@@ -933,17 +932,18 @@ pre {
 }
 
 /* ====================
-   BLOCKQUOTE
+   FIGURE, BLOCKQUOTE & FIGCAPTION
    ====================
 */
 
 .nojs-mini-themed {
-/*
-  blockquote {
+
+  figure {
     // Use padding-left instead of margin-left, for same reason as OL and UL
     padding-left: 2rem;
+    padding-right: 2rem;
   }
-*/
+
 }
 
   /* ~ ~ ~ ~ ~

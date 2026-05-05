@@ -7,7 +7,7 @@
 {{ $result := "OVERWRITTEN" }}
 
 {{- /* ====================
-       Currently handled prefixes: £ ¶ ~ ® ¢ =&gt; ∂ ◉
+       Currently handled prefixes: £ ££ ~ ® ¢ =&gt; ∂ ◉
 
        ®
        For my 4-hashes clipping from an article or (rarely) whitepaper
@@ -17,7 +17,7 @@
        For my 5-hashes citation of Wikipedia, AND not followed by a quotation from the body
        For my 5-hashes citation of typical reportage, but not followed by a quotation from the body
 
-       "£" "¶" "~"
+       "£" "££" "~"
        For blockquotes
 
        ====================
@@ -145,7 +145,7 @@
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ end }}
 {{ else if (eq $prefix "£") }}
-  {{- /* Blockquotes: idiosyncratic, uses "£", "¶", & "~"
+  {{- /* Blockquotes: idiosyncratic, uses "£", "££", & "~"
 
        Goldmark handles them OK[1], but I've resumed idiosyncratic handling 
        of blockquotes for more fine-grained control.
@@ -165,21 +165,25 @@
               <p>-- William Cobbett</p>
               </blockquote>
 
-       But I've started using (n.b. must not use ">" in place of "¶", or else
-       Goldmark blockquote wrapping will still be applied)
+       But I've started using a FIGURE-based pattern[2] as follows:
 
-              £
+              £ I will not garble, misquote, and belie him, as he garbled, misquoted, and belied them.
 
-              ¶ I will not garble, misquote, and belie him, as he garbled, misquoted, and belied them.
+              ££ Subsequent paragraphs use a double-sterling. I'll call it that to avoid confusion with the ... uhhh ... the octothorpe.
 
-              ¶ The End.
+              ££ The End.
 
               ~ William Cobbett
 
+       [2] See https://heydonworks.com/article/the-blockquote-element/
+
+       p.s. Can't use ">" in place of "£" or "££", because it will trigger
+            Goldmark blockquote wrapping & ruin the FIGURE-based pattern.
+
   */ -}}
-  {{ $result = (add `<figure>` $text `<blockquote>`) }}
-{{ else if (eq $prefix "¶") }}
-  {{ $result = (add `<p>Y` $text `Z</p>`) }}
+  {{ $result = (add `<figure><blockquote><p>` $text `</p>`) }}
+{{ else if (eq $prefix "££") }}
+  {{ $result = (add `<p>` $text `</p>`) }}
 {{ else if (eq $prefix "~") }}
   {{ $result = (add `</blockquote><figcaption>` $text `</figcaption></figure>`) }}
 {{ else if (eq $prefix "¢") }}
