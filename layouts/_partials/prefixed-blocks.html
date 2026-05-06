@@ -227,11 +227,11 @@
   {{- /* CASE ∂: Periodical deks (subheadlines), e.g.
 
        ^dek: "The subhead, or dek, of the magazine article goes here"
-       --->
+       --->TMPLT_LATITL $1 TMPLT_RATITL
        ^∂ "..."
 
   */ -}}
-  {{ $result = (add `<div class="dek">` $text ` TMPLT_2HYFNS the subheadline</div>`) }}
+  {{ $result = (add `<div class="dek">Its subheadline: TMPLT_LATITL ` $text ` TMPLT_RATITL</div>`) }}
 {{ else if (eq $prefix "=&gt;") }}
   {{ if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>) (.+) / by (.+)` "text" $text)) }}
     {{ $result = 

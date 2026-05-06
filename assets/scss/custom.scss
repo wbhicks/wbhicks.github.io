@@ -603,6 +603,10 @@ body > div.nojs-mini-themed > footer {
     margin-bottom: 3rem;
   }
 
+  div.fisheye-means-rightmost {
+    border-left: 3px solid #5050ff;
+  }
+
   main > figure {
     border-left: 3px solid gray;  // RESUME HERE
 //    margin-top:    1rem;
@@ -619,22 +623,31 @@ body > div.nojs-mini-themed > footer {
     margin-bottom: 1rem;
   }
 
-  div.url-line,
-  div.fisheye-means-rightmost {
-    border-left: 3px solid #5050ff;
-  }
-
   .commentary {
     border-left: 3px solid orange;
+    margin-top:    1rem;
+    margin-bottom: 1rem;
   }
 
-  h5,
+  div.url-line {
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+  }
+
   div.dek {
     border-left: 3px solid yellow;
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+  }
+
+  h5 {
+    border-left: 3px solid yellow;
+    margin-top:    1rem;
+    margin-bottom: 1rem;
   }
 
   pre {
-    border-left: 3px solid green;
+    border-left: 3px solid green; // RESUME HERE
   }
 
   p {
@@ -941,10 +954,13 @@ body > div.nojs-mini-themed > footer {
   .url-line {
 //    margin-bottom: 2rem;
   }
-  .dek {
-//    margin-left: 2rem;
-//    margin-bottom: 2rem;
+
+  div.dek {
+    // Use padding-left instead of margin-left, for same reason as OL and UL
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
+
   .fisheye-means-rightmost {
     text-align: right;
   }
