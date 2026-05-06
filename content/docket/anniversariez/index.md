@@ -98,7 +98,7 @@ draft: false
 
 ¢ [1]: Or, perhaps equally well, the X axis can show a county’s distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.
 
-```
+<pre>
 Fig. 1 - A long time ago:        Fig. 2 - Not too long ago:       Fig. 3 - Now:
 
 lean |                           lean |                           lean |
@@ -111,7 +111,7 @@ Dem. |____________________       Dem. |____________________       Dem. |________
       ^                  ^             ^                  ^             ^                  ^
   sparsely         densely         sparsely         densely         sparsely         densely
   populated      populated         populated      populated         populated      populated
-```
+</pre>
 
 ¢ Edsall cites, among others:
 
@@ -147,10 +147,10 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 => https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/ Pew Research Center / by Kim Parker et al.
 
-```
+<pre>
 date: 2018-05-22
 authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera Cohn and Ruth Igielnik
-```
+</pre>
 
 ##### ® Source: ≤bHollowing Out the Middle: The Rural Brain Drain and What It Means for America≥ by Patrick J. Carr and Maria J. Kefalas
 
@@ -370,7 +370,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ The medlar figures in the prologue to one of Chaucer’s ≤bCanterbury Tales≥, ≤cThe Reeve’s Tale≥. Here’s the relevant passage, excerpted from the prologue:
 
-```
+<pre>
 But ik am old, me list not pley for age;
 Gras-tyme is doon, my fodder is now forage,
 This whyte top wryteth myne olde yeres,
@@ -381,11 +381,11 @@ Til it be roten in mullok or in stree.
 We olde men, I drede, so fare we;
 Til we be roten, can we nat be rype;
 We hoppen alwey, whyl that the world wol pype.
-```
+</pre>
 
 ¢ Again, but with some annotations and a very rough line-by-line translation (not meant to stand on its own):
 
-```
+<pre>
 But ik[1] am old, me list[2] not pley for age;
  ↳ But I am old, I wish not [to] play, for [because of my] age;
 Gras-tyme is doon[3], my fodder is now forage,[4]
@@ -406,7 +406,7 @@ Til we be roten, can we nat be rype;
  ↳ Till we be rotten, we can not be ripe;
 We hoppen[17] alwey, whyl that the world wol pype.
  ↳ We dance always, while the world will pipe.
-```
+</pre>
 
 
 ¢ [1]: I
@@ -495,12 +495,12 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ¢ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤fopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of ≤fdread≥ when he says «We olde men, I drede, so fare we». But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
 
-```
+<pre>
 Til we be roten, can we nat be rype;
  ↳ Till we be rotten, we can not be ripe;
 We hoppen alwey, whyl that the world wol pype.
  ↳ We dance always, while the world will pipe.
-```
+</pre>
 
 #### 1911-03-25: Triangle Shirtwaist Factory fire in Greenwich Village kills 146 garment workers.
 
@@ -1048,14 +1048,14 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ Data from the article: Change in personal earnings, after adjusting for housing costs, if moving to Santa Clara County, California from the ≤fDeep South≥ («the weighted average of Alabama, Arkansas, Georgia, South Carolina and Mississippi»):
 
-```
+<pre>
                 In 1960    In 2017
                --------   --------
 
 For a janitor: +107 pct    -28 pct
 
 For a lawyer:    -1 pct    +44 pct
-```
+</pre>
 
 ¢ Citations:
 

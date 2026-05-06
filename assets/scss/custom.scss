@@ -512,6 +512,8 @@ with
 }
 
 /* ====================
+   Vertical spacing and colorful borders **for all**, & also ...
+
    Foundational elements: BODY, MAIN, FOOTER, & P
    ====================
 */
@@ -533,6 +535,10 @@ body > div.nojs-mini-themed > footer {
 }
 
 .nojs-mini-themed {
+
+  main {
+    line-height: 1.5;
+  }
 
   h2.h2-from-1star,
   h3.h3-from-2stars,
@@ -592,7 +598,6 @@ body > div.nojs-mini-themed > footer {
     margin-bottom: 3rem;
   }
 
-
   main > div.asterism-above-h4 {
     margin-top: 3rem;
 //    margin-bottom: 1rem;
@@ -608,7 +613,7 @@ body > div.nojs-mini-themed > footer {
   }
 
   main > figure {
-    border-left: 3px solid gray;  // RESUME HERE
+    border-left: 3px solid gray;
 //    margin-top:    1rem;
 //    margin-bottom: 1rem;
   }
@@ -646,36 +651,11 @@ body > div.nojs-mini-themed > footer {
     margin-bottom: 1rem;
   }
 
-  pre {
+  main > pre {
     border-left: 3px solid green; // RESUME HERE
+    margin-top:    1rem;
+    margin-bottom: 1rem;
   }
-
-  p {
-  //  border-left: 5px solid red;
-  }
-
-  h2.h2-from-1star,
-  h3.h3-from-2stars,
-  h4.h4-from-3stars,
-  div.asterism,
-  h5,
-  div.dek, 
-  div.fisheye-means-rightmost,
-  .commentary, 
-  div.url-line,
-  p,
-  pre {
-  //  margin-top: 1rem;
-  //  margin-bottom: 1rem;
-  }
-
-  //  main {
-  //    line-height: 1.5;
-  //  }
-
-  //  p {
-  //    margin-bottom: 2rem;
-  //  }
 
 } // End of .nojs-mini-themed
 
@@ -768,8 +748,6 @@ body > div.nojs-mini-themed > footer {
     */
     padding-left: 2.2rem;
 
-//    margin-bottom: 0.5rem;
-
     /* Override assignment of "disc" in styles.scss, which would make ol's 
        resemble ul's: 
     */
@@ -784,7 +762,6 @@ body > div.nojs-mini-themed > footer {
 
   ul {
     padding-left: 0.9rem;
-//    margin-bottom: 0.5rem;
   }
 
   body main ul > li {
@@ -851,7 +828,6 @@ body > div.nojs-mini-themed > footer {
     text-align: center;
     font-size: 1rem;
     font-weight: normal;
-//    margin-bottom: 2rem;
   }
 
 // NO LONGER FOUND, SEE H5 ONLY:
@@ -859,8 +835,6 @@ body > div.nojs-mini-themed > footer {
   .h5-from-4stars {
     font-size: 1rem;
     font-weight: normal;
-//    margin-bottom: 2rem;
-//    margin-left: 1rem;
   }
 
 }
@@ -898,18 +872,35 @@ body > div.nojs-mini-themed > footer {
 
      Source: https://developer.mozilla.org/en-US/do
              cs/Web/HTML/Reference/Elements/pre
+
+     In CommonMark (and therefore Goldmark): use a pair of ```'s for 
+     <pre><code>, and use <pre> itself for <pre> without a following <code>.
+     However, <pre> without <code> isn't monospace by default.
    ====================
 */
 
 .nojs-mini-themed {
 
-  main code {
+  main > pre {
+    white-space-collapse: preserve;
+    font-family: monospace !important;
+    text-wrap-mode: nowrap;
 
+    // Use padding-left instead of margin-left, for same reason as OL and UL
+    padding-left: 2rem;
+
+    // nowrap has been set for all PRE elements, so padding-right is moot:
+    // padding-right: 2rem;
+  }
+
+  main code {
     white-space-collapse: preserve;
 
     /* This font-family line has no effect when font_family_sans_serif is in
        effect. Therefore, to see ASCII art, either (a) specify a monospace font
-       for font_family_sans_serif or (b) stay toggled to font_family_serif. 
+       for font_family_sans_serif or (b) stay toggled to font_family_serif.
+
+TODO update 
     */
     font-family: monospace !important;
 
@@ -922,23 +913,14 @@ body > div.nojs-mini-themed > footer {
     border-radius: 3px;
     padding: 1px 2px;
     margin: 0 0.2rem;
-
   }
 
-  main pre > code {
-
-    text-wrap-mode: nowrap;
-
+  main > pre > code {
     /* Un-apply Mozilla style for KBD, to all CODE with a PRE parent:
     */
     border: none;
     padding: 0 0 0;
-
-    /* margin-left affects 1st line only, unless "display: block" is also used 
-    */
-//    display: block;
-//    margin-left: 1rem;
-
+    margin: 0 0;
   }
 
 }
@@ -952,7 +934,6 @@ body > div.nojs-mini-themed > footer {
 
   .commentary, 
   .url-line {
-//    margin-bottom: 2rem;
   }
 
   div.dek {
