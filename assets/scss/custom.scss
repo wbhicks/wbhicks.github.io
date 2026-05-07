@@ -139,6 +139,7 @@ body.sans-mode main * {
 */
 @mixin qa-or-dev($the-color-toggle: true) {
   @if $the-color-toggle {
+
     a                  { color: #f00; } // else color_primary
     .galleries a       { color: #00f; } // else color_primary
     .markdown-body     { color: #0ff; } // else color-text_ ...
@@ -164,17 +165,52 @@ body.sans-mode main * {
     i.nickname   { color: cyan; }
     abbr         { color: cyan; }
 
+    h2.h2-from-1star,
+    h3.h3-from-2stars,
+    h4.h4-from-3stars {
+      border-left: 2px solid white;
+    }
+    main > div.asterism-above-h2,
+    main > div.asterism-below-h2,
+    main > div.asterism-above-h3,
+    main > div.asterism-below-h3,
+    main > div.asterism-above-h4,
+    main > div.asterism-below-h4 {
+      border-left: 1px solid gray;
+    }
+    div.fisheye-means-rightmost {
+      border-left: 2px solid #008080;
+    }
+    main > figure {
+      border-left: 2px solid blue;
+    }
+    .commentary {
+      border-left: 2px solid orange;
+    }
+    div.dek {
+      border-left: 2px solid yellow;
+    }
+    h5 {
+      border-left: 2px solid violet;
+    }
+    main > pre {
+      border-left: 2px solid green;
+    }
+
     .design-hint {
       display: revert;
       border: 1px dotted red;
       border-radius: 3px;
     }
+
   }
 }
+
 body.qa-mode, 
 body.qa-mode main * {
   @include qa-or-dev($the-color-toggle: true);
 }
+
 body.dev-mode, 
 body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
@@ -540,21 +576,6 @@ body > div.nojs-mini-themed > footer {
     line-height: 1.5;
   }
 
-  h2.h2-from-1star,
-  h3.h3-from-2stars,
-  h4.h4-from-3stars {
-    border-left: 4px solid gray;
-  }
-
-  main > div.asterism-above-h2,
-  main > div.asterism-below-h2,
-  main > div.asterism-above-h3,
-  main > div.asterism-below-h3,
-  main > div.asterism-above-h4,
-  main > div.asterism-below-h4 {
-    border-left: 2px solid gray;
-  }
-
   // current prob: half of the ¢ commentary inputs aren't processed
   // FIXED ... it was because of unescaped square brackets in the commnentary blocks
 
@@ -609,11 +630,9 @@ body > div.nojs-mini-themed > footer {
   }
 
   div.fisheye-means-rightmost {
-    border-left: 3px solid #5050ff;
   }
 
   main > figure {
-    border-left: 3px solid gray;
 //    margin-top:    1rem;
 //    margin-bottom: 1rem;
   }
@@ -629,7 +648,6 @@ body > div.nojs-mini-themed > footer {
   }
 
   .commentary {
-    border-left: 3px solid orange;
     margin-top:    1rem;
     margin-bottom: 1rem;
   }
@@ -640,19 +658,16 @@ body > div.nojs-mini-themed > footer {
   }
 
   div.dek {
-    border-left: 3px solid yellow;
     margin-top:    1rem;
     margin-bottom: 1rem;
   }
 
   h5 {
-    border-left: 3px solid yellow;
     margin-top:    1rem;
     margin-bottom: 1rem;
   }
 
   main > pre {
-    border-left: 3px solid green; // RESUME HERE
     margin-top:    1rem;
     margin-bottom: 1rem;
   }
