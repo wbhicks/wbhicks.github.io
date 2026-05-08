@@ -14,7 +14,7 @@
 
 // The Galleries Deluxe default for color_primary is #3a98b9
 
-$color_primary: #ccae8f;
+$color_primary: #ccae8f; // applies to element A (URLs, links)
 $color_background: #141414; // was #0e0e0e
 $color_background_footer: #171717; // was darken(#111, 3%);
 
@@ -140,11 +140,12 @@ body.sans-mode main * {
 @mixin qa-or-dev($the-color-toggle: true) {
   @if $the-color-toggle {
 
-    a                  { color: #f00; } // else color_primary
-    .galleries a       { color: #00f; } // else color_primary
-    .markdown-body     { color: #0ff; } // else color-text_ ...
-    h1, h2, h3, h4, h5 { color: #0f0; } // else color-text_ ...
-    p                  { color: #ff0; } // else color-text_ ...
+    // The URL link icon, images/link-external-small-ltr-progressive.svg,
+    // has color #4065c5, and this line applies the same to the link itself:
+    a            { color: #4065c5; } // else color_primary
+    .galleries a { color: #0ff; }    // else color_primary
+    h1, h5       { color: #c00; }    // else color-text_ ...
+    // p            { color: #ff0; } // else color-text_ ...
 
     main > div.asterism-above-h2,
     main > div.asterism-below-h2,
@@ -153,11 +154,11 @@ body.sans-mode main * {
     main > div.asterism-above-h4,
     main > div.asterism-below-h4 { color: #777; }
 
-    cite.book-title         { color: red; }
-    cite.like-book-title    { color: red; }
-    cite.article-title      { color: red; }
-    cite.like-article-title { color: red; }
-    cite.media-title        { color: red; }
+    cite.book-title         { color: orange; }
+    cite.like-book-title    { color: yellow; }
+    cite.article-title      { color: green; }
+    cite.like-article-title { color: blue; }
+    cite.media-title        { color: violet; }
     cite.special-citation   { color: red; }
 
     i.term       { color: cyan; }
@@ -554,7 +555,8 @@ with
    ====================
 */
 
-// PADDING is no longer used (except temporarily for CODE, and permanently in the galleries)
+// Vertical padding is no longer used (except temporarily for CODE, and
+// permanently in the galleries). Instead, margin-top & margin-bottom are used.
 
 body > div.nojs-mini-themed > table.mini-theme-selector-table,
 
@@ -629,47 +631,49 @@ body > div.nojs-mini-themed > footer {
     margin-bottom: 3rem;
   }
 
+  --convenience-var-for-vertical-margins: 1rem;
+
   div.fisheye-means-rightmost {
   }
 
-  main > figure {
+//  main > figure {
 //    margin-top:    1rem;
 //    margin-bottom: 1rem;
-  }
+//  }
 
   main > figure > blockquote > p {
-    margin-top:    1rem;
-    margin-bottom: 1rem;
+    margin-top:    var(--convenience-var-for-vertical-margins);
+    margin-bottom: var(--convenience-var-for-vertical-margins);
   }
 
   main > figure > figcaption {
-    margin-top:    1rem;
-    margin-bottom: 1rem;
+    margin-top:    var(--convenience-var-for-vertical-margins);
+    margin-bottom: var(--convenience-var-for-vertical-margins);
   }
 
   .commentary {
-    margin-top:    1rem;
-    margin-bottom: 1rem;
+    margin-top:    var(--convenience-var-for-vertical-margins);
+    margin-bottom: var(--convenience-var-for-vertical-margins);
   }
 
   div.url-line {
-    margin-top:    1rem;
-    margin-bottom: 1rem;
+    margin-top:    var(--convenience-var-for-vertical-margins);
+    margin-bottom: var(--convenience-var-for-vertical-margins);
   }
 
   div.dek {
-    margin-top:    1rem;
-    margin-bottom: 1rem;
+    margin-top:    var(--convenience-var-for-vertical-margins);
+    margin-bottom: var(--convenience-var-for-vertical-margins);
   }
 
   h5 {
-    margin-top:    1rem;
-    margin-bottom: 1rem;
+    margin-top:    var(--convenience-var-for-vertical-margins);
+    margin-bottom: var(--convenience-var-for-vertical-margins);
   }
 
   main > pre {
-    margin-top:    1rem;
-    margin-bottom: 1rem;
+    margin-top:    var(--convenience-var-for-vertical-margins);
+    margin-bottom: var(--convenience-var-for-vertical-margins);
   }
 
 } // End of .nojs-mini-themed
