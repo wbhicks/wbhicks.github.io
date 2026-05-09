@@ -24,9 +24,9 @@ $color_background_footer: #171717; // was darken(#111, 3%);
 $color-text_dark: #000;
 $color-text_light: #ffe0cc; // was #ccc2b8
 
-/* I'm treating Courier as sans-serif even though it's not (it's slab-serif),
-   because it's monospaced. TODO: make UI label say "mono" instead of "sans"
-*/
+// I'm treating Courier as sans-serif even though it's not (it's slab-serif),
+// because it's monospaced. TODO: make UI label say "mono" instead of "sans"
+
 $font_family_serif: 
   Georgia, Charter, "Bitstream Charter", serif !default;
 $font_family_sans_serif: 
@@ -37,11 +37,12 @@ $font_family_sans_serif:
    $font_size_base: 16px !default;
 */
 
-/* +-------------------------------+
-   |                               |
-   |  End of duplicated variables  |
-   |                               |
-   +-------------------------------+
+/* +------------------------------------+
+   |                                    |
+   |  End of variables duplicated in    |
+   |  vars-custom.scss and custom.scss  |
+   |                                    |
+   +------------------------------------+
 */
 
 * {
@@ -80,11 +81,11 @@ $font_family_sans_serif:
   // --color-mono-background: $color_background;
 }
 
-/* ====================
+/* =====================
    Start of font toggle. See also toggle.html. This mixin prevents the two
    styles from becoming swapped when the page loads with the toggle in the
    "wrong" setting:
-   ====================
+   =====================
 */
 @mixin serif-or-sans($the-serif-toggle: true) {
   @if $the-serif-toggle {
@@ -128,14 +129,14 @@ body.sans-mode main * {
   // may get swapped on a page reload:
   @include serif-or-sans($the-serif-toggle: false);
 }
-/* ====================
+/* =====================
    End of font toggle
-   ====================
+   =====================
 */
 
-/* ====================
+/* =====================
    Start of garish colors toggle (see also toggle.html)
-   ====================
+   =====================
 */
 @mixin qa-or-dev($the-color-toggle: true) {
   @if $the-color-toggle {
@@ -216,14 +217,14 @@ body.dev-mode,
 body.dev-mode main * {
   @include qa-or-dev($the-color-toggle: false);
 }
-/* ====================
+/* =====================
    End of garish colors toggle
-   ====================
+   =====================
 */
 
-/* ====================
+/* =====================
    The 5x2 grid of radio buttons to select a mini-theme
-   ====================
+   =====================
 */
 
 table.mini-theme-selector-table {}
@@ -293,9 +294,9 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 //  content: "✓";
 }
 
-/* ====================
+/* =====================
    The row of radio buttons to select a mono-color
-   ====================
+   =====================
 */
 
 .mono-color-selector label {
@@ -341,9 +342,9 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   content: "✓ ";
 }
 
-/* ====================
+/* =====================
    All effects of mono-color selection
-   ====================
+   =====================
 */
 
 // No longer used here: 505nm (P24 phosphor, #00ff54)
@@ -446,16 +447,17 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   }
 }
 
-/* +---------------------------------------------+
-   |                                             |
-   |  Start of No-JS mini-theming configuration  |
-   |                                             |
-   +---------------------------------------------+
+/* +-----------------------------------------------------+
+   |                                                     |
+   |  Start of font-family assignments (except for the   |
+   |  asterism-... classes, & the elements PRE & CODE)   |
+   |                                                     |
+   +-----------------------------------------------------+
 */
 
-/* ====================
+/* =====================
    The CSS universal selector (*)
-   ====================
+   =====================
 */
 
   /* ~ ~ ~ ~ ~
@@ -548,156 +550,158 @@ with
   }
 }
 
-/* ====================
-   Vertical spacing and colorful borders **for all**, & also ...
-
-   Foundational elements: BODY, MAIN, FOOTER, & P
-   ====================
+/* +----------------------------------+
+   |  End of font-family assignments  |
+   +----------------------------------+
 */
 
-// Vertical padding is no longer used (except temporarily for CODE, and
-// permanently in the galleries). Instead, margin-top & margin-bottom are used.
+/* +-----------------------------------------------------------+
+   |                                                           |
+   |  Start of indentation, & horizontal spacing or alignment  |
+   |                                                           |
+   +-----------------------------------------------------------+
+*/
+
+body main { justify-self: center; }
+
+/* =====================
+   Indentation & alignment for large-scale elements (HEADER, MAIN, & FOOTER),
+   & for the controls at the top of the page (above the HEADER)
+   =====================
+*/
 
 body > div.nojs-mini-themed > table.mini-theme-selector-table,
-
 body > div.nojs-mini-themed > div.mono-color-selector,
-
 body > div.nojs-mini-themed > header,
-
 body > div.nojs-mini-themed > main,
-
 body > div.nojs-mini-themed > footer {
-
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
+/* =====================
+   The max-width property
+   =====================
+*/
+
+  // max-width, if in "ch" units, means characters per line. This is merely
+  // an approximation if not using a monospace font.
+  //
+  // Elsewhere, for the MAIN element, a "1rem" margin is set on each side.
+  // To compensate, I've added 2 to each of the max-width values below.
+  //
+  // See also https://github.com/bep/galleriesdeluxe/blob/main/assets/css/ga
+  // lleriesdeluxe/styles.css, lines 61-72:
+  //   main {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     flex-direction: column;
+  //     margin: 0 auto;
+  //     padding-bottom: 5rem;
+  //     max-width: 140ch;
+  //     & > * {
+  //       width: 100%;
+  //   }
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
+  main {
+    max-width: 134ch;
+    --padding-left-sensitive-to-max-width:  2rem;
+    --padding-right-sensitive-to-max-width: 2rem;
+  }
+}
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+  main {
+    max-width: 82ch;
+    --padding-left-sensitive-to-max-width:  2rem;
+    --padding-right-sensitive-to-max-width: 2rem;
+  }
+}
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+  main {
+    max-width: 62ch;
+    --padding-left-sensitive-to-max-width:  1rem;
+    --padding-right-sensitive-to-max-width: 0rem;
+  }
+}
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
+  main {
+    max-width: 42ch;
+    --padding-left-sensitive-to-max-width:  1rem;
+    --padding-right-sensitive-to-max-width: 0rem;
+  }
+}
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+  main {
+    max-width: 42ch;
+    --padding-left-sensitive-to-max-width:  1rem;
+    --padding-right-sensitive-to-max-width: 0rem;
+  }
+}
+
+/* =====================
+   Indentation for block-level elements, where there is indentation AND it
+   should be sensitive to max-width. Therefore, this excludes OL, UL, & LI.
+   =====================
+*/
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   Horizontal spacing for DIV elements of the dek class. Unlike other
+   block-level elements, these use max-width instead of padding.
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
 .nojs-mini-themed {
 
-  main {
-    line-height: 1.5;
-  }
-
-  // current prob: half of the ¢ commentary inputs aren't processed
-  // FIXED ... it was because of unescaped square brackets in the commnentary blocks
-
-  // TODO <h5 id="giotto-1337-age-70-in-florence-firenze">Giotto, 1337 (age 70?)
-
-  // there is no class for h5's
-
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Margin_collapsing
-
-  // In some mini-themes, each heading is sandwiched between asterisms, but
-  // these margins for headings are needed for the other mini-themes:
-
-  h2.h2-from-1star,
-  h3.h3-from-2stars {
-    margin-top:    2rem;
-    margin-bottom: 2rem;
-  }
-
-  h4.h4-from-3stars {
-    margin-top:    2rem;
-    margin-bottom: 2rem;
-  }
-
-  main > div.asterism-above-h2 {
-    margin-top:    3rem;
-//    margin-bottom: 1rem;
-  }
-
-  main > div.asterism-below-h2 {
-    //margin-top:    1rem;
-    margin-bottom: 3rem;
-  }
-
-  main > div.asterism-above-h3 {
-    margin-top: 3rem;
-//    margin-bottom: 1rem;
-  }
-
-  main > div.asterism-below-h3 {
-//    margin-top: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  main > div.asterism-above-h4 {
-    margin-top: 3rem;
-//    margin-bottom: 1rem;
-  }
-
-  main > div.asterism-below-h4 {
-//    margin-top: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  --convenience-var-for-vertical-margins: 1rem;
-
-  div.fisheye-means-rightmost {
-  }
-
-//  main > figure {
-//    margin-top:    1rem;
-//    margin-bottom: 1rem;
-//  }
-
-  main > figure > blockquote > p {
-    margin-top:    var(--convenience-var-for-vertical-margins);
-    margin-bottom: var(--convenience-var-for-vertical-margins);
-  }
-
-  main > figure > figcaption {
-    margin-top:    var(--convenience-var-for-vertical-margins);
-    margin-bottom: var(--convenience-var-for-vertical-margins);
-  }
-
-  .commentary {
-    margin-top:    var(--convenience-var-for-vertical-margins);
-    margin-bottom: var(--convenience-var-for-vertical-margins);
-  }
-
-  div.url-line {
-    margin-top:    var(--convenience-var-for-vertical-margins);
-    margin-bottom: var(--convenience-var-for-vertical-margins);
-  }
-
   div.dek {
-    margin-top:    var(--convenience-var-for-vertical-margins);
-    margin-bottom: var(--convenience-var-for-vertical-margins);
-  }
-
-  h5 {
-    margin-top:    var(--convenience-var-for-vertical-margins);
-    margin-bottom: var(--convenience-var-for-vertical-margins);
-  }
-
-  main > pre {
-    margin-top:    var(--convenience-var-for-vertical-margins);
-    margin-bottom: var(--convenience-var-for-vertical-margins);
-  }
-
-} // End of .nojs-mini-themed
-
-  /* ~ ~ ~ ~ ~
-     Included: the TICKED & HALFTICKED mini-themes
-     ~ ~ ~ ~ ~ 
-  */
-
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
-
-  main {
-    max-width: 80ch; // chars per line (if proportional, then approx.)
+    max-width: 80%;
+    // div.dek is conspicuously narrow, so "hyphens: auto" helps at
+    // narrower widths. This requires, e.g., <html lang="en-us">.
+    hyphens: auto;
   }
 
 }
 
-/* ====================
-   Elements for lists: OL, UL, & LI
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   Indentation for the FIGURE, BLOCKQUOTE & FIGCAPTION elements
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
 
-   Problem: There's a line above like this ...
+.nojs-mini-themed {
+
+  figure {
+    // Use padding-left instead of margin-left, for same reason as OL and UL
+    padding-left: var(--padding-left-sensitive-to-max-width);
+    padding-right: var(--padding-right-sensitive-to-max-width);
+  }
+
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   Indentation for the PRE element
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+.nojs-mini-themed {
+
+  main > pre {
+    // Use padding-left instead of margin-left, for same reason as OL & UL.
+    // "nowrap" has been set for all PRE elements, so padding-right is moot.
+    padding-left: var(--padding-left-sensitive-to-max-width);
+  }
+
+}
+
+/* =====================
+   Indentation for the list elements (OL, UL, & LI)
+
+   Problem: There's a line somewhere above like this ...
 
      main { margin-left: 1rem; }
 
@@ -753,34 +757,195 @@ body > div.nojs-mini-themed > footer {
 
      ul { padding-left: 0.9rem; }
      ul > li > ul { padding-left: some other value ... }
-
-   ====================
+   =====================
 */
 
 .nojs-mini-themed {
 
   ol {
-
-    /* A padding-left value of 1.4rem is enough for proportional fonts, but
-       for monospace fonts I've found I need 2.2rem. The discrepancy arises
-       with ordered lists only.
-    */
+    // A padding-left value of 1.4rem is enough for proportional fonts, but
+    // for monospace fonts I've found I need 2.2rem. The discrepancy arises
+    // with ordered lists only.
     padding-left: 2.2rem;
-
-    /* Override assignment of "disc" in styles.scss, which would make ol's 
-       resemble ul's: 
-    */
-    list-style-type: decimal !important;
-
   }
-
-// Improves nested indentation for proportional fonts, but ruins monospace:
-//  ol > li > ol {
-//    padding-left: 1.5rem;
-//  }
 
   ul {
     padding-left: 0.9rem;
+  }
+
+  // Improves nested indentation for proportional fonts, but ruins monospace:
+  // ol > li > ol { padding-left: 1.5rem; }
+
+}
+
+/* +---------------------------------------------------------+
+   |  End of indentation, & horizontal spacing or alignment  |
+   +---------------------------------------------------------+
+*/
+
+/* +-----------------------------+
+   |                             |
+   |  Start of vertical spacing  |
+   |                             |
+   +-----------------------------+
+*/
+
+.nojs-mini-themed {
+  main {
+    line-height: 1.5;
+  }
+}
+
+.nojs-mini-themed {
+
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Margin_collapsing
+
+  // In some mini-themes, each heading is sandwiched between asterisms, but
+  // these margins for headings are needed for the other mini-themes:
+
+  --any-margin-btwn-h-and-asterism: 1rem;
+
+  h2.h2-from-1star,
+  h3.h3-from-2stars {
+    margin-top:    var(--any-margin-btwn-h-and-asterism);
+    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+  }
+
+  h4.h4-from-3stars {
+    margin-top:    var(--any-margin-btwn-h-and-asterism);
+    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+  }
+
+  main > div.asterism-above-h2 {
+    margin-top:    3rem;
+    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+  }
+
+  main > div.asterism-below-h2 {
+    margin-top:    var(--any-margin-btwn-h-and-asterism);
+    margin-bottom: 3rem;
+  }
+
+  main > div.asterism-above-h3 {
+    margin-top:    3rem;
+    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+  }
+
+  main > div.asterism-below-h3 {
+    margin-top:    var(--any-margin-btwn-h-and-asterism);
+    margin-bottom: 3rem;
+  }
+
+  main > div.asterism-above-h4 {
+    margin-top:    3rem;
+    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+  }
+
+  main > div.asterism-below-h4 {
+    margin-top:    var(--any-margin-btwn-h-and-asterism);
+    margin-bottom: 3rem;
+  }
+
+  --margin-top-or-bottom: 1rem;
+
+  div.fisheye-means-rightmost {
+    // vertical spacing TODO
+  }
+
+//  main > figure {
+//    margin-top:    1rem;
+//    margin-bottom: 1rem;
+//  }
+
+  main > figure > blockquote > p {
+    margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+  main > figure > figcaption {
+    margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+  .commentary {
+    margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+  div.url-line {
+    margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+  div.dek {
+    margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+  h5 {
+    margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+  main > pre {
+    margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+} // End of .nojs-mini-themed
+
+/* +---------------------------+
+   |  End of vertical spacing  |
+   +---------------------------+
+*/
+
+/* +---------------------------------------------+
+   |                                             |
+   |  Start of THE REST OF No-JS mini-theming configuration  |
+   |                                             |
+   +---------------------------------------------+
+*/
+
+
+/* =====================
+   colorful borders **for all**, & also ...
+
+   Foundational elements: BODY, MAIN, FOOTER, & P
+   =====================
+*/
+
+body > div.nojs-mini-themed > table.mini-theme-selector-table,
+
+body > div.nojs-mini-themed > div.mono-color-selector,
+
+body > div.nojs-mini-themed > header,
+
+body > div.nojs-mini-themed > main,
+
+body > div.nojs-mini-themed > footer {
+
+}
+
+  // TODO <h5 id="giotto-1337-age-70-in-florence-firenze">Giotto, 1337 (age 70?)
+
+  // there is no class for h5's
+
+  /* ~ ~ ~ ~ ~
+     Included: the TICKED & HALFTICKED mini-themes
+     ~ ~ ~ ~ ~ 
+  */
+
+/* =====================
+   Elements for lists (OL, UL, & LI), except indentation & horizontal spacing
+   =====================
+/*
+
+.nojs-mini-themed {
+
+  ol {
+    // Override assignment of "disc" in styles.scss, which would make ol's 
+    // resemble ul's:
+    list-style-type: decimal !important;
   }
 
   body main ul > li {
@@ -801,9 +966,9 @@ body > div.nojs-mini-themed > footer {
 
 }
 
-/* ====================
+/* =====================
    The HR element
-   ====================
+   =====================
 */
 
     // 'hr {all: revert;}' makes hr's (xcpt the 2 framing the title) shrink to 
@@ -813,12 +978,12 @@ body > div.nojs-mini-themed > footer {
 
     // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all
 
-/* ====================
+/* =====================
    Classes for headings: .h2-from-1star, .h3-from-2stars, etc.
 
    The classes .asterism-... are also defined here, because they're used only
    above and below headings.
-   ====================
+   =====================
 */
 
 .nojs-mini-themed {
@@ -840,6 +1005,9 @@ body > div.nojs-mini-themed > footer {
     */
     display: none;
   }
+
+  // For the text-align property, see the section elsewhere on alignment
+  // & horizontal spacing:
 
   .h2-from-1star, 
   .h3-from-2stars, 
@@ -880,8 +1048,9 @@ body > div.nojs-mini-themed > footer {
   }
 }
 
-/* ====================
-   Elements for preformatted content: PRE, CODE, SAMP, & KBD
+/* =====================
+   Elements for preformatted content: PRE, CODE, SAMP, & KBD (except
+   indentation, which in any case would apply to the PRE element only)
 
      "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
      represent computer code, computer output, and user input, respectively.
@@ -895,7 +1064,7 @@ body > div.nojs-mini-themed > footer {
      In CommonMark (and therefore Goldmark): use a pair of ```'s for 
      <pre><code>, and use <pre> itself for <pre> without a following <code>.
      However, <pre> without <code> isn't monospace by default.
-   ====================
+   =====================
 */
 
 .nojs-mini-themed {
@@ -904,12 +1073,6 @@ body > div.nojs-mini-themed > footer {
     white-space-collapse: preserve;
     font-family: monospace !important;
     text-wrap-mode: nowrap;
-
-    // Use padding-left instead of margin-left, for same reason as OL and UL
-    padding-left: 2rem;
-
-    // nowrap has been set for all PRE elements, so padding-right is moot:
-    // padding-right: 2rem;
   }
 
   main code {
@@ -944,21 +1107,15 @@ TODO update
 
 }
 
-/* ====================
+/* =====================
    Misc. block-level elements & classes
-   ====================
+   =====================
 */
 
 .nojs-mini-themed {
 
   .commentary, 
   .url-line {
-  }
-
-  div.dek {
-    // Use padding-left instead of margin-left, for same reason as OL and UL
-    padding-left: 8rem;
-    padding-right: 8rem;
   }
 
   .fisheye-means-rightmost {
@@ -973,9 +1130,9 @@ TODO update
 //  }
 //}
 
-/* ====================
+/* =====================
    Span-level elements & classes
-   ====================
+   =====================
 */
 
 .nojs-mini-themed {
@@ -1040,38 +1197,9 @@ TODO update
 
 }
 
-/* ====================
-   FIGURE, BLOCKQUOTE & FIGCAPTION
-   ====================
-*/
-
-.nojs-mini-themed {
-
-  figure {
-    // Use padding-left instead of margin-left, for same reason as OL and UL
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-}
-
-  /* ~ ~ ~ ~ ~
-     Included: the ORNAMENT & ROCOCO mini-themes
-     ~ ~ ~ ~ ~ 
-  */
-
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
-
-//  blockquote {
-//    line-height: 2;
-//  }
-
-}
-
-/* ====================
+/* =====================
    Quotation marks
-   ====================
+   =====================
 */
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
@@ -1242,9 +1370,9 @@ TODO update
    ... (which is bad HTML anyway).
 */
 
-/* ====================
+/* =====================
    Start of configuration for image captions used under Galleries Deluxe
-   ====================
+   =====================
 */
 
 .gd-modal-caption {
@@ -1264,8 +1392,8 @@ TODO update
   cursor: pointer;
 }
 
-/* ====================
+/* =====================
    End of configuration for image captions used under Galleries Deluxe
-   ====================
+   =====================
 */
 // This is line 674, btw
