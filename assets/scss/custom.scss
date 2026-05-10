@@ -562,7 +562,13 @@ with
    +-----------------------------------------------------------+
 */
 
-body main { justify-self: center; }
+/*
+div.nojs-mini-themed { 
+  justify-content: center !important;  
+  justify-items: center !important;  
+  justify-self: center !important; 
+}
+*/
 
 /* =====================
    Indentation & alignment for large-scale elements (HEADER, MAIN, & FOOTER),
@@ -572,15 +578,20 @@ body main { justify-self: center; }
 
 body > div.nojs-mini-themed > table.mini-theme-selector-table,
 body > div.nojs-mini-themed > div.mono-color-selector,
-body > div.nojs-mini-themed > header,
-body > div.nojs-mini-themed > main,
+body > div.nojs-mini-themed > header {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+// body > div.nojs-mini-themed > main,
+
 body > div.nojs-mini-themed > footer {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
 /* =====================
-   The max-width property
+   The max-width property and the properties it affects
    =====================
 */
 
@@ -607,7 +618,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   main {
-    max-width: 134ch;
+//    max-width: 66%;
+//  margin-left: 1rem; // 17%;
+//  margin-right: 1rem;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -615,7 +628,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   main {
-    max-width: 82ch;
+//    max-width: 50%;
+//  margin-left: 1rem; // 25%;
+//  margin-right: 1rem;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -624,6 +639,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
     max-width: 62ch;
+// These 2 lines drag the MAIN element to the left:
+//  margin-left: 1rem;
+//  margin-right: 1rem;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -632,6 +650,8 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
   main {
     max-width: 42ch;
+//  margin-left: 1rem;
+//  margin-right: 1rem;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -640,6 +660,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   main {
     max-width: 42ch;
+// These 2 lines drag the MAIN element to the left:
+  margin-left: 1rem;
+  margin-right: 1rem;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
