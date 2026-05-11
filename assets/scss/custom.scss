@@ -155,17 +155,17 @@ body.sans-mode main * {
     main > div.asterism-above-h4,
     main > div.asterism-below-h4 { color: #777; }
 
-    cite.book-title         { color: orange; }
-    cite.like-book-title    { color: yellow; }
-    cite.article-title      { color: green; }
+    cite.book-title         { text-decoration: #00cccc overline     double; }
+    cite.like-book-title    { text-decoration: #00cccc line-through dotted; }
+    cite.article-title      { text-decoration: #00cccc underline    solid;  }
     cite.like-article-title { color: blue; }
-    cite.media-title        { color: violet; }
-    cite.special-citation   { color: red; }
+    cite.media-title        { text-decoration: #00cccc line-through dotted; }
+    cite.special-citation   { text-decoration: #00cccc line-through dashed; }
 
-    i.term       { color: cyan; }
-    i.so-called  { color: cyan; }
-    i.nickname   { color: cyan; }
-    abbr         { color: cyan; }
+    i.term       { text-decoration: #00cccc overline dashed; }
+    i.so-called  { text-decoration: #00cccc overline wavy;   }
+    i.nickname   { text-decoration: #00cccc overline dotted; }
+    abbr         { text-decoration: #00cccc overline solid; }
 
     h2.h2-from-1star,
     h3.h3-from-2stars,
@@ -562,17 +562,16 @@ with
    +-----------------------------------------------------------+
 */
 
-/*
-div.nojs-mini-themed { 
-  justify-content: center !important;  
-  justify-items: center !important;  
-  justify-self: center !important; 
-}
-*/
-
 /* =====================
    Indentation & alignment for large-scale elements (HEADER, MAIN, & FOOTER),
-   & for the controls at the top of the page (above the HEADER)
+   & for the controls at the top of the page (above the HEADER).
+
+   For MAIN, margin-left & margin-right are each sufficient to ruin the
+   desired centering of MAIN (referring here to MAIN as a block, not to the
+   alignment of the content within it). Therefore padding-* is used instead.
+
+   (Why isn't HEADER similarly affected? Don't know. The Galleries Deluxe code
+   snippet, quoted farther below, doesn't account for this.)
    =====================
 */
 
@@ -583,7 +582,10 @@ body > div.nojs-mini-themed > header {
   margin-right: 1rem;
 }
 
-// body > div.nojs-mini-themed > main,
+body > div.nojs-mini-themed > main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 body > div.nojs-mini-themed > footer {
   margin-left: 1rem;
@@ -598,29 +600,35 @@ body > div.nojs-mini-themed > footer {
   // max-width, if in "ch" units, means characters per line. This is merely
   // an approximation if not using a monospace font.
   //
-  // Elsewhere, for the MAIN element, a "1rem" margin is set on each side.
-  // To compensate, I've added 2 to each of the max-width values below.
+  // Elsewhere, for the MAIN element, a "1rem" padding is set on each side.
+  // To compensate, I've added 2ch to each of the max-width values below.
   //
-  // See also https://github.com/bep/galleriesdeluxe/blob/main/assets/css/ga
-  // lleriesdeluxe/styles.css, lines 61-72:
-  //   main {
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     flex-direction: column;
-  //     margin: 0 auto;
-  //     padding-bottom: 5rem;
-  //     max-width: 140ch;
-  //     & > * {
-  //       width: 100%;
-  //   }
+  // Unless overridden, the width of MAIN is capped by the line
+  // `max-width: 140ch;` in https://github.com/bep/galleriesdeluxe/blob/m
+  // ain/assets/css/galleriesdeluxe/styles.css. See lines 61-78 there:
+  //
+  //    main {
+  //      display: flex;
+  //      align-items: center;
+  //      justify-content: center;
+  //      flex-direction: column;
+  //      margin: 0 auto;
+  //      padding-bottom: 5rem;
+  //        max-width: 140ch;
+  //      & > * {
+  //        width: 100%;
+  //    }
+  //
+  //    header {
+  //      display: grid;
+  //      align-items: center;
+  //      justify-content: center;
+  //      text-align: center;
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   main {
-//    max-width: 66%;
-//  margin-left: 1rem; // 17%;
-//  margin-right: 1rem;
+    max-width: 82ch;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -628,9 +636,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   main {
-//    max-width: 50%;
-//  margin-left: 1rem; // 25%;
-//  margin-right: 1rem;
+    max-width: 82ch;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -638,10 +644,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
-    max-width: 62ch;
-// These 2 lines drag the MAIN element to the left:
-//  margin-left: 1rem;
-//  margin-right: 1rem;
+    max-width: 82ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -650,8 +653,6 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
   main {
     max-width: 42ch;
-//  margin-left: 1rem;
-//  margin-right: 1rem;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -660,9 +661,6 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   main {
     max-width: 42ch;
-// These 2 lines drag the MAIN element to the left:
-  margin-left: 1rem;
-  margin-right: 1rem;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -680,14 +678,24 @@ body > div.nojs-mini-themed > footer {
    ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
 
-.nojs-mini-themed {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   div.dek {
     max-width: 80%;
-    // div.dek is conspicuously narrow, so "hyphens: auto" helps at
-    // narrower widths. This requires, e.g., <html lang="en-us">.
-    hyphens: auto;
+    // `hyphens: auto` requires, e.g., `<html lang="en-us">`
+    // hyphens: auto;
   }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
 }
 
@@ -698,10 +706,15 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
-  figure {
+  main > figure {
     // Use padding-left instead of margin-left, for same reason as OL and UL
     padding-left: var(--padding-left-sensitive-to-max-width);
     padding-right: var(--padding-right-sensitive-to-max-width);
+  }
+
+  main > figure > blockquote > p {
+    // `hyphens: auto` requires, e.g., `<html lang="en-us">`
+    // hyphens: auto;
   }
 
 }
@@ -717,6 +730,26 @@ body > div.nojs-mini-themed > footer {
     // Use padding-left instead of margin-left, for same reason as OL & UL.
     // "nowrap" has been set for all PRE elements, so padding-right is moot.
     padding-left: var(--padding-left-sensitive-to-max-width);
+  }
+
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   Indentation for the common heading elements (H2, H3, & H4). H1 doesn't
+   appear (except for the page title, which is in the HEADER), & H5 is 
+   styled separately.
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+
+  .h2-from-1star, 
+  .h3-from-2stars, 
+  .h4-from-3stars {
+    text-align: center;
   }
 
 }
@@ -1006,10 +1039,36 @@ body > div.nojs-mini-themed > footer {
 
    The classes .asterism-... are also defined here, because they're used only
    above and below headings.
+
+   For the text-align property, see the section elsewhere on alignment &
+   horizontal spacing.
    =====================
 */
 
 .nojs-mini-themed {
+  .h2-from-1star, 
+  .h3-from-2stars, 
+  .h4-from-3stars {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+// NO LONGER FOUND, SEE H5 ONLY:
+
+  .h5-from-4stars {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
@@ -1017,6 +1076,7 @@ body > div.nojs-mini-themed > footer {
   main > div.asterism-below-h3,
   main > div.asterism-above-h4,
   main > div.asterism-below-h4 {
+
     /* No longer using this CSS var:
 
        --nojs-asterism-display: block;
@@ -1027,24 +1087,7 @@ body > div.nojs-mini-themed > footer {
        "none" means element is hidden and takes no space.      
     */
     display: none;
-  }
 
-  // For the text-align property, see the section elsewhere on alignment
-  // & horizontal spacing:
-
-  .h2-from-1star, 
-  .h3-from-2stars, 
-  .h4-from-3stars {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: normal;
-  }
-
-// NO LONGER FOUND, SEE H5 ONLY:
-
-  .h5-from-4stars {
-    font-size: 1rem;
-    font-weight: normal;
   }
 
 }
@@ -1180,12 +1223,12 @@ TODO update
   */
 
   i.term {
-    text-decoration: overline double;
+
     // font-style: italic;
   }
   cite.book-title, 
   cite.like-book-title {
-    text-decoration: underline dotted;
+
   }
 
   /* - - - - -
@@ -1195,11 +1238,11 @@ TODO update
 
   i.so-called, 
   i.nickname {
-    text-decoration: overline wavy;
+
   }
   cite.article-title, 
   cite.like-article-title {
-    text-decoration: overline dashed;
+
   }
 
   /* - - - - -
@@ -1209,10 +1252,10 @@ TODO update
 
   cite.media-title, 
   cite.special-citation {
-    text-decoration: overline wavy;
+
   }
   abbr {
-    text-decoration: overline dotted;
+
   }
   .design-hint {
     display: none;
@@ -1291,7 +1334,6 @@ TODO update
   */
 
   q,
-  .dek,
   i.so-called, 
   i.nickname,
   cite.article-title, 
@@ -1299,7 +1341,6 @@ TODO update
     quotes: var(--nojs-quote-chars);
   }
   q::before,
-  .dek::before,
   i.so-called::before, 
   i.nickname::before,
   cite.article-title::before, 
@@ -1307,7 +1348,6 @@ TODO update
     content: open-quote; // used to be "↳";
   }
   q::after,
-  .dek::after,
   i.so-called::after, 
   i.nickname::after,
   cite.article-title::after, 
@@ -1334,13 +1374,11 @@ TODO update
 // As for 1st Q, $ is a Hugo-dependent predecessor to CSS's --
 
   q::before,
-  .dek::before,
   i.so-called::before, 
   i.nickname::before,
   cite.article-title::before, 
   cite.like-article-title::before,
   q::after,
-  .dek::after,
   i.so-called::after, 
   i.nickname::after,
   cite.article-title::after, 

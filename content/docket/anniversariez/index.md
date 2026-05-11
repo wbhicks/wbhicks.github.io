@@ -40,7 +40,7 @@ draft: false
 
 => https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html NYT / by Blake Gopnik
 
-∂ Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.»
+∂ Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.
 
 ¢ Referring to contemporary artist Danh Võ, Blake Gopnik writes: «Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece.»
 
