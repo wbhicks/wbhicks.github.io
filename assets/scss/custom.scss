@@ -413,7 +413,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 }
 
 
-  /* ~ ~ ~ ~ ~
+  /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Excluded: the NONE & HALFTICKED mini-themes
      ~ ~ ~ ~ ~ 
   */
@@ -460,7 +460,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
    =====================
 */
 
-  /* ~ ~ ~ ~ ~
+  /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      No longer included: the NONE mini-theme
      ~ ~ ~ ~ ~ 
   */
@@ -485,7 +485,7 @@ with
 }
 */
 
-  /* ~ ~ ~ ~ ~
+  /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Included: the mini-themes needing monospace
      ~ ~ ~ ~ ~ 
   */
@@ -522,7 +522,7 @@ with
   }
 }
 
-  /* ~ ~ ~ ~ ~
+  /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Included: the mini-themes needing proportional spacing
      ~ ~ ~ ~ ~ 
   */
@@ -852,6 +852,12 @@ body > div.nojs-mini-themed > footer {
   }
 }
 
+/* =====================
+   When a heading is sandwiched between asterisms, there should be a total of
+   2rem between the asterism and the heading it decorates.
+   =====================
+*/
+
 .nojs-mini-themed {
 
   // https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Margin_collapsing
@@ -861,46 +867,51 @@ body > div.nojs-mini-themed > footer {
 
   --any-margin-btwn-h-and-asterism: 1rem;
 
+// REPLACING margin- with padding- to see if collapse:
+// answer: NO DIFF so no collapse!
+
   h2.h2-from-1star,
   h3.h3-from-2stars {
-    margin-top:    var(--any-margin-btwn-h-and-asterism);
-    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+    padding-top:    var(--any-margin-btwn-h-and-asterism);
+    padding-bottom: var(--any-margin-btwn-h-and-asterism);
   }
 
   h4.h4-from-3stars {
-    margin-top:    var(--any-margin-btwn-h-and-asterism);
-    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+    padding-top:    var(--any-margin-btwn-h-and-asterism);
+    padding-bottom: var(--any-margin-btwn-h-and-asterism);
   }
 
   main > div.asterism-above-h2 {
-    margin-top:    3rem;
-    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+    padding-top:    3rem;
+    padding-bottom: var(--any-margin-btwn-h-and-asterism);
   }
 
   main > div.asterism-below-h2 {
-    margin-top:    var(--any-margin-btwn-h-and-asterism);
-    margin-bottom: 3rem;
+    padding-top:    var(--any-margin-btwn-h-and-asterism);
+    padding-bottom: 3rem;
   }
 
   main > div.asterism-above-h3 {
-    margin-top:    3rem;
-    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+    padding-top:    3rem;
+    padding-bottom: var(--any-margin-btwn-h-and-asterism);
   }
 
   main > div.asterism-below-h3 {
-    margin-top:    var(--any-margin-btwn-h-and-asterism);
-    margin-bottom: 3rem;
+    padding-top:    var(--any-margin-btwn-h-and-asterism);
+    padding-bottom: 3rem;
   }
 
   main > div.asterism-above-h4 {
-    margin-top:    3rem;
-    margin-bottom: var(--any-margin-btwn-h-and-asterism);
+    padding-top:    3rem;
+    padding-bottom: var(--any-margin-btwn-h-and-asterism);
   }
 
   main > div.asterism-below-h4 {
-    margin-top:    var(--any-margin-btwn-h-and-asterism);
-    margin-bottom: 3rem;
+    padding-top:    var(--any-margin-btwn-h-and-asterism);
+    padding-bottom: 3rem;
   }
+
+// ENDED test here
 
   --margin-top-or-bottom: 1rem;
 
@@ -955,6 +966,119 @@ body > div.nojs-mini-themed > footer {
    +---------------------------+
 */
 
+/* +---------------------------------------------------------+
+   |                                                         |
+   |  Start of heading (a.k.a. headline) elements (e.g. H3)  |
+   |  and their decoration (e.g. the asterism-* classes)     |
+   |                                                         |
+   +---------------------------------------------------------+
+*/
+
+
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
+
+  main > div.asterism-above-h2,
+  main > div.asterism-below-h2,
+  main > div.asterism-above-h3,
+  main > div.asterism-below-h3,
+  main > div.asterism-above-h4,
+  main > div.asterism-below-h4 {
+    font-family: monospace;
+    white-space-collapse: preserve;
+    text-align: center;
+    line-height: 1;
+    display: block;
+  }
+
+  main > div.rule-line-below-h2 {
+    display: none;
+  }
+
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+  main > div.asterism-above-h2,
+  main > div.asterism-below-h2,
+  main > div.asterism-above-h3,
+  main > div.asterism-below-h3,
+  main > div.asterism-above-h4,
+  main > div.asterism-below-h4 {
+    /* No longer using this CSS var:
+
+       --nojs-asterism-display: block;
+       ...
+       display: var(--nojs-asterism-display, none);
+
+       i.e., "none" iff --nojs-asterism-display is undefined.
+       "none" means element is hidden and takes no space.      
+    */
+    display: none;
+  }
+
+  main > div.rule-line-below-h2 {
+    text-align: left;
+  }
+
+}
+
+/* =====================
+   Classes for headings: .h2-from-1star, .h3-from-2stars, etc.
+
+   The classes .asterism-... are also defined here, because they're used only
+   above and below headings.
+
+   For the text-align property, see the section elsewhere on alignment &
+   horizontal spacing.
+   =====================
+*/
+
+.nojs-mini-themed {
+
+  .h2-from-1star, 
+  .h3-from-2stars, 
+  .h4-from-3stars {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+// NO LONGER FOUND, SEE H5 ONLY:
+
+  .h5-from-4stars {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
+
+}
+
+  /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+     Included supplement: the ORNAMENT & ROCOCO mini-themes
+     ~ ~ ~ ~ ~ 
+  */
+
+/* +-------------------------------------------------------+
+   |  End of heading (a.k.a. headline) elements (e.g. H3)  |
+   +-------------------------------------------------------+
+*/
+
 /* +---------------------------------------------+
    |                                             |
    |  Start of THE REST OF No-JS mini-theming configuration  |
@@ -986,7 +1110,7 @@ body > div.nojs-mini-themed > footer {
 
   // there is no class for h5's
 
-  /* ~ ~ ~ ~ ~
+  /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Included: the TICKED & HALFTICKED mini-themes
      ~ ~ ~ ~ ~ 
   */
@@ -1033,86 +1157,6 @@ body > div.nojs-mini-themed > footer {
     // using 'revert' here shouldn't affect browser styles:
 
     // https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/all
-
-/* =====================
-   Classes for headings: .h2-from-1star, .h3-from-2stars, etc.
-
-   The classes .asterism-... are also defined here, because they're used only
-   above and below headings.
-
-   For the text-align property, see the section elsewhere on alignment &
-   horizontal spacing.
-   =====================
-*/
-
-.nojs-mini-themed {
-  .h2-from-1star, 
-  .h3-from-2stars, 
-  .h4-from-3stars {
-    font-size: 1rem;
-    font-weight: normal;
-  }
-
-// NO LONGER FOUND, SEE H5 ONLY:
-
-  .h5-from-4stars {
-    font-size: 1rem;
-    font-weight: normal;
-  }
-}
-
-.nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
-
-  main > div.asterism-above-h2,
-  main > div.asterism-below-h2,
-  main > div.asterism-above-h3,
-  main > div.asterism-below-h3,
-  main > div.asterism-above-h4,
-  main > div.asterism-below-h4 {
-
-    /* No longer using this CSS var:
-
-       --nojs-asterism-display: block;
-       ...
-       display: var(--nojs-asterism-display, none);
-
-       i.e., "none" iff --nojs-asterism-display is undefined.
-       "none" means element is hidden and takes no space.      
-    */
-    display: none;
-
-  }
-
-}
-
-  /* ~ ~ ~ ~ ~
-     Included supplement: the ORNAMENT & ROCOCO mini-themes
-     ~ ~ ~ ~ ~ 
-  */
-
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
-
-  main > div.asterism-above-h2,
-  main > div.asterism-below-h2,
-  main > div.asterism-above-h3,
-  main > div.asterism-below-h3,
-  main > div.asterism-above-h4,
-  main > div.asterism-below-h4 {
-    font-family: monospace;
-    white-space-collapse: preserve;
-    text-align: center;
-    line-height: 1;
-    display: block;
-  }
-}
 
 /* =====================
    Elements for preformatted content: PRE, CODE, SAMP, & KBD (except
@@ -1357,7 +1401,7 @@ TODO update
 
 }
 
-  /* ~ ~ ~ ~ ~
+  /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Included supplement: the ORNAMENT & ROCOCO mini-themes
      ~ ~ ~ ~ ~ 
   */
