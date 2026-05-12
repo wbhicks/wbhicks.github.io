@@ -30,8 +30,6 @@
 end of comment was here
   {{ $allText = replaceRE `<abbr>`  `&#9659;<abbr>`  $allText }}
   {{ $allText = replaceRE `</abbr>` `</abbr>&#9669;` $allText }}
-  {{ $allText = replaceRE `<q>`     `&#9440;<q>`  $allText }}
-  {{ $allText = replaceRE `</q>`    `</q>&#9414;` $allText }}
 */ -}}
 
 {{ else if (eq .sanitize_or_restore "restore") }}
@@ -59,20 +57,24 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_LSGUIL` `‹`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RSGUIL` `›`  $theContent }}
 
-  {{ $theContent = replaceRE `TMPLT_LSOCLD ` 
+  {{ $theContent = replaceRE `TMPLT_LSOCLD `
                              `<i class="so-called">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSOCLD` `</i>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LNIKNM ` 
+  {{ $theContent = replaceRE `TMPLT_LNIKNM `
                              `<i class="nickname">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RNIKNM` `</i>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LFREGN ` 
+  {{ $theContent = replaceRE `TMPLT_LSMPLQ `
+                             `<q>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSMPLQ`
+                             `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LFREGN `
                              `<i class="foreign">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RFREGN` `</i>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LLOGIC ` 
+  {{ $theContent = replaceRE `TMPLT_LLOGIC `
                              `<i class="logic">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RLOGIC` `</i>`  $theContent }}
 
-  {{ $theContent = replaceRE `TMPLT_LATITL ` 
+  {{ $theContent = replaceRE `TMPLT_LATITL `
                              `<cite class="article-title">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RATITL` `</cite>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LBTITL ` 

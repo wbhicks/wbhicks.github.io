@@ -28,7 +28,7 @@ draft: false
 
 ## I. January
 
-¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+¢ ≤qBy thys fyre I warme my handys≥ (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
 ### January 8th
 

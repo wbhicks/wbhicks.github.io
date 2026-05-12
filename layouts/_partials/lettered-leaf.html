@@ -47,7 +47,7 @@
        which means that it doesn't contain any nested lettered strings. This is
        enforced in the template that calls this one, prefixed-or-lettered.html.
 
-       Current codes for lettered strings: a b c f l m n s t w
+       Current codes for lettered strings: a b c f l m n q s t w
 
        ====================
 */ -}}
@@ -156,6 +156,16 @@
       `TMPLT_LNIKNM ` 
       $the_content 
       ` TMPLT_RNIKNM`
+      ) 
+  }}
+{{ else if (eq $classifier "q") }}
+{{- /* CASE q: simple direct quotations belonging to no other kind
+
+*/ -}}
+  {{ $result = (add 
+      `TMPLT_LSMPLQ ` 
+      $the_content 
+      ` TMPLT_RSMPLQ`
       ) 
   }}
 {{ else if (eq $classifier "s") }}

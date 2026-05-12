@@ -600,8 +600,9 @@ body > div.nojs-mini-themed > footer {
   // max-width, if in "ch" units, means characters per line. This is merely
   // an approximation if not using a monospace font.
   //
-  // Elsewhere, for the MAIN element, a "1rem" padding is set on each side.
-  // To compensate, I've added 2ch to each of the max-width values below.
+  // Elsewhere, for the MAIN element, a 1rem padding is set on each side. To
+  // compensate (approximately) for the resulting 2rem of unusable width, I've
+  // added 4ch to each of the max-width values below.
   //
   // Unless overridden, the width of MAIN is capped by the line
   // `max-width: 140ch;` in https://github.com/bep/galleriesdeluxe/blob/m
@@ -628,7 +629,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   main {
-    max-width: 82ch;
+    max-width: 84ch;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -636,7 +637,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   main {
-    max-width: 82ch;
+    max-width: 84ch;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -644,7 +645,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
-    max-width: 82ch;
+    max-width: 64ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -652,7 +653,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
   main {
-    max-width: 42ch;
+    max-width: 44ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -660,7 +661,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   main {
-    max-width: 42ch;
+    max-width: 44ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -853,65 +854,114 @@ body > div.nojs-mini-themed > footer {
 }
 
 /* =====================
+   Vertical spacing for DIV.asterism-*
+
    When a heading is sandwiched between asterisms, there should be a total of
-   2rem between the asterism and the heading it decorates.
+   2rem between the asterism and the heading it decorates. This can be done 
+   with (1) padding-top and/or padding-bottom, or else (2) margins instead.
+
+   Because the MAIN element does not (currently) feature "margin collapsing",
+   the two approaches above (padding-* vs. margin-*) result in the same 
+   vertical spacing.[1]
+
+   "Margins don't collapse in a container with display set to flex or grid."
+
+   Source: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_mo
+           del/Margin_collapsing
+
+   MAIN has property `display: flex`, which is set on line 62 of the Galleries
+   Deluxe code snippet (.../galleriesdeluxe/styles.css), quoted farther below.
+
+   [1] The padding-* vs. margin-* choice does affect border positions, but
+       headings and asterisms are (currently) borderless.
    =====================
 */
 
 .nojs-mini-themed {
 
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Margin_collapsing
+  // Replaced this dual-purpose var ...
+  // --spacing-for-the-asterism-side-that-faces-the-h: 1rem;
+  // ... with these 2 vars:
+  --spacing-for-bottom-of-asterism-above: 0;
+  --spacing-for-top-of-asterism-below: 2rem;
 
-  // In some mini-themes, each heading is sandwiched between asterisms, but
-  // these margins for headings are needed for the other mini-themes:
+  main > div.asterism-above-h2 {
+    margin-top:    3rem;
+    margin-bottom: var(--spacing-for-bottom-of-asterism-above);
+  }
+  main > div.asterism-below-h2 {
+    margin-top:    var(--spacing-for-top-of-asterism-below);
+    margin-bottom: 3rem;
+  }
+  main > div.asterism-above-h3 {
+    margin-top:    3rem;
+    margin-bottom: var(--spacing-for-bottom-of-asterism-above);
+  }
+  main > div.asterism-below-h3 {
+    margin-top:    var(--spacing-for-top-of-asterism-below);
+    margin-bottom: 3rem;
+  }
+  main > div.asterism-above-h4 {
+    margin-top:    3rem;
+    margin-bottom: var(--spacing-for-bottom-of-asterism-above);
+  }
+  main > div.asterism-below-h4 {
+    margin-top:    var(--spacing-for-top-of-asterism-below);
+    margin-bottom: 3rem;
+  }
 
-  --any-margin-btwn-h-and-asterism: 1rem;
+}
 
-// REPLACING margin- with padding- to see if collapse:
-// answer: NO DIFF so no collapse!
+/* =====================
+   Vertical spacing for H2, H3, H4, & div.rule-line-below-*
+
+   If all mini-themes displayed "asterisms" instead of "rule lines", then the
+   numeric value (e.g., 2rem) for the space between an asterism and its heading
+   could be split in half between, e.g., `.asterism-below-h3 { margin-top: ...`
+   and `h3 { margin-bottom: ...`
+
+   However, rule lines are displayed instead of asterisms in some mini-themes,
+   so margin-bottom shall be zero for elements H2, H3, & H4. Otherwise, there
+   would be a gap between a heading and its rule line. (For the same reason,
+   margin-top for rule lines shall be zero.)
+
+   As a consequence, the spacing between a heading and its following asterism
+   must be handled solely by `.asterism-below-hDIGIT { margin-top: ...`. I've
+   retired --spacing-for-the-asterism-side-that-faces-the-h in favor of two
+   vars, one for each direction.
+   =====================
+*/
+
+.nojs-mini-themed {
+
+  --spacing-above-headings-and-below-rule-lines: 2rem;
 
   h2.h2-from-1star,
   h3.h3-from-2stars {
-    padding-top:    var(--any-margin-btwn-h-and-asterism);
-    padding-bottom: var(--any-margin-btwn-h-and-asterism);
+    margin-top:    var(--spacing-above-headings-and-below-rule-lines);
+    margin-bottom: 0;
   }
 
   h4.h4-from-3stars {
-    padding-top:    var(--any-margin-btwn-h-and-asterism);
-    padding-bottom: var(--any-margin-btwn-h-and-asterism);
+    margin-top:    var(--spacing-above-headings-and-below-rule-lines);
+    margin-bottom: 0;
   }
 
-  main > div.asterism-above-h2 {
-    padding-top:    3rem;
-    padding-bottom: var(--any-margin-btwn-h-and-asterism);
+  main > div.rule-line-below-h2,
+  main > div.rule-line-below-h3,
+  main > div.rule-line-below-h4 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-above-headings-and-below-rule-lines);
   }
 
-  main > div.asterism-below-h2 {
-    padding-top:    var(--any-margin-btwn-h-and-asterism);
-    padding-bottom: 3rem;
-  }
+}
 
-  main > div.asterism-above-h3 {
-    padding-top:    3rem;
-    padding-bottom: var(--any-margin-btwn-h-and-asterism);
-  }
+/* =====================
+   Vertical spacing for other block-level elements
+   =====================
+/*
 
-  main > div.asterism-below-h3 {
-    padding-top:    var(--any-margin-btwn-h-and-asterism);
-    padding-bottom: 3rem;
-  }
-
-  main > div.asterism-above-h4 {
-    padding-top:    3rem;
-    padding-bottom: var(--any-margin-btwn-h-and-asterism);
-  }
-
-  main > div.asterism-below-h4 {
-    padding-top:    var(--any-margin-btwn-h-and-asterism);
-    padding-bottom: 3rem;
-  }
-
-// ENDED test here
+.nojs-mini-themed {
 
   --margin-top-or-bottom: 1rem;
 
@@ -966,12 +1016,12 @@ body > div.nojs-mini-themed > footer {
    +---------------------------+
 */
 
-/* +---------------------------------------------------------+
-   |                                                         |
-   |  Start of heading (a.k.a. headline) elements (e.g. H3)  |
-   |  and their decoration (e.g. the asterism-* classes)     |
-   |                                                         |
-   +---------------------------------------------------------+
+/* +-------------------------------------------------------+
+   |                                                       |
+   |  Start of heading (headline) elements (e.g. H3) &     |
+   |  their decoration (asterism-* & rule-line-* classes)  |
+   |                                                       |
+   +-------------------------------------------------------+
 */
 
 
@@ -993,7 +1043,9 @@ body > div.nojs-mini-themed > footer {
     display: block;
   }
 
-  main > div.rule-line-below-h2 {
+  main > div.rule-line-below-h2,
+  main > div.rule-line-below-h3,
+  main > div.rule-line-below-h4 {
     display: none;
   }
 
@@ -1023,7 +1075,9 @@ body > div.nojs-mini-themed > footer {
     display: none;
   }
 
-  main > div.rule-line-below-h2 {
+  main > div.rule-line-below-h2,
+  main > div.rule-line-below-h3,
+  main > div.rule-line-below-h4 {
     text-align: left;
   }
 
@@ -1058,6 +1112,15 @@ body > div.nojs-mini-themed > footer {
 
 }
 
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+  .h2-from-1star {
+    text-transform: uppercase;
+  }
+}
+
 .nojs-mini-themed:has(#nojs-quote-style-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
@@ -1071,7 +1134,7 @@ body > div.nojs-mini-themed > footer {
 
   /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Included supplement: the ORNAMENT & ROCOCO mini-themes
-     ~ ~ ~ ~ ~ 
+     ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
   */
 
 /* +-------------------------------------------------------+
@@ -1112,7 +1175,7 @@ body > div.nojs-mini-themed > footer {
 
   /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Included: the TICKED & HALFTICKED mini-themes
-     ~ ~ ~ ~ ~ 
+     ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
   */
 
 /* =====================
@@ -1403,7 +1466,7 @@ TODO update
 
   /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
      Included supplement: the ORNAMENT & ROCOCO mini-themes
-     ~ ~ ~ ~ ~ 
+     ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
   */
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
