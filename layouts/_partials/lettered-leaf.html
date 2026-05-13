@@ -84,6 +84,8 @@
 
          ... one of Chaucer’s ≤bCanterbury Tales≥, ≤cThe Reeve’s Tale≥. ...
 
+         becomes <cite class="like-article-title"> ...
+
 */ -}}
   {{ $result = (add 
       `TMPLT_LCTITL ` 
@@ -121,7 +123,7 @@
       ) 
   }}
 {{ else if (eq $classifier "l") }}
-{{- /* CASE l: logical-statement, e.g.
+{{- /* CASE l: logical statements, e.g.
 
        ≤lWhite hair causes old age.≥ ---> <i class="logic">White hair causes old age.</i>
 

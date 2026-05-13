@@ -32,7 +32,13 @@ draft: false
 
 ### January 8th
 
-¢ This is a placeholder for a caption for this date.
+¢ On this date in 2023: Bolsonaro's putsch in Brasília fails. Partly inspired by Trump's failed self-coup in the US two years before, and similarly fueled by populist content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil's highest constitutional court.
+
+£ A pessoa que tinha vergonha de fazer piada racista passou a achar nas redes sociais uma bolha social racista, e passou a ter orgulho. São covardes na vida real e corajosos nas redes. O que possibilitou isso? Essas questões ligadas às falhas da democracia, principalmente a questão da distribuição de renda.
+
+££ Translated from the Portuguese: People who were ashamed of making racist jokes now see social media as a racist social bubble, and they are now proud. They are cowards in real life and brave on social media. What made this possible? These issues are linked to the failures of democracy, especially the issue of income distribution."
+
+~ Alexandre de Moraes
 
 #### ® Blake Gopnik, writing in NYT (2021) under the headline «Who Said Art Is Only for the One Percent?»
 
