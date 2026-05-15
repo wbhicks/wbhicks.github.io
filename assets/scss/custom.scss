@@ -20,6 +20,7 @@
 // ** The HR element
 //
 // * Span-level elements & classes
+// ** Design hints (shown only in Heath mode)
 // ** All derived from "lettered strings"
 // ** Typically oblique
 // ** Typically quoted (BLOCKQUOTE appears here too)
@@ -642,6 +643,7 @@ body > div.nojs-mini-themed > footer {
 
   main code {
     white-space-collapse: preserve;
+    font-family: monospace !important;
 
     /* Apply the Mozilla KBD style, but to CODE instead. To avoid having
        to use the :not() pseudo-class, this is broader than it needs to
@@ -663,7 +665,7 @@ body > div.nojs-mini-themed > footer {
     margin: 0 0;
   }
 
-}
+} // End of .nojs-mini-themed
 
 
 /* =====================
@@ -696,7 +698,7 @@ body > div.nojs-mini-themed > footer {
     list-style-type: disc;
   }
 
-}
+} // End of .nojs-mini-themed
 
 
 /* =====================
@@ -730,6 +732,21 @@ body > div.nojs-mini-themed > footer {
 
 
 /* =====================
+   Design hints (shown only in Heath mode)
+   =====================
+*/
+
+
+.nojs-mini-themed {
+
+  .design-hint {
+    display: none;
+  }
+
+}
+
+
+/* =====================
    All derived from "lettered strings"
 
    The current codes for lettered strings, used in the template
@@ -742,6 +759,19 @@ body > div.nojs-mini-themed > footer {
 
 
 .nojs-mini-themed {
+
+  cite {
+    /* Overriding the default oblique styling of CITE as follows,
+       because not all CITEs shall be slanted. (Some need quotation
+       marks instead.)
+
+       All CITEs shall have a class.
+
+       Oblique styling is not automatically applied to I elements (!),
+       so nothing needs to be done here for them.
+    */
+    font-style: normal;
+  }
 
   cite.article-title { // ≤a
   }
@@ -768,13 +798,39 @@ body > div.nojs-mini-themed > footer {
   cite.special-citation { // NO CODE FOR LETTERED STRINGS YET: TODO
   }
 
-}
+} // End of .nojs-mini-themed
 
 
 /* =====================
    Typically oblique
    =====================
 */
+
+
+.nojs-mini-themed {
+
+  cite.book-title { // ≤b
+    font-style: italic;
+  }
+  i.foreign { // ≤f
+    font-style: italic;
+  }
+  i.logic { // ≤l
+    font-style: italic;
+  }
+  cite.media-title { // ≤m
+    font-style: italic;
+  }
+  main abbr { // ≤t
+    font-style: italic;
+  }
+  cite.like-book-title { // ≤w
+    font-style: italic;
+  }
+  cite.special-citation { // NO CODE FOR LETTERED STRINGS YET: TODO
+  }
+
+} // End of .nojs-mini-themed
 
 
 /* =====================
@@ -803,12 +859,14 @@ body > div.nojs-mini-themed > footer {
        Source: https://github.com/bep/galleriesdeluxe/blob/main/asse
                ts/scss/galleriesdeluxe/reset.scss
 
-   To override this effect and cause quotation marks to appear, other values
-   must be assigned to (1) the quotes property and (2) the content property.
-   Do this for either or both elements, as desired: Q and BLOCKQUOTE.
+   To override this effect and cause quotation marks to appear, other
+   values must be assigned to (1) the quotes property and (2) the content
+   property. Do this for either/both elements, as desired: Q & BLOCKQUOTE.
 
-   cf. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Prope
-       rties/quotes#with_generated_content
+   See also https://developer.mozilla.org/en-US/docs/Web/CSS/Refe
+       rence/Properties/quotes#with_generated_content
+
+   No longer used: --nojs-quote-chars: "«" "»" "‹" "›";
    =====================
 */
 
@@ -865,7 +923,7 @@ body > div.nojs-mini-themed > footer {
     content: close-quote; // used to be "↲";
   }
 
-}
+} // End of .nojs-mini-themed
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
@@ -890,10 +948,130 @@ body > div.nojs-mini-themed > footer {
 }
 
 
-
 /* +----------------------------------------+
    |                                        |
    |  End of span-level elements & classes  |
    |                                        |
    +----------------------------------------+
+*/
+
+
+/* +-----------------------------------------------------+
+   |                                                     |
+   |  Start of font-family assignments (except for the   |
+   |  asterism-... classes, & the elements PRE & CODE)   |
+   |                                                     |
+   +-----------------------------------------------------+
+*/
+
+
+/* =====================
+   CSS lets you specify a generic font-family. These include serif,
+   sans-serif, & monospace (note: no "d" at the end). Unfortunately
+   you can't use generics to specify "monospace serif" or "monospace
+   sans-serif". To achieve those conjunctions, I'm specifying some
+   of these typefaces:
+
+   Monaco
+     Classification: monospaced, sans-serif
+     Designer: Susan Kare, Kris Holmes, and Charles Bigelow
+     License: Apple Inc. 
+
+   Cousine
+     Classification: monospaced, sans-serif, neo-grotesque
+     Designer: Steve Matteson
+     License: Apache License 2.0
+
+   Liberation Mono
+     Classification: monospaced, sans-serif, neo-grotesque
+     Designer: Steve Matteson
+     License: SIL Open Font License
+
+   FreeMono
+     Classification: monospaced, serif, slab-serif
+     Designer: Primož Peterlin, Steve White
+     License: GPL-3.0-or-later with Font-exception-2.0
+
+   Courier
+     Classification: monospaced, serif, slab-serif
+     Designer: Howard "Bud" Kettler (1919–1999)
+     License: none needed (public domain)
+
+   Unlike those above, the following is proportional rather than
+   monospaced:
+
+   Canada 1500
+     https://typodermicfonts.com/canada1500/
+     "In no way was this ever meant to be used for immersive reading."
+     Designer: Ray Larabie
+     License: CC0, none needed (public domain)
+
+   OLD CHOICES:
+  --font-family-proportional-sans-serif: Helvetica;
+  --font-family-proportional-serif: Georgia;
+  --font-family-monospaced-sans-serif: Monaco;
+  --font-family-monospaced-serif: Courier;
+   =====================
+*/
+
+
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+
+  * {
+    font-family: Monaco;
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    font-family: Helvetica;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
+
+  * {
+    font-family: Courier;
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    font-family: Helvetica;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+
+  * {
+    font-family: Helvetica;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
+
+  * {
+    font-family: Georgia;
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    font-family: Helvetica;
+  }
+}
+
+
+/* +----------------------------------+
+   |  End of font-family assignments  |
+   +----------------------------------+
 */
