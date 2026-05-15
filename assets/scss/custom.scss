@@ -1,5 +1,7 @@
 // Table Of Contents
 //
+// * Variables duplicated in vars-custom.scss and custom.scss (this file)
+//
 // * Vertical spacing (about 183 lines)
 // ** External vertical spacing for DIV.asterism-*
 // ** Vertical spacing for H2, H3, H4, & DIV.rule-line-below-*
@@ -24,6 +26,37 @@
 // ** All derived from "lettered strings"
 // ** Typically oblique
 // ** Typically quoted (BLOCKQUOTE appears here too)
+//
+// * Font-family assignments (except for ...
+// ** Font-family for title
+// ** CSS lets you specify a generic font-family ...
+//
+// * Setting the color property for * when the mini-theme is monochrome
+
+
+/* +------------------------------------+
+   |                                    |
+   |  Start of variables duplicated in  |
+   |  vars-custom.scss and custom.scss  |
+   |                                    |
+   +------------------------------------+
+*/
+
+
+// The lightness of $color_background
+// determines which of these two is used:
+
+$color-text_dark: #000; // TODO DELETE, UNUSED
+$color-text_light: #ffe0cc; // was #ccc2b8
+
+
+/* +------------------------------------+
+   |                                    |
+   |  End of variables duplicated in    |
+   |  vars-custom.scss and custom.scss  |
+   |                                    |
+   +------------------------------------+
+*/
 
 
 /* +-----------------------------+
@@ -966,6 +999,21 @@ body > div.nojs-mini-themed > footer {
 
 
 /* =====================
+   Font-family for title
+   =====================
+*/
+
+
+//body > 
+//  div.nojs-mini-themed > 
+//    header > 
+//      div.the-div-child-of-the-header > 
+//        h1 {
+//  font-family: "Futura Medium" !important;
+//}
+
+
+/* =====================
    CSS lets you specify a generic font-family. These include serif,
    sans-serif, & monospace (note: no "d" at the end). Unfortunately
    you can't use generics to specify "monospace serif" or "monospace
@@ -987,6 +1035,11 @@ body > div.nojs-mini-themed > footer {
      Designer: Steve Matteson
      License: SIL Open Font License
 
+   Roboto Mono
+     Classification: monospaced, sans-serif, neo-grotesque
+     Designer: Christian Robertson
+     License: Apache license
+
    FreeMono
      Classification: monospaced, serif, slab-serif
      Designer: Primož Peterlin, Steve White
@@ -1007,10 +1060,12 @@ body > div.nojs-mini-themed > footer {
      License: CC0, none needed (public domain)
 
    OLD CHOICES:
-  --font-family-proportional-sans-serif: Helvetica;
-  --font-family-proportional-serif: Georgia;
-  --font-family-monospaced-sans-serif: Monaco;
-  --font-family-monospaced-serif: Courier;
+   --font-family-proportional-sans-serif: Helvetica;
+   --font-family-proportional-serif: Georgia;
+   --font-family-monospaced-sans-serif: Monaco;
+   --font-family-monospaced-serif: Courier;
+
+   TODO: Inter (which is proportional only), from https://rsms.me/inter/
    =====================
 */
 
@@ -1074,4 +1129,101 @@ body > div.nojs-mini-themed > footer {
 /* +----------------------------------+
    |  End of font-family assignments  |
    +----------------------------------+
+*/
+
+
+/* +-------------------------------------------+
+   |                                           |
+   |  Start of setting the color property      |
+   |  for * when the mini-theme is monochrome  |
+   |TODO lint                                           |
+   +-------------------------------------------+
+*/
+
+
+* {
+  --color-when-mini-theme-is-monochrome: $color-text_light;
+}
+
+.nojs-mini-themed:has(#nojs-mono-color-off:checked) {
+  // See also .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked), below
+  * { 
+    --color-when-mini-theme-is-monochrome: $color-text_light;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-mono-color-535:checked) {
+  // 535nm (P31 phosphor, #70ff00. A source reported its wavelength as
+  // being 10nm longer than P1)
+  * { --color-when-mini-theme-is-monochrome: #70ff00; }
+}
+
+.nojs-mini-themed:has(#nojs-mono-color-602:checked) {
+  // 602nm (P3 phosphor). For comparison, goldenrod is #daa520
+  * { --color-when-mini-theme-is-monochrome: #ffb700; }
+}
+
+//.nojs-mini-themed:has(#nojs-mono-color-602-blur:checked) {
+//  * {
+//    --color-when-mini-theme-is-monochrome: #ffb700;
+//
+//    // offset-x | offset-y | blur-radius | color
+//
+//    // 10px rather than 1px, just to help my unsuccessful (and 
+//    // abandoned) debugging:
+//    text-shadow: 0px 0px 10px #ffb700;
+//  }
+//}
+//
+//.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:not(:checked)) {
+//    text-shadow: none !important; // DOES NOT WORK
+//}
+
+.nojs-mini-themed:has(#nojs-mono-color-brooklyn:checked) {
+
+  * {
+    --color-when-mini-theme-is-monochrome: #7a92a5;
+  }
+
+  a, .galleries a {
+    text-decoration: #f7d17f80 underline solid; // dotted;
+  }
+
+}
+
+.nojs-mini-themed:has(#nojs-mono-color-uscurrency:checked) {
+
+  * {
+    --color-when-mini-theme-is-monochrome: #85bb65;
+  }
+
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+  // See also .nojs-mini-themed:has(#nojs-mono-color-off:checked), above
+  * {
+    color: var(--color-when-mini-theme-is-monochrome);
+  }
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    color: $color-text_light;
+  }
+}
+
+// No longer used here: 505nm (P24 phosphor, #00ff54)
+// No longer used here: 525nm (P1 phosphor, #4aff00)
+// No longer used here: #b8860b darkgoldenrod
+// No longer used here: #ffe4b5 moccasin
+// For comparison only: #00ff00 is 510nm
+
+
+/* +-------------------------------------------+
+   |                                           |
+   |  End of setting the color property        |
+   |  for * when the mini-theme is monochrome  |
+   |                                           |
+   +-------------------------------------------+
 */
