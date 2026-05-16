@@ -60,11 +60,7 @@
     margin-left: 1rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
-
-font-family: var(--font-family-proportional-sans-serif);
-
-
-//    display: table;
+    font-family: Helvetica;
 }
 
 .js-toggle-for-igt,
@@ -193,14 +189,14 @@ switcher.addEventListener("click", function() {
   this.classList.add('js-toggle-for-igt--focus');
   //If dark mode is selected
   if (this.classList.contains('js-toggle-for-igt--checked')) {
-    body.classList.remove('sans-mode');
-    body.classList.add('serif-mode');
+    body.classList.remove('igt-mode-off');
+    body.classList.add('igt-mode-on');
     // Save user preference in storage
     // localStorage.setItem('sansMode', 'false');
     localStorage.setItem('serifMode', 'true');
   } else {
-    body.classList.remove('serif-mode');
-    body.classList.add('sans-mode');
+    body.classList.remove('igt-mode-on');
+    body.classList.add('igt-mode-off');
     setTimeout(function() {
       localStorage.removeItem('serifMode');
     }, 100);
@@ -208,9 +204,8 @@ switcher.addEventListener("click", function() {
 })
 // Check Storage. Keep user preference on page reload
 if (localStorage.getItem('serifMode')) {
-  // body.classList.add('serif-mode');
   switcher.classList.add('js-toggle-for-igt--checked');
-  body.classList.remove('sans-mode');
-  body.classList.add('serif-mode');
+  body.classList.remove('igt-mode-off');
+  body.classList.add('igt-mode-on');
 }
 </script>

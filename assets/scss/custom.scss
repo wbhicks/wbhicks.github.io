@@ -1,46 +1,48 @@
-// Table Of Contents
-//
-// * Variables 
-// ** Variables duplicated in vars-custom.scss and custom.scss 
-// ** Variables internal to this file (custom.scss)
-//
-// * Vertical spacing (about 183 lines)
-// ** Vertical spacing for selectors
-// ** External vertical spacing for DIV.asterism-*
-// ** Vertical spacing for H2, H3, H4, & DIV.rule-line-below-*
-// ** Vertical spacing for other block-level elements
-//
-// * Horizontal spacing & alignment (about 303 lines)
-// ** Horizontal spacing for HEADER, MAIN, FOOTER, & selectors
-// ** The max-width property & the 2 vars that are set with it
-// ** Indentation for the list elements (OL, UL, & LI)
-// ** Horizontal spacing for other block-level elements
-// *** The text-align property for any block-level elements
-// *** Horizontal spacing for DIV.dek
-//
-// * Internals for block-level elements (about 100 lines)
-// ** Headings, asterisms, & rule lines: internals
-// ** PRE, CODE, SAMP, & KBD: internals
-// ** Elements for lists (OL, UL, & LI): internals
-// ** The HR element
-//
-// * Span-level elements & classes
-// ** Design hints (shown only in Heath mode)
-// ** All derived from "lettered strings"
-// ** Typically oblique
-// ** Typically quoted (BLOCKQUOTE appears here too)
-//
-// * Font-family assignments (except for ...
-// ** Font-family for title
-// ** CSS lets you specify a generic font-family ...
-//
-// * Setting the color property for * when the mini-theme is monochrome
-//
-// * Selectors
-// ** The 5x2 grid of radio buttons to select a mini-theme
-// ** The row of radio buttons to select a mono-color
-// ** Heath toggle (see also toggle.html)
+/* Table Of Contents
 
+   * Variables 
+   ** Variables duplicated in vars-custom.scss and custom.scss 
+   ** Variables internal to this file (custom.scss)
+
+   * Vertical spacing (about 183 lines)
+   ** Vertical spacing for selectors
+   ** External vertical spacing for DIV.asterism-*
+   ** Vertical spacing for H2, H3, H4, & DIV.rule-line-below-*
+   ** Vertical spacing for other block-level elements
+
+   * Horizontal spacing & alignment (about 303 lines)
+   ** Horizontal spacing for HEADER, MAIN, FOOTER, & selectors
+   ** The max-width property & the 2 vars that are set with it
+   ** Indentation for the list elements (OL, UL, & LI)
+   ** Horizontal spacing for other block-level elements
+   *** The text-align property for any block-level elements
+   *** Horizontal spacing for DIV.dek
+
+   * Internals for block-level elements (about 100 lines)
+   ** Headings, asterisms, & rule lines: internals
+   ** PRE, CODE, SAMP, & KBD: internals
+   ** Elements for lists (OL, UL, & LI): internals
+   ** The HR element
+
+   * Span-level elements & classes
+   ** Design hints (shown only in Heath mode)
+   ** All derived from "lettered strings"
+   ** Typically oblique
+   ** Typically quoted (BLOCKQUOTE appears here too)
+
+   * Font-family assignments (except for ...
+   ** Font-family for title
+   ** CSS lets you specify a generic font-family ...
+
+   * Setting the color property for * when the mini-theme is monochrome
+
+   * Selectors
+   ** The 5x2 grid of radio buttons to select a mini-theme
+   ** The row of radio buttons to select a mono-color
+   ** IGT toggle (see also toggle.html)
+   ** Heath toggle (see also toggle.html)
+
+*/
 
 /* +----------------------+
    |                      |
@@ -1065,6 +1067,9 @@ body > div.nojs-mini-themed > footer {
    |  Start of font-family assignments (except for the   |
    |  asterism-... classes, & the elements PRE & CODE)   |
    |                                                     |
+   |  The labels in DIV.js-row-of-toggles are styled     |
+   |  in toggle.html.                                    |
+   |                                                     |
    +-----------------------------------------------------+
 */
 
@@ -1469,11 +1474,10 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
 
 /* =====================
-   Start of font toggle. See also toggle.html. This mixin prevents the two
-   styles from becoming swapped when the page loads with the toggle in the
-   "wrong" setting:
+   IGT toggle
 
-   This selector DOES use JavaScript (TODO: refactor without JS)
+   This selector DOES rely on JavaScript, which is in toggle.html
+   (TODO: refactor without JS).
    =====================
 */
 
@@ -1482,34 +1486,44 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
   @if $igt-toggle {
 
+    .nojs-mini-themed {
+      rt {
+        color: red;
+      } 
+    }
+
   } @else {
 
-    rt { display: none; }
+    .nojs-mini-themed {
+      rt { 
+        display: none;
+      }
+    }
 
   } // End of the ELSE clause
 
 } // End of @mixin igt-toggle-mixin
-body.serif-mode, // TODO RESUME
-body.serif-mode header *,
-body.serif-mode main * {
-  // Without the inclusion, the styles 
-  // may get swapped on a page reload:
+
+/* The @include statement in each of the 2 following blocks prevents the 2
+   classes (igt-mode-on & igt-mode-off) from becoming swapped when the page
+   reloads. Without these 2 inclusions, you will occasionally find that the
+   slider button's "on" position turns IGT off, and vice-versa.
+*/
+
+body.igt-mode-on {
   @include igt-toggle-mixin($igt-toggle: true);
 }
 
-body.sans-mode,
-body.sans-mode header *,
-body.sans-mode main * {
-  // Without the inclusion, the styles 
-  // may get swapped on a page reload:
+body.igt-mode-off {
   @include igt-toggle-mixin($igt-toggle: false);
 }
 
 
 /* =====================
-   Heath toggle (see also toggle.html)
+   Heath toggle
 
-   This selector DOES use JavaScript (TODO: refactor without JS)
+   This selector DOES rely on JavaScript, which is in toggle.html
+   (TODO: refactor without JS).
    =====================
 */
 
