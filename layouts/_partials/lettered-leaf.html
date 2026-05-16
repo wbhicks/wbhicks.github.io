@@ -47,7 +47,7 @@
        which means that it doesn't contain any nested lettered strings. This is
        enforced in the template that calls this one, prefixed-or-lettered.html.
 
-       Current codes for lettered strings: a b c f l m n q s t w
+       Current codes for lettered strings: a b c f l m n q r s t w
 
        ====================
 */ -}}
@@ -168,6 +168,17 @@
       `TMPLT_LSMPLQ ` 
       $the_content 
       ` TMPLT_RSMPLQ`
+      ) 
+  }}
+{{ else if (eq $classifier "r") }}
+{{- /* CASE r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
+
+*/ -}}
+  {{ $result = (add 
+      `TMPLT_LRUBY1 `
+      $the_content 
+      `TMPLT_LRUBYT hi TMPLT_RRUBYT`
+      ` TMPLT_RRUBY1`
       ) 
   }}
 {{ else if (eq $classifier "s") }}

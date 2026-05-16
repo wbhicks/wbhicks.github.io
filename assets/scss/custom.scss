@@ -858,7 +858,7 @@ body > div.nojs-mini-themed > footer {
    All derived from "lettered strings"
 
    The current codes for lettered strings, used in the template
-   lettered-leaf.html, are as follows: a b c f l m n q s t w
+   lettered-leaf.html, are as follows: a b c f l m n q r s t w
 
    There is a 1-to-1 correspondence between them and this section's
    declaration blocks, EXCEPT for cite.special-citation (which is TBD).
@@ -897,6 +897,11 @@ body > div.nojs-mini-themed > footer {
   }
   main q { // ≤q
   }
+
+  // Case r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
+  main ruby > rt { // ≤r
+  }
+
   i.so-called { // ≤s
   }
   main abbr { // ≤t

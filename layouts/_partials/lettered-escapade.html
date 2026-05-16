@@ -67,6 +67,14 @@ end of comment was here
                              `<q>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSMPLQ`
                              `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LRUBY1 `
+                             `<ruby>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RRUBY1`
+                             `</ruby>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LRUBYT `
+                             `<rt>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RRUBYT`
+                             `</rt>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LFREGN `
                              `<i class="foreign">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RFREGN` `</i>`  $theContent }}
