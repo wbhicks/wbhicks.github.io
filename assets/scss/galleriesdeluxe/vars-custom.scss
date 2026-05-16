@@ -1,4 +1,5 @@
-/* I've mostly abandoned this stylesheet ( assets/ scss/ 
+/* =====================
+   I've mostly abandoned this stylesheet ( assets/ scss/ 
    galleriesdeluxe/ vars-custom.scss ) in favor of its uncle 
    custom.scss. However, the 5 color variables below are used 
    by Galleries Deluxe and if you want to customize them then 
@@ -19,43 +20,35 @@
    cause the font customizations to take effect as soon as 
    the page is loaded, even before the user touches the
    font toggle.
+   =====================
 */
 
-/* +------------------------------------+
-   |                                    |
-   |  Start of variables duplicated in  |
-   |  vars-custom.scss and custom.scss  |
-   |                                    |
-   +------------------------------------+
+
+/* =====================
+   Variables duplicated in vars-custom.scss and custom.scss
+
+   `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
+
+   The Galleries Deluxe default for color_primary is #3a98b9. It applies
+   to the A element. 
+
+   The lightness of $color_background automatically determines which of
+   $color-text_light or $color-text_dark is used.
+   =====================
 */
 
-// The Galleries Deluxe default for color_primary is #3a98b9
 
-$color_primary: #ccae8f; // applies to element A (URLs, links)
-$color_background: #141414; // was #0e0e0e
+$color_primary: #ccae8f;
+$color_background: #141414;
 $color_background_footer: #171717; // was darken(#111, 3%);
 
-// The lightness of color_background
-// determines which of these two is used:
+$color-text_light: #ffe0cc;
 
-$color-text_dark: #000;
-$color-text_light: #ffe0cc; // was #ccc2b8
-
-/* I'm treating Courier as sans-serif even though it's not (it's slab-serif),
-   because it's monospaced. TODO: make UI label say "mono" instead of "sans"
+/* Unused, because my $color_background is darker than a certain
+   threshhold:
+   $color-text_dark: #000;
 */
-$font_family_serif: 
-  Georgia, Charter, "Bitstream Charter", serif !default;
-$font_family_sans_serif: 
-  Monaco, Courier, "Liberation Mono", "Courier New", monospace, sans_serif !default;
 
-/* In Galleries Deluxe:
+/* In Galleries Deluxe only, unchanged here:
    $font_size_base: 16px !default;
-*/
-
-/* +-------------------------------+
-   |                               |
-   |  End of duplicated variables  |
-   |                               |
-   +-------------------------------+
 */

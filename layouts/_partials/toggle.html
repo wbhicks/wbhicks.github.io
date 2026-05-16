@@ -162,14 +162,14 @@ switcher.addEventListener("click", function() {
   this.classList.add('js-toggle-for-heath--focus');
   //If dark mode is selected
   if (this.classList.contains('js-toggle-for-heath--checked')) {
-    body.classList.remove('dev-mode');
-    body.classList.add('qa-mode');
+    body.classList.remove('heath-mode-off');
+    body.classList.add('heath-mode-on');
     // Save user preference in storage
     // localStorage.setItem('liteMode', 'false');
     localStorage.setItem('darkMode', 'true');
   } else {
-    body.classList.remove('qa-mode');
-    body.classList.add('dev-mode');
+    body.classList.remove('heath-mode-on');
+    body.classList.add('heath-mode-off');
     setTimeout(function() {
       localStorage.removeItem('darkMode');
     }, 100);
@@ -177,10 +177,9 @@ switcher.addEventListener("click", function() {
 })
 // Check Storage. Keep user preference on page reload
 if (localStorage.getItem('darkMode')) {
-  // body.classList.add('qa-mode');
   switcher.classList.add('js-toggle-for-heath--checked');
-  body.classList.remove('dev-mode');
-  body.classList.add('qa-mode');
+  body.classList.remove('heath-mode-off');
+  body.classList.add('heath-mode-on');
 }
 </script>
 

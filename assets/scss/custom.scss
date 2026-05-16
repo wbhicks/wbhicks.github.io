@@ -1,14 +1,17 @@
 // Table Of Contents
 //
-// * Variables duplicated in vars-custom.scss and custom.scss (this file)
+// * Variables 
+// ** Variables duplicated in vars-custom.scss and custom.scss 
+// ** Variables internal to this file (custom.scss)
 //
 // * Vertical spacing (about 183 lines)
+// ** Vertical spacing for selectors
 // ** External vertical spacing for DIV.asterism-*
 // ** Vertical spacing for H2, H3, H4, & DIV.rule-line-below-*
 // ** Vertical spacing for other block-level elements
 //
 // * Horizontal spacing & alignment (about 303 lines)
-// ** Horizontal spacing for HEADER, MAIN, & FOOTER
+// ** Horizontal spacing for HEADER, MAIN, FOOTER, & selectors
 // ** The max-width property & the 2 vars that are set with it
 // ** Indentation for the list elements (OL, UL, & LI)
 // ** Horizontal spacing for other block-level elements
@@ -32,30 +35,85 @@
 // ** CSS lets you specify a generic font-family ...
 //
 // * Setting the color property for * when the mini-theme is monochrome
+//
+// * Selectors
+// ** The 5x2 grid of radio buttons to select a mini-theme
+// ** The row of radio buttons to select a mono-color
+// ** Heath toggle (see also toggle.html)
 
 
-/* +------------------------------------+
-   |                                    |
-   |  Start of variables duplicated in  |
-   |  vars-custom.scss and custom.scss  |
-   |                                    |
-   +------------------------------------+
+/* +----------------------+
+   |                      |
+   |  Start of variables  |
+   |                      |
+   +----------------------+
 */
 
 
-// The lightness of $color_background
-// determines which of these two is used:
+/* =====================
+   Variables duplicated in vars-custom.scss and custom.scss
 
-$color-text_dark: #000; // TODO DELETE, UNUSED
-$color-text_light: #ffe0cc; // was #ccc2b8
+   `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
+
+   The Galleries Deluxe default for color_primary is #3a98b9. It applies
+   to the A element. 
+
+   The lightness of $color_background automatically determines which of
+   $color-text_light or $color-text_dark is used.
+   =====================
+*/
 
 
-/* +------------------------------------+
-   |                                    |
-   |  End of variables duplicated in    |
-   |  vars-custom.scss and custom.scss  |
-   |                                    |
-   +------------------------------------+
+$color_primary: #ccae8f;
+$color_background: #141414;
+$color_background_footer: #171717; // was darken(#111, 3%);
+
+$color-text_light: #ffe0cc;
+
+/* Unused, because my $color_background is darker than a certain
+   threshhold:
+   $color-text_dark: #000;
+*/
+
+/* In Galleries Deluxe only, unchanged here:
+   $font_size_base: 16px !default;
+*/
+
+
+/* =====================
+   Variables internal to this file (custom.scss)
+
+   The following colors are not defined in Galleries Deluxe, so they don't
+   need to be duplicated in vars-custom.scss. I used to define them as
+   Hugo-level variables (e.g. $color_code_border) but then switched to CSS
+   variables (e.g. --color-code-border). This change necessitated wrapping
+   them in a "* { ... }".
+   =====================
+*/
+
+
+* {
+
+  --color-code-border: #808080;
+
+  --color-button-foreground-unselected: #ccc;
+  --color-button-background-unselected: #333;
+  --color-button-foreground-selected: $color_primary;
+
+  // was #335170, which is the RGB opposite of #ccae8f ($color_primary)
+  --color-button-background-selected: #000000;
+
+  /* Doesn't work: never fills entire background. Setting $color_background
+     directly (conditionally, in blocks with :checked) doesn't work either.
+     --color-mono-background: $color_background;
+  */
+
+}
+
+
+/* +--------------------+
+   |  End of variables  |
+   +--------------------+
 */
 
 
@@ -68,17 +126,30 @@ $color-text_light: #ffe0cc; // was #ccc2b8
 
 
 /* =====================
+   Vertical spacing for selectors
+   =====================
+*/
+
+
+body > div.nojs-mini-themed > table.mini-theme-selector-table,
+body > div.nojs-mini-themed > div.mono-color-selector {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+
+/* =====================
    External vertical spacing for DIV.asterism-*
 
    Because some asterisms are multi-line, internal vertical spacing is
    relevant. See the section "Asterisms and rule lines: internals".
 
    When a heading is sandwiched between asterisms, there should be a total of
-   2rem between the asterism and the heading it decorates. This can be done 
+   2rem between the asterism and the heading it decorates. This can be done
    with (1) padding-top and/or padding-bottom, or else (2) margins instead.
 
    Because the MAIN element does not (currently) feature "margin collapsing",
-   the two approaches above (padding-* vs. margin-*) result in the same 
+   the two approaches above (padding-* vs. margin-*) result in the same
    vertical spacing.[1]
 
    "Margins don't collapse in a container with display set to flex or grid."
@@ -98,9 +169,10 @@ $color-text_light: #ffe0cc; // was #ccc2b8
 
 .nojs-mini-themed {
 
-  // Replaced this dual-purpose var ...
-  // --spacing-for-the-asterism-side-that-faces-the-h: 1rem;
-  // ... with these 2 vars:
+  /* Replaced this dual-purpose var ...
+     --spacing-for-the-asterism-side-that-faces-the-h: 1rem;
+     ... with these 2 vars:
+  */
   --spacing-for-bottom-of-asterism-above: 0;
   --spacing-for-top-of-asterism-below: 2rem;
 
@@ -146,7 +218,7 @@ $color-text_light: #ffe0cc; // was #ccc2b8
    Otherwise, there would be a gap between a heading and its rule line.
    (For the same reason, margin-top for rule lines shall be zero.)
 
-   As a consequence, the spacing between a heading and its following 
+   As a consequence, the spacing between a heading and its following
    asterism must be handled solely by
 
    `.asterism-below-hDIGIT { margin-top: ...`
@@ -189,12 +261,10 @@ $color-text_light: #ffe0cc; // was #ccc2b8
 
 
 .nojs-mini-themed {
+
   main {
     line-height: 1.5;
   }
-} // End of .nojs-mini-themed
-
-.nojs-mini-themed {
 
   --margin-top-or-bottom: 1rem;
 
@@ -202,37 +272,30 @@ $color-text_light: #ffe0cc; // was #ccc2b8
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-
   main > div.dek {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-
   main > div.fisheye-means-rightmost {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-
   main > div.url-line {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-
   main > figure > blockquote > p {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-
   main > figure > figcaption {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-
   main > pre {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-
   main > h5 {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
@@ -256,7 +319,7 @@ $color-text_light: #ffe0cc; // was #ccc2b8
 
 
 /* =====================
-   Horizontal spacing for HEADER, MAIN, & FOOTER
+   Horizontal spacing for HEADER, MAIN, FOOTER, & selectors
 
    For MAIN, margin-left & margin-right are each sufficient to ruin the
    desired centering of MAIN (referring here to MAIN as a block, not to the
@@ -267,6 +330,12 @@ $color-text_light: #ffe0cc; // was #ccc2b8
    =====================
 */
 
+
+body > div.nojs-mini-themed > table.mini-theme-selector-table,
+body > div.nojs-mini-themed > div.mono-color-selector {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 body > div.nojs-mini-themed > header {
   margin-left: 1rem;
@@ -292,7 +361,7 @@ body > div.nojs-mini-themed > footer {
 
      Above, for the MAIN element, a 1rem padding has been set on each
      side. To compensate (approximately) for the resulting 2rem of
-     unusable  width, I've added 4ch to each of the max-width values 
+     unusable  width, I've added 4ch to each of the max-width values
      below. (It seems that, at least in a monospace font, a rem is about
      twice as wide as a ch. This is for horizontal comparisons only.)
 
@@ -375,7 +444,7 @@ body > div.nojs-mini-themed > footer {
             Impact? TODO)
 
    ... but its effect on lists is calculated using the left edge of the
-   content (of the top-level list items), NOT the left edge of their 
+   content (of the top-level list items), NOT the left edge of their
    bullets or numbers. See https://developer.mozilla.org/en-US/docs/Lea
    rn_web_development/Core/Text_styling/Styling_lists
 
@@ -400,8 +469,8 @@ body > div.nojs-mini-themed > footer {
        p.s.: Unordered lists seem to be unaffected by the choice between
        proportional and fixed-width fonts.
 
-   [2] For ordered lists, the padding-left or margin-left value should be 
-       bigger if a list might have more than 9 top-level items, to 
+   [2] For ordered lists, the padding-left or margin-left value should be
+       bigger if a list might have more than 9 top-level items, to
        accommodate double-digit numbering.
 
    If you prefer to use margin-left, try these values at a minimum:
@@ -410,7 +479,7 @@ body > div.nojs-mini-themed > footer {
      ol { margin-left: 2.6rem; }
 
    Margin-left breaks inherited right margins, i.e. it causes long list items
-   to extend beyond whatever boundary has been set via an inherited 
+   to extend beyond whatever boundary has been set via an inherited
    margin-right. To fix this side-effect, use padding-right too, e.g.
 
      ul, ol { padding-right: 1rem; } // 1rem should be enough
@@ -433,9 +502,10 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed {
 
   ol {
-    // A padding-left value of 1.4rem is enough for proportional fonts, but
-    // for monospace fonts I've found I need 2.2rem. The discrepancy arises
-    // with ordered lists only.
+    /* A padding-left value of 1.4rem is enough for proportional fonts,
+       but for monospace fonts I've found I need 2.2rem. The discrepancy
+       arises with ordered lists only.
+    */
     padding-left: 2.2rem;
   }
 
@@ -443,9 +513,10 @@ body > div.nojs-mini-themed > footer {
     padding-left: 0.9rem;
   }
 
-  // Improves nested indentation for 
-  // proportional fonts, but ruins monospace:
-  // ol > li > ol { padding-left: 1.5rem; }
+  /* Improves nested indentation for proportional fonts, but 
+     ruins monospace:
+     ol > li > ol { padding-left: 1.5rem; }
+  */
 
 } // End of .nojs-mini-themed
 
@@ -465,14 +536,16 @@ body > div.nojs-mini-themed > footer {
   }
 
   main > figure > blockquote > p {
-    // `hyphens: auto` requires, e.g., `<html lang="en-us">`
-    // in the HTML source (which my Hugo configuration provides)
-    // hyphens: auto;
+    /* `hyphens: auto` requires, e.g., `<html lang="en-us">`
+       in the HTML source (which my Hugo configuration provides)
+       hyphens: auto;
+    */
   }
 
   main > pre {
-    // Use padding-left instead of margin-left, for same reason as OL & UL.
-    // "nowrap" has been set for all PRE elements, so padding-right is moot.
+    /* Use padding-left instead of margin-left, for same reason as OL & UL.
+       "nowrap" has been set for all PRE elements, so padding-right is moot.
+    */
     padding-left: var(--padding-left-sensitive-to-max-width);
   }
 
@@ -483,7 +556,7 @@ body > div.nojs-mini-themed > footer {
    The text-align property for any block-level elements
 
    Currently, this is DIV.fisheye-means-rightmost & some headings.
-   H1 doesn't appear (except for the page title, which is in the 
+   H1 doesn't appear (except for the page title, which is in the
    HEADER), & H5 is styled separately.
    ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
@@ -502,8 +575,8 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
-  main > h2.h2-from-1star, 
-  main > h3.h3-from-2stars, 
+  main > h2.h2-from-1star,
+  main > h3.h3-from-2stars,
   main > h4.h4-from-3stars {
     text-align: center;
   }
@@ -514,7 +587,7 @@ body > div.nojs-mini-themed > footer {
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
    Horizontal spacing for DIV.dek
 
-   Unlike other block-level elements, these use max-width instead of 
+   Unlike other block-level elements, these use max-width instead of
    padding or margin. The hyphens property is included here because it
    becomes more desirable as the text gets narrower.
    ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -651,14 +724,14 @@ body > div.nojs-mini-themed > footer {
 
    "<pre> elements commonly contain <code>, <samp>, and <kbd> elements, to
    represent computer code, computer output, and user input, respectively.
-   ... To represent multiple lines of code, wrap the <code> element within 
-   a <pre> element. The <code> element by itself only represents a single 
+   ... To represent multiple lines of code, wrap the <code> element within
+   a <pre> element. The <code> element by itself only represents a single
    phrase of code or line of code."
 
    Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Refe
            rence/Elements/pre
 
-   In CommonMark (and therefore Goldmark): use a pair of ```'s for 
+   In CommonMark (and therefore Goldmark), use a pair of ```'s for
    <pre><code>, and use <pre> itself for <pre> without a following <code>.
    However, <pre> without <code> isn't monospace by default.
    =====================
@@ -669,10 +742,9 @@ body > div.nojs-mini-themed > footer {
 
   main > pre {
     white-space-collapse: preserve;
-    font-family: monospace !important;
+    font-family: monospace !important; // TODO See if all !'s are still reqd.
     text-wrap-mode: nowrap;
   }
-
 
   main code {
     white-space-collapse: preserve;
@@ -710,8 +782,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed {
 
   ol {
-    // Override assignment of "disc" in styles.scss, which
-    // would make ol's resemble ul's:
+    /* Override assignment of "disc" in styles.scss, which would make ol's
+       resemble ul's:
+    */
     list-style-type: decimal !important;
   }
 
@@ -741,7 +814,7 @@ body > div.nojs-mini-themed > footer {
 
    `hr {all: revert;}` makes HRs (except for the two framing the title)
    shrink to a point, because it disables the browser's styling. Oddly,
-   `* {all: revert;}` doesn't affect HRs. Also, the Mozilla docs imply 
+   `* {all: revert;}` doesn't affect HRs. Also, the Mozilla docs imply
    that using revert here should NOT affect browser styles.
 
    Source: https://developer.mozilla.org/en-US/docs/Web/CSS/Refe
@@ -982,9 +1055,7 @@ body > div.nojs-mini-themed > footer {
 
 
 /* +----------------------------------------+
-   |                                        |
    |  End of span-level elements & classes  |
-   |                                        |
    +----------------------------------------+
 */
 
@@ -1004,10 +1075,10 @@ body > div.nojs-mini-themed > footer {
 */
 
 
-//body > 
-//  div.nojs-mini-themed > 
-//    header > 
-//      div.the-div-child-of-the-header > 
+//body >
+//  div.nojs-mini-themed >
+//    header >
+//      div.the-div-child-of-the-header >
 //        h1 {
 //  font-family: "Futura Medium" !important;
 //}
@@ -1023,7 +1094,7 @@ body > div.nojs-mini-themed > footer {
    Monaco
      Classification: monospaced, sans-serif
      Designer: Susan Kare, Kris Holmes, and Charles Bigelow
-     License: Apple Inc. 
+     License: Apple Inc.
 
    Cousine
      Classification: monospaced, sans-serif, neo-grotesque
@@ -1050,8 +1121,8 @@ body > div.nojs-mini-themed > footer {
      Designer: Howard "Bud" Kettler (1919–1999)
      License: none needed (public domain)
 
-   Unlike those above, the following is proportional rather than
-   monospaced:
+   Unlike those above, Canada 1500 is proportional rather than
+   monospaced. Mentioning here as I might bundle it for titles:
 
    Canada 1500
      https://typodermicfonts.com/canada1500/
@@ -1064,6 +1135,8 @@ body > div.nojs-mini-themed > footer {
    --font-family-proportional-serif: Georgia;
    --font-family-monospaced-sans-serif: Monaco;
    --font-family-monospaced-serif: Courier;
+
+   monospaced for Windows: Courier New is serif, Consolas is sans-serif
 
    TODO: Inter (which is proportional only), from https://rsms.me/inter/
    =====================
@@ -1136,7 +1209,7 @@ body > div.nojs-mini-themed > footer {
    |                                           |
    |  Start of setting the color property      |
    |  for * when the mini-theme is monochrome  |
-   |TODO lint                                           |
+   |                                           |
    +-------------------------------------------+
 */
 
@@ -1145,22 +1218,27 @@ body > div.nojs-mini-themed > footer {
   --color-when-mini-theme-is-monochrome: $color-text_light;
 }
 
-.nojs-mini-themed:has(#nojs-mono-color-off:checked) {
-  // See also .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked), below
-  * { 
+.nojs-mini-themed:has(#nojs-mono-color-default:checked) {
+  * {
     --color-when-mini-theme-is-monochrome: $color-text_light;
   }
 }
 
 .nojs-mini-themed:has(#nojs-mono-color-535:checked) {
-  // 535nm (P31 phosphor, #70ff00. A source reported its wavelength as
-  // being 10nm longer than P1)
-  * { --color-when-mini-theme-is-monochrome: #70ff00; }
+    /* 535nm (P31 phosphor, #70ff00. A source reported its wavelength
+       as being 10nm longer than P1.)
+    */
+  * {
+    --color-when-mini-theme-is-monochrome: #70ff00;
+  }
 }
 
 .nojs-mini-themed:has(#nojs-mono-color-602:checked) {
-  // 602nm (P3 phosphor). For comparison, goldenrod is #daa520
-  * { --color-when-mini-theme-is-monochrome: #ffb700; }
+    /* 602nm (P3 phosphor). For comparison, goldenrod is #daa520.
+    */
+  * {
+    --color-when-mini-theme-is-monochrome: #ffb700;
+  }
 }
 
 //.nojs-mini-themed:has(#nojs-mono-color-602-blur:checked) {
@@ -1169,7 +1247,7 @@ body > div.nojs-mini-themed > footer {
 //
 //    // offset-x | offset-y | blur-radius | color
 //
-//    // 10px rather than 1px, just to help my unsuccessful (and 
+//    // 10px rather than 1px, just to help my unsuccessful (and
 //    // abandoned) debugging:
 //    text-shadow: 0px 0px 10px #ffb700;
 //  }
@@ -1186,44 +1264,339 @@ body > div.nojs-mini-themed > footer {
   }
 
   a, .galleries a {
-    text-decoration: #f7d17f80 underline solid; // dotted;
+    text-decoration: #f7d17f80 underline dotted;
   }
 
 }
 
 .nojs-mini-themed:has(#nojs-mono-color-uscurrency:checked) {
-
   * {
     --color-when-mini-theme-is-monochrome: #85bb65;
   }
-
 }
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
-  // See also .nojs-mini-themed:has(#nojs-mono-color-off:checked), above
+
   * {
     color: var(--color-when-mini-theme-is-monochrome);
   }
+
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
   div.mono-color-selector,
   div.mono-color-selector * {
     color: $color-text_light;
   }
+
 }
 
-// No longer used here: 505nm (P24 phosphor, #00ff54)
-// No longer used here: 525nm (P1 phosphor, #4aff00)
-// No longer used here: #b8860b darkgoldenrod
-// No longer used here: #ffe4b5 moccasin
-// For comparison only: #00ff00 is 510nm
+/* No longer used here: 505nm (P24 phosphor, #00ff54)
+   No longer used here: 525nm (P1 phosphor, #4aff00)
+   No longer used here: #b8860b darkgoldenrod
+   No longer used here: #ffe4b5 moccasin
+   For comparison only: #00ff00 is 510nm
+*/
 
 
 /* +-------------------------------------------+
-   |                                           |
    |  End of setting the color property        |
    |  for * when the mini-theme is monochrome  |
-   |                                           |
    +-------------------------------------------+
+*/
+
+
+/* +----------------------+
+   |                      |
+   |  Start of selectors  |
+   |                      |
+   +----------------------+
+*/
+
+
+/* =====================
+   The 5x2 grid of radio buttons to select a mini-theme
+
+   This selector does NOT use JavaScript
+   =====================
+*/
+
+table.mini-theme-selector-table {
+  border: 1px solid;
+}
+
+table.mini-theme-selector-table > caption {
+  padding: 0.5rem 0;
+}
+
+table.mini-theme-selector-table > thead > tr > th {
+  width: 16%;
+  padding: 0.5rem 0;
+}
+
+table.mini-theme-selector-table > tbody > tr > td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table.mini-theme-selector-table > tbody > tr > td > input {
+  -webkit-appearance: revert;
+  height: 1rem;
+  // accent-color: red;
+}
+
+/*
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked)
+      label[for="nojs-quote-style-serif-rococo"],
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked)
+      label[for="nojs-quote-style-serif-book"],
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
+      label[for="nojs-quote-style-serif-minimal"],
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked)
+      label[for="nojs-quote-style-serif-seventy-four"],
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-serif-seventy-four-monochrome"],
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
+      label[for="nojs-quote-style-rococo"],
+.nojs-mini-themed:has(#nojs-quote-style-book:checked)
+      label[for="nojs-quote-style-book"],
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
+      label[for="nojs-quote-style-minimal"],
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked)
+      label[for="nojs-quote-style-seventy-four"],
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-seventy-four-monochrome"] {
+
+  color: var(--color-button-foreground-selected);
+  background: var(--color-button-background-selected);
+
+}
+*/
+
+/*
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked)
+      label[for="nojs-quote-style-serif-rococo"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked)
+      label[for="nojs-quote-style-serif-book"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
+      label[for="nojs-quote-style-serif-minimal"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked)
+      label[for="nojs-quote-style-serif-seventy-four"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-serif-seventy-four-monochrome"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
+      label[for="nojs-quote-style-rococo"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-book:checked)
+      label[for="nojs-quote-style-book"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
+      label[for="nojs-quote-style-minimal"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked)
+      label[for="nojs-quote-style-seventy-four"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-seventy-four-monochrome"]::before {
+
+  content: "✓";
+
+}
+*/
+
+
+/* =====================
+   The row of radio buttons to select a mono-color
+
+   This selector does NOT use JavaScript
+   =====================
+*/
+
+
+.mono-color-selector label {
+
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  // font-weight: bold;
+  transition: background 0.5s;
+  color:      var(--color-button-foreground-unselected);
+  background: var(--color-button-background-unselected);
+
+}
+
+.nojs-mini-themed:has(#nojs-mono-color-default:checked)
+      label[for="nojs-mono-color-default"],
+.nojs-mini-themed:has(#nojs-mono-color-535:checked)
+      label[for="nojs-mono-color-535"],
+.nojs-mini-themed:has(#nojs-mono-color-602:checked)
+      label[for="nojs-mono-color-602"],
+.nojs-mini-themed:has(#nojs-mono-color-brooklyn:checked)
+      label[for="nojs-mono-color-brooklyn"],
+.nojs-mini-themed:has(#nojs-mono-color-uscurrency:checked)
+      label[for="nojs-mono-color-uscurrency"] {
+
+  color: var(--color-button-foreground-selected);
+  background: var(--color-button-background-selected);
+  border: 2px solid $color-text_light;
+
+}
+
+.nojs-mini-themed:has(#nojs-mono-color-default:checked)
+      label[for="nojs-mono-color-default"]::before,
+.nojs-mini-themed:has(#nojs-mono-color-535:checked)
+      label[for="nojs-mono-color-535"]::before,
+.nojs-mini-themed:has(#nojs-mono-color-602:checked)
+      label[for="nojs-mono-color-602"]::before,
+.nojs-mini-themed:has(#nojs-mono-color-brooklyn:checked)
+      label[for="nojs-mono-color-brooklyn"]::before,
+.nojs-mini-themed:has(#nojs-mono-color-uscurrency:checked)
+      label[for="nojs-mono-color-uscurrency"]::before {
+
+  content: "✓ ";
+
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
+
+  .mono-color-selector {
+    display: none;
+  }
+
+}
+
+
+/* =====================
+   Start of font toggle. See also toggle.html. This mixin prevents the two
+   styles from becoming swapped when the page loads with the toggle in the
+   "wrong" setting:
+
+   This selector DOES use JavaScript (TODO: refactor without JS)
+   =====================
+*/
+
+
+@mixin igt-toggle-mixin($igt-toggle: true) {
+
+  @if $igt-toggle {
+
+  } @else {
+
+    rt { display: none; }
+
+  } // End of the ELSE clause
+
+} // End of @mixin igt-toggle-mixin
+body.serif-mode, // TODO RESUME
+body.serif-mode header *,
+body.serif-mode main * {
+  // Without the inclusion, the styles 
+  // may get swapped on a page reload:
+  @include igt-toggle-mixin($igt-toggle: true);
+}
+
+body.sans-mode,
+body.sans-mode header *,
+body.sans-mode main * {
+  // Without the inclusion, the styles 
+  // may get swapped on a page reload:
+  @include igt-toggle-mixin($igt-toggle: false);
+}
+
+
+/* =====================
+   Heath toggle (see also toggle.html)
+
+   This selector DOES use JavaScript (TODO: refactor without JS)
+   =====================
+*/
+
+
+@mixin heath-toggle-mixin($heath-toggle: true) {
+
+  @if $heath-toggle {
+
+    // The URL link icon, images/link-external-small-ltr-progressive.svg,
+    // has color #4065c5, and this line applies the same to the link itself:
+    a            { color: #4065c5; } // else color_primary
+    .galleries a { color: #0ff; }    // else color_primary
+    h1, h5       { color: #c00; }    // else color-text_ ...
+    // p            { color: #ff0; } // else color-text_ ...
+
+    main > div.asterism-above-h2,
+    main > div.asterism-below-h2,
+    main > div.asterism-above-h3,
+    main > div.asterism-below-h3,
+    main > div.asterism-above-h4,
+    main > div.asterism-below-h4 { color: #777; }
+
+    cite.book-title         { text-decoration: #00cccc overline     double; }
+    cite.like-book-title    { text-decoration: #00cccc line-through dotted; }
+    cite.article-title      { text-decoration: #00cccc underline    solid;  }
+    cite.like-article-title { color: blue; }
+    cite.media-title        { text-decoration: #00cccc line-through dotted; }
+    cite.special-citation   { text-decoration: #00cccc line-through dashed; }
+
+    i.term       { text-decoration: #00cccc overline dashed; }
+    i.so-called  { text-decoration: #00cccc overline wavy;   }
+    i.nickname   { text-decoration: #00cccc overline dotted; }
+    abbr         { text-decoration: #00cccc overline solid; }
+
+    main > h2.h2-from-1star,
+    main > h3.h3-from-2stars,
+    main > h4.h4-from-3stars {
+      border-left: 2px solid white;
+    }
+
+    main > div.asterism-above-h2,
+    main > div.asterism-below-h2,
+    main > div.asterism-above-h3,
+    main > div.asterism-below-h3,
+    main > div.asterism-above-h4,
+    main > div.asterism-below-h4 {
+      border-left: 1px solid gray;
+    }
+    div.fisheye-means-rightmost {
+      border-left: 2px solid #008080;
+    }
+    main > figure {
+      border-left: 2px solid blue;
+    }
+    .commentary {
+      border-left: 2px solid orange;
+    }
+    div.dek {
+      border-left: 2px solid yellow;
+    }
+    h5 {
+      border-left: 2px solid violet;
+    }
+    main > pre {
+      border-left: 2px solid green;
+    }
+
+    .design-hint {
+      display: revert;
+      border: 1px dotted red;
+      border-radius: 3px;
+    }
+
+  } // End of @if $heath-toggle
+
+} // End of @mixin heath-toggle-mixin
+
+body.heath-mode-on {
+  @include heath-toggle-mixin($heath-toggle: true);
+}
+
+body.heath-mode-off {
+  @include heath-toggle-mixin($heath-toggle: false);
+}
+
+
+/* +--------------------+
+   |  End of selectors  |
+   +--------------------+
 */
