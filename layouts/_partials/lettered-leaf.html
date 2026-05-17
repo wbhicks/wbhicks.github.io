@@ -3,6 +3,7 @@
 
 {{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
+{{ $the_ruby := "ERR!" }}
 
 {{- /* ====================
 
@@ -173,11 +174,20 @@
 {{ else if (eq $classifier "r") }}
 {{- /* CASE r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
 
+
+  {{ range first 1 hugo.Data.rubellite.phonetic "k" "the" }}
+
+
 */ -}}
+  {{ range where hugo.Data.rubellite.phonetic "k" $the_content }}
+    {{ $the_ruby = .v }}
+  {{ end }}
   {{ $result = (add 
       `TMPLT_LRUBY1 `
       $the_content 
-      `TMPLT_LRUBYT hi TMPLT_RRUBYT`
+      `TMPLT_LRUBYT `
+      $the_ruby
+      ` TMPLT_RRUBYT`
       ` TMPLT_RRUBY1`
       ) 
   }}
