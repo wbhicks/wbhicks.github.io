@@ -36,6 +36,9 @@
          | - - narrow-headlines.html
          |     Breaks each heading into 2 equal lengths.
          |
+         | - - apply-ruby-features.html
+         |     Wrap some words: <ruby> before, <rt>...</rt></ruby> after.
+         |
          | - - lettered-escapade.html
                Restores hazardous chars & tags.
 
@@ -58,6 +61,9 @@
       (dict "the_content" $allText "debug_or_qa" "qa")) }}
 
   {{ $allText = (partial "narrow-headlines.html" 
+      (dict "the_content" $allText "debug_or_qa" "qa")) }}
+
+  {{ $allText = (partial "apply-ruby-features.html" 
       (dict "the_content" $allText "debug_or_qa" "qa")) }}
 
   {{ $allText = (partial "lettered-escapade.html" 

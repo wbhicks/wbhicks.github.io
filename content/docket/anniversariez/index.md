@@ -30,7 +30,7 @@ draft: false
 
 ¢ ≤qBy thys fyre I warme my handys≥ (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-¢ In this ≤rblock≥, only the ≤rmovie≥ name is within a ruby element, and there are 3 RT's: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It's A Mad Mad World</ruby> in the theater.
+¢ In fyre, fyre, fyre this ≤rblock≥, only the ≤rmovie≥ name is within a ruby element, and there are 3 RT's: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It's A Mad Mad World</ruby> in fyre the fyre theater fyre.
 
 ### January 8th
 

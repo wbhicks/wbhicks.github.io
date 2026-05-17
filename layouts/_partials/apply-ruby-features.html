@@ -1,0 +1,56 @@
+{{ $theContent := .the_content }}
+{{ $content_replacement := "YOU WONT SEE THIS" }}
+
+{{- /* 
+
+{{ $rubyEligible := ` [A-Za-z]+ ` }}
+`[A-Za-z]+` }}
+{{ $matches := findRE $rubyEligible $theContent }}
+{{ range $matches }}
+{{ end }}
+
+
+  {{ $content_replacement =
+      replaceRE 
+      `([^ ,≥]+), ([^≥]+)`
+      `TMPLT_LABBRV $1 TMPLT_RABBRV TMPLT_LPAREN $2 TMPLT_RPAREN`
+      $the_content
+  }}
+
+*/ -}}
+
+        {{ $content_replacement = 
+            replaceRE
+            ` ([A-Za-z]+) ` 
+            ` <ruby><u>$1</u><rt>F</rt></ruby> `
+            $theContent
+        }}
+
+{{- /* 
+
+
+{{ $sliced := split $theContent " " }}
+{{ $matches := findRE $rubyEligible $sliced }}
+{{ range $matches }}
+
+
+  {{ range first 1 (where hugo.Data.rubellite.phonetic "k" $the_content) }}
+    {{ $the_ruby_text = .v }}
+  {{ end }}
+  {{ $result = (add 
+      `TMPLT_LRUBY1 `
+      $the_content 
+      `TMPLT_LRUBYT `
+      $the_ruby_text
+      ` TMPLT_RRUBYT`
+      ` TMPLT_RRUBY1`
+      ) 
+  }}
+*/ -}}
+
+{{ if (eq .debug_or_qa "debug") }}
+
+{{ else if (eq .debug_or_qa "qa") }}
+
+{{ end }}
+{{ return $content_replacement }}

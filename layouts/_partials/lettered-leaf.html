@@ -3,7 +3,7 @@
 
 {{ $content_replacement := "YOU WONT SEE THIS" }}
 {{ $result := "THIS SHOULD BE CLOBBERED" }}
-{{ $the_ruby := "ERR!" }}
+{{ $the_ruby_text := "ERR!" }}
 
 {{- /* ====================
 
@@ -174,19 +174,16 @@
 {{ else if (eq $classifier "r") }}
 {{- /* CASE r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
 
-
-  {{ range first 1 hugo.Data.rubellite.phonetic "k" "the" }}
-
-
+       This case can be removed once the ruby effect is applied automatically.
 */ -}}
-  {{ range where hugo.Data.rubellite.phonetic "k" $the_content }}
-    {{ $the_ruby = .v }}
+  {{ range first 1 (where hugo.Data.rubellite.phonetic "k" $the_content) }}
+    {{ $the_ruby_text = .v }}
   {{ end }}
   {{ $result = (add 
       `TMPLT_LRUBY1 `
       $the_content 
       `TMPLT_LRUBYT `
-      $the_ruby
+      $the_ruby_text
       ` TMPLT_RRUBYT`
       ` TMPLT_RRUBY1`
       ) 
