@@ -4,6 +4,7 @@
 {{ $rightmostClosingTag := .rightmost_closing_tag }}
 {{ $mostRecentLinkTitle := .mRLT }}
 
+{{ $rubellitedText := "ERR! 504" }}
 {{ $result := "OVERWRITTEN" }}
 
 {{- /* ====================
@@ -181,11 +182,20 @@
             Goldmark blockquote wrapping & ruin the FIGURE-based pattern.
 
   */ -}}
-  {{ $result = (add `<figure><blockquote><p>` $text `</p>`) }}
+  {{ $rubellitedText = (partial "apply-ruby-features.html"
+      (dict "the_content" $text "debug_or_qa" "qa")) 
+  }}
+  {{ $result = (add `<figure><blockquote><p>` $rubellitedText `</p>`) }}
 {{ else if (eq $prefix "££") }}
-  {{ $result = (add `<p>` $text `</p>`) }}
+  {{ $rubellitedText = (partial "apply-ruby-features.html"
+      (dict "the_content" $text "debug_or_qa" "qa")) 
+  }}
+  {{ $result = (add `<p>` $rubellitedText `</p>`) }}
 {{ else if (eq $prefix "~") }}
-  {{ $result = (add `</blockquote><figcaption>` $text `</figcaption></figure>`) }}
+  {{ $rubellitedText = (partial "apply-ruby-features.html"
+      (dict "the_content" $text "debug_or_qa" "qa")) 
+  }}
+  {{ $result = (add `</blockquote><figcaption>` $rubellitedText `</figcaption></figure>`) }}
 {{ else if (eq $prefix "¢") }}
 
 
@@ -222,7 +232,10 @@
      `<p class="commentary">$1</p>`
       $text
   }}
-  {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
+  {{ $rubellitedText = (partial "apply-ruby-features.html"
+      (dict "the_content" $text "debug_or_qa" "qa")) 
+  }}
+  {{ $result = (add $leftmostOpeningTag $rubellitedText $rightmostClosingTag) }}
 {{ else if (eq $prefix "∂") }}
   {{- /* CASE ∂: Periodical deks (subheadlines), e.g.
 
@@ -231,7 +244,10 @@
        ^∂ "..."
 
   */ -}}
-  {{ $result = (add `<div class="dek">Its subheadline: TMPLT_LATITL ` $text ` TMPLT_RATITL</div>`) }}
+  {{ $rubellitedText = (partial "apply-ruby-features.html"
+      (dict "the_content" $text "debug_or_qa" "qa")) 
+  }}
+  {{ $result = (add `<div class="dek">Its subheadline: TMPLT_LATITL ` $rubellitedText ` TMPLT_RATITL</div>`) }}
 {{ else if (eq $prefix "=&gt;") }}
   {{ if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>) (.+) / by (.+)` "text" $text)) }}
     {{ $result = 

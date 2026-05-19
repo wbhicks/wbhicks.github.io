@@ -118,11 +118,6 @@
 */ -}}
 
 
-
-
-
-
-
       {{ $processedBlock := (partial "prefixed-blocks.html" (dict 
           "leftmost_opening_tag" $leftmostOpeningTag
           "prefix" $prefix 
@@ -130,7 +125,6 @@
           "rightmost_closing_tag" $rightmostClosingTag
           "mRLT" $mostRecentLinkTitle)) 
       }}
-
 
 {{ $processedBlock = replaceRE `<p><p class="commentary">` `<p class="commentary">`  $processedBlock }}
 {{ $processedBlock = replaceRE `</p></p>` `</p>`  $processedBlock }}

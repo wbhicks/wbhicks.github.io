@@ -30,11 +30,11 @@ draft: false
 
 ¢ ≤qBy thys fyre I warme my handys≥ (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-¢ In fyre, fyre, fyre this ≤rblock≥, only the ≤rmovie≥ name is within a ruby element, and there are 3 RT's: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It's A Mad Mad World</ruby> in fyre the fyre theater fyre.
+¢ In fyre, fyre, fyre this ≤rblock≥, only the ≤rmovie≥ name is within a ruby element, and there are 3 RT’s: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It’s A Mad Mad World</ruby> in fyre the fyre theater fyre.
 
 ### January 8th
 
-¢ On this date in 2023: Bolsonaro's putsch in Brasília fails. Partly inspired by Trump's failed self-coup in the US two years before, and similarly fueled by populist content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil's highest constitutional court.
+¢ On this date in 2023: Bolsonaro’s putsch in Brasília fails. Partly inspired by Trump’s failed self-coup in the US two years before, and similarly fueled by populist content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil’s highest constitutional court.
 
 £ A pessoa que tinha vergonha de fazer piada racista passou a achar nas redes sociais uma bolha social racista, e passou a ter orgulho. São covardes na vida real e corajosos nas redes. O que possibilitou isso? Essas questões ligadas às falhas da democracia, principalmente a questão da distribuição de renda.
 

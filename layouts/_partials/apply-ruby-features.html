@@ -1,56 +1,122 @@
-{{ $theContent := .the_content }}
-{{ $content_replacement := "YOU WONT SEE THIS" }}
+{{ $originalContent := .the_content }}
+{{ $contentWithRuby := "ERROR_512" }}
+{{ $theRubyText := "NO_RUBY_MATCH_FOUND" }}
+
+{{ $contentWithRuby = replaceRE
+      ` `
+      ` 〉〈 `
+      $originalContent
+}}
+
+{{- /* Adjacent punctuation marks (or internal, e.g. apostrophes) are
+       often escaped (see lettered-escapade.html). The escape codes
+       have underscores in them, which must be accommodated here.
+
+       An optional punctuation mark at the end.
+*/ -}}
+{{ $contentWithRuby = replaceRE
+      `〈 ([-\pL_]{1,3})([.,:;!?])? 〉`
+      (add ` <ruby>` `$1<rt>•</rt></ruby>` `$2`)
+      $contentWithRuby
+}}
+
+{{- /* Same, but longer word.
+*/ -}}
+{{ $contentWithRuby = replaceRE
+      `〈 ([-\pL_]{4,})([.,:;!?])? 〉`
+      (add 
+          ` <ruby>` 
+          ((where hugo.Data.rubellite.phonetic "k" "about") | first 1)
+          `<rt>A</rt></ruby>` 
+          `$2`
+      )
+      $contentWithRuby
+}}
+
+{{- /* At the end, an optional punctuation mark followed by a ≥
+       followed by another optional punctuation mark.
+*/ -}}
+{{ $contentWithRuby = replaceRE
+      `〈 ([-\pL_]{1,3})([.,:;!?])?≥([.,:;!?])? 〉`
+      (add ` <ruby>` `$1<rt>•</rt></ruby>` `$2` `≥` `$3`)
+      $contentWithRuby
+}}
+
+{{- /* Same, but longer word.
+*/ -}}
+{{ $contentWithRuby = replaceRE
+      `〈 ([-\pL_]{4,})([.,:;!?])?≥([.,:;!?])? 〉`
+      (add ` <ruby>` `$1<rt>B</rt></ruby>` `$2` `≥` `$3`)
+      $contentWithRuby
+}}
+
+{{- /* A single word wrapped in a lettered leaf, extending pattern above.
+*/ -}}
+{{ $contentWithRuby = replaceRE
+      `〈 ≤([A-Za-z])([-\pL_]{1,3})([.,:;!?])?≥([.,:;!?])? 〉`
+      (add ` ≤` `$1<ruby>` `$2<rt>•</rt></ruby>` `$3` `≥` `$4`)
+      $contentWithRuby
+}}
+
+{{- /* Same, but longer word.
+*/ -}}
+{{ $contentWithRuby = replaceRE
+      `〈 ≤([A-Za-z])([-\pL_]{4,})([.,:;!?])?≥([.,:;!?])? 〉`
+      (add ` ≤` `$1<ruby>` `$2<rt>C</rt></ruby>` `$3` `≥` `$4`)
+      $contentWithRuby
+}}
+
 
 {{- /* 
-
-{{ $rubyEligible := ` [A-Za-z]+ ` }}
-`[A-Za-z]+` }}
-{{ $matches := findRE $rubyEligible $theContent }}
+COMMENTS: ↲↳
+{{ $matches := findRE `〈 [A-Za-z]+ 〉` $contentWithRuby }}
 {{ range $matches }}
+    {{ range first 1 
+      (where hugo.Data.rubellite.phonetic "k" 
+        (lower 
+          (substr . 2 -2)
+        )
+      )
+    }}
+      {{ $theRubyText = .v }}
+    {{ end }}
+    {{ if not (eq $theRubyText "NO_RUBY_MATCH_FOUND") }}
+      {{ $contentWithRuby = replaceRE
+        .
+        (add `<ruby>` (substr . 2 -2) `<rt>B</rt></ruby>`)
+        $contentWithRuby
+      }}
+    {{ else }}
+      {{ $contentWithRuby = replaceRE
+        .
+        (add `<ruby>` (substr . 2 -2) `<rt>A</rt></ruby>`)
+        $contentWithRuby
+      }}
+    {{ end }}
 {{ end }}
 
+ */ -}}
 
-  {{ $content_replacement =
-      replaceRE 
-      `([^ ,≥]+), ([^≥]+)`
-      `TMPLT_LABBRV $1 TMPLT_RABBRV TMPLT_LPAREN $2 TMPLT_RPAREN`
-      $the_content
-  }}
 
+
+
+{{- /* This template's created unpaired/leftover markers, cleaning up:
 */ -}}
+{{ $contentWithRuby = replaceRE
+      `[〉〈]`
+      ``
+      $contentWithRuby
+}}
 
-        {{ $content_replacement = 
-            replaceRE
-            ` ([A-Za-z]+) ` 
-            ` <ruby><u>$1</u><rt>F</rt></ruby> `
-            $theContent
-        }}
-
-{{- /* 
-
-
-{{ $sliced := split $theContent " " }}
-{{ $matches := findRE $rubyEligible $sliced }}
-{{ range $matches }}
-
-
-  {{ range first 1 (where hugo.Data.rubellite.phonetic "k" $the_content) }}
-    {{ $the_ruby_text = .v }}
-  {{ end }}
-  {{ $result = (add 
-      `TMPLT_LRUBY1 `
-      $the_content 
-      `TMPLT_LRUBYT `
-      $the_ruby_text
-      ` TMPLT_RRUBYT`
-      ` TMPLT_RRUBY1`
-      ) 
-  }}
+{{- /* This template's created double spaces, cleaning up:
 */ -}}
+{{ $contentWithRuby = replaceRE
+      `  `
+      ` `
+      $contentWithRuby
+}}
 
 {{ if (eq .debug_or_qa "debug") }}
-
 {{ else if (eq .debug_or_qa "qa") }}
-
 {{ end }}
-{{ return $content_replacement }}
+{{ return $contentWithRuby }}
