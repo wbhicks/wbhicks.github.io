@@ -26,8 +26,7 @@
       `〈 ([-\pL_]{4,})([.,:;!?])? 〉`
       (add 
           ` <ruby>` 
-          ((where hugo.Data.rubellite.phonetic "k" "about") | first 1)
-          `<rt>A</rt></ruby>` 
+          `$1<rt>A</rt></ruby>`
           `$2`
       )
       $contentWithRuby
@@ -67,6 +66,40 @@
 }}
 
 
+{{- /* The all-in-one approach, i.e., to pass the original word to the
+       `where` function (so that the ruby text can be looked up in the
+       key-value file that's under hugo.Data) while still inside the 
+       call to the replaceRE function seems impractical as best -- see 
+       https://discourse.gohugo.io/t/replacere-function-not-allowing-fu
+       nctions-on-the-replacement/23641 -- so now I'm making a 2nd pass:
+*/ -}}
+
+
+{{ $halfwaysOfKindA := findRE
+      `<ruby>[^<]+<rt>A</rt></ruby>`
+      $contentWithRuby
+}}
+{{ range $halfwaysOfKindA }}
+  {{ range first 1
+      (where hugo.Data.rubellite.phonetic "k"
+        (lower
+          (substr . 6 -17)
+        )
+      )
+  }}
+    {{ $theRubyText = .v }}
+  {{ end }}
+  {{- /* {{ if not (eq $theRubyText "NO_RUBY_MATCH_FOUND") }} */ -}}
+    {{ $contentWithRuby = replaceRE
+        .
+        (add `<ruby>` (substr . 6 -17) `<rt>z` `$theRubyText` `y</rt></ruby>`)
+        $contentWithRuby
+    }}
+    {{- /* Restore theRubyText for next time: */ -}}
+    {{- /* {{ $theRubyText = "NO_RUBY_MATCH_FOUND" }} */ -}}
+  {{- /* {{ end }} */ -}}
+{{ end }}
+
 {{- /* 
 COMMENTS: ↲↳
 {{ $matches := findRE `〈 [A-Za-z]+ 〉` $contentWithRuby }}
@@ -79,19 +112,6 @@ COMMENTS: ↲↳
       )
     }}
       {{ $theRubyText = .v }}
-    {{ end }}
-    {{ if not (eq $theRubyText "NO_RUBY_MATCH_FOUND") }}
-      {{ $contentWithRuby = replaceRE
-        .
-        (add `<ruby>` (substr . 2 -2) `<rt>B</rt></ruby>`)
-        $contentWithRuby
-      }}
-    {{ else }}
-      {{ $contentWithRuby = replaceRE
-        .
-        (add `<ruby>` (substr . 2 -2) `<rt>A</rt></ruby>`)
-        $contentWithRuby
-      }}
     {{ end }}
 {{ end }}
 
