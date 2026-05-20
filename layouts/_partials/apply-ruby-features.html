@@ -100,13 +100,13 @@
   {{ if not (eq $theRubyText "NO_RUBY_MATCH_FOUND") }}
     {{ $contentWithRuby = replaceRE
         .
-        (add ` <ruby>` (substr . 6 -17) `<rt>` $theRubyText `</rt></ruby> `)
+        (add ` <ruby>` (substr . 6 -17) `<rt>` $theRubyText `</rt></ruby>`)
         $contentWithRuby
     }}
   {{ else }}
     {{ $contentWithRuby = replaceRE
         .
-        (add ` <ruby>` (substr . 6 -17) `<rt>●</rt></ruby> `)
+        (add ` <ruby>` (substr . 6 -17) `<rt>●</rt></ruby>`)
         $contentWithRuby
     }}
   {{ end }}
