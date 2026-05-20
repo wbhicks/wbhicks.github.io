@@ -74,6 +74,8 @@ This paragraph has no prefix, so it shouldn't normally be encountered.
 
 ¢ This paragraph is also a commentary. Yesterday I exclaimed, ≤qI'm proud to stand before you all to endorse the old, oft-stated principle that ≤qEach citizen must be prepared to stand before the scribes and scribblers and to proclaim, ≤qMy name is ≤qThe Common Man≥, and I have done my utmost!≥, for in that proclamation is our justification before the tribunes of history≥ ... and I will endorse it freely!≥
 
+¢ This paragraph is also a commentary. Mr. Singly misleadingly called it ≤sGreat!≥, albeit unconvincingly. Miss Triply called it ≤sBetter than great!≥, drawing even greater disbelief. In this ≤rblock≥, only the ≤rmovie≥ name is within a ruby element, and there are 3 RT’s: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It’s A Mad Mad World</ruby>.
+
 £ This paragraph is a blockquote, because it starts with the British pound sterling symbol followed by a space. As blockquote paragraphs should, it is followed by a figcaption (a paragraph starting with a tilde followed by a space). Together, the blockquote and the figcaption form a figure.
 
 > This line is a blockquote: 1 ≤c2 ≤f3 ≤s4 ≤w5 ≤c6 ≤f7 ≤s8 ≤w9 0 9≥ 8≥ 7≥ 6≥ 5≥ 4≥ 3≥ 2≥ 1

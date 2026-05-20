@@ -1,6 +1,7 @@
 {{ $originalContent := .the_content }}
 {{ $contentWithRuby := "ERROR_512" }}
 {{ $theRubyText := "NO_RUBY_MATCH_FOUND" }}
+{{ $mostRecentLinkTitle := .mRLT }}
 
 {{ $contentWithRuby = replaceRE
       ` `
@@ -75,50 +76,42 @@
 */ -}}
 
 
-{{ $halfwaysOfKindA := findRE
-      `<ruby>[^<]+<rt>A</rt></ruby>`
+{{ $halfways := findRE
+      `<ruby>[^<]+<rt>[ABC]</rt></ruby>`
       $contentWithRuby
 }}
-{{ range $halfwaysOfKindA }}
+{{ range $halfways }}
+
+  {{- /* {{ warnidf $mostRecentLinkTitle "halfway: " . }} */ -}}
+
+  {{- /* Restore theRubyText for next time: */ -}}
+  {{ $theRubyText = "NO_RUBY_MATCH_FOUND" }}
+
   {{ range first 1
       (where hugo.Data.rubellite.phonetic "k"
         (lower
-          (substr . 6 -17)
+          (substr (string .) 6 -17)
         )
       )
   }}
     {{ $theRubyText = .v }}
   {{ end }}
-  {{- /* {{ if not (eq $theRubyText "NO_RUBY_MATCH_FOUND") }} */ -}}
+
+  {{ if not (eq $theRubyText "NO_RUBY_MATCH_FOUND") }}
     {{ $contentWithRuby = replaceRE
         .
-        (add `<ruby>` (substr . 6 -17) `<rt>z` `$theRubyText` `y</rt></ruby>`)
+        (add ` <ruby>` (substr . 6 -17) `<rt>` $theRubyText `</rt></ruby> `)
         $contentWithRuby
     }}
-    {{- /* Restore theRubyText for next time: */ -}}
-    {{- /* {{ $theRubyText = "NO_RUBY_MATCH_FOUND" }} */ -}}
-  {{- /* {{ end }} */ -}}
-{{ end }}
-
-{{- /* 
-COMMENTS: ↲↳
-{{ $matches := findRE `〈 [A-Za-z]+ 〉` $contentWithRuby }}
-{{ range $matches }}
-    {{ range first 1 
-      (where hugo.Data.rubellite.phonetic "k" 
-        (lower 
-          (substr . 2 -2)
-        )
-      )
+  {{ else }}
+    {{ $contentWithRuby = replaceRE
+        .
+        (add ` <ruby>` (substr . 6 -17) `<rt>●</rt></ruby> `)
+        $contentWithRuby
     }}
-      {{ $theRubyText = .v }}
-    {{ end }}
+  {{ end }}
+
 {{ end }}
-
- */ -}}
-
-
-
 
 {{- /* This template's created unpaired/leftover markers, cleaning up:
 */ -}}

@@ -1059,7 +1059,7 @@
 - k: covardes
   v: distribution
 - k: covenant
-  v: true
+  v: scholar
 - k: cover
   v: metaphorically
 - k: coverage
@@ -1648,8 +1648,6 @@
   v: useful
 - k: falls
   v: terry-thomas
-- k: false
-  v: done
 - k: families
   v: hopkins
 - k: family
@@ -4837,7 +4835,7 @@
 - k: titles
   v: acknowledged
 - k: tnr
-  v: false
+  v: done
 - k: toast
   v: critic
 - k: today
@@ -4904,8 +4902,6 @@
   v: nerves
 - k: trudeau
   v: paid
-- k: true
-  v: scholar
 - k: truffles
   v: attached
 - k: trujillo

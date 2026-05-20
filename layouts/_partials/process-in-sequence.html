@@ -24,6 +24,16 @@
          |     |     |     Wrap some words: <ruby> before, 
          |     |     |     <rt>...</rt></ruby> after.
          |     |     |
+         |     |     |     I got an error with "true" as a value (but not
+         |     |     |     a key) in phonetic.yaml. To err on the safe side, 
+         |     |     |     I've manually removed the following as keys
+         |     |     |     & values:
+         |     |     |
+         |     |     |     true false
+         |     |     |
+         |     |     |     See also https://gohugo.io/functions/lang/transl
+         |     |     |     ate/#reserved-keys
+         |     |     |
          |     |     | - - whole-str-matches-regex[.html <-- MISSING?]
          |     |           Returns >0 IFF exactly 1 match, & same length.
          |     |           (Prevents any trailing text from slipping through.)
@@ -46,11 +56,13 @@
        class="asterism" found on DIV, from asterize-headlines.html ONLY
            These are always wrapped around `<h_ class="h_-from- ...`
 
-       ====================
-*/ -}}
 
   {{ warnidf "In process-in-sequence.html: " (add "LinkTitle = "
       $mostRecentLinkTitle) }}
+
+
+       ====================
+*/ -}}
 
   {{ $allText = (partial "lettered-escapade.html" 
       (dict "the_content" $allText "sanitize_or_restore" "sanitize")) }}
