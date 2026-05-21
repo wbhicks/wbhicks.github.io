@@ -29,6 +29,7 @@
    ** All derived from "lettered strings"
    ** Typically oblique
    ** Typically quoted (BLOCKQUOTE appears here too)
+   ** The emdash & the double-hyphen
 
    * Font-family assignments (except for ...
    ** Font-family for title
@@ -1095,6 +1096,29 @@ body > div.nojs-mini-themed > footer {
 }
 
 
+/* =====================
+   The emdash & the double-hyphen
+   =====================
+*/
+
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+  span.dash-as-hyphens { display: none; }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+  span.dash-as-emdash { display: none; }
+}
+
+
 /* +----------------------------------------+
    |  End of span-level elements & classes  |
    +----------------------------------------+
@@ -1594,9 +1618,9 @@ body.igt-mode-off {
     cite.special-citation   { text-decoration: #00cccc line-through dashed; }
 
     i.term       { text-decoration: #00cccc overline dashed; }
-    i.so-called  { text-decoration: #00cccc overline wavy;   }
+    i.so-called  { text-decoration: #00cccc overline dashed; }
     i.nickname   { text-decoration: #00cccc overline dotted; }
-    abbr         { text-decoration: #00cccc overline solid; }
+    abbr         { text-decoration: #00cccc overline wavy;   }
 
     main > h2.h2-from-1star,
     main > h3.h3-from-2stars,

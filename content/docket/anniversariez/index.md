@@ -1367,7 +1367,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «The BBC’s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.»
 
-#### ® Henry Grabar, writing in Slate (2021) under the headline «The Perverse Reason It’s Easier to Build New Highways Than New Subways - The environment?!»
+#### ® Henry Grabar, writing in Slate (2021) under the headline «The Perverse Reason It’s Easier to Build New Highways Than New Subways -- The environment?!»
 
 ◉ Bookmark, Aug 19th
 

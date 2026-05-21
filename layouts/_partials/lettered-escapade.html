@@ -22,8 +22,11 @@
   {{ $theContent = replaceRE `»`  `TMPLT_RDGUIL` $theContent }}
   {{ $theContent = replaceRE `‹`  `TMPLT_LSGUIL` $theContent }}
   {{ $theContent = replaceRE `›`  `TMPLT_RSGUIL` $theContent }}
-  {{ $theContent = replaceRE `--` `TMPLT_2HYFNS` $theContent }}
-  {{ $theContent = replaceRE `–`  `TMPLT_2HYFNS` $theContent }}
+  {{- /* The spaces around the double hyphens prevent some links from breaking: */ -}}
+  {{ $theContent = replaceRE ` -- ` `TMPLT_2HYFNS` $theContent }}
+  {{- /* In some clippings, the en dash is erroneously used instead of the em dash: */ -}}
+  {{ $theContent = replaceRE ` – `  `TMPLT_2HYFNS` $theContent }}
+  {{ $theContent = replaceRE ` — `  `TMPLT_2HYFNS` $theContent }}
 
 {{- /* Why can't these be handled by :before and :after in .scss? */ -}}
 {{- /* 
@@ -106,7 +109,8 @@ end of comment was here
   {{ $theContent = replaceRE ` TMPLT_RSPECC` `</cite>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LABBRV ` `<abbr>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RABBRV` `</abbr>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_2HYFNS` `--` $theContent }}
+  {{- /* The spaces are purely cosmetic: */ -}}
+  {{ $theContent = replaceRE `TMPLT_2HYFNS` ` <span class="dash-as-hyphens">--</span><span class="dash-as-emdash">—</span> ` $theContent }}
 
 {{ end }}
 {{ return $theContent }}
