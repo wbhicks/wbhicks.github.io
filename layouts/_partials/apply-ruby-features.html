@@ -1,7 +1,9 @@
 {{ $originalContent := .the_content }}
-{{ $contentWithRuby := "ERROR_512" }}
+{{ $contentWithRuby := $originalContent }}
 {{ $theRubyText := "NO_RUBY_MATCH_FOUND" }}
 {{ $mostRecentLinkTitle := .mRLT }}
+
+{{ if (eq .full_or_light "full") }}
 
 {{ $contentWithRuby = replaceRE
       ` `
@@ -129,7 +131,8 @@
       $contentWithRuby
 }}
 
-{{ if (eq .debug_or_qa "debug") }}
-{{ else if (eq .debug_or_qa "qa") }}
+{{ else if (eq .full_or_light "light") }}
+
 {{ end }}
+
 {{ return $contentWithRuby }}

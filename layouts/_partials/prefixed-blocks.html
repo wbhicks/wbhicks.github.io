@@ -183,17 +183,17 @@
 
   */ -}}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "debug_or_qa" "qa" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add `<figure><blockquote><p>` $rubellitedText `</p>`) }}
 {{ else if (eq $prefix "££") }}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "debug_or_qa" "qa" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add `<p>` $rubellitedText `</p>`) }}
 {{ else if (eq $prefix "~") }}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "debug_or_qa" "qa" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add `</blockquote><figcaption>` $rubellitedText `</figcaption></figure>`) }}
 {{ else if (eq $prefix "¢") }}
@@ -233,7 +233,7 @@
       $text
   }}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "debug_or_qa" "qa" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add $leftmostOpeningTag $rubellitedText $rightmostClosingTag) }}
 {{ else if (eq $prefix "∂") }}
@@ -245,7 +245,7 @@
 
   */ -}}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "debug_or_qa" "qa" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add `<div class="dek">Its subheadline: TMPLT_LATITL ` $rubellitedText ` TMPLT_RATITL</div>`) }}
 {{ else if (eq $prefix "=&gt;") }}

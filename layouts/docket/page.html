@@ -1,21 +1,5 @@
 {{ define "main" }}
-
-  <span class="design-hint">dp»</span>
-
-
   {{ $allText := (partial "process-in-sequence.html" 
       (dict "the_content" .Content "mRLT" .LinkTitle)) }}
-
-
-
-
-{{- /* $allText := .Content */ -}}
-
-
-
-
   {{ $allText | safeHTML }}
-
-  <span class="design-hint">«dp</span>
-
 {{ end }}

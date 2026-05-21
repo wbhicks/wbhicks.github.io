@@ -68,11 +68,11 @@ This paragraph has no prefix, so it shouldn't normally be encountered.
 
 # This H1 heading is for quotation mark tests
 
-¢ This paragraph is a commentary, because it starts with the cent symbol followed by a space. Currently, the codes for lettered strings are as follows: a b c f l m n q s t w ... Here's an A enclosing a Q enclosing a C enclosing an N enclosing an F (note that the outermost pair of quotations is always the only pair using the double-quotation mark): ≤aAccused Assemblyman Aaron Adams Announces ≤qTo quiet my questioners: I hereby deny writing that chapter entitled ≤cMy Cousin Charles ≤nNine ≤fpar nécessité≥ Nives≥ Cooper Is My Consigliere≥ in my autobiography, so quit it already!≥, Avers He'll Be Absolved≥ 
+¢ This paragraph is a commentary, because it starts with the cent symbol followed by a space. Currently, the codes for lettered strings are as follows: a b c f l m n q s t w ... Here's an A enclosing a Q [NO! NOW GUILLEMETS] enclosing a C enclosing an N enclosing an F (note that the outermost pair of quotations is always the only pair using the double-quotation mark): ≤aAccused Assemblyman Aaron Adams Announces «To quiet my questioners: I hereby deny writing that chapter entitled ≤cMy Cousin Charles ≤nNine ≤fpar nécessité≥ Nives≥ Cooper Is My Consigliere≥ in my autobiography, so quit it already!», Avers He'll Be Absolved≥ 
 
-¢ This paragraph is also a commentary. The following span nests the first five in alphabetical order: ≤aApple ≤bBanana ≤cCarrot ≤fFig ≤lLemon lemon≥ fig≥ carrot≥ banana≥ apple≥. And the following span does the same with the remaining six: ≤mMelon ≤nNut ≤qQuinine ≤sSquash ≤tTaxi ≤wWater water≥ taxi≥ squash≥ quinine≥ nut≥ melon≥.
+¢ This paragraph is also a commentary. The following span nests the first five in alphabetical order: ≤aApple ≤bBanana ≤cCarrot ≤fFig ≤lLemon lemon≥ fig≥ carrot≥ banana≥ apple≥. And the following span does the same with the remaining six [GUILLEMETS HAVE REPLACED Q]: ≤mMelon ≤nNut «Quinine ≤sSquash ≤tTaxi ≤wWater water≥ taxi≥ squash≥ quinine» nut≥ melon≥.
 
-¢ This paragraph is also a commentary. Yesterday I exclaimed, ≤qI'm proud to stand before you all to endorse the old, oft-stated principle that ≤qEach citizen must be prepared to stand before the scribes and scribblers and to proclaim, ≤qMy name is ≤qThe Common Man≥, and I have done my utmost!≥, for in that proclamation is our justification before the tribunes of history≥ ... and I will endorse it freely!≥
+¢ This paragraph is also a commentary. Yesterday I exclaimed, «I'm proud to stand before you all to endorse the old, oft-stated principle that «Each citizen must be prepared to stand before the scribes and scribblers and to proclaim, «My name is «The Common Man», and I have done my utmost!», for in that proclamation is our justification before the tribunes of history» ... and I will endorse it freely!»
 
 ¢ This paragraph is also a commentary. Mr. Singly misleadingly called it ≤sGreat!≥, albeit unconvincingly. Miss Triply called it ≤sBetter than great!≥, drawing even greater disbelief. In this ≤rblock≥, only the ≤rmovie≥ name is within a ruby element, and there are 3 RT’s: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It’s A Mad Mad World</ruby>.
 
@@ -244,9 +244,9 @@ The HTML element DFN, which is for definitions, is not yet handled or mapped.
 
 ≤nFrancky≥ ---> <i class="nickname">Francky</i>
 
-NEW: I'm replacing <q>...</q> with «...» (or ‹...› nested) -- but carefully!
+NEW: I've replaced element Q and/or ≤q with «...» (or ‹...› nested) -- but carefully!
 
-≤qHello, ‘Cap’n’!≥ *or* «Hello, ‹Cap’n›!» ---> ❝Hello, ❛Cap’n❜!❞ 
+«Hello, ‘Cap’n’!» *or* «Hello, ‹Cap’n›!» ---> ❝Hello, ❛Cap’n❜!❞ 
 
 ≤sBad≥ ---> <i class="so-called">Bad</i>
 

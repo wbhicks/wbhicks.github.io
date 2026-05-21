@@ -558,7 +558,7 @@ body > div.nojs-mini-themed > footer {
    The text-align property for any block-level elements
 
    Currently, this is DIV.fisheye-means-rightmost & some headings.
-   H1 doesn't appear (except for the page title, which is in the
+   H1 isn't used (except for the page title, which is in the
    HEADER), & H5 is styled separately.
    ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
@@ -651,6 +651,11 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
+  header > div.the-div-child-of-the-header > h1 {
+    font-weight: normal;
+    // font-family: "Futura Medium" !important;
+  }
+
   main > h2.h2-from-1star,
   main > h3.h3-from-2stars,
   main > h4.h4-from-3stars {
@@ -720,6 +725,23 @@ body > div.nojs-mini-themed > footer {
 
 
 /* =====================
+   The FIGCAPTION element
+
+   So far, this element is used only as a sibling following a BLOCKQUOTE.
+   =====================
+*/
+
+
+.nojs-mini-themed {
+
+  main > figure > figcaption::before {
+    content: "— ";
+  }
+
+} // End of .nojs-mini-themed
+
+
+/* =====================
    PRE, CODE, SAMP, & KBD: internals
 
    These are elements for preformatted content.
@@ -736,6 +758,16 @@ body > div.nojs-mini-themed > footer {
    In CommonMark (and therefore Goldmark), use a pair of ```'s for
    <pre><code>, and use <pre> itself for <pre> without a following <code>.
    However, <pre> without <code> isn't monospace by default.
+
+   Because <pre> is a block-level element, rendering a poem might
+   benefit from <br> instead. (For an example of <br>, see Ogden Nash's 
+   2-line poem about Carl Laemmle.)
+
+   "<br> Produces a line break in text (carriage-return). It is useful for
+   writing a poem or an address, where the division of lines is significant."
+
+   Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Refe
+           rence/Elements
    =====================
 */
 
@@ -899,6 +931,8 @@ body > div.nojs-mini-themed > footer {
   }
 
   // Case r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
+
+  // disabling until I get around to setting a good default
   main ruby > rt { // ≤r
   }
 
@@ -1009,29 +1043,29 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
-  main > figure > blockquote,
+  // main > figure > blockquote,
   main cite.article-title,      // ≤a
   main cite.like-article-title, // ≤c
   main i.nickname,              // ≤n
-  main q,                       // ≤q
+  main q,                       // ≤q Is this line necessary?
   main i.so-called {            // ≤s
     quotes: var(--nojs-quote-chars);
   }
 
-  main > figure > blockquote::before,
+  // main > figure > blockquote::before,
   main cite.article-title::before,      // ≤a
   main cite.like-article-title::before, // ≤c
   main i.nickname::before,              // ≤n
-  main q::before,                       // ≤q
+  main q::before,                       // ≤q Is this line necessary?
   main i.so-called::before {            // ≤s
     content: open-quote; // used to be "↳";
   }
 
-  main > figure > blockquote::after,
+  // main > figure > blockquote::after,
   main cite.article-title::after,       // ≤a
   main cite.like-article-title::after,  // ≤c
   main i.nickname::after,               // ≤n
-  main q::after,                        // ≤q
+  main q::after,                        // ≤q Is this line necessary?
   main i.so-called::after {             // ≤s
     content: close-quote; // used to be "↲";
   }
@@ -1493,7 +1527,8 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
     .nojs-mini-themed {
       rt {
-        color: red;
+        // disabling until I get around to setting a good default:
+        display: none; // color: red;
       } 
     }
 

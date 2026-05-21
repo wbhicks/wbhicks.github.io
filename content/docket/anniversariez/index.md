@@ -28,15 +28,15 @@ draft: false
 
 ## I. January
 
-¢ ≤qBy thys fyre I warme my handys≥ (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
+¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
 ### January 8th
 
-¢ On this date in 2023: Bolsonaro’s putsch in Brasília fails. Partly inspired by Trump’s failed self-coup in the US two years before, and similarly fueled by populist content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil’s highest constitutional court.
+¢ On this date in 2023: Bolsonaro’s putsch in Brasília fails. Partly inspired by Trump’s failed self-coup in the US two years before, and similarly fueled by populist (dis)content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil’s highest constitutional court.
 
-£ A pessoa que tinha vergonha de fazer piada racista passou a achar nas redes sociais uma bolha social racista, e passou a ter orgulho. São covardes na vida real e corajosos nas redes. O que possibilitou isso? Essas questões ligadas às falhas da democracia, principalmente a questão da distribuição de renda.
+£ «A pessoa que tinha vergonha de fazer piada racista passou a achar nas redes sociais uma bolha social racista, e passou a ter orgulho. São covardes na vida real e corajosos nas redes. O que possibilitou isso? Essas questões ligadas às falhas da democracia, principalmente a questão da distribuição de renda.»
 
-££ Translated from the Portuguese: People who were ashamed of making racist jokes now see social media as a racist social bubble, and they are now proud. They are cowards in real life and brave on social media. What made this possible? These issues are linked to the failures of democracy, especially the issue of income distribution."
+££ Translated from the Portuguese: «People who were ashamed of making racist jokes now see social media as a racist social bubble, and they are now proud. They are cowards in real life and brave on social media. What made this possible? These issues are linked to the failures of democracy, especially the issue of income distribution.»
 
 ~ Alexandre de Moraes
 
@@ -54,7 +54,7 @@ draft: false
 
 #### 1790-01-08: GW’s 1st SoTU, including this passage:
 
-£ Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.
+£ «Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.»
 
 ~ George Washington
 
@@ -184,7 +184,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 #### 1788-01-26: Australia Day: Landing of the First Fleet in what is present-day Sydney
 
-£ The First Fleet was a fleet of 11 British ships that brought the first British colonists and convicts to Australia. It was made up of two Royal Navy vessels, three store ships and six convict transports. On 13 May 1787 the fleet under the command of Captain Arthur Phillip, with over 1400 people (convicts, marines, sailors, civil officers and free settlers), left from Portsmouth, England and took a journey of over 24,000 kilometres (15,000 mi) and over 250 days to eventually arrive in Botany Bay, New South Wales, where a penal colony would become the first British settlement in Australia.
+£ «The First Fleet was a fleet of 11 British ships that brought the first British colonists and convicts to Australia. It was made up of two Royal Navy vessels, three store ships and six convict transports. On 13 May 1787 the fleet under the command of Captain Arthur Phillip, with over 1400 people (convicts, marines, sailors, civil officers and free settlers), left from Portsmouth, England and took a journey of over 24,000 kilometres (15,000 mi) and over 250 days to eventually arrive in Botany Bay, New South Wales, where a penal colony would become the first British settlement in Australia.»
 
 ~ Wikipedia
 
@@ -208,7 +208,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ David Corn succinctly recaps the help Trump chose to lend Putin in 2016:
 
-£ Yet the focus on collusion and the Steele material has been a purposeful distraction meant to obscure the basics of the scandal: Vladimir Putin attacked the 2016 election in part to help Trump win, and Trump and his aides aided and abetted this assault on American democracy by denying such an attack was happening. Trump provided cover for a foreign adversary subverting a US election.
+£ «Yet the focus on collusion and the Steele material has been a purposeful distraction meant to obscure the basics of the scandal: Vladimir Putin attacked the 2016 election in part to help Trump win, and Trump and his aides aided and abetted this assault on American democracy by denying such an attack was happening. Trump provided cover for a foreign adversary subverting a US election.»
 
 ~ David Corn, writing in Mother Jones
 
@@ -242,7 +242,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.nhpr.org/nh-news/2023-02-23/you-have-to-be-dangerous-back-why-some-lgbtq-people-in-new-hampshire-are-taking-up-arms NPR / by Todd Bookman
 
-£ While Pink Pistol clubs have been around since at least 2000, there’s only limited data available on gun ownership rates among LGBTQ people. In 2020, a UCLA study found that 21.5 percent of lesbian, gay and bisexual people live in a house with a firearm, compared to 36 percent of heterosexual adults. ... In terms of partisan breakdown, a recent Pew study found that about one-in-five self-identified Democrats own a gun, compared to nearly half of Republicans.
+£ «While Pink Pistol clubs have been around since at least 2000, there’s only limited data available on gun ownership rates among LGBTQ people. In 2020, a UCLA study found that 21.5 percent of lesbian, gay and bisexual people live in a house with a firearm, compared to 36 percent of heterosexual adults. ... In terms of partisan breakdown, a recent Pew study found that about one-in-five self-identified Democrats own a gun, compared to nearly half of Republicans.»
 
 ~ Todd Bookman, writing in NPR
 
@@ -252,7 +252,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 #### 1942-02-23: A Japanese submarine fires shells at targets on shore near Santa Barbara, California.
 
-£ Brown and the others called the police, as the Japanese shells continued to fall around them.
+£ «Brown and the others called the police, as the Japanese shells continued to fall around them.»
 
 ~ Wikipedia
 
@@ -270,7 +270,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ An example of how small-scale regulatory reform can foster new markets:
 
-£ ... insurers could charge less for long-term care insurance and annuities by combining them, because the risks to the insurer would partly offset each other ...
+£ «... insurers could charge less for long-term care insurance and annuities by combining them, because the risks to the insurer would partly offset each other ...»
 
 ~ Peter Coy, writing in NYT
 
@@ -290,7 +290,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, ≤fen passant≥, of ≤mNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
 
-£ ‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.
+£ «‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.»
 
 ~ Gloria Oladipo, writing in The Guardian
 
@@ -298,7 +298,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 #### 1812-02-27: Byron (giving his maiden speech in the House of Lords) defends the Luddites:
 
-£ Can you, then, wonder that in times like these, when bankruptcy, convicted fraud, and imputed felony are found in a station not far beneath that of your lordships, the lowest, though once most useful portion of the people, should forget their duty in their distresses, and become only less guilty than one of their representatives? But while the exalted offender can find means to baffle the law, new capital punishments must be devised, new snares of death must be spread for the wretched mechanic who is famished into guilt.
+£ «Can you, then, wonder that in times like these, when bankruptcy, convicted fraud, and imputed felony are found in a station not far beneath that of your lordships, the lowest, though once most useful portion of the people, should forget their duty in their distresses, and become only less guilty than one of their representatives? But while the exalted offender can find means to baffle the law, new capital punishments must be devised, new snares of death must be spread for the wretched mechanic who is famished into guilt.»
 
 ~ Lord Byron
 
@@ -322,7 +322,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 #### 1665-03-06: The first issue of Philosophical Transactions of the Royal Society is published. The journal has been in publication ever since.
 
-£ Oldenburg’s compulsive letter writing to foreign correspondents led to him being suspected of being a spy for the Dutch and interned in the Tower of London in 1667. A rival took the opportunity to publish a pirate issue of Philosophical Transactions, with the pretense of it being Issue 27. Oldenburg repudiated the issue by publishing the real 27 upon his release.
+£ «Oldenburg’s compulsive letter writing to foreign correspondents led to him being suspected of being a spy for the Dutch and interned in the Tower of London in 1667. A rival took the opportunity to publish a pirate issue of Philosophical Transactions, with the pretense of it being Issue 27. Oldenburg repudiated the issue by publishing the real 27 upon his release.»
 
 ~ Wikipedia
 
@@ -340,7 +340,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ∂ A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting.
 
-£ Probably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal.
+£ «Probably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal.»
 
 ~ Rosecrans Baldwin, writing in NYT
 
@@ -362,7 +362,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ The medlar, also known as the ≤fopen-arse≥, the ≤fmonkey’s bottom≥, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
-£ The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar’s native territory near the Caspian Sea, the fruit remains as popular as ever. It’s still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it’s sold in markets as musmula.
+£ «The fruit reached its peak in the 1600s ... It was still widely known until the early 20th Century, though less celebrated. Then in the 1950s it abruptly vanished from the public consciousness altogether. ... In the medlar’s native territory near the Caspian Sea, the fruit remains as popular as ever. It’s still widely grown in Iran, Azerbaijan, Kyrgyzstan, Georgia and Turkey, where it’s sold in markets as ≤fmusmula≥.»
 
 ~ Zaria Gorvett, writing in BBC
 
@@ -534,7 +534,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.cnbc.com/2023/03/27/lebanon-in-two-different-time-zones-as-government-disagrees-on-daylight-savings.html CNBC / by Natasha Turak
 
-£ ... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night.
+£ «... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night.»
 
 ~ Natasha Turak, writing in CNBC
 
@@ -570,9 +570,19 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.
 
-£ The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤fdeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...
+£ «The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤fdeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...»
 
 ~ Geeta Dayal, writing in NYT
+
+¢ n.b.: The term ≤fdeep listening≥ is in quotation marks in the original. See also:
+
+£ «‹It isn’t a word we would immediately adopt as if it were a word that existed forever,› Mr. Corbett said. ‹Typically we treat it as a slang or jargon or colloquialism,› rendered with quotation marks.»
+
+~ Remy Tumin, writing in NYT
+
+##### ® Source: The New York Times, «The Elements of the Stylebook» by Remy Tumin
+
+=> https://www.nytimes.com/2018/03/22/insider/new-york-times-stylebook.html NYT / by Remy Tumin, 2018-03-22
 
 ## IV. April
 
@@ -632,7 +642,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability.
 
-£ Wisconsin Republicans are caught in a bind: What the base wants, the majority rejects.
+£ «Wisconsin Republicans are caught in a bind: What the base wants, the majority rejects.»
 
 ~ Charles Sykes, writing in The Atlantic
 
@@ -656,11 +666,11 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.washingtonpost.com/opinions/2023/04/12/republican-democrat-poisonous-partisanship/ WaPo / by George F. Will
 
-£ ... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.
+£ «... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.»
 
 ~ George F. Will, writing in WaPo
 
-¢ cf. Ezra Klein’s use of ≤fcalcification≥ in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12
+¢ See also Ezra Klein’s use of ≤fcalcification≥ in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12
 
 #### ® Errol Louis, writing in NY Magazine (2023) under the headline «Eric Adams Is Finally Facing Reality on Work-From-Home Rules»
 
@@ -678,7 +688,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://boingboing.net/2021/04/14/the-unique-and-hugely-influential-canterbury-music-scene-of-the-60s-and-70s.html Boing Boing / by Gareth Branwyn
 
-£ Bands like Soft Machine, Wilde Flowers, Caravan, Hatfield and the North, National Health, Matching Mole, Egg, Henry Cow, and Gong.
+£ «Bands like Soft Machine, Wilde Flowers, Caravan, Hatfield and the North, National Health, Matching Mole, Egg, Henry Cow, and Gong.»
 
 ~ Gareth Branwyn, writing in Boing Boing
 
@@ -762,7 +772,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed.
 
-£ Michael Tomasky gathered four close observers ... of the Republican Party: Michael Steele, ... Juleanna Glover, ... Max Boot, ... and Nicolle Wallace ...
+£ «Michael Tomasky gathered four close observers ... of the Republican Party: Michael Steele, ... Juleanna Glover, ... Max Boot, ... and Nicolle Wallace ...»
 
 ~ Michael Tomasky, writing in TNR
 
@@ -792,7 +802,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.npr.org/2021/04/21/989333092/the-secret-mission-to-unearth-part-of-a-142-year-old-experiment NPR / by Nell Greenfieldboyce
 
-¢ [n.b. surname is correct]
+¢ n.b.: The surname is correct.
 
 #### ® Mary Norris, writing in The New Yorker (2021) under the headline «Grammar-Nerd Heaven»
 
@@ -802,15 +812,15 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ A new exhibit showcases the surprisingly contentious history of English grammar books.
 
-#### ® Harriet Ryan, writing in Los Angeles Times (2023) under the headline «A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families»
+#### ® Harriet Ryan, writing in The Los Angeles Times (2023) under the headline «A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families»
 
 ◉ Bookmark, Apr 21st
 
-=> https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes Los Angeles Times / by Harriet Ryan
+=> https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes The Los Angeles Times / by Harriet Ryan
 
-£ Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm -- money they now believe was wasted.
+£ «Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm -- money they now believe was wasted.»
 
-~ Harriet Ryan, writing in Los Angeles Times
+~ Harriet Ryan, writing in The Los Angeles Times
 
 ### April 22nd
 
@@ -846,7 +856,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/24/opinion/new-york-city-affordability-housing.html NYT / by Paul Krugman
 
-£ The biggest factor, almost surely, was and is the cost of housing.
+£ «The biggest factor, almost surely, was and is the cost of housing.»
 
 ~ Paul Krugman, writing in NYT
 
@@ -912,7 +922,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
 
-£ ... Arthur Gelb in his memoir, ≤bCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...
+£ «... Arthur Gelb in his memoir, ≤bCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...»
 
 ~ Maureen Dowd, writing in NYT
 
@@ -934,7 +944,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://en.unesco.org/commemorations/worldpressfreedomday UNESCO / World Press Freedom Day
 
-£ Every year, 3 May is a date which celebrates the fundamental principles of press freedom, to evaluate press freedom around the world, to defend the media from attacks on their independence and to pay tribute to journalists who have lost their lives in the exercise of their profession. World Press Freedom Day was proclaimed by the UN General Assembly in 1993 ...
+£ «Every year, 3 May is a date which celebrates the fundamental principles of press freedom, to evaluate press freedom around the world, to defend the media from attacks on their independence and to pay tribute to journalists who have lost their lives in the exercise of their profession. World Press Freedom Day was proclaimed by the UN General Assembly in 1993 ...»
 
 ~ UNESCO
 
@@ -942,7 +952,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Elizabeth Bacon, 1621 (age 79-80), in England
 
-£ ... she became the Lady Nevell of My Ladye Nevells Booke, a manuscript of keyboard music by William Byrd.
+£ «... she became the Lady Nevell of ≤bMy Ladye Nevells Booke≥, a manuscript of keyboard music by William Byrd.»
 
 ~ Wikipedia
 
@@ -1012,7 +1022,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.politico.com/magazine/story/2015/05/the-gop-is-dying-off-literally-118035/ Politico / by Daniel J. McGraw
 
-£ ... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group.
+£ «... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group.»
 
 ~ Daniel J. McGraw, writing in Politico
 
@@ -1048,7 +1058,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/interactive/2019/05/21/business/economy/migration-big-cities.html NYT / by Eduardo Porter and Guilbert Gates
 
-£ But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.
+£ «But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.»
 
 ~ Eduardo Porter and Guilbert Gates, writing in NYT
 
@@ -1097,7 +1107,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.hollywoodreporter.com/business/business-news/does-andy-warhol-get-same-copyright-treatment-as-google-code-4171885/ Hollywood Reporter / by Eriq Gardner
 
-£ ... the Andy Warhol Foundation is citing Google v. Oracle ...
+£ «... the Andy Warhol Foundation is citing Google v. Oracle ...»
 
 ~ Eriq Gardner, writing in Hollywood Reporter
 
@@ -1133,7 +1143,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://en.wikipedia.org/wiki/Cotton_Tree_(Sierra_Leone) WP / Cotton Tree (Sierra Leone)
 
-£ On 24 May 2023, a heavy rain storm felled the cotton tree with only the lower part of its enormous trunk still standing.
+£ «On 24 May 2023, a heavy rain storm felled the cotton tree with only the lower part of its enormous trunk still standing.»
 
 ~ Wikipedia
 
@@ -1147,7 +1157,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.cnn.com/style/article/cita-sadeli-miss-chelove-street-art-nomad/index.html CNN / by Jacopo Prisco
 
-£ Cita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] ≤wNomad≥. ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022
+£ «Cita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] ≤wNomad≥. ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022»
 
 ~ Jacopo Prisco, writing in CNN
 
@@ -1235,7 +1245,7 @@ For a lawyer:    -1 pct    +44 pct
 
 £ «I found a handwritten welcome note, on embossed club stationery, set alongside an orchid and ... chocolate truffles: ‹The whole team remains at your entire disposal to make your stay a wonderful experience. Yours sincerely, Service Members.›»
 
-~ Evan Osnos, writing in The New Yorker («July 18, 2022» ... «July 25, 2022 Issue»)
+~ Evan Osnos, writing in The New Yorker (July 18, 2022; in issue dated July 25, 2022)
 
 ### July 21st
 
@@ -1253,7 +1263,7 @@ For a lawyer:    -1 pct    +44 pct
 
 #### 1918-07-21: A German U-boat (submarine) fires on vessels off Cape Cod, striking the shore in the process.
 
-£ A few shells and craters were found on shore in Orleans and in the nearby marsh.
+£ «A few shells and craters were found on shore in Orleans and in the nearby marsh.»
 
 ~ Wikipedia
 
@@ -1275,7 +1285,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://boingboing.net/2021/08/07/watch-this-short-documentary-about-the-influential-experimental-black-mountain-college.html Boing Boing / by Popkin
 
-£ Black Mountain College: A Thumbnail Sketch is a 13-minute documentary about a legendary, experimental college founded by John Andrew Rice along with a few others in 1933.
+£ «≤wBlack Mountain College: A Thumbnail Sketch≥ is a 13-minute documentary about a legendary, experimental college founded by John Andrew Rice along with a few others in 1933.»
 
 ~ Popkin, writing in Boing Boing
 
@@ -1337,9 +1347,9 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ And why users think it’s unreadable.
 
-£ Fredrick Brennan: ‹... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.›
+£ «‹... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.›»
 
-~ Aaron Mak, writing in Slate
+~ Fredrick Brennan, quoted by Aaron Mak, in Slate
 
 #### Deaths on this date:
 
@@ -1381,11 +1391,9 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States.
 
-£ This collaboration between the Armed Conflict Location & Event Data Project (ACLED) and Everytown for Gun Safety Support Fund (Everytown) presents quantitative research on demonstrations in the United States during the 18-month period from January 2020 through June 2021, documenting 560 events where demonstrators, counter-demonstrators, or other individuals or groups were present and carried or brandished firearms (see inset definition).
+£ «This collaboration between the Armed Conflict Location & Event Data Project (ACLED) and Everytown for Gun Safety Support Fund (Everytown) presents quantitative research on demonstrations in the United States during the 18-month period from January 2020 through June 2021, documenting 560 events where demonstrators, counter-demonstrators, or other individuals or groups were present and carried or brandished firearms (see inset definition).»
 
 ~ ACLED and the Everytown for Gun Safety Support Fund
-
-by := ACLED and the Everytown for Gun Safety Support Fund
 
 #### Deaths on this date:
 
@@ -1421,7 +1429,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://twitter.com/GovChristie/status/1701683733953138918
 
-£ Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is «rotten». Trump thinks Putin is a «genius» -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
+£ «Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is ≤srotten≥. Trump thinks Putin is a ≤sgenius≥ -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
 ~ Gov. Chris Christie (@GovChristie) on Twitter
 
@@ -1429,7 +1437,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://twitter.com/AsaHutchinson/status/1701659903230689598
 
-£ Trump & Putin are using the same talking points. Trump’s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc
+£ «Trump & Putin are using the same talking points. Trump’s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
 ~ Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
@@ -1437,7 +1445,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 => https://twitter.com/Liz_Cheney/status/1701651278697308238
 
-£ Putin has now officially endorsed the Putin-wing of the Republican Party. Putin Republicans & their enablers will end up on the ash heap of history. Patriotic Americans in both parties who believe in the values of liberal democracy will make sure of it. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc
+£ «Putin has now officially endorsed the Putin-wing of the Republican Party. Putin Republicans & their enablers will end up on the ash heap of history. Patriotic Americans in both parties who believe in the values of liberal democracy will make sure of it. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
 ~ Rep. Liz Cheney (@Liz_Cheney) on Twitter
 
@@ -1459,15 +1467,13 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ##### Carl Laemmle, 1939 (age 72), in Los Angeles
 
-£ Poet Ogden Nash observed the following about Laemmle’s habit of giving his son and nephews top executive positions in his studios:
-
-££ ‹Uncle Carl Laemmle
-
-££ Has a very large faemmle.›
+£ «Poet Ogden Nash observed the following about Laemmle’s habit of giving his son and nephews top executive positions in his studios:<br><br>Uncle Carl Laemmle<br>Has a very large faemmle.»
 
 ~ Wikipedia
 
 => https://en.wikipedia.org/wiki/Carl_Laemmle WP / Carl Laemmle
+
+¢ [Let’s hope no more blockquotes end in verse. -- ȐD]
 
 ## X. October
 
@@ -1481,7 +1487,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ##### Jonathan Swift, 1745 (age 77), in Dublin
 
-£ The best maxim I know in this life is, to drink your coffee when you can, and when you cannot, to be easy without it.
+£ «The best maxim I know in this life is, to drink your coffee when you can, and when you cannot, to be easy without it.»
 
 ~ Jonathan Swift
 
@@ -1501,7 +1507,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ¢ Writing in The Times, Ezra Klein discusses «... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.»
 
-¢ cf. George F. Will’s coinage ≤fboiling but frozen≥ in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12
+¢ See also George F. Will’s coinage ≤fboiling but frozen≥ in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12
 
 ### November 22nd
 
@@ -1517,7 +1523,7 @@ by := ACLED and the Everytown for Gun Safety Support Fund
 
 ~ Rob Beschizza, writing in Boing Boing
 
-¢ Note the difference in the styling of the two titles above. Their words are the same, but one is an article and the other is an artwork.
+¢ Note the difference in the styling of the two titles above. Their words are the same, but one is the title of an article and the other is of an artwork.
 
 #### 1963-11-22: Assassination of John F. Kennedy
 

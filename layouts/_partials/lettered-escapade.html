@@ -11,6 +11,8 @@
   {{ $theContent = replaceRE `\]` `TMPLT_RSQBKT` $theContent }}
   {{ $theContent = replaceRE `\[` `TMPLT_LSQBKT` $theContent }}
   {{ $theContent = replaceRE `\?` `TMPLT_QSTNMK` $theContent }}
+  {{ $theContent = replaceRE `\+` `TMPLT_PLUSSN` $theContent }}
+  {{ $theContent = replaceRE `\$` `TMPLT_DOLLAR` $theContent }}
   {{- /* The following is also the apostrophe in most publications: */ -}}
   {{ $theContent = replaceRE `’`  `TMPLT_RSNGQA` $theContent }}
   {{ $theContent = replaceRE `‘`  `TMPLT_LSNGQA` $theContent }}
@@ -46,17 +48,18 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_RSQBKT` `]`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LSQBKT` `[`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_QSTNMK` `?`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_PLUSSN` `+`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_DOLLAR` `$`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RSNGQA` `’`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LDGUIL ` `«`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LDGUIL` `«`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RDGUIL` `»`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RDGUIL` `»`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSGUIL` `‹`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RSGUIL` `›`  $theContent }}
-
+  {{ $theContent = replaceRE `TMPLT_LDGUIL ` `<q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDGUIL` `<q>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RDGUIL` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RDGUIL` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSGUIL` `<q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSGUIL` `</q>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LSOCLD `
                              `<i class="so-called">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSOCLD` `</i>`  $theContent }}

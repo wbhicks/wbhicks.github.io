@@ -69,7 +69,8 @@
       ) 
   }}
 {{ else if (eq $classifier "b") }}
-{{- /* CASE b: For the typically italicized title/name of a book.
+{{- /* CASE b: For the typically italicized title/name of a book (or
+       manuscript like My Ladye Nevells Booke).
 
        ≤bMoby Dick≥ ---> <cite class="book-title">Moby Dick</cite>
 
@@ -161,16 +162,22 @@
       ` TMPLT_RNIKNM`
       ) 
   }}
-{{ else if (eq $classifier "q") }}
-{{- /* CASE q: simple direct quotations belonging to no other kind
 
-*/ -}}
+
+{{- /* COMMENTED OUT, USING « & » (and, when nested, ‹ & ›) INSTEAD
+
+       CASE q: simple direct quotations belonging to no other kind
+{{ else if (eq $classifier "q") }}
   {{ $result = (add 
       `TMPLT_LSMPLQ ` 
       $the_content 
       ` TMPLT_RSMPLQ`
       ) 
   }}
+
+*/ -}}
+
+
 {{ else if (eq $classifier "r") }}
 {{- /* CASE r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
 
@@ -192,8 +199,8 @@
 {{- /* CASE s: terms that are so-called, e.g.
 
        ≤sBad≥ ---> <i class="so-called">Bad</i>
-       BUT I used quotation marks for this:
-       ... thinks our system is «rotten». Trump thinks Putin is a «genius» ...
+
+       ... thinks our system is ≤srotten≥. Trump thinks Putin is a ≤sgenius≥ ...
 
 */ -}}
   {{ $result = (add 
@@ -221,8 +228,12 @@
 {{- /* CASE w: For the typically italicized title/name of an akin-to-a-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't.
 
        ≤wRubber Soul≥ ---> <cite class="like-book-title">Rubber Soul</cite>
+
        TODO: like-book-title ---> magazine-title, lp-title, film-title, artwork-title etc.
+
        ... episode of the CNN [series] ≤wNomad≥. ...
+
+       ≤wBlack Mountain College: A Thumbnail Sketch≥ is a 13-minute documentary ...
 
 */ -}}
   {{ $result = (add 
