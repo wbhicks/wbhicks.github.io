@@ -5,7 +5,7 @@
 {{ $mostRecentLinkTitle := .mRLT }}
 
 {{ $rubellitedText := "ERR! 504" }}
-{{ $result := "OVERWRITTEN" }}
+{{ $result := "Error ... Do all deks have guillemets?" }}
 
 {{- /* ====================
        Currently handled prefixes: £ ££ ~ ® ¢ =&gt; ∂ ◉
@@ -237,17 +237,28 @@
   }}
   {{ $result = (add $leftmostOpeningTag $rubellitedText $rightmostClosingTag) }}
 {{ else if (eq $prefix "∂") }}
-  {{- /* CASE ∂: Periodical deks (subheadlines), e.g.
-
-       ^dek: "The subhead, or dek, of the magazine article goes here"
-       --->TMPLT_LATITL $1 TMPLT_RATITL
-       ^∂ "..."
-
-  */ -}}
-  {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
+  {{ if (partial "whole-str-matches-regex" (dict 
+      "pattern" `TMPLT_LDGUIL(.+)TMPLT_RDGUIL` 
+      "text" $text)) 
   }}
-  {{ $result = (add `<div class="dek">Its subheadline: TMPLT_LATITL ` $rubellitedText ` TMPLT_RATITL</div>`) }}
+
+    {{- /* CASE ∂: Periodical deks (subheadlines), e.g.
+
+         ^∂ «The subhead, or dek, of the magazine article goes here»
+         --->TMPLT_LATITL $1 TMPLT_RATITL
+
+         This is an unusual case because deks are always bracketed by
+         guillemets. So, we can remove them with the substr function 
+         rather than needing to call replaceRE:
+    */ -}}
+    {{ $text = (substr $text 12 -12) }}
+    {{ $rubellitedText = (partial "apply-ruby-features.html"
+        (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
+    }}
+    {{ $result = (add `<div class="dek">Its subheadline: TMPLT_LATITL ` $rubellitedText ` TMPLT_RATITL</div>`) }}
+
+  {{ end }}
+
 {{ else if (eq $prefix "=&gt;") }}
   {{ if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>) (.+) / by (.+)` "text" $text)) }}
     {{ $result = 

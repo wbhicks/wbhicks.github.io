@@ -46,7 +46,7 @@ draft: false
 
 => https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html NYT / by Blake Gopnik
 
-∂ Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.
+∂ «Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.»
 
 ¢ Referring to contemporary artist Danh Võ, Blake Gopnik writes: «Mr. Vo sees the letter’s almost trivial price tag as adding conceptual heft to the piece.»
 
@@ -204,7 +204,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/ Mother Jones / by David Corn
 
-∂ The magazine’s attempted takedown of the media’s coverage bolsters Trump’s phony narrative.
+∂ «The magazine’s attempted takedown of the media’s coverage bolsters Trump’s phony narrative.»
 
 ¢ David Corn succinctly recaps the help Trump chose to lend Putin in 2016:
 
@@ -224,7 +224,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://slate.com/culture/2023/02/hanging-out-sheila-liming-book-friendship-crisis.html Slate / by Dan Kois
 
-∂ There’s a growing crisis in our social lives. Could the cure be this simple?
+∂ «There’s a growing crisis in our social lives. Could the cure be this simple?»
 
 ¢ The recommendation: Kill some time by hanging out with your friends and shooting the breeze.
 
@@ -286,7 +286,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.theguardian.com/us-news/2023/feb/27/west-virginia-mixed-martial-arts-coach-security-drag-show The Guardian / Gloria Oladipo
 
-∂ Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats
+∂ «Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats»
 
 ¢ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, ≤fen passant≥, of ≤mNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
 
@@ -318,7 +318,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.newyorker.com/magazine/2023/03/06/the-end-of-the-english-major The New Yorker / by Nathan Heller
 
-∂ Enrollment in the humanities is in free fall at colleges around the country. What happened?
+∂ «Enrollment in the humanities is in free fall at colleges around the country. What happened?»
 
 #### 1665-03-06: The first issue of Philosophical Transactions of the Royal Society is published. The journal has been in publication ever since.
 
@@ -338,7 +338,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.nytimes.com/2023/03/07/magazine/los-angeles-walking-rosecrans-avenue.html NYT / by Rosecrans Baldwin
 
-∂ A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting.
+∂ «A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting.»
 
 £ «Probably most of Greater L.A. is awful to experience on foot. Yet there’s so much of it, radiating from multiple cores, that the amount worth walking is colossal.»
 
@@ -358,7 +358,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 => https://www.bbc.com/future/article/20210325-the-strange-medieval-fruit-the-world-forgot BBC / by Zaria Gorvett
 
-∂ Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?
+∂ «Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?»
 
 ¢ The medlar, also known as the ≤fopen-arse≥, the ≤fmonkey’s bottom≥, etc.. On the BBC Future subsite of the BBC Britain news site, Zaria Gorvett writes:
 
@@ -522,7 +522,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/03/26/science/tooth-pain-cold.html NYT / by Veronique Greenwood
 
-∂ Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it.
+∂ «Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it.»
 
 ### March 27th
 
@@ -548,7 +548,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/03/28/science/lightning-rod-video.html NYT / by Nicholas Bakalar
 
-∂ Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning.
+∂ «Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning.»
 
 ### March 30th
 
@@ -560,7 +560,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/03/30/science/blackwater-photography-fish-larvae.html NYT / by Erik Olsen
 
-∂ Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae.
+∂ «Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae.»
 
 #### ® Geeta Dayal, writing in NYT (2021) under the headline «Is the Music Over at Mills College?»
 
@@ -568,7 +568,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/03/30/arts/music/mills-college-music.html NYT / by Geeta Dayal
 
-∂ A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.
+∂ «A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.»
 
 £ «The school’s faculty over the years has been practically an index of maverick artists, including Darius Milhaud, ... Luciano Berio, ... Lou Harrison, who built an American version of the Indonesian gamelan percussion orchestra; the ≤fdeep listening≥ pioneer Pauline Oliveros; Robert Ashley, ... Terry Riley, ... Anthony Braxton; James Fei, ... and Maggi Payne ... Among the alumni are Dave Brubeck, Steve Reich, John Bischoff, William Winant and Laetitia Sonami ...»
 
@@ -598,7 +598,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/05/arts/design/warhol-copyright-appeals-court.html NYT / by Blake Gopnik
 
-∂ An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.
+∂ «An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.»
 
 #### Deaths on this date:
 
@@ -624,7 +624,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/06/opinion/stanford-admissions-campus.html NYT / by David L. Kirp
 
-∂ If elite colleges are serious about diversity of class and race, there’s a simple solution.
+∂ «If elite colleges are serious about diversity of class and race, there’s a simple solution.»
 
 #### Deaths on this date:
 
@@ -640,7 +640,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.theatlantic.com/ideas/archive/2023/04/wisconsin-supreme-court-election-republican-party/673656/ The Atlantic / by Charles Sykes
 
-∂ They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability.
+∂ «They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability.»
 
 £ «Wisconsin Republicans are caught in a bind: What the base wants, the majority rejects.»
 
@@ -706,7 +706,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://theamericanscholar.org/poetry-in-the-abstract/ The American Scholar / by Christopher Cokinos
 
-∂ What happens when scientists write haiku?
+∂ «What happens when scientists write haiku?»
 
 #### Deaths on this date:
 
@@ -726,7 +726,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/17/business/california-homeless-hotels.html NYT / by Conor Dougherty
 
-∂ For homeless people, a place to live is life changing to a degree that almost no other intervention can provide.
+∂ «For homeless people, a place to live is life changing to a degree that almost no other intervention can provide.»
 
 #### ® Shane Harrison, writing in BBC (2023) under the headline «How Gerard Hutch murder trial made international headlines»
 
@@ -746,7 +746,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.theguardian.com/culture/2021/apr/19/creativity-is-essential-artist-designed-supermarket-to-open-at-london-design-museum The Guardian / by Mark Brown
 
-∂ Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity
+∂ «Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity»
 
 #### ® Anil Ananthaswamy, writing in Scientific American (2021) under the headline «Quantum Astronomy Could Create Telescopes Hundreds of Kilometers Wide»
 
@@ -754,7 +754,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.scientificamerican.com/article/quantum-astronomy-could-create-telescopes-hundreds-of-kilometers-wide/ Scientific American / by Anil Ananthaswamy
 
-∂ Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories
+∂ «Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories»
 
 #### Deaths on this date:
 
@@ -770,7 +770,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://newrepublic.com/article/171722/republican-party-dead TNR / by Michael Tomasky
 
-∂ We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed.
+∂ «We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed.»
 
 £ «Michael Tomasky gathered four close observers ... of the Republican Party: Michael Steele, ... Juleanna Glover, ... Max Boot, ... and Nicolle Wallace ...»
 
@@ -782,7 +782,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html NYT / by Leah Greenblatt
 
-∂ With the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.
+∂ «With the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.»
 
 ### April 21st
 
@@ -794,7 +794,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/21/technology/welcome-to-the-yolo-economy.html NYT / by Kevin Roose
 
-∂ Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure.
+∂ «Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure.»
 
 #### ® Nell Greenfieldboyce, writing in NPR (2021) under the headline «The Secret Mission To Unearth Part Of A 142-Year-Old Experiment»
 
@@ -810,7 +810,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.newyorker.com/culture/comma-queen/grammar-nerd-heaven The New Yorker / by Mary Norris
 
-∂ A new exhibit showcases the surprisingly contentious history of English grammar books.
+∂ «A new exhibit showcases the surprisingly contentious history of English grammar books.»
 
 #### ® Harriet Ryan, writing in The Los Angeles Times (2023) under the headline «A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families»
 
@@ -832,7 +832,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
 
-∂ That story, which has sometimes been called a real-life ≤bLord of the Flies≥, was just one episode in a life filled with adventure.
+∂ «That story, which has sometimes been called a real-life ≤bLord of the Flies≥, was just one episode in a life filled with adventure.»
 
 #### ® Amelia Soth, writing in JSTOR Daily (2021) under the headline «When Paid Applauders Ruled the Paris Opera House»
 
@@ -840,7 +840,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://daily.jstor.org/paid-applauders-paris-opera-claques/ JSTOR Daily / by Amelia Soth
 
-∂ Professional applauders, collectively known as the ≤fclaque≥, helped mold the tastes of an uncertain audience.
+∂ «Professional applauders, collectively known as the ≤fclaque≥, helped mold the tastes of an uncertain audience.»
 
 #### Deaths on this date:
 
@@ -870,7 +870,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.npr.org/sections/goatsandsoda/2021/04/25/989765565/tower-of-babble-non-native-speakers-navigate-the-world-of-good-and-bad-english NPR / by Carolyn McCusker
 
-∂ Why Nonnative English Speakers Actually Speak The Best English
+∂ «Why Nonnative English Speakers Actually Speak The Best English»
 
 #### Deaths on this date:
 
@@ -900,7 +900,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.politico.com/news/magazine/2023/04/28/jim-vandehei-profile-00094172 Politico / by Michael Schaffer
 
-∂ D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.
+∂ «D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.»
 
 ### April 29th
 
@@ -968,7 +968,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/05/04/realestate/design-downsizing.html NYT / by Pilar Viladas
 
-∂ When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio.
+∂ «When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio.»
 
 #### ® Tim McKeough, writing in NYT (2021) under the headline «In Miami, a Sculpture Built to Live In»
 
@@ -976,7 +976,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.nytimes.com/2021/05/04/realestate/the-carter-project-miami-sculpture-christopher-carter.html NYT / by Tim McKeough
 
-∂ Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit.
+∂ «Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit.»
 
 #### Deaths on this date:
 
@@ -992,7 +992,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.bbc.com/future/article/20210505-how-cities-will-fossilise BBC / by David Farrier
 
-∂ The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others.
+∂ «The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others.»
 
 #### Deaths on this date:
 
@@ -1032,7 +1032,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.cnet.com/news/nikola-tesla-invention-from-100-years-ago-suddenly-makes-more-sense-today/ Cnet / by Eric Mack
 
-∂ The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew.
+∂ «The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew.»
 
 ### May 19th
 
@@ -1044,7 +1044,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 => https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs The Guardian / by Leyland Cecco
 
-∂ Korean media praises prime minister’s gesture, known as ≤fmanner legs≥, while some Canadians say it is embarrassing country
+∂ «Korean media praises prime minister’s gesture, known as ≤fmanner legs≥, while some Canadians say it is embarrassing country»
 
 ¢ A note for students of English: the word ≤fsplit≥ in the headline is a play on words.
 
@@ -1091,7 +1091,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/ Atlanta Journal-Constitution / by Rodney Ho
 
-∂ My 2021 photo is from the Jamie Foxx Netflix comedy ≤wDay Shift≥ but many believe it’s a vintage shot
+∂ «My 2021 photo is from the Jamie Foxx Netflix comedy ≤wDay Shift≥ but many believe it’s a vintage shot»
 
 #### Deaths on this date:
 
@@ -1125,7 +1125,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.washingtonpost.com/transportation/2022/05/24/pandemic-suburbs-downtown-retail/ WaPo / by Katherine Shaver
 
-∂ Developers are adding outdoor co-working space -- bocce ball, anyone? -- to attract remote workers to stores and restaurants
+∂ «Developers are adding outdoor co-working space -- bocce ball, anyone? -- to attract remote workers to stores and restaurants»
 
 #### 2023-05-24: The symbolic Cotton Tree in Freetown, Sierra Leone, was felled by a storm:
 
@@ -1137,7 +1137,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse (in Freetown), 2023-05-25
 
-∂ Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa
+∂ «Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa»
 
 ##### ® Source: Wikipedia, «Cotton Tree (Sierra Leone)»
 
@@ -1195,7 +1195,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.nytimes.com/2020/07/01/nyregion/guilford-ct-fire-rescue-well.html NYT / by Allyson Waller
 
-∂ ... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well.
+∂ «... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well.»
 
 #### 1863-07-01: Abolition of slavery in Suriname and the Dutch colonies in the Caribbean
 
@@ -1211,7 +1211,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
 
-∂ A student objected to a class, ≤cThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?
+∂ «A student objected to a class, ≤cThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?»
 
 #### 1608-07-03: Founding of Quebec City
 
@@ -1225,7 +1225,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.politico.com/news/magazine/2021/07/09/west-virginia-economy-paid-remote-work-498238 Politico / by Mackenzie Mays
 
-∂ The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.
+∂ «The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.»
 
 #### Deaths on this date:
 
@@ -1241,7 +1241,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.newyorker.com/magazine/2022/07/25/the-haves-and-the-have-yachts The New Yorker / by Evan Osnos
 
-∂ Luxury ships attract outrage and political scrutiny. The ultra-rich are buying them in record numbers.
+∂ «Luxury ships attract outrage and political scrutiny. The ultra-rich are buying them in record numbers.»
 
 £ «I found a handwritten welcome note, on embossed club stationery, set alongside an orchid and ... chocolate truffles: ‹The whole team remains at your entire disposal to make your stay a wonderful experience. Yours sincerely, Service Members.›»
 
@@ -1257,7 +1257,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.politico.com/interactives/2021/coronavirus-reopening-by-county-income/ Politico / by Beatrice Jin
 
-∂ Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide.
+∂ «Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide.»
 
 ¢ In Politico, Beatrice Jin writes: «Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home.»
 
@@ -1303,7 +1303,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.vice.com/en/article/akgqyz/moving-to-new-york-essentials Vice / by Ian Burke
 
-∂ Start with a brisk walking pace, an incorrect opinion on bagels, and a healthy hatred of Bill de Blasio.
+∂ «Start with a brisk walking pace, an incorrect opinion on bagels, and a healthy hatred of Bill de Blasio.»
 
 ¢ See also the counterpart to this article, which Vice published 3 days later.
 
@@ -1327,7 +1327,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.vice.com/en/article/93ymxz/zillow-other-tech-firms-are-in-an-arms-race-to-buy-up-american-homes Vice / by Maxwell Strachan
 
-∂ ≤siBuyers≥ are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.
+∂ «≤siBuyers≥ are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.»
 
 #### ® Mary Frances ≤nFrancky≥ Knapp, writing in Vice (2021) under the headline «Moving to LA From the East Coast? Here’s What You’ll Need»
 
@@ -1335,7 +1335,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances ≤nFrancky≥ Knapp
 
-∂ In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you’ll need for your new LA life of pool parties and picnics.
+∂ «In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you’ll need for your new LA life of pool parties and picnics.»
 
 ¢ See also the counterpart to this article, which Vice published 3 days earlier.
 
@@ -1345,7 +1345,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://slate.com/technology/2021/08/twitter-font-redesign-chirp-franklin-gothic.html Slate / by Aaron Mak
 
-∂ And why users think it’s unreadable.
+∂ «And why users think it’s unreadable.»
 
 £ «‹... Chirp is extremely similar to GT America, which is itself based on Franklin Gothic.›»
 
@@ -1365,7 +1365,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.bbc.com/news/world-africa-58260855 BBC / by Kayleen Devlin
 
-∂ The BBC’s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.
+∂ «The BBC’s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.»
 
 #### ® Henry Grabar, writing in Slate (2021) under the headline «The Perverse Reason It’s Easier to Build New Highways Than New Subways - The environment?!»
 
@@ -1373,7 +1373,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://slate.com/business/2021/08/congestion-pricing-nyc-bart-tunnel-san-francisco-bay-environmental-reviews.html Slate / by Henry Grabar
 
-∂ Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads.
+∂ «Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads.»
 
 #### Deaths on this date:
 
@@ -1389,7 +1389,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america
 
-∂ This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States.
+∂ «This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States.»
 
 £ «This collaboration between the Armed Conflict Location & Event Data Project (ACLED) and Everytown for Gun Safety Support Fund (Everytown) presents quantitative research on demonstrations in the United States during the 18-month period from January 2020 through June 2021, documenting 560 events where demonstrators, counter-demonstrators, or other individuals or groups were present and carried or brandished firearms (see inset definition).»
 
@@ -1411,7 +1411,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.theatlantic.com/technology/archive/2015/08/ballpoint-pens-object-lesson-history-handwriting/402205/ The Atlantic / by Josh Giesbrecht
 
-∂ Thicker ink, fewer smudges, and more strained hands: an Object Lesson
+∂ «Thicker ink, fewer smudges, and more strained hands: an Object Lesson»
 
 ## IX. September
 
@@ -1459,7 +1459,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.theatlantic.com/international/archive/2021/09/britain-france-us-aukus/620186/ The Atlantic / by Tom McTague
 
-∂ The two countries are more similar than is often acknowledged.
+∂ «The two countries are more similar than is often acknowledged.»
 
 #### Deaths on this date:
 
@@ -1537,7 +1537,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://www.nytimes.com/2022/11/29/nyregion/nyc-mentally-ill-involuntary-custody.html NYT / by Andy Newman and Emma G. Fitzsimmons
 
-∂ Mayor Eric Adams directed the police and emergency medical workers to hospitalize people they deemed too mentally ill to care for themselves, even if they posed no threat to others.
+∂ «Mayor Eric Adams directed the police and emergency medical workers to hospitalize people they deemed too mentally ill to care for themselves, even if they posed no threat to others.»
 
 ## XII. December
 
@@ -1553,7 +1553,7 @@ For a lawyer:    -1 pct    +44 pct
 
 => https://slate.com/technology/2022/12/medical-debt-collections-credit-report-burden.html Slate / by Bobbi Dempsey
 
-∂ Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system.
+∂ «Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system.»
 
 ### December 31st
 
