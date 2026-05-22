@@ -52,7 +52,7 @@ draft: false
 
 ¢ The social significance attached by some artists to the extremely low prices of their multiples has, I think, a close analogue in the infinite reproducibility of digital art, which some (most?) digital artists consider to be both good and intrinsic to their work.
 
-#### 1790-01-08: GW’s 1st SoTU, including this passage:
+#### 1790-01-08: George Washington’s first ≤sState of the Union≥ address, including this passage:
 
 £ «Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.»
 
@@ -68,7 +68,7 @@ draft: false
 
 => https://en.wikipedia.org/wiki/Fourteen_Points WP / Fourteen Points
 
-#### 1964-01-08: LBJ’s 1st SoTU announces the war on poverty.
+#### 1964-01-08: LBJ, in his first ≤sState of the Union≥ address, announces the war on poverty.
 
 => https://en.wikipedia.org/wiki/War_on_poverty WP / War on poverty
 
@@ -660,7 +660,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® George F. Will, writing in WaPo (2023) under the headline «How ‹I despise, therefore I am› locks in the political status quo»
+#### ® George F. Will, writing in WaPo (2023) under the headline «How ≤eI despise, therefore I am≥ locks in the political status quo»
 
 ◉ Bookmark, Apr 12th
 
@@ -670,7 +670,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ George F. Will, writing in WaPo
 
-¢ See also Ezra Klein’s use of ≤fcalcification≥ in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12
+¢ See also Ezra Klein’s use of ≤fcalcification≥ in ≤aThree Theories That Explain This Strange Moment≥, 2022-11-12
 
 #### ® Errol Louis, writing in NY Magazine (2023) under the headline «Eric Adams Is Finally Facing Reality on Work-From-Home Rules»
 
@@ -1507,7 +1507,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ Writing in The Times, Ezra Klein discusses «... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.»
 
-¢ See also George F. Will’s coinage ≤fboiling but frozen≥ in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12
+¢ See also George F. Will’s coinage ≤fboiling but frozen≥ in ≤aHow ≤eI despise, therefore I am≥ locks in the political status quo≥, 2023-04-12
 
 ### November 22nd
 

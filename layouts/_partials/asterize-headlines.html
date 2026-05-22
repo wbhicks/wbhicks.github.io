@@ -69,12 +69,14 @@ And, in the replacement, use the captures thus:
   }}
   {{ $theContent = 
       replaceRE
-     `<h5 id="([^"]+)">
-(.*)
-</h5>`
-     `<h5 class="h5-from-4stars" id="$1">
-$2
-</h5>`
+     `<h5 id="([^"]+)">`
+     `<div class="asterism-above-h5">〜 ✻ 〜</div><h5 class="h5-from-4stars" id="$1">`
+      $theContent
+  }}
+  {{ $theContent = 
+      replaceRE
+     `</h5>`
+     `</h5><div class="asterism-below-h5">〜 ✻ 〜</div>`
       $theContent
   }}
 

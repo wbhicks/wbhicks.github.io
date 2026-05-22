@@ -20,6 +20,8 @@
 
    * Internals for block-level elements (about 100 lines)
    ** Headings, asterisms, & rule lines: internals
+   *** The H5 element
+   ** The FIGCAPTION element
    ** PRE, CODE, SAMP, & KBD: internals
    ** Elements for lists (OL, UL, & LI): internals
    ** The HR element
@@ -203,6 +205,14 @@ body > div.nojs-mini-themed > div.mono-color-selector {
     margin-top:    var(--spacing-for-top-of-asterism-below);
     margin-bottom: 3rem;
   }
+  main > div.asterism-above-h5 {
+    margin-top:    1rem;
+    margin-bottom: 0;
+  }
+  main > div.asterism-below-h5 {
+    margin-top:    0;
+    margin-bottom: 1rem;
+  }
 
 } // End of .nojs-mini-themed
 
@@ -237,13 +247,14 @@ body > div.nojs-mini-themed > div.mono-color-selector {
   --spacing-above-headings-and-below-rule-lines: 2rem;
 
   main > h2.h2-from-1star,
-  main > h3.h3-from-2stars {
+  main > h3.h3-from-2stars,
+  main > h4.h4-from-3stars {
     margin-top:    var(--spacing-above-headings-and-below-rule-lines);
     margin-bottom: 0;
   }
 
-  main > h4.h4-from-3stars {
-    margin-top:    var(--spacing-above-headings-and-below-rule-lines);
+  main > h5.h5-from-4stars {
+    margin-top:    0;
     margin-bottom: 0;
   }
 
@@ -296,10 +307,6 @@ body > div.nojs-mini-themed > div.mono-color-selector {
     margin-bottom: var(--margin-top-or-bottom);
   }
   main > pre {
-    margin-top:    var(--margin-top-or-bottom);
-    margin-bottom: var(--margin-top-or-bottom);
-  }
-  main > h5 {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
@@ -686,6 +693,13 @@ body > div.nojs-mini-themed > footer {
     display: block;
   }
 
+  main > div.asterism-above-h5,
+  main > div.asterism-below-h5 {
+    white-space-collapse: preserve;
+    line-height: 1;
+    display: block;
+  }
+
   main > div.rule-line-below-h2,
   main > div.rule-line-below-h3,
   main > div.rule-line-below-h4 {
@@ -708,7 +722,9 @@ body > div.nojs-mini-themed > footer {
   main > div.asterism-above-h3,
   main > div.asterism-below-h3,
   main > div.asterism-above-h4,
-  main > div.asterism-below-h4 {
+  main > div.asterism-below-h4,
+  main > div.asterism-above-h5,
+  main > div.asterism-below-h5 {
     display: none;
   }
 
@@ -723,6 +739,18 @@ body > div.nojs-mini-themed > footer {
   }
 
 }
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   The H5 element
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+
+//main > h5::before {
+//  content: "〜 ✻ 〜 ";
+//  padding-right: 1rem;
+//}
 
 
 /* =====================
@@ -891,7 +919,7 @@ body > div.nojs-mini-themed > footer {
    All derived from "lettered strings"
 
    The current codes for lettered strings, used in the template
-   lettered-leaf.html, are as follows: a b c f l m n q r s t w
+   lettered-leaf.html, are as follows: a b c e f l m n q r s t w
 
    There is a 1-to-1 correspondence between them and this section's
    declaration blocks, EXCEPT for cite.special-citation (which is TBD).
@@ -920,15 +948,17 @@ body > div.nojs-mini-themed > footer {
   }
   cite.like-article-title { // ≤c
   }
+  i.epigram { // ≤e
+  }
   i.foreign { // ≤f
   }
   i.logic { // ≤l
   }
-  cite.media-title { // ≤m
+  cite.media-title { // ≤m (TODO: should class use element I, not CITE?)
   }
   i.nickname { // ≤n
   }
-  main q { // ≤q
+  main q { // ≤q (although the ≤q...≥ notation is currently unused)
   }
 
   // Case r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
@@ -943,7 +973,7 @@ body > div.nojs-mini-themed > footer {
   }
   cite.like-book-title { // ≤w
   }
-  cite.special-citation { // NO CODE FOR LETTERED STRINGS YET: TODO
+  cite.special-citation { // UNUSED; NO CODE FOR LETTERED STRINGS
   }
 
 } // End of .nojs-mini-themed
@@ -1047,6 +1077,7 @@ body > div.nojs-mini-themed > footer {
   // main > figure > blockquote,
   main cite.article-title,      // ≤a
   main cite.like-article-title, // ≤c
+  main i.epigram,               // ≤e
   main i.nickname,              // ≤n
   main q,                       // ≤q Is this line necessary?
   main i.so-called {            // ≤s
@@ -1056,6 +1087,7 @@ body > div.nojs-mini-themed > footer {
   // main > figure > blockquote::before,
   main cite.article-title::before,      // ≤a
   main cite.like-article-title::before, // ≤c
+  main i.epigram::before,               // ≤e
   main i.nickname::before,              // ≤n
   main q::before,                       // ≤q Is this line necessary?
   main i.so-called::before {            // ≤s
@@ -1065,6 +1097,7 @@ body > div.nojs-mini-themed > footer {
   // main > figure > blockquote::after,
   main cite.article-title::after,       // ≤a
   main cite.like-article-title::after,  // ≤c
+  main i.epigram::after,                // ≤e
   main i.nickname::after,               // ≤n
   main q::after,                        // ≤q Is this line necessary?
   main i.so-called::after {             // ≤s
@@ -1078,11 +1111,13 @@ body > div.nojs-mini-themed > footer {
 
   main cite.article-title::before,      // ≤a
   main cite.like-article-title::before, // ≤c
+  main i.epigram::before,               // ≤e
   main i.nickname::before,              // ≤n
   main q::before,                       // ≤q
   main i.so-called::before,             // ≤s
   main cite.article-title::after,       // ≤a
   main cite.like-article-title::after,  // ≤c
+  main i.epigram::after,                // ≤e
   main i.nickname::after,               // ≤n
   main q::after,                        // ≤q
   main i.so-called::after {             // ≤s
@@ -1618,6 +1653,7 @@ body.igt-mode-off {
     cite.special-citation   { text-decoration: #00cccc line-through dashed; }
 
     i.term       { text-decoration: #00cccc overline dashed; }
+    i.epigram    { text-decoration: #00cccc overline dashed; }
     i.so-called  { text-decoration: #00cccc overline dashed; }
     i.nickname   { text-decoration: #00cccc overline dotted; }
     abbr         { text-decoration: #00cccc overline wavy;   }

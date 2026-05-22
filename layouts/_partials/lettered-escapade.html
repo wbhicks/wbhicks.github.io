@@ -81,6 +81,9 @@ end of comment was here
                              `<rt>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RRUBYT`
                              `</rt>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LEPIGM `
+                             `<i class="epigram">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_REPIGM` `</i>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LFREGN `
                              `<i class="foreign">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RFREGN` `</i>`  $theContent }}

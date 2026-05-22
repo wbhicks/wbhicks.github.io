@@ -48,8 +48,15 @@
        which means that it doesn't contain any nested lettered strings. This is
        enforced in the template that calls this one, prefixed-or-lettered.html.
 
-       Current codes for lettered strings: a b c f l m n q r s t w
+       Current codes for lettered strings: a b c e f l m n q r s t w
 
+       Currently unused: <cite class="special-citation">...</cite>
+         {{ $result = (add 
+             `TMPLT_LSPECC ` 
+             $the_content 
+             ` TMPLT_RSPECC`
+             ) 
+         }}
        ====================
 */ -}}
 
@@ -60,6 +67,10 @@
        in the partial template named prefixed-blocks.html, but other
        references to them require ≤a ... ≥ (e.g., the 2nd occurrence of
        the article «Three Theories That Explain This Strange Moment».)
+
+       ≤Mayor Smith Resigns≥
+       --->
+       <cite class="article-title">Mayor Smith Resigns</cite>
 
 */ -}}
   {{ $result = (add 
@@ -82,11 +93,15 @@
       ) 
   }}
 {{ else if (eq $classifier "c") }}
-{{- /* CASE c: For the typically quoted title/name of an akin-to-an-article text, e.g. a chapter
+{{- /* CASE c: For the typically quoted title/name of an akin-to-an-article item, e.g. a chapter, course, or song
 
          ... one of Chaucer’s ≤bCanterbury Tales≥, ≤cThe Reeve’s Tale≥. ...
 
          becomes <cite class="like-article-title"> ...
+
+"Course names are capitalized but not italicized or in quotes." -- https://www.swarthmore.edu/communications-office/editorial-style-guide. But NYT uses quotation marks apparently. In the following example, the NYT uses "class" in the sense of "high school or college course":
+
+         `... a class, ≤cThe Problem of Whiteness≥, and ...`
 
 */ -}}
   {{ $result = (add 
@@ -95,21 +110,17 @@
       ` TMPLT_RCTITL`
       ) 
   }}
-{{ else if (eq $classifier "??????????") }}
-{{- /* CASE ??????????: title citations that require special handling, e.g.
+{{ else if (eq $classifier "e") }}
+{{- /* CASE e: An epigram (adage, aphorism, apothegm, maxim, motto, proverb), but ONLY when not quoting anyone in particular (otherwise it'd be simply a quotation, or part of a quotation); e.g.
 
-         ... in ≤cThree Theories That Explain This Strange Moment≥, 2022-11-12 ---> <cite class="special-citation">...</cite>
-
-         ... in ≤cHow ‹I despise, therefore I am› locks in the political status quo≥, 2023-04-12  ---> <cite class="special-citation">...</cite> (WHAT ABOUT THE NESTED PHRASE?)
-
-         ... a class, ≤cThe Problem of Whiteness≥, and ...
-         "Course names are capitalized but not italicized or in quotes." -- https://www.swarthmore.edu/communications-office/editorial-style-guide. But NYT uses quotation marks apparently.
-
+         `... in ≤aHow ≤eI despise, therefore I am≥ locks in the political status quo≥, 2023-04-12`
+         --->
+         `... How <cite class="epigram">...</cite> locks ...`
 */ -}}
   {{ $result = (add 
-      `TMPLT_LSPECC ` 
+      `TMPLT_LEPIGM ` 
       $the_content 
-      ` TMPLT_RSPECC`
+      ` TMPLT_REPIGM`
       ) 
   }}
 {{ else if (eq $classifier "f") }}
@@ -225,7 +236,11 @@
   }}
   {{ $result = $content_replacement }}
 {{ else if (eq $classifier "w") }}
-{{- /* CASE w: For the typically italicized title/name of an akin-to-a-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't.
+{{- /* CASE w: For the typically italicized title/name of an akin-to-a-book WORK, e.g. film title, album title, magazine title, newspaper (but ... always?!) title. So some are series (periodicals) and some aren't. a is to c as b is to w:
+
+       a (article-title) : c (like-article-title)
+       ::
+       b (book-title)    : w (like-book-title)
 
        ≤wRubber Soul≥ ---> <cite class="like-book-title">Rubber Soul</cite>
 
@@ -246,21 +261,3 @@
   {{ $result = (add "ZZZZZ Unknown classifier! " $classifier "ZZZZZ") }}
 {{ end }}
 {{ return $result }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
