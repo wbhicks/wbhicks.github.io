@@ -5,10 +5,10 @@
 {{ $mostRecentLinkTitle := .mRLT }}
 
 {{ $rubellitedText := "ERR! 504" }}
-{{ $result := "Error ... Do all deks have guillemets?" }}
+{{ $result := "ERR! Do all deks have guillemets?" }}
 
 {{- /* ====================
-       Currently handled prefixes: £ ££ ~ ® ¢ =&gt; ∂ ◉
+       Currently handled prefixes: £ ££ ~ ® ¢ =&gt; ∂ ↗ ◉
 
        ®
        For my 4-hashes clipping from an article or (rarely) whitepaper
@@ -258,7 +258,23 @@
     {{ $result = (add `<div class="dek">Its subheadline: TMPLT_LATITL ` $rubellitedText ` TMPLT_RATITL</div>`) }}
 
   {{ end }}
-
+{{ else if (eq $prefix "↗") }}
+  {- /* Use only for https:// (and omit that prefix) */ -}}
+  {{ $text = 
+      replaceRE
+     `(.+)`
+     `<div class="url-line">TMPLT_NORTHEAST_ARROW $1</div>`
+      $text
+  }}
+  {{ $result = $text }}
+  {{ $imageNortheastArrow := resources.Get "images/link-external-small-ltr-progressive.svg" }}
+  {{ $theImgElement := print "<img src=\"" $imageNortheastArrow.RelPermalink "\" width=\"12px\" height=\"12px\" vertical-align=\"bottom\" alt=\"(An external link.)\">" }}
+  {{ $result = 
+      replaceRE 
+     `TMPLT_NORTHEAST_ARROW`
+      $theImgElement
+      $result
+  }}
 {{ else if (eq $prefix "=&gt;") }}
   {{ if (partial "whole-str-matches-regex" (dict "pattern" `(<a href="https://.+</a>) (.+) / by (.+)` "text" $text)) }}
     {{ $result = 

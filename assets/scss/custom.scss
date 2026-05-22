@@ -206,12 +206,8 @@ body > div.nojs-mini-themed > div.mono-color-selector {
     margin-bottom: 3rem;
   }
   main > div.asterism-above-h5 {
-    margin-top:    1rem;
+    margin-top:    var(--spacing-for-top-of-asterism-below);
     margin-bottom: 0;
-  }
-  main > div.asterism-below-h5 {
-    margin-top:    0;
-    margin-bottom: 1rem;
   }
 
 } // End of .nojs-mini-themed
@@ -253,10 +249,12 @@ body > div.nojs-mini-themed > div.mono-color-selector {
     margin-bottom: 0;
   }
 
-  main > h5.h5-from-4stars {
-    margin-top:    0;
-    margin-bottom: 0;
-  }
+  /* These margins are handled elsewhere, because H5 is spaced akin to
+     a typical block-level element:
+
+         `main > h5.h5-from-4stars`
+         `main > div.rule-line-below-h5` 
+  */
 
   main > div.rule-line-below-h2,
   main > div.rule-line-below-h3,
@@ -308,6 +306,25 @@ body > div.nojs-mini-themed > div.mono-color-selector {
   }
   main > pre {
     margin-top:    var(--margin-top-or-bottom);
+    margin-bottom: var(--margin-top-or-bottom);
+  }
+
+  /* Special handling for the rule line below H5. Applying the same
+     margin-bottom as with the typical block-level elements, so that H5's
+     rule line is closer to the content below it.
+
+     Above the H5 itself, the margin-top for typical block-level elements
+     is fine when the asterism above it is visible. However, when rule
+     lines are visible instead, the margin-top needs boosting.
+  */
+
+  main > h5.h5-from-4stars {
+    margin-top:    2rem; // keeps it big enough even without asterisms
+    margin-bottom: 0;
+  }
+
+  main > div.rule-line-below-h5 {
+    margin-top: 0;
     margin-bottom: var(--margin-top-or-bottom);
   }
 
@@ -373,7 +390,7 @@ body > div.nojs-mini-themed > footer {
      side. To compensate (approximately) for the resulting 2rem of
      unusable  width, I've added 4ch to each of the max-width values
      below. (It seems that, at least in a monospace font, a rem is about
-     twice as wide as a ch. This is for horizontal comparisons only.)
+     twice as wide as a ch. This holds for horizontal comparisons only.)
 
      Unless overridden, the width of MAIN is capped by the line
      `max-width: 140ch;` in https://github.com/bep/galleriesdeluxe/blob/m
@@ -419,7 +436,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
-    max-width: 64ch;
+    max-width: 84ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -427,7 +444,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
   main {
-    max-width: 44ch;
+    max-width: 64ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -435,7 +452,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   main {
-    max-width: 44ch;
+    max-width: 64ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -685,7 +702,8 @@ body > div.nojs-mini-themed > footer {
   main > div.asterism-above-h3,
   main > div.asterism-below-h3,
   main > div.asterism-above-h4,
-  main > div.asterism-below-h4 {
+  main > div.asterism-below-h4,
+  main > div.asterism-above-h5 {
     font-family: monospace;
     white-space-collapse: preserve;
     text-align: center;
@@ -693,16 +711,10 @@ body > div.nojs-mini-themed > footer {
     display: block;
   }
 
-  main > div.asterism-above-h5,
-  main > div.asterism-below-h5 {
-    white-space-collapse: preserve;
-    line-height: 1;
-    display: block;
-  }
-
   main > div.rule-line-below-h2,
   main > div.rule-line-below-h3,
-  main > div.rule-line-below-h4 {
+  main > div.rule-line-below-h4,
+  main > div.rule-line-below-h5 {
     display: none;
   }
 
@@ -723,14 +735,14 @@ body > div.nojs-mini-themed > footer {
   main > div.asterism-below-h3,
   main > div.asterism-above-h4,
   main > div.asterism-below-h4,
-  main > div.asterism-above-h5,
-  main > div.asterism-below-h5 {
+  main > div.asterism-above-h5 {
     display: none;
   }
 
   main > div.rule-line-below-h2,
   main > div.rule-line-below-h3,
-  main > div.rule-line-below-h4 {
+  main > div.rule-line-below-h4,
+  main > div.rule-line-below-h5 {
     text-align: left;
   }
 

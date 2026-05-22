@@ -30,6 +30,8 @@ draft: false
 
 ¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
+¢ aaa www.nytimes.com bbb [Link](http://a.com) ccc
+
 ### January 8th
 
 ¢ On this date in 2023: Bolsonaro’s putsch in Brasília fails. Partly inspired by Trump’s failed self-coup in the US two years before, and similarly fueled by populist (dis)content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil’s highest constitutional court.
@@ -44,7 +46,7 @@ draft: false
 
 ◉ Bookmark, Jan 8th
 
-=> https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html NYT / by Blake Gopnik
+↗ [/ by Blake Gopnik](https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html) (external)](https://[NYT) (external)
 
 ∂ «Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.»
 
@@ -58,23 +60,25 @@ draft: false
 
 ~ George Washington
 
-=> https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address Wikisource
+↗ [(external)](https://[Wikisource](https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address)) (external)
 
-=> https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a Gutenberg.org
+↗ [(external)](https://[Gutenberg.org](https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a)) (external)
 
-=> https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0 UCSB
+↗ [(external)](https://[UCSB](https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0)) (external)
 
 #### 1918-01-08: Woodrow Wilson’s Fourteen Points speech to Congress
 
-=> https://en.wikipedia.org/wiki/Fourteen_Points WP / Fourteen Points
+↗ [/ Fourteen Points](https://en.wikipedia.org/wiki/Fourteen_Points) (external)](https://[WP) (external)
 
 #### 1964-01-08: LBJ, in his first ≤sState of the Union≥ address, announces the war on poverty.
 
-=> https://en.wikipedia.org/wiki/War_on_poverty WP / War on poverty
+↗ [/ War on poverty](https://en.wikipedia.org/wiki/War_on_poverty) (external)](https://[WP) (external)
 
 #### Deaths on this date:
 
 ##### Giotto, 1337 (age 70?), in Florence (Firenze)
+
+¢ ≤edfgd fgfgdfg dfgdf dfg dfg gd fggdf gdf gfd gdf gdf dfg dgf gdf gdfg dgf fdg dfg dffg gdf fdgg dfg fdg dfg dfgdf gdf dgfgdf gfd fgdf gdf gfd fdg dfgg dfdg dfg dfgfd gf dfg gfdgdf gfd gfd gdfd fggdf dgf≥
 
 ##### Galileo, 1642 (age 77), in Florence (Firenze)
 
@@ -98,7 +102,7 @@ draft: false
 
 ◉ Bookmark, Jan 25th
 
-=> https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html NYT / by Thomas B. Edsall
+↗ [/ by Thomas B. Edsall](https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html) (external)](https://[NYT) (external)
 
 ¢ As is his wont [modernize to «As is his custom»? -- ȐD], Thomas Edsall brings a wealth of citations to his argument that, in the mapping from county population density[1] to partisan lean, the slope has been smoothing out. (For readers unfamiliar with US partisanship, I’ve drawn three ASCII art graphs to suggest some historical context.)
 
@@ -123,35 +127,35 @@ Dem. |____________________       Dem. |____________________       Dem. |________
 
 ##### ® Source: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson
 
-=> https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history U. of New Hampshire / by Kenneth Johnson
+↗ [of New Hampshire / by Kenneth Johnson](https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history) (external)](https://[U.) (external)
 
 ##### ® Source: «The Increase in Partisan Segregation in the United States» by Jacob R. Brown et al.
 
-=> https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf U. of Nottingham / by Jacob R. Brown et al.
+↗ [of Nottingham / by Jacob R. Brown et al.](https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf) (external)](https://[U.) (external)
 
 ##### ® Source: ≤bThe Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker≥ by Katherine J. Cramer
 
-=> https://press.uchicago.edu/ucp/books/book/chicago/P/bo22879533.html U. of Chicago Press / by Katherine J. Cramer (2016)
+↗ [of Chicago Press / by Katherine J. Cramer (2016)](https://press.uchicago.edu/ucp/books/book/chicago/P/bo22879533.html) (external)](https://[U.) (external)
 
 ##### ® Source: ≤bRed Fighting Blue: How Geography and Electoral Rules Polarize American Politics≥ by David A. Hopkins
 
-=> https://www.cambridge.org/core/books/red-fighting-blue/5BED65A27BC1399564B4A5863A1E899C Cambridge U. Press / by David A. Hopkins (2017)
+↗ [U. Press / by David A. Hopkins (2017)](https://www.cambridge.org/core/books/red-fighting-blue/5BED65A27BC1399564B4A5863A1E899C) (external)](https://[Cambridge) (external)
 
 ##### ® Source: «The Suburbanization of the Democratic Party, 1992-2018 (Paper presented at the Annual Meetings of the American Political Science Association, Washington, DC, August 29, 2019)» by David A. Hopkins
 
-=> https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf paper / by David A. Hopkins (2019)
+↗ [/ by David A. Hopkins (2019)](https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf) (external)](https://[paper) (external)
 
 ##### ® Source: «Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America’s Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)» by Nicholas Jacobs and B. Kal Munis
 
-=> https://static1.squarespace.com/static/580ab33829687f686ad6cbb1/t/6319051814f1302127e75b39/1662584089724/JacobsMunis2022-place-resentment-elections-vote-choice-urban-rural-divide.pdf reprint / by Nicholas Jacobs and B. Kal Munis
+↗ [/ by Nicholas Jacobs and B. Kal Munis](https://static1.squarespace.com/static/580ab33829687f686ad6cbb1/t/6319051814f1302127e75b39/1662584089724/JacobsMunis2022-place-resentment-elections-vote-choice-urban-rural-divide.pdf) (external)](https://[reprint) (external)
 
 ##### ® Source: «Symbolic Versus Material Concerns of Rural Consciousness in the United States (Political Geography, Volume 96, June 2022, 102658)» by Kristin Lunz Trujillo and Zack Crowley
 
-=> https://www.sciencedirect.com/science/article/abs/pii/S0962629822000725 reprint / by Kristin Lunz Trujillo and Zack Crowley
+↗ [/ by Kristin Lunz Trujillo and Zack Crowley](https://www.sciencedirect.com/science/article/abs/pii/S0962629822000725) (external)](https://[reprint) (external)
 
 ##### ® Source: «What Unites and Divides Urban, Suburban and Rural Communities» by Kim Parker et al.
 
-=> https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/ Pew Research Center / by Kim Parker et al.
+↗ [Research Center / by Kim Parker et al.](https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/) (external)](https://[Pew) (external)
 
 <pre>
 date: 2018-05-22
@@ -160,15 +164,15 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ##### ® Source: ≤bHollowing Out the Middle: The Rural Brain Drain and What It Means for America≥ by Patrick J. Carr and Maria J. Kefalas
 
-=> https://shop.harvard.com/book/9780807006146 Beacon Press / by Patrick J. Carr and Maria J. Kefalas (2010)
+↗ [Press / by Patrick J. Carr and Maria J. Kefalas (2010)](https://shop.harvard.com/book/9780807006146) (external)](https://[Beacon) (external)
 
 ##### Source: Edsall also quotes from his email correspondence with Justin Gest at George Mason University.
 
-=> https://schar.gmu.edu/profiles/jgest GMU / Justin Gest
+↗ [/ Justin Gest](https://schar.gmu.edu/profiles/jgest) (external)](https://[GMU) (external)
 
 #### 1792-01-25: First meeting of the
 
-=> https://en.wikipedia.org/wiki/London_Corresponding_Society London Corresponding Society
+↗ [Corresponding Society](https://en.wikipedia.org/wiki/London_Corresponding_Society) (external)](https://[London) (external)
 
 ### January 26th
 
@@ -178,7 +182,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Jan 26th
 
-=> https://www.nytimes.com/2023/01/26/opinion/rural-voters-economy.html NYT / by Paul Krugman
+↗ [/ by Paul Krugman](https://www.nytimes.com/2023/01/26/opinion/rural-voters-economy.html) (external)](https://[NYT) (external)
 
 ¢ Given J.D. Vance’s professional background, there are 180 degrees of irony in Krugman’s paragraph citing Vance’s tweet about NYC. Krugman does note that it was crafted «during his senatorial campaign», but should acknowledge that the tweet’s ostensible and real arrows of contempt fly in opposite directions.
 
@@ -188,7 +192,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ Wikipedia
 
-=> https://en.wikipedia.org/wiki/First_Fleet WP / First Fleet
+↗ [/ First Fleet](https://en.wikipedia.org/wiki/First_Fleet) (external)](https://[WP) (external)
 
 ## II. February
 
@@ -202,7 +206,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Feb 2nd
 
-=> https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/ Mother Jones / by David Corn
+↗ [Jones / by David Corn](https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/) (external)](https://[Mother) (external)
 
 ∂ «The magazine’s attempted takedown of the media’s coverage bolsters Trump’s phony narrative.»
 
@@ -222,7 +226,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Feb 15th
 
-=> https://slate.com/culture/2023/02/hanging-out-sheila-liming-book-friendship-crisis.html Slate / by Dan Kois
+↗ [Slate / by Dan Kois](https://slate.com/culture/2023/02/hanging-out-sheila-liming-book-friendship-crisis.html) (external)
 
 ∂ «There’s a growing crisis in our social lives. Could the cure be this simple?»
 
@@ -230,7 +234,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 #### 1946-02-15: University of Pennsylvania hosts the official dedication of ≤tENIAC, Electronic Numerical Integrator And Computer≥. See also:
 
-=> https://en.wikipedia.org/wiki/Manchester_Baby WP / Manchester Baby
+↗ [WP / Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby) (external)
 
 ### February 23rd
 
@@ -240,7 +244,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Feb 23rd
 
-=> https://www.nhpr.org/nh-news/2023-02-23/you-have-to-be-dangerous-back-why-some-lgbtq-people-in-new-hampshire-are-taking-up-arms NPR / by Todd Bookman
+↗ [NPR / by Todd Bookman](https://www.nhpr.org/nh-news/2023-02-23/you-have-to-be-dangerous-back-why-some-lgbtq-people-in-new-hampshire-are-taking-up-arms) (external)
 
 £ «While Pink Pistol clubs have been around since at least 2000, there’s only limited data available on gun ownership rates among LGBTQ people. In 2020, a UCLA study found that 21.5 percent of lesbian, gay and bisexual people live in a house with a firearm, compared to 36 percent of heterosexual adults. ... In terms of partisan breakdown, a recent Pew study found that about one-in-five self-identified Democrats own a gun, compared to nearly half of Republicans.»
 
@@ -256,7 +260,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ Wikipedia
 
-=> https://en.wikipedia.org/wiki/Bombardment_of_Ellwood WP / Bombardment of Ellwood
+↗ [WP / Bombardment of Ellwood](https://en.wikipedia.org/wiki/Bombardment_of_Ellwood) (external)
 
 ### February 24th
 
@@ -266,7 +270,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Feb 24th
 
-=> https://www.nytimes.com/2023/02/24/opinion/retirement-long-term-care-annuity.html NYT / by Peter Coy
+↗ [NYT / by Peter Coy](https://www.nytimes.com/2023/02/24/opinion/retirement-long-term-care-annuity.html) (external)
 
 ¢ An example of how small-scale regulatory reform can foster new markets:
 
@@ -284,7 +288,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Feb 27th
 
-=> https://www.theguardian.com/us-news/2023/feb/27/west-virginia-mixed-martial-arts-coach-security-drag-show The Guardian / Gloria Oladipo
+↗ [The Guardian / Gloria Oladipo](https://www.theguardian.com/us-news/2023/feb/27/west-virginia-mixed-martial-arts-coach-security-drag-show) (external)
 
 ∂ «Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats»
 
@@ -294,7 +298,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ Gloria Oladipo, writing in The Guardian
 
-=> https://www.nbcnews.com/nbc-out NBC Out
+↗ [NBC Out](https://www.nbcnews.com/nbc-out) (external)
 
 #### 1812-02-27: Byron (giving his maiden speech in the House of Lords) defends the Luddites:
 
@@ -302,7 +306,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ Lord Byron
 
-=> https://books.google.com/books?id=15JUAAAAcAAJ&pg=PT491#v=onepage&q=February&percnt;2027 Cobbett’s Parliamentary Debates, Volumes 21-22 (1812), p. 966
+↗ [Cobbett’s Parliamentary Debates, Volumes 21-22 (1812), p. 966](https://books.google.com/books?id=15JUAAAAcAAJ&pg=PT491#v=onepage&q=February&percnt;2027) (external)
 
 ## III. March
 
@@ -316,7 +320,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Mar 6th
 
-=> https://www.newyorker.com/magazine/2023/03/06/the-end-of-the-english-major The New Yorker / by Nathan Heller
+↗ [The New Yorker / by Nathan Heller](https://www.newyorker.com/magazine/2023/03/06/the-end-of-the-english-major) (external)
 
 ∂ «Enrollment in the humanities is in free fall at colleges around the country. What happened?»
 
@@ -326,7 +330,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ Wikipedia
 
-=> https://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society WP / Philosophical Transactions of the Royal Society
+↗ [WP / Philosophical Transactions of the Royal Society](https://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society) (external)
 
 ### March 7th
 
@@ -336,7 +340,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Mar 7th
 
-=> https://www.nytimes.com/2023/03/07/magazine/los-angeles-walking-rosecrans-avenue.html NYT / by Rosecrans Baldwin
+↗ [NYT / by Rosecrans Baldwin](https://www.nytimes.com/2023/03/07/magazine/los-angeles-walking-rosecrans-avenue.html) (external)
 
 ∂ «A stroll down Rosecrans Avenue is not a pleasure. But it does offer a 27-mile canvas of the city’s vastness and its diverse communities coexisting.»
 
@@ -356,7 +360,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Mar 25th
 
-=> https://www.bbc.com/future/article/20210325-the-strange-medieval-fruit-the-world-forgot BBC / by Zaria Gorvett
+↗ [BBC / by Zaria Gorvett](https://www.bbc.com/future/article/20210325-the-strange-medieval-fruit-the-world-forgot) (external)
 
 ∂ «Medieval Europeans were fanatical about a strange fruit that could only be eaten rotten. Then it was forgotten altogether. Why did they love it so much? And why did it disappear?»
 
@@ -372,7 +376,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ¢ See also
 
-=> https://en.wikipedia.org/wiki/Mespilus_germanica WP / Medlar
+↗ [WP / Medlar](https://en.wikipedia.org/wiki/Mespilus_germanica) (external)
 
 ¢ The medlar figures in the prologue to one of Chaucer’s ≤bCanterbury Tales≥, ≤cThe Reeve’s Tale≥. Here’s the relevant passage, excerpted from the prologue:
 
@@ -495,9 +499,9 @@ We hoppen[17] alwey, whyl that the world wol pype.
 
 ¢ See also
 
-=> https://en.wikipedia.org/wiki/Subject&percnt;E2&percnt;80&percnt;93verb_inversion_in_English WP / Subject-verb inversion in English
+↗ [WP / Subject-verb inversion in English](https://en.wikipedia.org/wiki/Subject&percnt;E2&percnt;80&percnt;93verb_inversion_in_English) (external)
 
-=> https://en.wikipedia.org/wiki/Anastrophe WP / Anastrophe
+↗ [WP / Anastrophe](https://en.wikipedia.org/wiki/Anastrophe) (external)
 
 ¢ Incidentally, the Reeve seems to have both a low opinion of medlars (the modern name for the ≤fopen-ers≥ fruit) and a despondent view of old age, as shown most explicitly by his choice of ≤fdread≥ when he says «We olde men, I drede, so fare we». But in fact the medlar cheats decrepitude, if not death, because its sweet ripeness arrives when it looks most rotten. Fruit being much more about taste than looks, Chaucer’s analogy therefore supports a hopeful reading of the last couplet (an ironic one, given the Reeve’s intent), one in which physical decline may herald a ripeness of spirit or heart:
 
@@ -510,7 +514,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 #### 1911-03-25: Triangle Shirtwaist Factory fire in Greenwich Village kills 146 garment workers.
 
-=> https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire WP / Triangle Shirtwaist Factory fire
+↗ [WP / Triangle Shirtwaist Factory fire](https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire) (external)
 
 ### March 26th
 
@@ -520,7 +524,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Mar 26th
 
-=> https://www.nytimes.com/2021/03/26/science/tooth-pain-cold.html NYT / by Veronique Greenwood
+↗ [NYT / by Veronique Greenwood](https://www.nytimes.com/2021/03/26/science/tooth-pain-cold.html) (external)
 
 ∂ «Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it.»
 
@@ -532,7 +536,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Mar 27th
 
-=> https://www.cnbc.com/2023/03/27/lebanon-in-two-different-time-zones-as-government-disagrees-on-daylight-savings.html CNBC / by Natasha Turak
+↗ [CNBC / by Natasha Turak](https://www.cnbc.com/2023/03/27/lebanon-in-two-different-time-zones-as-government-disagrees-on-daylight-savings.html) (external)
 
 £ «... Lebanon’s cabinet had voted to rectify the issue and move the clocks forward by one hour on Wednesday night.»
 
@@ -546,7 +550,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Mar 28th
 
-=> https://www.nytimes.com/2023/03/28/science/lightning-rod-video.html NYT / by Nicholas Bakalar
+↗ [NYT / by Nicholas Bakalar](https://www.nytimes.com/2023/03/28/science/lightning-rod-video.html) (external)
 
 ∂ «Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning.»
 
@@ -558,7 +562,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Mar 30th
 
-=> https://www.nytimes.com/2021/03/30/science/blackwater-photography-fish-larvae.html NYT / by Erik Olsen
+↗ [NYT / by Erik Olsen](https://www.nytimes.com/2021/03/30/science/blackwater-photography-fish-larvae.html) (external)
 
 ∂ «Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae.»
 
@@ -566,7 +570,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Mar 30th
 
-=> https://www.nytimes.com/2021/03/30/arts/music/mills-college-music.html NYT / by Geeta Dayal
+↗ [NYT / by Geeta Dayal](https://www.nytimes.com/2021/03/30/arts/music/mills-college-music.html) (external)
 
 ∂ «A hotbed of experimental sound for nearly a century, this school in Oakland, Calif., is preparing to close its doors.»
 
@@ -582,7 +586,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### ® Source: The New York Times, «The Elements of the Stylebook» by Remy Tumin
 
-=> https://www.nytimes.com/2018/03/22/insider/new-york-times-stylebook.html NYT / by Remy Tumin, 2018-03-22
+↗ [NYT / by Remy Tumin, 2018-03-22](https://www.nytimes.com/2018/03/22/insider/new-york-times-stylebook.html) (external)
 
 ## IV. April
 
@@ -596,7 +600,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 5th
 
-=> https://www.nytimes.com/2021/04/05/arts/design/warhol-copyright-appeals-court.html NYT / by Blake Gopnik
+↗ [NYT / by Blake Gopnik](https://www.nytimes.com/2021/04/05/arts/design/warhol-copyright-appeals-court.html) (external)
 
 ∂ «An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.»
 
@@ -604,7 +608,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Diana Scultori, 1612 (age 64-65), in Rome
 
-=> https://en.wikipedia.org/wiki/Diana_Scultori WP / Diana Scultori «... is one of the earliest known women printmakers ...»
+↗ [WP / Diana Scultori «... is one of the earliest known women printmakers ...»](https://en.wikipedia.org/wiki/Diana_Scultori) (external)
 
 ### April 6th
 
@@ -614,7 +618,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 6th
 
-=> https://www.nytimes.com/2021/04/06/books/review/the-age-of-decadence-simon-heffer.html NYT / by Richard Aldous
+↗ [NYT / by Richard Aldous](https://www.nytimes.com/2021/04/06/books/review/the-age-of-decadence-simon-heffer.html) (external)
 
 ¢ A review by Richard Aldous of ≤bThe Age Of Decadence: A History of Britain, 1880 to 1914≥ by Simon Heffer
 
@@ -622,7 +626,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 6th
 
-=> https://www.nytimes.com/2021/04/06/opinion/stanford-admissions-campus.html NYT / by David L. Kirp
+↗ [NYT / by David L. Kirp](https://www.nytimes.com/2021/04/06/opinion/stanford-admissions-campus.html) (external)
 
 ∂ «If elite colleges are serious about diversity of class and race, there’s a simple solution.»
 
@@ -638,7 +642,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 7th
 
-=> https://www.theatlantic.com/ideas/archive/2023/04/wisconsin-supreme-court-election-republican-party/673656/ The Atlantic / by Charles Sykes
+↗ [The Atlantic / by Charles Sykes](https://www.theatlantic.com/ideas/archive/2023/04/wisconsin-supreme-court-election-republican-party/673656/) (external)
 
 ∂ «They’ve lost four major statewide elections since 2018, for starters, and this year’s supreme-court election exposed their growing vulnerability.»
 
@@ -654,7 +658,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 10th
 
-=> https://www.washingtonpost.com/food/interactive/2023/edna-lewis-menu-trail-virginia/ WaPo / by Aaron Hutcherson
+↗ [WaPo / by Aaron Hutcherson](https://www.washingtonpost.com/food/interactive/2023/edna-lewis-menu-trail-virginia/) (external)
 
 ### April 12th
 
@@ -664,7 +668,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 12th
 
-=> https://www.washingtonpost.com/opinions/2023/04/12/republican-democrat-poisonous-partisanship/ WaPo / by George F. Will
+↗ [WaPo / by George F. Will](https://www.washingtonpost.com/opinions/2023/04/12/republican-democrat-poisonous-partisanship/) (external)
 
 £ «... George Santayana’s description of a barbarian: someone who thinks his passions are their own excuse for existing. ... [E]xpect American politics to continue today’s remarkable condition: boiling but frozen.»
 
@@ -676,7 +680,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 12th
 
-=> https://nymag.com/intelligencer/2023/04/eric-adams-is-finally-seeing-reality-on-work-from-home-rules.html NY Magazine / by Errol Louis
+↗ [NY Magazine / by Errol Louis](https://nymag.com/intelligencer/2023/04/eric-adams-is-finally-seeing-reality-on-work-from-home-rules.html) (external)
 
 ### April 14th
 
@@ -686,7 +690,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 14th
 
-=> https://boingboing.net/2021/04/14/the-unique-and-hugely-influential-canterbury-music-scene-of-the-60s-and-70s.html Boing Boing / by Gareth Branwyn
+↗ [Boing Boing / by Gareth Branwyn](https://boingboing.net/2021/04/14/the-unique-and-hugely-influential-canterbury-music-scene-of-the-60s-and-70s.html) (external)
 
 £ «Bands like Soft Machine, Wilde Flowers, Caravan, Hatfield and the North, National Health, Matching Mole, Egg, Henry Cow, and Gong.»
 
@@ -704,7 +708,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 15th
 
-=> https://theamericanscholar.org/poetry-in-the-abstract/ The American Scholar / by Christopher Cokinos
+↗ [The American Scholar / by Christopher Cokinos](https://theamericanscholar.org/poetry-in-the-abstract/) (external)
 
 ∂ «What happens when scientists write haiku?»
 
@@ -724,7 +728,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 17th
 
-=> https://www.nytimes.com/2021/04/17/business/california-homeless-hotels.html NYT / by Conor Dougherty
+↗ [NYT / by Conor Dougherty](https://www.nytimes.com/2021/04/17/business/california-homeless-hotels.html) (external)
 
 ∂ «For homeless people, a place to live is life changing to a degree that almost no other intervention can provide.»
 
@@ -732,7 +736,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 17th
 
-=> https://www.bbc.com/news/world-europe-64426289 BBC / by Shane Harrison
+↗ [BBC / by Shane Harrison](https://www.bbc.com/news/world-europe-64426289) (external)
 
 ¢ Writing for the BBC, Shane Harrison reports that «Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin’s Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives.»
 
@@ -744,7 +748,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 19th
 
-=> https://www.theguardian.com/culture/2021/apr/19/creativity-is-essential-artist-designed-supermarket-to-open-at-london-design-museum The Guardian / by Mark Brown
+↗ [The Guardian / by Mark Brown](https://www.theguardian.com/culture/2021/apr/19/creativity-is-essential-artist-designed-supermarket-to-open-at-london-design-museum) (external)
 
 ∂ «Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity»
 
@@ -752,7 +756,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 19th
 
-=> https://www.scientificamerican.com/article/quantum-astronomy-could-create-telescopes-hundreds-of-kilometers-wide/ Scientific American / by Anil Ananthaswamy
+↗ [Scientific American / by Anil Ananthaswamy](https://www.scientificamerican.com/article/quantum-astronomy-could-create-telescopes-hundreds-of-kilometers-wide/) (external)
 
 ∂ «Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories»
 
@@ -768,7 +772,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 20th
 
-=> https://newrepublic.com/article/171722/republican-party-dead TNR / by Michael Tomasky
+↗ [TNR / by Michael Tomasky](https://newrepublic.com/article/171722/republican-party-dead) (external)
 
 ∂ «We asked four recovering Republicans if the GOP is salvageable. Hint: They laughed.»
 
@@ -780,7 +784,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 20th
 
-=> https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html NYT / by Leah Greenblatt
+↗ [NYT / by Leah Greenblatt](https://www.nytimes.com/2023/04/20/movies/guy-ritchies-the-covenant-movie-titles.html) (external)
 
 ∂ «With the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.»
 
@@ -792,7 +796,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 21st
 
-=> https://www.nytimes.com/2021/04/21/technology/welcome-to-the-yolo-economy.html NYT / by Kevin Roose
+↗ [NYT / by Kevin Roose](https://www.nytimes.com/2021/04/21/technology/welcome-to-the-yolo-economy.html) (external)
 
 ∂ «Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure.»
 
@@ -800,7 +804,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 21st
 
-=> https://www.npr.org/2021/04/21/989333092/the-secret-mission-to-unearth-part-of-a-142-year-old-experiment NPR / by Nell Greenfieldboyce
+↗ [NPR / by Nell Greenfieldboyce](https://www.npr.org/2021/04/21/989333092/the-secret-mission-to-unearth-part-of-a-142-year-old-experiment) (external)
 
 ¢ n.b.: The surname is correct.
 
@@ -808,7 +812,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 21st
 
-=> https://www.newyorker.com/culture/comma-queen/grammar-nerd-heaven The New Yorker / by Mary Norris
+↗ [The New Yorker / by Mary Norris](https://www.newyorker.com/culture/comma-queen/grammar-nerd-heaven) (external)
 
 ∂ «A new exhibit showcases the surprisingly contentious history of English grammar books.»
 
@@ -816,7 +820,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 21st
 
-=> https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes The Los Angeles Times / by Harriet Ryan
+↗ [The Los Angeles Times / by Harriet Ryan](https://www.latimes.com/california/story/2023-04-21/spolin-lawyer-sentence-shortening-hopes) (external)
 
 £ «Karen Marquez holds a framed photograph of her husband, Johnathan, who is serving a life sentence for murder. She and her mother-in-law paid $12,700 in fees to Aaron Spolin’s law firm -- money they now believe was wasted.»
 
@@ -830,7 +834,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 22nd
 
-=> https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html NYT / by Clay Risen
+↗ [NYT / by Clay Risen](https://www.nytimes.com/2021/04/22/world/australia/peter-warner-dead.html) (external)
 
 ∂ «That story, which has sometimes been called a real-life ≤bLord of the Flies≥, was just one episode in a life filled with adventure.»
 
@@ -838,7 +842,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 22nd
 
-=> https://daily.jstor.org/paid-applauders-paris-opera-claques/ JSTOR Daily / by Amelia Soth
+↗ [JSTOR Daily / by Amelia Soth](https://daily.jstor.org/paid-applauders-paris-opera-claques/) (external)
 
 ∂ «Professional applauders, collectively known as the ≤fclaque≥, helped mold the tastes of an uncertain audience.»
 
@@ -854,7 +858,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 24th
 
-=> https://www.nytimes.com/2023/04/24/opinion/new-york-city-affordability-housing.html NYT / by Paul Krugman
+↗ [NYT / by Paul Krugman](https://www.nytimes.com/2023/04/24/opinion/new-york-city-affordability-housing.html) (external)
 
 £ «The biggest factor, almost surely, was and is the cost of housing.»
 
@@ -868,7 +872,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 25th
 
-=> https://www.npr.org/sections/goatsandsoda/2021/04/25/989765565/tower-of-babble-non-native-speakers-navigate-the-world-of-good-and-bad-english NPR / by Carolyn McCusker
+↗ [NPR / by Carolyn McCusker](https://www.npr.org/sections/goatsandsoda/2021/04/25/989765565/tower-of-babble-non-native-speakers-navigate-the-world-of-good-and-bad-english) (external)
 
 ∂ «Why Nonnative English Speakers Actually Speak The Best English»
 
@@ -884,7 +888,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 26th
 
-=> https://www.pewresearch.org/politics/2016/04/26/a-wider-ideological-gap-between-more-and-less-educated-adults/ Pew Research Center
+↗ [Pew Research Center](https://www.pewresearch.org/politics/2016/04/26/a-wider-ideological-gap-between-more-and-less-educated-adults/) (external)
 
 #### Deaths on this date:
 
@@ -898,7 +902,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 28th
 
-=> https://www.politico.com/news/magazine/2023/04/28/jim-vandehei-profile-00094172 Politico / by Michael Schaffer
+↗ [Politico / by Michael Schaffer](https://www.politico.com/news/magazine/2023/04/28/jim-vandehei-profile-00094172) (external)
 
 ∂ «D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.»
 
@@ -910,7 +914,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 29th
 
-=> https://www.kansascity.com/news/local/article251004849.html The Kansas City Star / by Bill Lukitsch and Anna Spoerre
+↗ [The Kansas City Star / by Bill Lukitsch and Anna Spoerre](https://www.kansascity.com/news/local/article251004849.html) (external)
 
 ¢ Writing in The Kansas City Star, Lukitsch and Spoerre report on plans for «... a 150-bed village with easy-to-build shelters that range from single-person to family size.»
 
@@ -920,7 +924,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, Apr 29th
 
-=> https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html NYT / by Maureen Dowd
+↗ [NYT / by Maureen Dowd](https://www.nytimes.com/2023/04/29/opinion/journalism-newsroom.html) (external)
 
 £ «... Arthur Gelb in his memoir, ≤bCity Room≥: ‹There was an overwhelming sense of purpose, fire and life: the clacking rhythm of typewriters, the throbbing of great machines in the composing room on the floor above, reporters shouting for copy boys to pick up their stories.› ... [W]e would go to the Tune Inn, the only bar on Capitol Hill that would serve Bloody Marys at dawn. ... My job was to type up stories on my Royal typewriter, with carbon paper ...»
 
@@ -938,11 +942,11 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 3rd
 
-=> https://www.theringer.com/movies/2021/5/3/22404738/movie-bands-pink-slip-2gether-stillwater-scott-pilgrim-low-shoulder-oral-history The Ringer / by Ilana Kaplan
+↗ [The Ringer / by Ilana Kaplan](https://www.theringer.com/movies/2021/5/3/22404738/movie-bands-pink-slip-2gether-stillwater-scott-pilgrim-low-shoulder-oral-history) (external)
 
 #### Observance: World Press Freedom Day
 
-=> https://en.unesco.org/commemorations/worldpressfreedomday UNESCO / World Press Freedom Day
+↗ [UNESCO / World Press Freedom Day](https://en.unesco.org/commemorations/worldpressfreedomday) (external)
 
 £ «Every year, 3 May is a date which celebrates the fundamental principles of press freedom, to evaluate press freedom around the world, to defend the media from attacks on their independence and to pay tribute to journalists who have lost their lives in the exercise of their profession. World Press Freedom Day was proclaimed by the UN General Assembly in 1993 ...»
 
@@ -956,7 +960,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Wikipedia
 
-=> https://en.wikipedia.org/wiki/Elizabeth_Bacon_(died_1621) WP / Elizabeth Bacon (died 1621)
+↗ [WP / Elizabeth Bacon (died 1621)](https://en.wikipedia.org/wiki/Elizabeth_Bacon_(died_1621)) (external)
 
 ### May 4th
 
@@ -966,7 +970,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 4th
 
-=> https://www.nytimes.com/2021/05/04/realestate/design-downsizing.html NYT / by Pilar Viladas
+↗ [NYT / by Pilar Viladas](https://www.nytimes.com/2021/05/04/realestate/design-downsizing.html) (external)
 
 ∂ «When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio.»
 
@@ -974,7 +978,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 4th
 
-=> https://www.nytimes.com/2021/05/04/realestate/the-carter-project-miami-sculpture-christopher-carter.html NYT / by Tim McKeough
+↗ [NYT / by Tim McKeough](https://www.nytimes.com/2021/05/04/realestate/the-carter-project-miami-sculpture-christopher-carter.html) (external)
 
 ∂ «Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit.»
 
@@ -990,7 +994,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 5th
 
-=> https://www.bbc.com/future/article/20210505-how-cities-will-fossilise BBC / by David Farrier
+↗ [BBC / by David Farrier](https://www.bbc.com/future/article/20210505-how-cities-will-fossilise) (external)
 
 ∂ «The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others.»
 
@@ -1006,7 +1010,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 16th
 
-=> https://www.npr.org/sections/goatsandsoda/2021/05/16/995963311/prepone-that-your-accent-is-funny-readers-share-their-esl-stories NPR / by Carolyn McCusker
+↗ [NPR / by Carolyn McCusker](https://www.npr.org/sections/goatsandsoda/2021/05/16/995963311/prepone-that-your-accent-is-funny-readers-share-their-esl-stories) (external)
 
 #### Deaths on this date:
 
@@ -1020,7 +1024,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 17th
 
-=> https://www.politico.com/magazine/story/2015/05/the-gop-is-dying-off-literally-118035/ Politico / by Daniel J. McGraw
+↗ [Politico / by Daniel J. McGraw](https://www.politico.com/magazine/story/2015/05/the-gop-is-dying-off-literally-118035/) (external)
 
 £ «... of the 61 million who voted for Mitt Romney in 2012, about 2.75 million will be dead by the 2016 election. ... about 2.3 million of the 66 million who voted for [Obama] won’t make it to 2016 either. That leaves a big gap in between, a difference of roughly 453,000 ... The mortality rate for 70-to-74 year-olds is 6,058.4 per 100,000 each year, compared to 110.1 for the 30-to-34 age group.»
 
@@ -1030,7 +1034,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 17th
 
-=> https://www.cnet.com/news/nikola-tesla-invention-from-100-years-ago-suddenly-makes-more-sense-today/ Cnet / by Eric Mack
+↗ [Cnet / by Eric Mack](https://www.cnet.com/news/nikola-tesla-invention-from-100-years-ago-suddenly-makes-more-sense-today/) (external)
 
 ∂ «The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew.»
 
@@ -1042,7 +1046,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 19th
 
-=> https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs The Guardian / by Leyland Cecco
+↗ [The Guardian / by Leyland Cecco](https://www.theguardian.com/world/2023/may/19/justin-trudeau-korea-wide-stance-photo-manner-legs) (external)
 
 ∂ «Korean media praises prime minister’s gesture, known as ≤fmanner legs≥, while some Canadians say it is embarrassing country»
 
@@ -1056,7 +1060,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ◉ Bookmark, May 21st
 
-=> https://www.nytimes.com/interactive/2019/05/21/business/economy/migration-big-cities.html NYT / by Eduardo Porter and Guilbert Gates
+↗ [NYT / by Eduardo Porter and Guilbert Gates](https://www.nytimes.com/interactive/2019/05/21/business/economy/migration-big-cities.html) (external)
 
 £ «But as my colleagues Emily Badger and Quoctrung Bui noted recently in an article citing the work of the M.I.T. economist David Autor, big cities have lost their luster for workers without four-year college degrees.»
 
@@ -1075,9 +1079,9 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ Citations:
 
-=> https://www.nytimes.com/2019/01/11/upshot/big-cities-low-skilled-workers-wages.html
+↗ www.nytimes.com/2019/01/11/upshot/big-cities-low-skilled-workers-wages.html
 
-=> https://www.nber.org/papers/w25588
+↗ www.nber.org/papers/w25588
 
 #### Observance: Day of Mourning for the Victims of the Circassian Genocide, 1864-1867 (recognized by Georgia)
 
@@ -1089,7 +1093,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, May 22nd
 
-=> https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/ Atlanta Journal-Constitution / by Rodney Ho
+↗ [Atlanta Journal-Constitution / by Rodney Ho](https://www.ajc.com/life/radiotvtalk-blog/how-a-fake-1987-movie-marquee-at-gwinnett-place-mall-turned-into-viral-photo/YDJRENV75ZH6PKYJDABP34DEOU/) (external)
 
 ∂ «My 2021 photo is from the Jamie Foxx Netflix comedy ≤wDay Shift≥ but many believe it’s a vintage shot»
 
@@ -1105,7 +1109,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, May 23rd
 
-=> https://www.hollywoodreporter.com/business/business-news/does-andy-warhol-get-same-copyright-treatment-as-google-code-4171885/ Hollywood Reporter / by Eriq Gardner
+↗ [Hollywood Reporter / by Eriq Gardner](https://www.hollywoodreporter.com/business/business-news/does-andy-warhol-get-same-copyright-treatment-as-google-code-4171885/) (external)
 
 £ «... the Andy Warhol Foundation is citing Google v. Oracle ...»
 
@@ -1123,7 +1127,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, May 24th
 
-=> https://www.washingtonpost.com/transportation/2022/05/24/pandemic-suburbs-downtown-retail/ WaPo / by Katherine Shaver
+↗ [WaPo / by Katherine Shaver](https://www.washingtonpost.com/transportation/2022/05/24/pandemic-suburbs-downtown-retail/) (external)
 
 ∂ «Developers are adding outdoor co-working space -- bocce ball, anyone? -- to attract remote workers to stores and restaurants»
 
@@ -1131,17 +1135,17 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### ® Source: BBC, «Sierra Leone’s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)
 
-=> https://www.bbc.com/news/world-africa-65707394 BBC / by Umaru Fofana (in Freetown) & Robert Greenall (in London), 2023-05-25
+↗ [BBC / by Umaru Fofana (in Freetown) & Robert Greenall (in London), 2023-05-25](https://www.bbc.com/news/world-africa-65707394) (external)
 
 ##### ® Source: The Guardian, «Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown» by Agence France-Presse (in Freetown)
 
-=> https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown The Guardian / by Agence France-Presse (in Freetown), 2023-05-25
+↗ [The Guardian / by Agence France-Presse (in Freetown), 2023-05-25](https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown) (external)
 
 ∂ «Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa»
 
 ##### ® Source: Wikipedia, «Cotton Tree (Sierra Leone)»
 
-=> https://en.wikipedia.org/wiki/Cotton_Tree_(Sierra_Leone) WP / Cotton Tree (Sierra Leone)
+↗ [WP / Cotton Tree (Sierra Leone)](https://en.wikipedia.org/wiki/Cotton_Tree_(Sierra_Leone)) (external)
 
 £ «On 24 May 2023, a heavy rain storm felled the cotton tree with only the lower part of its enormous trunk still standing.»
 
@@ -1155,7 +1159,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, May 31st
 
-=> https://www.cnn.com/style/article/cita-sadeli-miss-chelove-street-art-nomad/index.html CNN / by Jacopo Prisco
+↗ [CNN / by Jacopo Prisco](https://www.cnn.com/style/article/cita-sadeli-miss-chelove-street-art-nomad/index.html) (external)
 
 £ «Cita Sadeli ... who signs her works as Miss Chelove ... who is featured in the Washington, DC, episode of the CNN [series] ≤wNomad≥. ... Graffiti artist explains the process behind making epic murals. ... Updated 9:29 AM EDT, Tue May 31, 2022»
 
@@ -1173,13 +1177,13 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Jun 22nd
 
-=> https://www.pewresearch.org/fact-tank/2021/06/22/digital-divide-persists-even-as-americans-with-lower-incomes-make-gains-in-tech-adoption/ Pew Research Center
+↗ [Pew Research Center](https://www.pewresearch.org/fact-tank/2021/06/22/digital-divide-persists-even-as-americans-with-lower-incomes-make-gains-in-tech-adoption/) (external)
 
 #### Deaths on this date:
 
 ##### Field Marshal Sir Henry Hughes Wilson, 1st Baronet, GCB, DSO, 1922 (age 58), in London. See also
 
-=> https://en.wikipedia.org/wiki/Oh!_What_a_Lovely_War WP / Oh! What a Lovely War «is a 1969 British comedy historical musical war film ...»
+↗ [WP / Oh! What a Lovely War «is a 1969 British comedy historical musical war film ...»](https://en.wikipedia.org/wiki/Oh!_What_a_Lovely_War) (external)
 
 ## VII. July
 
@@ -1193,7 +1197,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Jul 1st
 
-=> https://www.nytimes.com/2020/07/01/nyregion/guilford-ct-fire-rescue-well.html NYT / by Allyson Waller
+↗ [NYT / by Allyson Waller](https://www.nytimes.com/2020/07/01/nyregion/guilford-ct-fire-rescue-well.html) (external)
 
 ∂ «... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well.»
 
@@ -1209,7 +1213,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Jul 3rd
 
-=> https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html NYT / by Vimal Patel
+↗ [NYT / by Vimal Patel](https://www.nytimes.com/2023/07/03/us/university-of-chicago-whiteness-free-speech.html) (external)
 
 ∂ «A student objected to a class, ≤cThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?»
 
@@ -1223,7 +1227,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Jul 9th
 
-=> https://www.politico.com/news/magazine/2021/07/09/west-virginia-economy-paid-remote-work-498238 Politico / by Mackenzie Mays
+↗ [Politico / by Mackenzie Mays](https://www.politico.com/news/magazine/2021/07/09/west-virginia-economy-paid-remote-work-498238) (external)
 
 ∂ «The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.»
 
@@ -1239,7 +1243,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Jul 18th
 
-=> https://www.newyorker.com/magazine/2022/07/25/the-haves-and-the-have-yachts The New Yorker / by Evan Osnos
+↗ [The New Yorker / by Evan Osnos](https://www.newyorker.com/magazine/2022/07/25/the-haves-and-the-have-yachts) (external)
 
 ∂ «Luxury ships attract outrage and political scrutiny. The ultra-rich are buying them in record numbers.»
 
@@ -1255,7 +1259,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Jul 21st
 
-=> https://www.politico.com/interactives/2021/coronavirus-reopening-by-county-income/ Politico / by Beatrice Jin
+↗ [Politico / by Beatrice Jin](https://www.politico.com/interactives/2021/coronavirus-reopening-by-county-income/) (external)
 
 ∂ «Cell phone data shows a partisan split on how quickly people are returning to their normal routines. But there’s an even bigger income divide.»
 
@@ -1267,9 +1271,9 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Wikipedia
 
-=> https://en.wikipedia.org/wiki/Attack_on_Orleans WP / Attack on Orleans
+↗ [WP / Attack on Orleans](https://en.wikipedia.org/wiki/Attack_on_Orleans) (external)
 
-=> https://en.wikipedia.org/wiki/Orleans,_Massachusetts WP / Orleans, Massachusetts (US)
+↗ [WP / Orleans, Massachusetts (US)](https://en.wikipedia.org/wiki/Orleans,_Massachusetts) (external)
 
 ## VIII. August
 
@@ -1283,7 +1287,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 7th
 
-=> https://boingboing.net/2021/08/07/watch-this-short-documentary-about-the-influential-experimental-black-mountain-college.html Boing Boing / by Popkin
+↗ [Boing Boing / by Popkin](https://boingboing.net/2021/08/07/watch-this-short-documentary-about-the-influential-experimental-black-mountain-college.html) (external)
 
 £ «≤wBlack Mountain College: A Thumbnail Sketch≥ is a 13-minute documentary about a legendary, experimental college founded by John Andrew Rice along with a few others in 1933.»
 
@@ -1301,7 +1305,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 10th
 
-=> https://www.vice.com/en/article/akgqyz/moving-to-new-york-essentials Vice / by Ian Burke
+↗ [Vice / by Ian Burke](https://www.vice.com/en/article/akgqyz/moving-to-new-york-essentials) (external)
 
 ∂ «Start with a brisk walking pace, an incorrect opinion on bagels, and a healthy hatred of Bill de Blasio.»
 
@@ -1313,7 +1317,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ See also:
 
-=> https://en.wikipedia.org/wiki/Odd_Man_Out WP / Odd Man Out «is a 1947 British film noir ...»
+↗ [WP / Odd Man Out «is a 1947 British film noir ...»](https://en.wikipedia.org/wiki/Odd_Man_Out) (external)
 
 ##### Montague Summers, 1948 (age 68), in London
 
@@ -1325,7 +1329,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 13th
 
-=> https://www.vice.com/en/article/93ymxz/zillow-other-tech-firms-are-in-an-arms-race-to-buy-up-american-homes Vice / by Maxwell Strachan
+↗ [Vice / by Maxwell Strachan](https://www.vice.com/en/article/93ymxz/zillow-other-tech-firms-are-in-an-arms-race-to-buy-up-american-homes) (external)
 
 ∂ «≤siBuyers≥ are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.»
 
@@ -1333,7 +1337,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 13th
 
-=> https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials Vice / by Mary Frances ≤nFrancky≥ Knapp
+↗ [Vice / by Mary Frances ≤nFrancky≥ Knapp](https://www.vice.com/en/article/z3xkjy/moving-to-la-essentials) (external)
 
 ∂ «In addition to patience for traffic and Erewhon-ready smugness, here are the supplies you’ll need for your new LA life of pool parties and picnics.»
 
@@ -1343,7 +1347,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 13th
 
-=> https://slate.com/technology/2021/08/twitter-font-redesign-chirp-franklin-gothic.html Slate / by Aaron Mak
+↗ [Slate / by Aaron Mak](https://slate.com/technology/2021/08/twitter-font-redesign-chirp-franklin-gothic.html) (external)
 
 ∂ «And why users think it’s unreadable.»
 
@@ -1363,7 +1367,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 19th
 
-=> https://www.bbc.com/news/world-africa-58260855 BBC / by Kayleen Devlin
+↗ [BBC / by Kayleen Devlin](https://www.bbc.com/news/world-africa-58260855) (external)
 
 ∂ «The BBC’s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.»
 
@@ -1371,7 +1375,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 19th
 
-=> https://slate.com/business/2021/08/congestion-pricing-nyc-bart-tunnel-san-francisco-bay-environmental-reviews.html Slate / by Henry Grabar
+↗ [Slate / by Henry Grabar](https://slate.com/business/2021/08/congestion-pricing-nyc-bart-tunnel-san-francisco-bay-environmental-reviews.html) (external)
 
 ∂ «Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads.»
 
@@ -1387,7 +1391,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 23rd
 
-=> https://acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america
+↗ acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america
 
 ∂ «This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States.»
 
@@ -1409,7 +1413,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 28th
 
-=> https://www.theatlantic.com/technology/archive/2015/08/ballpoint-pens-object-lesson-history-handwriting/402205/ The Atlantic / by Josh Giesbrecht
+↗ [The Atlantic / by Josh Giesbrecht](https://www.theatlantic.com/technology/archive/2015/08/ballpoint-pens-object-lesson-history-handwriting/402205/) (external)
 
 ∂ «Thicker ink, fewer smudges, and more strained hands: an Object Lesson»
 
@@ -1427,7 +1431,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Posted by Gov. Chris Christie (@GovChristie) on Twitter
 
-=> https://twitter.com/GovChristie/status/1701683733953138918
+↗ twitter.com/GovChristie/status/1701683733953138918
 
 £ «Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is ≤srotten≥. Trump thinks Putin is a ≤sgenius≥ -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
@@ -1435,7 +1439,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Posted by Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
-=> https://twitter.com/AsaHutchinson/status/1701659903230689598
+↗ twitter.com/AsaHutchinson/status/1701659903230689598
 
 £ «Trump & Putin are using the same talking points. Trump’s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
@@ -1443,7 +1447,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Posted by Rep. Liz Cheney (@Liz_Cheney) on Twitter
 
-=> https://twitter.com/Liz_Cheney/status/1701651278697308238
+↗ twitter.com/Liz_Cheney/status/1701651278697308238
 
 £ «Putin has now officially endorsed the Putin-wing of the Republican Party. Putin Republicans & their enablers will end up on the ash heap of history. Patriotic Americans in both parties who believe in the values of liberal democracy will make sure of it. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
@@ -1457,7 +1461,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Sep 24th
 
-=> https://www.theatlantic.com/international/archive/2021/09/britain-france-us-aukus/620186/ The Atlantic / by Tom McTague
+↗ [The Atlantic / by Tom McTague](https://www.theatlantic.com/international/archive/2021/09/britain-france-us-aukus/620186/) (external)
 
 ∂ «The two countries are more similar than is often acknowledged.»
 
@@ -1471,7 +1475,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Wikipedia
 
-=> https://en.wikipedia.org/wiki/Carl_Laemmle WP / Carl Laemmle
+↗ [WP / Carl Laemmle](https://en.wikipedia.org/wiki/Carl_Laemmle) (external)
 
 ¢ [Let’s hope no more blockquotes end in verse. -- ȐD]
 
@@ -1503,7 +1507,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Nov 12th
 
-=> https://www.nytimes.com/2022/11/12/opinion/election-midterm-pattern.html NYT / by Ezra Klein
+↗ [NYT / by Ezra Klein](https://www.nytimes.com/2022/11/12/opinion/election-midterm-pattern.html) (external)
 
 ¢ Writing in The Times, Ezra Klein discusses «... patterns that explain more than one election, in more than one place. Three of them are on my mind right now: calcification, parity and cultural backlash.»
 
@@ -1517,7 +1521,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Nov 22nd
 
-=> https://boingboing.net/2021/11/22/intersections-of-pittsburgh.html Boing Boing / by Rob Beschizza
+↗ [Boing Boing / by Rob Beschizza](https://boingboing.net/2021/11/22/intersections-of-pittsburgh.html) (external)
 
 £ «Peter Gorman’s ≤wIntersections of Pittsburgh≥ poster ...»
 
@@ -1535,7 +1539,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Nov 29th
 
-=> https://www.nytimes.com/2022/11/29/nyregion/nyc-mentally-ill-involuntary-custody.html NYT / by Andy Newman and Emma G. Fitzsimmons
+↗ [NYT / by Andy Newman and Emma G. Fitzsimmons](https://www.nytimes.com/2022/11/29/nyregion/nyc-mentally-ill-involuntary-custody.html) (external)
 
 ∂ «Mayor Eric Adams directed the police and emergency medical workers to hospitalize people they deemed too mentally ill to care for themselves, even if they posed no threat to others.»
 
@@ -1551,7 +1555,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Dec 13th
 
-=> https://slate.com/technology/2022/12/medical-debt-collections-credit-report-burden.html Slate / by Bobbi Dempsey
+↗ [Slate / by Bobbi Dempsey](https://slate.com/technology/2022/12/medical-debt-collections-credit-report-burden.html) (external)
 
 ∂ «Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system.»
 
@@ -1563,7 +1567,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Dec 31st
 
-=> https://www.nytimes.com/2022/12/31/opinion/southwest-airlines-computers.html NYT / by Zeynep Tufekci
+↗ [NYT / by Zeynep Tufekci](https://www.nytimes.com/2022/12/31/opinion/southwest-airlines-computers.html) (external)
 
 £ «While aging code is a common cause of technical debt in older companies ...»
 
