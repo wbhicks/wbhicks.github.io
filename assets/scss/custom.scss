@@ -5,7 +5,7 @@
    ** Variables internal to this file (custom.scss)
 
    * Vertical spacing (about 183 lines)
-   ** Vertical spacing for selectors
+   ** Vertical spacing for HEADER, MAIN, FOOTER, & selectors
    ** External vertical spacing for DIV.asterism-*
    ** Vertical spacing for H2, H3, H4, & DIV.rule-line-below-*
    ** Vertical spacing for other block-level elements
@@ -131,7 +131,24 @@ $color-text_light: #ffe0cc;
 
 
 /* =====================
-   Vertical spacing for selectors
+   Vertical spacing for HEADER, MAIN, FOOTER, & selectors
+
+   An uppercase letter in Monaco is about nine-sevenths its height in
+   Courier, and (at a line-height of 1.0) its top comes extremely close
+   to the descenders of the lowercase letters in the line above it.
+
+   Because line-height is unaffected by the choice of font, a value that
+   seems like a good minimum line-height when seen in Courier will look
+   too tight when seen in Monaco.
+
+   In Courier, a line-height of 1.5 looks good, and makes an uppercase
+   letter occupy about half of the "available" space below a lowercase
+   descender. To get the same effect in Monaco, I should increase the
+   Courier-friendly line-height (1.5) by about 30* percent.
+
+   * Disclaimer: I re-measured in a different context and found Monaco
+     to be about 38 percent "taller", but I think this may vary by
+     browser or font size anyway.
    =====================
 */
 
@@ -140,6 +157,40 @@ body > div.nojs-mini-themed > table.mini-theme-selector-table,
 body > div.nojs-mini-themed > div.mono-color-selector {
   padding-top: 1rem;
   padding-bottom: 3rem;
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+
+  main,
+  footer {
+    line-height: 1.8;
+  }
+
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
+
+  main,
+  footer {
+    line-height: 1.5;
+  }
+
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+
+  main,
+  footer {
+    line-height: 1.95;
+  }
+
 }
 
 
@@ -273,10 +324,6 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
 
 .nojs-mini-themed {
-
-  main {
-    line-height: 1.5;
-  }
 
   --margin-top-or-bottom: 1rem;
 
@@ -678,7 +725,6 @@ body > div.nojs-mini-themed > footer {
 
   header > div.the-div-child-of-the-header > h1 {
     font-weight: normal;
-    // font-family: "Futura Medium" !important;
   }
 
   main > h2.h2-from-1star,
@@ -1074,15 +1120,16 @@ body > div.nojs-mini-themed > footer {
   --nojs-quote-chars: '"' '"' "\'" "\'";
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
-  // 0x2035 &bprime, 0x2032 &prime, etc.:
-  --nojs-quote-chars: "‵‵" "′′" "‵" "′";
-}
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   // 0x2035 &bprime, 0x2032 &prime, etc.:
-  --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
+  --nojs-quote-chars: "‵‵" "′′" "‵" "′";
 }
+
+/* I ditched this style. Authentic but ugly.
+   --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
+*/
 
 .nojs-mini-themed {
 

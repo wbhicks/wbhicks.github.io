@@ -30,7 +30,7 @@ draft: false
 
 ¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-¢ aaa www.nytimes.com bbb [Link](http://a.com) ccc
+¢ gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM 
 
 ### January 8th
 
@@ -46,7 +46,7 @@ draft: false
 
 ◉ Bookmark, Jan 8th
 
-↗ [/ by Blake Gopnik](https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html) (external)](https://[NYT) (external)
+↗ [NYT / by Blake Gopnik](https://www.nytimes.com/2021/01/08/arts/design/affordable-multiple-goodman-art.html) (external)
 
 ∂ «Marian Goodman Gallery and MoMA are reviving interest in multiples -- art produced in affordable editions for the ’60s middle-class. Now, some artists are taking up the cause.»
 
@@ -60,25 +60,23 @@ draft: false
 
 ~ George Washington
 
-↗ [(external)](https://[Wikisource](https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address)) (external)
+↗ [Wikisource](https://en.wikisource.org/wiki/George_Washington%27s_First_State_of_the_Union_Address) (external)
 
-↗ [(external)](https://[Gutenberg.org](https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a)) (external)
+↗ [Gutenberg.org](https://www.gutenberg.org/files/5050/5050-h/5050-h.htm#y1790a) (external)
 
-↗ [(external)](https://[UCSB](https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0)) (external)
+↗ [UCSB](https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0) (external)
 
 #### 1918-01-08: Woodrow Wilson’s Fourteen Points speech to Congress
 
-↗ [/ Fourteen Points](https://en.wikipedia.org/wiki/Fourteen_Points) (external)](https://[WP) (external)
+↗ [WP / Fourteen Points](https://en.wikipedia.org/wiki/Fourteen_Points) (external)
 
 #### 1964-01-08: LBJ, in his first ≤sState of the Union≥ address, announces the war on poverty.
 
-↗ [/ War on poverty](https://en.wikipedia.org/wiki/War_on_poverty) (external)](https://[WP) (external)
+↗ [WP / War on poverty](https://en.wikipedia.org/wiki/War_on_poverty) (external)
 
 #### Deaths on this date:
 
 ##### Giotto, 1337 (age 70?), in Florence (Firenze)
-
-¢ ≤edfgd fgfgdfg dfgdf dfg dfg gd fggdf gdf gfd gdf gdf dfg dgf gdf gdfg dgf fdg dfg dffg gdf fdgg dfg fdg dfg dfgdf gdf dgfgdf gfd fgdf gdf gfd fdg dfgg dfdg dfg dfgfd gf dfg gfdgdf gfd gfd gdfd fggdf dgf≥
 
 ##### Galileo, 1642 (age 77), in Florence (Firenze)
 
@@ -102,77 +100,102 @@ draft: false
 
 ◉ Bookmark, Jan 25th
 
-↗ [/ by Thomas B. Edsall](https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html) (external)](https://[NYT) (external)
+↗ [NYT / by Thomas B. Edsall](https://www.nytimes.com/2023/01/25/opinion/rural-voters-republican-realignment.html) (external)
 
 ¢ As is his wont [modernize to «As is his custom»? -- ȐD], Thomas Edsall brings a wealth of citations to his argument that, in the mapping from county population density[1] to partisan lean, the slope has been smoothing out. (For readers unfamiliar with US partisanship, I’ve drawn three ASCII art graphs to suggest some historical context.)
 
 ¢ [1]: Or, perhaps equally well, the X axis can show a county’s distance from the nearest metropolitan core, i.e. on a scale from periphery to centrality. Some of the studies Edsall cites use such a model, but others use pure population density.
 
 <pre>
-Fig. 1 - A long time ago:        Fig. 2 - Not too long ago:       Fig. 3 - Now:
+Fig. 1 - A long time ago: 
 
-lean |                           lean |                           lean |
-Rep. |        ....               Rep. |                           Rep. |.....
-     |      ..    ..                  |     .......                    |     ...
-     |   ...        ..                |.....       ...                 |        ....
-     |...             ..              |               ..               |            ...
-lean |                  ..       lean |                 ...       lean |               .....
-Dem. |____________________       Dem. |____________________       Dem. |____________________
-      ^                  ^             ^                  ^             ^                  ^
-  sparsely         densely         sparsely         densely         sparsely         densely
-  populated      populated         populated      populated         populated      populated
+lean |                    
+Rep. |        ....        
+     |      ..    ..      
+     |   ...        ..    
+     |...             ..  
+lean |                  ..
+Dem. |____________________
+      ^                  ^
+  sparsely         densely
+  populated      populated
+
+
+Fig. 2 - Not too long ago:
+
+lean |                    
+Rep. |                    
+     |     .......        
+     |.....       ...     
+     |               ..   
+lean |                 ...
+Dem. |____________________
+      ^                  ^
+  sparsely         densely
+  populated      populated
+
+
+Fig. 3 - Now:
+
+lean |
+Rep. |.....
+     |     ...
+     |        ....
+     |            ...
+lean |               .....
+Dem. |____________________
+      ^                  ^
+  sparsely         densely
+  populated      populated
 </pre>
 
 ¢ Edsall cites, among others:
 
 ##### ® Source: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson
 
-↗ [of New Hampshire / by Kenneth Johnson](https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history) (external)](https://[U.) (external)
+↗ [U. of New Hampshire / by Kenneth Johnson](https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history) (external)
 
 ##### ® Source: «The Increase in Partisan Segregation in the United States» by Jacob R. Brown et al.
 
-↗ [of Nottingham / by Jacob R. Brown et al.](https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf) (external)](https://[U.) (external)
+↗ [U. of Nottingham / by Jacob R. Brown et al.](https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf) (external)
 
 ##### ® Source: ≤bThe Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker≥ by Katherine J. Cramer
 
-↗ [of Chicago Press / by Katherine J. Cramer (2016)](https://press.uchicago.edu/ucp/books/book/chicago/P/bo22879533.html) (external)](https://[U.) (external)
+↗ [U. of Chicago Press / by Katherine J. Cramer (2016)](https://press.uchicago.edu/ucp/books/book/chicago/P/bo22879533.html) (external)
 
 ##### ® Source: ≤bRed Fighting Blue: How Geography and Electoral Rules Polarize American Politics≥ by David A. Hopkins
 
-↗ [U. Press / by David A. Hopkins (2017)](https://www.cambridge.org/core/books/red-fighting-blue/5BED65A27BC1399564B4A5863A1E899C) (external)](https://[Cambridge) (external)
+↗ [Cambridge U. Press / by David A. Hopkins (2017)](https://www.cambridge.org/core/books/red-fighting-blue/5BED65A27BC1399564B4A5863A1E899C) (external)
 
 ##### ® Source: «The Suburbanization of the Democratic Party, 1992-2018 (Paper presented at the Annual Meetings of the American Political Science Association, Washington, DC, August 29, 2019)» by David A. Hopkins
 
-↗ [/ by David A. Hopkins (2019)](https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf) (external)](https://[paper) (external)
+↗ [paper / by David A. Hopkins (2019)](https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf) (external)
 
 ##### ® Source: «Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America’s Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)» by Nicholas Jacobs and B. Kal Munis
 
-↗ [/ by Nicholas Jacobs and B. Kal Munis](https://static1.squarespace.com/static/580ab33829687f686ad6cbb1/t/6319051814f1302127e75b39/1662584089724/JacobsMunis2022-place-resentment-elections-vote-choice-urban-rural-divide.pdf) (external)](https://[reprint) (external)
+↗ [reprint / by Nicholas Jacobs and B. Kal Munis](https://static1.squarespace.com/static/580ab33829687f686ad6cbb1/t/6319051814f1302127e75b39/1662584089724/JacobsMunis2022-place-resentment-elections-vote-choice-urban-rural-divide.pdf) (external)
 
 ##### ® Source: «Symbolic Versus Material Concerns of Rural Consciousness in the United States (Political Geography, Volume 96, June 2022, 102658)» by Kristin Lunz Trujillo and Zack Crowley
 
-↗ [/ by Kristin Lunz Trujillo and Zack Crowley](https://www.sciencedirect.com/science/article/abs/pii/S0962629822000725) (external)](https://[reprint) (external)
+↗ [reprint / by Kristin Lunz Trujillo and Zack Crowley](https://www.sciencedirect.com/science/article/abs/pii/S0962629822000725) (external)
 
 ##### ® Source: «What Unites and Divides Urban, Suburban and Rural Communities» by Kim Parker et al.
 
-↗ [Research Center / by Kim Parker et al.](https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/) (external)](https://[Pew) (external)
+↗ [Pew Research Center / by Kim Parker et al.](https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/) (external)
 
-<pre>
-date: 2018-05-22
-authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera Cohn and Ruth Igielnik
-</pre>
+¢ Authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera Cohn and Ruth Igielnik; Date: 2018-05-22
 
 ##### ® Source: ≤bHollowing Out the Middle: The Rural Brain Drain and What It Means for America≥ by Patrick J. Carr and Maria J. Kefalas
 
-↗ [Press / by Patrick J. Carr and Maria J. Kefalas (2010)](https://shop.harvard.com/book/9780807006146) (external)](https://[Beacon) (external)
+↗ [Beacon Press / by Patrick J. Carr and Maria J. Kefalas (2010)](https://shop.harvard.com/book/9780807006146) (external)
 
 ##### Source: Edsall also quotes from his email correspondence with Justin Gest at George Mason University.
 
-↗ [/ Justin Gest](https://schar.gmu.edu/profiles/jgest) (external)](https://[GMU) (external)
+↗ [GMU / Justin Gest](https://schar.gmu.edu/profiles/jgest) (external)
 
 #### 1792-01-25: First meeting of the
 
-↗ [Corresponding Society](https://en.wikipedia.org/wiki/London_Corresponding_Society) (external)](https://[London) (external)
+↗ [London Corresponding Society](https://en.wikipedia.org/wiki/London_Corresponding_Society) (external)
 
 ### January 26th
 
@@ -182,7 +205,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Jan 26th
 
-↗ [/ by Paul Krugman](https://www.nytimes.com/2023/01/26/opinion/rural-voters-economy.html) (external)](https://[NYT) (external)
+↗ [NYT / by Paul Krugman](https://www.nytimes.com/2023/01/26/opinion/rural-voters-economy.html) (external)
 
 ¢ Given J.D. Vance’s professional background, there are 180 degrees of irony in Krugman’s paragraph citing Vance’s tweet about NYC. Krugman does note that it was crafted «during his senatorial campaign», but should acknowledge that the tweet’s ostensible and real arrows of contempt fly in opposite directions.
 
@@ -192,7 +215,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ~ Wikipedia
 
-↗ [/ First Fleet](https://en.wikipedia.org/wiki/First_Fleet) (external)](https://[WP) (external)
+↗ [WP / First Fleet](https://en.wikipedia.org/wiki/First_Fleet) (external)
 
 ## II. February
 
@@ -206,7 +229,7 @@ authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera
 
 ◉ Bookmark, Feb 2nd
 
-↗ [Jones / by David Corn](https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/) (external)](https://[Mother) (external)
+↗ [Mother Jones / by David Corn](https://www.motherjones.com/politics/2023/02/columbia-journalism-review-jeff-gerth-trump-russia-the-media/) (external)
 
 ∂ «The magazine’s attempted takedown of the media’s coverage bolsters Trump’s phony narrative.»
 
@@ -399,7 +422,8 @@ We hoppen alwey, whyl that the world wol pype.
 But ik[1] am old, me list[2] not pley for age;
  ↳ But I am old, I wish not [to] play, for [because of my] age;
 Gras-tyme is doon[3], my fodder is now forage,[4]
- ↳ Grass-time is done, my fodder is now [my] forage [i.e. I foraged when younger, but now must be given fodder],
+ ↳ Grass-time is done, my fodder is now [my] forage,
+   [i.e. I foraged when younger, but now must be given fodder]
 This whyte top[5] wryteth myne olde yeres,[6]
  ↳ This white[-haired] head writes [i.e. signifies] my old years,
 Myn herte is al-so mowled[7] as myne heres,[8]
@@ -409,7 +433,8 @@ But-if[9] I fare as dooth[10] an open-ers;[11][12]
 That ilke fruyt[13] is ever lenger the wers,[14]
  ↳ That very fruit is ever longer the worse,
 Til it be roten in mullok[15] or in stree.[16]
- ↳ Till it be rotten [whether] in rubbish or [stored for ripening] in straw.
+ ↳ Till it be rotten [, whether] in rubbish or
+   [stored for ripening] in straw.
 We olde men, I drede, so fare we;
  ↳ We old men, I dread, so [too] fare we;
 Til we be roten, can we nat be rype;
