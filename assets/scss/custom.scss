@@ -440,6 +440,13 @@ body > div.nojs-mini-themed > footer {
      below. (It seems that, at least in a monospace font, a rem is about
      twice as wide as a ch. This holds for horizontal comparisons only.)
 
+     On a old typewriter (is there any other kind?), the size called 
+     "Pica" or "12 point" has a width of "10 pitch", meaning 10
+     characters per inch. So, a sheet of paper of "US Letter" or "US
+     Legal" size (which are always 8.5 inches wide) will have a line
+     length of 65 characters, if the typist uses a Pica setting and
+     chooses 1-inch side margins.
+
      Unless overridden, the width of MAIN is capped by the line
      `max-width: 140ch;` in https://github.com/bep/galleriesdeluxe/blob/m
      ain/assets/css/galleriesdeluxe/styles.css. See lines 61-78 there:
@@ -468,7 +475,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   main {
-    max-width: 71ch; // 67 plus 4 to allow for the side padding
+    max-width: 84ch; // 80, plus 4 to allow for the side padding
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -476,7 +483,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   main {
-    max-width: 71ch;
+    max-width: 84ch;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -484,7 +491,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
-    max-width: 71ch;
+    max-width: 69ch; // 65, plus 4 to allow for the side padding
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -492,7 +499,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
   main {
-    max-width: 64ch;
+    max-width: 69ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -500,7 +507,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   main {
-    max-width: 64ch;
+    max-width: 69ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
