@@ -84,6 +84,8 @@ This paragraph has no prefix, so it shouldn't normally be encountered.
 
 # This H1 heading is for the remaining tests
 
+¢ This commentary paragraph is for eyeballing line-height: gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM 
+
 ## This is an H2 heading above some ruby tests
 
 In this block, only the movie name is within a ruby element: I saw the movie <ruby>The Five Thousand Fingers Of Doctor Strangelove; Or, It's A Mad Mad World</ruby> in the theater.

@@ -30,8 +30,6 @@ draft: false
 
 ¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-¢ gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM 
-
 ### January 8th
 
 ¢ On this date in 2023: Bolsonaro’s putsch in Brasília fails. Partly inspired by Trump’s failed self-coup in the US two years before, and similarly fueled by populist (dis)content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil’s highest constitutional court.

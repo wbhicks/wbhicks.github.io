@@ -13,11 +13,29 @@
   {{ $theContent = replaceRE `\?` `TMPLT_QSTNMK` $theContent }}
   {{ $theContent = replaceRE `\+` `TMPLT_PLUSSN` $theContent }}
   {{ $theContent = replaceRE `\$` `TMPLT_DOLLAR` $theContent }}
-  {{- /* The following is also the apostrophe in most publications: */ -}}
+
+  {{- /* The following, which is also the apostrophe in most publications, is
+         unused in any other template. Farther below in this template, it will
+         be converted to a pair of spans in support of mini-theming.
+  */ -}}
+
   {{ $theContent = replaceRE `’`  `TMPLT_RSNGQA` $theContent }}
+
+  {{- /* The following 3 will pass through the templating process, and appear
+         unaltered on screen. They have no effect on any processing, as far as
+         I've tested.
+
+         n.b.: `‘`, which is the Unicode "left single quotation mark" and also
+         the HTML named entity "&lsquo;", is sometimes called the "turned comma"
+         and was historically used when printing some Scottish surnames. (See
+         https://www.greenbag.org/v12n3/v12n3_collins.pdf, and footnote h of
+         https://en.wikipedia.org/wiki/Quotation_mark .)
+  */ -}}
+
   {{ $theContent = replaceRE `‘`  `TMPLT_LSNGQA` $theContent }}
   {{ $theContent = replaceRE `”`  `TMPLT_RDBLQA` $theContent }}
   {{ $theContent = replaceRE `“`  `TMPLT_LDBLQA` $theContent }}
+
   {{ $theContent = replaceRE `«`  `TMPLT_LDGUIL` $theContent }}
   {{ $theContent = replaceRE `»`  `TMPLT_RDGUIL` $theContent }}
   {{ $theContent = replaceRE `‹`  `TMPLT_LSGUIL` $theContent }}
@@ -53,10 +71,17 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_QSTNMK` `?`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_PLUSSN` `+`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_DOLLAR` `$`  $theContent }}
+
+  {{- /* This template is the only one involved in generating the following,
+         mini-theme-sensitive, apostrophe feature:
+  */ -}}
+
+  {{ $theContent = replaceRE `TMPLT_RSNGQA` `<span class="apost-rsquo">’</span><span class="apost-apost">'</span>`  $theContent }}
+
+  {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RSNGQA` `’`  $theContent }}
+
   {{ $theContent = replaceRE `TMPLT_LDGUIL ` `<q>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LDGUIL` `<q>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RDGUIL` `</q>`  $theContent }}

@@ -31,6 +31,7 @@
    ** All derived from "lettered strings"
    ** Typically oblique
    ** Typically quoted (BLOCKQUOTE appears here too)
+   ** The apostrophe
    ** The emdash & the double-hyphen
 
    * Font-family assignments (except for ...
@@ -166,7 +167,7 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
   main,
   footer {
-    line-height: 1.8;
+    line-height: 1.7;
   }
 
 }
@@ -435,7 +436,7 @@ body > div.nojs-mini-themed > footer {
 
      Above, for the MAIN element, a 1rem padding has been set on each
      side. To compensate (approximately) for the resulting 2rem of
-     unusable  width, I've added 4ch to each of the max-width values
+     unusable width, I've added 4ch to each of the max-width values
      below. (It seems that, at least in a monospace font, a rem is about
      twice as wide as a ch. This holds for horizontal comparisons only.)
 
@@ -467,7 +468,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   main {
-    max-width: 84ch;
+    max-width: 71ch; // 67 plus 4 to allow for the side padding
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -475,7 +476,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   main {
-    max-width: 84ch;
+    max-width: 71ch;
     --padding-left-sensitive-to-max-width:  2rem;
     --padding-right-sensitive-to-max-width: 2rem;
   }
@@ -483,7 +484,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
-    max-width: 84ch;
+    max-width: 71ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -1185,6 +1186,91 @@ body > div.nojs-mini-themed > footer {
     position: relative;
     vertical-align: -0.2rem;
     line-height: 1;
+  }
+
+}
+
+
+/* =====================
+   The apostrophe
+
+   --- Outdated: ---
+
+   I decided to keep the apostrophes hard-coded in my content as `’` (a.k.a. 
+   the Unicode `right single quotation mark`, and the HTML entity `&rsquo;`).
+   The alternative, which was (1) to replace each occurrence with ...
+
+     <span class="apostrophe"></span>
+
+   ... and (2) to rely on this styling ...
+
+     span.apostrophe::before { // COULD HAVE USED ::after INSTEAD
+       content: var(--nojs-apostrophe-char);
+       color: var(--nojs-apostrophe-color); // OPTIONAL DEBUGGING AID
+     }
+
+   ... had the side effect that copying content from the browser to the 
+   clipboard would omit all apostrophes, because they wouldn’t exist in 
+   the DOM. I realized that that was far too big a price for the intended
+   benefit: to let the user toggle among `’`, `'`, and `´` (via, indirectly,
+   a CSS custom property that I named `--nojs-apostrophe-char`).
+
+   p.s. In any such approach, the span element MUST be empty, i.e. composed
+   of both an opening tag and an adjacent closing tag; otherwise the missing 
+   character can’t be supplied. Write it, e.g., like this ...
+
+     <span class="apostrophe"></span>
+
+   ... and never like this ...
+
+     <span class="apostrophe"/> 
+
+   ... (which is bad HTML anyway).
+
+   --- Update: ---
+
+   I'm trying ...
+
+   <span class="apost-rsquo">’</span><span class="apost-apost">'</span>
+
+   ... it works. I'm generating it in lettered-escapade.html alone; no
+   other templates are involved. To take advantage of it, just use `’`.
+   Where `'` is used instead, no harm will be done but it will appear
+   as-is in all mini-themes. (This is to preserve code samples as-is.)
+   =====================
+*/
+
+
+/* For these mini-themes, show ONLY the span of class apost-rsquo, which
+   contains `’`, the unicode character named "right single quotation
+   mark". This is also the HTML named entity "&rsquo;".
+*/
+
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
+
+  main span.apost-apost {
+    display: none; // only apost-rsquo shall be shown
+  }
+
+}
+
+/* For these mini-themes, show ONLY the span of class apost-apost, which
+   contains `'`, the unicode character named "apostrophe". This is also
+   the HTML named entity "&apos;".
+*/
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+
+  main span.apost-rsquo {
+    display: none; // only apost-apost shall be shown
   }
 
 }
