@@ -32,7 +32,7 @@
    ** Typically oblique
    ** Typically quoted (BLOCKQUOTE appears here too)
    ** The apostrophe
-   ** The emdash & the double-hyphen
+   ** The em dash & the double-hyphen
 
    * Font-family assignments (except for ...
    ** Font-family for title
@@ -823,17 +823,16 @@ body > div.nojs-mini-themed > footer {
    The FIGCAPTION element
 
    So far, this element is used only as a sibling following a BLOCKQUOTE.
+
+   The symbol (1 em dash or 2 hyphens) preceding the author's name in the
+   FIGCAPTION is inserted by the template prefixed-blocks.html. The 
+   symbol's appearance depends on the mini-theme (handled elsewhere in
+   this stylesheet).
    =====================
 */
 
 
-.nojs-mini-themed {
-
-  main > figure > figcaption::before {
-    content: "— ";
-  }
-
-} // End of .nojs-mini-themed
+// nothing to do here yet
 
 
 /* =====================
@@ -1284,7 +1283,7 @@ body > div.nojs-mini-themed > footer {
 
 
 /* =====================
-   The emdash & the double-hyphen
+   The em dash & the double-hyphen
    =====================
 */
 
