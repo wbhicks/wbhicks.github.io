@@ -170,7 +170,7 @@ end of comment was here
          definition of one of the replacements above.
 
          These appear, so far, in abbreviation handling only,
-         which uses the t code (hmmm, t leaves!):
+         which uses the t code (hmmm, "t leaves" ...). E.g.:
 
          ≤tENIAC, Electronic Numerical Integrator And Computer≥
          --->
@@ -182,12 +182,7 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
 
 
-
-  {{ $theContent = replaceRE `TMPLT_RSQBKT` `]`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSQBKT` `[`  $theContent }}
-
-
-
+{{- /* TODO:
 
   {{ $theContent = replaceRE `TMPLT_LRUBY1 `
                              `<ruby>`  $theContent }}
@@ -197,8 +192,6 @@ end of comment was here
                              `<rt>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RRUBYT`
                              `</rt>`  $theContent }}
-
-
   {{ $theContent = replaceRE `TMPLT_LMTITL ` 
                              `<cite class="media-title">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RMTITL` `</cite>`  $theContent }}
@@ -206,19 +199,27 @@ end of comment was here
                              `<cite class="special-citation">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSPECC` `</cite>`  $theContent }}
 
-NOT APPEARING AT ALL:
-  {{ $theContent = replaceRE `TMPLT_RSNGQA` `<span class="apost-rsquo">’</span><span class="apost-apost">'</span>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSMPLQ ` `<q>`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RSMPLQ` `</q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LDGUIL ` `<q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LDGUIL` `<q>`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RDGUIL` `</q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RDGUIL` `</q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSGUIL` `<q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RSGUIL` `</q>`  $theContent }}
+  */ -}}
+
+
+  {{- /* NOT APPEARING AT ALL IN .gmi OUTPUT:
+
+      {{ $theContent = replaceRE `TMPLT_RSQBKT` `]`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_LSQBKT` `[`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_RSNGQA` `<span class="apost-rsquo">’</span><span class="apost-apost">'</span>`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_LSMPLQ ` `<q>`  $theContent }}
+      {{ $theContent = replaceRE ` TMPLT_RSMPLQ` `</q>`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_LDGUIL ` `<q>`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_LDGUIL` `<q>`  $theContent }}
+      {{ $theContent = replaceRE ` TMPLT_RDGUIL` `</q>`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_RDGUIL` `</q>`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_LSGUIL` `<q>`  $theContent }}
+      {{ $theContent = replaceRE `TMPLT_RSGUIL` `</q>`  $theContent }}
+
+  */ -}}
 
 {{ end }}
 {{ return $theContent }}
