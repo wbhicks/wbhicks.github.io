@@ -148,42 +148,47 @@ end of comment was here
   {{ $theContent = replaceRE ` TMPLT_RNIKNM` `∫`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LSOCLD ` `∫`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSOCLD` `∫`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LEPIGM ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_REPIGM` `∫`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LFREGN ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RFREGN` `∫`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LLOGIC ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RLOGIC` `∫`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LBTITL ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RBTITL` `∫`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LWTITL ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RWTITL` `∫`  $theContent }}
 
-
-
+  {{ $theContent = replaceRE `TMPLT_LATITL ` `«`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RATITL` `»`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LCTITL ` `«`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RCTITL` `»`  $theContent }}
 
   {{- /* The replacements below with a space next to the 
          substitute are only for cases where a symbol like 
          $1, $2 etc. must be followed by a space in the
          definition of one of the replacements above.
+
+         These appear, so far, in abbreviation handling only,
+         which uses the t code (hmmm, t leaves!):
+
+         ≤tENIAC, Electronic Numerical Integrator And Computer≥
+         --->
+         ∫ENIAC∫ (Electronic Numerical Integrator And Computer)
   */ -}}
   {{ $theContent = replaceRE `TMPLT_LPAREN ` `(`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LPAREN` `(`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RPAREN` `)`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
+
+
+
   {{ $theContent = replaceRE `TMPLT_RSQBKT` `]`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LSQBKT` `[`  $theContent }}
 
-  {{- /* This template is the only one involved in generating the following,
-         mini-theme-sensitive, apostrophe feature:
-  */ -}}
 
-  {{ $theContent = replaceRE `TMPLT_RSNGQA` `<span class="apost-rsquo">’</span><span class="apost-apost">'</span>`  $theContent }}
 
-  {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
 
-  {{ $theContent = replaceRE `TMPLT_LDGUIL ` `<q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LDGUIL` `<q>`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RDGUIL` `</q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RDGUIL` `</q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSGUIL` `<q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RSGUIL` `</q>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSMPLQ `
-                             `<q>`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RSMPLQ`
-                             `</q>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LRUBY1 `
                              `<ruby>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RRUBY1`
@@ -192,28 +197,7 @@ end of comment was here
                              `<rt>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RRUBYT`
                              `</rt>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LEPIGM `
-                             `<i class="epigram">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_REPIGM` `</i>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LFREGN `
-                             `<i class="foreign">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RFREGN` `</i>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LLOGIC `
-                             `<i class="logic">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RLOGIC` `</i>`  $theContent }}
 
-  {{ $theContent = replaceRE `TMPLT_LATITL `
-                             `<cite class="article-title">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RATITL` `</cite>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LBTITL ` 
-                             `<cite class="book-title">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RBTITL` `</cite>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LCTITL ` 
-                             `<cite class="like-article-title">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RCTITL` `</cite>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LWTITL ` 
-                             `<cite class="like-book-title">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RWTITL` `</cite>`  $theContent }}
 
   {{ $theContent = replaceRE `TMPLT_LMTITL ` 
                              `<cite class="media-title">`  $theContent }}
@@ -221,6 +205,20 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_LSPECC ` 
                              `<cite class="special-citation">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSPECC` `</cite>`  $theContent }}
+
+NOT APPEARING AT ALL:
+  {{ $theContent = replaceRE `TMPLT_RSNGQA` `<span class="apost-rsquo">’</span><span class="apost-apost">'</span>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSMPLQ ` `<q>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSMPLQ` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDGUIL ` `<q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDGUIL` `<q>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RDGUIL` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RDGUIL` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSGUIL` `<q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSGUIL` `</q>`  $theContent }}
 
 {{ end }}
 {{ return $theContent }}
