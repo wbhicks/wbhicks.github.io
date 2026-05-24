@@ -1,0 +1,110 @@
+{{ $title := .page_title }}
+{{ $allText := .raw_content }}
+
+{{- /* The following code became unnecessary once I replaced .Content 
+       with .RawContent, above.
+
+       {{ $allText = replaceRE `<p>` `
+` $allText }}
+
+       {{ $allText = replaceRE `</p>` `
+` $allText }}
+
+       {{ $allText = replaceRE `<h2 id=[^>]+>(.+)</h2>` `## $1 ` $allText }}
+       {{ $allText = replaceRE `<h3 id=[^>]+>(.+)</h3>` `### $1 ` $allText }}
+       {{ $allText = replaceRE `<h4 id=[^>]+>(.+)</h4>` `#### $1 ` $allText }}
+
+       The following replacement worked when .Content was assigned as the value
+       of $allText, but now that I'm using .RawContent a different regex is
+       needed (see farther below).
+
+       {{ $allText = replaceRE 
+           `↗ <a href="([^"]+)">(.+)</a> \(external\)`
+           `=> $1 $2 (external link)`
+           $allText
+       }}
+
+*/ -}}
+
+{{ $allText = replaceRE
+    `↗ \[(.+)\]\((.+)\) \(external\)`
+    `=> $2 $1 (external link)`
+    $allText
+}}
+
+{{ $allText = replaceRE
+    `
+</?pre[^>]*>` `
+TMPLT_3BKTIX`
+    $allText
+}}
+
+{{ $allText = replaceRE
+    `TMPLT_3BKTIX`
+    "```"
+    $allText
+}}
+
+{{ $allText = replaceRE
+    `
+£ ` `
+> `
+    $allText
+}}
+
+{{ $allText = replaceRE
+    `
+
+££ ` `
+>
+> `
+    $allText
+}}
+
+{{ $allText = replaceRE
+    `
+
+~ ` `
+>
+> -- `
+    $allText
+}}
+
+
+{{- /* ====================
+       STEP II. (Copied from the partial template prefixed-or-lettered.html)
+
+       Process all delimitations by calling the partial: lettered-leaf.html
+       ====================
+*/ -}}
+
+
+  {{ $regexpMatchingLeaves := `≤[^≤≥]+≥` }}
+  {{ range seq 7 }}
+    {{ $allLeaves := findRE $regexpMatchingLeaves $allText }}
+    {{ range $allLeaves }}
+      {{ $currentLeaf := . }}
+      {{ $foundLetter := (substr . 1 1) }}
+      {{ $leafText := (substr . 2 -1) }} 
+      {{ $allText = 
+          replaceRE 
+          .
+          (partial "lettered-leaf.html" 
+            (dict "letter" $foundLetter "leaf_text" $leafText)
+          )
+          $allText
+      }}
+    {{ end }}
+  {{ end }}
+
+  {{ $allText = (partial "lettered-escapade.html" 
+      (dict "the_content" $allText "sanitize_or_restore" "restore_for_gemini")) }}
+
+
+{{- /* ====================
+       End of STEP II
+       ====================
+*/ -}}
+
+# {{ $title }}
+{{ $allText }}

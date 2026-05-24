@@ -1,0 +1,1 @@
+{{ strings.TrimSpace (partial "gemini-basic.gmi" (dict "page_title" .Title "raw_content" .RawContent)) }}

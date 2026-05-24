@@ -453,7 +453,6 @@ We hoppen[17] alwey, whyl that the world wol pype.
  ↳ We dance always, while the world will pipe.
 </pre>
 
-
 ¢ [1]: I
 
 ¢ [2]: wish, want, lust

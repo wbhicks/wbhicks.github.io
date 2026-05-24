@@ -140,5 +140,87 @@ end of comment was here
   {{- /* The spaces are purely cosmetic: */ -}}
   {{ $theContent = replaceRE `TMPLT_2HYFNS` ` <span class="dash-as-hyphens">--</span><span class="dash-as-emdash">—</span> ` $theContent }}
 
+{{ else if (eq .sanitize_or_restore "restore_for_gemini") }}
+
+  {{ $theContent = replaceRE `TMPLT_LABBRV ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RABBRV` `∫`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LNIKNM ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RNIKNM` `∫`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSOCLD ` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSOCLD` `∫`  $theContent }}
+
+
+
+
+  {{- /* The replacements below with a space next to the 
+         substitute are only for cases where a symbol like 
+         $1, $2 etc. must be followed by a space in the
+         definition of one of the replacements above.
+  */ -}}
+  {{ $theContent = replaceRE `TMPLT_LPAREN ` `(`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LPAREN` `(`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RPAREN` `)`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSQBKT` `]`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSQBKT` `[`  $theContent }}
+
+  {{- /* This template is the only one involved in generating the following,
+         mini-theme-sensitive, apostrophe feature:
+  */ -}}
+
+  {{ $theContent = replaceRE `TMPLT_RSNGQA` `<span class="apost-rsquo">’</span><span class="apost-apost">'</span>`  $theContent }}
+
+  {{ $theContent = replaceRE `TMPLT_LSNGQA` `‘`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDBLQA` `“`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RDBLQA` `”`  $theContent }}
+
+  {{ $theContent = replaceRE `TMPLT_LDGUIL ` `<q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LDGUIL` `<q>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RDGUIL` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RDGUIL` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSGUIL` `<q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSGUIL` `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSMPLQ `
+                             `<q>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSMPLQ`
+                             `</q>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LRUBY1 `
+                             `<ruby>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RRUBY1`
+                             `</ruby>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LRUBYT `
+                             `<rt>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RRUBYT`
+                             `</rt>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LEPIGM `
+                             `<i class="epigram">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_REPIGM` `</i>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LFREGN `
+                             `<i class="foreign">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RFREGN` `</i>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LLOGIC `
+                             `<i class="logic">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RLOGIC` `</i>`  $theContent }}
+
+  {{ $theContent = replaceRE `TMPLT_LATITL `
+                             `<cite class="article-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RATITL` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LBTITL ` 
+                             `<cite class="book-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RBTITL` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LCTITL ` 
+                             `<cite class="like-article-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RCTITL` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LWTITL ` 
+                             `<cite class="like-book-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RWTITL` `</cite>`  $theContent }}
+
+  {{ $theContent = replaceRE `TMPLT_LMTITL ` 
+                             `<cite class="media-title">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RMTITL` `</cite>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSPECC ` 
+                             `<cite class="special-citation">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSPECC` `</cite>`  $theContent }}
+
 {{ end }}
 {{ return $theContent }}

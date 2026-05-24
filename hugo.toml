@@ -41,6 +41,26 @@ title = 'This title will be overridden'
     [markup.goldmark.renderer]
         unsafe = true
 
+# -----------------------------------------------------------
+
+# "If you alter a default media type, you must also explicitly redefine all
+#  output formats that utilize that media type."
+#
+# Source: https://gohugo.io/configuration/media-types/#modify-a-media-type
+#
+# I'm adding 'gmi' to the list of suffixes, so I'll also redefine the
+# "text/markdown" output format:
+
+[mediaTypes]
+  [mediaTypes.'text/markdown']
+    suffixes = ['gmi', 'md', 'mdown', 'markdown']
+
+[outputFormats]
+  [outputFormats.markdown]
+    mediaType = 'text/markdown'
+
+# -----------------------------------------------------------
+
 [module]
     [[module.mounts]]
         source = "assets"
