@@ -10,7 +10,12 @@
     {{ $lenOfCurrentTitle := len $preciselyMeasurableMatch }}
     {{ if eq $lengthOfCurrentTitle $lenOfCurrentTitle }}
       {{ $numOfLength12SubstitutesInThisHeadline := 0 }}
+
+      {{- /* The integer in the following line determines when the headline is
+             too wide and must be cut in half.
+      */ -}}
       {{ if gt $lengthOfCurrentTitle 80 }}
+
         {{ $sliced := split $preciselyMeasurableMatch " " }}
         {{ range $sliced }}
           {{ $numOfLength12SubstitutesInThisHeadline = add $numOfLength12SubstitutesInThisHeadline (strings.Count "TMPLT_" .) }}

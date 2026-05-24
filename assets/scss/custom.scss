@@ -774,7 +774,9 @@ body > div.nojs-mini-themed > footer {
 
 }
 
-// For these mini-themes, show only the rule lines:
+/* For these mini-themes, show only the rule lines and disable the BR
+   element that has been inserted in the middle of overly long H4's.
+*/
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
@@ -802,6 +804,13 @@ body > div.nojs-mini-themed > footer {
 
   main > h2.h2-from-1star {
     text-transform: uppercase;
+  }
+
+  /* Below, no `>` precedes `br` because the BR element is sometimes
+     nested within an inline-level element that appears in the heading.
+  */
+  main > h4.h4-from-3stars br {
+    display: none;
   }
 
 }
@@ -1383,6 +1392,16 @@ body > div.nojs-mini-themed > footer {
      "In no way was this ever meant to be used for immersive reading."
      Designer: Ray Larabie
      License: CC0, none needed (public domain)
+
+   For APL symbols, here is a well-recommended font:
+
+     https://apl385.com/fonts/
+
+     "APL385 Unicode (monospaced code font)
+
+     Developed with all APL software vendors in the late 1980s and
+     enhanced as required with new characters to meet interpreter
+     updates. ... The latest version of this font is available from ..."
 
    OLD CHOICES:
    --font-family-proportional-sans-serif: Helvetica;

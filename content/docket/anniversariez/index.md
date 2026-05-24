@@ -23,7 +23,19 @@ draft: false
 #markup: org
 # type: subfolder-of-layouts-iff-layout-is-nested
 # layout: overriding-the-default-template
-# outputs: The output formats to render.
+
+# "In its default configuration, Hugo will render both the html and
+# json output formats for this page. The outputs field appends to,
+# rather than replaces, the project’s configured outputs."
+#
+# -- https://gohugo.io/configuration/outputs/
+#
+# (The mention of "json" above is not relevant here.) In my experience,
+# I must specify both output formats (html and markdown) below.
+
+outputs:
+- html
+- markdown
 ---
 
 ## I. January

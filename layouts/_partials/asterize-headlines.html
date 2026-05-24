@@ -36,7 +36,7 @@ And, in the replacement, use the captures thus:
   {{ $theContent = 
       replaceRE 
      `</h2>` 
-     `</h2><div class="rule-line-below-h2">============================================================</div><div class="asterism-below-h2">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+     `</h2><div class="rule-line-below-h2">=================================================================</div><div class="asterism-below-h2">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 |    *         *    |    *         *    |    *         *    |
 -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -</div>` 
       $theContent 
@@ -51,7 +51,7 @@ And, in the replacement, use the captures thus:
   {{ $theContent = 
       replaceRE 
      `</h3>` 
-     `</h3><div class="rule-line-below-h3">------------------------------------------------------------</div><div class="asterism-below-h3">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -</div>` 
+     `</h3><div class="rule-line-below-h3">-----------------------------------------------------------------</div><div class="asterism-below-h3">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -</div>` 
       $theContent 
   }}
   {{- /* Used to have 3 line breaks above the H4 & 4 below 2nd asterism */ -}}
@@ -64,7 +64,7 @@ And, in the replacement, use the captures thus:
   {{ $theContent = 
       replaceRE 
      `</h4>`
-     `TMPLT_H4ENDS</h4><div class="rule-line-below-h4">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </div><div class="asterism-below-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div>` 
+     `TMPLT_H4ENDS</h4><div class="rule-line-below-h4">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div><div class="asterism-below-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div>` 
       $theContent 
   }}
   {{ $theContent = 
