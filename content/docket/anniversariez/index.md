@@ -325,7 +325,7 @@ Dem. |____________________
 
 ∂ «Johnny Haught and his trainees volunteered when a restaurant canceled a brunch event after performers received threats»
 
-¢ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, ≤fen passant≥, of ≤mNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
+¢ Writing in The Guardian about a gesture of inspired neighborliness in Wheeling, West Virginia, reporter Gloria Oladipo made me aware, in passing, of ≤mNBC Out≥, an LGBTQ news portal under the NBC News umbrella:
 
 £ «‹The drag show is no more offensive than a Broadway show, or a standup comedy show. In essence, it’s a mix of both,› Haught told WTRF, a local TV news channel. ‹At the end of the day, it is entertainment. Not part of some hidden agenda, like some would have you believe,› Haught added. Across the US, states have passed or proposed more than 100 laws targeting LGBTQ+ rights lately, especially against transgender people, NBC News reported.»
 
@@ -1113,9 +1113,9 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ Citations:
 
-↗ www.nytimes.com/2019/01/11/upshot/big-cities-low-skilled-workers-wages.html
+↗ [NYT](www.nytimes.com/2019/01/11/upshot/big-cities-low-skilled-workers-wages.html) (external)
 
-↗ www.nber.org/papers/w25588
+↗ [National Bureau of Economic Research](www.nber.org/papers/w25588) (external)
 
 #### Observance: Day of Mourning for the Victims of the Circassian Genocide, 1864-1867 (recognized by Georgia)
 
@@ -1425,7 +1425,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ◉ Bookmark, Aug 23rd
 
-↗ acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america
+↗ [ACLED](acleddata.com/2021/08/23/armed-assembly-guns-demonstrations-and-political-violence-in-america) (external)
 
 ∂ «This joint report by ACLED and the Everytown for Gun Safety Support Fund analyzes new data on hundreds of armed demonstrations across the United States.»
 
@@ -1459,13 +1459,11 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### Published by three elected Republicans (2023): Posts on the social networking service Twitter 
-
-◉ Bookmark, Sep 12th
+#### Published by three elected Republicans (2023): Posts on the social networking service Twitter
 
 ##### Posted by Gov. Chris Christie (@GovChristie) on Twitter
 
-↗ twitter.com/GovChristie/status/1701683733953138918
+↗ [Twitter](twitter.com/GovChristie/status/1701683733953138918) (external)
 
 £ «Meet Vladimir Putin. Brutal, mass-murdering, KGB hitman who thinks our system is ≤srotten≥. Trump thinks Putin is a ≤sgenius≥ -- he clearly needs new role models. Get it straight. Trump is under indictment because of his conduct. He played with fire and is getting burned. And now his best buddy is coming to his defense. If you are on the same side as Putin, you might want to rethink your position… https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
@@ -1473,7 +1471,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Posted by Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
-↗ twitter.com/AsaHutchinson/status/1701659903230689598
+↗ [Twitter](twitter.com/AsaHutchinson/status/1701659903230689598) (external)
 
 £ «Trump & Putin are using the same talking points. Trump’s misleading of the American people and vicious attack of our justice system daily is giving comfort to our enemies. His actions are disrespectful to our institutions and our democratic republic. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 
@@ -1481,7 +1479,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Posted by Rep. Liz Cheney (@Liz_Cheney) on Twitter
 
-↗ twitter.com/Liz_Cheney/status/1701651278697308238
+↗ [Twitter](twitter.com/Liz_Cheney/status/1701651278697308238) (external)
 
 £ «Putin has now officially endorsed the Putin-wing of the Republican Party. Putin Republicans & their enablers will end up on the ash heap of history. Patriotic Americans in both parties who believe in the values of liberal democracy will make sure of it. https://apnews.com/article/russia-vladimir-putin-donald-trump-dc89488c40360150afeeb25941bd44fc»
 

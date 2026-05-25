@@ -45,6 +45,20 @@ TMPLT_3BKTIX`
     $allText
 }}
 
+{{ $allText = replaceRE `¢ ` `` $allText }}
+
+{{ $allText = replaceRE
+    `
+
+◉ Bookmark, .+` `` $allText
+}}
+
+{{ $allText = replaceRE
+    `
+∂ ` `
+The article is subheadlined ` $allText
+}}
+
 {{ $allText = replaceRE
     `
 £ ` `

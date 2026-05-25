@@ -142,27 +142,39 @@ end of comment was here
 
 {{ else if (eq .sanitize_or_restore "restore_for_gemini") }}
 
+  {{- /* Oblique: */ -}}
+
   {{ $theContent = replaceRE `TMPLT_LABBRV ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RABBRV` `∫`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LNIKNM ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RNIKNM` `∫`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSOCLD ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RSOCLD` `∫`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LEPIGM ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_REPIGM` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RABBRV` `∫ ⓣ`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LFREGN ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RFREGN` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RFREGN` `∫ ⓕ`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LLOGIC ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RLOGIC` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RLOGIC` `∫ Ⓛ`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LBTITL ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RBTITL` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RBTITL` `∫ ⓑ`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LWTITL ` `∫`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RWTITL` `∫`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RWTITL` `∫ ⓦ`  $theContent }}
+
+  {{- /* Quoted (& double, because typically unnested): */ -}}
 
   {{ $theContent = replaceRE `TMPLT_LATITL ` `«`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RATITL` `»`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RATITL` `» ⓐ`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LCTITL ` `«`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RCTITL` `»`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RCTITL` `» ⓒ`  $theContent }}
+
+  {{- /* Quoted (& single, because typically nested): */ -}}
+
+  {{ $theContent = replaceRE `TMPLT_LEPIGM ` `‹`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_REPIGM` `› ⓔ`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LNIKNM ` `‹`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RNIKNM` `› ⓝ`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSOCLD ` `‹`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RSOCLD` `› ⓢ`  $theContent }}
+
+  {{- /* Doing nothing with media titles except adding the ⓜ: */ -}}
+
+  {{ $theContent = replaceRE `TMPLT_LMTITL ` ``  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RMTITL` ` ⓜ`  $theContent }}
 
   {{- /* The replacements below with a space next to the 
          substitute are only for cases where a symbol like 
@@ -176,31 +188,31 @@ end of comment was here
          --->
          ∫ENIAC∫ (Electronic Numerical Integrator And Computer)
   */ -}}
+
   {{ $theContent = replaceRE `TMPLT_LPAREN ` `(`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LPAREN` `(`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RPAREN` `)`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
 
+  {{- /* cite.special-citation is not yet used anywhere:
 
-{{- /* TODO:
-
-  {{ $theContent = replaceRE `TMPLT_LRUBY1 `
-                             `<ruby>`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RRUBY1`
-                             `</ruby>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LRUBYT `
-                             `<rt>`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RRUBYT`
-                             `</rt>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LMTITL ` 
-                             `<cite class="media-title">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RMTITL` `</cite>`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSPECC ` 
-                             `<cite class="special-citation">`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RSPECC` `</cite>`  $theContent }}
+    {{ $theContent = replaceRE `TMPLT_LSPECC ` ``  $theContent }}
+    {{ $theContent = replaceRE ` TMPLT_RSPECC` ``  $theContent }}
 
   */ -}}
 
+  {{- /* How will Gemtext display the RUBY element, if at all? TODO:
+
+    {{ $theContent = replaceRE `TMPLT_LRUBY1 `
+                             `<ruby>`  $theContent }}
+    {{ $theContent = replaceRE ` TMPLT_RRUBY1`
+                             `</ruby>`  $theContent }}
+    {{ $theContent = replaceRE `TMPLT_LRUBYT `
+                             `<rt>`  $theContent }}
+    {{ $theContent = replaceRE ` TMPLT_RRUBYT`
+                             `</rt>`  $theContent }}
+
+  */ -}}
 
   {{- /* NOT APPEARING AT ALL IN .gmi OUTPUT:
 
