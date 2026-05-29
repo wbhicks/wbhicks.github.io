@@ -79,4 +79,5 @@
   {{ $allText = (partial "lettered-escapade.html" 
       (dict "the_content" $allText "sanitize_or_restore" "restore")) }}
 
-{{ return $allText }}
+{{- /* The real details/summary elements are in asterize-headlines.html */ -}}
+{{ return (add `<details>` $allText `</details>`) }}
