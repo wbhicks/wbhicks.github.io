@@ -1,13 +1,13 @@
 {{ define "main" }}
 
   <span class="design-hint">I16s»</span>
+  {{ .Content }}
   {{ $flexibleMenuOutput := partial "dive-menu.html" (dict "menuID" "voluntary" "page" .) }}
 
 {{- /*
 */ -}}
 
   {{ $flexibleMenuOutput | safeHTML }}
-  {{ .Content }}
 
   <span class="design-hint">«I16s</span>
 

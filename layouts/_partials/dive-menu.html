@@ -1,87 +1,196 @@
-{{- $page := .page }}
-{{- $menuID := .menuID }}
+{{ $page := .page }}
+{{ $menuID := .menuID }}
 
-{{- with index site.Menus $menuID }}
+{{ with index site.Menus $menuID }}
   <nav>
-    {{- /* 
+    {{/* 
       Choice of "ol" vs. "ul" element here affects only 
       the item representing the menu root, typically Home 
-    */ -}}
+    */}}
     <ul>
-      {{- partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      {{ partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>
-{{- end }}
+{{ end }}
 
-{{- define "_partials/inline/dive-menu/walk.html" }}
-  {{- $page := .page }}
-  {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
-    {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
-    {{- end }}
-    {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
-    {{- /* 
-      Applying this style to the "li" element instead of to "ul" so as to 
-      override vars-custom.scss, which styles "li" at various nested depths:
-    */ -}}
-    <li style="list-style-type: none;">
-      {{- /* 
-        Even if a child of Home has a weight, don't display the weight,
-        because I'm displaying weights in the guise of section numbers:
-      */ -}}
-      {{ if (ne "Home" .Parent) }}
-        {{ template "section-code" dict "theWeight" .Weight }}
+
+  {{/* =====================
+
+       Unlike the example of an inline partial template given in
+       https://gohugo.io/functions/go-template/template/ , the one called
+       above, walk.html, is nested in another template (namely, in this
+       very file: dive-menu.html).
+
+       Therefore, the path part "... /dive-menu/ ..." appears in both the
+       call (above) and the definition (below).
+
+       A note about whitespace and Hugo templates:
+
+       Putting a hyphen (-) immediately inside the template action delimiters
+       (the double curly braces) tells Hugo to remove any whitespace that is
+       immediately *outside* that end of the template. See these 3 sources:
+
+         https://gohugo.io/templates/introduction/#whitespace
+
+         https://tip.golang.org/doc/go1.6#template
+
+         https://discourse.gohugo.io/t/how-do-i-avoid-the-blank-lines-i
+         n-the-generated-html/3157
+
+       For comments within Hugo templates: If using hyphens, then a space
+       must separate the hyphen from the adjacent forward slash. So either
+       of these 2 examples is OK:
+  */}}
+
+       {{- /* This comment removes adjacent whitespace.
+  */ -}}
+
+       {{/* This comment does not remove adjacent whitespace.
+
+       =====================
+  */}}
+
+
+{{/* +------------------------------------------------------+
+       |                                                      |
+       |  ↓ Start of the inline partial template "walk.html"  |
+       |                                                      |
+       +------------------------------------------------------+
+*/}}
+
+
+{{ define "_partials/inline/dive-menu/walk.html" }}
+  {{ $page := .page }}
+
+
+  {{/* =====================
+       ↓ Start of loop through .menuEntries
+       =====================
+  */}}
+
+
+  {{ range .menuEntries }}
+
+    {{ $attrs := dict "href" .URL }}
+    {{ if $page.IsMenuCurrent .Menu . }}
+      {{ $attrs = merge $attrs
+                         (dict "class" "active" "aria-current" "page")
+      }}
+    {{ else if $page.HasMenuCurrent .Menu . }}
+      {{ $attrs = merge $attrs
+                         (dict "class" "ancestor" "aria-current" "true")
+      }}
+    {{ end }}
+
+    {{ $name := .Name }}
+    {{ with .Identifier }}
+      {{ with T . }}
+        {{ $name = . }}
       {{ end }}
-      {{ .Pre }}<a
-        {{- range $k, $v := $attrs }}
-          {{- with $v }}
-            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-          {{- end }}
-        {{- end -}}
-      >{{ $name }}</a>{{ .Post }}
-      {{- if .Children }}
-        /
-      {{ else if (and (eq "depends" site.Params.divemenu.xray) (not .Page.Params.opaqueToDiveMenu)) }}
-        {{ with .Page }}
-          AAA {{ .Fragments.Identifiers.Count "headline-198" }} XXX {{ debug.Dump .Fragments.Headings }} ZZZ
+    {{ end }}
+
+    {{/* Applying this style to the "li" element instead of to "ul", so as 
+         to override custom.scss, which styles "li" at various nested depths:
+    */}}
+    <li style="list-style-type: none;">
+
+    {{/* Even if a child of Home has a weight, don't display the weight,
+         because I'm displaying weights in the guise of section numbers:
+    */}}
+    {{ if (ne "Home" .Parent) }}
+      {{ template "section-code" dict "theWeight" .Weight }}
+    {{ end }}
+
+    {{ .Pre }}<a
+      {{ range $k, $v := $attrs }}
+        {{ with $v }}
+          {{ printf " %s=%q" $k $v | safeHTMLAttr }}
         {{ end }}
+      {{ end }}
+    >{{ $name }}</a>{{ .Post }}
 
-{{- /*
+
+    {{/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+         ↓ Start of processing non-leaf pages vs. leaf pages
+
+         For a leaf (childless) page, do nothing if either
+
+         (A) The page says in its frontmatter that it should be
+             considered opaque to the dive menu, *or*
+
+         (B) The site's divemenu configuration has a key named "xray"
+             with the value "depends"
+         ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+    */}}
+
+
+    {{ if .Children }}
+
+      /
+
+    {{ else if (and (eq "depends" site.Params.divemenu.xray)
+                     (not .Page.Params.opaqueToDiveMenu))
+    }}
+
+      {{/* Two rare examples of *not* trimming whitespace: */}}
+
+      {{ with .Page }}
+        (
+        {{ len .Fragments.Identifiers }}
+        headings)
+        {{/* debug.Dump .Fragments.Headings */}}
+      {{ end }}
+
+
+{{/*
         {{ .Page.TableOfContents }}
-
-
-
 <pre>{{ debug.Dump .Fragments.Headings }}</pre>
-
   {{ $startLevel := 1 }}
   {{ $endLevel := 6 }}
   {{ $ordered := true }}
   {{ .Fragments.ToHTML $startLevel $endLevel $ordered }}
+*/}}
 
 
-*/ -}}
+    {{ end }}
 
 
-      {{ end }}
+    {{/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+         ↑ End of processing non-leaf pages vs. leaf pages
+         ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+    */}}
+
+
       {{ if (eq $page.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
-      {{- with .Children }}
+      {{ with .Children }}
         <ul>
-          {{- partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
+          {{ partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
-      {{- end }}
+      {{ end }}
     </li>
-  {{- end }}
-{{- end }}
 
-{{- /*
+
+  {{ end }}
+
+
+  {{/* =====================
+       ↑ End of loop through .menuEntries
+       =====================
+  */}}
+
+
+{{ end }}
+
+
+{{/* +----------------------------------------------------+
+     |                                                    |
+     |  ↑ End of the inline partial template "walk.html"  |
+     |                                                    |
+     +----------------------------------------------------+
+*/}}
+
+
+{{/*
   https://discourse.gohugo.io/t/getting-the-parent-name-from-a-template-md/43588/12
   This goes in the frontmatter ... parent = "{{ path.Base .File.Dir }}"
-*/ -}}
+*/}}
