@@ -38,6 +38,8 @@ outputs:
 - markdown
 ---
 
+¢ This placeholder commentary is the only content in the MAIN element that precedes the first H2 heading (which happens to be I. January).
+
 ## I. January
 
 ¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
