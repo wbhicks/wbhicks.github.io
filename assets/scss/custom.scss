@@ -153,7 +153,6 @@ $color-text_light: #ffe0cc;
    =====================
 */
 
-// DETAILS!!!!!!!! asterize-headlines.html
 
 body > div.nojs-mini-themed > table.mini-theme-selector-table,
 body > div.nojs-mini-themed > div.mono-color-selector {
@@ -242,23 +241,23 @@ body > div.nojs-mini-themed > div.mono-color-selector {
     margin-top:    var(--spacing-for-top-of-asterism-below);
     margin-bottom: 3rem;
   }
-  main > div.asterism-above-h3 {
+  main > details.beneath-asterized-h2 > div.asterism-above-h3 {
     margin-top:    3rem;
     margin-bottom: var(--spacing-for-bottom-of-asterism-above);
   }
-  main > div.asterism-below-h3 {
+  main > details.beneath-asterized-h2 > div.asterism-below-h3 {
     margin-top:    var(--spacing-for-top-of-asterism-below);
     margin-bottom: 3rem;
   }
-  main > div.asterism-above-h4 {
+  main > details.beneath-asterized-h2 > div.asterism-above-h4 {
     margin-top:    3rem;
     margin-bottom: var(--spacing-for-bottom-of-asterism-above);
   }
-  main > div.asterism-below-h4 {
+  main > details.beneath-asterized-h2 > div.asterism-below-h4 {
     margin-top:    var(--spacing-for-top-of-asterism-below);
     margin-bottom: 3rem;
   }
-  main > div.asterism-above-h5 {
+  main > details.beneath-asterized-h2 > div.asterism-above-h5 {
     margin-top:    var(--spacing-for-top-of-asterism-below);
     margin-bottom: 0;
   }
@@ -296,8 +295,8 @@ body > div.nojs-mini-themed > div.mono-color-selector {
   --spacing-above-headings-and-below-rule-lines: 2rem;
 
   main > h2.h2-from-1star,
-  main > h3.h3-from-2stars,
-  main > h4.h4-from-3stars {
+  main > details.beneath-asterized-h2 > h3.h3-from-2stars,
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars {
     margin-top:    var(--spacing-above-headings-and-below-rule-lines);
     margin-bottom: 0;
   }
@@ -305,13 +304,13 @@ body > div.nojs-mini-themed > div.mono-color-selector {
   /* These margins are handled elsewhere, because H5 is spaced akin to
      a typical block-level element:
 
-         `main > h5.h5-from-4stars`
-         `main > div.rule-line-below-h5` 
+         `main > details.beneath-asterized-h2 > h5.h5-from-4stars`
+         `main > details.beneath-asterized-h2 > div.rule-line-below-h5` 
   */
 
   main > div.rule-line-below-h2,
-  main > div.rule-line-below-h3,
-  main > div.rule-line-below-h4 {
+  main > details.beneath-asterized-h2 > div.rule-line-below-h3,
+  main > details.beneath-asterized-h2 > div.rule-line-below-h4 {
     margin-top: 0;
     margin-bottom: var(--spacing-above-headings-and-below-rule-lines);
   }
@@ -329,31 +328,31 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
   --margin-top-or-bottom: 1rem;
 
-  main > p.commentary {
+  main > details.beneath-asterized-h2 > p.commentary {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-  main > div.dek {
+  main > details.beneath-asterized-h2 > div.dek {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-  main > div.fisheye-means-rightmost {
+  main > details.beneath-asterized-h2 > div.fisheye-means-rightmost {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-  main > div.url-line {
+  main > details.beneath-asterized-h2 > div.url-line {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-  main > figure > blockquote > p {
+  main > details.beneath-asterized-h2 > figure > blockquote > p {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-  main > figure > figcaption {
+  main > details.beneath-asterized-h2 > figure > figcaption {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
-  main > pre {
+  main > details.beneath-asterized-h2 > pre {
     margin-top:    var(--margin-top-or-bottom);
     margin-bottom: var(--margin-top-or-bottom);
   }
@@ -367,12 +366,12 @@ body > div.nojs-mini-themed > div.mono-color-selector {
      lines are visible instead, the margin-top needs boosting.
   */
 
-  main > h5.h5-from-4stars {
+  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
     margin-top:    2rem; // keeps it big enough even without asterisms
     margin-bottom: 0;
   }
 
-  main > div.rule-line-below-h5 {
+  main > details.beneath-asterized-h2 > div.rule-line-below-h5 {
     margin-top: 0;
     margin-bottom: var(--margin-top-or-bottom);
   }
@@ -612,20 +611,20 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
-  main > figure {
+  main > details.beneath-asterized-h2 > figure {
     // Use padding-left instead of margin-left, for same reason as OL and UL
     padding-left: var(--padding-left-sensitive-to-max-width);
     padding-right: var(--padding-right-sensitive-to-max-width);
   }
 
-  main > figure > blockquote > p {
+  main > details.beneath-asterized-h2 > figure > blockquote > p {
     /* `hyphens: auto` requires, e.g., `<html lang="en-us">`
        in the HTML source (which my Hugo configuration provides)
        hyphens: auto;
     */
   }
 
-  main > pre {
+  main > details.beneath-asterized-h2 > pre {
     /* Use padding-left instead of margin-left, for same reason as OL & UL.
        "nowrap" has been set for all PRE elements, so padding-right is moot.
     */
@@ -647,7 +646,7 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
-  main > div.fisheye-means-rightmost {
+  main > details.beneath-asterized-h2 > div.fisheye-means-rightmost {
     text-align: right;
   }
 
@@ -659,8 +658,8 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   main > h2.h2-from-1star,
-  main > h3.h3-from-2stars,
-  main > h4.h4-from-3stars {
+  main > details.beneath-asterized-h2 > h3.h3-from-2stars,
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars {
     text-align: center;
   }
 
@@ -682,7 +681,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
-  main > div.dek {
+  main > details.beneath-asterized-h2 > div.dek {
     max-width: 80%;
     // hyphens: auto;
   }
@@ -696,7 +695,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
-  main > div.dek {
+  main > details.beneath-asterized-h2 > div.dek {
     hyphens: auto;
   }
 
@@ -737,8 +736,8 @@ body > div.nojs-mini-themed > footer {
   }
 
   main > h2.h2-from-1star,
-  main > h3.h3-from-2stars,
-  main > h4.h4-from-3stars {
+  main > details.beneath-asterized-h2 > h3.h3-from-2stars,
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars {
     font-size: 1rem;
     font-weight: normal;
   }
@@ -754,11 +753,11 @@ body > div.nojs-mini-themed > footer {
 
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
-  main > div.asterism-above-h3,
-  main > div.asterism-below-h3,
-  main > div.asterism-above-h4,
-  main > div.asterism-below-h4,
-  main > div.asterism-above-h5 {
+  main > details.beneath-asterized-h2 > div.asterism-above-h3,
+  main > details.beneath-asterized-h2 > div.asterism-below-h3,
+  main > details.beneath-asterized-h2 > div.asterism-above-h4,
+  main > details.beneath-asterized-h2 > div.asterism-below-h4,
+  main > details.beneath-asterized-h2 > div.asterism-above-h5 {
     font-family: monospace;
     white-space-collapse: preserve;
     text-align: center;
@@ -767,9 +766,9 @@ body > div.nojs-mini-themed > footer {
   }
 
   main > div.rule-line-below-h2,
-  main > div.rule-line-below-h3,
-  main > div.rule-line-below-h4,
-  main > div.rule-line-below-h5 {
+  main > details.beneath-asterized-h2 > div.rule-line-below-h3,
+  main > details.beneath-asterized-h2 > div.rule-line-below-h4,
+  main > details.beneath-asterized-h2 > div.rule-line-below-h5 {
     display: none;
   }
 
@@ -788,18 +787,18 @@ body > div.nojs-mini-themed > footer {
 
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
-  main > div.asterism-above-h3,
-  main > div.asterism-below-h3,
-  main > div.asterism-above-h4,
-  main > div.asterism-below-h4,
-  main > div.asterism-above-h5 {
+  main > details.beneath-asterized-h2 > div.asterism-above-h3,
+  main > details.beneath-asterized-h2 > div.asterism-below-h3,
+  main > details.beneath-asterized-h2 > div.asterism-above-h4,
+  main > details.beneath-asterized-h2 > div.asterism-below-h4,
+  main > details.beneath-asterized-h2 > div.asterism-above-h5 {
     display: none;
   }
 
   main > div.rule-line-below-h2,
-  main > div.rule-line-below-h3,
-  main > div.rule-line-below-h4,
-  main > div.rule-line-below-h5 {
+  main > details.beneath-asterized-h2 > div.rule-line-below-h3,
+  main > details.beneath-asterized-h2 > div.rule-line-below-h4,
+  main > details.beneath-asterized-h2 > div.rule-line-below-h5 {
     text-align: left;
   }
 
@@ -810,7 +809,7 @@ body > div.nojs-mini-themed > footer {
   /* Below, no `>` precedes `br` because the BR element is sometimes
      nested within an inline-level element that appears in the heading.
   */
-  main > h4.h4-from-3stars br {
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars br {
     display: none;
   }
 
@@ -823,7 +822,7 @@ body > div.nojs-mini-themed > footer {
 */
 
 
-//main > h5::before {
+//main > details.beneath-asterized-h2 > h5::before {
 //  content: "〜 ✻ 〜 ";
 //  padding-right: 1rem;
 //}
@@ -878,7 +877,7 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
-  main > pre {
+  main > details.beneath-asterized-h2 > pre {
     white-space-collapse: preserve;
     font-family: monospace !important; // TODO See if all !'s are still reqd.
     text-wrap-mode: nowrap;
@@ -899,7 +898,7 @@ body > div.nojs-mini-themed > footer {
     margin: 0 0.2rem;
   }
 
-  main > pre > code {
+  main > details.beneath-asterized-h2 > pre > code {
     /* Un-apply the Mozilla KBD style (which was applied in the
        declaration block above) to all CODE with a PRE parent:
     */
@@ -1150,7 +1149,7 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
-  // main > figure > blockquote,
+  // main > details.beneath-asterized-h2 > figure > blockquote,
   main cite.article-title,      // ≤a
   main cite.like-article-title, // ≤c
   main i.epigram,               // ≤e
@@ -1160,7 +1159,7 @@ body > div.nojs-mini-themed > footer {
     quotes: var(--nojs-quote-chars);
   }
 
-  // main > figure > blockquote::before,
+  // main > details.beneath-asterized-h2 > figure > blockquote::before,
   main cite.article-title::before,      // ≤a
   main cite.like-article-title::before, // ≤c
   main i.epigram::before,               // ≤e
@@ -1170,7 +1169,7 @@ body > div.nojs-mini-themed > footer {
     content: open-quote; // used to be "↳";
   }
 
-  // main > figure > blockquote::after,
+  // main > details.beneath-asterized-h2 > figure > blockquote::after,
   main cite.article-title::after,       // ≤a
   main cite.like-article-title::after,  // ≤c
   main i.epigram::after,                // ≤e
@@ -1181,6 +1180,7 @@ body > div.nojs-mini-themed > footer {
   }
 
 } // End of .nojs-mini-themed
+
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
@@ -1811,10 +1811,12 @@ body.igt-mode-off {
 
     main > div.asterism-above-h2,
     main > div.asterism-below-h2,
-    main > div.asterism-above-h3,
-    main > div.asterism-below-h3,
-    main > div.asterism-above-h4,
-    main > div.asterism-below-h4 { color: #777; }
+    main > details.beneath-asterized-h2 > div.asterism-above-h3,
+    main > details.beneath-asterized-h2 > div.asterism-below-h3,
+    main > details.beneath-asterized-h2 > div.asterism-above-h4,
+    main > details.beneath-asterized-h2 > div.asterism-below-h4 {
+      color: #777;
+    }
 
     cite.book-title         { text-decoration: #00cccc overline     double; }
     cite.like-book-title    { text-decoration: #00cccc line-through dotted; }
@@ -1830,23 +1832,23 @@ body.igt-mode-off {
     abbr         { text-decoration: #00cccc overline wavy;   }
 
     main > h2.h2-from-1star,
-    main > h3.h3-from-2stars,
-    main > h4.h4-from-3stars {
+    main > details.beneath-asterized-h2 > h3.h3-from-2stars,
+    main > details.beneath-asterized-h2 > h4.h4-from-3stars {
       border-left: 2px solid white;
     }
 
     main > div.asterism-above-h2,
     main > div.asterism-below-h2,
-    main > div.asterism-above-h3,
-    main > div.asterism-below-h3,
-    main > div.asterism-above-h4,
-    main > div.asterism-below-h4 {
+    main > details.beneath-asterized-h2 > div.asterism-above-h3,
+    main > details.beneath-asterized-h2 > div.asterism-below-h3,
+    main > details.beneath-asterized-h2 > div.asterism-above-h4,
+    main > details.beneath-asterized-h2 > div.asterism-below-h4 {
       border-left: 1px solid gray;
     }
     div.fisheye-means-rightmost {
       border-left: 2px solid #008080;
     }
-    main > figure {
+    main > details.beneath-asterized-h2 > figure {
       border-left: 2px solid blue;
     }
     .commentary {
@@ -1858,7 +1860,7 @@ body.igt-mode-off {
     h5 {
       border-left: 2px solid violet;
     }
-    main > pre {
+    main > details.beneath-asterized-h2 > pre {
       border-left: 2px solid green;
     }
 
