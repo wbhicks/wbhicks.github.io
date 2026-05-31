@@ -9,6 +9,8 @@ title: About This Site
 menus:
   voluntary:
     parent: Home
+params:
+  opaqueToDiveMenu: false
 weight: 20
 
 date: 2020-01-01

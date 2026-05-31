@@ -30,7 +30,16 @@ title = 'This title will be overridden'
 
     [params.divemenu]
         xray = "depends"
-        # "depends" means use the opaqueToDiveMenu param in each page's frontmatter. Don't xray if param's absent.
+
+        # Should the dive-menu.html template display the headings within each
+        # page, when generating a Table Of Contents? This is like X-raying a
+        # page to reveal its internal structure as part of the ToC. The
+        # recognized values are (1) "always" and (2) "depends". Any other
+        # value is equivalent to "never".
+        #
+        # "depends": X-ray a page only if that page's frontmatter has the
+        # opaqueToDiveMenu param, *and* its value is false. So, the page won't
+        # be X-rayed if opaqueToDiveMenu is absent or is set to true.
 
 [markup]
   [markup.goldmark]

@@ -2,15 +2,22 @@
 {{ $menuID := .menuID }}
 
 {{ with index site.Menus $menuID }}
+
   <nav>
-    {{/* 
-      Choice of "ol" vs. "ul" element here affects only 
-      the item representing the menu root, typically Home 
-    */}}
+
+  {{/* Choice of "ol" vs. "ul" element here affects only 
+       the item representing the menu root, typically Home 
+  */}}
+
     <ul>
-      {{ partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
+
+      {{ partial "inline/dive-menu/walk.html"
+             (dict "page" $page "menuEntries" .) 
+      }}
+
     </ul>
   </nav>
+
 {{ end }}
 
 
@@ -39,23 +46,22 @@
 
        For comments within Hugo templates: If using hyphens, then a space
        must separate the hyphen from the adjacent forward slash. So either
-       of these 2 examples is OK:
-  */}}
+       of these 2 examples is OK: */}}
 
-       {{- /* This comment removes adjacent whitespace.
-  */ -}}
+       {{- /* This comment removes adjacent whitespace. */ -}}
 
-       {{/* This comment does not remove adjacent whitespace.
+       {{/* This comment does not remove adjacent whitespace. (It's also
+            doing double duty by enclosing this discussion's bottom line.)
 
        =====================
   */}}
 
 
 {{/* +------------------------------------------------------+
-       |                                                      |
-       |  ↓ Start of the inline partial template "walk.html"  |
-       |                                                      |
-       +------------------------------------------------------+
+     |                                                      |
+     |  ↓ Start of the inline partial template "walk.html"  |
+     |                                                      |
+     +------------------------------------------------------+
 */}}
 
 
@@ -72,17 +78,19 @@
   {{ range .menuEntries }}
 
     {{ $attrs := dict "href" .URL }}
+
     {{ if $page.IsMenuCurrent .Menu . }}
       {{ $attrs = merge $attrs
-                         (dict "class" "active" "aria-current" "page")
+             (dict "class" "active" "aria-current" "page")
       }}
     {{ else if $page.HasMenuCurrent .Menu . }}
       {{ $attrs = merge $attrs
-                         (dict "class" "ancestor" "aria-current" "true")
+             (dict "class" "ancestor" "aria-current" "true")
       }}
     {{ end }}
 
     {{ $name := .Name }}
+
     {{ with .Identifier }}
       {{ with T . }}
         {{ $name = . }}
@@ -111,7 +119,7 @@
 
 
     {{/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-         ↓ Start of processing non-leaf pages vs. leaf pages
+         ↓ Start of diff btwn non-leaf pages & leaf pages
 
          For a leaf (childless) page, do nothing if either
 
@@ -128,22 +136,27 @@
 
       /
 
-    {{ else if (and (eq "depends" site.Params.divemenu.xray)
-                     (not .Page.Params.opaqueToDiveMenu))
+    {{ end }}
+    {{ if (or (eq "always" site.Params.divemenu.xray)
+              (and (eq "depends" site.Params.divemenu.xray)
+                   (eq false .Page.Params.opaqueToDiveMenu)))
     }}
 
-      {{/* Two rare examples of *not* trimming whitespace: */}}
+      {{/* This happens to be an example of whitespace removal by means of
+           adding hyphens to template action delimiters:
+      */}}
 
       {{ with .Page }}
         (
-        {{ len .Fragments.Identifiers }}
+        {{- len .Fragments.Identifiers }}
         headings)
         {{/* debug.Dump .Fragments.Headings */}}
       {{ end }}
 
+      {{ .Page.TableOfContents }}
+
 
 {{/*
-        {{ .Page.TableOfContents }}
 <pre>{{ debug.Dump .Fragments.Headings }}</pre>
   {{ $startLevel := 1 }}
   {{ $endLevel := 6 }}
@@ -156,19 +169,28 @@
 
 
     {{/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-         ↑ End of processing non-leaf pages vs. leaf pages
+         ↑ End of diff btwn non-leaf pages & leaf pages
          ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
     */}}
 
 
-      {{ if (eq $page.LinkTitle .Name) }}&nbsp;&larr; You are here.{{ end }}
-      {{ with .Children }}
-        <ul>
-          {{ partial "inline/dive-menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
-      {{ end }}
-    </li>
+    {{ if (eq $page.LinkTitle .Name) -}}
+      &nbsp;&nbsp;&nbsp;&larr; You are here.
+    {{- end }}
 
+    {{ with .Children }}
+
+      <ul>
+
+      {{ partial "inline/dive-menu/walk.html"
+             (dict "page" $page "menuEntries" .)
+      }}
+
+      </ul>
+
+    {{ end }}
+
+    </li>
 
   {{ end }}
 
