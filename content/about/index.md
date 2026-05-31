@@ -1,10 +1,10 @@
 ---
 linkTitle: About
 title: About This Site
-# description: Rendered in html ... head ... meta.
-# summary: Or use as a teaser.
-# keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,how-to,money,politics,science,tech,travel]
+#COMMENT description: Rendered in html ... head ... meta.
+#COMMENT summary: Or use as a teaser.
+#COMMENT keywords: Rendered in html ... head ... meta.
+#COMMENT categories: [arts,health,how-to,money,politics,science,tech,travel]
 
 menus:
   voluntary:
@@ -16,23 +16,29 @@ weight: 20
 date: 2020-01-01
 lastmod: 2020-01-01
 draft: false
-# publishDate:
-# expiryDate:
+#COMMENT publishDate:
+#COMMENT expiryDate:
 
-# resources: Maps of metadata for page resources.
-#markup: org
-# type: subfolder-of-layouts-iff-layout-is-nested
+#COMMENT resources: Maps of metadata for page resources.
+#COMMENT markup: org
+#COMMENT type: subfolder-of-layouts-iff-layout-is-nested
 layout: about
-# outputs: The output formats to render.
+#COMMENT outputs: The output formats to render.
 ---
 
-# This H1 heading is NOT the only one.
+## UNO
+
+## UNO
+
+## UNO
+
+## This H1 heading is NOT the only one.
 
 12345678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
-# This H1 heading is for nested lists. The first doubles as a summary of the mini-themes.
+## This H1 heading is for nested lists. The first doubles as a summary of the mini-themes.
 
-## This is an H2 heading.
+### This is an H2 heading.
 
 Here's an unordered list:
 
@@ -68,8 +74,6 @@ Apart from lists, the only other block element where the overall margin-left is 
 
 This paragraph has no prefix, so it shouldn't normally be encountered.
 
-# This H1 heading is for quotation mark tests
-
 ¢ This paragraph is a commentary, because it starts with the cent symbol followed by a space. Currently, the codes for lettered strings are as follows: a b c f l m n q s t w ... Here's an A enclosing a Q [NO! NOW GUILLEMETS] enclosing a C enclosing an N enclosing an F (note that the outermost pair of quotations is always the only pair using the double-quotation mark): ≤aAccused Assemblyman Aaron Adams Announces «To quiet my questioners: I hereby deny writing that chapter entitled ≤cMy Cousin Charles ≤nNine ≤fpar nécessité≥ Nives≥ Cooper Is My Consigliere≥ in my autobiography, so quit it already!», Avers He'll Be Absolved≥ 
 
 ¢ This paragraph is also a commentary. The following span nests the first five in alphabetical order: ≤aApple ≤bBanana ≤cCarrot ≤fFig ≤lLemon lemon≥ fig≥ carrot≥ banana≥ apple≥. And the following span does the same with the remaining six [GUILLEMETS HAVE REPLACED Q]: ≤mMelon ≤nNut «Quinine ≤sSquash ≤tTaxi ≤wWater water≥ taxi≥ squash≥ quinine» nut≥ melon≥.
@@ -84,23 +88,19 @@ This paragraph has no prefix, so it shouldn't normally be encountered.
 
 5 Please ≤cwatch ≤nfor ≤fbits≥, and ≤fbytes≥, and≥ also ≤fun ordinateur≥! 6 Henry ≤sBob ≤nBobby≥ Bobson≥ Jr. 7 It's ≤wno longer ≤scool≥, they≥ say. 8 Melville wrote ≤wBilly Budd≥. 9 I do≥ like ≤tABC, Amer. Broadc. Co.≥ 10 ≤cSea sea sea sea sea≥ 11
 
-# This H1 heading is for the remaining tests
+## This H1 heading is for the remaining tests
 
 ¢ This commentary paragraph is for eyeballing line-height: gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM 
 
-## This is an H2 heading above some ruby tests
+### This is an H2 heading above some ruby tests
 
 In this block, only the movie name is within a ruby element: I saw the movie <ruby>The Five Thousand Fingers Of Doctor Strangelove; Or, It's A Mad Mad World</ruby> in the theater.
 
 In this block, only the movie name is within a ruby element, and there are 3 RT's: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It's A Mad Mad World</ruby> in the theater.
 
-## This is an H2 heading
+### This is an H2 heading
 
-### This H3 heading holds examples of line-height and margin
-
-#### This H4 heading has an H5 child.
-
-##### This H5 heading is the only one.
+#### This H3 heading holds examples of line-height and margin
 
 For the element MAIN, line-height is set to 1.5 (note: not `1.5rem`) thus: `main { line-height: 1.5; }` but is overridden in some descendants.
 
@@ -116,7 +116,7 @@ This paragraph has no prefix, so it shouldn't normally be encountered. Lorem ips
 >
 > Here's the third.
 
-### This H3 heading holds examples of PRE, CODE, SAMP, & KBD:
+#### This H3 heading holds examples of PRE, CODE, SAMP, & KBD:
 
 The name is in single backticks: `Alice   X.   Traspaces`
 
@@ -131,13 +131,13 @@ and (2) appear in monospace. Unlike the names, it should (1) be borderless and
 (2) never force a line wrap.
 ```
 
-### This H3 heading holds examples of my semantic classes
+#### This H3 heading holds examples of my semantic classes
 
 ¢ This is a commentary, because it start with the cent (US penny) character. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
 This paragraph has no prefix, so it shouldn't normally be encountered. The following H4 heading is of the kind that announces a clipping from an authorless press release. It is followed by (1) a fisheye block indicating the kind, (2) a periodical dek (subheadline), & (3) a URL line
 
-#### ® Published by Somebody (2020): «Apricots only!»
+##### This H4 heading is ® Published by Somebody (2020): «Apricots only!»
 
 ◉ Bookmark, Feb 21st 
 
@@ -153,7 +153,7 @@ This block demonstrates some lettered leaves. Here is an a-kind, for the typical
 
 Here is something that you won't typically encounter, namely a CITE element with no class attribute: <cite>This is a bare cite.</cite>
 
-## Apple
+###  This H2 heading is Apple
 
 3 hyphens make an HR:
 
@@ -161,41 +161,35 @@ Here is something that you won't typically encounter, namely a CITE element with
 
 Macintosh
 
-> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-### This H3 heading says Gala
-
-This is the content for the About page. Here is a pasteable, default, YAML frontmatter:
-
-#+BEGIN_EXAMPLE
----
+This is the content for the About page. Here is a pasteable, default, YAML frontmatter, with the string CLASH replacing the real hash marks:
+CLASH+BEGIN_EXAMPLE
+3hyphensgohere
 linkTitle: Abe-Bob
 title: Abe, Bob (?) & Geo.
-# description: Rendered in html ... head ... meta.
-# summary: Or use as a teaser.
-# keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,how-to,money,politics,science,tech,travel]
-
+HASH description: Rendered in html ... head ... meta.
+HASH summary: Or use as a teaser.
+HASH keywords: Rendered in html ... head ... meta.
+HASH categories: [arts,health,how-to,money,politics,science,tech,travel]
 menus:
   voluntary:
     parent: Galleries
 params:
   opaqueToDiveMenu: false
 weight: 123456789
-
 date: 2020-01-01
 lastmod: 2020-01-01
 draft: false
-# publishDate:
-# expiryDate:
-
-# resources: Maps of metadata for page resources.
+HASH publishDate:
+HASH expiryDate:
+HASH resources: Maps of metadata for page resources.
 markup: org
-# type: subfolder-of-layouts-iff-layout-is-nested
+HASH type: subfolder-of-layouts-iff-layout-is-nested
 layout: overriding-the-default-template
-# outputs: The output formats to render.
----
-#+END_EXAMPLE
+HASH outputs: The output formats to render.
+3hyphensgohere
+HASH+END_EXAMPLE
 
 (Note: "params:" is needed only for custom params. Also, I'm ignoring Hugo's rather crude cascade feature.)
 

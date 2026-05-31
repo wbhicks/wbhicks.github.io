@@ -42,6 +42,12 @@ title = 'This title will be overridden'
         # be X-rayed if opaqueToDiveMenu is absent or is set to true.
 
 [markup]
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false
+
   [markup.goldmark]
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.typographer]

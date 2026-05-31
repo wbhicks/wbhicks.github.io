@@ -20,7 +20,7 @@ draft: false
 # expiryDate:
 
 # resources: Maps of metadata for page resources.
-markup: org
+#markup: org
 # type: subfolder-of-layouts-iff-layout-is-nested
 # layout: overriding-the-default-template
 # outputs: The output formats to render.

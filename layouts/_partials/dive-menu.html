@@ -142,15 +142,69 @@
                    (eq false .Page.Params.opaqueToDiveMenu)))
     }}
 
-      {{/* This happens to be an example of whitespace removal by means of
-           adding hyphens to template action delimiters:
+      {{/* .Fragments.Identifiers returns a slice containing the IDs, and
+           only the IDs, of the page's headings. For the purposes of this
+           site, a heading is a line starting with one or more #'s (a.k.a.
+           number sign, hash mark, octothorpe) that are followed by a space.
+
+           If `markup: org` is set in a page's frontmatter (or in the site
+           configuration), then the headings on that page must start with
+           *'s (asterisks) instead.
+
+           Here, .Fragments.Identifiers is used only to get a count that can
+           be displayed to the reader. By contrast, .Fragments.Headings
+           returns much more useful information, such as levels and titles.
+
+           However, because of its nested structure, .Fragments.Headings has
+           a length equal to the number of top-level headings only. These
+           are the headings beginning with a single # (or *, in the case of
+           pages using Org-mode markup).
+
+           If a page has no top-level heading, but does have some
+           lower-level headings, then (1) .Fragments.Headings will start
+           like this:
+
+           `[ { "ID": "", "Level": 0, "Title": "", "Headings": [ { ...`
+
+           and (2) passing it to len (a Golang template) will therefore
+           return the value 1:
+
+           `{{ len .Fragments.Headings }}`
+
+           A sibling method, .Fragments.HeadingsMap, doesn't have this
+           drawback and so looks like a better choice. It also has the same
+           length (as len calculates it) as .Fragments.Identifiers.
+
+           UPDATE: .Fragments.HeadingsMap has a weird way of handling the
+                   "page without top-level heading" scenario: It duplicates
+                   the first second-level ID! (This can be worked around.)
+
+                   To see this: {{ debug.Dump .Fragments.HeadingsMap }}
+
+           p.s. The following block also happens to include a good example
+           of whitespace removal by the addition of a hyphen to a template
+           action delimiter:
       */}}
 
       {{ with .Page }}
         (
-        {{- len .Fragments.Identifiers }}
+        {{- len .Fragments.Identifiers }} IDs, {{ len .Fragments.HeadingsMap }}
         headings)
-        {{/* debug.Dump .Fragments.Headings */}}
+
+AAA
+
+{{ range $k1, $v1 := .Fragments.HeadingsMap }}
+  {{/* range $k2, $v2 := $v1 */}}
+    {{/* if (eq $k1 "Level") */}}
+    <p>key = {{ $k1 }} value = {{ $v1.Level }}</p>
+    {{/* end */}}
+  {{/* end */}}
+{{ end }}
+
+BBB
+
+        {{ len (where .Fragments.HeadingsMap "ID" "uno") }}
+        ZZZ {{ debug.Dump .Fragments.HeadingsMap }}
       {{ end }}
 
       {{ .Page.TableOfContents }}
