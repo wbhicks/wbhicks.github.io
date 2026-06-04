@@ -9,7 +9,9 @@ title: Image Galleries
 menus:
   voluntary:
     parent: Home
-weight: 50
+params:
+  opaqueToDiveMenu: false
+weight: 500000000
 
 date: 2020-01-01
 lastmod: 2020-01-01

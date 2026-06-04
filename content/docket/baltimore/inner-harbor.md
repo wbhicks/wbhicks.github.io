@@ -4,7 +4,9 @@ linkTitle: Inner Harbor
 menus:
   voluntary:
     parent: Baltimore
-weight: 201000000
+params:
+  opaqueToDiveMenu: false
+weight: 602010000
 date: 2023-08-01
 ---
 

@@ -9,7 +9,9 @@ title: An Annual Ambit
 menus:
   voluntary:
     parent: Home
-weight: 60
+params:
+  opaqueToDiveMenu: false
+weight: 600000000
 
 date: 2020-01-01
 lastmod: 2020-01-01

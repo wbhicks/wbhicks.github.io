@@ -4,8 +4,10 @@ linkTitle: Church Street
 menus:
   voluntary:
     parent: Frederick Streets
+params:
+  opaqueToDiveMenu: false
+weight: 606030100
 categories: [tech]
-weight: 603010000
 date: 2023-07-06
 ---
 

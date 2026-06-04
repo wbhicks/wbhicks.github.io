@@ -9,7 +9,9 @@ title: All Categories, posing as tags
 menus:
   voluntary:
     parent: Home
-weight: 40
+params:
+  opaqueToDiveMenu: false
+weight: 300000000
 
 date: 2020-01-01
 lastmod: 2020-01-01

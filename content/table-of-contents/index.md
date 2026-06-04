@@ -9,7 +9,9 @@ title: Detailed Table of Contents
 menus:
   voluntary:
     parent: Home
-weight: 10
+params:
+  opaqueToDiveMenu: true
+weight: 200000000
 
 date: 2020-01-01
 lastmod: 2020-01-01

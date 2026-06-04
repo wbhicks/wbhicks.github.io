@@ -4,8 +4,10 @@ linkTitle: Schifferstadt
 menus:
   voluntary:
     parent: Frederick
+params:
+  opaqueToDiveMenu: false
+weight: 606020000
 categories: [health,tech]
-weight: 602000000
 date: 2023-07-06
 ---
 

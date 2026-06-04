@@ -4,7 +4,9 @@ linkTitle: SVG
 menus:
   voluntary:
     parent: Docket
-weight: 301000000
+params:
+  opaqueToDiveMenu: false
+weight: 608000000
 date: 2023-07-04
 ---
 

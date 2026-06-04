@@ -11,7 +11,7 @@ menus:
     parent: People
 params:
   opaqueToDiveMenu: false
-weight: 701000000
+weight: 607010000
 
 date: 2023-07-01
 lastmod: 2023-07-01

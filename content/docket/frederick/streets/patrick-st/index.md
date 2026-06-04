@@ -4,8 +4,10 @@ linkTitle: Patrick Street
 menus:
   voluntary:
     parent: Frederick Streets
+params:
+  opaqueToDiveMenu: false
+weight: 606030200
 categories: [money]
-weight: 603020000
 date: 2023-07-06
 ---
 

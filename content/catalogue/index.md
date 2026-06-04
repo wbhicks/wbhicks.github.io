@@ -9,7 +9,9 @@ title: Catalogue, Index, and Glossary
 menus:
   voluntary:
     parent: Home
-weight: 30
+params:
+  opaqueToDiveMenu: false
+weight: 400000000
 
 date: 2020-01-01
 lastmod: 2020-01-01

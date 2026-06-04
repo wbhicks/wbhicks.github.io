@@ -11,7 +11,7 @@ menus:
     parent: Home
 params:
   opaqueToDiveMenu: false
-weight: 20
+weight: 100000000
 
 date: 2020-01-01
 lastmod: 2020-01-01

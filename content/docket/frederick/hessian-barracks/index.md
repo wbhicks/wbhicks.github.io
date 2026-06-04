@@ -4,8 +4,10 @@ linkTitle: Hessian Barracks
 menus:
   voluntary:
     parent: Frederick
+params:
+  opaqueToDiveMenu: false
+weight: 606010000
 categories: [travel]
-weight: 601000000
 date: 2023-07-06
 ---
 

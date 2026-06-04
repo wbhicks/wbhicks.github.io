@@ -99,12 +99,13 @@
 
     <li>
 
-    {{/* Even if a child of Home has a weight, don't display the weight,
-         because I'm displaying weights in the guise of section numbers:
+    {{/* The explicit weights on this site are processed in order to
+         generate the section codes, which appear to the left of items in
+         the DToC:
     */}}
-    {{ if (ne "Home" .Parent) }}
+    {{/* if (ne "Home" .Parent) */}}
       {{ template "section-code" dict "theWeight" .Weight }}
-    {{ end }}
+    {{/* end */}}
 
     {{ .Pre }}<a
       {{ range $k, $v := $attrs }}
@@ -237,7 +238,8 @@
         }}
 
         {{/* The `<a href= ...` opening tags returned by .TableOfContents,
-             which link to that page's headings, are relative to that page.
+             which link to that page's headings, are relative to that page
+             and therefore broken when appearing here, on the DToC page.
              This inserts the missing part of each URL:
         */}}
 
@@ -245,6 +247,12 @@
             $tocForCurrentPage
             `<a href="`
             (add `<a href="` .Path)
+        }}
+
+        {{ $tocForCurrentPage = replace
+            $tocForCurrentPage
+            `<a href="`
+            `99. <a href="`
         }}
 
         {{ $tocForCurrentPage | safeHTML }}
