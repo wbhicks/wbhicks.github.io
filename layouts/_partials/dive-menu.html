@@ -3,7 +3,7 @@
 
 {{ with index site.Menus $menuID }}
 
-  <nav>
+  <nav class="nav-for-detailed-toc">
 
   {{/* Choice of "ol" vs. "ul" element here affects only 
        the item representing the menu root, typically Home 
@@ -97,10 +97,7 @@
       {{ end }}
     {{ end }}
 
-    {{/* Applying this style to the "li" element instead of to "ul", so as 
-         to override custom.scss, which styles "li" at various nested depths:
-    */}}
-    <li style="list-style-type: none;">
+    <li>
 
     {{/* Even if a child of Home has a weight, don't display the weight,
          because I'm displaying weights in the guise of section numbers:
@@ -137,6 +134,7 @@
       /
 
     {{ end }}
+
     {{ if (or (eq "always" site.Params.divemenu.xray)
               (and (eq "depends" site.Params.divemenu.xray)
                    (eq false .Page.Params.opaqueToDiveMenu)))
@@ -187,37 +185,83 @@
       */}}
 
       {{ with .Page }}
+
         (
-        {{- len .Fragments.Identifiers }} IDs, {{ len .Fragments.HeadingsMap }}
-        headings)
 
-AAA
+        {{- /* {{- len .Fragments.Identifiers }} IDs, */ -}}
 
-{{ range $k1, $v1 := .Fragments.HeadingsMap }}
-  {{/* range $k2, $v2 := $v1 */}}
-    {{/* if (eq $k1 "Level") */}}
-    <p>key = {{ $k1 }} value = {{ $v1.Level }}</p>
-    {{/* end */}}
-  {{/* end */}}
-{{ end }}
+        {{- len .Fragments.HeadingsMap }}
 
-BBB
+        headings,
 
-        {{ len (where .Fragments.HeadingsMap "ID" "uno") }}
-        ZZZ {{ debug.Dump .Fragments.HeadingsMap }}
+        {{ .Fragments.ToHTML 1 1 false | strings.Count `</li>` }}
+
+        -
+
+        {{ .Fragments.ToHTML 2 2 false | strings.Count `</li>` }}
+
+        -
+
+        {{ .Fragments.ToHTML 3 3 false | strings.Count `</li>` }}
+
+        -
+
+        {{ .Fragments.ToHTML 4 4 false | strings.Count `</li>` }}
+
+        -
+
+        {{ .Fragments.ToHTML 5 5 false | strings.Count `</li>` }}
+
+        -
+
+        {{ .Fragments.ToHTML 6 6 false | strings.Count `</li>` -}}
+
+        )
+
+        {{/* As of this writing, the Hugo method .TableOfContents returns a
+             NAV element with the ID "TableOfContents". Because HTML expects
+             IDs to be unique per page, this can cause problems when (as
+             here) the method is called more than once on a page. Therefore
+             we will replace the ID with a class attribute.
+
+             Source: https://discourse.gohugo.io/t/tableofcontents-witho
+                     ut-tableofcontents-id/23529
+        */}}
+
+        {{ $tocForCurrentPage := .TableOfContents }}
+
+        {{ $tocForCurrentPage = replace
+            $tocForCurrentPage
+            `nav id="TableOfContents"`
+            `nav class="hugo-toc-within-dtoc"`
+        }}
+
+        {{/* The `<a href= ...` opening tags returned by .TableOfContents,
+             which link to that page's headings, are relative to that page.
+             This inserts the missing part of each URL:
+        */}}
+
+        {{ $tocForCurrentPage = replace
+            $tocForCurrentPage
+            `<a href="`
+            (add `<a href="` .Path)
+        }}
+
+        {{ $tocForCurrentPage | safeHTML }}
+
+        {{/* Replace the .TableOfContents call, above, with this call to
+             .Fragments.ToHTML if you want to override the defaults in the
+             site configuration (typically under `[markup.tableOfContents]`
+             in hugo.toml). Also, you'll no longer need to replace IDs with
+             class attributes, as discussed above.
+
+             {{ $startLevel := 2 }}
+             {{ $endLevel := 6 }}
+             {{ $ordered := false }}
+             {{ .Fragments.ToHTML $startLevel $endLevel $ordered }}
+        */}}
+
       {{ end }}
-
-      {{ .Page.TableOfContents }}
-
-
-{{/*
-<pre>{{ debug.Dump .Fragments.Headings }}</pre>
-  {{ $startLevel := 1 }}
-  {{ $endLevel := 6 }}
-  {{ $ordered := true }}
-  {{ .Fragments.ToHTML $startLevel $endLevel $ordered }}
-*/}}
-
 
     {{ end }}
 

@@ -23,10 +23,14 @@
    *** The H5 element
    ** The FIGCAPTION element
    ** PRE, CODE, SAMP, & KBD: internals
-   ** Elements for lists (OL, UL, & LI): internals
+   ** Elements for lists (NAV, OL, UL, & LI): internals
+   *** The NAV element & styling for the Detailed Table of Contents
+   *** Other list items in the Detailed Table of Contents
+   *** Per-page TableOfContents, when nested in the Detailed Table of Contents
    ** The HR element
 
    * Span-level elements & classes
+   ** The A element
    ** Design hints (shown only in Heath mode)
    ** All derived from "lettered strings"
    ** Typically oblique
@@ -911,7 +915,7 @@ body > div.nojs-mini-themed > footer {
 
 
 /* =====================
-   Elements for lists (OL, UL, & LI): internals
+   Elements for lists (NAV, OL, UL, & LI): internals
    =====================
 */
 
@@ -944,6 +948,151 @@ body > div.nojs-mini-themed > footer {
 } // End of .nojs-mini-themed
 
 
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   The NAV element & styling for the Detailed Table of Contents
+
+   These rules do not affect items coming from inside a page.
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc {
+  // border: 1px solid red;
+}
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul {
+  // border: 1px solid cyan;
+}
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li {
+  // matches top-level items (currently only the home page):
+  list-style-type: none;
+}
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul {
+  // between an adjacent pair of top-level items:
+  border-left: 2px solid red;
+}
+
+/* OBSOLETE (matches `> ul > li li` selector below)
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li {
+  // matches second-level items:
+  list-style-type: none;
+}
+*/
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul {
+  // between an adjacent pair of second-level items:
+  border-left: 2px solid orange;
+}
+
+/* OBSOLETE (matches `> ul > li li` selector below)
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul > li {
+  // matches third-level items:
+  list-style-type: none;
+}
+*/
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul > li > ul {
+  // between an adjacent pair of third-level items:
+  border-left: 2px solid yellow;
+}
+
+/* OBSOLETE (matches `> ul > li li` selector below)
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul > li > ul > li {
+  // matches fourth-level items:
+  list-style-type: none;
+}
+*/
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul > li > ul > li > ul {
+  // between an adjacent pair of fourth-level items:
+  border-left: 2px solid green;
+}
+
+/* OBSOLETE (matches `> ul > li li` selector below)
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul > li > ul > li > ul > li {
+  // matches fifth-level items:
+  list-style-type: none;
+}
+*/
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   Other list items in the Detailed Table of Contents
+
+   These are the LI elements unmatched by the rules above (i.e., the rules
+   that mention nav.nav-for-detailed-toc). They may come from 2 sources:
+
+   (1) Pages nested too deeply to be matched by the rules above, i.e.
+       sixth-level and lower.
+
+   (2) Headings within a page (of any level), when embedded in the Detailed
+       Table of Contents by use of Hugo's built-in TableOfContents function.
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+
+  // Matches all LI descendants of a top-level item:
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li li {
+  list-style-type: none;
+}
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   Per-page TableOfContents, when nested in the Detailed Table of Contents
+
+   These rules style items coming from the headings within a page, but only
+   in the Detailed Table of Contents. See site.Params.divemenu.xray
+   & .Page.Params.opaqueToDiveMenu, and their use in the dive-menu.html
+   partial template.
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+
+  /* To the left of a TableOfContents (the Hugo built-in) X-raying a top-level
+     page, but only when embedded in the Detailed Table of Contents:
+  */
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > nav.hugo-toc-within-dtoc > ul {
+  border-left: 1px dotted red;
+}
+
+  // Same, but for a second-level page ...
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > nav.hugo-toc-within-dtoc > ul {
+  border-left: 1px dotted orange;
+}
+
+  // Same, but for a third-level page ...
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul > li > nav.hugo-toc-within-dtoc > ul {
+  border-left: 1px dotted yellow;
+}
+
+  // Same, but for a fourth-level page ...
+
+body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
+     > ul > li > ul > li > ul > li > ul > li > nav.hugo-toc-within-dtoc > ul {
+  border-left: 1px dotted green;
+}
+
+
 /* =====================
    The HR element
 
@@ -972,6 +1121,21 @@ body > div.nojs-mini-themed > footer {
    |                                          |
    +------------------------------------------+
 */
+
+
+/* =====================
+   The A element
+   =====================
+*/
+
+
+.nojs-mini-themed {
+
+  a {
+    font-weight: normal;
+  }
+
+}
 
 
 /* =====================

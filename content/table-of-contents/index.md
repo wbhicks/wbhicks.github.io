@@ -18,10 +18,10 @@ draft: false
 # expiryDate:
 
 # resources: Maps of metadata for page resources.
-markup: org
+#markup: org
 # type: subfolder-of-layouts-iff-layout-is-nested
 layout: toc
 # outputs: The output formats to render.
 ---
 
-This is the content for the Detailed Table of Contents (Inhaltsverzeichnis) page. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This is the ≤fcontent≥ for the Detailed Table of Contents (Inhaltsverzeichnis) page. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
