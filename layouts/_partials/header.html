@@ -23,68 +23,6 @@
   {{ end }}
 {{ end }}
 
-<!-- Template "section-code" turns 603020000 into "6.3.2." and 1234067809 into "12.34.6.78.9." -->
-{{- /* 
-
-  How to call: {{ template "section-code" dict "theWeight" .Weight }}
-
-  crudest implementation:
-
-  {{ $levelA := mod      .theWeight                                                100 }}
-  {{ $levelB := mod (sub .theWeight                              $levelA)        10000 }}
-  {{ $levelC := mod (sub .theWeight (add                 $levelB $levelA))     1000000 }}
-  {{ $levelD := mod (sub .theWeight (add         $levelC $levelB $levelA))   100000000 }}
-  {{ $levelE := mod (sub .theWeight (add $levelD $levelC $levelB $levelA)) 10000000000 }}
-  {{ add $levelE $levelD $levelC $levelB $levelA }}
-
-  crude implementation:
-
-  {{ $levelA := mod .theWeight 100 }}
-  {{ $truncA := div (sub .theWeight $levelA) 100 }}
-  {{ $levelB := mod $truncA 100 }}
-  {{ $truncB := div (sub $truncA    $levelB) 100 }}
-  {{ $levelC := mod $truncB 100 }}
-  {{ $truncC := div (sub $truncB    $levelC) 100 }}
-  {{ $levelD := mod $truncC 100 }}
-  {{ $truncD := div (sub $truncC    $levelD) 100 }}
-  {{ $levelE := mod $truncD 100 }}
-  {{ if eq $truncD $levelE }}
-    {{ string $levelE }}.{{ string $levelD }}.{{ string $levelC }}.{{ string $levelB }}.{{ string $levelA }}
-  {{ else }}
-    Weight is too big!
-  {{ end }}
-
-  current implementation is below. 
-
-  n.b.: omit leading zeroes, else gibberish (due to ...? TODO)
-
-*/ -}}
-
-{{ define "section-code" }}
-  {{ $numberToDecompose := .theWeight }}
-  {{ $resultAsSlice := slice }}
-  {{ $counterForTrailingZeroes := 0 }}
-  {{ $reachedRightmostNonzeroPart := false }}
-  <!-- The value 5 in the line below may be increased to a max of 9, thus accommodating -->
-  <!-- a Weight of 18 nines (because math.MaxInt64 has 19 digits: 9223372036854775807). -->
-  {{ range 5 }}
-    {{ $currRemainder := mod $numberToDecompose 100 }}
-    {{ if (and (eq $currRemainder 0) (not $reachedRightmostNonzeroPart)) }}
-      {{ $counterForTrailingZeroes = (add $counterForTrailingZeroes 1) }}
-    {{ else }}
-      {{ $reachedRightmostNonzeroPart = true }}
-    {{ end }}
-    {{ $resultAsSlice = $resultAsSlice | append (string $currRemainder) }}
-    {{ $numberToDecompose = div (sub $numberToDecompose $currRemainder) 100 }}
-  {{ end }}
-  {{ $resultAsString := "" }}
-  {{ range ($resultAsSlice | collections.Reverse | collections.First (sub (len $resultAsSlice) $counterForTrailingZeroes)) }}
-    {{ $resultAsString = (add $resultAsString .) }}
-    {{ $resultAsString = (add $resultAsString ".") }}
-  {{ end }}
-  {{ $resultAsString }}
-{{ end }}
-
 <header>
   {{- /* WAS HERE (now in baseof.html): partial "toggle.html" */ -}}
   <div class="the-div-child-of-the-header">

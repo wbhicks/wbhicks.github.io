@@ -103,8 +103,12 @@
          generate the section codes, which appear to the left of items in
          the DToC:
     */}}
+
+    {{ $sectionCode := "NOT_YET" }}
+
     {{/* if (ne "Home" .Parent) */}}
-      {{ template "section-code" dict "theWeight" .Weight }}
+      {{ $sectionCode = (partial "section-code.html" (dict "theWeight" .Weight)) }}
+      {{ $sectionCode }}
     {{/* end */}}
 
     {{ .Pre }}<a
@@ -252,7 +256,7 @@
         {{ $tocForCurrentPage = replace
             $tocForCurrentPage
             `<a href="`
-            `99. <a href="`
+            (add $sectionCode ` <a href="`)
         }}
 
         {{ $tocForCurrentPage | safeHTML }}
