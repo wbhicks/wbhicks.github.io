@@ -1,37 +1,38 @@
 ---
 linkTitle: Anniversariez
 title: Daze of the Year
-# description: Rendered in html ... head ... meta.
-# summary: Or use as a teaser.
-# keywords: Rendered in html ... head ... meta.
-# categories: [arts,health,how-to,money,politics,science,tech,travel]
+#COMMENT description: Rendered in html ... head ... meta.
+#COMMENT summary: Or use as a teaser.
+#COMMENT keywords: Rendered in html ... head ... meta.
+#COMMENT categories: [arts,health,how-to,money,politics,science,tech,travel]
 
 menus:
   voluntary:
     parent: Docket
 params:
   opaqueToDiveMenu: false
-weight: 1234067810
+#COMMENT weight: 1234067810
+weight: 609000000
 
 date: 2023-07-08
 lastmod: 2023-07-08
 draft: false
-# publishDate:
-# expiryDate:
+#COMMENT publishDate:
+#COMMENT expiryDate:
 
-# resources: Maps of metadata for page resources.
-#markup: org
-# type: subfolder-of-layouts-iff-layout-is-nested
-# layout: overriding-the-default-template
+#COMMENT resources: Maps of metadata for page resources.
+#COMMENT markup: org
+#COMMENT type: subfolder-of-layouts-iff-layout-is-nested
+#COMMENT layout: overriding-the-default-template
 
-# "In its default configuration, Hugo will render both the html and
-# json output formats for this page. The outputs field appends to,
-# rather than replaces, the project’s configured outputs."
-#
-# -- https://gohugo.io/configuration/outputs/
-#
-# (The mention of "json" above is not relevant here.) In my experience,
-# I must specify both output formats (html and markdown) below.
+#COMMENT "In its default configuration, Hugo will render both the html and
+#COMMENT json output formats for this page. The outputs field appends to,
+#COMMENT rather than replaces, the project’s configured outputs."
+
+#COMMENT -- https://gohugo.io/configuration/outputs/
+
+#COMMENT (The mention of "json" above is not relevant here.) In my experience,
+#COMMENT I must specify both output formats (html and markdown) below.
 
 outputs:
 - html
@@ -44,7 +45,7 @@ outputs:
 
 ¢ «By thys fyre I warme my handys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### January 8th
+### I.8. January 8th
 
 ¢ On this date in 2023: Bolsonaro’s putsch in Brasília fails. Partly inspired by Trump’s failed self-coup in the US two years before, and similarly fueled by populist (dis)content on social media, it had among its intended victims Alexandre de Moraes, a jurist on Brazil’s highest constitutional court.
 
@@ -104,7 +105,7 @@ outputs:
 
 ##### Terry-Thomas, 1990 (age 78), in Godalming, Surrey, UK
 
-### January 25th
+### I.25. January 25th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -209,7 +210,7 @@ Dem. |____________________
 
 ↗ [London Corresponding Society](https://en.wikipedia.org/wiki/London_Corresponding_Society) (external)
 
-### January 26th
+### I.26. January 26th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -233,7 +234,7 @@ Dem. |____________________
 
 ¢ «And with my spade I delfe my landys» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### February 2nd
+### II.2. February 2nd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -253,7 +254,7 @@ Dem. |____________________
 
 #### Observance: Groundhog Day
 
-### February 15th
+### II.15. February 15th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -271,7 +272,7 @@ Dem. |____________________
 
 ↗ [WP / Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby) (external)
 
-### February 23rd
+### II.23. February 23rd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -297,7 +298,7 @@ Dem. |____________________
 
 ↗ [WP / Bombardment of Ellwood](https://en.wikipedia.org/wiki/Bombardment_of_Ellwood) (external)
 
-### February 24th
+### II.24. February 24th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -315,7 +316,7 @@ Dem. |____________________
 
 #### 1803-02-24: SCotUS issues its decision in Marbury v. Madison
 
-### February 27th
+### II.27. February 27th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -347,7 +348,7 @@ Dem. |____________________
 
 ¢ «Here I sette my thynge to springe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### March 6th
+### III.6. March 6th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -367,7 +368,7 @@ Dem. |____________________
 
 ↗ [WP / Philosophical Transactions of the Royal Society](https://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society) (external)
 
-### March 7th
+### III.7. March 7th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -387,7 +388,7 @@ Dem. |____________________
 
 #### 1965-03-07: Bloody Sunday, Selma, Alabama
 
-### March 25th
+### III.25. March 25th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -552,7 +553,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ↗ [WP / Triangle Shirtwaist Factory fire](https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire) (external)
 
-### March 26th
+### III.26. March 26th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -564,7 +565,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Researchers figured out how a jolt of discomfort gets from the damaged outside of your tooth to the nerves inside it.»
 
-### March 27th
+### III.27. March 27th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -578,7 +579,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Natasha Turak, writing in CNBC
 
-### March 28th
+### III.28. March 28th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -590,7 +591,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Brazilian researchers captured on camera the brief moment when lightning rods on buildings released an upward discharge to attract incoming lightning.»
 
-### March 30th
+### III.30. March 30th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -628,7 +629,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ «And here I here the fowles singe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### April 5th
+### IV.5. April 5th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -646,7 +647,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ↗ [WP / Diana Scultori «... is one of the earliest known women printmakers ...»](https://en.wikipedia.org/wiki/Diana_Scultori) (external)
 
-### April 6th
+### IV.6. April 6th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -670,7 +671,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Raphael, 1520 (age 37), in Rome
 
-### April 7th
+### IV.7. April 7th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -686,7 +687,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Charles Sykes, writing in The Atlantic
 
-### April 10th
+### IV.10. April 10th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -696,7 +697,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ↗ [WaPo / by Aaron Hutcherson](https://www.washingtonpost.com/food/interactive/2023/edna-lewis-menu-trail-virginia/) (external)
 
-### April 12th
+### IV.12. April 12th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -718,7 +719,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ↗ [NY Magazine / by Errol Louis](https://nymag.com/intelligencer/2023/04/eric-adams-is-finally-seeing-reality-on-work-from-home-rules.html) (external)
 
-### April 14th
+### IV.14. April 14th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -736,7 +737,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Gasparo da Salò, 1609 (age 66), in Brescia, Italy
 
-### April 15th
+### IV.15. April 15th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -756,7 +757,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Roxelana (Роксолана), 1558 (age 53-54), in Istanbul
 
-### April 17th
+### IV.17. April 17th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -776,7 +777,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ Writing for the BBC, Shane Harrison reports that «Gerard Hutch has been cleared of murdering 33-year-old David Byrne during a boxing weigh-in at Dublin’s Regency Airport Hotel in 2016. Former Sinn Féin councillor Jonathan Dowdall had been charged with the murder but pleaded guilty to the lesser offence of facilitating murder. The murder was part of the Hutch-Kinahan gang feud that has claimed 18 lives.»
 
-### April 19th
+### IV.19. April 19th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -800,7 +801,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Byron, 1824 (age 36), in Missolonghi, Greece
 
-### April 20th
+### IV.20. April 20th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -824,7 +825,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «With the release of ≤wGuy Ritchie’s The Covenant≥, here’s a look at the occasional phenomenon of directors branding movies with their own names.»
 
-### April 21st
+### IV.21. April 21st
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -862,7 +863,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Harriet Ryan, writing in The Los Angeles Times
 
-### April 22nd
+### IV.22. April 22nd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -886,7 +887,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Cervantes, 1616 (age 68), in Madrid 
 
-### April 24th
+### IV.24. April 24th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -900,7 +901,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Paul Krugman, writing in NYT
 
-### April 25th
+### IV.25. April 25th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -916,7 +917,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Crowfoot, 1890 (age 59-60), in Blackfoot Crossing, Canada
 
-### April 26th
+### IV.26. April 26th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -930,7 +931,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Ramanujan, 1920 (age 32), in Kumbakonam, India
 
-### April 28th
+### IV.28. April 28th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -942,7 +943,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «D.C.’s most surprising leadership column, and what it says about how the knowledge industry works now.»
 
-### April 29th
+### IV.29. April 29th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -970,7 +971,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ «I am as lyght as byrde in bowe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### May 3rd
+### V.3. May 3rd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -998,7 +999,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ↗ [WP / Elizabeth Bacon (died 1621)](https://en.wikipedia.org/wiki/Elizabeth_Bacon_(died_1621)) (external)
 
-### May 4th
+### V.4. May 4th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1022,7 +1023,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### John Nevison, 1684 (age 44-45), in York, England
 
-### May 5th
+### V.5. May 5th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1038,7 +1039,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Napoleon, 1821 (age 51), in Longwood, on the island of Saint Helena #posthumous-move
 
-### May 16th
+### V.16. May 16th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1052,7 +1053,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ##### Grace Elliott, 1823 (age 68-69), in Ville-d’Avray, France
 
-### May 17th
+### V.17. May 17th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1074,7 +1075,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «The eccentric inventor is known for dabbling with electricity, but his Tesla valve is impressing scientists anew.»
 
-### May 19th
+### V.19. May 19th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1088,7 +1089,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ A note for students of English: the word ≤fsplit≥ in the headline is a play on words.
 
-### May 21st
+### V.21. May 21st
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1121,7 +1122,7 @@ For a lawyer:    -1 pct    +44 pct
 
 #### Observance: Day of Mourning for the Victims of the Circassian Genocide, 1864-1867 (recognized by Georgia)
 
-### May 22nd
+### V.22. May 22nd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1137,7 +1138,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Constantine, 337 (age 65), in Nicomedia (modern-day İzmit, Türkiye)
 
-### May 23rd
+### V.23. May 23rd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1155,7 +1156,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Brian Boru, 1014 (age 72-73), in Dublin
 
-### May 24th
+### V.24. May 24th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1187,7 +1188,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Wikipedia
 
-### May 31st
+### V.31. May 31st
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1205,7 +1206,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ «And I wede my corne well I-now» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### June 22nd
+### VI.22. June 22nd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1225,7 +1226,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ «With my sythe my mede I mawe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### July 1st
+### VII.1. July 1st
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1241,7 +1242,7 @@ For a lawyer:    -1 pct    +44 pct
 
 #### Deaths on this date:
 
-### July 3rd
+### VII.3. July 3rd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1255,7 +1256,7 @@ For a lawyer:    -1 pct    +44 pct
 
 #### 1608-07-03: Founding of Quebec City
 
-### July 9th
+### VII.9. July 9th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1271,7 +1272,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Benjamin Cardozo, 1938 (age 68), in Port Chester, NY, US
 
-### July 18th
+### VII.18. July 18th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1287,7 +1288,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Evan Osnos, writing in The New Yorker (July 18, 2022; in issue dated July 25, 2022)
 
-### July 21st
+### VII.21. July 21st
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1315,7 +1316,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ «And here I shere my corne full lowe» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### August 7th
+### VIII.7. August 7th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1333,7 +1334,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Joseph Marie Jacquard, 1834 (age 82), in Oullins ([ulɛ̃]), France
 
-### August 10th
+### VIII.10. August 10th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1357,7 +1358,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Montague Summers, 1948 (age 68), in London
 
-### August 13th
+### VIII.13. August 13th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1395,7 +1396,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Eugène Delacroix, 1863 (age 65), in Paris
 
-### August 19th
+### VIII.19. August 19th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1419,7 +1420,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Augustus, 14 (age 76), in Nola, Italy
 
-### August 23rd
+### VIII.23. August 23rd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1441,7 +1442,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ##### Sacco and Vanzetti, 1927 (ages 36 and 39), in Boston
 
-### August 28th
+### VIII.28. August 28th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1457,7 +1458,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ «With my flayll I erne my brede» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### September 12th
+### IX.12. September 12th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1487,7 +1488,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Rep. Liz Cheney (@Liz_Cheney) on Twitter
 
-### September 24th
+### IX.24. September 24th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1517,7 +1518,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ «And here I sawe my whete so rede» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### October 19th
+### X.19. October 19th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1533,7 +1534,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ «At Martynesmasse I kylle my swine» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### November 12th
+### XI.12. November 12th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1547,7 +1548,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ See also George F. Will’s coinage ≤fboiling but frozen≥ in ≤aHow ≤eI despise, therefore I am≥ locks in the political status quo≥, 2023-04-12
 
-### November 22nd
+### XI.22. November 22nd
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1565,7 +1566,7 @@ For a lawyer:    -1 pct    +44 pct
 
 #### 1963-11-22: Assassination of John F. Kennedy
 
-### November 29th
+### XI.29. November 29th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1581,7 +1582,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ «And at Cristesmasse I drynke redde wyne» (Robbins, Rossell Hope, 1912-1990. Secular Lyrics of the XIVth And XVth Centuries. 2d ed Oxford: Clarendon Press, 1961.)
 
-### December 13th
+### XII.13. December 13th
 
 ¢ This is a placeholder for a caption for this date.
 
@@ -1593,7 +1594,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «Recent changes -- and more coming in early 2023 -- could bring some relief to a very broken system.»
 
-### December 31st
+### XII.31. December 31st
 
 ¢ This is a placeholder for a caption for this date.
 

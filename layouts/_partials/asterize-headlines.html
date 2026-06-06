@@ -24,7 +24,31 @@ And, in the replacement, use the captures thus:
 
 {{ $theContent := .the_content }}
 
-  {{- /* Wrap numbering-outline prefixes, for later styling */ -}}
+  {{- /* Wrap all numbering-outline prefixes, for later styling. With a few
+         changes, these 4 calls to replaceRE appear in both dive-menu.html
+         & asterize-headlines.html: */ -}}
+
+  {{ $theContent =
+      replaceRE
+     `<h2 id="([^"]+)">([^ ]+) ([^<]+)</h2>`
+     `<h2 id="$1"><span class="numbering-outline">$2</span> $3</h2>`
+      $theContent 
+  }}
+
+  {{ $theContent =
+      replaceRE
+     `<h2 id="([^"]+)">([^ ]+) ([^<]+)</h2>`
+     `<h2 id="$1"><span class="numbering-outline">$2</span> $3</h2>`
+      $theContent 
+  }}
+
+  {{ $theContent =
+      replaceRE
+     `<h2 id="([^"]+)">([^ ]+) ([^<]+)</h2>`
+     `<h2 id="$1"><span class="numbering-outline">$2</span> $3</h2>`
+      $theContent 
+  }}
+
   {{ $theContent =
       replaceRE
      `<h2 id="([^"]+)">([^ ]+) ([^<]+)</h2>`
