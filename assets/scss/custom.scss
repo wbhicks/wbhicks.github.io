@@ -744,6 +744,13 @@ body > div.nojs-mini-themed > footer {
     font-weight: normal;
   }
 
+  main > h2.h2-from-1star  > span.numbering-outline,
+  main > details.beneath-asterized-h2 > h3.h3-from-2stars > span.numbering-outline,
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars > span.numbering-outline,
+  main > details.beneath-asterized-h2 > h5.h5-from-4stars > span.numbering-outline {
+    color: #808080;
+  }
+
   main > h2.h2-from-1star,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars,
   main > details.beneath-asterized-h2 > h4.h4-from-3stars {
