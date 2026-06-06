@@ -735,6 +735,11 @@ body > div.nojs-mini-themed > footer {
 
 .nojs-mini-themed {
 
+  header > div.the-div-child-of-the-header > ul.top-link-row > 
+      li > span.current-page-in-top-link-row {
+    // Not yet styled. Also, should be in another section.
+  }
+
   header > div.the-div-child-of-the-header > h1 {
     font-weight: normal;
   }

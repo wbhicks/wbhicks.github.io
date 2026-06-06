@@ -26,19 +26,17 @@ layout: about
 #COMMENT outputs: The output formats to render.
 ---
 
-## H2 UNO
+## I. H2 UNO
 
-## H2 UNO
+## II. H2 UNO
 
-## H2 UNO
-
-## This H2 heading is NOT the only one.
+## III. This H2 heading is NOT the only one.
 
 12345678901234567890123456789012345forty1234567890123456789012345678901234eighty
 
-## This H2 heading is for nested lists. The first doubles as a summary of the mini-themes.
+## IV. This H2 heading is for nested lists. The first doubles as a summary of the mini-themes.
 
-### This is an H3 heading.
+### IV.A. This is an H3 heading.
 
 Here's an unordered list:
 
@@ -88,19 +86,19 @@ This paragraph has no prefix, so it shouldn't normally be encountered.
 
 5 Please ≤cwatch ≤nfor ≤fbits≥, and ≤fbytes≥, and≥ also ≤fun ordinateur≥! 6 Henry ≤sBob ≤nBobby≥ Bobson≥ Jr. 7 It's ≤wno longer ≤scool≥, they≥ say. 8 Melville wrote ≤wBilly Budd≥. 9 I do≥ like ≤tABC, Amer. Broadc. Co.≥ 10 ≤cSea sea sea sea sea≥ 11
 
-## This H2 heading is for the remaining tests
+## V. This H2 heading is for the remaining tests
 
 ¢ This commentary paragraph is for eyeballing line-height: gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj gjgjgj TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM TMTM 
 
-### This is an H3 heading above some ruby tests
+### V.A. This is an H3 heading above some ruby tests
 
 In this block, only the movie name is within a ruby element: I saw the movie <ruby>The Five Thousand Fingers Of Doctor Strangelove; Or, It's A Mad Mad World</ruby> in the theater.
 
 In this block, only the movie name is within a ruby element, and there are 3 RT's: I saw the movie <ruby>The Five Thousand <rt>Kilo</rt> Fingers <rt>Digits</rt> Of Doctor <rt>M.D.</rt> Strangelove; Or, It's A Mad Mad World</ruby> in the theater.
 
-### This is an H3 heading
+### V.B. This is an H3 heading
 
-#### This H4 heading holds examples of line-height and margin
+#### V.B.1. This H4 heading holds examples of line-height and margin
 
 For the element MAIN, line-height is set to 1.5 (note: not `1.5rem`) thus: `main { line-height: 1.5; }` but is overridden in some descendants.
 
@@ -116,7 +114,7 @@ This paragraph has no prefix, so it shouldn't normally be encountered. Lorem ips
 >
 > Here's the third.
 
-#### This H4 heading holds examples of PRE, CODE, SAMP, & KBD:
+#### V.B.2. This H4 heading holds examples of PRE, CODE, SAMP, & KBD:
 
 The name is in single backticks: `Alice   X.   Traspaces`
 
@@ -131,13 +129,13 @@ and (2) appear in monospace. Unlike the names, it should (1) be borderless and
 (2) never force a line wrap.
 ```
 
-#### This H4 heading holds examples of my semantic classes
+#### V.B.3. This H4 heading holds examples of my semantic classes
 
 ¢ This is a commentary, because it start with the cent (US penny) character. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
 This paragraph has no prefix, so it shouldn't normally be encountered. The following H4 heading is of the kind that announces a clipping from an authorless press release. It is followed by (1) a fisheye block indicating the kind, (2) a periodical dek (subheadline), & (3) a URL line
 
-##### This H5 heading is ® Published by Somebody (2020): «Apricots only!»
+##### V.B.3.a. This H5 heading is ® Published by Somebody (2020): «Apricots only!»
 
 ◉ Bookmark, Feb 21st 
 
@@ -153,7 +151,7 @@ This block demonstrates some lettered leaves. Here is an a-kind, for the typical
 
 Here is something that you won't typically encounter, namely a CITE element with no class attribute: <cite>This is a bare cite.</cite>
 
-###  This H3 heading is Apple
+### V.C. This H3 heading is Apple
 
 3 hyphens make an HR:
 

@@ -256,7 +256,7 @@
         {{ $tocForCurrentPage = replace
             $tocForCurrentPage
             `<a href="`
-            (add $sectionCode ` <a href="`)
+            (add $sectionCode `<a href="`)
         }}
 
         {{ $tocForCurrentPage | safeHTML }}

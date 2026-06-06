@@ -24,6 +24,14 @@ And, in the replacement, use the captures thus:
 
 {{ $theContent := .the_content }}
 
+  {{- /* Wrap numbering-outline prefixes, for later styling */ -}}
+  {{ $theContent =
+      replaceRE
+     `<h2 id="([^"]+)">([^ ]+) ([^<]+)</h2>`
+     `<h2 id="$1"><span class="numbering-outline">$2</span> $3</h2>`
+      $theContent 
+  }}
+
   {{- /* Used to have 3 line breaks above the H2 & 3 below 2nd asterism */ -}}
   {{ $theContent = 
       replaceRE 

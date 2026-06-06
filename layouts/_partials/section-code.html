@@ -3,10 +3,13 @@
   Template "section-code" turns 603020000 into "6.3.2." and 1234067809 into
   "12.34.6.78.9."
 
-  How to call: {{ template "section-code" dict "theWeight" .Weight }}
+  When this template was part of header.html, it was called thus: 
 
-  Now:   {{ $allText = (partial "lettered-escapade.html" 
-      (dict "the_content" $allText "sanitize_or_restore" "sanitize")) }}
+    {{ template "section-code" dict "theWeight" .Weight }}
+
+  But now that it's in its own file, it's called thus:
+
+    {{ partial "section-code.html" (dict "theWeight" .Weight) }}
 
   crudest implementation:
 
