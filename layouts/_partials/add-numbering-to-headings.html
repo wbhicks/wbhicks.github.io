@@ -27,10 +27,6 @@
   {{ range $allHeadlineBlocks }}
     {{ warnidf "page-61" (add "mRLT: " $mostRecentLinkTitle " H: " .) }} 
   {{ end }}
-
-
-        (add $leftmostOpeningTag `<span class="numbering-outline">20. </span>`) }}
-
 */ -}}
 
   {{ $currentH1Counter := 0 }}
@@ -53,7 +49,22 @@
                     (len $rightmostClosingTag)))
     }}
 
-    {{ $modifiedText := (add `<span class="numbering-outline">20.</span> ` $text) }}
+    {{ $theNumberingWithinText := (index (split $text " ") 0) }}
+    {{ $textFollowingTheNumberingAndSpace := (substr $text (add (len $theNumberingWithinText) 1)) }}
+
+{{- /* $modifiedText := (add 
+                        `<span class="numbering-outline">` 
+                        $theNumberingWithinText 
+                        `</span> ` 
+                        $textFollowingTheNumberingAndSpace)
+*/ -}}
+    {{ $modifiedText := (add 
+                        `≤o` 
+                        $theNumberingWithinText 
+                        `≥ ` 
+                        $textFollowingTheNumberingAndSpace)
+    }}
+
     {{ $processedBlock := 
         (add $leftmostOpeningTag $modifiedText $rightmostClosingTag) }}
     {{ $allText = 

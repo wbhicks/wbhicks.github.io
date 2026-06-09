@@ -48,7 +48,7 @@
        which means that it doesn't contain any nested lettered strings. This is
        enforced in the template that calls this one, prefixed-or-lettered.html.
 
-       Current codes for lettered strings: a b c e f l m n q r s t w
+       Current codes for lettered strings: a b c e f l m n o q r s t w
 
        Currently unused: <cite class="special-citation">...</cite>
          {{ $result = (add 
@@ -171,6 +171,21 @@
       `TMPLT_LNIKNM ` 
       $the_content 
       ` TMPLT_RNIKNM`
+      ) 
+  }}
+{{ else if (eq $classifier "o") }}
+{{- /* CASE o: The ordering string (i.e. numbering-outline, or section numbering) that 
+               begins each heading, following the opening tag, e.g. <h1 ...>, or <h2 ...>, etc.
+
+       <h3 ...>≤oIV.29.1815.≥ The Battle of ...</h3>
+       --->
+       <h3 ...><span class="numbering-outline">IV.29.1815.</span> The Battle of ...</h3>
+
+*/ -}}
+  {{ $result = (add 
+      `TMPLT_LOUTLN ` 
+      $the_content 
+      ` TMPLT_ROUTLN`
       ) 
   }}
 

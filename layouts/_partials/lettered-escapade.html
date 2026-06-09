@@ -45,6 +45,7 @@
   {{- /* In some clippings, the en dash is erroneously used instead of the em dash: */ -}}
   {{ $theContent = replaceRE ` – `  `TMPLT_2HYFNS` $theContent }}
   {{ $theContent = replaceRE ` — `  `TMPLT_2HYFNS` $theContent }}
+  {{ $theContent = replaceRE `†`    `TMPLT_DAGGER` $theContent }}
 
 {{- /* Why can't these be handled by :before and :after in .scss? */ -}}
 {{- /* 
@@ -94,6 +95,8 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_LNIKNM `
                              `<i class="nickname">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RNIKNM` `</i>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LOUTLN ` `<span class="numbering-outline">`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_ROUTLN` `</span>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_LSMPLQ `
                              `<q>`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RSMPLQ`
@@ -139,6 +142,7 @@ end of comment was here
   {{ $theContent = replaceRE ` TMPLT_RABBRV` `</abbr>`  $theContent }}
   {{- /* The spaces are purely cosmetic: */ -}}
   {{ $theContent = replaceRE `TMPLT_2HYFNS` ` <span class="dash-as-hyphens">--</span><span class="dash-as-emdash">—</span> ` $theContent }}
+  {{ $theContent = replaceRE `TMPLT_DAGGER` `†` $theContent }}
 
 {{ else if (eq .sanitize_or_restore "restore_for_gemini") }}
 
@@ -176,6 +180,11 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_LMTITL ` ``  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RMTITL` ` ⓜ`  $theContent }}
 
+  {{- /* Doing nothing at all with numbering-outline here in gemini handling: */ -}}
+
+  {{ $theContent = replaceRE `TMPLT_LOUTLN ` ``  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_ROUTLN` ``  $theContent }}
+
   {{- /* The replacements below with a space next to the 
          substitute are only for cases where a symbol like 
          $1, $2 etc. must be followed by a space in the
@@ -193,6 +202,7 @@ end of comment was here
   {{ $theContent = replaceRE `TMPLT_LPAREN` `(`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RPAREN` `)`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_DAGGER` `†` $theContent }}
 
   {{- /* cite.special-citation is not yet used anywhere:
 

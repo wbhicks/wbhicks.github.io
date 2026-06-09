@@ -744,6 +744,8 @@ body > div.nojs-mini-themed > footer {
     font-weight: normal;
   }
 
+  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
+  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
   main > h2.h2-from-1star  > span.numbering-outline,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars > span.numbering-outline,
   main > details.beneath-asterized-h2 > h4.h4-from-3stars > span.numbering-outline,
@@ -1169,7 +1171,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
    All derived from "lettered strings"
 
    The current codes for lettered strings, used in the template
-   lettered-leaf.html, are as follows: a b c e f l m n q r s t w
+   lettered-leaf.html, are as follows: a b c e f l m n o q r s t w
 
    There is a 1-to-1 correspondence between them and this section's
    declaration blocks, EXCEPT for cite.special-citation (which is TBD).
@@ -1207,6 +1209,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   cite.media-title { // ≤m (TODO: should class use element I, not CITE?)
   }
   i.nickname { // ≤n
+  }
+  span.numbering-outline { // ≤o
   }
   main q { // ≤q (although the ≤q...≥ notation is currently unused)
   }
@@ -2005,6 +2009,7 @@ body.igt-mode-off {
     i.epigram    { text-decoration: #00cccc overline dashed; }
     i.so-called  { text-decoration: #00cccc overline dashed; }
     i.nickname   { text-decoration: #00cccc overline dotted; }
+    span.numbering-outline { text-decoration: #00cccc overline dotted; } // ≤o
     abbr         { text-decoration: #00cccc overline wavy;   }
 
     main > h2.h2-from-1star,

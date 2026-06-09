@@ -31,28 +31,28 @@ And, in the replacement, use the captures thus:
   {{ $theContent =
       replaceRE
      `<h2 id="([^"]+)">([IVXLCDM]+\.) ([^<]+)</h2>`
-     `<h2 id="$1"><span class="numbering-outline">$2</span> $3</h2>`
+     `<h2 id="$1">≤o$2≥ $3</h2>`
       $theContent 
   }}
 
   {{ $theContent =
       replaceRE
      `<h3 id="([^"]+)">([IVXLCDM]+\.[0-9]+\.) ([^<]+)</h3>`
-     `<h3 id="$1"><span class="numbering-outline">$2</span> $3</h3>`
+     `<h3 id="$1">≤o$2≥ $3</h3>`
       $theContent 
   }}
 
   {{ $theContent =
       replaceRE
      `<h4 id="([^"]+)">([IVXLCDM]+\.[0-9]+\.[A-Z]+\.) ([^<]+)</h4>`
-     `<h4 id="$1"><span class="numbering-outline">$2</span> $3</h4>`
+     `<h4 id="$1">≤o$2≥ $3</h4>`
       $theContent 
   }}
 
   {{ $theContent =
       replaceRE
      `<h5 id="([^"]+)">([IVXLCDM]+\.[0-9]+\.[A-Z]+\.[a-z]+\.) ([^<]+)</h5>`
-     `<h5 id="$1"><span class="numbering-outline">$2</span> $3</h5>`
+     `<h5 id="$1">≤o$2≥ $3</h5>`
       $theContent 
   }}
 
