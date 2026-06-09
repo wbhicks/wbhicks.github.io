@@ -67,6 +67,13 @@
   {{ $allText = (partial "lettered-escapade.html" 
       (dict "the_content" $allText "sanitize_or_restore" "sanitize")) }}
 
+
+
+  {{ $allText = (partial "add-numbering-to-headings.html" 
+      (dict "the_content" $allText "mRLT" $mostRecentLinkTitle)) }}
+
+
+
   {{ $allText = (partial "prefixed-or-lettered.html" 
       (dict "the_content" $allText "mRLT" $mostRecentLinkTitle)) }}
 

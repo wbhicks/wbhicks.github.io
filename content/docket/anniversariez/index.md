@@ -55,7 +55,7 @@ outputs:
 
 ~ Alexandre de Moraes
 
-#### ® Blake Gopnik, writing in NYT (2021) under the headline «Who Said Art Is Only for the One Percent?»
+#### I.8.P.2021. Blake Gopnik, writing in NYT (2021) under the headline «Who Said Art Is Only for the One Percent?»
 
 ◉ Bookmark, Jan 8th
 
@@ -67,7 +67,7 @@ outputs:
 
 ¢ The social significance attached by some artists to the extremely low prices of their multiples has, I think, a close analogue in the infinite reproducibility of digital art, which some (most?) digital artists consider to be both good and intrinsic to their work.
 
-#### 1790-01-08: George Washington’s first ≤sState of the Union≥ address, including this passage:
+#### I.8.1790. 1790-01-08: George Washington’s first ≤sState of the Union≥ address, including this passage:
 
 £ «Nor am I less persuaded that you will agree with me in opinion that there is nothing which can better deserve your patronage than the promotion of science and literature. Knowledge is in every country the surest basis of public happiness. In one in which the measures of government receive their impressions so immediately from the sense of the community as in ours, it is proportionably essential. To the security of a free constitution it contributes in various ways -- by convincing those who are intrusted with the public administration that every valuable end of government is best answered by the enlightened confidence of the people, and by teaching the people themselves to know and to value their own rights; to discern and provide against invasions of them; to distinguish between oppression and the necessary exercise of lawful authority; between burthens [i.e., burdens] proceeding from a disregard to their convenience and those resulting from the inevitable exigencies of society; to discriminate the spirit of liberty from that of licentiousness -- cherishing the first, avoiding the last -- and uniting a speedy but temperate vigilance against encroachments, with an inviolable respect to the laws.»
 
@@ -79,37 +79,37 @@ outputs:
 
 ↗ [UCSB](https://www.presidency.ucsb.edu/documents/first-annual-address-congress-0) (external)
 
-#### 1918-01-08: Woodrow Wilson’s Fourteen Points speech to Congress
+#### I.8.1918. 1918-01-08: Woodrow Wilson’s Fourteen Points speech to Congress
 
 ↗ [WP / Fourteen Points](https://en.wikipedia.org/wiki/Fourteen_Points) (external)
 
-#### 1964-01-08: LBJ, in his first ≤sState of the Union≥ address, announces the war on poverty.
+#### I.8.1964. 1964-01-08: LBJ, in his first ≤sState of the Union≥ address, announces the war on poverty.
 
 ↗ [WP / War on poverty](https://en.wikipedia.org/wiki/War_on_poverty) (external)
 
-#### Deaths on this date:
+#### I.8.†. Deaths on this date:
 
-##### Giotto, 1337 (age 70?), in Florence (Firenze)
+##### I.8.†.1337. Giotto, 1337 (age 70?), in Florence (Firenze)
 
-##### Galileo, 1642 (age 77), in Florence (Firenze)
+##### I.8.†.1642. Galileo, 1642 (age 77), in Florence (Firenze)
 
-##### John Baskerville, 1775 (age 68), in Birmingham, England
+##### I.8.†.1775. John Baskerville, 1775 (age 68), in Birmingham, England
 
-##### Emperor Norton, 1880 (age 61), in San Francisco
+##### I.8.†.1880. Emperor Norton, 1880 (age 61), in San Francisco
 
-##### Paul Verlaine, 1896 (age 51), in Paris
+##### I.8.†.1896. Paul Verlaine, 1896 (age 51), in Paris
 
-##### Joseph Schumpeter, 1950 (age 66), in Salisbury, Connecticut, US
+##### I.8.†.1950. Joseph Schumpeter, 1950 (age 66), in Salisbury, Connecticut, US
 
-##### Harriet Bedell, 1969 (age 94), in Davenport, Florida, US (feast day)
+##### I.8.†.1969. Harriet Bedell, 1969 (age 94), in Davenport, Florida, US (feast day)
 
-##### Terry-Thomas, 1990 (age 78), in Godalming, Surrey, UK
+##### I.8.†.1990. Terry-Thomas, 1990 (age 78), in Godalming, Surrey, UK
 
 ### I.25. January 25th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Thomas B. Edsall, writing in NYT (2023) under the headline «The Resentment Fueling the Republican Party Is Not Coming From the Suburbs»
+#### I.25.P.2023. Thomas B. Edsall, writing in NYT (2023) under the headline «The Resentment Fueling the Republican Party Is Not Coming From the Suburbs»
 
 ◉ Bookmark, Jan 25th
 
@@ -164,49 +164,49 @@ Dem. |____________________
 
 ¢ Edsall cites, among others:
 
-##### ® Source: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson
+##### I.25.P.2023.S.a. Source: «Rural America Lost Population Over the Past Decade for the First Time in History» by Kenneth Johnson
 
 ↗ [U. of New Hampshire / by Kenneth Johnson](https://carsey.unh.edu/publication-rural-america-lost-population-over-past-decade-for-first-time-in-history) (external)
 
-##### ® Source: «The Increase in Partisan Segregation in the United States» by Jacob R. Brown et al.
+##### I.25.P.2023.S.b. Source: «The Increase in Partisan Segregation in the United States» by Jacob R. Brown et al.
 
 ↗ [U. of Nottingham / by Jacob R. Brown et al.](https://www.nottingham.ac.uk/research/groups/nicep/documents/working-papers/2023/2023-09.pdf) (external)
 
-##### ® Source: ≤bThe Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker≥ by Katherine J. Cramer
+##### I.25.P.2023.S.c. Source: ≤bThe Politics of Resentment: Rural Consciousness in Wisconsin and the Rise of Scott Walker≥ by Katherine J. Cramer
 
 ↗ [U. of Chicago Press / by Katherine J. Cramer (2016)](https://press.uchicago.edu/ucp/books/book/chicago/P/bo22879533.html) (external)
 
-##### ® Source: ≤bRed Fighting Blue: How Geography and Electoral Rules Polarize American Politics≥ by David A. Hopkins
+##### I.25.P.2023.S.d. Source: ≤bRed Fighting Blue: How Geography and Electoral Rules Polarize American Politics≥ by David A. Hopkins
 
 ↗ [Cambridge U. Press / by David A. Hopkins (2017)](https://www.cambridge.org/core/books/red-fighting-blue/5BED65A27BC1399564B4A5863A1E899C) (external)
 
-##### ® Source: «The Suburbanization of the Democratic Party, 1992-2018 (Paper presented at the Annual Meetings of the American Political Science Association, Washington, DC, August 29, 2019)» by David A. Hopkins
+##### I.25.P.2023.S.e. Source: «The Suburbanization of the Democratic Party, 1992-2018 (Paper presented at the Annual Meetings of the American Political Science Association, Washington, DC, August 29, 2019)» by David A. Hopkins
 
 ↗ [paper / by David A. Hopkins (2019)](https://www.cookpolitical.com/sites/default/files/2019-09/Hopkins&percnt;20Suburbanization&percnt;20APSA&percnt;202019.pdf) (external)
 
-##### ® Source: «Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America’s Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)» by Nicholas Jacobs and B. Kal Munis
+##### I.25.P.2023.S.f. Source: «Place-Based Resentment in Contemporary U.S. Elections: The Individual Sources of America’s Urban-Rural Divide (Political Research Quarterly 2022, Vol. 0(0) 1-16)» by Nicholas Jacobs and B. Kal Munis
 
 ↗ [reprint / by Nicholas Jacobs and B. Kal Munis](https://static1.squarespace.com/static/580ab33829687f686ad6cbb1/t/6319051814f1302127e75b39/1662584089724/JacobsMunis2022-place-resentment-elections-vote-choice-urban-rural-divide.pdf) (external)
 
-##### ® Source: «Symbolic Versus Material Concerns of Rural Consciousness in the United States (Political Geography, Volume 96, June 2022, 102658)» by Kristin Lunz Trujillo and Zack Crowley
+##### I.25.P.2023.S.g. Source: «Symbolic Versus Material Concerns of Rural Consciousness in the United States (Political Geography, Volume 96, June 2022, 102658)» by Kristin Lunz Trujillo and Zack Crowley
 
 ↗ [reprint / by Kristin Lunz Trujillo and Zack Crowley](https://www.sciencedirect.com/science/article/abs/pii/S0962629822000725) (external)
 
-##### ® Source: «What Unites and Divides Urban, Suburban and Rural Communities» by Kim Parker et al.
+##### I.25.P.2023.S.h. Source: «What Unites and Divides Urban, Suburban and Rural Communities» by Kim Parker et al.
 
 ↗ [Pew Research Center / by Kim Parker et al.](https://www.pewresearch.org/social-trends/2018/05/22/what-unites-and-divides-urban-suburban-and-rural-communities/) (external)
 
 ¢ Authors: Kim Parker, Juliana Menasce Horowitz, Anna Brown, Richard Fry, D’vera Cohn and Ruth Igielnik; Date: 2018-05-22
 
-##### ® Source: ≤bHollowing Out the Middle: The Rural Brain Drain and What It Means for America≥ by Patrick J. Carr and Maria J. Kefalas
+##### I.25.P.2023.S.i. Source: ≤bHollowing Out the Middle: The Rural Brain Drain and What It Means for America≥ by Patrick J. Carr and Maria J. Kefalas
 
 ↗ [Beacon Press / by Patrick J. Carr and Maria J. Kefalas (2010)](https://shop.harvard.com/book/9780807006146) (external)
 
-##### Source: Edsall also quotes from his email correspondence with Justin Gest at George Mason University.
+##### I.25.P.2023.S.j. Source: Edsall also quotes from his email correspondence with Justin Gest at George Mason University.
 
 ↗ [GMU / Justin Gest](https://schar.gmu.edu/profiles/jgest) (external)
 
-#### 1792-01-25: First meeting of the
+#### I.25.1792. 1792-01-25: First meeting of the
 
 ↗ [London Corresponding Society](https://en.wikipedia.org/wiki/London_Corresponding_Society) (external)
 
@@ -214,7 +214,7 @@ Dem. |____________________
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Paul Krugman, writing in NYT (2023) under the headline «Can Anything Be Done to Assuage Rural Rage?»
+#### I.26.P.2023. Paul Krugman, writing in NYT (2023) under the headline «Can Anything Be Done to Assuage Rural Rage?»
 
 ◉ Bookmark, Jan 26th
 
@@ -222,7 +222,7 @@ Dem. |____________________
 
 ¢ Given J.D. Vance’s professional background, there are 180 degrees of irony in Krugman’s paragraph citing Vance’s tweet about NYC. Krugman does note that it was crafted «during his senatorial campaign», but should acknowledge that the tweet’s ostensible and real arrows of contempt fly in opposite directions.
 
-#### 1788-01-26: Australia Day: Landing of the First Fleet in what is present-day Sydney
+#### I.26.1788. 1788-01-26: Australia Day: Landing of the First Fleet in what is present-day Sydney
 
 £ «The First Fleet was a fleet of 11 British ships that brought the first British colonists and convicts to Australia. It was made up of two Royal Navy vessels, three store ships and six convict transports. On 13 May 1787 the fleet under the command of Captain Arthur Phillip, with over 1400 people (convicts, marines, sailors, civil officers and free settlers), left from Portsmouth, England and took a journey of over 24,000 kilometres (15,000 mi) and over 250 days to eventually arrive in Botany Bay, New South Wales, where a penal colony would become the first British settlement in Australia.»
 
@@ -238,7 +238,7 @@ Dem. |____________________
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® David Corn, writing in Mother Jones (2023) under the headline «Columbia Journalism Review’s Big Fail: It Published 24,000 Words on Russiagate and Missed the Point»
+#### II.2.P.2023. David Corn, writing in Mother Jones (2023) under the headline «Columbia Journalism Review’s Big Fail: It Published 24,000 Words on Russiagate and Missed the Point»
 
 ◉ Bookmark, Feb 2nd
 
@@ -252,13 +252,13 @@ Dem. |____________________
 
 ~ David Corn, writing in Mother Jones
 
-#### Observance: Groundhog Day
+#### II.2.C. Observance: Groundhog Day
 
 ### II.15. February 15th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Dan Kois, writing in Slate (2023) under the headline «The Case for Hanging Out»
+#### II.15.P.2023. Dan Kois, writing in Slate (2023) under the headline «The Case for Hanging Out»
 
 ◉ Bookmark, Feb 15th
 
@@ -268,7 +268,7 @@ Dem. |____________________
 
 ¢ The recommendation: Kill some time by hanging out with your friends and shooting the breeze.
 
-#### 1946-02-15: University of Pennsylvania hosts the official dedication of ≤tENIAC, Electronic Numerical Integrator And Computer≥. See also:
+#### II.15.1946. 1946-02-15: University of Pennsylvania hosts the official dedication of ≤tENIAC, Electronic Numerical Integrator And Computer≥. See also:
 
 ↗ [WP / Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby) (external)
 
@@ -276,7 +276,7 @@ Dem. |____________________
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Todd Bookman, writing in NPR (2023) under the headline «‹You have to be dangerous back.› Why some LGBTQ people in New Hampshire are taking up arms»
+#### II.23.P.2023. Todd Bookman, writing in NPR (2023) under the headline «‹You have to be dangerous back.› Why some LGBTQ people in New Hampshire are taking up arms»
 
 ◉ Bookmark, Feb 23rd
 
@@ -286,11 +286,11 @@ Dem. |____________________
 
 ~ Todd Bookman, writing in NPR
 
-#### 0532-02-23: The foundation stone (cornerstone) of the Hagia Sophia is laid in Constantinople by Justinian I.
+#### II.23.0532. 0532-02-23: The foundation stone (cornerstone) of the Hagia Sophia is laid in Constantinople by Justinian I.
 
-#### 1763-02-23: Republic Day in Guyana, commemorating the start of the Berbice slave uprising.
+#### II.23.1763. 1763-02-23: Republic Day in Guyana, commemorating the start of the Berbice slave uprising.
 
-#### 1942-02-23: A Japanese submarine fires shells at targets on shore near Santa Barbara, California.
+#### II.23.1942. 1942-02-23: A Japanese submarine fires shells at targets on shore near Santa Barbara, California.
 
 £ «Brown and the others called the police, as the Japanese shells continued to fall around them.»
 
@@ -302,7 +302,7 @@ Dem. |____________________
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Peter Coy, writing in NYT (2023) under the headline «The Perfect Retirement Investment Nobody Wants, Part 2»
+#### II.24.P.2023. Peter Coy, writing in NYT (2023) under the headline «The Perfect Retirement Investment Nobody Wants, Part 2»
 
 ◉ Bookmark, Feb 24th
 
@@ -314,13 +314,13 @@ Dem. |____________________
 
 ~ Peter Coy, writing in NYT
 
-#### 1803-02-24: SCotUS issues its decision in Marbury v. Madison
+#### II.24.1803. 1803-02-24: SCotUS issues its decision in Marbury v. Madison
 
 ### II.27. February 27th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Gloria Oladipo, writing in The Guardian (2023) under the headline «West Virginia mixed martial arts coach offers security for local drag show»
+#### II.27.P.2023. Gloria Oladipo, writing in The Guardian (2023) under the headline «West Virginia mixed martial arts coach offers security for local drag show»
 
 ◉ Bookmark, Feb 27th
 
@@ -336,7 +336,7 @@ Dem. |____________________
 
 ↗ [NBC Out](https://www.nbcnews.com/nbc-out) (external)
 
-#### 1812-02-27: Byron (giving his maiden speech in the House of Lords) defends the Luddites:
+#### II.27.1812. 1812-02-27: Byron (giving his maiden speech in the House of Lords) defends the Luddites:
 
 £ «Can you, then, wonder that in times like these, when bankruptcy, convicted fraud, and imputed felony are found in a station not far beneath that of your lordships, the lowest, though once most useful portion of the people, should forget their duty in their distresses, and become only less guilty than one of their representatives? But while the exalted offender can find means to baffle the law, new capital punishments must be devised, new snares of death must be spread for the wretched mechanic who is famished into guilt.»
 
@@ -352,7 +352,7 @@ Dem. |____________________
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Nathan Heller, writing in The New Yorker (2023) under the headline «The End of the English Major»
+#### III.6.P.2023. Nathan Heller, writing in The New Yorker (2023) under the headline «The End of the English Major»
 
 ◉ Bookmark, Mar 6th
 
@@ -360,7 +360,7 @@ Dem. |____________________
 
 ∂ «Enrollment in the humanities is in free fall at colleges around the country. What happened?»
 
-#### 1665-03-06: The first issue of Philosophical Transactions of the Royal Society is published. The journal has been in publication ever since.
+#### III.6.1665. 1665-03-06: The first issue of Philosophical Transactions of the Royal Society is published. The journal has been in publication ever since.
 
 £ «Oldenburg’s compulsive letter writing to foreign correspondents led to him being suspected of being a spy for the Dutch and interned in the Tower of London in 1667. A rival took the opportunity to publish a pirate issue of Philosophical Transactions, with the pretense of it being Issue 27. Oldenburg repudiated the issue by publishing the real 27 upon his release.»
 
@@ -372,7 +372,7 @@ Dem. |____________________
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Rosecrans Baldwin, writing in NYT (2023) under the headline «Los Angeles Is a Fantastic Walking City. No, Really.»
+#### III.7.P.2023. Rosecrans Baldwin, writing in NYT (2023) under the headline «Los Angeles Is a Fantastic Walking City. No, Really.»
 
 ◉ Bookmark, Mar 7th
 
@@ -384,15 +384,15 @@ Dem. |____________________
 
 ~ Rosecrans Baldwin, writing in NYT
 
-#### 1945-03-07: The 9th Armored Division (US) captures the Ludendorff Bridge at Remagen, Germany. This was, incidentally, the basis of the 1969 film, ≤wThe Bridge at Remagen≥.
+#### III.7.1945. 1945-03-07: The 9th Armored Division (US) captures the Ludendorff Bridge at Remagen, Germany. This was, incidentally, the basis of the 1969 film, ≤wThe Bridge at Remagen≥.
 
-#### 1965-03-07: Bloody Sunday, Selma, Alabama
+#### III.7.1965. 1965-03-07: Bloody Sunday, Selma, Alabama
 
 ### III.25. March 25th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Zaria Gorvett, writing in BBC (2021) under the headline «The forgotten medieval fruit with a vulgar name»
+#### III.25.P.2021. Zaria Gorvett, writing in BBC (2021) under the headline «The forgotten medieval fruit with a vulgar name»
 
 ◉ Bookmark, Mar 25th
 
@@ -549,7 +549,7 @@ We hoppen alwey, whyl that the world wol pype.
  ↳ We dance always, while the world will pipe.
 </pre>
 
-#### 1911-03-25: Triangle Shirtwaist Factory fire in Greenwich Village kills 146 garment workers.
+#### III.25.1911. 1911-03-25: Triangle Shirtwaist Factory fire in Greenwich Village kills 146 garment workers.
 
 ↗ [WP / Triangle Shirtwaist Factory fire](https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire) (external)
 
@@ -557,7 +557,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Veronique Greenwood, writing in NYT (2021) under the headline «The Mysterious Molecular Culprit Behind Cold Tooth Pain»
+#### III.26.P.2021. Veronique Greenwood, writing in NYT (2021) under the headline «The Mysterious Molecular Culprit Behind Cold Tooth Pain»
 
 ◉ Bookmark, Mar 26th
 
@@ -569,7 +569,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Natasha Turak, writing in CNBC (2023) under the headline «Lebanon wakes up in two simultaneous time zones as government can’t agree on daylight saving change»
+#### III.27.P.2023. Natasha Turak, writing in CNBC (2023) under the headline «Lebanon wakes up in two simultaneous time zones as government can’t agree on daylight saving change»
 
 ◉ Bookmark, Mar 27th
 
@@ -583,7 +583,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Nicholas Bakalar, writing in NYT (2023) under the headline «One of the Luckiest Lightning Strikes Ever Recorded»
+#### III.28.P.2023. Nicholas Bakalar, writing in NYT (2023) under the headline «One of the Luckiest Lightning Strikes Ever Recorded»
 
 ◉ Bookmark, Mar 28th
 
@@ -595,7 +595,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Erik Olsen, writing in NYT (2021) under the headline «The Ocean’s Youngest Monsters Are Ready for Glamour Shots»
+#### III.30.P.2021.a. Erik Olsen, writing in NYT (2021) under the headline «The Ocean’s Youngest Monsters Are Ready for Glamour Shots»
 
 ◉ Bookmark, Mar 30th
 
@@ -603,7 +603,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Divers practicing blackwater photography are helping marine scientists gain new insights into fish larvae.»
 
-#### ® Geeta Dayal, writing in NYT (2021) under the headline «Is the Music Over at Mills College?»
+#### III.30.P.2021.b. Geeta Dayal, writing in NYT (2021) under the headline «Is the Music Over at Mills College?»
 
 ◉ Bookmark, Mar 30th
 
@@ -621,7 +621,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Remy Tumin, writing in NYT
 
-##### ® Source: The New York Times, «The Elements of the Stylebook» by Remy Tumin
+##### III.30.P.2021.b.S.a. Source: The New York Times, «The Elements of the Stylebook» by Remy Tumin
 
 ↗ [NYT / by Remy Tumin, 2018-03-22](https://www.nytimes.com/2018/03/22/insider/new-york-times-stylebook.html) (external)
 
@@ -633,7 +633,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Blake Gopnik, writing in NYT (2021) under the headline «Warhol a Lame Copier? The Judges Who Said So Are Sadly Mistaken.»
+#### IV.5.P.2021. Blake Gopnik, writing in NYT (2021) under the headline «Warhol a Lame Copier? The Judges Who Said So Are Sadly Mistaken.»
 
 ◉ Bookmark, Apr 5th
 
@@ -641,9 +641,9 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «An appeals court ruled that Andy Warhol violated a photographer’s copyright by appropriating her image for a silk-screen he did in 1984. Our critic disagrees.»
 
-#### Deaths on this date:
+#### IV.5.†. Deaths on this date:
 
-##### Diana Scultori, 1612 (age 64-65), in Rome
+##### IV.5.†.1612. Diana Scultori, 1612 (age 64-65), in Rome
 
 ↗ [WP / Diana Scultori «... is one of the earliest known women printmakers ...»](https://en.wikipedia.org/wiki/Diana_Scultori) (external)
 
@@ -651,7 +651,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Richard Aldous, writing in NYT (2021) under the headline «Britain at the Turn of the 20th Century Was Dealing With a Lot, Badly»
+#### IV.6.P.2021.a. Richard Aldous, writing in NYT (2021) under the headline «Britain at the Turn of the 20th Century Was Dealing With a Lot, Badly»
 
 ◉ Bookmark, Apr 6th
 
@@ -659,7 +659,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ A review by Richard Aldous of ≤bThe Age Of Decadence: A History of Britain, 1880 to 1914≥ by Simon Heffer
 
-#### ® David L. Kirp, writing in NYT (2021) under the headline «Why Stanford Should Clone Itself»
+#### IV.6.P.2021.b. David L. Kirp, writing in NYT (2021) under the headline «Why Stanford Should Clone Itself»
 
 ◉ Bookmark, Apr 6th
 
@@ -667,15 +667,15 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «If elite colleges are serious about diversity of class and race, there’s a simple solution.»
 
-#### Deaths on this date:
+#### IV.6.†. Deaths on this date:
 
-##### Raphael, 1520 (age 37), in Rome
+##### IV.6.†.1520. Raphael, 1520 (age 37), in Rome
 
 ### IV.7. April 7th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Charles Sykes, writing in The Atlantic (2023) under the headline «How Wisconsin Republicans Got So Angry»
+#### IV.7.P.2023. Charles Sykes, writing in The Atlantic (2023) under the headline «How Wisconsin Republicans Got So Angry»
 
 ◉ Bookmark, Apr 7th
 
@@ -691,7 +691,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Aaron Hutcherson, writing in WaPo (2023) under the headline «On the Edna Lewis Menu Trail, a toast to an iconic chef and her hometown»
+#### IV.10.P.2023. Aaron Hutcherson, writing in WaPo (2023) under the headline «On the Edna Lewis Menu Trail, a toast to an iconic chef and her hometown»
 
 ◉ Bookmark, Apr 10th
 
@@ -701,7 +701,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® George F. Will, writing in WaPo (2023) under the headline «How ≤eI despise, therefore I am≥ locks in the political status quo»
+#### IV.12.P.2023.a. George F. Will, writing in WaPo (2023) under the headline «How ≤eI despise, therefore I am≥ locks in the political status quo»
 
 ◉ Bookmark, Apr 12th
 
@@ -713,7 +713,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ See also Ezra Klein’s use of ≤fcalcification≥ in ≤aThree Theories That Explain This Strange Moment≥, 2022-11-12
 
-#### ® Errol Louis, writing in NY Magazine (2023) under the headline «Eric Adams Is Finally Facing Reality on Work-From-Home Rules»
+#### IV.12.P.2023.b. Errol Louis, writing in NY Magazine (2023) under the headline «Eric Adams Is Finally Facing Reality on Work-From-Home Rules»
 
 ◉ Bookmark, Apr 12th
 
@@ -723,7 +723,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Gareth Branwyn, writing in Boing Boing (2021) under the headline «The unique and hugely influential Canterbury music scene of the 60s and 70s»
+#### IV.14.P.2021. Gareth Branwyn, writing in Boing Boing (2021) under the headline «The unique and hugely influential Canterbury music scene of the 60s and 70s»
 
 ◉ Bookmark, Apr 14th
 
@@ -733,15 +733,15 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Gareth Branwyn, writing in Boing Boing
 
-#### Deaths on this date:
+#### IV.14.†. Deaths on this date:
 
-##### Gasparo da Salò, 1609 (age 66), in Brescia, Italy
+##### IV.14.†.1609. Gasparo da Salò, 1609 (age 66), in Brescia, Italy
 
 ### IV.15. April 15th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Christopher Cokinos, writing in The American Scholar (2021) under the headline «Poetry in the Abstract»
+#### IV.15.P.2021. Christopher Cokinos, writing in The American Scholar (2021) under the headline «Poetry in the Abstract»
 
 ◉ Bookmark, Apr 15th
 
@@ -749,19 +749,19 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «What happens when scientists write haiku?»
 
-#### Deaths on this date:
+#### IV.15.†. Deaths on this date:
 
-##### Filippo Brunelleschi, 1446 (age 68-69), in Florence (Firenze)
+##### IV.15.†.1446. Filippo Brunelleschi, 1446 (age 68-69), in Florence (Firenze)
 
 ¢ inter alia, «the first person to receive a patent in the Western world.»
 
-##### Roxelana (Роксолана), 1558 (age 53-54), in Istanbul
+##### IV.15.†.1558. Roxelana (Роксолана), 1558 (age 53-54), in Istanbul
 
 ### IV.17. April 17th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Conor Dougherty, writing in NYT (2021) under the headline «One Way to Get People Off the Streets: Buy Hotels»
+#### IV.17.P.2021. Conor Dougherty, writing in NYT (2021) under the headline «One Way to Get People Off the Streets: Buy Hotels»
 
 ◉ Bookmark, Apr 17th
 
@@ -769,7 +769,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «For homeless people, a place to live is life changing to a degree that almost no other intervention can provide.»
 
-#### ® Shane Harrison, writing in BBC (2023) under the headline «How Gerard Hutch murder trial made international headlines»
+#### IV.17.P.2023. Shane Harrison, writing in BBC (2023) under the headline «How Gerard Hutch murder trial made international headlines»
 
 ◉ Bookmark, Apr 17th
 
@@ -781,7 +781,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Mark Brown, writing in The Guardian (2021) under the headline «‹Creativity is essential›: artist-designed supermarket to open in London»
+#### IV.19.P.2021.a. Mark Brown, writing in The Guardian (2021) under the headline «‹Creativity is essential›: artist-designed supermarket to open in London»
 
 ◉ Bookmark, Apr 19th
 
@@ -789,7 +789,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Product packaging created by artists for UK’s Design Museum aims to showcase importance of creativity»
 
-#### ® Anil Ananthaswamy, writing in Scientific American (2021) under the headline «Quantum Astronomy Could Create Telescopes Hundreds of Kilometers Wide»
+#### IV.19.P.2021.b. Anil Ananthaswamy, writing in Scientific American (2021) under the headline «Quantum Astronomy Could Create Telescopes Hundreds of Kilometers Wide»
 
 ◉ Bookmark, Apr 19th
 
@@ -797,15 +797,15 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Astronomers hope to use innovations from the subatomic world to construct breathtakingly large arrays of optical observatories»
 
-#### Deaths on this date:
+#### IV.19.†. Deaths on this date:
 
-##### Byron, 1824 (age 36), in Missolonghi, Greece
+##### IV.19.†.1824. Byron, 1824 (age 36), in Missolonghi, Greece
 
 ### IV.20. April 20th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Michael Tomasky, writing in TNR (2023) under the headline «The (Republican) Party’s Over»
+#### IV.20.P.2023.a. Michael Tomasky, writing in TNR (2023) under the headline «The (Republican) Party’s Over»
 
 ◉ Bookmark, Apr 20th
 
@@ -817,7 +817,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Michael Tomasky, writing in TNR
 
-#### ® Leah Greenblatt, writing in NYT (2023) under the headline «Name Above the Movie Title? How About in It?»
+#### IV.20.P.2023.b. Leah Greenblatt, writing in NYT (2023) under the headline «Name Above the Movie Title? How About in It?»
 
 ◉ Bookmark, Apr 20th
 
@@ -829,7 +829,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Kevin Roose, writing in NYT (2021) under the headline «Welcome to the YOLO Economy»
+#### IV.21.P.2021.a. Kevin Roose, writing in NYT (2021) under the headline «Welcome to the YOLO Economy»
 
 ◉ Bookmark, Apr 21st
 
@@ -837,7 +837,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Burned out and flush with savings, some workers are quitting stable jobs in search of postpandemic adventure.»
 
-#### ® Nell Greenfieldboyce, writing in NPR (2021) under the headline «The Secret Mission To Unearth Part Of A 142-Year-Old Experiment»
+#### IV.21.P.2021.b. Nell Greenfieldboyce, writing in NPR (2021) under the headline «The Secret Mission To Unearth Part Of A 142-Year-Old Experiment»
 
 ◉ Bookmark, Apr 21st
 
@@ -845,7 +845,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ n.b.: The surname is correct.
 
-#### ® Mary Norris, writing in The New Yorker (2021) under the headline «Grammar-Nerd Heaven»
+#### IV.21.P.2021.c. Mary Norris, writing in The New Yorker (2021) under the headline «Grammar-Nerd Heaven»
 
 ◉ Bookmark, Apr 21st
 
@@ -853,7 +853,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «A new exhibit showcases the surprisingly contentious history of English grammar books.»
 
-#### ® Harriet Ryan, writing in The Los Angeles Times (2023) under the headline «A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families»
+#### IV.21.P.2023. Harriet Ryan, writing in The Los Angeles Times (2023) under the headline «A California lawyer cashed in on criminal justice reform by fanning the hopes of inmates’ families»
 
 ◉ Bookmark, Apr 21st
 
@@ -867,7 +867,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Clay Risen, writing in NYT (2021) under the headline «Peter Warner, 90, Seafarer Who Discovered Shipwrecked Boys, Dies»
+#### IV.22.P.2021.a. Clay Risen, writing in NYT (2021) under the headline «Peter Warner, 90, Seafarer Who Discovered Shipwrecked Boys, Dies»
 
 ◉ Bookmark, Apr 22nd
 
@@ -875,7 +875,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «That story, which has sometimes been called a real-life ≤bLord of the Flies≥, was just one episode in a life filled with adventure.»
 
-#### ® Amelia Soth, writing in JSTOR Daily (2021) under the headline «When Paid Applauders Ruled the Paris Opera House»
+#### IV.22.P.2021.b. Amelia Soth, writing in JSTOR Daily (2021) under the headline «When Paid Applauders Ruled the Paris Opera House»
 
 ◉ Bookmark, Apr 22nd
 
@@ -883,15 +883,15 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Professional applauders, collectively known as the ≤fclaque≥, helped mold the tastes of an uncertain audience.»
 
-#### Deaths on this date:
+#### IV.22.†. Deaths on this date:
 
-##### Cervantes, 1616 (age 68), in Madrid 
+##### IV.22.†.1616. Cervantes, 1616 (age 68), in Madrid 
 
 ### IV.24. April 24th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Paul Krugman, writing in NYT (2023) under the headline «What’s the Matter With New York?»
+#### IV.24.P.2023. Paul Krugman, writing in NYT (2023) under the headline «What’s the Matter With New York?»
 
 ◉ Bookmark, Apr 24th
 
@@ -905,7 +905,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Carolyn McCusker, writing in NPR (2021) under the headline «Tower Of Babble: Nonnative Speakers Navigate The World Of ≤sGood≥ And ≤sBad≥ English»
+#### IV.25.P.2021. Carolyn McCusker, writing in NPR (2021) under the headline «Tower Of Babble: Nonnative Speakers Navigate The World Of ≤sGood≥ And ≤sBad≥ English»
 
 ◉ Bookmark, Apr 25th
 
@@ -913,29 +913,29 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Why Nonnative English Speakers Actually Speak The Best English»
 
-#### Deaths on this date:
+#### IV.25.†. Deaths on this date:
 
-##### Crowfoot, 1890 (age 59-60), in Blackfoot Crossing, Canada
+##### IV.25.†.1890. Crowfoot, 1890 (age 59-60), in Blackfoot Crossing, Canada
 
 ### IV.26. April 26th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Published by Pew Research Center (2016): «Ideological Gap Widens Between More, Less Educated Adults»
+#### IV.26.P.2016. Published by Pew Research Center (2016): «Ideological Gap Widens Between More, Less Educated Adults»
 
 ◉ Bookmark, Apr 26th
 
 ↗ [Pew Research Center](https://www.pewresearch.org/politics/2016/04/26/a-wider-ideological-gap-between-more-and-less-educated-adults/) (external)
 
-#### Deaths on this date:
+#### IV.26.†. Deaths on this date:
 
-##### Ramanujan, 1920 (age 32), in Kumbakonam, India
+##### IV.26.†.1920. Ramanujan, 1920 (age 32), in Kumbakonam, India
 
 ### IV.28. April 28th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Michael Schaffer, writing in Politico (2023) under the headline «Jim VandeHei’s Surreal Wellness Evolution»
+#### IV.28.P.2023. Michael Schaffer, writing in Politico (2023) under the headline «Jim VandeHei’s Surreal Wellness Evolution»
 
 ◉ Bookmark, Apr 28th
 
@@ -947,7 +947,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Bill Lukitsch and Anna Spoerre, writing in The Kansas City Star (2021) under the headline «Kansas City leaders unveil ≤stiny-home≥ village proposal to help address homelessness»
+#### IV.29.P.2021. Bill Lukitsch and Anna Spoerre, writing in The Kansas City Star (2021) under the headline «Kansas City leaders unveil ≤stiny-home≥ village proposal to help address homelessness»
 
 ◉ Bookmark, Apr 29th
 
@@ -957,7 +957,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ Location for the village is TBD.
 
-#### ® Maureen Dowd, writing in NYT (2023) under the headline «Requiem for the Newsroom»
+#### IV.29.P.2023. Maureen Dowd, writing in NYT (2023) under the headline «Requiem for the Newsroom»
 
 ◉ Bookmark, Apr 29th
 
@@ -975,13 +975,13 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Ilana Kaplan, writing in The Ringer (2021) under the headline «Making the (Fictional) Band»
+#### V.3.P.2021. Ilana Kaplan, writing in The Ringer (2021) under the headline «Making the (Fictional) Band»
 
 ◉ Bookmark, May 3rd
 
 ↗ [The Ringer / by Ilana Kaplan](https://www.theringer.com/movies/2021/5/3/22404738/movie-bands-pink-slip-2gether-stillwater-scott-pilgrim-low-shoulder-oral-history) (external)
 
-#### Observance: World Press Freedom Day
+#### V.3.C. Observance: World Press Freedom Day
 
 ↗ [UNESCO / World Press Freedom Day](https://en.unesco.org/commemorations/worldpressfreedomday) (external)
 
@@ -989,9 +989,9 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ UNESCO
 
-#### Deaths on this date:
+#### V.3.†. Deaths on this date:
 
-##### Elizabeth Bacon, 1621 (age 79-80), in England
+##### V.3.†.1621. Elizabeth Bacon, 1621 (age 79-80), in England
 
 £ «... she became the Lady Nevell of ≤bMy Ladye Nevells Booke≥, a manuscript of keyboard music by William Byrd.»
 
@@ -1003,7 +1003,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Pilar Viladas, writing in NYT (2021) under the headline «A Design Expert Makes Space for Tools and Memories»
+#### V.4.P.2021.a. Pilar Viladas, writing in NYT (2021) under the headline «A Design Expert Makes Space for Tools and Memories»
 
 ◉ Bookmark, May 4th
 
@@ -1011,7 +1011,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «When David Kelley, the founder of the global firm IDEO, downsized in Northern California, he still found room for the ultimate studio.»
 
-#### ® Tim McKeough, writing in NYT (2021) under the headline «In Miami, a Sculpture Built to Live In»
+#### V.4.P.2021.b. Tim McKeough, writing in NYT (2021) under the headline «In Miami, a Sculpture Built to Live In»
 
 ◉ Bookmark, May 4th
 
@@ -1019,15 +1019,15 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «Christopher Carter, an artist who works with salvaged materials, set out to create his biggest work ever. Now it’s his home, and the subject of a new exhibit.»
 
-#### Deaths on this date:
+#### V.4.†. Deaths on this date:
 
-##### John Nevison, 1684 (age 44-45), in York, England
+##### V.4.†.1684. John Nevison, 1684 (age 44-45), in York, England
 
 ### V.5. May 5th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® David Farrier, writing in BBC (2021) under the headline «How cities will fossilise»
+#### V.5.P.2021. David Farrier, writing in BBC (2021) under the headline «How cities will fossilise»
 
 ◉ Bookmark, May 5th
 
@@ -1035,29 +1035,29 @@ We hoppen alwey, whyl that the world wol pype.
 
 ∂ «The grand metropolises of 21st Century civilisation will leave a geological legacy that will last for millennia, but as the author David Farrier writes, some things will endure far longer than others.»
 
-#### Deaths on this date:
+#### V.5.†. Deaths on this date:
 
-##### Napoleon, 1821 (age 51), in Longwood, on the island of Saint Helena #posthumous-move
+##### V.5.†.1821. Napoleon, 1821 (age 51), in Longwood, on the island of Saint Helena #posthumous-move
 
 ### V.16. May 16th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Carolyn McCusker, writing in NPR (2021) under the headline «Prepone That! Your Accent Is Funny! Readers Share Their ESL Stories»
+#### V.16.P.2021. Carolyn McCusker, writing in NPR (2021) under the headline «Prepone That! Your Accent Is Funny! Readers Share Their ESL Stories»
 
 ◉ Bookmark, May 16th
 
 ↗ [NPR / by Carolyn McCusker](https://www.npr.org/sections/goatsandsoda/2021/05/16/995963311/prepone-that-your-accent-is-funny-readers-share-their-esl-stories) (external)
 
-#### Deaths on this date:
+#### V.16.†. Deaths on this date:
 
-##### Grace Elliott, 1823 (age 68-69), in Ville-d’Avray, France
+##### V.16.†.1823. Grace Elliott, 1823 (age 68-69), in Ville-d’Avray, France
 
 ### V.17. May 17th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Daniel J. McGraw, writing in Politico (2015) under the headline «The GOP Is Dying Off. Literally.»
+#### V.17.P.2015. Daniel J. McGraw, writing in Politico (2015) under the headline «The GOP Is Dying Off. Literally.»
 
 ◉ Bookmark, May 17th
 
@@ -1067,7 +1067,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ~ Daniel J. McGraw, writing in Politico
 
-#### ® Eric Mack, writing in Cnet (2021) under the headline «Nikola Tesla invention from 100 years ago suddenly makes more sense today»
+#### V.17.P.2021. Eric Mack, writing in Cnet (2021) under the headline «Nikola Tesla invention from 100 years ago suddenly makes more sense today»
 
 ◉ Bookmark, May 17th
 
@@ -1079,7 +1079,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Leyland Cecco, writing in The Guardian (2023) under the headline «Trudeau’s wide-stance pose with Korean politician splits critics»
+#### V.19.P.2023. Leyland Cecco, writing in The Guardian (2023) under the headline «Trudeau’s wide-stance pose with Korean politician splits critics»
 
 ◉ Bookmark, May 19th
 
@@ -1093,7 +1093,7 @@ We hoppen alwey, whyl that the world wol pype.
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Eduardo Porter and Guilbert Gates, writing in NYT (2019) under the headline «Why Workers Without College Degrees Are Fleeing Big Cities»
+#### V.21.P.2019. Eduardo Porter and Guilbert Gates, writing in NYT (2019) under the headline «Why Workers Without College Degrees Are Fleeing Big Cities»
 
 ◉ Bookmark, May 21st
 
@@ -1120,13 +1120,13 @@ For a lawyer:    -1 pct    +44 pct
 
 ↗ [National Bureau of Economic Research](www.nber.org/papers/w25588) (external)
 
-#### Observance: Day of Mourning for the Victims of the Circassian Genocide, 1864-1867 (recognized by Georgia)
+#### V.21.C. Observance: Day of Mourning for the Victims of the Circassian Genocide, 1864-1867 (recognized by Georgia)
 
 ### V.22. May 22nd
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Rodney Ho, writing in Atlanta Journal-Constitution (2021) under the headline «How a fake 1987 movie marquee at Gwinnett Place mall turned into viral photo»
+#### V.22.P.2021. Rodney Ho, writing in Atlanta Journal-Constitution (2021) under the headline «How a fake 1987 movie marquee at Gwinnett Place mall turned into viral photo»
 
 ◉ Bookmark, May 22nd
 
@@ -1134,15 +1134,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «My 2021 photo is from the Jamie Foxx Netflix comedy ≤wDay Shift≥ but many believe it’s a vintage shot»
 
-#### Deaths on this date:
+#### V.22.†. Deaths on this date:
 
-##### Constantine, 337 (age 65), in Nicomedia (modern-day İzmit, Türkiye)
+##### V.22.†.0337 Constantine, 0337 (age 65), in Nicomedia (modern-day İzmit, Türkiye)
 
 ### V.23. May 23rd
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Eriq Gardner, writing in Hollywood Reporter (2021) under the headline «Does Andy Warhol Get Same Copyright Treatment as Google Code?»
+#### V.23.P.2021. Eriq Gardner, writing in Hollywood Reporter (2021) under the headline «Does Andy Warhol Get Same Copyright Treatment as Google Code?»
 
 ◉ Bookmark, May 23rd
 
@@ -1152,15 +1152,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Eriq Gardner, writing in Hollywood Reporter
 
-#### Deaths on this date:
+#### V.23.†. Deaths on this date:
 
-##### Brian Boru, 1014 (age 72-73), in Dublin
+##### V.23.†.1014. Brian Boru, 1014 (age 72-73), in Dublin
 
 ### V.24. May 24th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Katherine Shaver, writing in WaPo (2022) under the headline «As office-centric downtowns struggle, suburbs cater to the laptop crowd»
+#### V.24.P.2022. Katherine Shaver, writing in WaPo (2022) under the headline «As office-centric downtowns struggle, suburbs cater to the laptop crowd»
 
 ◉ Bookmark, May 24th
 
@@ -1168,19 +1168,19 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «Developers are adding outdoor co-working space -- bocce ball, anyone? -- to attract remote workers to stores and restaurants»
 
-#### 2023-05-24: The symbolic Cotton Tree in Freetown, Sierra Leone, was felled by a storm:
+#### V.24.2023. 2023-05-24: The symbolic Cotton Tree in Freetown, Sierra Leone, was felled by a storm:
 
-##### ® Source: BBC, «Sierra Leone’s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)
+##### V.24.2023.S.a. Source: BBC, «Sierra Leone’s iconic cotton tree felled by storm» by Umaru Fofana (in Freetown) & Robert Greenall (in London)
 
 ↗ [BBC / by Umaru Fofana (in Freetown) & Robert Greenall (in London), 2023-05-25](https://www.bbc.com/news/world-africa-65707394) (external)
 
-##### ® Source: The Guardian, «Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown» by Agence France-Presse (in Freetown)
+##### V.24.2023.S.b. Source: The Guardian, «Sierra Leone’s symbolic Cotton Tree falls during storm in Freetown» by Agence France-Presse (in Freetown)
 
 ↗ [The Guardian / by Agence France-Presse (in Freetown), 2023-05-25](https://www.theguardian.com/world/2023/may/25/sierra-leone-symbolic-cotton-tree-falls-during-storm-in-freetown) (external)
 
 ∂ «Centuries-old Ceiba pentandra marked where formerly enslaved people had prayed upon arrival in west Africa»
 
-##### ® Source: Wikipedia, «Cotton Tree (Sierra Leone)»
+##### V.24.2023.S.c. Source: Wikipedia, «Cotton Tree (Sierra Leone)»
 
 ↗ [WP / Cotton Tree (Sierra Leone)](https://en.wikipedia.org/wiki/Cotton_Tree_(Sierra_Leone)) (external)
 
@@ -1192,7 +1192,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Jacopo Prisco, writing in CNN (2022) under the headline «Decoding the messages tucked away in one ‹politically significant› city’s street art»
+#### V.31.P.2022. Jacopo Prisco, writing in CNN (2022) under the headline «Decoding the messages tucked away in one ‹politically significant› city’s street art»
 
 ◉ Bookmark, May 31st
 
@@ -1210,15 +1210,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Published by Pew Research Center (2021): «Lower-income Americans still less likely to have home broadband, smartphone»
+#### VI.22.P.2021. Published by Pew Research Center (2021): «Lower-income Americans still less likely to have home broadband, smartphone»
 
 ◉ Bookmark, Jun 22nd
 
 ↗ [Pew Research Center](https://www.pewresearch.org/fact-tank/2021/06/22/digital-divide-persists-even-as-americans-with-lower-incomes-make-gains-in-tech-adoption/) (external)
 
-#### Deaths on this date:
+#### VI.22.†. Deaths on this date:
 
-##### Field Marshal Sir Henry Hughes Wilson, 1st Baronet, GCB, DSO, 1922 (age 58), in London. See also
+##### VI.22.†.1922 Field Marshal Sir Henry Hughes Wilson, 1st Baronet, GCB, DSO, 1922 (age 58), in London. See also
 
 ↗ [WP / Oh! What a Lovely War «is a 1969 British comedy historical musical war film ...»](https://en.wikipedia.org/wiki/Oh!_What_a_Lovely_War) (external)
 
@@ -1230,7 +1230,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Allyson Waller, writing in NYT (2020) under the headline «Man Falls Through the Floor and Discovers a Well Beneath a Connecticut House»
+#### VII.1.P.2020. Allyson Waller, writing in NYT (2020) under the headline «Man Falls Through the Floor and Discovers a Well Beneath a Connecticut House»
 
 ◉ Bookmark, Jul 1st
 
@@ -1238,15 +1238,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «... was helping a friend move into a house when the floor gave way beneath him. Firefighters rescued him from a 19th-century fieldstone well.»
 
-#### 1863-07-01: Abolition of slavery in Suriname and the Dutch colonies in the Caribbean
+#### VII.1.1863. 1863-07-01: Abolition of slavery in Suriname and the Dutch colonies in the Caribbean
 
-#### Deaths on this date:
+#### VII.1.†. Deaths on this date:
 
 ### VII.3. July 3rd
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Vimal Patel, writing in NYT (2023) under the headline «At UChicago, a Debate Over Free Speech and Cyberbullying»
+#### VII.3.P.2023. Vimal Patel, writing in NYT (2023) under the headline «At UChicago, a Debate Over Free Speech and Cyberbullying»
 
 ◉ Bookmark, Jul 3rd
 
@@ -1254,13 +1254,13 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «A student objected to a class, ≤cThe Problem of Whiteness≥, and tweeted the lecturer’s photo and email address. Hate mail poured in. What should the school do?»
 
-#### 1608-07-03: Founding of Quebec City
+#### VII.3.1608. 1608-07-03: Founding of Quebec City
 
 ### VII.9. July 9th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Mackenzie Mays, writing in Politico (2021) under the headline «West Virginia is Trading Trump for Tech Workers»
+#### VII.9.P.2021. Mackenzie Mays, writing in Politico (2021) under the headline «West Virginia is Trading Trump for Tech Workers»
 
 ◉ Bookmark, Jul 9th
 
@@ -1268,15 +1268,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «The population is fleeing, jobs are disappearing and coal isn’t coming back. West Virginia’s boldest plan to reverse the slide is bribing white-collar workers to move from out of state.»
 
-#### Deaths on this date:
+#### VII.9.†. Deaths on this date:
 
-##### Benjamin Cardozo, 1938 (age 68), in Port Chester, NY, US
+##### VII.9.†.1938. Benjamin Cardozo, 1938 (age 68), in Port Chester, NY, US
 
 ### VII.18. July 18th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Evan Osnos, writing in The New Yorker (2022) under the headline «The Haves and the Have-Yachts»
+#### VII.18.P.2022. Evan Osnos, writing in The New Yorker (2022) under the headline «The Haves and the Have-Yachts»
 
 ◉ Bookmark, Jul 18th
 
@@ -1292,7 +1292,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Beatrice Jin, writing in Politico (2021) under the headline «When it comes to reopening after coronavirus, income matters more than party»
+#### VII.21.P.2021. Beatrice Jin, writing in Politico (2021) under the headline «When it comes to reopening after coronavirus, income matters more than party»
 
 ◉ Bookmark, Jul 21st
 
@@ -1302,7 +1302,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ In Politico, Beatrice Jin writes: «Here, we’ve split the two partisan lines into four, separating out counties whose residents earn less than the median national household income, and those who earn more. ... higher-income Republican counties looked much more like higher-income Democratic counties than their lower-income counterparts. ... Simply put, lower-income workers have fewer options to stay home.»
 
-#### 1918-07-21: A German U-boat (submarine) fires on vessels off Cape Cod, striking the shore in the process.
+#### VII.21.1918. 1918-07-21: A German U-boat (submarine) fires on vessels off Cape Cod, striking the shore in the process.
 
 £ «A few shells and craters were found on shore in Orleans and in the nearby marsh.»
 
@@ -1320,7 +1320,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Popkin, writing in Boing Boing (2021) under the headline «Watch this short documentary about the influential, experimental Black Mountain College»
+#### VIII.7.P.2021. Popkin, writing in Boing Boing (2021) under the headline «Watch this short documentary about the influential, experimental Black Mountain College»
 
 ◉ Bookmark, Aug 7th
 
@@ -1330,15 +1330,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Popkin, writing in Boing Boing
 
-#### Deaths on this date:
+#### VIII.7.†. Deaths on this date:
 
-##### Joseph Marie Jacquard, 1834 (age 82), in Oullins ([ulɛ̃]), France
+##### VIII.7.†.1834. Joseph Marie Jacquard, 1834 (age 82), in Oullins ([ulɛ̃]), France
 
 ### VIII.10. August 10th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Ian Burke, writing in Vice (2021) under the headline «Moving to NYC From the West Coast? Here’s What You’ll Need»
+#### VIII.10.P.2021. Ian Burke, writing in Vice (2021) under the headline «Moving to NYC From the West Coast? Here’s What You’ll Need»
 
 ◉ Bookmark, Aug 10th
 
@@ -1348,21 +1348,21 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ See also the counterpart to this article, which Vice published 3 days later.
 
-#### Deaths on this date:
+#### VIII.10.†. Deaths on this date:
 
-##### Reginald Dunne and Joseph O’Sullivan, 1922 (ages 24 and 25), in London. #posthumous-move
+##### VIII.10.†.1922. Reginald Dunne and Joseph O’Sullivan, 1922 (ages 24 and 25), in London. #posthumous-move
 
 ¢ See also:
 
 ↗ [WP / Odd Man Out «is a 1947 British film noir ...»](https://en.wikipedia.org/wiki/Odd_Man_Out) (external)
 
-##### Montague Summers, 1948 (age 68), in London
+##### VIII.10.†.1948. Montague Summers, 1948 (age 68), in London
 
 ### VIII.13. August 13th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Maxwell Strachan, writing in Vice (2021) under the headline «Zillow, Other Tech Firms Are in an ≤fArms Race≥ To Buy Up American Homes»
+#### VIII.13.P.2021.a. Maxwell Strachan, writing in Vice (2021) under the headline «Zillow, Other Tech Firms Are in an ≤fArms Race≥ To Buy Up American Homes»
 
 ◉ Bookmark, Aug 13th
 
@@ -1370,7 +1370,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «≤siBuyers≥ are gearing up to grow massively in the coming years, with unforeseen consequences for the U.S. housing market.»
 
-#### ® Mary Frances ≤nFrancky≥ Knapp, writing in Vice (2021) under the headline «Moving to LA From the East Coast? Here’s What You’ll Need»
+#### VIII.13.P.2021.b. Mary Frances ≤nFrancky≥ Knapp, writing in Vice (2021) under the headline «Moving to LA From the East Coast? Here’s What You’ll Need»
 
 ◉ Bookmark, Aug 13th
 
@@ -1380,7 +1380,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ See also the counterpart to this article, which Vice published 3 days earlier.
 
-#### ® Aaron Mak, writing in Slate (2021) under the headline «What’s Really Wrong With the New Twitter Font»
+#### VIII.13.P.2021.c. Aaron Mak, writing in Slate (2021) under the headline «What’s Really Wrong With the New Twitter Font»
 
 ◉ Bookmark, Aug 13th
 
@@ -1392,15 +1392,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Fredrick Brennan, quoted by Aaron Mak, in Slate
 
-#### Deaths on this date:
+#### VIII.13.†. Deaths on this date:
 
-##### Eugène Delacroix, 1863 (age 65), in Paris
+##### VIII.13.†.1863. Eugène Delacroix, 1863 (age 65), in Paris
 
 ### VIII.19. August 19th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Kayleen Devlin, writing in BBC (2021) under the headline «Algeria: The forest fires that led to an artist’s lynching»
+#### VIII.19.P.2021.a. Kayleen Devlin, writing in BBC (2021) under the headline «Algeria: The forest fires that led to an artist’s lynching»
 
 ◉ Bookmark, Aug 19th
 
@@ -1408,7 +1408,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «The BBC’s Kayleen Devlin tells a harrowing story of how the life of a young artist who came to help fight deadly forest fires in Algeria was ended by a mob.»
 
-#### ® Henry Grabar, writing in Slate (2021) under the headline «The Perverse Reason It’s Easier to Build New Highways Than New Subways -- The environment?!»
+#### VIII.19.P.2021.b. Henry Grabar, writing in Slate (2021) under the headline «The Perverse Reason It’s Easier to Build New Highways Than New Subways -- The environment?!»
 
 ◉ Bookmark, Aug 19th
 
@@ -1416,15 +1416,15 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «Congestion pricing in NYC, subway tunnels in San Francisco are being held up by environmental reviews, a perverse policy that rarely delays roads.»
 
-#### Deaths on this date:
+#### VIII.19.†. Deaths on this date:
 
-##### Augustus, 14 (age 76), in Nola, Italy
+##### VIII.19.†.0014 Augustus, 0014 (age 76), in Nola, Italy
 
 ### VIII.23. August 23rd
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Published by ACLED and the Everytown for Gun Safety Support Fund (2021): «Armed Assembly: Guns, Demonstrations, and Political Violence in America»
+#### VIII.23.P.2021. Published by ACLED and the Everytown for Gun Safety Support Fund (2021): «Armed Assembly: Guns, Demonstrations, and Political Violence in America»
 
 ◉ Bookmark, Aug 23rd
 
@@ -1436,17 +1436,17 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ ACLED and the Everytown for Gun Safety Support Fund
 
-#### Deaths on this date:
+#### VIII.23.†. Deaths on this date:
 
-##### Rudolph Valentino, 1926 (age 31), in New York City
+##### VIII.23.†.1926. Rudolph Valentino, 1926 (age 31), in New York City
 
-##### Sacco and Vanzetti, 1927 (ages 36 and 39), in Boston
+##### VIII.23.†.1927. Sacco and Vanzetti, 1927 (ages 36 and 39), in Boston
 
 ### VIII.28. August 28th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Josh Giesbrecht, writing in The Atlantic (2015) under the headline «How the Ballpoint Pen Killed Cursive»
+#### VIII.28.P.2015. Josh Giesbrecht, writing in The Atlantic (2015) under the headline «How the Ballpoint Pen Killed Cursive»
 
 ◉ Bookmark, Aug 28th
 
@@ -1462,9 +1462,9 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### Published by three elected Republicans (2023): Posts on the social networking service Twitter
+#### IX.12.P.2023 Published by three elected Republicans (2023): Posts on the social networking service Twitter
 
-##### Posted by Gov. Chris Christie (@GovChristie) on Twitter
+##### IX.12.P.2023.a Posted by Gov. Chris Christie (@GovChristie) on Twitter
 
 ↗ [Twitter](twitter.com/GovChristie/status/1701683733953138918) (external)
 
@@ -1472,7 +1472,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Gov. Chris Christie (@GovChristie) on Twitter
 
-##### Posted by Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
+##### IX.12.P.2023.b Posted by Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
 ↗ [Twitter](twitter.com/AsaHutchinson/status/1701659903230689598) (external)
 
@@ -1480,7 +1480,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ~ Gov. Asa Hutchinson (@AsaHutchinson) on Twitter
 
-##### Posted by Rep. Liz Cheney (@Liz_Cheney) on Twitter
+##### IX.12.P.2023.c Posted by Rep. Liz Cheney (@Liz_Cheney) on Twitter
 
 ↗ [Twitter](twitter.com/Liz_Cheney/status/1701651278697308238) (external)
 
@@ -1492,7 +1492,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Tom McTague, writing in The Atlantic (2021) under the headline «Why Britain and France Hate Each Other»
+#### IX.24.P.2021. Tom McTague, writing in The Atlantic (2021) under the headline «Why Britain and France Hate Each Other»
 
 ◉ Bookmark, Sep 24th
 
@@ -1500,11 +1500,11 @@ For a lawyer:    -1 pct    +44 pct
 
 ∂ «The two countries are more similar than is often acknowledged.»
 
-#### Deaths on this date:
+#### IX.24.†. Deaths on this date:
 
-##### Paracelsus, 1541 (age 47), in Salzburg
+##### IX.24.†.1541. Paracelsus, 1541 (age 47), in Salzburg
 
-##### Carl Laemmle, 1939 (age 72), in Los Angeles
+##### IX.24.†.1939. Carl Laemmle, 1939 (age 72), in Los Angeles
 
 £ «Poet Ogden Nash observed the following about Laemmle’s habit of giving his son and nephews top executive positions in his studios:<br><br>Uncle Carl Laemmle<br>Has a very large faemmle.»
 
@@ -1522,9 +1522,9 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### Deaths on this date:
+#### X.19.†. Deaths on this date:
 
-##### Jonathan Swift, 1745 (age 77), in Dublin
+##### X.19.†.1745. Jonathan Swift, 1745 (age 77), in Dublin
 
 £ «The best maxim I know in this life is, to drink your coffee when you can, and when you cannot, to be easy without it.»
 
@@ -1538,7 +1538,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Ezra Klein, writing in NYT (2022) under the headline «Three Theories That Explain This Strange Moment»
+#### XI.12.P.2022. Ezra Klein, writing in NYT (2022) under the headline «Three Theories That Explain This Strange Moment»
 
 ◉ Bookmark, Nov 12th
 
@@ -1552,7 +1552,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Rob Beschizza, writing in Boing Boing (2021) under the headline «Intersections of Pittsburgh»
+#### XI.22.P.2021. Rob Beschizza, writing in Boing Boing (2021) under the headline «Intersections of Pittsburgh»
 
 ◉ Bookmark, Nov 22nd
 
@@ -1564,13 +1564,13 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ Note the difference in the styling of the two titles above. Their words are the same, but one is the title of an article and the other is of an artwork.
 
-#### 1963-11-22: Assassination of John F. Kennedy
+#### XI.22.1963. 1963-11-22: Assassination of John F. Kennedy
 
 ### XI.29. November 29th
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Andy Newman and Emma G. Fitzsimmons, writing in NYT (2022) under the headline «New York City to Involuntarily Remove Mentally Ill People From Streets»
+#### XI.29.P.2022. Andy Newman and Emma G. Fitzsimmons, writing in NYT (2022) under the headline «New York City to Involuntarily Remove Mentally Ill People From Streets»
 
 ◉ Bookmark, Nov 29th
 
@@ -1586,7 +1586,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Bobbi Dempsey, writing in Slate (2022) under the headline «I’ve Been Plagued by Medical Debt for Years. Here’s What Happened When I Tried to Pay a USD 2 Medical Bill.»
+#### XII.13.P.2022. Bobbi Dempsey, writing in Slate (2022) under the headline «I’ve Been Plagued by Medical Debt for Years. Here’s What Happened When I Tried to Pay a USD 2 Medical Bill.»
 
 ◉ Bookmark, Dec 13th
 
@@ -1598,7 +1598,7 @@ For a lawyer:    -1 pct    +44 pct
 
 ¢ This is a placeholder for a caption for this date.
 
-#### ® Zeynep Tufekci, writing in NYT (2022) under the headline «The Shameful Open Secret Behind Southwest’s Failure»
+#### XII.31.P.2022. Zeynep Tufekci, writing in NYT (2022) under the headline «The Shameful Open Secret Behind Southwest’s Failure»
 
 ◉ Bookmark, Dec 31st
 

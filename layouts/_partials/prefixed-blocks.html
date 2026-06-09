@@ -61,6 +61,10 @@
        `$1, writing in $2 TMPLT_LPAREN $3 TMPLT_RPAREN under the headline TMPLT_LATITL $4 TMPLT_RATITL`
         $text
     }}
+
+
+
+
     {{ $result = (add $leftmostOpeningTag $text $rightmostClosingTag) }}
   {{ else if (partial "whole-str-matches-regex" (dict 
       "pattern" `Published by (.+) TMPLT_LPAREN([12][0-9][0-9][0-9])TMPLT_RPAREN: TMPLT_LDGUIL(.+)TMPLT_RDGUIL` 

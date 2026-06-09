@@ -46,7 +46,7 @@ title = 'This title will be overridden'
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 5
-    ordered = false
+    ordered = true
 
   [markup.goldmark]
     [markup.goldmark.extensions]

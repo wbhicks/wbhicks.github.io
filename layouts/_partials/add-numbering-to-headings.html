@@ -1,0 +1,67 @@
+{{ $allText := .the_content }}
+{{ $mostRecentLinkTitle := .mRLT }}
+
+{{- /* ====================
+       STEP I.
+
+       
+       ====================
+*/ -}}
+
+  {{- /* ~ ~ ~ ~ ~
+         Step I.A.
+
+         
+         ~ ~ ~ ~ ~
+  */ -}}
+
+  {{ $regexpMatchingHeadlineBlocks := 
+      `<h[1-5][^>]*>[
+]?.+</h[1-5]>` 
+  }}
+  {{ $allHeadlineBlocks := 
+      findRE $regexpMatchingHeadlineBlocks $allText 
+  }}
+
+{{- /*
+  {{ range $allHeadlineBlocks }}
+    {{ warnidf "page-61" (add "mRLT: " $mostRecentLinkTitle " H: " .) }} 
+  {{ end }}
+
+
+        (add $leftmostOpeningTag `<span class="numbering-outline">20. </span>`) }}
+
+*/ -}}
+
+  {{ $currentH1Counter := 0 }}
+  {{ $currentH2Counter := 0 }}
+  {{ $currentH3Counter := 0 }}
+  {{ $currentH4Counter := 0 }}
+  {{ $currentH5Counter := 0 }}
+  {{ $currentLevel     := 0 }}
+
+  {{ range $allHeadlineBlocks }}
+    {{ $currentLevel = int (substr . 2 1) }}
+    {{ $leftmostOpeningTag := 
+        (add (index (split . ">") 0) `>`) }}
+    {{ $textAndRightmostClosingTag := 
+        (index (split . $leftmostOpeningTag) 1) }}
+    {{ $rightmostClosingTag := 
+        (add "<" (index (last 1 (split . "<")) 0)) }}
+    {{ $text := 
+        (substr $textAndRightmostClosingTag 0 (mul -1 
+                    (len $rightmostClosingTag)))
+    }}
+
+    {{ $modifiedText := (add `<span class="numbering-outline">20.</span> ` $text) }}
+    {{ $processedBlock := 
+        (add $leftmostOpeningTag $modifiedText $rightmostClosingTag) }}
+    {{ $allText = 
+        replaceRE
+        .
+        $processedBlock
+        $allText
+    }}
+  {{ end }}
+
+{{ return $allText }}

@@ -283,16 +283,7 @@
       $tocForCurrentPage 
   }}
 
-  {{- /* For headings within H4 elements, prefixed by ® TODO HANDLE NUMBERLESS??? */ -}}
-
-  {{ $tocForCurrentPage =
-      replaceRE
-     `<a href="([^"]+)">([IVXLCDM]+\.[0-9]+\.[A-Z]+\.) ® ([^<]+)</a>`
-     (add $sectionCode `<span class="dtoc-extraction-of-numbering-outline">$2</span> <a href="$1">$3</a>`)
-      $tocForCurrentPage 
-  }}
-
-  {{- /* For headings within H4 elements, NOT prefixed by ® */ -}}
+  {{- /* For headings within H4 elements TODO HANDLE NUMBERLESS??? */ -}}
 
   {{ $tocForCurrentPage =
       replaceRE

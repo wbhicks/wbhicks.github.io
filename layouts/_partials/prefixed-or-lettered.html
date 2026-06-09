@@ -98,7 +98,7 @@
     {{ $currentBlock := . }}
     {{ $leftmostOpeningTag := (add (index (split . ">") 0) ">") }}
     {{ $prefix := (index (split (index (split . ">") 1) " ") 0) }}
-    {{ $meaningfulPrefixes := slice "£" "££" "~" "®" "¢" "∂" "=&gt;" "↗" "◉" }}
+    {{ $meaningfulPrefixes := slice "£" "££" "~" "¢" "∂" "=&gt;" "↗" "◉" }}
     {{ if (in $meaningfulPrefixes $prefix) }}
       {{ $textAndRightmostClosingTag := (index (split . (add $prefix " ")) 1) }}
       {{ $rightmostClosingTag := (add "<" (index (last 1 (split . "<")) 0)) }}
@@ -116,7 +116,6 @@
       {{ warnidf "page-72" (add "leftmostOpeningTag: " $leftmostOpeningTag " prefix: " $prefix " P: " .) }}
     {{ end }}
 */ -}}
-
 
       {{ $processedBlock := (partial "prefixed-blocks.html" (dict 
           "leftmost_opening_tag" $leftmostOpeningTag
