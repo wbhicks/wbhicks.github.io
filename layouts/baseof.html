@@ -36,15 +36,17 @@
       {{ $options = $options | merge (dict "enableSourceMap" false "outputStyle" "compressed") }}
     {{ end }}
 
-    {{ $stylesGalleriesDeluxe := resources.Get "scss/galleriesdeluxe/styles.scss" }}
+    {{ $stylesGalleriesDeluxe := resources.Get "css/galleriesdeluxe/styles.css" }}
+
+{{- /*
     {{ $stylesGalleriesDeluxe = $stylesGalleriesDeluxe | css.Sass $options }}
+*/ -}}
+
     {{ if hugo.IsProduction }}
       {{ $stylesGalleriesDeluxe = $stylesGalleriesDeluxe | fingerprint }}
     {{ end }}
     <link href="{{ $stylesGalleriesDeluxe.RelPermalink }}" rel="stylesheet" />
 
-{{- /*
-*/ -}}
 
     {{ $stylesMine := resources.Get "scss/custom.scss" }}
     {{ $stylesMine = $stylesMine | css.Sass $options }}

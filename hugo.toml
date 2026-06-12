@@ -14,8 +14,10 @@ title = 'This title will be overridden'
 
     [params.galleriesdeluxe]
         # One of dartsass or libsass.
-        sass_transpiler = "dartsass"
-        [params.galleriesdeluxe.sassvars]
+        # UPDATE: As of galleriesdeluxe v0.6.0, the following line is obsolete. See
+        # https://github.com/bep/galleriesdeluxe/tree/main?tab=readme-ov-file#sass-was-replaced-with-css-in-v060
+        # sass_transpiler = "dartsass"
+        [params.galleriesdeluxe.cssvars]
         #   At least one key-value pair must remain 
         #   uncommented (see my note in Obsidian)
             foo_bar = "abc123"

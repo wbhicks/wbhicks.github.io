@@ -65,28 +65,47 @@
 
    `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
 
-   The Galleries Deluxe default for color_primary is #3a98b9. It applies
+   The Galleries Deluxe default for --color-primary is #3a98b9. It applies
    to the A element. 
 
-   The lightness of $color_background automatically determines which of
-   $color-text_light or $color-text_dark is used.
+   The lightness of --color-background automatically determines which of
+   --color-text-light or --color-text-dark is used.
+
+   UPDATE:
+
+   See https://github.com/bep/galleriesdeluxe/tree/main?tab=readme-ov-f
+       ile#sass-was-replaced-with-css-in-v060
+
+   "If you relied on the automatic light/dark text color (the old dc
+    mixin), set --color-text and --color-text-footer explicitly in your
+    vars-custom.css."
    =====================
 */
 
 
-$color_primary: #ccae8f;
-$color_background: #141414;
-$color_background_footer: #171717; // was darken(#111, 3%);
+// For compat with galleriesdeluxe v0.6.0, I've replaced $ with -- in
+// the following 4 lines and wrapped them in a :root block. I've also 
+// set --color-text and --color-text-footer as per the above link:
 
-$color-text_light: #ffe0cc;
+:root {
 
-/* Unused, because my $color_background is darker than a certain
+--color-primary: #ccae8f;
+--color-background: #141414;
+--color-background-footer: #171717; // was darken(#111, 3%);
+
+--color-text-light: #ffe0cc;
+--color-text: var(--color-text-light);
+--color-text-footer: var(--color-text-light);
+
+}
+
+/* Unused, because my --color-background is darker than a certain
    threshhold:
-   $color-text_dark: #000;
+   --color-text-dark: #000;
 */
 
 /* In Galleries Deluxe only, unchanged here:
-   $font_size_base: 16px !default;
+   --font-size-base: 16px !default;
 */
 
 
@@ -108,14 +127,14 @@ $color-text_light: #ffe0cc;
 
   --color-button-foreground-unselected: #ccc;
   --color-button-background-unselected: #333;
-  --color-button-foreground-selected: $color_primary;
+  --color-button-foreground-selected: var(--color-primary);
 
-  // was #335170, which is the RGB opposite of #ccae8f ($color_primary)
+  // was #335170, which is the RGB opposite of #ccae8f, the value of --color-primary
   --color-button-background-selected: #000000;
 
-  /* Doesn't work: never fills entire background. Setting $color_background
+  /* Doesn't work: never fills entire background. Setting --color-background
      directly (conditionally, in blocks with :checked) doesn't work either.
-     --color-mono-background: $color_background;
+     --color-mono-background: --color-background;
   */
 
 }
@@ -1669,12 +1688,12 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 
 * {
-  --color-when-mini-theme-is-monochrome: $color-text_light;
+  --color-when-mini-theme-is-monochrome: var(--color-text-light);
 }
 
 .nojs-mini-themed:has(#nojs-mono-color-default:checked) {
   * {
-    --color-when-mini-theme-is-monochrome: $color-text_light;
+    --color-when-mini-theme-is-monochrome: var(--color-text-light);
   }
 }
 
@@ -1740,7 +1759,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   table.mini-theme-selector-table *,
   div.mono-color-selector,
   div.mono-color-selector * {
-    color: $color-text_light;
+    color: var(--color-text-light);
   }
 
 }
@@ -1887,7 +1906,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
   color: var(--color-button-foreground-selected);
   background: var(--color-button-background-selected);
-  border: 2px solid $color-text_light;
+  border: 2px solid var(--color-text-light);
 
 }
 
@@ -1984,10 +2003,10 @@ body.igt-mode-off {
 
     // The URL link icon, images/link-external-small-ltr-progressive.svg,
     // has color #4065c5, and this line applies the same to the link itself:
-    a            { color: #4065c5; } // else color_primary
-    .galleries a { color: #0ff; }    // else color_primary
-    h1, h5       { color: #c00; }    // else color-text_ ...
-    // p            { color: #ff0; } // else color-text_ ...
+    a            { color: #4065c5; } // else --color-primary
+    .galleries a { color: #0ff; }    // else --color-primary
+    h1, h5       { color: #c00; }    // else --color-text- ...
+    // p            { color: #ff0; } // else --color-text- ...
 
     main > div.asterism-above-h2,
     main > div.asterism-below-h2,

@@ -29,26 +29,46 @@
 
    `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
 
-   The Galleries Deluxe default for color_primary is #3a98b9. It applies
+   The Galleries Deluxe default for --color-primary is #3a98b9. It applies
    to the A element. 
 
-   The lightness of $color_background automatically determines which of
-   $color-text_light or $color-text_dark is used.
+   The lightness of --color-background automatically determines which of
+   --color-text-light or --color-text-dark is used.
+
+   UPDATE:
+
+   See https://github.com/bep/galleriesdeluxe/tree/main?tab=readme-ov-f
+       ile#sass-was-replaced-with-css-in-v060
+
+   "If you relied on the automatic light/dark text color (the old dc
+    mixin), set --color-text and --color-text-footer explicitly in your
+    vars-custom.css."
    =====================
 */
 
 
-$color_primary: #ccae8f;
-$color_background: #141414;
-$color_background_footer: #171717; // was darken(#111, 3%);
+// For compat with galleriesdeluxe v0.6.0, I've replaced $ with -- in
+// the following 4 lines and wrapped them in a :root block. I've also 
+// set --color-text and --color-text-footer as per the above link:
 
-$color-text_light: #ffe0cc;
+:root {
 
-/* Unused, because my $color_background is darker than a certain
+--color-primary: #ccae8f;
+--color-background: #141414;
+--color-background-footer: #171717; // was darken(#111, 3%);
+
+--color-text-light: #ffe0cc;
+--color-text: var(--color-text-light);
+--color-text-footer: var(--color-text-light);
+
+}
+
+
+/* Unused, because my --color-background is darker than a certain
    threshhold:
-   $color-text_dark: #000;
+   --color-text-dark: #000;
 */
 
 /* In Galleries Deluxe only, unchanged here:
-   $font_size_base: 16px !default;
+   --font-size-base: 16px !default;
 */
