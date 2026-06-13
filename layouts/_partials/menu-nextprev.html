@@ -1,0 +1,37 @@
+{{ $currentNode := .the_node}}
+
+{{- /* Not needed, but maybe a best practice? Some related changes will be needed. TODO
+{{ $bill := .bill }}
+*/ -}}
+
+  {{ if hasPrefix $currentNode.RelPermalink .bill.RelPermalink }}
+    {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
+    {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
+  {{ else if eq ($currentNode.Scratch.Get "NextPageOK") "OK" }}
+    {{ $currentNode.Scratch.Set "NextPageOK" nil }}
+    {{ $currentNode.Scratch.Set "nextPage" .bill }}
+  {{ end }}
+  {{ $currentNode.Scratch.Set "prevPageTmp" .bill }}
+  {{ $currentNode.Scratch.Set "pages" .bill.Pages }}
+  {{ if .bill.IsHome}}
+    {{ $currentNode.Scratch.Set "pages" .bill.Sections }}
+  {{ else if .bill.Sections }}
+    {{ $currentNode.Scratch.Set "pages" (.bill.Pages | union .bill.Sections) }}
+  {{ end }}
+  {{ $pages := ($currentNode.Scratch.Get "pages") }}
+  {{ range $pages.ByWeight }}
+    {{- /* template "menu-nextprev" dict "bill" . "the_node" $currentNode */ -}}
+    {{ partial "menu-nextprev.html" (dict "bill" . "the_node" $currentNode) }}
+  {{ end }}
+
+{{- /* Not needed, but maybe a best practice? Some related changes will be needed. TODO
+{{ return $currentNode }}
+*/ -}}
+
+{{- /* I copied the template "menu-nextprev" from https://github.com/matcornic/hugo-th
+     eme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html
+*/ -}}
+
+{{- /* This may be of help when manually breaking multiline comments:
+12345678901234567890123456789012345forty123456789012345sixty12345678901234eighty
+*/ -}}

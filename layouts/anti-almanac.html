@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <span class="design-hint">LPage»</span>
+  <span class="design-hint">a-a &rarr;</span>
     {{ $allText := (partial "process-in-sequence.html" 
         (dict "the_content" .Content "mRLT" .LinkTitle)) }}
     {{ $allText | safeHTML }}
-  <span class="design-hint">«LPage</span>
+  <span class="design-hint">&larr; a-a</span>
 {{ end }}

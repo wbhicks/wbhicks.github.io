@@ -1,27 +1,22 @@
 {{ define "main" }}
 
-  <span class="design-hint">a1»</span>
+  <span class="design-hint">LAbout»</span>
 
     {{ $allText := (partial "process-in-sequence.html" 
         (dict "the_content" .Content "mRLT" .LinkTitle)) }}
     {{ $allText | safeHTML }}
 
-  <span class="design-hint">«a2</span>
+  <span class="design-hint">«LAbout</span>
 
-  <hr>
-
-  <div>
-    {{ with .Site.GetPage "/docket" }}
-      {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-        <div class="docket">
+  {{- /*
+    {{ with .Site.GetPage "/categories" }}
+      {{ range last 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
           <p>
             <div class="date">{{ .PublishDate.Format "2006 Jan 02 Mon" }}</div>
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-            {{ .Summary }}
-          </p>
-        </div>    
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </p> 
       {{ end }}
     {{ end }}
-  </div>
+  */ -}}
 
 {{ end }}

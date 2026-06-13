@@ -1,30 +1,12 @@
-<!-- I copied the template "menu-nextprev" from https://github.com/matcornic/hugo-theme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html -->
 {{ $currentNode := . }}
-{{ template "menu-nextprev" dict "bill" (site.GetPage "Docket") "currentnode" $currentNode }}
-{{ define "menu-nextprev" }}
-  {{ $currentNode := .currentnode }}
-  {{ if hasPrefix $currentNode.RelPermalink .bill.RelPermalink }}
-    {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
-    {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
-  {{ else if eq ($currentNode.Scratch.Get "NextPageOK") "OK" }}
-    {{ $currentNode.Scratch.Set "NextPageOK" nil }}
-    {{ $currentNode.Scratch.Set "nextPage" .bill }}
-  {{ end }}
-  {{ $currentNode.Scratch.Set "prevPageTmp" .bill }}
-  {{ $currentNode.Scratch.Set "pages" .bill.Pages }}
-  {{ if .bill.IsHome}}
-    {{ $currentNode.Scratch.Set "pages" .bill.Sections }}
-  {{ else if .bill.Sections }}
-    {{ $currentNode.Scratch.Set "pages" (.bill.Pages | union .bill.Sections) }}
-  {{ end }}
-  {{ $pages := ($currentNode.Scratch.Get "pages") }}
-  {{ range $pages.ByWeight  }}
-    {{ template "menu-nextprev" dict "bill" . "currentnode" $currentNode }}
-  {{ end }}
-{{ end }}
+
+{{- /* I copied the template "menu-nextprev" from https://github.com/matcornic/hugo-th
+     eme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html
+*/ -}}
+{{- /* partial "menu-nextprev.html" (dict "bill" (site.GetPage "Docket") "the_node" $currentNode) */ -}}
+{{ partial "menu-nextprev.html" (dict "bill" (site.GetPage "home") "the_node" $currentNode) }}
 
 <header>
-  {{- /* WAS HERE (now in baseof.html): partial "toggle.html" */ -}}
   <div class="the-div-child-of-the-header">
     {{ $linkTitleOfThisPage := .LinkTitle }}
     {{ $pages := slice (site.GetPage "home") }}
@@ -59,10 +41,12 @@
     </ul>
     <hr/>
 
+{{- /*
     {{ if or 
         (eq $linkTitleOfThisPage "Docket")
         ( (site.GetPage "Docket").IsAncestor . )
     }}
+*/ -}}
 
       <span>
       {{ with ($.Scratch.Get "prevPage") }}
@@ -77,11 +61,12 @@
       </span>
       <h1>{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Title }}</h1>
 
+{{- /*
     {{ else }}
-
       <h1>{{ .Title }}</h1>
-
     {{ end }}
+*/ -}}
+
 
 {{- /*    <span class="design-hint">hc»</span>
 */ -}}
