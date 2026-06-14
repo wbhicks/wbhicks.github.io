@@ -1,27 +1,31 @@
 ---
-linkTitle: How-To
-title: How Tos & Reference Materials 
-# description: Rendered in html ... head ... meta.
-summary: Manuals
-# keywords: Rendered in html ... head ... meta.
-# categories: []
+linkTitle: Internal
+title: Pages Without Specific Topics
+#COMMENT description: Rendered in html ... head ... meta.
+#COMMENT summary: Or use as a teaser.
+#COMMENT keywords: Rendered in html ... head ... meta.
+#COMMENT categories: []
 
 menus:
   voluntary:
-    parent: Tags
-# weight: 123456789
+    parent: Categories
+params:
+  opaqueToDiveMenu: false
+weight: 43400000000
 
 date: 2020-01-01
 lastmod: 2020-01-01
-draft: false
-# publishDate:
-# expiryDate:
+draft: true
+#COMMENT publishDate:
+#COMMENT expiryDate:
 
-# resources: Maps of metadata for page resources.
-markup: org
-# type: subfolder-of-layouts-iff-layout-is-nested
+#COMMENT resources: Maps of metadata for page resources.
+#COMMENT markup: org
+#COMMENT type: subfolder-of-layouts-iff-layout-is-nested
 layout: category
-# outputs: The output formats to render.
+outputs:
+- html
+- markdown
 ---
 
 Thumbnail is 1937_assembly_instructions_for_badminton_net_by_ABC_fabrikerna_Kungaelv_Sweden by R. Henrik Nilsson from https://commons.wikimedia.org/wiki/File:1937_assembly_instructions_for_badminton_net_by_ABC_fabrikerna_Kungaelv_Sweden.jpg

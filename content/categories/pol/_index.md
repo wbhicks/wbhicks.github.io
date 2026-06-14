@@ -1,27 +1,31 @@
 ---
-linkTitle: Politics
+linkTitle: Pol
 title: Politics & Polling
-# description: Rendered in html ... head ... meta.
-summary: Incl. demographics.
-# keywords: Rendered in html ... head ... meta.
-# categories: []
+#COMMENT description: Rendered in html ... head ... meta.
+summary: Including demographics
+#COMMENT keywords: Rendered in html ... head ... meta.
+#COMMENT categories: []
 
 menus:
   voluntary:
-    parent: Tags
-# weight: 123456789
+    parent: Categories
+params:
+  opaqueToDiveMenu: false
+weight: 44600000000
 
 date: 2020-01-01
 lastmod: 2020-01-01
-draft: false
-# publishDate:
-# expiryDate:
+draft: true
+#COMMENT publishDate:
+#COMMENT expiryDate:
 
-# resources: Maps of metadata for page resources.
-markup: org
-# type: subfolder-of-layouts-iff-layout-is-nested
+#COMMENT resources: Maps of metadata for page resources.
+#COMMENT markup: org
+#COMMENT type: subfolder-of-layouts-iff-layout-is-nested
 layout: category
-# outputs: The output formats to render.
+outputs:
+- html
+- markdown
 ---
 
 Thumbnail is Een_spreker_bij_de_Speakers'_Corner_in_het_Hyde_Park,_Bestanddeelnr_254-1992 by Willem van de Poll (1947) from https://commons.wikimedia.org/wiki/File:Een_spreker_bij_de_Speakers%27_Corner_in_het_Hyde_Park,_Bestanddeelnr_254-1992.jpg

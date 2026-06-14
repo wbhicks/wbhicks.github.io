@@ -1,27 +1,31 @@
 ---
-linkTitle: Science
-title: Science & Math
-# description: Rendered in html ... head ... meta.
-summary: Excl. engineering. See Technology.
-# keywords: Rendered in html ... head ... meta.
-# categories: []
+linkTitle: Soc-Sci
+title: Social Science
+#COMMENT description: Rendered in html ... head ... meta.
+#COMMENT summary: Or use as a teaser.
+#COMMENT keywords: Rendered in html ... head ... meta.
+#COMMENT categories: []
 
 menus:
   voluntary:
-    parent: Tags
-# weight: 123456789
+    parent: Categories
+params:
+  opaqueToDiveMenu: false
+weight: 45800000000
 
 date: 2020-01-01
 lastmod: 2020-01-01
-draft: false
-# publishDate:
-# expiryDate:
+draft: true
+#COMMENT publishDate:
+#COMMENT expiryDate:
 
-# resources: Maps of metadata for page resources.
-markup: org
-# type: subfolder-of-layouts-iff-layout-is-nested
+#COMMENT resources: Maps of metadata for page resources.
+#COMMENT markup: org
+#COMMENT type: subfolder-of-layouts-iff-layout-is-nested
 layout: category
-# outputs: The output formats to render.
+outputs:
+- html
+- markdown
 ---
 
 Thumbnail is "Witches_Scale,_Oudewater" by Martinvl from https://commons.wikimedia.org/wiki/File:Witches_Scale,_Oudewater.jpg

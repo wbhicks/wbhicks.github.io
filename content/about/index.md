@@ -8,7 +8,7 @@ title: About This Site
 
 menus:
   voluntary:
-    parent: Home
+    parent: Categories
 params:
   opaqueToDiveMenu: false
 weight: 90000000000
@@ -39,7 +39,7 @@ draft: true
 #COMMENT resources: Maps of metadata for page resources.
 #COMMENT markup: org
 #COMMENT type: subfolder-of-layouts-iff-layout-is-nested
-layout: about
+layout: category
 outputs:
 - html
 - markdown
