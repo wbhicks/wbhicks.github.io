@@ -4,31 +4,14 @@ title: About This Site
 #COMMENT description: Rendered in html ... head ... meta.
 #COMMENT summary: Or use as a teaser.
 #COMMENT keywords: Rendered in html ... head ... meta.
-#COMMENT categories: [arts,edu,health,how-to,internal,money,pol,sci,soc-sci,tech,travel,when,where,who]
+#COMMENT categories: [internal]
 
 menus:
   voluntary:
-    parent: Categories
+    parent: Home
 params:
   opaqueToDiveMenu: false
 weight: 90000000000
-        2 toc
-        3 catalogue
-        4 categories
-        41000000000 arts
-        41600000000 edu
-        42200000000 health
-        42800000000 how-to
-        43400000000 internal
-        44000000000 money
-        44600000000 pol
-        45200000000 sci
-        45800000000 soc-sci
-        46400000000 tech
-        47000000000 travel
-        47600000000 when
-        48200000000 where
-        48800000000 who
 
 date: 2020-01-01
 lastmod: 2020-01-01
@@ -39,7 +22,7 @@ draft: true
 #COMMENT resources: Maps of metadata for page resources.
 #COMMENT markup: org
 #COMMENT type: subfolder-of-layouts-iff-layout-is-nested
-layout: category
+layout: about
 outputs:
 - html
 - markdown

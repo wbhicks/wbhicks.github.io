@@ -7,7 +7,7 @@ title = "A dinkus composed of asterisks."
 [menus]
   [menus.voluntary]
     parent = 'Annotated'
-weight = '120000000'
+weight = '70102000000'
 
 image = "dinkus_from_alice_in_wonderland_wp_330x503.jpg"
 date = "2025-06-21"

@@ -6,7 +6,7 @@ menus:
     parent: Frederick
 params:
   opaqueToDiveMenu: false
-weight: 606010000
+weight: 80601000000
 categories: [travel]
 date: 2023-07-06
 ---

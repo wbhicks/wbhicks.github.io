@@ -4,22 +4,24 @@ title: "Anti-Almanac: A Page Of Days"
 #COMMENT description: Rendered in html ... head ... meta.
 #COMMENT summary: Or use as a teaser.
 #COMMENT keywords: Rendered in html ... head ... meta.
-#COMMENT categories: [arts,health,how-to,money,politics,science,tech,travel]
+#COMMENT categories: [arts,edu,health,money,pol,sci,soc-sci,tech,when]
 
 menus:
   voluntary:
     parent: Home
 params:
   opaqueToDiveMenu: false
-#COMMENT weight: 1234067810
-weight: 700000000
+weight: 60000000000
 
-date: 2023-07-08
-lastmod: 2023-07-08
-draft: false
+date: 2020-01-01
+lastmod: 2020-01-01
+draft: true
 #COMMENT publishDate:
 #COMMENT expiryDate:
 
+#COMMENT resources: Maps of metadata for page resources.
+#COMMENT markup: org
+#COMMENT type: subfolder-of-layouts-iff-layout-is-nested
 layout: anti-almanac
 outputs:
 - html

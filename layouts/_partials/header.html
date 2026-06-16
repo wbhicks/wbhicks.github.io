@@ -1,9 +1,9 @@
 {{ $currentNode := . }}
 
 {{- /* I copied the template "menu-nextprev" from https://github.com/matcornic/hugo-th
-     eme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html
+       eme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html
 */ -}}
-{{- /* partial "menu-nextprev.html" (dict "bill" (site.GetPage "Docket") "the_node" $currentNode) */ -}}
+{{- /* partial "menu-nextprev.html" (dict "bill" (site.GetPage "docket") "the_node" $currentNode) */ -}}
 {{ partial "menu-nextprev.html" (dict "bill" (site.GetPage "home") "the_node" $currentNode) }}
 
 <header>
@@ -13,16 +13,19 @@
     {{ with site.GetPage "table-of-contents" }}
       {{ $pages = $pages | append . }}
     {{ end }}
-    {{ with site.GetPage "docket" }}
-      {{ $pages = $pages | append . }}
-    {{ end }}
-    {{ with site.GetPage "galleries" }}
+    {{ with site.GetPage "catalogue" }}
       {{ $pages = $pages | append . }}
     {{ end }}
     {{ with site.GetPage "categories" }}
       {{ $pages = $pages | append . }}
     {{ end }}
-    {{ with site.GetPage "catalogue" }}
+    {{ with site.GetPage "anti-almanac" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+    {{ with site.GetPage "galleries" }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+    {{ with site.GetPage "docket" }}
       {{ $pages = $pages | append . }}
     {{ end }}
     {{ with site.GetPage "about" }}
@@ -44,7 +47,7 @@
 {{- /*
     {{ if or 
         (eq $linkTitleOfThisPage "Docket")
-        ( (site.GetPage "Docket").IsAncestor . )
+        ( (site.GetPage "docket").IsAncestor . )
     }}
 */ -}}
 

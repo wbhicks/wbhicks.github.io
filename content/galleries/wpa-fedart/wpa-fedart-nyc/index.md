@@ -1,6 +1,7 @@
 ---
 title: WPA Fed Art Proj NYC
 categories: [health,money,travel,tech]
+weight: 70202000000
 date: 2021-01-01
 ---
 

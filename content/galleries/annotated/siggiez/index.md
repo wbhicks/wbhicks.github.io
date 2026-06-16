@@ -7,7 +7,7 @@ title = "A page from Kvennafræðarinn [The Female Teacher] by Elín Briem, show
 [menus]
   [menus.voluntary]
     parent = 'Annotated'
-weight = '140000000'
+weight = '70104000000'
 
 image = "signature_mark_wp_330x620.png"
 date = "2025-06-21"

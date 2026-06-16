@@ -11,7 +11,7 @@ menus:
     parent: Docket
 params:
   opaqueToDiveMenu: false
-weight: 607000000
+weight: 80700000000
 
 date: 2023-07-07
 lastmod: 2023-07-07

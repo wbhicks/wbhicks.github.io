@@ -47,9 +47,9 @@
   {{ $resultAsSlice := slice }}
   {{ $counterForTrailingZeroes := 0 }}
   {{ $reachedRightmostNonzeroPart := false }}
-  <!-- The value 5 in the line below may be increased to a max of 9, thus accommodating -->
+  <!-- The value 6 in the line below may be increased to a max of 9, thus accommodating -->
   <!-- a Weight of 18 nines (because math.MaxInt64 has 19 digits: 9223372036854775807). -->
-  {{ range 5 }}
+  {{ range 6 }}
     {{ $currRemainder := mod $numberToDecompose 100 }}
     {{ if (and (eq $currRemainder 0) (not $reachedRightmostNonzeroPart)) }}
       {{ $counterForTrailingZeroes = (add $counterForTrailingZeroes 1) }}
