@@ -44,19 +44,35 @@
     </ul>
     <hr/>
   {{ if not .IsHome }}
-    {{ with $pages.Next . }}
-      Previous: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>,
-    {{ end }}
-    {{- with $pages.Prev . -}}
-      Next: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
-    {{- end -}}
     {{- with .Parent -}}
-      , Up: <a href="{{ .Permalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Params.LinkTitle }}</a>
+      Up: <a href="{{ .Permalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Params.LinkTitle }}</a>
     {{- end -}}
-    {{- range first 1 .Pages.ByWeight -}}
-      , Down: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{- with $pages.Next . -}}
+      , Previous: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+    {{- end -}}
+    {{- with $pages.Prev . -}}
+      , Next: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
     {{- end -}}
     <hr/>
+
+{{ $aggressiveResult := where .Site.Pages "Params.menus.voluntary.parent" $linkTitleOfThisPage }}
+
+1st
+
+{{ range first 1 $aggressiveResult }}
+  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+{{ end }}
+
+Sizeminus2
+
+{{ sub $aggressiveResult.Len 2 }}
+
+Last
+
+{{ range last 1 $aggressiveResult }}
+  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+{{ end }}
+
   {{ end }}
 
 {{- /*

@@ -1,0 +1,8 @@
+{{ $pc := partialCached "build-page-collection.html" "/docket" }}
+
+    {{ with $pc.Reverse.Prev . }}
+      <a href="{{ .RelPermalink }}">prev</a>
+    {{ end }}
+    {{ with $pc.Reverse.Next . }}
+      <a href="{{ .RelPermalink }}">nxt</a>
+    {{ end }}
