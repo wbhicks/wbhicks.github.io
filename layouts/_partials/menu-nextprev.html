@@ -4,6 +4,9 @@
 {{ $bill := .bill }}
 */ -}}
 
+{{ $currentNode.Scratch.Set "prevPage" .bill }}
+{{ $currentNode.Scratch.Set "nextPage" .bill }}
+{{- /* TEMP COMMENTING OUT
   {{ if hasPrefix $currentNode.RelPermalink .bill.RelPermalink }}
     {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
     {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
@@ -20,9 +23,9 @@
   {{ end }}
   {{ $pages := ($currentNode.Scratch.Get "pages") }}
   {{ range $pages.ByWeight }}
-    {{- /* template "menu-nextprev" dict "bill" . "the_node" $currentNode */ -}}
     {{ partial "menu-nextprev.html" (dict "bill" . "the_node" $currentNode) }}
   {{ end }}
+TEMP COMMENTING OUT */ -}}
 
 {{- /* Not needed, but maybe a best practice? Some related changes will be needed. TODO
 {{ return $currentNode }}

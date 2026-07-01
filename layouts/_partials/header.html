@@ -43,33 +43,39 @@
       {{ end }}
     </ul>
     <hr/>
+  {{ if not .IsHome }}
+    {{ with $pages.Next . }}
+      Previous: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>,
+    {{ end }}
+    {{- with $pages.Prev . -}}
+      Next: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+    {{- end -}}
+    {{- with .Parent -}}
+      , Up: <a href="{{ .Permalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Params.LinkTitle }}</a>
+    {{- end -}}
+    {{- range first 1 .Pages.ByWeight -}}
+      , Down: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{- end -}}
+    <hr/>
+  {{ end }}
 
 {{- /*
     {{ if or 
         (eq $linkTitleOfThisPage "Docket")
         ( (site.GetPage "docket").IsAncestor . )
     }}
-*/ -}}
-
       <span>
-      {{ with ($.Scratch.Get "prevPage") }}
+        {{ with ($.Scratch.Get "prevPage") }}
           Previous: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>,
         {{ end }}
-      {{ with ($.Scratch.Get "nextPage") }}
+        {{ with ($.Scratch.Get "nextPage") }}
           Next: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>,
         {{ end }}
-        {{ with .Parent }}
-          Up: <a href="{{ .Permalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Params.LinkTitle }}</a>
-        {{ end }}
       </span>
-      <h1>{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Title }}</h1>
-
-{{- /*
-    {{ else }}
-      <h1>{{ .Title }}</h1>
     {{ end }}
 */ -}}
 
+    <h1>{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Title }}</h1>
 
 {{- /*    <span class="design-hint">hc»</span>
 */ -}}
