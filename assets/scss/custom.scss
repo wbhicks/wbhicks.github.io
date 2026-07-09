@@ -1237,8 +1237,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   // Case r: the RUBY & RT elements, using /i18n/art-x-rubellite.yaml
 
   // disabling until I get around to setting a good default
-  main ruby > rt { // ≤r
-  }
+  //main ruby > rt { // ≤r
+  //}
 
   i.so-called { // ≤s
   }
@@ -1957,7 +1957,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
     .nojs-mini-themed {
       rt {
         // disabling until I get around to setting a good default:
-        display: none; // color: red;
+        color: red; // display: none;
       } 
     }
 

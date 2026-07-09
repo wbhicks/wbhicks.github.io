@@ -1,14 +1,9 @@
 {{ $currentNode := . }}
-
-{{- /* I copied the template "menu-nextprev" from https://github.com/matcornic/hugo-th
-       eme-learn/blob/d4abb3c9a103bdd14e82184f76463a02755ee070/layouts/partials/footer.html
-*/ -}}
-{{- /* partial "menu-nextprev.html" (dict "bill" (site.GetPage "docket") "the_node" $currentNode) */ -}}
-{{ partial "menu-nextprev.html" (dict "bill" (site.GetPage "home") "the_node" $currentNode) }}
-
 <header>
   <div class="the-div-child-of-the-header">
     {{ $linkTitleOfThisPage := .LinkTitle }}
+
+{{- /*
     {{ $pages := slice (site.GetPage "home") }}
     {{ with site.GetPage "table-of-contents" }}
       {{ $pages = $pages | append . }}
@@ -43,37 +38,52 @@
       {{ end }}
     </ul>
     <hr/>
-  {{ if not .IsHome }}
-    {{- with .Parent -}}
-      Up: <a href="{{ .Permalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .Params.LinkTitle }}</a>
-    {{- end -}}
-    {{- with $pages.Next . -}}
-      , Previous: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
-    {{- end -}}
-    {{- with $pages.Prev . -}}
-      , Next: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+*/ -}}
+
+    {{ if not .IsHome }}
+      &nbsp;&nbsp;<a href="{{ (site.GetPage "home").RelPermalink }}">{{ (site.GetPage "home").Params.LinkTitle }}</a>&nbsp;&nbsp;
+    {{ else }}
+      &nbsp;&nbsp;<span class="current-page-in-top-link-row">{{ (site.GetPage "home").Params.LinkTitle }}</span>&nbsp;&nbsp;
+    {{ end }}
+    {{ $elderly := where .Site.Pages "Params.menus.voluntary.parent" (site.GetPage "home").Params.LinkTitle }}
+    {{- range $elderly -}}
+      {{ if eq .LinkTitle $linkTitleOfThisPage }}
+        &nbsp;&nbsp;<span class="current-page-in-top-link-row">{{ .LinkTitle }}</span>&nbsp;&nbsp;
+      {{ else }}
+        &nbsp;&nbsp;<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>&nbsp;&nbsp;
+      {{ end }}
     {{- end -}}
     <hr/>
-
-{{ $aggressiveResult := where .Site.Pages "Params.menus.voluntary.parent" $linkTitleOfThisPage }}
-
-1st
-
-{{ range first 1 $aggressiveResult }}
-  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-{{ end }}
-
-Sizeminus2
-
-{{ sub $aggressiveResult.Len 2 }}
-
-Last
-
-{{ range last 1 $aggressiveResult }}
-  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-{{ end }}
-
-  {{ end }}
+  {{ if not .IsHome }}
+    {{- with .Parent -}}
+      Up: <a href="{{ .Permalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+      {{- /* .LinkTitle has the same effect as .Params.LinkTitle */ -}}
+    {{- end -}}
+    {{ $sibs := where .Site.Pages "Params.menus.voluntary.parent" .Parent.Params.LinkTitle }}
+    {{- with $sibs.Next . -}}
+      , Previous: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+    {{- end -}}
+    {{- with $sibs.Prev . -}}
+      , Next: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+    {{- end -}}
+    {{ $aggressiveResult := where .Site.Pages "Params.menus.voluntary.parent" $linkTitleOfThisPage }}
+    {{ if $aggressiveResult }}
+      {{ range first 1 $aggressiveResult }}
+        DOWN: <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+      {{ end }}
+      {{ if gt $aggressiveResult 2 }}
+        ...
+        {{- /* to show how many children are omitted by the ellipsis, use (sub $aggressiveResult.Len 2) */ -}}
+      {{ else if gt $aggressiveResult 1 }}
+        ,
+      {{ end }}
+      {{ if gt $aggressiveResult 1 }}
+        {{ range last 1 $aggressiveResult }}
+          <a href="{{ .RelPermalink }}">{{ partial "section-code.html" (dict "theWeight" .Weight) }} {{ .LinkTitle }}</a>
+        {{ end }}
+      {{ end }}
+    {{ end }} {{- /* END OF if $aggressiveResult */ -}}
+  {{ end }} {{- /* END OF if not .IsHome */ -}}
 
 {{- /*
     {{ if or 
