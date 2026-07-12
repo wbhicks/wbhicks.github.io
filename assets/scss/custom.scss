@@ -756,11 +756,15 @@ body > div.nojs-mini-themed > footer {
 
   header > div.the-div-child-of-the-header > ul.top-link-row > 
       li > span.current-page-in-top-link-row {
-    // Not yet styled. Also, should be in another section.
+    // TODO: Not yet styled. Also, should be in another section.
   }
 
-  header > div.the-div-child-of-the-header > h1 {
-    font-weight: normal;
+//body >
+//  div.nojs-mini-themed >
+  header >
+    div.the-div-child-of-the-header >
+      h1 {
+        font-weight: normal;
   }
 
   main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
@@ -800,6 +804,7 @@ body > div.nojs-mini-themed > footer {
     text-align: center;
     line-height: 1;
     display: block;
+    color: #777;
   }
 
   main > div.rule-line-below-h2,
@@ -1158,6 +1163,9 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 /* =====================
    The A element
+
+   This overrides Galleries Deluxe, which applies the variable --color-primary
+   to the A element. (It is #3a98b9 by default, but is redefined above.)
    =====================
 */
 
@@ -1166,6 +1174,16 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   a {
     font-weight: normal;
+
+    // https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-0
+    // Trying the above color standard ...
+    // color: #0000ee;
+    // ... but too bold and dark. Reducing saturation from 100pct to 33pct:
+
+    color: #9f9fee;
+
+    // I applied the same color in the definition of the URL
+    // link icon, images/link-external-small-ltr-progressive.svg
   }
 
 }
@@ -1956,8 +1974,7 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
     .nojs-mini-themed {
       rt {
-        // disabling until I get around to setting a good default:
-        color: red; // display: none;
+        color: yellow;
       } 
     }
 
@@ -2001,67 +2018,54 @@ body.igt-mode-off {
 
   @if $heath-toggle {
 
-    // The URL link icon, images/link-external-small-ltr-progressive.svg,
-    // has color #4065c5, and this line applies the same to the link itself:
-    a            { color: #4065c5; } // else --color-primary
-    .galleries a { color: #0ff; }    // else --color-primary
-    h1, h5       { color: #c00; }    // else --color-text- ...
-    // p            { color: #ff0; } // else --color-text- ...
+    cite.book-title         { text-decoration: #606060 overline     dashed; }
+    cite.like-book-title    { text-decoration: #606060 overline     dotted; }
+    cite.article-title      { text-decoration: #606060 underline    dashed; }
+    cite.like-article-title { text-decoration: #606060 underline    dotted; }
+    cite.media-title        { text-decoration: #606060 overline     wavy;   }
+    cite.special-citation   { text-decoration: #606060 overline     double; }
 
-    main > div.asterism-above-h2,
-    main > div.asterism-below-h2,
-    main > details.beneath-asterized-h2 > div.asterism-above-h3,
-    main > details.beneath-asterized-h2 > div.asterism-below-h3,
-    main > details.beneath-asterized-h2 > div.asterism-above-h4,
-    main > details.beneath-asterized-h2 > div.asterism-below-h4 {
-      color: #777;
-    }
-
-    cite.book-title         { text-decoration: #00cccc overline     double; }
-    cite.like-book-title    { text-decoration: #00cccc line-through dotted; }
-    cite.article-title      { text-decoration: #00cccc underline    solid;  }
-    cite.like-article-title { color: blue; }
-    cite.media-title        { text-decoration: #00cccc line-through dotted; }
-    cite.special-citation   { text-decoration: #00cccc line-through dashed; }
-
-    i.term       { text-decoration: #00cccc overline dashed; }
-    i.epigram    { text-decoration: #00cccc overline dashed; }
-    i.so-called  { text-decoration: #00cccc overline dashed; }
-    i.nickname   { text-decoration: #00cccc overline dotted; }
-    span.numbering-outline { text-decoration: #00cccc overline dotted; } // ≤o
-    abbr         { text-decoration: #00cccc overline wavy;   }
+    i.term                  { text-decoration: #cc6060 overline  dashed; }
+    i.epigram               { text-decoration: #cc6060 overline  dotted; }
+    i.so-called             { text-decoration: #cc6060 underline dashed; }
+    i.nickname              { text-decoration: #cc6060 underline dotted; }
+    span.numbering-outline  { text-decoration: #cc6060 overline  wavy;   } // ≤o
+    abbr                    { text-decoration: #cc6060 overline  double; }
 
     main > h2.h2-from-1star,
     main > details.beneath-asterized-h2 > h3.h3-from-2stars,
     main > details.beneath-asterized-h2 > h4.h4-from-3stars {
-      border-left: 2px solid white;
+      border-right: 2px solid gray;
     }
-
     main > div.asterism-above-h2,
     main > div.asterism-below-h2,
     main > details.beneath-asterized-h2 > div.asterism-above-h3,
     main > details.beneath-asterized-h2 > div.asterism-below-h3,
     main > details.beneath-asterized-h2 > div.asterism-above-h4,
-    main > details.beneath-asterized-h2 > div.asterism-below-h4 {
-      border-left: 1px solid gray;
-    }
-    div.fisheye-means-rightmost {
-      border-left: 2px solid #008080;
-    }
-    main > details.beneath-asterized-h2 > figure {
-      border-left: 2px solid blue;
-    }
-    .commentary {
-      border-left: 2px solid orange;
-    }
-    div.dek {
-      border-left: 2px solid yellow;
+    main > details.beneath-asterized-h2 > div.asterism-below-h4,
+    main > details.beneath-asterized-h2 > div.asterism-above-h5 {
+      border-right: 1px solid gray;
     }
     h5 {
-      border-left: 2px solid violet;
+      border-right: 2px dotted gray;
+    }
+    div.fisheye-means-rightmost {
+      border-right: 2px double gray;
+    }
+    main > details.beneath-asterized-h2 > div.url-line {
+      border-right: 1px dotted yellow;
+    }
+    main > details.beneath-asterized-h2 > div.dek {
+      border-right: 1px dotted green;
+    }
+    main > details.beneath-asterized-h2 > p.commentary {
+      border-right: 1px dotted cyan;
+    }
+    main > details.beneath-asterized-h2 > figure {
+      border-right: 1px dotted blue;
     }
     main > details.beneath-asterized-h2 > pre {
-      border-left: 2px solid green;
+      border-right: 1px dotted violet;
     }
 
     .design-hint {

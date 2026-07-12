@@ -70,10 +70,11 @@ And, in the replacement, use the captures thus:
      `</h2>` 
      `</h2><div class="rule-line-below-h2">=================================================================</div><div class="asterism-below-h2">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 |    *         *    |    *         *    |    *         *    |
--  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -</div><details class="beneath-asterized-h2" name="months-are-accordion-group">
-  <summary>Details</summary>` 
+-  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -</div><details class="beneath-asterized-h2" open="any-value-here-makes-it-open"><summary>Hide/Show</summary>` 
       $theContent 
   }}
+  {{- /* For the DETAILS element, name="months-are-accordion-group" works nicely */ -}}
+  {{- /* For the DETAILS element, style="display: contents;" fails (i.e., fails to hide the element itself) */ -}}
   {{- /* Used to have 3 line breaks above the H3 & 3 below 2nd asterism */ -}}
   {{ $theContent = 
       replaceRE 

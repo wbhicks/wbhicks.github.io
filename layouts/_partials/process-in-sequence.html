@@ -88,4 +88,4 @@
       (dict "the_content" $allText "sanitize_or_restore" "restore")) }}
 
 {{- /* All other details/summary elements are in asterize-headlines.html */ -}}
-{{ return (add `<details class="beneath-asterized-h2" open="any-value-here-makes-it-open">` $allText `</details>`) }}
+{{ return (add `<details class="beneath-asterized-h2" open="any-value-here-makes-it-open"><summary>Hide/Show</summary>` $allText `</details>`) }}
