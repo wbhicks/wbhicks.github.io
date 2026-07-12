@@ -209,7 +209,7 @@
 
        This case can be removed once the ruby effect is applied automatically.
 */ -}}
-  {{ range first 1 (where hugo.Data.rubellite.phonetic "k" $the_content) }}
+  {{ range first 1 (where hugo.Data.rubellite.phonetic_shavian "k" $the_content) }}
     {{ $the_ruby_text = .v }}
   {{ end }}
   {{ $result = (add 

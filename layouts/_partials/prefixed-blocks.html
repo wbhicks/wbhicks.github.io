@@ -187,17 +187,17 @@
 
   */ -}}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "full" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add `<figure><blockquote><p>` $rubellitedText `</p>`) }}
 {{ else if (eq $prefix "££") }}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "full" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add `<p>` $rubellitedText `</p>`) }}
 {{ else if (eq $prefix "~") }}
   {{ $rubellitedText = (partial "apply-ruby-features.html"
-      (dict "the_content" $text "full_or_light" "light" "mRLT" $mostRecentLinkTitle)) 
+      (dict "the_content" $text "full_or_light" "full" "mRLT" $mostRecentLinkTitle)) 
   }}
   {{ $result = (add `</blockquote><figcaption>TMPLT_2HYFNS ` $rubellitedText `</figcaption></figure>`) }}
 {{ else if (eq $prefix "¢") }}

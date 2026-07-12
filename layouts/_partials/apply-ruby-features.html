@@ -90,7 +90,7 @@
   {{ $theRubyText = "NO_RUBY_MATCH_FOUND" }}
 
   {{ range first 1
-      (where hugo.Data.rubellite.phonetic "k"
+      (where hugo.Data.rubellite.phonetic_shavian "k"
         (lower
           (substr (string .) 6 -17)
         )
