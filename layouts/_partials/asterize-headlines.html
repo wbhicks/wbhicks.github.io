@@ -67,8 +67,8 @@ And, in the replacement, use the captures thus:
   }}
   {{ $theContent = 
       replaceRE 
-     `</h2>` 
-     `</h2><div class="rule-line-below-h2">=================================================================</div><div class="asterism-below-h2">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
+     `</h2>`
+     `</h2><div class="rule-line-below-h2">□ - ≡ - ‖ - ≡ - | - ≡ - ‖ - ≡ - | - ≡ - ‖ - ≡ - | - ≡ - ‖ - ≡ - □</div><div class="asterism-below-h2">*   *  |  *   *  |  *   *  |  *   *  |  *   *  |  *   *
 |    *         *    |    *         *    |    *         *    |
 -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  - | -  *  -</div><details class="beneath-asterized-h2" open="any-value-here-makes-it-open"><summary>Hide/Show</summary>` 
       $theContent 
@@ -84,21 +84,26 @@ And, in the replacement, use the captures thus:
   }}
   {{ $theContent = 
       replaceRE 
-     `</h3>` 
-     `</h3><div class="rule-line-below-h3">-----------------------------------------------------------------</div><div class="asterism-below-h3">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -</div>` 
+     `</h3>`
+     `</h3><div class="rule-line-below-h3">• - * - | - * - • - * - | - * - • - * - | - * - • - * - | - * - •</div><div class="asterism-below-h3">-  - | -  **  - | -  *  - | -  **  - | -  *  - | -  **  - | -  -</div>`
       $theContent 
   }}
-  {{- /* Used to have 3 line breaks above the H4 & 4 below 2nd asterism */ -}}
+  {{- /* I used to have 3 line breaks above the H4, & 4 below the second asterism.
+         Also, for H4 elements, I used to insert `TMPLT_H4STRT` after the opening
+         tag and `TMPLT_H4ENDS` before the closing tag. They were used only in the
+         partial template narrow-headlines.html, which I no longer need now that
+         I've discovered `text-wrap-style: balance;`.
+  */ -}}
   {{ $theContent = 
       replaceRE 
      `<h4 id="([^"]+)">` 
-     `<div class="asterism-above-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div><h4 class="h4-from-3stars" id="$1">TMPLT_H4STRT` 
+     `<div class="asterism-above-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div><h4 class="h4-from-3stars" id="$1">` 
       $theContent 
   }}
   {{ $theContent = 
       replaceRE 
      `</h4>`
-     `TMPLT_H4ENDS</h4><div class="rule-line-below-h4">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div><div class="asterism-below-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div>` 
+     `</h4><div class="rule-line-below-h4">· - • - * - • - · - • - * - • - · - • - * - • - · - • - * - • - ·</div><div class="asterism-below-h4">-  -  -  -  -  *  -  *  -  *  -  -  -  -  -</div>`
       $theContent 
   }}
   {{ $theContent = 
@@ -112,7 +117,7 @@ And, in the replacement, use the captures thus:
   {{ $theContent = 
       replaceRE
      `</h5>`
-     `</h5><div class="rule-line-below-h5">▼</div>`
+     `</h5><div class="rule-line-below-h5">· - · - · - · - · - · - · - · - · - · - · - · - · - · - · - · - ·</div>`
       $theContent
   }}
 

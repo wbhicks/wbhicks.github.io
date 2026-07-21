@@ -81,8 +81,12 @@
   {{ $allText = (partial "asterize-headlines.html" 
       (dict "the_content" $allText "debug_or_qa" "qa")) }}
 
-  {{ $allText = (partial "narrow-headlines.html" 
-      (dict "the_content" $allText "debug_or_qa" "qa")) }}
+  
+  {{- /* No longer needed, since I've discovered `text-wrap-style: balance;`
+
+         $allText = (partial "narrow-headlines.html" 
+           (dict "the_content" $allText "debug_or_qa" "qa"))
+  */ -}}
 
   {{ $allText = (partial "lettered-escapade.html" 
       (dict "the_content" $allText "sanitize_or_restore" "restore")) }}

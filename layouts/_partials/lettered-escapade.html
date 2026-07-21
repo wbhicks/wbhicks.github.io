@@ -119,6 +119,17 @@ end of comment was here
                              `<i class="logic">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RLOGIC` `</i>`  $theContent }}
 
+  {{- /* Example of how I once inserted an invisible pair of quotation marks, so
+         that selecting text with the mouse (in order to copy-and-paste) will 
+         include quotation marks. Visible quotation marks are CSS pseudo-elements,
+         and therefore not in the DOM, so text selection fails to capture them.
+
+         $theContent = replaceRE `TMPLT_LATITL `
+           `<cite class="article-title"><span style="color: transparent;">“</span>`  $theContent
+         $theContent = replaceRE ` TMPLT_RATITL` 
+           `<span style="color: transparent;">”</span></cite>`  $theContent
+  */ -}}
+
   {{ $theContent = replaceRE `TMPLT_LATITL `
                              `<cite class="article-title">`  $theContent }}
   {{ $theContent = replaceRE ` TMPLT_RATITL` `</cite>`  $theContent }}

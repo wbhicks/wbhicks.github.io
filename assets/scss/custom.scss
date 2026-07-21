@@ -11,11 +11,13 @@
    ** Vertical spacing for other block-level elements
 
    * Horizontal spacing & alignment (about 303 lines)
-   ** Horizontal spacing for HEADER, MAIN, FOOTER, & selectors
+   ** Horizontal spacing (& text-wrap-style) for HEADER, MAIN,
+      FOOTER, & selectors
    ** The max-width property & the 2 vars that are set with it
    ** Indentation for the list elements (OL, UL, & LI)
    ** Horizontal spacing for other block-level elements
    *** The text-align property for any block-level elements
+   *** The text-wrap-style property for H2, H3, H4, H5, & DIV.dek
    *** Horizontal spacing for DIV.dek
 
    * Internals for block-level elements (about 100 lines)
@@ -26,7 +28,8 @@
    ** Elements for lists (NAV, OL, UL, & LI): internals
    *** The NAV element & styling for the Detailed Table of Contents
    *** Other list items in the Detailed Table of Contents
-   *** Per-page TableOfContents, when nested in the Detailed Table of Contents
+   *** Per-page TableOfContents, when nested in the Detailed Table
+       of Contents
    ** The HR element
 
    * Span-level elements & classes
@@ -180,7 +183,7 @@
 body > div.nojs-mini-themed > table.mini-theme-selector-table,
 body > div.nojs-mini-themed > div.mono-color-selector {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
@@ -196,7 +199,6 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 }
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   main,
@@ -207,7 +209,6 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 }
 
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   main,
@@ -247,12 +248,47 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 */
 
 
-.nojs-mini-themed {
+// merged with next section
 
-  /* Replaced this dual-purpose var ...
-     --spacing-for-the-asterism-side-that-faces-the-h: 1rem;
-     ... with these 2 vars:
-  */
+
+/* =====================
+   Vertical spacing for H2, H3, H4, & DIV.rule-line-below-*
+
+   If all mini-themes displayed "asterisms" instead of "rule lines", then
+   the numeric value (e.g., 2rem) for the space between an asterism
+   and its heading could be split in half between, e.g.,
+
+   `.asterism-below-h3 { margin-top: ...` and `h3 { margin-bottom: ...`
+
+   However, rule lines are displayed instead of asterisms in some
+   mini-themes, so margin-bottom shall be zero for elements H2, H3, & H4.
+   Otherwise, there would be a gap between a heading and its rule line.
+   (For the same reason, margin-top for rule lines shall be zero.)
+
+   As a consequence, the spacing between a heading and its following
+   asterism must be handled solely by
+
+   `.asterism-below-hDIGIT { margin-top: ...`
+
+   I've retired --spacing-for-the-asterism-side-that-faces-the-h in favor
+   of two vars, one for each direction.
+   =====================
+*/
+
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+
+  main > h2.h2-from-1star,
+  main > details.beneath-asterized-h2 > h3.h3-from-2stars,
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars,
+  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
+    margin-top:    2rem;
+    margin-bottom: 0;
+  }
+
   --spacing-for-bottom-of-asterism-above: 0;
   --spacing-for-top-of-asterism-below: 2rem;
 
@@ -282,63 +318,38 @@ body > div.nojs-mini-themed > div.mono-color-selector {
   }
   main > details.beneath-asterized-h2 > div.asterism-above-h5 {
     margin-top:    var(--spacing-for-top-of-asterism-below);
-    margin-bottom: 0;
+    margin-bottom: var(--spacing-for-bottom-of-asterism-above);
   }
 
-} // End of .nojs-mini-themed
+} // End of the mini-themes that use asterisms
 
-
-/* =====================
-   Vertical spacing for H2, H3, H4, & DIV.rule-line-below-*
-
-   If all mini-themes displayed "asterisms" instead of "rule lines", then
-   the numeric value (e.g., 2rem) for the space between an asterism
-   and its heading could be split in half between, e.g.,
-
-   `.asterism-below-h3 { margin-top: ...` and `h3 { margin-bottom: ...`
-
-   However, rule lines are displayed instead of asterisms in some
-   mini-themes, so margin-bottom shall be zero for elements H2, H3, & H4.
-   Otherwise, there would be a gap between a heading and its rule line.
-   (For the same reason, margin-top for rule lines shall be zero.)
-
-   As a consequence, the spacing between a heading and its following
-   asterism must be handled solely by
-
-   `.asterism-below-hDIGIT { margin-top: ...`
-
-   I've retired --spacing-for-the-asterism-side-that-faces-the-h in favor
-   of two vars, one for each direction.
-   =====================
-*/
-
-
-.nojs-mini-themed {
-
-  --spacing-above-headings-and-below-rule-lines: 2rem;
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   main > h2.h2-from-1star,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars,
-  main > details.beneath-asterized-h2 > h4.h4-from-3stars {
-    margin-top:    var(--spacing-above-headings-and-below-rule-lines);
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars,
+  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
+    margin-top:    2rem;
     margin-bottom: 0;
   }
-
-  /* These margins are handled elsewhere, because H5 is spaced akin to
-     a typical block-level element:
-
-         `main > details.beneath-asterized-h2 > h5.h5-from-4stars`
-         `main > details.beneath-asterized-h2 > div.rule-line-below-h5` 
-  */
 
   main > div.rule-line-below-h2,
   main > details.beneath-asterized-h2 > div.rule-line-below-h3,
   main > details.beneath-asterized-h2 > div.rule-line-below-h4 {
     margin-top: 0;
-    margin-bottom: var(--spacing-above-headings-and-below-rule-lines);
+    margin-bottom: 2rem;
   }
 
-} // End of .nojs-mini-themed
+  // H5's rule line is closer to the content below it:
+  main > details.beneath-asterized-h2 > div.rule-line-below-h5 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+} // End of the mini-themes that use rule-lines
 
 
 /* =====================
@@ -380,25 +391,6 @@ body > div.nojs-mini-themed > div.mono-color-selector {
     margin-bottom: var(--margin-top-or-bottom);
   }
 
-  /* Special handling for the rule line below H5. Applying the same
-     margin-bottom as with the typical block-level elements, so that H5's
-     rule line is closer to the content below it.
-
-     Above the H5 itself, the margin-top for typical block-level elements
-     is fine when the asterism above it is visible. However, when rule
-     lines are visible instead, the margin-top needs boosting.
-  */
-
-  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
-    margin-top:    2rem; // keeps it big enough even without asterisms
-    margin-bottom: 0;
-  }
-
-  main > details.beneath-asterized-h2 > div.rule-line-below-h5 {
-    margin-top: 0;
-    margin-bottom: var(--margin-top-or-bottom);
-  }
-
 } // End of .nojs-mini-themed
 
 
@@ -417,7 +409,8 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
 
 /* =====================
-   Horizontal spacing for HEADER, MAIN, FOOTER, & selectors
+   Horizontal spacing (& text-wrap-style) for HEADER, MAIN,
+   FOOTER, & selectors
 
    For MAIN, margin-left & margin-right are each sufficient to ruin the
    desired centering of MAIN (referring here to MAIN as a block, not to the
@@ -443,6 +436,13 @@ body > div.nojs-mini-themed > header {
 body > div.nojs-mini-themed > main {
   padding-left: 1rem;
   padding-right: 1rem;
+
+  /* No effect in Firefox. See https://developer.mozilla.org/en-US/docs/W
+     eb/CSS/Reference/Properties/text-wrap-style#browser_compatibility
+
+     Demonstrable but modest effect in Safari, so far.
+  */
+  text-wrap-style: pretty;
 }
 
 body > div.nojs-mini-themed > footer {
@@ -515,14 +515,6 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
     max-width: 69ch; // 65, plus 4 to allow for the side padding
-    --padding-left-sensitive-to-max-width:  1rem;
-    --padding-right-sensitive-to-max-width: 0rem;
-  }
-}
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
-  main {
-    max-width: 69ch;
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -690,6 +682,23 @@ body > div.nojs-mini-themed > footer {
 
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   The text-wrap-style property for H2, H3, H4, H5, & DIV.dek
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+
+  main > h2.h2-from-1star,
+  main > details.beneath-asterized-h2 > h3.h3-from-2stars,
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars,
+  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
+
+  // , main > details.beneath-asterized-h2 > div.dek {
+
+    text-wrap-style: balance;
+  }
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
    Horizontal spacing for DIV.dek
 
    Unlike other block-level elements, these use max-width instead of
@@ -705,16 +714,13 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   main > details.beneath-asterized-h2 > div.dek {
-    max-width: 80%;
-    // hyphens: auto;
+    // max-width: 80%;
   }
 
 }
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -778,7 +784,8 @@ body > div.nojs-mini-themed > footer {
 
   main > h2.h2-from-1star,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars,
-  main > details.beneath-asterized-h2 > h4.h4-from-3stars {
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars,
+  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
     font-size: 1rem;
     font-weight: normal;
   }
@@ -799,7 +806,7 @@ body > div.nojs-mini-themed > footer {
   main > details.beneath-asterized-h2 > div.asterism-above-h4,
   main > details.beneath-asterized-h2 > div.asterism-below-h4,
   main > details.beneath-asterized-h2 > div.asterism-above-h5 {
-    font-family: monospace;
+    font-family: Menlo, monospace; // `Menlo, ` inserted 2026-07-20
     white-space-collapse: preserve;
     text-align: center;
     line-height: 1;
@@ -816,14 +823,12 @@ body > div.nojs-mini-themed > footer {
 
 }
 
-/* For these mini-themes, show only the rule lines and disable the BR
+/* For these mini-themes, show only the rule lines and [OBSOLETE!] disable the BR
    element that has been inserted in the middle of overly long H4's.
 */
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -850,10 +855,12 @@ body > div.nojs-mini-themed > footer {
 
   /* Below, no `>` precedes `br` because the BR element is sometimes
      nested within an inline-level element that appears in the heading.
+
+     [OBSOLETE!]
   */
-  main > details.beneath-asterized-h2 > h4.h4-from-3stars br {
-    display: none;
-  }
+//  main > details.beneath-asterized-h2 > h4.h4-from-3stars br {
+//    display: none;
+//  }
 
 }
 
@@ -921,13 +928,13 @@ body > div.nojs-mini-themed > footer {
 
   main > details.beneath-asterized-h2 > pre {
     white-space-collapse: preserve;
-    font-family: monospace !important; // TODO See if all !'s are still reqd.
+    font-family: Menlo, monospace !important; // `Menlo, ` inserted 2026-07-20
     text-wrap-mode: nowrap;
   }
 
   main code {
     white-space-collapse: preserve;
-    font-family: monospace !important;
+    font-family: Menlo, monospace !important; // `Menlo, ` inserted 2026-07-20
 
     /* Apply the Mozilla KBD style, but to CODE instead. To avoid having
        to use the :not() pseudo-class, this is broader than it needs to
@@ -1352,8 +1359,6 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   --nojs-quote-chars: '"' '"' "\'" "\'";
 }
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   // 0x2035 &bprime, 0x2032 &prime, etc.:
@@ -1384,6 +1389,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   main q::before,                       // ≤q Is this line necessary?
   main i.so-called::before {            // ≤s
     content: open-quote; // used to be "↳";
+    display: inline-block; /* Almost works: the pair of backticks clump, but cleave from first word */
   }
 
   // main > details.beneath-asterized-h2 > figure > blockquote::after,
@@ -1394,6 +1400,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   main q::after,                        // ≤q Is this line necessary?
   main i.so-called::after {             // ≤s
     content: close-quote; // used to be "↲";
+    display: inline-block; /* Almost works: the pair of primes clump, but cleave from last word */
   }
 
 } // End of .nojs-mini-themed
@@ -1497,8 +1504,6 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -1524,8 +1529,6 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   span.dash-as-emdash { display: none; }
@@ -1635,11 +1638,10 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   * {
-    font-family: Monaco;
+    font-family: Menlo; // changed from Monaco 2026-07-20;
   }
 
   table.mini-theme-selector-table,
@@ -1651,7 +1653,6 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 }
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   * {
@@ -1843,8 +1844,6 @@ table.mini-theme-selector-table > tbody > tr > td > input {
       label[for="nojs-quote-style-serif-book"],
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
       label[for="nojs-quote-style-serif-minimal"],
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked)
-      label[for="nojs-quote-style-serif-seventy-four"],
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-serif-seventy-four-monochrome"],
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
@@ -1853,8 +1852,6 @@ table.mini-theme-selector-table > tbody > tr > td > input {
       label[for="nojs-quote-style-book"],
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
       label[for="nojs-quote-style-minimal"],
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked)
-      label[for="nojs-quote-style-seventy-four"],
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-seventy-four-monochrome"] {
 
@@ -1871,8 +1868,6 @@ table.mini-theme-selector-table > tbody > tr > td > input {
       label[for="nojs-quote-style-serif-book"]::before,
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
       label[for="nojs-quote-style-serif-minimal"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked)
-      label[for="nojs-quote-style-serif-seventy-four"]::before,
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-serif-seventy-four-monochrome"]::before,
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
@@ -1881,8 +1876,6 @@ table.mini-theme-selector-table > tbody > tr > td > input {
       label[for="nojs-quote-style-book"]::before,
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
       label[for="nojs-quote-style-minimal"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked)
-      label[for="nojs-quote-style-seventy-four"]::before,
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
       label[for="nojs-quote-style-seventy-four-monochrome"]::before {
 
@@ -1946,11 +1939,9 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
   .mono-color-selector {
     display: none;
