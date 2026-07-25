@@ -80,11 +80,29 @@ outputs:
 
 ##### I.8.†-1337. Giotto, 1337 (age 70?), in Florence (Firenze)
 
+£ «... are among the few certainties about his life. Almost every other aspect of it is subject to controversy: his birth date, his birthplace, his appearance, his apprenticeship, the order in which he created his works, whether he painted the famous frescoes in the Upper Basilica of Saint Francis in Assisi, and his burial place.»
+
+~ Wikipedia
+
 ##### I.8.†-1642. Galileo, 1642 (age 77), in Florence (Firenze)
+
+£ «... Up to this point, Galileo had deliberately been kept away from mathematics, since a physician earned a higher income than a mathematician. However, after accidentally attending a lecture on geometry, ...»
+
+~ Wikipedia
 
 ##### I.8.†-1775. John Baskerville, 1775 (age 68), in Birmingham, England
 
+£ «... his body was placed on show by the landowner until Baskerville's family and friends arranged to have it moved to the crypt of ...»
+
+~ Wikipedia
+
 ##### I.8.†-1880. Emperor Norton, 1880 (age 61), in San Francisco
+
+£ «The failure to treat Norton's adopted home city with appropriate respect was the subject of a particularly stern edict ...: ‹Whoever after due and proper warning shall be heard to utter the abominable word ≤sFrisco≥, which has no linguistic or other warrant, shall be deemed guilty ...›»
+
+~ Wikipedia
+
+¢ [① 1st ellipsis abuts colon: ?; ② Expand nested quo. as a blockquote; ③ Credit nested quo. to Norton; ④ IGT breaks nesting. -- ȐD]
 
 ##### I.8.†-1896. Paul Verlaine, 1896 (age 51), in Paris
 

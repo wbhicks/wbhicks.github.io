@@ -2,6 +2,21 @@
 <html lang="{{ site.Language.LanguageCode }}">
   <head>
     <meta charset="utf-8" />
+    
+    {{- /* Added the following 3-line stylesheet link 2026-07-25
+
+           "By placing the font link elements immediately after the head element
+            and the mandatory first meta element to define the page’s encoding,
+            the browser can start the web font loading process as early as
+            possible."
+
+            Source: https://m3.material.io/blog/reduce-reflow-with-web-fonts
+    */ -}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400&display=swap" rel="stylesheet">
+
     <title>
       {{ .Title }}
     </title>
@@ -52,7 +67,6 @@
       {{ $stylesGalleriesDeluxe = $stylesGalleriesDeluxe | fingerprint }}
     {{ end }}
     <link href="{{ $stylesGalleriesDeluxe.RelPermalink }}" rel="stylesheet" />
-
 
     {{ $stylesMine := resources.Get "scss/custom.scss" }}
     {{ $stylesMine = $stylesMine | css.Sass $options }}

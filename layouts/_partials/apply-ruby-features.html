@@ -3,7 +3,7 @@
 {{ $theRubyText := "NO_RUBY_MATCH_FOUND" }}
 {{ $mostRecentLinkTitle := .mRLT }}
 
-{{ if (eq .full_or_light "full") }}
+{{ if (eq .full_or_light "THIS_STR_WAS_full") }}
 
 {{ $contentWithRuby = replaceRE
       ` `

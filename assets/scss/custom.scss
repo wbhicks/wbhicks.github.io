@@ -1,6 +1,6 @@
 /* Table Of Contents
 
-   * Variables 
+   * Variables
    ** Variables duplicated in vars-custom.scss and custom.scss 
    ** Variables internal to this file (custom.scss)
 
@@ -198,7 +198,15 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked) {
+
+  main,
+  footer {
+    line-height: 1.7;
+  }
+
+}
+
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   main,
@@ -208,7 +216,15 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+
+  main,
+  footer {
+    line-height: 1.7;
+  }
+
+}
+
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   main,
@@ -279,7 +295,9 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
   main > h2.h2-from-1star,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars,
@@ -323,8 +341,6 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
 } // End of the mini-themes that use asterisms
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -514,15 +530,15 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
-    max-width: 69ch; // 65, plus 4 to allow for the side padding
-    --padding-left-sensitive-to-max-width:  1rem;
-    --padding-right-sensitive-to-max-width: 0rem;
+    max-width: 84ch;
+    --padding-left-sensitive-to-max-width:  2rem;
+    --padding-right-sensitive-to-max-width: 2rem;
   }
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   main {
-    max-width: 69ch;
+    max-width: 69ch; // 65, plus 4 to allow for the side padding
     --padding-left-sensitive-to-max-width:  1rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
@@ -711,7 +727,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
   main > details.beneath-asterized-h2 > div.dek {
     // max-width: 80%;
@@ -719,8 +737,6 @@ body > div.nojs-mini-themed > footer {
 
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -753,6 +769,8 @@ body > div.nojs-mini-themed > footer {
 
    Asterisms appear above & below the heading; rule lines below.
 
+   For H1, which is used only for page titles, see "Font-family for title"
+
    See also: "The text-align property for any block-level elements"
    =====================
 */
@@ -763,14 +781,6 @@ body > div.nojs-mini-themed > footer {
   header > div.the-div-child-of-the-header > ul.top-link-row > 
       li > span.current-page-in-top-link-row {
     // TODO: Not yet styled. Also, should be in another section.
-  }
-
-//body >
-//  div.nojs-mini-themed >
-  header >
-    div.the-div-child-of-the-header >
-      h1 {
-        font-weight: normal;
   }
 
   main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
@@ -797,7 +807,9 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
@@ -827,8 +839,6 @@ body > div.nojs-mini-themed > footer {
    element that has been inserted in the middle of overly long H4's.
 */
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -1357,7 +1367,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
-  --nojs-quote-chars: '"' '"' "\'" "\'";
+  --nojs-quote-chars: "“" "”" "‘" "’";
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
@@ -1367,6 +1377,10 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 /* I ditched this style. Authentic but ugly.
    --nojs-quote-chars: "‵‵" "\'\'" "‵" "\'";
+*/
+
+/* I ditched this vertical-quotes style too.
+   --nojs-quote-chars: '"' '"' "\'" "\'";
 */
 
 .nojs-mini-themed {
@@ -1489,7 +1503,9 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
   main span.apost-apost {
     display: none; // only apost-rsquo shall be shown
@@ -1502,8 +1518,6 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
    the HTML named entity "&apos;".
 */
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -1523,12 +1537,12 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   span.dash-as-hyphens { display: none; }
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   span.dash-as-emdash { display: none; }
@@ -1559,13 +1573,15 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 */
 
 
-//body >
-//  div.nojs-mini-themed >
-//    header >
-//      div.the-div-child-of-the-header >
-//        h1 {
-//  font-family: "Futura Medium" !important;
-//}
+body >
+  div.nojs-mini-themed >
+    header >
+      div.the-div-child-of-the-header >
+        h1 {
+  font-family: "EB Garamond" !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
 
 
 /* =====================
@@ -1637,7 +1653,45 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 */
 
 
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+
+  * {
+    font-family: Helvetica;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
+
+  * {
+    font-family: Georgia;
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    font-family: Helvetica;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+
+* {
+    font-family: "IBM Plex Serif";
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    font-family: Helvetica;
+  }
+}
+
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   * {
@@ -1652,11 +1706,12 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   }
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked) {
 
   * {
-    font-family: Courier;
+    font-family: "IBM Plex Serif";
+    font-weight: 400;
+    font-style: italic;
   }
 
   table.mini-theme-selector-table,
@@ -1667,19 +1722,10 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   }
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   * {
-    font-family: Helvetica;
-  }
-}
-
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
-
-  * {
-    font-family: Georgia;
+    font-family: Courier;
   }
 
   table.mini-theme-selector-table,
