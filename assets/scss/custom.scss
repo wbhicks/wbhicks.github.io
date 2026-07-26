@@ -1573,16 +1573,30 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 */
 
 
-body >
-  div.nojs-mini-themed >
-    header >
-      div.the-div-child-of-the-header >
-        h1 {
-  font-family: "EB Garamond" !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+  header >
+    div.the-div-child-of-the-header >
+      h1 {
+    font-family: "EB Garamond" !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+  }
 }
 
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+  header >
+    div.the-div-child-of-the-header >
+      h1 {
+    font-weight: 400 !important;
+  }
+}
 
 /* =====================
    CSS lets you specify a generic font-family. These include serif,
@@ -1646,6 +1660,11 @@ body >
    --font-family-monospaced-sans-serif: Monaco;
    --font-family-monospaced-serif: Courier;
 
+   font-variant-numeric is redundant in Georgia & has no effect in 
+   Courier, EB Garamond, Fira Mono, Fira Sans, Helvetica, IBM Plex Serif, Libertinus Serif:
+
+   font-variant-numeric: oldstyle-nums;
+
    monospaced for Windows: Courier New is serif, Consolas is sans-serif
 
    TODO: Inter (which is proportional only), from https://rsms.me/inter/
@@ -1653,16 +1672,22 @@ body >
 */
 
 
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
 
   * {
+    font-family: "Libertinus Serif"; // was Helvetica;
+    font-weight: 400;
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
     font-family: Helvetica;
   }
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked) {
 
   * {
     font-family: Georgia;
@@ -1676,12 +1701,11 @@ body >
   }
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
-* {
-    font-family: "IBM Plex Serif";
+  * {
+    font-family: Helvetica; // "EB Garamond" was too whimsical
     font-weight: 400;
-    font-style: italic;
   }
 
   table.mini-theme-selector-table,
@@ -1692,10 +1716,42 @@ body >
   }
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
 
   * {
-    font-family: Menlo; // changed from Monaco 2026-07-20;
+    font-family: "Libertinus Serif"; // TODO increase by 10pct to mimic width of Georgia
+    font-size: 1.1rem;
+
+
+
+
+// NEAR-DUPE: MAKE COMPACT
+  main > h2.h2-from-1star,
+  main > details.beneath-asterized-h2 > h3.h3-from-2stars,
+  main > details.beneath-asterized-h2 > h4.h4-from-3stars,
+  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+
+
+
+
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    font-family: Helvetica;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+
+* {
+    font-family: "Fira Sans";
+    font-weight: 400;
   }
 
   table.mini-theme-selector-table,
@@ -1712,6 +1768,22 @@ body >
     font-family: "IBM Plex Serif";
     font-weight: 400;
     font-style: italic;
+  }
+
+  table.mini-theme-selector-table,
+  table.mini-theme-selector-table *,
+  div.mono-color-selector,
+  div.mono-color-selector * {
+    font-family: Helvetica;
+  }
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+
+  * {
+    font-family: "Fira Mono"; // TODO use parens & brackets from Monaco;
+    font-weight: 400;
+    // n.b.: Fira Mono is designed only in normal, without italic.
   }
 
   table.mini-theme-selector-table,
