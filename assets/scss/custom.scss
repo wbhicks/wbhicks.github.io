@@ -1583,9 +1583,9 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   header >
     div.the-div-child-of-the-header >
       h1 {
-    font-family: "EB Garamond" !important;
+//    font-family: "EB Garamond" !important;
     font-weight: 400 !important;
-    font-style: normal !important;
+//    font-style: normal !important;
   }
 }
 
@@ -1660,14 +1660,11 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
    --font-family-monospaced-sans-serif: Monaco;
    --font-family-monospaced-serif: Courier;
 
-   font-variant-numeric is redundant in Georgia & has no effect in 
-   Courier, EB Garamond, Fira Mono, Fira Sans, Helvetica, IBM Plex Serif, Libertinus Serif:
-
-   font-variant-numeric: oldstyle-nums;
+   `font-variant-numeric: oldstyle-nums;` is redundant in Georgia & has
+   no effect in Courier, EB Garamond, Fira Mono, Fira Sans, Helvetica,
+   IBM Plex Serif, Libertinus Serif.
 
    monospaced for Windows: Courier New is serif, Consolas is sans-serif
-
-   TODO: Inter (which is proportional only), from https://rsms.me/inter/
    =====================
 */
 
@@ -1675,7 +1672,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
 
   * {
-    font-family: "Libertinus Serif"; // was Helvetica;
+    font-family: "Fira Sans"; // was Helvetica;
     font-weight: 400;
   }
 
@@ -1690,7 +1687,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked) {
 
   * {
-    font-family: Georgia;
+    font-family: "EB Garamond"; // was Georgia;
+    font-weight: 400;
   }
 
   table.mini-theme-selector-table,
@@ -1704,7 +1702,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   * {
-    font-family: Helvetica; // "EB Garamond" was too whimsical
+    font-family: "Fira Sans"; // was Helvetica;
     font-weight: 400;
   }
 
@@ -1719,25 +1717,9 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
 
   * {
-    font-family: "Libertinus Serif"; // TODO increase by 10pct to mimic width of Georgia
-    font-size: 1.1rem;
-
-
-
-
-// NEAR-DUPE: MAKE COMPACT
-  main > h2.h2-from-1star,
-  main > details.beneath-asterized-h2 > h3.h3-from-2stars,
-  main > details.beneath-asterized-h2 > h4.h4-from-3stars,
-  main > details.beneath-asterized-h2 > h5.h5-from-4stars {
-    font-size: 1.1rem;
-    font-weight: normal;
-  }
-
-
-
-
-  }
+    font-family: "EB Garamond"; // was Georgia;
+    font-weight: 400;
+}
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
@@ -1750,8 +1732,9 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
 * {
-    font-family: "Fira Sans";
+    font-family: "IBM Plex Serif";
     font-weight: 400;
+    font-style: italic;
   }
 
   table.mini-theme-selector-table,
