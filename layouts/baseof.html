@@ -12,26 +12,39 @@
 
             Source: https://m3.material.io/blog/reduce-reflow-with-web-fonts
 
-            Libertinus+Sans is not nearly as nice as Fira+Sans.
+            Libertinus Sans is not nearly as nice as Fira Sans.
 
             EB Garamond narrowly edges out Libertinus Serif.
 
-            The ugly IBM+Plex+Serif normal (i.e., non-italic) is of value ONLY for, e.g.,
-            book titles and unassimilated loanwords within a wholly-italicized IBMPS site.
+            If installed, the ugly normal (i.e., non-italic) of IBM Plex Serif ruins the italicized IBMPS.
 
-            Inter is meh.
 
-            Fira Mono beats Menlo and Monaco, except for Monaco's () and []
+            Noto+Sans+Symbols+2 has all the obscure characters I use:
+
+·	middle dot	0267	183	0xB7	&middot;
+❛	heavy single turned comma quotation mark ornament	023533	10075	0x275B	&#10075;
+❜	heavy single        comma quotation mark ornament	023534	10076	0x275C	&#10076;
+❝	heavy double turned comma quotation mark ornament	023535	10077	0x275D	&#10077;
+❞	heavy double        comma quotation mark ornament	023536	10078	0x275E	&#10078;
+
+$ find ../../layouts -name '*' -type f -exec grep -o . {} \; | grep -v '}' | grep -v '{' | grep -v '\]' | grep -v '\[' | grep -v "[-A-Za-z0-9~@#¢£∂$%^&*◉⬤ⓔⓝⓢⓜⓣⓕⓁⓑⓐⓦⓒ∫®§†◯●•□—–≡‖,.;:/|»«‹›<>≤≥〈〉↓↑↗_=+\?\!\"\)\(\`\'\”\“\’\‘\❝\❞\❛\❜\·\" ]"
+
+
+            Fira Mono, which is fine, beats Menlo and Monaco, except for Monaco's () and [].
+            But Courier is even better, so why keep Fira Mono around?
+
+            p.s. Fira Mono is designed only in normal, without italic.
 
             If you have a font used for titles only, this may save on download size:
             ... &text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.-%21%26%28%29%2C%3A%3B%3F%E2%80%93%E2%80%94
     */ -}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap" rel="stylesheet">
 
     <title>
       {{ .Title }}

@@ -176,6 +176,11 @@
    * Disclaimer: I re-measured in a different context and found Monaco
      to be about 38 percent "taller", but I think this may vary by
      browser or font size anyway.
+
+   ---
+
+   A line-height of 1.7 was my choice for Helvetica and Georgia. 1.95 is
+   good for Monaco.
    =====================
 */
 
@@ -186,28 +191,18 @@ body > div.nojs-mini-themed > div.mono-color-selector {
   padding-bottom: 1rem;
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked) {
 
   main,
   footer {
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked) {
-
-  main,
-  footer {
-    line-height: 1.7;
-  }
-
-}
-
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
 
   main,
   footer {
@@ -216,20 +211,22 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked) {
 
   main,
   footer {
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked),
+.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   main,
   footer {
-    line-height: 1.95;
+    line-height: 1.5;
   }
 
 }
@@ -295,9 +292,7 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   main > h2.h2-from-1star,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars,
@@ -341,6 +336,9 @@ body > div.nojs-mini-themed > div.mono-color-selector {
 
 } // End of the mini-themes that use asterisms
 
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -514,32 +512,67 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
   main {
-    max-width: 84ch; // 80, plus 4 to allow for the side padding
-    --padding-left-sensitive-to-max-width:  2rem;
-    --padding-right-sensitive-to-max-width: 2rem;
+    /* For Fira Sans, goal is a max of ≈80 per line:
+
+       For Fira Sans, `max-width: 65ch;` resulted in a max of 77
+       on rare occasion. 68ch resulted in a max of 82, but rarely,
+       which seems ok. The Lorem ipsum average was 78 per line.
+
+       This is unrelated to the `...-sensitive-to-max-width` values,
+       which are for smaller blocks nested within main.
+    */
+    max-width: 68ch;
+    --padding-left-sensitive-to-max-width:  0rem;
+    --padding-right-sensitive-to-max-width: 0rem;
   }
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   main {
-    max-width: 84ch;
-    --padding-left-sensitive-to-max-width:  2rem;
-    --padding-right-sensitive-to-max-width: 2rem;
+    /* For EB Garamond, goal is a max of ≈80 per line:
+
+       65ch is good enough. The Lorem ipsum average was 77 per line.
+       In Safari, I spotted one line of 83. In Firefox, I spotted
+       one line of 84.
+    */
+    max-width: 65ch;
+    --padding-left-sensitive-to-max-width:  0rem;
+    --padding-right-sensitive-to-max-width: 0rem;
   }
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   main {
-    max-width: 84ch;
-    --padding-left-sensitive-to-max-width:  2rem;
-    --padding-right-sensitive-to-max-width: 2rem;
+    /* For IBM Plex Serif Italic, goal is a max of ≈65 per line:
+
+       At a setting of 51ch, the Lorem ipsum average was 62 per line.
+
+       `max-width: 65ch;` allows lines up to 86 characters long, using
+       this specific font (IBM Plex Serif's italic subset only). Oddly,
+       `max-width: 45ch;` allows lines up to only 59 long. Setting it to
+       51 seems reasonable & results in 66 or 67 only on rare occasion.
+    */
+    max-width: 51ch;
+    --padding-left-sensitive-to-max-width:  0rem;
+    --padding-right-sensitive-to-max-width: 0rem;
   }
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
   main {
-    max-width: 69ch; // 65, plus 4 to allow for the side padding
-    --padding-left-sensitive-to-max-width:  1rem;
+    /* For Courier, goal is a max of ≈65 per line:
+
+       At a setting of 65ch, the Lorem ipsum average was 62 per line.
+       Courier is monospace, so the concept of "rare excesses beyond
+       the max" doesn't apply.
+
+       65, plus 4 to allow for the side padding added above, minus 4 to
+       compensate for the fact that line wrapping is quite lenient. This
+       is unrelated to the 2 variables `...-sensitive-to-max-width`,
+       which are for smaller blocks nested within main.
+    */
+    max-width: 65ch;
+    --padding-left-sensitive-to-max-width:  0rem;
     --padding-right-sensitive-to-max-width: 0rem;
   }
 }
@@ -644,8 +677,8 @@ body > div.nojs-mini-themed > footer {
 
   main > details.beneath-asterized-h2 > figure {
     // Use padding-left instead of margin-left, for same reason as OL and UL
-    padding-left: var(--padding-left-sensitive-to-max-width);
-    padding-right: var(--padding-right-sensitive-to-max-width);
+//    padding-left: var(--padding-left-sensitive-to-max-width);
+//    padding-right: var(--padding-right-sensitive-to-max-width);
   }
 
   main > details.beneath-asterized-h2 > figure > blockquote > p {
@@ -659,7 +692,8 @@ body > div.nojs-mini-themed > footer {
     /* Use padding-left instead of margin-left, for same reason as OL & UL.
        "nowrap" has been set for all PRE elements, so padding-right is moot.
     */
-    padding-left: var(--padding-left-sensitive-to-max-width);
+    padding-left: 1rem;
+    border-left: 1px solid var(--color-code-border);
   }
 
 } // End of .nojs-mini-themed
@@ -727,9 +761,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   main > details.beneath-asterized-h2 > div.dek {
     // max-width: 80%;
@@ -737,6 +769,8 @@ body > div.nojs-mini-themed > footer {
 
 }
 
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -807,9 +841,7 @@ body > div.nojs-mini-themed > footer {
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
 
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
@@ -835,10 +867,14 @@ body > div.nojs-mini-themed > footer {
 
 }
 
+
 /* For these mini-themes, show only the rule lines and [OBSOLETE!] disable the BR
    element that has been inserted in the middle of overly long H4's.
 */
 
+
+.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
@@ -1358,15 +1394,18 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
+  // These 4 are called `single/double [turned] comma quotation mark ornament`
+  // a.k.a. `&#1007[5-8];`
   --nojs-quote-chars: '❝' '❞' "❛" "❜";
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
-  // 0x2018 &lsquo, 0x2019 &rsquo, etc.:
+  // These 4 are 0x2018 &lsquo, 0x2019 &rsquo, etc.:
   --nojs-quote-chars: "“" "”" "‘" "’";
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+  // These 4 are 0x2018 &lsquo, 0x2019 &rsquo, etc.:
   --nojs-quote-chars: "“" "”" "‘" "’";
 }
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked),
@@ -1435,6 +1474,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   main i.nickname::after,               // ≤n
   main q::after,                        // ≤q
   main i.so-called::after {             // ≤s
+    font-family: "Noto Sans Symbols 2";
     color: #808080;
     font-size: 1.7rem;
     position: relative;
@@ -1672,7 +1712,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
 
   * {
-    font-family: "Fira Sans"; // was Helvetica;
+    font-family: "Fira Sans", "Noto Sans Symbols", "Noto Sans Symbols 2", sans-serif;
     font-weight: 400;
   }
 
@@ -1687,7 +1727,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked) {
 
   * {
-    font-family: "EB Garamond"; // was Georgia;
+    font-family: "Fira Sans", "Noto Sans Symbols", "Noto Sans Symbols 2", sans-serif;
     font-weight: 400;
   }
 
@@ -1702,7 +1742,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-book:checked) {
 
   * {
-    font-family: "Fira Sans"; // was Helvetica;
+    font-family: "EB Garamond", "Noto Sans Symbols", "Noto Sans Symbols 2", serif;
     font-weight: 400;
   }
 
@@ -1717,7 +1757,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked) {
 
   * {
-    font-family: "EB Garamond"; // was Georgia;
+    font-family: "EB Garamond", "Noto Sans Symbols", "Noto Sans Symbols 2", serif;
     font-weight: 400;
 }
 
@@ -1732,7 +1772,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
 * {
-    font-family: "IBM Plex Serif";
+    font-family: "IBM Plex Serif", "Noto Sans Symbols", "Noto Sans Symbols 2", serif;
     font-weight: 400;
     font-style: italic;
   }
@@ -1748,7 +1788,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked) {
 
   * {
-    font-family: "IBM Plex Serif";
+    font-family: "IBM Plex Serif", "Noto Sans Symbols", "Noto Sans Symbols 2", serif;
     font-weight: 400;
     font-style: italic;
   }
@@ -1764,9 +1804,7 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked) {
 
   * {
-    font-family: "Fira Mono"; // TODO use parens & brackets from Monaco;
-    font-weight: 400;
-    // n.b.: Fira Mono is designed only in normal, without italic.
+    font-family: Courier, "Noto Sans Symbols", "Noto Sans Symbols 2", monospace;
   }
 
   table.mini-theme-selector-table,
@@ -1774,13 +1812,19 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
+  }
+
+  // Monaco's ) ( ] [ are lovely and deserve to be seen:
+
+  span.lparen, span.rparen, span.lsqbkt, span.rsqbkt {
+    font-family: Monaco;
   }
 }
 
 .nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked) {
 
   * {
-    font-family: Courier;
+    font-family: Courier, "Noto Sans Symbols", "Noto Sans Symbols 2", monospace;
   }
 
   table.mini-theme-selector-table,
@@ -1788,6 +1832,12 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
+  }
+
+  // Monaco's ) ( ] [ are lovely and deserve to be seen:
+
+  span.lparen, span.rparen, span.lsqbkt, span.rsqbkt {
+    font-family: Monaco;
   }
 }
 

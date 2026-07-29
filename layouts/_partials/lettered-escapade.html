@@ -63,12 +63,12 @@ end of comment was here
          $1, $2 etc. must be followed by a space in the
          definition of one of the replacements above.
   */ -}}
-  {{ $theContent = replaceRE `TMPLT_LPAREN ` `(`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LPAREN` `(`  $theContent }}
-  {{ $theContent = replaceRE ` TMPLT_RPAREN` `)`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RPAREN` `)`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_RSQBKT` `]`  $theContent }}
-  {{ $theContent = replaceRE `TMPLT_LSQBKT` `[`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LPAREN ` `<span class="lparen">(</span>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LPAREN` `<span class="lparen">(</span>`  $theContent }}
+  {{ $theContent = replaceRE ` TMPLT_RPAREN` `<span class="rparen">)</span>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RPAREN` `<span class="rparen">)</span>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_RSQBKT` `<span class="rsqbkt">]</span>`  $theContent }}
+  {{ $theContent = replaceRE `TMPLT_LSQBKT` `<span class="lsqbkt">[</span>`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_QSTNMK` `?`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_PLUSSN` `+`  $theContent }}
   {{ $theContent = replaceRE `TMPLT_DOLLAR` `$`  $theContent }}

@@ -1,6 +1,6 @@
 ---
 linkTitle: Home
-title: Site Title Here
+title: Site “Title” ‘Here’
 #COMMENT description: Rendered in html ... head ... meta.
 #COMMENT summary: Or use as a teaser.
 #COMMENT keywords: Rendered in html ... head ... meta.
