@@ -69,10 +69,7 @@
    `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
 
    The Galleries Deluxe default for --color-primary is #3a98b9. It applies
-   to the A element. 
-
-   The lightness of --color-background automatically determines which of
-   --color-text-light or --color-text-dark is used.
+   to the A element.
 
    UPDATE:
 
@@ -96,16 +93,10 @@
 --color-background: #141414;
 --color-background-footer: #171717; // was darken(#111, 3%);
 
---color-text-light: #ffe0cc;
---color-text: var(--color-text-light);
---color-text-footer: var(--color-text-light);
+--color-text: #ffe0cc;
+--color-text-footer: var(--color-text);
 
 }
-
-/* Unused, because my --color-background is darker than a certain
-   threshhold:
-   --color-text-dark: #000;
-*/
 
 /* In Galleries Deluxe only, unchanged here:
    --font-size-base: 16px !default;
@@ -1718,6 +1709,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
@@ -1733,6 +1726,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
@@ -1748,6 +1743,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
@@ -1763,6 +1760,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
@@ -1779,9 +1778,12 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
+    font-style: normal;
   }
 }
 
@@ -1795,9 +1797,12 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
+    font-style: normal;
   }
 }
 
@@ -1809,6 +1814,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
@@ -1829,6 +1836,8 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
     font-family: Helvetica;
@@ -1858,12 +1867,12 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 
 * {
-  --color-when-mini-theme-is-monochrome: var(--color-text-light);
+  --color-when-mini-theme-is-monochrome: var(--color-text);
 }
 
 .nojs-mini-themed:has(#nojs-mono-color-default:checked) {
   * {
-    --color-when-mini-theme-is-monochrome: var(--color-text-light);
+    --color-when-mini-theme-is-monochrome: var(--color-text);
   }
 }
 
@@ -1927,9 +1936,11 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
   table.mini-theme-selector-table,
   table.mini-theme-selector-table *,
+  div.page-flavor-selector,
+  div.page-flavor-selector *,
   div.mono-color-selector,
   div.mono-color-selector * {
-    color: var(--color-text-light);
+    color: var(--color-text);
   }
 
 }
@@ -1988,53 +1999,6 @@ table.mini-theme-selector-table > tbody > tr > td > input {
   // accent-color: red;
 }
 
-/*
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked)
-      label[for="nojs-quote-style-serif-rococo"],
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked)
-      label[for="nojs-quote-style-serif-book"],
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
-      label[for="nojs-quote-style-serif-minimal"],
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
-      label[for="nojs-quote-style-serif-seventy-four-monochrome"],
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
-      label[for="nojs-quote-style-rococo"],
-.nojs-mini-themed:has(#nojs-quote-style-book:checked)
-      label[for="nojs-quote-style-book"],
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
-      label[for="nojs-quote-style-minimal"],
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
-      label[for="nojs-quote-style-seventy-four-monochrome"] {
-
-  color: var(--color-button-foreground-selected);
-  background: var(--color-button-background-selected);
-
-}
-*/
-
-/*
-.nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked)
-      label[for="nojs-quote-style-serif-rococo"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-serif-book:checked)
-      label[for="nojs-quote-style-serif-book"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked)
-      label[for="nojs-quote-style-serif-minimal"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-serif-seventy-four-monochrome:checked)
-      label[for="nojs-quote-style-serif-seventy-four-monochrome"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
-      label[for="nojs-quote-style-rococo"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-book:checked)
-      label[for="nojs-quote-style-book"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
-      label[for="nojs-quote-style-minimal"]::before,
-.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
-      label[for="nojs-quote-style-seventy-four-monochrome"]::before {
-
-  content: "✓";
-
-}
-*/
-
 
 /* =====================
    The row of radio buttons to select a mono-color
@@ -2044,7 +2008,10 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 */
 
 
-.mono-color-selector label {
+// THE page-flavor-selector LINE IS NEW
+
+.mono-color-selector label,
+.page-flavor-selector label {
 
   padding: 0.3rem 1rem;
   border-radius: 1rem;
@@ -2068,9 +2035,33 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
   color: var(--color-button-foreground-selected);
   background: var(--color-button-background-selected);
-  border: 2px solid var(--color-text-light);
+  border: 2px solid var(--color-text);
 
 }
+
+
+
+
+// NEW
+
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
+      label[for="nojs-quote-style-rococo"],
+.nojs-mini-themed:has(#nojs-quote-style-book:checked)
+      label[for="nojs-quote-style-book"],
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
+      label[for="nojs-quote-style-minimal"],
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-seventy-four-monochrome"] {
+
+  color: var(--color-button-foreground-selected);
+  background: var(--color-button-background-selected);
+  border: 2px solid var(--color-text);
+
+}
+
+
+
+
 
 .nojs-mini-themed:has(#nojs-mono-color-default:checked)
       label[for="nojs-mono-color-default"]::before,
@@ -2087,6 +2078,28 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 
 }
 
+
+
+
+
+// NEW
+
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked)
+      label[for="nojs-quote-style-rococo"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-book:checked)
+      label[for="nojs-quote-style-book"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-minimal:checked)
+      label[for="nojs-quote-style-minimal"]::before,
+.nojs-mini-themed:has(#nojs-quote-style-seventy-four-monochrome:checked)
+      label[for="nojs-quote-style-seventy-four-monochrome"]::before {
+
+  content: "X ";
+
+}
+
+
+
+
 .nojs-mini-themed:has(#nojs-quote-style-serif-rococo:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-serif-minimal:checked),
@@ -2094,9 +2107,9 @@ table.mini-theme-selector-table > tbody > tr > td > input {
 .nojs-mini-themed:has(#nojs-quote-style-book:checked),
 .nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
-  .mono-color-selector {
-    display: none;
-  }
+//  .mono-color-selector {
+//    display: none;
+//  }
 
 }
 

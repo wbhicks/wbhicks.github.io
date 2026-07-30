@@ -131,6 +131,26 @@ $ find ../../layouts -name '*' -type f -exec grep -o . {} \; | grep -v '}' | gre
       <!-- The selector for mini-themes (whether a DIV or a TABLE) must be contained -->
       <!-- in the nojs-mini-themed DIV. -->
 
+      <!-- The page-flavor-selector DIV must be contained in the nojs-mini-themed DIV. -->
+      <div class="page-flavor-selector">
+
+        Flavor (micro-theme) for this page:
+
+        <input type="radio" name="mini-theme" id="nojs-quote-style-rococo" checked>
+        <label for="nojs-quote-style-rococo">Rococo</label>
+
+        <input type="radio" name="mini-theme" id="nojs-quote-style-book">
+        <label for="nojs-quote-style-book">Book</label>
+
+        <input type="radio" name="mini-theme" id="nojs-quote-style-minimal">
+        <label for="nojs-quote-style-minimal">Min.</label>
+
+        <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four-monochrome">
+        <label for="nojs-quote-style-seventy-four-monochrome">74 mono</label>
+
+      </div><!-- end of class page-flavor-selector -->
+
+{{/* ⬤◯●
 <table class="mini-theme-selector-table">
   <caption>
     Mini-themes
@@ -150,7 +170,7 @@ $ find ../../layouts -name '*' -type f -exec grep -o . {} \; | grep -v '}' | gre
         Sans
       </td>
       <td>
-        <input type="radio" name="mini-theme" id="nojs-quote-style-rococo">
+        <input type="radio" name="mini-theme" id="nojs-quote-style-rococo" checked>
         <label for="nojs-quote-style-rococo"></label>
       </td>
       <td>
@@ -165,19 +185,17 @@ $ find ../../layouts -name '*' -type f -exec grep -o . {} \; | grep -v '}' | gre
         <input type="radio" name="mini-theme" id="nojs-quote-style-seventy-four-monochrome">
         <label for="nojs-quote-style-seventy-four-monochrome"></label>
       </td>
-{{/* ⬤◯●
       <td>
         <input type="radio" name="mini-theme" id="nojs-quote-style-none">
         <label for="nojs-quote-style-none">debug</label>
       </td>
-*/}}
     </tr>
     <tr>
       <td>
         Serif
       </td>
       <td>
-        <input type="radio" name="mini-theme" id="nojs-quote-style-serif-rococo" checked>
+        <input type="radio" name="mini-theme" id="nojs-quote-style-serif-rococo">
         <label for="nojs-quote-style-serif-rococo"></label>
       </td>
       <td>
@@ -195,6 +213,7 @@ $ find ../../layouts -name '*' -type f -exec grep -o . {} \; | grep -v '}' | gre
     </tr>
   </tbody>
 </table><!-- End of mini-theme-selector-table -->
+⬤◯● */}}
 
 {{/* thinking of changing rococo to entre-deux-guerres */}}
 
