@@ -29,9 +29,6 @@
 
    `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
 
-   The Galleries Deluxe default for --color-primary is #3a98b9. It applies
-   to the A element.
-
    UPDATE:
 
    See https://github.com/bep/galleriesdeluxe/tree/main?tab=readme-ov-f
@@ -45,17 +42,12 @@
 
 
 // For compat with galleriesdeluxe v0.6.0, I've replaced $ with -- in
-// the following 4 lines and wrapped them in a :root block. I've also 
-// set --color-text and --color-text-footer as per the above link:
+// the following 2 lines and wrapped them in a :root block.
 
 :root {
 
---color-primary: #ccae8f;
---color-background: #141414;
---color-background-footer: #171717; // was darken(#111, 3%);
-
---color-text: #ffe0cc;
---color-text-footer: #ffe0cc;
+//DELME--color-background: #141414;
+//DELME--color-background-footer: #171717; // was darken(#111, 3%);
 
 }
 

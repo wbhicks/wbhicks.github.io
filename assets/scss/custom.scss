@@ -68,9 +68,6 @@
 
    `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
 
-   The Galleries Deluxe default for --color-primary is #3a98b9. It applies
-   to the A element.
-
    UPDATE:
 
    See https://github.com/bep/galleriesdeluxe/tree/main?tab=readme-ov-f
@@ -89,12 +86,37 @@
 
 :root {
 
---color-primary: #ccae8f;
---color-background: #141414;
---color-background-footer: #171717; // was darken(#111, 3%);
+  /* Recent Galleries Deluxe update means --color-text, --color-text-footer,
+     --color-primary, --color-background & --color-background-footer do
+     NOT need to appear in vars-custom.css.
 
---color-text: #ffe0cc;
---color-text-footer: var(--color-text);
+     They take effect through the Galleries Deluxe module, so they don't
+     need to be mentioned elsewhere in custom.scss (though they may be).
+  */
+  --color-text: #ffe0cc;
+  --color-text-footer: var(--color-text);
+
+  /* --color-primary is the color for the A element (i.e., links).
+ 
+     Based on a search through the Galleries Deluxe v0.7.0 codebase,
+     --color-primary might be thought of as "--color-anchor-links",
+     because it affects only the A element (and a couple of additional
+     cases too minor to mention).
+
+     https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-0
+     Trying the above, WHATWG-endorsed, color standard ...
+     color: #0000ee;
+     ... but too bold and dark. Reducing saturation from 100pct to 10pct:
+  */
+  --color-primary: #d7d7ee; // #3a98b9 is the Galleries Deluxe default
+
+  /* I applied #9f9fee (which is the same as above, except saturation
+     is 33pct) when I modified the URL link icon, which is
+     images/link-external-small-ltr-progressive.svg
+  */
+
+  --color-background: #141414;
+  --color-background-footer: #171717; // was darken(#111, 3%);
 
 }
 
@@ -121,10 +143,8 @@
 
   --color-button-foreground-unselected: #ccc;
   --color-button-background-unselected: #333;
-  --color-button-foreground-selected: var(--color-primary);
-
-  // was #335170, which is the RGB opposite of #ccae8f, the value of --color-primary
-  --color-button-background-selected: #000000;
+  --color-button-foreground-selected:   #fff;
+  --color-button-background-selected:   #000;
 
   /* Doesn't work: never fills entire background. Setting --color-background
      directly (conditionally, in blocks with :checked) doesn't work either.
@@ -1207,9 +1227,6 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 /* =====================
    The A element
-
-   This overrides Galleries Deluxe, which applies the variable --color-primary
-   to the A element. (It is #3a98b9 by default, but is redefined above.)
    =====================
 */
 
@@ -1217,17 +1234,10 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 .nojs-mini-themed {
 
   a {
+    /* Galleries Deluxe applies the variable --color-primary
+       to the A element.
+    */
     font-weight: normal;
-
-    // https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-0
-    // Trying the above color standard ...
-    // color: #0000ee;
-    // ... but too bold and dark. Reducing saturation from 100pct to 33pct:
-
-    color: #9f9fee;
-
-    // I applied the same color in the definition of the URL
-    // link icon, images/link-external-small-ltr-progressive.svg
   }
 
 }
