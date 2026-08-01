@@ -79,6 +79,20 @@
    =====================
 */
 
+  /* A recent Galleries Deluxe update means that these 5 variables:
+
+     --color-text,
+     --color-text-footer,
+     --color-primary,
+     --color-background, and
+     --color-background-footer
+
+     no longer need to appear in vars-custom.css.
+
+     Also, they take effect through the Galleries Deluxe module, so
+     they don't need to be mentioned elsewhere in custom.scss (though
+     they may be).
+  */
 
 // For compat with galleriesdeluxe v0.6.0, I've replaced $ with -- in
 // the following 4 lines and wrapped them in a :root block. I've also 
@@ -86,15 +100,10 @@
 
 :root {
 
-  /* Recent Galleries Deluxe update means --color-text, --color-text-footer,
-     --color-primary, --color-background & --color-background-footer do
-     NOT need to appear in vars-custom.css.
-
-     They take effect through the Galleries Deluxe module, so they don't
-     need to be mentioned elsewhere in custom.scss (though they may be).
-  */
-  --color-text: #ffe0cc;
+  --color-text: red; //#ffeedd;
   --color-text-footer: var(--color-text);
+  --color-background: #141414;
+  --color-background-footer: #171717; // was darken(#111, 3%);
 
   /* --color-primary is the color for the A element (i.e., links).
  
@@ -114,9 +123,6 @@
      is 33pct) when I modified the URL link icon, which is
      images/link-external-small-ltr-progressive.svg
   */
-
-  --color-background: #141414;
-  --color-background-footer: #171717; // was darken(#111, 3%);
 
 }
 
@@ -834,7 +840,7 @@ body > div.nojs-mini-themed > footer {
   main > details.beneath-asterized-h2 > h3.h3-from-2stars > span.numbering-outline,
   main > details.beneath-asterized-h2 > h4.h4-from-3stars > span.numbering-outline,
   main > details.beneath-asterized-h2 > h5.h5-from-4stars > span.numbering-outline {
-    color: #808080;
+    color: cyan; //TODO: RESTORE! #808080;
   }
 
   main > h2.h2-from-1star,
@@ -866,7 +872,7 @@ body > div.nojs-mini-themed > footer {
     text-align: center;
     line-height: 1;
     display: block;
-    color: #777;
+    color: cyan; //TODO: RESTORE! #777;
   }
 
   main > div.rule-line-below-h2,
@@ -991,7 +997,7 @@ body > div.nojs-mini-themed > footer {
 
   main code {
     white-space-collapse: preserve;
-    font-family: Menlo, monospace !important; // `Menlo, ` inserted 2026-07-20
+    font-family: Papyrus, monospace !important; // `Papyrus, ` inserted 2026-07-31
 
     /* Apply the Mozilla KBD style, but to CODE instead. To avoid having
        to use the :not() pseudo-class, this is broader than it needs to
@@ -1875,6 +1881,77 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
    +-------------------------------------------+
 */
 
+
+:root {
+  --color-text-standard: #fed;
+  --color-text-standard-dim: #edc;
+  --color-text-standard-dimmer: #dcb;
+
+  --color-text-current: var(--color-text-standard);
+  --color-text-current-accent-1: var(--color-text-standard-dim);
+  --color-text-current-accent-2: var(--color-text-standard-dimmer);
+}
+
+.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
+
+  --color-text-current: #bbf;
+  --color-text-current-accent-1: #aaf;
+  --color-text-current-accent-2: #99f;
+
+  * {
+//    color: var(--color-text-current);
+  }
+
+  header > div.the-div-child-of-the-header > ul.top-link-row > 
+      li > span.current-page-in-top-link-row {
+    color: var(--color-text-current);
+  }
+
+  main > h2.h2-from-1star,
+  main > h2.h2-from-1star  > span.numbering-outline,
+  main > div.asterism-above-h2,
+  main > div.asterism-below-h2,
+  main > div.rule-line-below-h2,
+  main code,
+  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
+  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
+  ol, //???
+  ul, //???
+  li,
+  hr {
+    color: var(--color-text-current-accent-1);
+  }
+
+  main > details.beneath-asterized-h2 {
+    h3.h3-from-2stars,
+    h3.h3-from-2stars > span.numbering-outline,
+    div.asterism-above-h3,
+    div.asterism-below-h3,
+    div.rule-line-below-h3,
+    h4.h4-from-3stars,
+    h4.h4-from-3stars > span.numbering-outline,
+    div.asterism-above-h4, 
+    div.asterism-below-h4,
+    div.rule-line-below-h4,
+    h5.h5-from-4stars,
+    h5.h5-from-4stars > span.numbering-outline,
+    div.asterism-above-h5,
+    div.rule-line-below-h5,
+    p.commentary,
+    div.dek,
+    div.fisheye-means-rightmost,
+    div.url-line,
+    figure,
+    figure > blockquote > p,
+    figure > figcaption,
+    pre,
+    pre > code {
+      color: var(--color-text-current-accent-2);
+    }
+  }
+}
+
+// = = = = = = =
 
 * {
   --color-when-mini-theme-is-monochrome: var(--color-text);
