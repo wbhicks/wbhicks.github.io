@@ -26,10 +26,11 @@
    ** The FIGCAPTION element
    ** PRE, CODE, SAMP, & KBD: internals
    ** Elements for lists (NAV, OL, UL, & LI): internals
-   *** The NAV element & styling for the Detailed Table of Contents
+   *** The NAV element & styling for the Detailed Table of
+       Contents
    *** Other list items in the Detailed Table of Contents
-   *** Per-page TableOfContents, when nested in the Detailed Table
-       of Contents
+   *** Per-page TableOfContents, when nested in the Detailed
+       Table of Contents
    ** The HR element
 
    * Span-level elements & classes
@@ -45,7 +46,8 @@
    ** Font-family for title
    ** CSS lets you specify a generic font-family ...
 
-   * Setting the color property for * when the mini-theme is monochrome
+   * Setting the color property for * when the mini-theme is
+     monochrome
 
    * Selectors
    ** The 5x2 grid of radio buttons to select a mini-theme
@@ -66,20 +68,21 @@
 /* =====================
    Variables duplicated in vars-custom.scss and custom.scss
 
-   `$` is Hugo-dependent & takes effect prior to CSS's `--` syntax.
+   `$` is Hugo-dependent & takes effect before CSS's `--` syntax.
 
    UPDATE:
 
-   See https://github.com/bep/galleriesdeluxe/tree/main?tab=readme-ov-f
-       ile#sass-was-replaced-with-css-in-v060
+   See https://github.com/bep/galleriesdeluxe/tree/main?ta
+       b=readme-ov-file#sass-was-replaced-with-css-in-v060
 
-   "If you relied on the automatic light/dark text color (the old dc
-    mixin), set --color-text and --color-text-footer explicitly in your
-    vars-custom.css."
+   "If you relied on the automatic light/dark text color (the old
+   dc mixin), set --color-text and --color-text-footer explicitly
+   in your vars-custom.css."
    =====================
 */
 
-  /* A recent Galleries Deluxe update means that these 5 variables:
+  /* A recent Galleries Deluxe update means that these
+     5 variables:
 
      --color-text,
      --color-text-footer,
@@ -89,9 +92,9 @@
 
      no longer need to appear in vars-custom.css.
 
-     Also, they take effect through the Galleries Deluxe module, so
-     they don't need to be mentioned elsewhere in custom.scss (though
-     they may be).
+     Also, they take effect through the Galleries Deluxe module,
+     so they don't need to be mentioned elsewhere in custom.scss
+     (though they may be).
   */
 
 // For compat with galleriesdeluxe v0.6.0, I've replaced $ with -- in
@@ -1883,32 +1886,79 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 
 
 :root {
-  --color-text-standard: #fed;
-  --color-text-standard-dim: #edc;
-  --color-text-standard-dimmer: #dcb;
-
-  --color-text-current: var(--color-text-standard);
-  --color-text-current-accent-1: var(--color-text-standard-dim);
-  --color-text-current-accent-2: var(--color-text-standard-dimmer);
+  --color-text-alt-buffed: #00f;
+  --color-text-alt-nerfed: #009;
 }
 
-.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
+div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
+  --color-text-alt-buffed: #0f0;
+  --color-text-alt-nerfed: #060;
 
-  --color-text-current: #bbf;
-  --color-text-current-accent-1: #aaf;
-  --color-text-current-accent-2: #99f;
+  --color-text: cyan;
 
-  * {
-//    color: var(--color-text-current);
-  }
+}
 
-  header > div.the-div-child-of-the-header > ul.top-link-row > 
-      li > span.current-page-in-top-link-row {
-    color: var(--color-text-current);
+div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+  --color-text-alt-buffed: #ff0;
+  --color-text-alt-nerfed: #660;
+
+  --color-text: lime;
+}
+
+div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+
+// 45678901234567890123456789012345forty1234567890123456789012345
+
+  /* In this mini-theme, these elements should use --color-text.
+     The following blocks are necessary only because --color-text
+     is redefined in this mini-theme.
+  */
+
+  header > div.the-div-child-of-the-header > span.current-page-in-top-link-row,
+  header > div.the-div-child-of-the-header > h1,
+  header > div.the-div-child-of-the-header {
+    color: var(--color-text);
   }
 
   main > h2.h2-from-1star,
-  main > h2.h2-from-1star  > span.numbering-outline,
+  main > h2.h2-from-1star  > span.numbering-outline {
+    color: var(--color-text);
+  }
+
+  main > details.beneath-asterized-h2 {
+    summary,
+    p.commentary,
+    h3.h3-from-2stars,
+    h3.h3-from-2stars > span.numbering-outline,
+    h4.h4-from-3stars,
+    h4.h4-from-3stars > span.numbering-outline,
+    h5.h5-from-4stars,
+    h5.h5-from-4stars > span.numbering-outline,
+    figure > blockquote > p > q,
+    figure > blockquote > p,
+    figure > figcaption,
+    figure,
+    div.fisheye-means-rightmost,
+    div.url-line,
+    div.dek,
+    pre {
+      color: var(--color-text);
+    }
+  }
+
+  footer {
+    color: var(--color-text);
+  }
+
+  /* Galleries Deluxe seems not to apply
+     --color-text to HR elements.
+  */
+  header > div.the-div-child-of-the-header > hr,
+  hr {
+    color: var(--color-text-alt-nerfed);
+  }
+
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
   main > div.rule-line-below-h2,
@@ -1917,38 +1967,30 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
   main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
   ol, //???
   ul, //???
-  li,
-  hr {
-    color: var(--color-text-current-accent-1);
+  li {
+    color: var(--color-text-alt-buffed);
   }
 
   main > details.beneath-asterized-h2 {
-    h3.h3-from-2stars,
-    h3.h3-from-2stars > span.numbering-outline,
     div.asterism-above-h3,
     div.asterism-below-h3,
     div.rule-line-below-h3,
-    h4.h4-from-3stars,
-    h4.h4-from-3stars > span.numbering-outline,
     div.asterism-above-h4, 
     div.asterism-below-h4,
     div.rule-line-below-h4,
-    h5.h5-from-4stars,
-    h5.h5-from-4stars > span.numbering-outline,
     div.asterism-above-h5,
-    div.rule-line-below-h5,
-    p.commentary,
-    div.dek,
-    div.fisheye-means-rightmost,
-    div.url-line,
-    figure,
-    figure > blockquote > p,
-    figure > figcaption,
-    pre,
-    pre > code {
-      color: var(--color-text-current-accent-2);
+    div.rule-line-below-h5 {
+      color: var(--color-text-alt-nerfed);
     }
   }
+
+  // NOT YET used outside About page:
+  main > details.beneath-asterized-h2 {
+    pre > code {
+      color: yellow;
+    }
+  }
+
 }
 
 // = = = = = = =
