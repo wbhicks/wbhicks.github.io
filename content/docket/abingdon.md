@@ -11,13 +11,9 @@ date: 2023-07-01
 #markup: org
 ---
 
+## Fruit
 
-
-# Fruit
-
-## Some fruit
-
-### Even less fruit
+### Articles on fruit
 
 #### ® Published by Somebody (2020): «Apricots only!»
 
@@ -33,7 +29,7 @@ date: 2023-07-01
 
 5 Please ≤cwatch ≤nfor ≤lbits≥, and ≤lbytes≥, and≥ also ≤lun ordinateur≥! 6 Henry ≤sBob ≤nBobby≥ Bobson≥ Jr. 7 It's ≤wno longer ≤scool≥, they≥ say. 8 Melville wrote ≤wBilly Budd≥. 9 I do≥ like ≤dABC, Amer. Broadc. Co.≥ 10 ≤cSea sea sea sea sea≥ 11
 
-## Apple
+### Apple
 
 Apple II - so, 3 hyphens makes an HR:
 
@@ -51,17 +47,15 @@ Macintosh
 
 > Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 
-### Gala
+#### Gala
 
 => At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-## Banana
+### Banana
 
 Lorem ipsum dolor sit amet, at vero eos et accusam et justo duo dolores, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 
-# Cars
-
-## Buick
+## Cars, esp. Buicks
 
 At vero eos et accusam et justo duo dolores et ea rebum. 
 
@@ -77,6 +71,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 At vero eos et accusam et justo duo dolores et ea rebum. 
 
-## Pinto
+### Buick-like Pinto
 
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

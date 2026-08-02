@@ -108,7 +108,7 @@
 
     // papayawhip is #ffefd5. Beats antiquewhite by a nose.
 
-  --color-text: papayawhip;
+  --color-text: red; //papayawhip;
   --color-text-footer: var(--color-text);
   --color-background: #141414;
   --color-background-footer: #171717; // was darken(#111, 3%);
@@ -125,7 +125,7 @@
      color: #0000ee;
      ... but too bold and dark. Reducing saturation from 100pct to 10pct:
   */
-  --color-primary: #d7d7ee; // #3a98b9 is the Galleries Deluxe default
+  --color-primary: green; //#d7d7ee; // #3a98b9 is the Galleries Deluxe default
 
   /* I applied #9f9fee (which is the same as above, except saturation
      is 33pct) when I modified the URL link icon, which is
@@ -841,14 +841,6 @@ body > div.nojs-mini-themed > footer {
       li > span.current-page-in-top-link-row {
     // TODO: Not yet styled. Also, should be in another section.
   }
-
-//  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
-//  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
-//  main > h2.h2-from-1star  > span.numbering-outline,
-//  main > details.beneath-asterized-h2 > h3.h3-from-2stars > span.numbering-outline,
-//  main > details.beneath-asterized-h2 > h4.h4-from-3stars > span.numbering-outline,
-//  main > details.beneath-asterized-h2 > h5.h5-from-4stars > span.numbering-outline {
-//  }
 
   main > h2.h2-from-1star,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars,
@@ -1922,13 +1914,13 @@ div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
      A elements) only. It's defined above as #d7d7ee.
   */
   --color-primary: #e5a373; // was #d7d7ee;
-
 }
 
 div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   --color-text: #ffb700;
   --color-text-alt-buffed: #ffb700; // i.e., no buff
   --color-text-alt-nerfed: #ac7b00;
+  --color-primary: #ffb700; // i.e., same as typical text
 }
 
 div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
@@ -1995,13 +1987,26 @@ div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
     color: var(--color-text-alt-nerfed);
   }
 
-  main code,
-  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
-  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
   ol, //???
   ul, //???
   li {
-    color: var(--color-text-alt-buffed);
+//    color: yellow; //var(--color-text-alt-buffed);
+  }
+
+  main > nav.nav-for-detailed-toc   li {
+//    color: white; //#ff00ff; //var(--color-text-alt-buffed);
+  }
+
+  main > nav.nav-for-detailed-toc   li > a {
+//    color: #ff88ff; //var(--color-text-alt-buffed);
+  }
+
+  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   li > a.section-code-plus-numbering-outline {
+    color: cyan; //var(--color-text-alt-buffed);
+  }
+
+  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   li > a.section-code-plus-unnumbered-heading {
+    color: maroon; //var(--color-text-alt-buffed);
   }
 
   main > details.beneath-asterized-h2 {
@@ -2019,6 +2024,9 @@ div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
   }
 
   // NOT YET used outside About page:
+  main code {
+    color: #0000ff;
+  }
   main > details.beneath-asterized-h2 {
     pre > code {
       color: #0000ff;

@@ -108,7 +108,6 @@
 
     {{/* if (ne "Home" .Parent) */}}
       {{ $sectionCode = (partial "section-code.html" (dict "theWeight" .Weight)) }}
-      {{ $sectionCode }}
     {{/* end */}}
 
     {{ .Pre }}<a
@@ -117,7 +116,7 @@
           {{ printf " %s=%q" $k $v | safeHTMLAttr }}
         {{ end }}
       {{ end }}
-    >{{ $name }}</a>{{ .Post }}
+    >{{ $sectionCode }} {{ $name }}</a>{{ .Post }}
 
 
     {{/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -253,27 +252,16 @@
             (add `<a href="` .Path)
         }}
 
-        {{- /* $tocForCurrentPage = replace
-            $tocForCurrentPage
-            `<a href="`
-            (add `<span class="section-code-used-within-toc">` $sectionCode `</span>` `<a href="`)
-        */ -}}
-
   {{- /* Wrap all numbering-outline prefixes, for later styling. With a few
          changes, these 4 calls to replaceRE appear in both dive-menu.html
          & asterize-headlines.html: */ -}}
-
-
-  {{ $sectionCodeToLeftOfEachNumberingOutline := (add `<span class="section-code-used-within-toc">` $sectionCode `</span>`) }}
-
-{{- /* TODO make these work for pages other than the days of the year!! */ -}}
 
   {{- /* For headings within H2 elements */ -}}
 
   {{ $tocForCurrentPage =
       replaceRE
      `<a href="([^"]+)">([IVXLCDM]+\.) ([^<]+)</a>`
-     (add $sectionCodeToLeftOfEachNumberingOutline `<span class="dtoc-extraction-of-numbering-outline">$2</span> <a href="$1">$3</a>`)
+     (add `<a href="$1" class="section-code-plus-numbering-outline">` $sectionCode `$2 $3</a>`)
       $tocForCurrentPage 
   }}
 
@@ -281,8 +269,8 @@
 
   {{ $tocForCurrentPage =
       replaceRE
-     `<a href="([^"]+)">([IVXLCDM]+\.[AB0-9]+\.) ([^<]+)</a>`
-     (add $sectionCodeToLeftOfEachNumberingOutline `<span class="dtoc-extraction-of-numbering-outline">$2</span> <a href="$1">$3</a>`)
+     `<a href="([^"]+)">([IVXLCDM]+\.[0-9A-Z]+\.) ([^<]+)</a>`
+     (add `<a href="$1" class="section-code-plus-numbering-outline">` $sectionCode `$2</a> $3`)
       $tocForCurrentPage 
   }}
 
@@ -290,8 +278,19 @@
 
   {{ $tocForCurrentPage =
       replaceRE
-     `<a href="([^"]+)">([IVXLCDM]+\.[0-9]+\.[^ ]+) ([^<]+)</a>`
-     (add $sectionCodeToLeftOfEachNumberingOutline `<span class="dtoc-extraction-of-numbering-outline">$2</span> <a href="$1">$3</a>`)
+     `<a href="([^"]+)">([IVXLCDM]+\.[0-9A-Z]+\.[^ ]+) ([^<]+)</a>`
+     (add `<a href="$1" class="section-code-plus-numbering-outline">` $sectionCode `$2</a> $3`)
+      $tocForCurrentPage 
+  }}
+
+  {{- /* For unnumbered headings. Inserts a space btwn section code and heading text.
+         But will this match too often?
+  */ -}}
+
+  {{ $tocForCurrentPage =
+      replaceRE
+     `<a href="([^"]+)">(.+)</a>`
+     (add `<a href="$1" class="section-code-plus-unnumbered-heading">` $sectionCode ` $2</a>`)
       $tocForCurrentPage 
   }}
 

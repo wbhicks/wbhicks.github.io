@@ -26,7 +26,7 @@ draft: false
 # outputs: The output formats to render.
 ---
 
-# I. People in Wikipedia
+## I. People in Wikipedia
 
 These sections, one per person, are ordered alphabetically by Wikipedia entry name (i.e. "John Doe" not "Doe, John"). Note that this reverses the typical alphabetization rule for most names in European languages.
 
@@ -45,9 +45,9 @@ Tags used:
 * posthumous-move - This person's remains were relocated [also used in gemlog]
 * social-science - The social sciences, broadly defined
 
-## I.A. WP person entries (with ancillary non-person articles)
+### I.A. WP person entries (with ancillary non-person articles)
 
-### Galileo
+#### I.A.1. Galileo
 
 > "He was reburied in the main body of the basilica in 1737 after a monument had been erected there in his honour; during this move, three fingers and a tooth were removed from his remains. These fingers are currently on exhibition at the Museo Galileo in Florence, Italy." -- from
 
@@ -62,7 +62,7 @@ tags: posthumous-move
 See also:   
 => https://en.wikipedia.org/wiki/Against_Method WP / Against Method
 
-### Giotto
+#### I.A.2. Giotto
 
 > "The year of his birth is calculated from the fact that Antonio Pucci[1], the town crier of Florence, wrote a poem in Giotto's honour in which it is stated that he was 70 at the time of his death. However, the word "seventy" fits into the rhyme of the poem better than any longer and more complex age so it is possible that Pucci used artistic license. 
 > ... 
@@ -78,7 +78,7 @@ tags: posthumous-move
 
 => https://en.wikipedia.org/wiki/Antonio_Pucci_(poet) [1]: WP / Antonio Pucci (poet)
 
-### Harriet Bedell
+#### I.A.3. Harriet Bedell
 
 > "... moved to Goodland when the former city disbanded in 1957. She worked with whites, African Americans and indigenous people in Southwest Florida for the next three decades. The native Mikasuki gave Bedell the name Inkoshopie (meaning woman who prays) ... She also helped them sell their work to the tourist trade -- both through an arrangement with the Collier Company and by negotiating with northern department stores, as well as by fighting the sale of mislabeled import goods in local tourist outlets.
 >
@@ -91,7 +91,7 @@ born: 1875-03-19
 died: 1969-01-08 (age 94), in Davenport, Florida, US
 ```
 
-### John Baskerville
+#### I.A.4. John Baskerville
 
 > "His typefaces were greatly admired by Benjamin Franklin, a fellow printer ... An atheist, he nonetheless printed _The Book of Common Prayer_ in 1762 and a splendid folio Bible in 1763. ... His most notable typeface, Baskerville, is held to represent the peak of transitional type face and a bridge between Old Style and Modern type design. ... A Portland stone sculpture of the Baskerville typeface, _Industry and Genius_, in his honour stands in front of Baskerville House in Centenary Square, Birmingham. It was created by local artist David Patten in 1990." -- from
 
@@ -176,7 +176,7 @@ Arthur Conan Doyle may have subtly acknowledged Baskerville (whether the man or 
 
 [4]: Arthur Conan Doyle, _The Hound of the Baskervilles_ (1902)
 
-### Joseph Schumpeter
+#### I.A.5. Joseph Schumpeter
 
 > "Schumpeter claimed that he had set himself three goals in life: to be the greatest economist in the world, to be the best horseman in all of Austria, and the greatest lover in all of Vienna. He said he had reached two of his goals, but he never said which two, although he is reported to have said that there were too many fine horsemen in Austria for him to succeed in all his aspirations." -- from
 
@@ -192,7 +192,7 @@ Schumpeter taught at Franz-Josephs-Universität (now Chernivtsi University).[1]
 
 => https://en.wikipedia.org/wiki/Chernivtsi_University [1]: WP / Chernivtsi University
 
-### Paul Verlaine
+#### I.A.6. Paul Verlaine
 
 > "Verlaine's last years saw his descent into drug addiction, alcoholism, and poverty. He lived in slums and public hospitals, and spent his days drinking absinthe in Paris cafés. However, the people's love for his art resurrected support and brought in an income for Verlaine: his early poetry was rediscovered, his lifestyle and strange behaviour in front of crowds attracted admiration, and in 1894 he was elected France's 'Prince of Poets' by his peers. ... he was buried in the Cimetière des Batignolles (he was first buried in the 20th division, but his grave was moved to the 11th division -- on the roundabout, a much better location -- when the Boulevard Périphérique was built)." -- from
 
@@ -204,7 +204,7 @@ died: 1896-01-08 (age 51), in Paris
 tags: gafsbe posthumous-move
 ```
 
-### Terry-Thomas
+#### I.A.7. Terry-Thomas
 
 Appeared in 97 films (1933-1980), 149 radio shows (1938-1970), 110 TV shows not including advertisements (1947-1983), and received 42 stage credits in the theatre (1946-1971). Terry-Thomas also has a medical condition named after him (one which he himself never had).[1]
 
@@ -227,7 +227,7 @@ died: 1990-01-08 (age 78), in Godalming, Surrey, UK
 
 => https://en.wikipedia.org/wiki/Terry-Thomas_sign [1]: WP / Terry-Thomas sign
 
-## I.B. WP link (and optionally URIs) only, for people in Wikipedia mentioned elsewhere in this site and otherwise unlisted
+### I.B. WP link (and optionally URIs) only, for people in Wikipedia mentioned elsewhere in this site and otherwise unlisted
 
 This section is for disambiguation.
 
@@ -240,13 +240,13 @@ This section is for disambiguation.
 => https://en.wikipedia.org/wiki/Virgil WP / Virgil   
 => https://en.wikipedia.org/wiki/William_Caslon WP / William Caslon   
 
-# II. People not in Wikipedia
+## II. People not in Wikipedia
 
 As with the section above, this is in alphabetical order by name as printed. Note that this reverses the typical alphabetization rule for most names in European languages.
 
-## II.A. With content
+### II.A. With content
 
-### David Patten
+#### II.A.1. David Patten
 
 => https://davidpattenwork.com/
 => https://davidpattenwork.com/baskerville-and-birmingham/
@@ -261,8 +261,8 @@ Sculpted a monument to John Baskerville, _Industry and Genius_ (1990), which sta
 => https://www.birmingham.gov.uk/info/50050/culture_arts_and_heritage/190/statues_and_public_art/5 [2]: Birmingham Govt.
 => https://en.wikipedia.org/wiki/Baskerville_House [3]: WP / Baskerville House
 
-## II.B. Disambiguation, for people mentioned elsewhere in this file and otherwise unlisted
+### II.B. Disambiguation, for people mentioned elsewhere in this file and otherwise unlisted
 
 Christopher Upton: author of _A History of Birmingham_ (Phillimore, 1993); _Living Back-to-back_ (Phillimore, 2005); _The Birmingham Parish Workhouse 1730-1840_ (University of Hertfordshire Press, 2019)
 
-# III. Other
+## III. Other
