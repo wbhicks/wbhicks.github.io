@@ -1892,26 +1892,42 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 :root {
 
   /* --color-text is defined above as #ffefd5 (papayawhip).
+
      My variants on papayawhip:
+
      #ffe2b2: saturation raised from 16pct to 30pct
      #aaa08e: brightness dropped from 100pct to 67pct
+
+     Making --color-text-alt-buffed equal to --color-text
+     for now. The more-saturated text just looks odd.
   */
 
-  --color-text-alt-buffed: #ffe2b2;
+  --color-text-alt-buffed: #ffefd5; // i.e., no buff
   --color-text-alt-nerfed: #aaa08e;
 }
 	
-//div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
-//}
+div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
+  // No need to modify any text colors for rococo.
+}
 
 div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
-  --color-text-alt-buffed: #8b4513; // #8b4513 is saddlebrown
-  --color-text-alt-nerfed: #63453b;
+  --color-text-alt-nerfed: #8b4513; // #8b4513 is saddlebrown
+
+  /* My variant on saddlebrown, to use for links:
+
+     #e5a373: saturation dropped from 86pct to 50pct
+              and brightness raised from 55pct to 90pct
+
+     --color-primary is, essentially, for links (i.e.,
+     A elements) only. It's defined above as #d7d7ee.
+  */
+  --color-primary: #e5a373; // was #d7d7ee;
+
 }
 
 div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
-  --color-text: #CD9300;
-  --color-text-alt-buffed: #ffb700;
+  --color-text: #ffb700;
+  --color-text-alt-buffed: #ffb700; // i.e., no buff
   --color-text-alt-nerfed: #ac7b00;
 }
 
@@ -1968,11 +1984,11 @@ div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
     color: var(--color-text-alt-nerfed);
   }
 
-  main > h2.h2-from-1star {
+  main > h2.h2-from-1star,
+  main > h2.h2-from-1star  > span.numbering-outline {
     color: var(--color-text-alt-buffed);
   }
 
-  main > h2.h2-from-1star  > span.numbering-outline,
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
   main > div.rule-line-below-h2 {
