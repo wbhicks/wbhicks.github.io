@@ -46,6 +46,9 @@
    ** Font-family for title
    ** CSS lets you specify a generic font-family ...
 
+   * Setting the color property for specific elements per
+     page-flavor
+
    * Setting the color property for * when the mini-theme is
      monochrome
 
@@ -103,7 +106,9 @@
 
 :root {
 
-  --color-text: red; //#ffeedd;
+    // papayawhip is #ffefd5. Beats antiquewhite by a nose.
+
+  --color-text: papayawhip;
   --color-text-footer: var(--color-text);
   --color-background: #141414;
   --color-background-footer: #171717; // was darken(#111, 3%);
@@ -837,14 +842,13 @@ body > div.nojs-mini-themed > footer {
     // TODO: Not yet styled. Also, should be in another section.
   }
 
-  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
-  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
-  main > h2.h2-from-1star  > span.numbering-outline,
-  main > details.beneath-asterized-h2 > h3.h3-from-2stars > span.numbering-outline,
-  main > details.beneath-asterized-h2 > h4.h4-from-3stars > span.numbering-outline,
-  main > details.beneath-asterized-h2 > h5.h5-from-4stars > span.numbering-outline {
-    color: cyan; //TODO: RESTORE! #808080;
-  }
+//  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
+//  main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
+//  main > h2.h2-from-1star  > span.numbering-outline,
+//  main > details.beneath-asterized-h2 > h3.h3-from-2stars > span.numbering-outline,
+//  main > details.beneath-asterized-h2 > h4.h4-from-3stars > span.numbering-outline,
+//  main > details.beneath-asterized-h2 > h5.h5-from-4stars > span.numbering-outline {
+//  }
 
   main > h2.h2-from-1star,
   main > details.beneath-asterized-h2 > h3.h3-from-2stars,
@@ -1879,40 +1883,44 @@ body > div.nojs-mini-themed > main > nav.nav-for-detailed-toc
 /* +-------------------------------------------+
    |                                           |
    |  Start of setting the color property      |
-   |  for * when the mini-theme is monochrome  |
+   |  for specific elements per page-flavor    |
    |                                           |
    +-------------------------------------------+
 */
 
 
 :root {
-  --color-text-alt-buffed: #00f;
-  --color-text-alt-nerfed: #009;
+
+  /* --color-text is defined above as #ffefd5 (papayawhip).
+     My variants on papayawhip:
+     #ffe2b2: saturation raised from 16pct to 30pct
+     #aaa08e: brightness dropped from 100pct to 67pct
+  */
+
+  --color-text-alt-buffed: #ffe2b2;
+  --color-text-alt-nerfed: #aaa08e;
 }
-
-div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
-  --color-text-alt-buffed: #0f0;
-  --color-text-alt-nerfed: #060;
-
-  --color-text: cyan;
-
-}
+	
+//div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked) {
+//}
 
 div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
-  --color-text-alt-buffed: #ff0;
-  --color-text-alt-nerfed: #660;
-
-  --color-text: lime;
+  --color-text-alt-buffed: #8b4513; // #8b4513 is saddlebrown
+  --color-text-alt-nerfed: #63453b;
 }
 
-div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
-div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
+div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+  --color-text: #CD9300;
+  --color-text-alt-buffed: #ffb700;
+  --color-text-alt-nerfed: #ac7b00;
+}
 
-// 45678901234567890123456789012345forty1234567890123456789012345
+div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
 
-  /* In this mini-theme, these elements should use --color-text.
-     The following blocks are necessary only because --color-text
-     is redefined in this mini-theme.
+  /* Elements using --color-text in this page-flavor
+
+     These rulesets are necessary only because --color-text is
+     redefined in this page-flavor.
   */
 
   header > div.the-div-child-of-the-header > span.current-page-in-top-link-row,
@@ -1921,13 +1929,7 @@ div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
     color: var(--color-text);
   }
 
-  main > h2.h2-from-1star,
-  main > h2.h2-from-1star  > span.numbering-outline {
-    color: var(--color-text);
-  }
-
   main > details.beneath-asterized-h2 {
-    summary,
     p.commentary,
     h3.h3-from-2stars,
     h3.h3-from-2stars > span.numbering-outline,
@@ -1951,6 +1953,13 @@ div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
     color: var(--color-text);
   }
 
+  // End of elements using --color-text in this page-flavor
+}
+
+div.nojs-mini-themed:has(#nojs-quote-style-rococo:checked),
+div.nojs-mini-themed:has(#nojs-quote-style-book:checked),
+div.nojs-mini-themed:has(#nojs-quote-style-minimal:checked) {
+
   /* Galleries Deluxe seems not to apply
      --color-text to HR elements.
   */
@@ -1959,9 +1968,17 @@ div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
     color: var(--color-text-alt-nerfed);
   }
 
+  main > h2.h2-from-1star {
+    color: var(--color-text-alt-buffed);
+  }
+
+  main > h2.h2-from-1star  > span.numbering-outline,
   main > div.asterism-above-h2,
   main > div.asterism-below-h2,
-  main > div.rule-line-below-h2,
+  main > div.rule-line-below-h2 {
+    color: var(--color-text-alt-nerfed);
+  }
+
   main code,
   main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.section-code-used-within-toc,
   main > nav.nav-for-detailed-toc   nav.hugo-toc-within-dtoc   span.dtoc-extraction-of-numbering-outline,
@@ -1972,6 +1989,7 @@ div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   }
 
   main > details.beneath-asterized-h2 {
+    summary,
     div.asterism-above-h3,
     div.asterism-below-h3,
     div.rule-line-below-h3,
@@ -1987,11 +2005,29 @@ div.nojs-mini-themed:has(#nojs-quote-style-book:checked) {
   // NOT YET used outside About page:
   main > details.beneath-asterized-h2 {
     pre > code {
-      color: yellow;
+      color: #0000ff;
     }
   }
 
 }
+
+
+/* +-------------------------------------------+
+   |  End of setting the color property        |
+   |  for specific elements per page-flavor    |
+   +-------------------------------------------+
+*/
+
+
+/* +-------------------------------------------+
+   |                                           |
+   |  Start of setting the color property      |
+   |  for * when the mini-theme is monochrome  |
+   |                                           |
+   +-------------------------------------------+
+*/
+
+// 45678901234567890123456789012345forty1234567890123456789012345
 
 // = = = = = = =
 
